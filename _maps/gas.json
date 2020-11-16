@@ -1,0 +1,8 @@
+{
+    "map_name": "Gas Station",
+    "map_path": "map_files/Gas",
+    "map_file": "gasstation.dmm",
+	"shuttles": {
+	    "cargo": "cargo_delta"
+    }
+}
