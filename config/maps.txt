@@ -13,28 +13,16 @@ Format:
 	votable (is this map votable)
 endmap
 
-map heliostation
-	minplayers 25
-	#voteweight 1.5
-	votable
-endmap
-
 map boxstation
+	#default
 	#voteweight 1.5
 	votable
 endmap
 
 map metastation
-	#default
 	minplayers 25
 	#voteweight 0.5
 	votable
-endmap
-
-map kilostation
-	minplayers 25
-	votable
-	disabled
 endmap
 
 map pubbystation
@@ -46,15 +34,18 @@ map deltastation
 	votable
 endmap
 
-map icebox
+map donutstation
+	minplayers 50
+	votable
+endmap
+
+map kilostation
 	minplayers 25
 	votable
 endmap
 
 map runtimestation
-	disabled
 endmap
 
 map multiz_debug
-	disabled
 endmap
