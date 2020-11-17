@@ -62,7 +62,7 @@
 	var/power_light = TRUE
 	var/power_environ = TRUE
 
-	var/has_gravity = 0
+	var/has_gravity = 1
 	/// Are you forbidden from teleporting to the area? (centcom, mobs, wizard, hand teleporter)
 	var/noteleport = FALSE
 	/// Hides area from player Teleport function.

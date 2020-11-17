@@ -3,6 +3,10 @@
 	icon_state = "plating"
 	initial_gas_mix = AIRLESS_ATMOS
 
+turf/open/floor/plating/pavement
+	icon = 'icons/superpizza/pavement.dmi'
+	icon_state = "pavement"
+
 /turf/open/floor/plating/lowpressure
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
 	baseturfs = /turf/open/floor/plating/lowpressure

@@ -238,6 +238,22 @@
 	..()
 	set_opacity(FALSE)
 
+/obj/structure/mineral_door/plastic
+	name = "stall door"
+	icon_state = "plastic"
+	icon = 'icons/superpizza/plasty.dmi'
+	sheetType = /obj/item/stack/sheet/plastic
+	max_integrity = 100
+
+/obj/structure/mineral_door/transparent
+	opacity = FALSE
+	rad_insulation = RAD_VERY_LIGHT_INSULATION
+
+/obj/structure/mineral_door/transparent/Close()
+	..()
+	set_opacity(FALSE)
+
+
 /obj/structure/mineral_door/transparent/plasma
 	name = "plasma door"
 	icon_state = "plasma"

@@ -12,36 +12,39 @@ Format:
 	disabled (disables the map)
 	votable (is this map votable)
 endmap
-
+map gas
+	default
+	#voteweight 1.5
+	votable
+endmap
 map boxstation
 	#default
 	#voteweight 1.5
-	votable
+	disable
 endmap
 
 map metastation
 	minplayers 25
 	#voteweight 0.5
-	votable
+	disable
 endmap
 
 map pubbystation
-	votable
+	disable
 endmap
 
 map deltastation
 	minplayers 50
-	votable
+	disable
 endmap
 
 map donutstation
 	minplayers 50
-	votable
+	disable
 endmap
 
 map kilostation
 	minplayers 25
-	votable
 endmap
 
 map runtimestation
