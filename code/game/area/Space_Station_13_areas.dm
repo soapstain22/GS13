@@ -77,13 +77,19 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/gas
 	name = "Gas Station"
-	icon_state = "red"
-/area/gas
+	icon_state = "blue"
+/area/school
 	name = "School"
-	icon_state = "Blue"
-/area/gas
-	name = "Gas Station"
-	icon_state = "red"
+	icon_state = "blue"
+/area/church
+	name = "Church"
+	icon_state = "blue"
+/area/powerplant
+	name = "Power Plant"
+	icon_state = "blue"
+/area/church
+	name = "House 101"
+	icon_state = "blue"
 //Maintenance
 
 /area/maintenance

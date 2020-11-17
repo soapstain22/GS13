@@ -18,6 +18,16 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
+/turf/open/floor/gym
+	desc = "Maple flooring durable enough for lots of foot traffic."
+	icon_state = "gym"
+	floor_tile = /obj/item/stack/tile/wood
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+
 /turf/open/floor/wood/examine(mob/user)
 	. = ..()
 	. += "<span class='notice'>There's a few <b>screws</b> and a <b>small crack</b> visible.</span>"
