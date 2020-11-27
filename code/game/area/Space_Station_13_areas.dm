@@ -24,12 +24,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "space"
 	requires_power = TRUE
 	always_unpowered = TRUE
-	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	power_light = FALSE
 	power_equip = FALSE
 	power_environ = FALSE
 	valid_territory = FALSE
-	outdoors = TRUE
+	outdoors = FALSE
 	blob_allowed = FALSE //Eating up space doesn't count for victory as a blob.
 	flags_1 = CAN_BE_DIRTY_1
 

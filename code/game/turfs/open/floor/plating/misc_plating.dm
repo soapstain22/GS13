@@ -278,6 +278,7 @@ turf/open/floor/plating/pavement
 	barefootstep = FOOTSTEP_GRASS
 	clawfootstep = FOOTSTEP_GRASS
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	baseturfs = /turf/open/floor/plating/dirt
 
 /turf/open/floor/plating/grass/lavaland
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS

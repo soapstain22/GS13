@@ -21,7 +21,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	var/zombiejob = "Medical Doctor"
-	var/infection_chance = 0
+	var/infection_chance = 3
 	var/obj/effect/mob_spawn/human/corpse/delayed/corpse
 
 /mob/living/simple_animal/hostile/zombie/Initialize(mapload)
