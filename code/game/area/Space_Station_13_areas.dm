@@ -82,12 +82,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "blue"
 /area/church
 	name = "Church"
-	icon_state = "blue"
+	icon_state = "green"
 /area/powerplant
 	name = "Power Plant"
-	icon_state = "blue"
-/area/church
-	name = "House 101"
+	icon_state = "red"
+/area/scienceplace
+	name = "Science Headquarters"
 	icon_state = "blue"
 //Maintenance
 

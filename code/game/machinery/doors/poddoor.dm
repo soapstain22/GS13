@@ -41,6 +41,10 @@
 	else
 		INVOKE_ASYNC(src, .proc/close)
 
+/obj/machinery/door/poddoor/garageschool
+	name = "garage door"
+	id = PEEBO
+
 /obj/machinery/door/poddoor/incinerator_toxmix
 	name = "combustion chamber vent"
 	id = INCINERATOR_TOXMIX_VENT
