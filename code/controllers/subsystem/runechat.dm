@@ -26,7 +26,7 @@ SUBSYSTEM_DEF(runechat)
 	/// Index of the first non-empty bucket
 	var/practical_offset = 1
 	/// world.tick_lag the bucket was designed for
-	var/bucket_resolution = 0
+	var/bucket_resolution = 0.4
 	/// How many messages are in the buckets
 	var/bucket_count = 0
 	/// List of buckets, each bucket holds every message that has to be killed that byond tick

@@ -230,7 +230,19 @@
 		update_icon()
 		lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
 		righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
+// CROSSBOW //
 
+/obj/item/gun/ballistic/shotgun/doublebarrel/improvised
+	name = "improvised shotgun"
+	desc = "Crossbow"
+	icon_state = "ishotgun"
+	inhand_icon_state = "ishotgun"
+	w_class = WEIGHT_CLASS_HUGE
+	force = 10
+	slot_flags = null
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/improvised
+	sawn_desc = "I'm just here for the gasoline."
+	unique_reskin = null
 /obj/item/gun/ballistic/shotgun/doublebarrel/improvised/sawn
 	name = "sawn-off improvised shotgun"
 	desc = "A single-shot shotgun. Better not miss."

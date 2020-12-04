@@ -55,6 +55,19 @@
 				/obj/item/gun/ballistic/revolver/mateba
 				)
 
+/obj/effect/spawner/lootdrop/donkpockets
+	name = "donk pocket box spawner"
+	lootdoubles = FALSE
+
+	loot = list(
+			/obj/item/storage/box/donkpockets/donkpocketspicy = 1,
+			/obj/item/storage/box/donkpockets/donkpocketteriyaki = 1,
+			/obj/item/storage/box/donkpockets/donkpocketpizza = 1,
+			/obj/item/storage/box/donkpockets/donkpocketberry = 1,
+			/obj/item/storage/box/donkpockets/donkpockethonk = 1,
+		)
+
+
 /obj/effect/spawner/lootdrop/armory_contraband/metastation
 	loot = list(/obj/item/gun/ballistic/automatic/pistol = 5,
 				/obj/item/gun/ballistic/shotgun/automatic/combat = 5,
@@ -255,6 +268,21 @@
 	loot = list(
 		/obj/effect/decal/remains/xeno = 49,
 		/obj/effect/spawner/xeno_egg_delivery = 1)
+
+/obj/effect/spawner/lootdrop/papers
+	name = "papers"
+	loot = list(
+		/obj/item/paper = 20,
+		/obj/item/pen = 80)
+
+/obj/effect/spawner/lootdrop/outdoors
+	name = "trash"
+	loot = list(
+		/obj/item/paper = 4,
+		/obj/effect/decal/cleanable/plastic = 4,
+		/obj/item/storage/box/matches = 4,
+		/obj/item/storage/bag/trash = 4,
+		/obj/item/pen = 3)
 
 /obj/effect/spawner/lootdrop/costume
 	name = "random costume spawner"

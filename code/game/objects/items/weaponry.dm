@@ -278,7 +278,17 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		qdel(src)
 
 		user.put_in_hands(P)
-	else
+	else if(istype(I, /obj/item/restraints/handcuffs/cable))
+		var/obj/item/spear/S = new /obj/item/spear
+
+		remove_item_from_storage(user)
+		if (!user.transferItemToLoc(I, S))
+			return
+		S.CheckParts(list(I))
+		qdel(src)
+
+		user.put_in_hands(S)
+		to_chat(user, "<span class='notice'>you make a bow lol</span>")
 		return ..()
 
 

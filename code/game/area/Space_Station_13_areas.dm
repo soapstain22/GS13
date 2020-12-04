@@ -29,7 +29,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	power_equip = FALSE
 	power_environ = FALSE
 	valid_territory = FALSE
-	outdoors = FALSE
+	outdoors = TRUE
 	blob_allowed = FALSE //Eating up space doesn't count for victory as a blob.
 	flags_1 = CAN_BE_DIRTY_1
 
@@ -75,19 +75,49 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 //STATION13
 
 /area/gas
-	name = "Gas Station"
+	name = "gas station"
+	icon_state = "green"
+/area/cafe
+	name = "cafe"
+	icon_state = "blue"
+/area/gunstore
+	name = "gun store"
+	icon_state = "red"
+/area/hardware
+	name = "hardware store"
 	icon_state = "blue"
 /area/school
 	name = "School"
 	icon_state = "blue"
 /area/church
 	name = "Church"
-	icon_state = "green"
+	icon_state = "yellow"
 /area/powerplant
 	name = "Power Plant"
 	icon_state = "red"
-/area/scienceplace
+/area/sciencehq
 	name = "Science Headquarters"
+	icon_state = "blue"
+/area/house4
+	name = "11 Hemingway lane"
+	icon_state = "green"
+/area/house3
+	name = "10 Hemingway lane"
+	icon_state = "green"
+/area/house2
+	name = "9 Hemingway lane"
+	icon_state = "blue"
+/area/house1
+	name = "8 Hemingway lane"
+	icon_state = "green"
+/area/house5
+	name = "13 Manor Rd"
+	icon_state = "green"
+/area/hospital
+	name = "Hospital"
+	icon_state = "blue"
+/area/house1
+	name = "14 Manor Rd"
 	icon_state = "blue"
 //Maintenance
 

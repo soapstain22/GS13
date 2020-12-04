@@ -1,5 +1,8 @@
 <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
   <marquee behavior="alternate">
-	gaming
+	hello
   </marquee>
 </marquee>
+<b></b>
+<h1>extremely early test copy of gas station 13</h1>
+<h2>walk around and collect things</h2>

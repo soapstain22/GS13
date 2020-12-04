@@ -72,7 +72,7 @@
 
 /obj/effect/baseturf_helper/beach/sand
 	name = "beach sand baseturf editor"
-	baseturf = /turf/open/floor/plating/beach/sand
+	baseturf = /turf/open/floor/plating/dirt
 
 /obj/effect/baseturf_helper/beach/water
 	name = "water baseturf editor"

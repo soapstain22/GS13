@@ -129,6 +129,16 @@
 	rating = 5
 	custom_materials = list(/datum/material/iron= 225, /datum/material/diamond = 90, /datum/material/bluespace = 135)
 
+/obj/item/reagent_containers/can //MAX
+	name = "quantum entangled beaker"
+	desc = "A quantum entangled beaker, capable of holding a massive 400 units of any reagent."
+	icon_state = "quantumbeaker"
+	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	custom_materials = list(/datum/material/iron = 500, /datum/material/glass = 5000, /datum/material/plasma = 3000, /datum/material/diamond = 1500, /datum/material/bluespace = 1500)
+	volume = 400
+	amount_per_transfer_from_this = 10
+	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,300)
+
 /obj/item/reagent_containers/glass/beaker/quantum
 	name = "quantum entangled beaker"
 	desc = "A quantum entangled beaker, capable of holding a massive 400 units of any reagent."
