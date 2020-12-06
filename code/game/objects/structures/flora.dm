@@ -374,7 +374,7 @@
 
 /obj/structure/flora/rock
 	icon_state = "basalt"
-	desc = "A volcanic rock. Pioneers used to ride these babies for miles."
+	desc = "Pioneers used to ride these babies for miles"
 	icon = 'icons/obj/flora/rocks.dmi'
 	resistance_flags = FIRE_PROOF
 	density = TRUE

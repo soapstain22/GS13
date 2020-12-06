@@ -243,7 +243,6 @@
 	openSound = 'sound/effects/doorcreaky.ogg'
 	closeSound = 'sound/effects/doorcreaky.ogg'
 	icon_state = "plastic"
-	icon = 'icons/superpizza/plasty.dmi'
 	sheetType = /obj/item/stack/sheet/plastic
 	max_integrity = 100
 
