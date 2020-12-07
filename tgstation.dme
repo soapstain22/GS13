@@ -3289,4 +3289,7 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+// i made these lol
+#include "code\game\objects\structures\superpizza\materials.dm"
+#include "code\game\objects\structures\superpizza\smithing.dm"
 // END_INCLUDE
