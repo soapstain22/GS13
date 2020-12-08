@@ -12,6 +12,7 @@
 	max_integrity = 400
 	integrity_failure = 0.33
 	smooth = SMOOTH_FALSE
+	deconstruction_ready = 0
 
 /obj/item/hammer
 	name = "hammer"

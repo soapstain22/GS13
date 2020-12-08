@@ -434,14 +434,14 @@
 			return
 		//get amount from user
 		var/max = get_amount()
-		var/stackmaterial = round(input(user,"How many sheets do you wish to take out of this stack? (Maximum  [max])") as null|num)
+		var/stackmaterial = round(input(user,"How many do you wish to take out of this stack? (Maximum  [max])") as null|num)
 		max = get_amount()
 		stackmaterial = min(max, stackmaterial)
 		if(stackmaterial == null || stackmaterial <= 0 || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 			return
 		else
 			change_stack(user, stackmaterial)
-			to_chat(user, "<span class='notice'>You take [stackmaterial] sheets out of the stack.</span>")
+			to_chat(user, "<span class='notice'>You take [stackmaterial] out of the stack.</span>")
 
 /obj/item/stack/proc/change_stack(mob/user, amount)
 	if(!use(amount, TRUE, FALSE))

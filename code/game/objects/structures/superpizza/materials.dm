@@ -1,3 +1,6 @@
+GLOBAL_LIST_INIT(chalk_recipes, list ( \
+	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
+))
 /obj/item/stack/sheet/mineral/rawchalk
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "chalk"
@@ -12,11 +15,6 @@
 	merge_type = /obj/item/stack/sheet/mineral/chalk
 	material_type = /datum/material/chalk
 	walltype = /turf/closed/wall/mineral/chalk
-
-GLOBAL_LIST_INIT(chalk_recipes, list ( \
-	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
-	))
-
 /obj/item/stack/sheet/mineral/rawchalk/get_main_recipes()
 	. = ..()
 	. += GLOB.chalk_recipes
@@ -34,7 +32,7 @@ GLOBAL_LIST_INIT(chalk_recipes, list ( \
 		user.visible_message("[user] finishes carving a stake out of [src].", \
 				 "<span class='notice'>You finish carving a stake out of [src].</span>")
 		// Prepare to Put in Hands (if holding wood)
-		var/obj/item/stack/sheet/mineral/wood/thisStack = src
+		var/obj/item/stack/sheet/mineral/chalk/thisStack = src
 		var/replace = (user.get_inactive_held_item()==thisStack)
 		// Use Wood
 		thisStack.use(1)
@@ -55,7 +53,15 @@ GLOBAL_LIST_INIT(chalk_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/mineral/chalk
 	material_type = /datum/material/chalk
 	walltype = /turf/closed/wall/mineral/chalk
-
-GLOBAL_LIST_INIT(chalk_recipes, list ( \
+GLOBAL_LIST_INIT(chalkbrick_recipes, list ( \
 	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
-	))
+))
+/turf/closed/wall/mineral/chalk
+	name = "chalk wall"
+	desc = "yoooo"
+	icon = 'icons/turf/walls/snow_wall.dmi'
+	icon_state = "snow"
+	sheet_type = /obj/item/stack/sheet/mineral/chalk
+	explosion_block = 0 //gold is a soft metal you dingus.
+	canSmoothWith = list(/turf/closed/wall/mineral/chalk, /obj/structure/falsewall/gold)
+	girder_type = /obj/item/stack/sheet/mineral/chalk

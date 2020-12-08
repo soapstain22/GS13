@@ -11,6 +11,18 @@
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
 
+///Has no special properties.
+/datum/material/chalk
+	name = "Chalk"
+	desc = "Chalk is good"
+	color = "#878687"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.0025
+
+/datum/material/iron/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
+	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
+	return TRUE
+
 ///Breaks extremely easily but is transparent.
 /datum/material/glass
 	name = "glass"
