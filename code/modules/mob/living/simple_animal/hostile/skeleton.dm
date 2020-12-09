@@ -32,7 +32,8 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	deathmessage = "collapses into a pile of bones!"
 	del_on_death = 1
-	loot = list(/obj/effect/decal/remains/human)
+	loot = list(/obj/effect/decal/remains/human,
+				/obj/effect/spawner/lootdrop/maintenance)
 
 	footstep_type = FOOTSTEP_MOB_SHOE
 

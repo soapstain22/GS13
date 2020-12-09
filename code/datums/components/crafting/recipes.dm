@@ -843,11 +843,11 @@
 			/datum/reagent/gunpowder = 1,
 			/obj/item/ammo_casing/c38/ = 1)
 	result = /obj/item/ammo_casing/c38
-	category = CAT_WEAPONRY
+	category = CAT_MISC
 
 /datum/crafting_recipe/a762
 	name = "7.62 bullet"
 	reqs = list(/datum/reagent/gunpowder = 1,
 				/obj/item/ammo_casing/a762 = 1)
 	result = /obj/item/ammo_casing/a762
-	category = CAT_WEAPONRY
+	category = CAT_MISC

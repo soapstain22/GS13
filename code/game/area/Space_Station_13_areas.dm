@@ -100,24 +100,42 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "blue"
 /area/house4
 	name = "11 Hemingway lane"
-	icon_state = "green"
+	icon_state = "purple"
 /area/house3
 	name = "10 Hemingway lane"
-	icon_state = "green"
+	icon_state = "purple"
 /area/house2
 	name = "9 Hemingway lane"
-	icon_state = "blue"
+	icon_state = "purple"
 /area/house1
 	name = "8 Hemingway lane"
-	icon_state = "green"
+	icon_state = "purple"
 /area/house5
 	name = "13 Manor Rd"
 	icon_state = "green"
 /area/hospital
 	name = "Hospital"
 	icon_state = "blue"
-/area/house1
+/area/house6
 	name = "14 Manor Rd"
+	icon_state = "purple"
+/area/pizzaplace
+	name = "pizza place"
+	icon_state = "blue"
+/area/police
+	name = "police station"
+	icon_state = "blue"
+/area/ware
+	name = "warehouse"
+	icon_state = "blue"
+/area/clothes
+	name = "clothes store"
+	icon_state = "blue"
+/area/laundry
+	name = "laundromat"
+	icon_state = "blue"
+/area/solarstat
+	name = "solar station"
 	icon_state = "blue"
 //Maintenance
 

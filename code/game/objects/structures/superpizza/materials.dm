@@ -65,3 +65,21 @@ GLOBAL_LIST_INIT(chalkbrick_recipes, list ( \
 	explosion_block = 0 //gold is a soft metal you dingus.
 	canSmoothWith = list(/turf/closed/wall/mineral/chalk, /obj/structure/falsewall/gold)
 	girder_type = /obj/item/stack/sheet/mineral/chalk
+
+/obj/item/stack/linen
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "linen"
+	icon_state = "linen"
+	inhand_icon_state = "linen"
+	singular_name = "linen"
+	sheettype = "linen"
+	custom_materials = list(/datum/material/linen=MINERAL_MATERIAL_AMOUNT)
+	novariants = TRUE
+	grind_results = list(/datum/reagent/carbon = 20)
+	point_value = 10
+	merge_type = /obj/item/stack/linen
+GLOBAL_LIST_INIT(linen_recipes, list ( \
+	new/datum/stack_recipe("clothes", /obj/item/clothing/under/ 1, 1, 20), \
+/obj/item/stack/sheet/mineral/rawchalk/get_main_recipes()
+	. = ..()
+	. += GLOB.linen_recipes
