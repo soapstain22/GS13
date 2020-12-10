@@ -108,23 +108,6 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
 	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-
-/obj/item/brasstube
-	name = "brass tube"
-	desc = "wack"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "brasspipe"
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	custom_materials = list(/datum/brass/brass=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-
 /obj/item/gear
 	name = "gear"
 	desc = "gear"
@@ -154,7 +137,7 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	del_on_death = 1
 	wander = 0
 	loot = list(/obj/effect/spawner/lootdrop/maintenance)= 1
-/datum/component/spawner/barrel
+/obj/structure/spawner/barrel
 	mob_types = list(/mob/living/simple_animal/barrel)
 	spawn_time = 12000//30 seconds default
 	list/spawned_mobs = list()
