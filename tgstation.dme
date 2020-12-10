@@ -1339,6 +1339,7 @@
 #include "code\game\objects\structures\signs\signs_maps.dm"
 #include "code\game\objects\structures\signs\signs_warning.dm"
 #include "code\game\objects\structures\superpizza\material.dm"
+#include "code\game\objects\structures\superpizza\smith.dm"
 #include "code\game\objects\structures\transit_tubes\station.dm"
 #include "code\game\objects\structures\transit_tubes\transit_tube.dm"
 #include "code\game\objects\structures\transit_tubes\transit_tube_construction.dm"
@@ -3290,4 +3291,3 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 // END_INCLUDE
-#include "code\game\objects\structures\superpizza\smithing.dm"

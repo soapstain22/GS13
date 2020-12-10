@@ -1,6 +1,3 @@
-GLOBAL_LIST_INIT(chalk_recipes, list ( \
-	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
-))
 /obj/item/stack/sheet/mineral/rawchalk
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "chalk"
@@ -159,3 +156,6 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
 	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
+GLOBAL_LIST_INIT(chalk_recipes, list ( \
+	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
+))
