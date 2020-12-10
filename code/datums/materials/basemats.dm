@@ -15,10 +15,30 @@
 /datum/material/chalk
 	name = "Chalk"
 	desc = "Chalk is good"
-	color = "#878687"
+	color = "#ECECEC"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	value_per_unit = 0.0025
 
+/datum/material/brass
+	name = "brass"
+	desc = "brown but shiny"
+	color = "#BEA147"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.0020
+/datum/material/aluminum
+	name = "aluminum"
+	desc = "can"
+	color = "#DBEEF0"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.0025
+/datum/material/lead
+	name = "lead"
+	desc = "pencil..."
+	color = "#DBEEF0"
+	strength_modifier = 1.5
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.0025
+	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
 /datum/material/iron/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE

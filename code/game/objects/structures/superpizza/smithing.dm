@@ -1,7 +1,7 @@
 /obj/structure/table/anvil
 	name = "anvil"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	desc = "A square piece of metal standing on four metal legs. It can not move."
+	desc = "for metal i think"
 	icon_state = "anvil"
 	density = TRUE
 	anchored = TRUE
@@ -63,3 +63,61 @@
 	toolspeed = 1
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
 
+/obj/item/saw
+	name = "saw"
+	desc = "cut things if you want"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "saw"
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	flags_1 = CONDUCT_1
+	slot_flags = ITEM_SLOT_BELT
+	force = 5
+	throwforce = 7
+	w_class = WEIGHT_CLASS_SMALL
+	usesound = 'sound/items/ratchet.ogg'
+	custom_materials = list(/datum/material/iron=150)
+	drop_sound = 'sound/items/handling/wrench_drop.ogg'
+	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
+
+	attack_verb = list("sawed", "chopped", "smashed", "whacked")
+	tool_behaviour = TOOL_SAW
+	toolspeed = 1
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
+/datum/crafting_recipe/c38
+	name = "38 bullet"
+	reqs = list(
+			/datum/reagent/gunpowder = 1,
+			/obj/item/ammo_casing/c38/ = 1)
+	result = /obj/item/ammo_casing/c38
+	category = CAT_MISC
+
+/datum/crafting_recipe/a762
+	name = "7.62 bullet"
+	reqs = list(/datum/reagent/gunpowder = 1,
+				/obj/item/ammo_casing/a762 = 1)
+	result = /obj/item/ammo_casing/a762
+	category = CAT_MISC
+/datum/crafting_recipe/revolver
+	name = "38 bullet"
+	reqs = list(
+			/obj/item/revp1 = 1,
+			/obj/item/handle = 1,
+			/obj/item/revp2 = 1)
+	result = /obj/item/gun/ballistic/revolver/crap
+	category = CAT_WEAPON
+/obj/item/revp1
+	name = "cylinder and bits"
+	desc = "its got little things in it"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "cyl"
+/obj/item/revp2
+	name = "revolver base"
+	desc = "finish that shit yo"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "revpart"
+/obj/item/handle
+	name = "handle"
+	desc = "cut things if you want"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "handle"

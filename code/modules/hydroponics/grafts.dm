@@ -33,7 +33,7 @@
 
 /obj/item/graft/Initialize(mapload, datum/plant_gene/trait/trait_path)
 	. = ..()
-	//Default gene is repeated harvest.
+	//Default gene is repeated harvest.c
 	if(trait_path)
 		stored_trait = new trait_path
 	else
