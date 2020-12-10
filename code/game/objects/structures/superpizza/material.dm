@@ -145,15 +145,26 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	desc = "a generic bullet"
 	caliber = "420"
 	projectile_type = /obj/projectile/bullet/a357
-/obj/item/gun/ballistic/revolver/crap
-	name = "Revolver"
-	desc = "uses .357 ammo." //usually used by syndicates
-	icon_state = "revolver"
+/mob/living/simple_animal/barrel
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "barrel"
+	desc = "barrel"
+	icon_state = "barrel"
+	healable = 0
+	del_on_death = 1
+	wander = 0
+	loot = list(/obj/effect/spawner/lootdrop/maintenance)= 1
+/datum/component/spawner/barrel
+	mob_types = list(/mob/living/simple_animal/barrel)
+	spawn_time = 12000//30 seconds default
+	list/spawned_mobs = list()
+	spawn_delay = 0
+	max_mobs = 1
+	spawn_text = ""
 /obj/item/gear
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "gear"
 	desc = "gear"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "gear"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'

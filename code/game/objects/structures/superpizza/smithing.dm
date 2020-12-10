@@ -62,7 +62,11 @@
 	tool_behaviour = TOOL_CHISEL
 	toolspeed = 1
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-
+/obj/item/gun/ballistic/revolver/crap
+	name = "Revolver"
+	desc = "uses .357 ammo." //usually used by syndicates
+	icon_state = "revolver"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 /obj/item/saw
 	name = "saw"
 	desc = "cut things if you want"
