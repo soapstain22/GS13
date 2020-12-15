@@ -13,7 +13,6 @@
 	integrity_failure = 0.33
 	smooth = SMOOTH_FALSE
 	deconstruction_ready = 0
-
 /obj/item/hammer
 	name = "hammer"
 	desc = "A fuckin hammer dude lol."
@@ -21,95 +20,33 @@
 	icon_state = "hammer"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	flags_1 = CONDUCT_1
-	slot_flags = ITEM_SLOT_BELT
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	usesound = 'sound/items/ratchet.ogg'
 	custom_materials = list(/datum/material/iron=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-
-	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 	tool_behaviour = TOOL_HAMMER
 	toolspeed = 1
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-
-/obj/item/hammer/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is beating [user.p_them()]self to death with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
-	playsound(loc, 'sound/weapons/genhit.ogg', 50, TRUE, -1)
-	return (BRUTELOSS)
-
+	force = 13
+	throwforce = 1 // why are you throwing a club do you even weapon
+	throw_speed = 1
+	throw_range = 6
+/obj/item/chain
+	name = "chain"
+	desc = "despite all these chains i am still just ready to chains!!!!!"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "chain"
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	custom_materials = list(/datum/material/iron=450)
+	force = 12
+	throwforce = 1 // why are you throwing a club do you even weapon
+	throw_speed = 1
+	throw_range = 7
 /obj/item/chisel
 	name = "chisel"
 	desc = "god i love my chisel"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "chisel"
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	flags_1 = CONDUCT_1
-	slot_flags = ITEM_SLOT_BELT
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	usesound = 'sound/items/ratchet.ogg'
 	custom_materials = list(/datum/material/iron=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-
-	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 	tool_behaviour = TOOL_CHISEL
 	toolspeed = 1
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-/obj/item/gun/ballistic/revolver/crap
-	name = "Revolver"
-	desc = "uses .357 ammo." //usually used by syndicates
-	icon_state = "revolver"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-/obj/item/saw
-	name = "saw"
-	desc = "cut things if you want"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "saw"
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	flags_1 = CONDUCT_1
-	slot_flags = ITEM_SLOT_BELT
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	usesound = 'sound/items/ratchet.ogg'
-	custom_materials = list(/datum/material/iron=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-
-	attack_verb = list("sawed", "chopped", "smashed", "whacked")
-	tool_behaviour = TOOL_SAW
-	toolspeed = 1
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-/datum/crafting_recipe/c38
-	name = "38 bullet"
-	reqs = list(
-			/datum/reagent/gunpowder = 1,
-			/obj/item/ammo_casing/c38/ = 1)
-	result = /obj/item/ammo_casing/c38
-	category = CAT_MISC
-
-/datum/crafting_recipe/a762
-	name = "7.62 bullet"
-	reqs = list(/datum/reagent/gunpowder = 1,
-				/obj/item/ammo_casing/a762 = 1)
-	result = /obj/item/ammo_casing/a762
-	category = CAT_MISC
-/datum/crafting_recipe/revolver
-	name = "38 bullet"
-	reqs = list(
-			/obj/item/revp1 = 1,
-			/obj/item/handle = 1,
-			/obj/item/revp2 = 1)
-	result = /obj/item/gun/ballistic/revolver/crap
-	category = CAT_WEAPON
 /obj/item/revp1
 	name = "cylinder and bits"
 	desc = "its got little things in it"
@@ -125,3 +62,30 @@
 	desc = "cut things if you want"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "handle"
+/datum/crafting_recipe/revolver
+	name = "38 bullet"
+	reqs = list(
+			/obj/item/revp1 = 1,
+			/obj/item/handle = 1,
+			/obj/item/revp2 = 1)
+	result = /obj/item/gun/ballistic/revolver
+	category = CAT_WEAPON
+/obj/vehicle/ridden/atv/kart
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "kart"
+	desc = "An all-terrain vehicle built for traversing rough terrain with ease. One of the few old-Earth technologies that are still relevant on most planet-bound outposts."
+	icon_state = "kart"
+	max_integrity = 150
+	armor = list("melee" = 50, "bullet" = 25, "laser" = 20, "energy" = 0, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
+	key_type = /obj/item/key
+	integrity_failure = 0.5
+	movedelay = 1
+/obj/vehicle/ridden/atv/kart/Initialize()
+	. = ..()
+	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
+	D.vehicle_move_delay = 0.6
+	D.set_riding_offsets(RIDING_OFFSET_ALL, list(TEXT_NORTH = list(0, 4), TEXT_SOUTH = list(0, 4), TEXT_EAST = list(0, 4), TEXT_WEST = list( 0, 4)))
+	D.set_vehicle_dir_layer(SOUTH, OBJ_LAYER)
+	D.set_vehicle_dir_layer(NORTH, ABOVE_MOB_LAYER)
+	D.set_vehicle_dir_layer(EAST, OBJ_LAYER)
+	D.set_vehicle_dir_layer(WEST, OBJ_LAYER)

@@ -1,95 +1,49 @@
-/obj/item/stack/sheet/mineral/rawchalk
+/datum/crafting_recipe/c38
+	name = "38 bullet"
+	reqs = list(
+			/datum/reagent/gunpowder = 1,
+			/obj/item/ammo_casing/c38/ = 1)
+	result = /obj/item/ammo_casing/c38
+	category = CAT_MISC
+/datum/crafting_recipe/a762
+	name = "7.62 bullet"
+	reqs = list(/datum/reagent/gunpowder = 1,
+				/obj/item/ammo_casing/a762 = 1)
+	result = /obj/item/ammo_casing/a762
+	category = CAT_MISC
+/obj/item/gear
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "chalk"
-	icon_state = "chalk"
-	inhand_icon_state = "chalk"
-	singular_name = "rawchalk"
-	sheettype = "rawchalk"
-	custom_materials = list(/datum/material/chalk=MINERAL_MATERIAL_AMOUNT)
-	novariants = TRUE
-	grind_results = list(/datum/reagent/carbon = 20)
-	point_value = 10
-	merge_type = /obj/item/stack/sheet/mineral/chalk
-	material_type = /datum/material/chalk
-	walltype = /turf/closed/wall/mineral/chalk
-/obj/item/stack/sheet/mineral/rawchalk/get_main_recipes()
-	. = ..()
-	. += GLOB.chalk_recipes
-/obj/item/stack/sheet/mineral/wood/attackby(obj/item/W, mob/user, params) // NOTE: sheet_types.dm is where the WOOD stack lives. Maybe move this over there.
-	// Taken from /obj/item/stack/rods/attackby in [rods.dm]
-	if (W.get_sharpness())
-		user.visible_message("[user] begins cutting the [src]", \
-				 "<span class='notice'>You begin cutting the [src]</span>", \
-				 "<span class='italics'>You hear chipping.</span>")
-		// 8 Second Timer
-		if (!do_mob(user, src, 80))
-			return
-		// Make Stake
-		var/obj/item/stack/sheet/mineral/chalk/new_item = new(usr.loc)
-		user.visible_message("[user] finishes carving a stake out of [src].", \
-				 "<span class='notice'>You finish carving a stake out of [src].</span>")
-		// Prepare to Put in Hands (if holding wood)
-		var/obj/item/stack/sheet/mineral/chalk/thisStack = src
-		var/replace = (user.get_inactive_held_item()==thisStack)
-		// Use Wood
-		thisStack.use(1)
-		// If stack depleted, put item in that hand (if it had one)
-		if (!thisStack && replace)
-			user.put_in_hands(new_item)
-/obj/item/stack/sheet/mineral/chalk
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "chalk"
-	icon_state = "chalkbrick"
-	inhand_icon_state = "chalk"
-	singular_name = "chak"
-	sheettype = "chalk"
-	custom_materials = list(/datum/material/chalk=MINERAL_MATERIAL_AMOUNT)
-	novariants = TRUE
-	grind_results = list(/datum/reagent/carbon = 20)
-	point_value = 10
-	merge_type = /obj/item/stack/sheet/mineral/chalk
-	material_type = /datum/material/chalk
-	walltype = /turf/closed/wall/mineral/chalk
-GLOBAL_LIST_INIT(chalkbrick_recipes, list ( \
-	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
-))
-/turf/closed/wall/mineral/chalk
-	name = "chalk wall"
-	desc = "yoooo"
-	icon = 'icons/turf/walls/snow_wall.dmi'
-	icon_state = "snow"
-	sheet_type = /obj/item/stack/sheet/mineral/chalk
-	explosion_block = 0 //gold is a soft metal you dingus.
-	canSmoothWith = list(/turf/closed/wall/mineral/chalk, /obj/structure/falsewall/gold)
-	girder_type = /obj/item/stack/sheet/mineral/chalk
+	name = "gear"
+	desc = "gear"
+	icon_state = "gear"
+	custom_materials = list(/datum/material/brass=450)
+	force = 7
+	throwforce = 1 // why are you throwing a club do you even weapon
+	throw_speed = 1
+	throw_range = 7
+/obj/effect/barrelpoint
+	name = "fucking spawn thing"
 
-/obj/item/stack/linen
+/obj/effect/barrelpoint/Initialize()
+	name = "fucking spawn thing"
+	qdel(src)
+/obj/structure/barrel
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "linen"
-	icon_state = "linen"
-	inhand_icon_state = "linen"
-	singular_name = "linen"
-	sheettype = "linen"
-	custom_materials = list(/datum/material/linen=MINERAL_MATERIAL_AMOUNT)
-	novariants = TRUE
-	grind_results = list(/datum/reagent/carbon = 20)
-	point_value = 10
-	merge_type = /obj/item/stack/linen
-GLOBAL_LIST_INIT(linen_recipes, list ( \
-	new/datum/stack_recipe("clothes", /obj/item/clothing/under/linen 1, 1, 20), \
-/obj/item/stack/sheet/mineral/linen/get_main_recipes()
-	. = ..()
-	. += GLOB.linen_recipes
-/obj/item/clothing/under/linen
-	gender = PLURAL
-	body_parts_covered = GROIN|LEGS
-	fitted = NO_FEMALE_UNIFORM
-	can_adjust = FALSE
-	custom_price = 60
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	icon_state = "linen"
-
+	name = "barrel"
+	desc = "barrel"
+	icon_state = "barrel"
+	max_integrity = 25
+	anchored = TRUE
+	density = 1
+/obj/structure/barrel/deconstruct(disassembled = FALSE)
+	new /obj/effect/spawner/lootdrop/barrel (loc, 3)
+	new /obj/effect/barrelpoint (loc, 1)
+	qdel(src)
+/obj/item/ammo_casing/homemade
+	name = "bullet"
+	desc = "a generic bullet"
+	caliber = "420"
+	projectile_type = /obj/projectile/bullet/a357
 /obj/item/brasstube
 	name = "brass tube"
 	desc = "wack"
@@ -97,65 +51,129 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	icon_state = "brasspipe"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	custom_materials = list(/datum/brass/brass=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-/obj/item/gear
-	name = "gear"
-	desc = "gear"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "gear"
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	custom_materials = list(/datum/brass/brass=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-/obj/item/ammo_casing/homemade
-	name = "bullet"
-	desc = "a generic bullet"
-	caliber = "420"
-	projectile_type = /obj/projectile/bullet/a357
-/mob/living/simple_animal/barrel
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel"
-	healable = 0
-	del_on_death = 1
-	wander = 0
-	loot = list(/obj/effect/spawner/lootdrop/maintenance)= 1
-/obj/structure/spawner/barrel
-	mob_types = list(/mob/living/simple_animal/barrel)
-	spawn_time = 12000//30 seconds default
-	list/spawned_mobs = list()
-	spawn_delay = 0
-	max_mobs = 1
-	spawn_text = ""
-/obj/item/gear
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "gear"
-	desc = "gear"
-	icon_state = "gear"
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	force = 5
-	throwforce = 7
-	w_class = WEIGHT_CLASS_SMALL
-	custom_materials = list(/datum/brass/brass=150)
-	drop_sound = 'sound/items/handling/wrench_drop.ogg'
-	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
-	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-GLOBAL_LIST_INIT(chalk_recipes, list ( \
-	new/datum/stack_recipe("chalk piece", /obj/item/toy/crayon/white, 1, 1, 20), \
-))
+	custom_materials = list(/datum/material/brass=450)
+	force = 7
+	throwforce = 1 // why are you throwing a club do you even weapon
+	throw_speed = 1
+	throw_range = 7
+/obj/effect/spawner/lootdrop/grass
+	name = "grassass"
+	lootdoubles = FALSE
+	loot = list(
+		/obj/structure/flora/ausbushes/sparsegrass = 70,
+		/obj/structure/flora/ausbushes/fullgrass = 40,
+		/obj/structure/flora/rock = 12,
+		/obj/structure/flora/ausbushes/ywflowers = 3,
+		/obj/structure/flora/ausbushes/genericbush = 3,
+		/obj/structure/flora/grass/jungle/b = 3,
+		/obj/structure/flora/rock/jungle = 12,
+		/obj/structure/flora/junglebush = 7,
+		/obj/effect/decal/remains/robot = 1,
+		/obj/effect/decal/cleanable/plastic = 5,
+		/obj/item/paper/crumpled/ = 3,
+		/obj/structure/flora/ausbushes/brflowers = 6,
+		/obj/structure/flora/ausbushes/stalkybush = 6,
+		/obj/item/reagent_containers/glass/bottle/ = 4,
+		/obj/machinery/hydroponics/soil = 6,
+		/obj/item/trash/can = 7,
+		/obj/structure/barrel = 10,
+		/obj/item/cigbutt/roach = 5,
+		/obj/structure/flora/ausbushes/reedbush = 8,
+		/obj/structure/flora/tree/jungle = 9,
+		/obj/structure/beebox/premade = 1,
+		/obj/structure/flora/ausbushes/fernybush = 16,
+		/obj/structure/flora/ausbushes/stalkybush = 16,
+		/obj/structure/flora/ausbushes/grassybush = 16,
+		)
+/obj/effect/spawner/lootdrop/oreslmao
+	name = "whores"
+	lootdoubles = FALSE
+	loot = list(
+		/obj/item/stack/ore/uranium = 4,
+		/obj/item/stack/ore/iron = 17,
+		/obj/item/stack/ore/plasma = 5,
+		/obj/item/stack/ore/gold = 3,
+		/obj/item/stack/ore/silver = 7,
+		/obj/item/stack/ore/titanium = 3,
+		/obj/item/stack/ore/diamond = 1,
+		)
+/obj/effect/spawner/lootdrop/barrel
+	name = "barrelspawn"
+	lootdoubles = TRUE
+	lootcount = 6
+	loot = list(
+		/obj/item/camera = 1,
+		/obj/item/weldingtool/mini = 1,
+		/obj/item/multitool = 1,
+		/obj/item/hatchet = 1,
+		/obj/item/roller = 1,
+		/obj/item/chain= 5,
+		/obj/item/spear = 1,
+		/obj/item/shield/riot/buckler = 1,
+		/obj/item/grenade/iedcasing/spawned = 1,
+		/obj/item/melee/baton/cattleprod = 1,
+		/obj/item/brasstube = 5,
+		/obj/item/gear = 5,
+	 	/obj/item/screwdriver = 5,
+		/obj/item/wirecutters = 5,
+		/obj/item/wrench = 5,
+		/obj/item/crowbar = 5,
+		/obj/item/assembly/igniter = 2,
+		/obj/item/assembly/prox_sensor = 2,
+		/obj/item/assembly/flash = 2,
+		/obj/item/mop = 1,
+		/obj/item/pushbroom = 1,
+		/obj/item/toy/crayon/spraycan = 1,
+		/obj/item/seeds/random = 1,
+		/obj/item/clothing/mask/gas = 1,
+		/obj/item/radio/headset = 1,
+		/obj/item/storage/backpack = 1,
+		/obj/item/clothing/shoes/sneakers/black = 1,
+		/obj/item/clothing/suit/hazardvest = 1,
+		/obj/item/clothing/suit/toggle/labcoat = 1,
+		/obj/item/clothing/under/color/grey = 1,
+		/obj/item/clothing/gloves/color/yellow = 1,
+		/obj/item/storage/wallet/random = 3,
+		/obj/item/clothing/glasses/science = 1,
+		/obj/item/clothing/glasses/meson = 1,
+		/obj/item/storage/belt/fannypack = 1,
+		/obj/item/stack/cable_coil = 17,
+		/obj/item/stock_parts/cell = 1,
+		/obj/item/stack/rods/ = 159,
+		/obj/item/stack/sheet/metal/ = 190,
+		/obj/item/stack/sheet/mineral/plasma = 6,
+		/obj/item/stock_parts/cell/high = 1,
+		/obj/item/stack/sheet/mineral/wood/ = 1,
+		/obj/item/weaponcrafting/receiver = 1,
+		/obj/item/paper/fluff/stations/soap = 1,
+		/obj/item/hammer = 2,
+		/obj/item/handle = 1,
+		/obj/item/clothing/gloves/color/yellow = 1,
+		/obj/item/solar_assembly = 1,
+		/obj/item/circuitboard = 1,
+		/obj/item/clothing/under/color/random = 1,
+		/obj/item/revp1 = 3,
+		/obj/item/revp2 = 3,
+		/obj/item/stack/sticky_tape = 4,
+		/obj/item/circuitboard/machine/circuit_imprinter = 1,
+		/obj/item/secateurs = 5,
+		/obj/item/circuitboard/machine/protolathe = 1,
+		/obj/item/circuitboard/machine/recycler = 1,
+		/obj/item/stock_parts/manipulator = 6,
+		/obj/item/stock_parts/micro_laser = 6,
+		/obj/item/stock_parts/matter_bin = 6,
+		/obj/item/stock_parts/scanning_module = 6,
+		/obj/item/stock_parts/electrolite = 6,
+		/obj/item/stock_parts/capacitor = 6,
+		/obj/item/storage/bag/plants/portaseeder = 6,
+		/obj/item/clothing/under/pants/jeans = 5,
+		/obj/item/a_gift/anything = 1,
+		/obj/item/pickaxe = 1,
+		/obj/item/circuitboard/machine/ore_redemption = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/reagent_containers/food/drinks/bottle = 7,
+		/obj/item/reagent_containers/syringe = 7,
+		/obj/item/reagent_containers/spray = 3,
+		)
+
+

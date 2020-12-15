@@ -1,6 +1,6 @@
 /obj/structure/flora
 	resistance_flags = FLAMMABLE
-	max_integrity = 150
+	max_integrity = 30
 	anchored = TRUE
 
 //trees
@@ -11,7 +11,7 @@
 	pixel_x = -16
 	layer = FLY_LAYER
 	var/log_amount = 10
-
+	max_integrity = 160
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
 	if(log_amount && (!(flags_1 & NODECONSTRUCT_1)))
 		if(W.get_sharpness() && W.force > 0)
@@ -37,7 +37,7 @@
 	icon_state = "tree_stump"
 	density = FALSE
 	pixel_x = -16
-
+	max_integrity = 50
 /obj/structure/flora/tree/pine
 	name = "pine tree"
 	desc = "A coniferous pine tree."
@@ -132,7 +132,7 @@
 	pixel_y = -20
 
 /obj/structure/flora/tree/jungle/Initialize()
-	icon_state = "[icon_state][rand(1, 7)]"
+	icon_state = "[icon_state][rand(1, 6)]"
 	. = ..()
 
 /obj/structure/flora/tree/jungle/small
@@ -181,7 +181,7 @@
 /obj/structure/flora/bush/Initialize()
 	icon_state = "snowbush[rand(1, 6)]"
 	. = ..()
-
+/obj/structure/flora/bush
 //newbushes
 
 /obj/structure/flora/ausbushes
@@ -201,7 +201,9 @@
 /obj/structure/flora/ausbushes/reedbush/Initialize()
 	icon_state = "reedbush_[rand(1, 4)]"
 	. = ..()
-
+/obj/structure/flora/ausbushes/reedbush/Destroy()
+	new /obj/item/grown/log/bamboo
+	. = ..()
 /obj/structure/flora/ausbushes/leafybush
 	icon_state = "leafybush_1"
 
@@ -379,7 +381,7 @@
 	resistance_flags = FIRE_PROOF
 	density = TRUE
 	/// Itemstack that is dropped when a rock is mined with a pickaxe
-	var/obj/item/stack/mineResult = /obj/item/stack/ore/glass/basalt
+	var/obj/item/stack/mineResult = /obj/effect/spawner/lootdrop/oreslmao
 	/// Amount of the itemstack to drop
 	var/mineAmount = 20
 

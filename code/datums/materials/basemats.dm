@@ -18,7 +18,12 @@
 	color = "#ECECEC"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	value_per_unit = 0.0025
-
+/datum/material/paper
+	name = "paper"
+	desc = "watch out!"
+	color = "#ECECEC"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.0025
 /datum/material/brass
 	name = "brass"
 	desc = "brown but shiny"

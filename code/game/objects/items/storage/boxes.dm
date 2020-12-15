@@ -33,7 +33,7 @@
 	pickup_sound =  'sound/items/handling/cardboardbox_pickup.ogg'
 	var/foldable = /obj/item/stack/sheet/cardboard
 	var/illustration = "writing"
-
+	custom_materials = list(/datum/material/paper=150)
 /obj/item/storage/box/Initialize(mapload)
 	. = ..()
 	update_icon()

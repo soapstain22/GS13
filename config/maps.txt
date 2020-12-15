@@ -12,6 +12,11 @@ Format:
 	disabled (disables the map)
 	votable (is this map votable)
 endmap
+map outside
+	#voteweight 1.5
+	votable
+	default
+endmap
 map gas
 	default
 	#voteweight 1.5

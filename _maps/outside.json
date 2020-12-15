@@ -1,0 +1,8 @@
+{
+    "map_name": "outside",
+    "map_path": "map_files/outside",
+    "map_file": "outside.dmm",
+	"shuttles": {
+	    "cargo": "cargo_delta"
+    }
+}
