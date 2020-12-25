@@ -1,1 +1,0 @@
-/obj/structure/extraction_point

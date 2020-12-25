@@ -147,6 +147,16 @@
 	icon = 'icons/obj/flora/snowflora.dmi'
 	gender = PLURAL	//"this is grass" not "this is a grass"
 
+/obj/structure/flora/grass/Destroy()
+	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
+
+/obj/structure/flora/grass/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src, 'sound/effects/glasshit.ogg', 90, TRUE)
+		if(BURN)
+			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
+
 /obj/structure/flora/grass/brown
 	icon_state = "snowgrass1bb"
 
@@ -168,7 +178,6 @@
 /obj/structure/flora/grass/both/Initialize()
 	icon_state = "snowgrassall[rand(1, 3)]"
 	. = ..()
-
 
 //bushes
 /obj/structure/flora/bush
@@ -202,7 +211,7 @@
 	icon_state = "reedbush_[rand(1, 4)]"
 	. = ..()
 /obj/structure/flora/ausbushes/reedbush/Destroy()
-	new /obj/item/grown/log/bamboo
+	new /obj/item/grown/log/bamboo(get_turf(src))
 	. = ..()
 /obj/structure/flora/ausbushes/leafybush
 	icon_state = "leafybush_1"
@@ -295,9 +304,16 @@
 	icon_state = "sparsegrass_[rand(1, 3)]"
 	. = ..()
 
+/obj/structure/flora/ausbushes/sparsegrass/Destroy()
+	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
+	. = ..()
+
 /obj/structure/flora/ausbushes/fullgrass
 	icon_state = "fullgrass_1"
 
+/obj/structure/flora/ausbushes/fullgrass/Destroy()
+	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
+	. = ..()
 /obj/structure/flora/ausbushes/fullgrass/Initialize()
 	icon_state = "fullgrass_[rand(1, 3)]"
 	. = ..()
@@ -380,6 +396,7 @@
 	icon = 'icons/obj/flora/rocks.dmi'
 	resistance_flags = FIRE_PROOF
 	density = TRUE
+	max_integrity = 130
 	/// Itemstack that is dropped when a rock is mined with a pickaxe
 	var/obj/item/stack/mineResult = /obj/effect/spawner/lootdrop/oreslmao
 	/// Amount of the itemstack to drop

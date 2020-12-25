@@ -14,6 +14,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\map_files\outside\outside.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_globals.dm"
@@ -1982,7 +1983,6 @@
 #include "code\modules\events\spontaneous_appendicitis.dm"
 #include "code\modules\events\stray_cargo.dm"
 #include "code\modules\events\swarmer.dm"
-#include "code\modules\events\vent_clog.dm"
 #include "code\modules\events\wisdomcow.dm"
 #include "code\modules\events\wormholes.dm"
 #include "code\modules\events\holiday\halloween.dm"

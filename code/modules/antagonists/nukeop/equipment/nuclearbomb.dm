@@ -528,21 +528,6 @@
 		return TRUE
 	return ..()
 
-/obj/machinery/nuclearbomb/beer/actually_explode()
-	//Unblock roundend, we're not actually exploding.
-	SSticker.roundend_check_paused = FALSE
-	var/turf/bomb_location = get_turf(src)
-	if(!bomb_location)
-		disarm()
-		return
-	if(is_station_level(bomb_location.z))
-		var/datum/round_event_control/E = locate(/datum/round_event_control/vent_clog/beer) in SSevents.control
-		if(E)
-			E.runEvent()
-		addtimer(CALLBACK(src, .proc/really_actually_explode), 110)
-	else
-		visible_message("<span class='notice'>[src] fizzes ominously.</span>")
-		addtimer(CALLBACK(src, .proc/fizzbuzz), 110)
 
 /obj/machinery/nuclearbomb/beer/proc/disarm()
 	detonation_timer = null
@@ -662,12 +647,12 @@ This is here to make the tiles around the station mininuke change when it's arme
 	if(isobserver(user) || HAS_TRAIT(user.mind, TRAIT_DISK_VERIFIER))
 		. += "<span class='warning'>The serial numbers on [src] are incorrect.</span>"
 
-/* 
+/*
  * You can't accidentally eat the nuke disk, bro
  */
 /obj/item/disk/nuclear/on_accidental_consumption(mob/living/carbon/M, mob/living/carbon/user, obj/item/source_item, discover_after = TRUE)
 	M.visible_message("<span class='warning'>[M] looks like [M.p_theyve()] just bitten into something important.</span>", \
-						"<span class='warning'>Wait, is this the nuke disk?</span>")				
+						"<span class='warning'>Wait, is this the nuke disk?</span>")
 
 	return discover_after
 

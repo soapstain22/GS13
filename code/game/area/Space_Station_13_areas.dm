@@ -73,7 +73,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Bomb Testing Asteroid"
 
 //STATION13
-
+/area/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon_state = "unexplored"
+	tunnel_allowed = TRUE
+	mob_spawn_allowed = TRUE
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 /area/gas
 	name = "gas station"
 	icon_state = "green"

@@ -23,6 +23,8 @@
 
 /obj/machinery/iv_drip/Destroy()
 	attached = null
+	new /obj/item/stack/rods(loc, 6)
+	new /obj/item/reagent_containers/syringe(loc, 1)
 	QDEL_NULL(beaker)
 	return ..()
 

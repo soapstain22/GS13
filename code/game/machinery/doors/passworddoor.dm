@@ -16,7 +16,6 @@
 /obj/machinery/door/password/voice
 	voice_activated = TRUE
 
-
 /obj/machinery/door/password/Initialize(mapload)
 	. = ..()
 	if(voice_activated)
@@ -29,7 +28,7 @@
 	return FALSE
 /obj/machinery/door/password/proc/setpass(mob/user)
 	var/pass = stripped_input(user,"Set the password the password:", "Password", "")
-	return
+	return pass
 /obj/machinery/door/password/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, list/message_mods = list())
 	. = ..()
 	if(!density || !voice_activated || radio_freq)

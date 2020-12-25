@@ -16,8 +16,8 @@
 	bleed(temp_bleed)
 
 	//Blood regeneration if there is some space
-	if(blood_volume < BLOOD_VOLUME_NORMAL)
-		blood_volume += 0.1 // regenerate blood VERY slowly
+	if(blood_volume == BLOOD_VOLUME_NORMAL)
+		blood_volume -= 0.1 // regenerate blood VERY slowly
 		if(blood_volume < BLOOD_VOLUME_OKAY)
 			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0.02, 1))
 
@@ -34,7 +34,8 @@
 			var/nutrition_ratio = 0
 			switch(nutrition)
 				if(0 to NUTRITION_LEVEL_STARVING)
-					nutrition_ratio = 0.2
+					nutrition_ratio = -0.3
+					adjustOxyLoss(round((NUTRITION_LEVEL_STARVING - nutrition) * 0.02, 1))
 				if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
 					nutrition_ratio = 0.4
 				if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
@@ -42,7 +43,8 @@
 				if(NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
 					nutrition_ratio = 0.8
 				else
-					nutrition_ratio = 1
+					nutrition_ratio = -0.1
+
 			if(satiety > 80)
 				nutrition_ratio *= 1.25
 			adjust_nutrition(-nutrition_ratio * HUNGER_FACTOR)

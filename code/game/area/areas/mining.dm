@@ -20,7 +20,7 @@
 	flora_allowed = FALSE
 
 /area/mine/unexplored
-	name = "Mine"
+	name = "Outside"
 	icon_state = "unexplored"
 	always_unpowered = TRUE
 	requires_power = TRUE
