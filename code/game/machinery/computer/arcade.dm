@@ -143,9 +143,7 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		to_chat(user, "<span class='notice'>You turn in 2 tickets to the [src] and claim a prize!</span>")
 		return
 
-
 // ** BATTLE ** //
-
 
 /obj/machinery/computer/arcade/battle
 	name = "arcade machine"

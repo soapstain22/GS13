@@ -125,7 +125,7 @@
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/animalhide/generic = 1,)
 	response_help_continuous = "pets"
 	response_help_simple = "pet"
 	response_disarm_continuous = "gently pushes aside"
@@ -140,7 +140,7 @@
 	var/obj/item/udder/udder = null
 	gold_core_spawnable = FRIENDLY_SPAWN
 	blood_volume = BLOOD_VOLUME_NORMAL
-	food_type = list(/obj/item/reagent_containers/food/snacks/grown/wheat)
+	food_type = list(/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/grass)
 	tame_chance = 25
 	bonus_tame_chance = 15
 	footstep_type = FOOTSTEP_MOB_SHOE
@@ -302,7 +302,7 @@
 	turns_per_move = 3
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/chicken = 2)
 	var/egg_type = /obj/item/reagent_containers/food/snacks/egg
-	food_type = list(/obj/item/reagent_containers/food/snacks/grown/wheat)
+	food_type = list(/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/grass)
 	response_help_continuous = "pets"
 	response_help_simple = "pet"
 	response_disarm_continuous = "gently pushes aside"

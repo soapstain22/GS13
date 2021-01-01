@@ -15,8 +15,8 @@
 	health = 40
 	speed = 1
 	harm_intent_damage = 5
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 5
+	melee_damage_upper = 5
 	minbodytemp = 0
 	maxbodytemp = 1500
 	healable = 0 //they're skeletons how would bruise packs help them??
@@ -32,8 +32,7 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	deathmessage = "collapses into a pile of bones!"
 	del_on_death = 1
-	loot = list(/obj/effect/decal/remains/human,
-				/obj/effect/spawner/lootdrop/maintenance)
+	loot = list(/obj/item/stack/sheet/bone = 2,)
 
 	footstep_type = FOOTSTEP_MOB_SHOE
 

@@ -105,7 +105,7 @@
 
 		var/placement_tries = forced_turf ? 1 : PLACEMENT_TRIES //Only try once if we target specific turf
 		var/failed_to_place = TRUE
-		var/target_z = 0
+		var/target_z = 1
 		var/turf/placed_turf //Where the ruin ended up if we succeeded
 		outer:
 			while(placement_tries > 0)

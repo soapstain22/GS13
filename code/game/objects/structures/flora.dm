@@ -1,6 +1,6 @@
 /obj/structure/flora
 	resistance_flags = FLAMMABLE
-	max_integrity = 30
+	max_integrity = 3
 	anchored = TRUE
 
 //trees
@@ -147,15 +147,16 @@
 	icon = 'icons/obj/flora/snowflora.dmi'
 	gender = PLURAL	//"this is grass" not "this is a grass"
 
-/obj/structure/flora/grass/Destroy()
-	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
-
 /obj/structure/flora/grass/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	switch(damage_type)
 		if(BRUTE)
-			playsound(src, 'sound/effects/glasshit.ogg', 90, TRUE)
+			playsound(src, 'sound/items/wirecutter.ogg', 90, TRUE)
 		if(BURN)
 			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
+
+/obj/structure/flora/grass/Destroy()
+	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
+
 
 /obj/structure/flora/grass/brown
 	icon_state = "snowgrass1bb"
@@ -193,6 +194,9 @@
 /obj/structure/flora/bush
 //newbushes
 
+/obj/structure/flora/bush/Destroy()
+	new /obj/item/grown/cotton(get_turf(src))
+	. = ..()
 /obj/structure/flora/ausbushes
 	name = "bush"
 	desc = "Some kind of plant."
@@ -210,6 +214,14 @@
 /obj/structure/flora/ausbushes/reedbush/Initialize()
 	icon_state = "reedbush_[rand(1, 4)]"
 	. = ..()
+
+/obj/structure/flora/ausbushes/reedbush/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src, 'sound/items/wirecutter.ogg', 90, TRUE)
+		if(BURN)
+			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
+
 /obj/structure/flora/ausbushes/reedbush/Destroy()
 	new /obj/item/grown/log/bamboo(get_turf(src))
 	. = ..()
@@ -236,7 +248,15 @@
 
 /obj/structure/flora/ausbushes/grassybush
 	icon_state = "grassybush_1"
-
+/obj/structure/flora/ausbushes/grassybush/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src, 'sound/items/wirecutter.ogg', 90, TRUE)
+		if(BURN)
+			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
+/obj/structure/flora/ausbushes/grassybush/Destroy()
+	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
+	. = ..()
 /obj/structure/flora/ausbushes/grassybush/Initialize()
 	icon_state = "grassybush_[rand(1, 4)]"
 	. = ..()
@@ -303,14 +323,24 @@
 /obj/structure/flora/ausbushes/sparsegrass/Initialize()
 	icon_state = "sparsegrass_[rand(1, 3)]"
 	. = ..()
-
+/obj/structure/flora/ausbushes/sparsegrass/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src, 'sound/items/wirecutter.ogg', 90, TRUE)
+		if(BURN)
+			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
 /obj/structure/flora/ausbushes/sparsegrass/Destroy()
 	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
 	. = ..()
 
 /obj/structure/flora/ausbushes/fullgrass
 	icon_state = "fullgrass_1"
-
+/obj/structure/flora/ausbushes/fullgrass/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src, 'sound/items/wirecutter.ogg', 90, TRUE)
+		if(BURN)
+			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
 /obj/structure/flora/ausbushes/fullgrass/Destroy()
 	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
 	. = ..()

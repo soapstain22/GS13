@@ -53,7 +53,11 @@
 	sheet_type = /obj/item/stack/sheet/mineral/sandstone
 	explosion_block = 0
 	canSmoothWith = list(/turf/closed/wall/mineral/sandstone, /obj/structure/falsewall/sandstone)
-
+/turf/closed/wall/mineral/sandstone/nonmetal
+	desc = "A solidly sandstone wall. It's a bit weaker than a wall made with metal."
+	hardness = 50
+	canSmoothWith = list(/turf/closed/wall/mineral/sandstone, /obj/structure/falsewall/sandstone, /turf/closed/wall/mineral/sandstone/nonmetal)
+	girder_type = /obj/structure/barricade/sandbags
 /turf/closed/wall/mineral/uranium
 	article = "a"
 	name = "uranium wall"

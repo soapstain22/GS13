@@ -342,9 +342,10 @@
 /datum/crafting_recipe/chainsaw
 	name = "Chainsaw"
 	result = /obj/item/chainsaw
-	reqs = list(/obj/item/circular_saw = 1,
+	reqs = list(/obj/item/chain = 3,
+				/obj/item/gear = 3,
 				/obj/item/stack/cable_coil = 3,
-				/obj/item/stack/sheet/plasteel = 5)
+				/obj/item/stack/sheet/metal = 5)
 	tools = list(TOOL_WELDER)
 	time = 50
 	category = CAT_WEAPONRY
@@ -436,14 +437,14 @@
 	reqs = list(/obj/item/stack/sheet/cardboard = 1,
 				/obj/item/stack/rods = 1)
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/papersack
 	name = "Paper Sack"
 	result = /obj/item/storage/box/papersack
 	time = 10
 	reqs = list(/obj/item/paper = 5)
 	category = CAT_MISC
-
+	always_availible = TRUE
 
 /datum/crafting_recipe/flashlight_eyes
 	name = "Flashlight Eyes"
@@ -469,6 +470,7 @@
 	tools = list(/obj/item/hatchet)
 	result = /obj/item/paper_bin/bundlenatural
 	category = CAT_MISC
+	always_availible = TRUE
 
 /datum/crafting_recipe/toysword
 	name = "Toy Sword"
@@ -487,13 +489,13 @@
 	reqs = 	list(/obj/item/stack/sheet/cloth = 4, /obj/item/stack/rods = 1)
 	result = /obj/structure/curtain/cloth
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/showercurtain
 	name = "Shower Curtains"
 	reqs = 	list(/obj/item/stack/sheet/cloth = 2, /obj/item/stack/sheet/plastic = 2, /obj/item/stack/rods = 1)
 	result = /obj/structure/curtain
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/extendohand
 	name = "Extendo-Hand"
 	reqs = list(/obj/item/bodypart/r_arm/robot = 1, /obj/item/clothing/gloves/boxing = 1)
@@ -556,7 +558,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 1,
 				/obj/item/stack/sheet/sinew = 2)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/bracers
 	name = "Bone Bracers"
 	result = /obj/item/clothing/gloves/bracer
@@ -611,7 +613,7 @@
 	time = 20
 	reqs = list(/obj/item/stack/sheet/bone = 2)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/bonespear
 	name = "Bone Spear"
 	result = /obj/item/spear/bonespear
@@ -619,7 +621,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 4,
 				/obj/item/stack/sheet/sinew = 1)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/boneaxe
 	name = "Bone Axe"
 	result = /obj/item/fireaxe/boneaxe
@@ -627,7 +629,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 6,
 				/obj/item/stack/sheet/sinew = 3)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/bonfire
 	name = "Bonfire"
 	time = 60
@@ -636,21 +638,21 @@
 	blacklist = list(/obj/item/grown/log/steel)
 	result = /obj/structure/bonfire
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/rake //Category resorting incoming
 	name = "Rake"
 	time = 30
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 5)
 	result = /obj/item/cultivator/rake
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/woodbucket
 	name = "Wooden Bucket"
 	time = 30
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 3)
 	result = /obj/item/reagent_containers/glass/bucket/wooden
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/headpike
 	name = "Spike Head (Glass Spear)"
 	time = 65
@@ -661,7 +663,7 @@
 	blacklist = list(/obj/item/spear/explosive, /obj/item/spear/bonespear)
 	result = /obj/structure/headpike
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/headpikebone
 	name = "Spike Head (Bone Spear)"
 	time = 65
@@ -681,7 +683,7 @@
 				/obj/item/stack/cable_coil = 2,
 				/obj/item/assembly/igniter = 1)
 	category = CAT_MISC
-
+	always_availible = TRUE
 
 /datum/crafting_recipe/rcl
 	name = "Makeshift Rapid Pipe Cleaner Layer"
@@ -721,7 +723,7 @@
 				/obj/item/stack/cable_coil = 10)
 	tools = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/aitater
 	name = "intelliTater"
 	result = /obj/item/aicard/aitater
@@ -765,7 +767,7 @@
 	reqs = list(/obj/item/stack/ducts = 5)
 	category = CAT_MISC
 	tools = list(TOOL_WELDER)
-
+	always_availible = TRUE
 /datum/crafting_recipe/rib
 	name = "Collosal Rib"
 	always_availible = FALSE
@@ -818,7 +820,7 @@
             /obj/item/stack/sticky_tape = 1)
 	result = /obj/item/clothing/gloves/tackler/offbrand
 	category = CAT_CLOTHING
-
+	always_availible = TRUE
 /datum/crafting_recipe/boh
 	name = "Bag of Holding"
 	reqs = list(

@@ -13,6 +13,18 @@
 	integrity_failure = 0.33
 	smooth = SMOOTH_FALSE
 	deconstruction_ready = 0
+/obj/item/handfile
+	name = "file"
+	desc = "you can use it."
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "file"
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	custom_materials = list(/datum/material/iron=150)
+	force = 5
+	throwforce = 1 // why are you throwing a club do you even weapon
+	throw_speed = 1
+	throw_range = 6
 /obj/item/hammer
 	name = "hammer"
 	desc = "A fuckin hammer dude lol."
@@ -23,8 +35,8 @@
 	custom_materials = list(/datum/material/iron=150)
 	tool_behaviour = TOOL_HAMMER
 	toolspeed = 1
-	force = 13
-	throwforce = 1 // why are you throwing a club do you even weapon
+	force = 6
+	throwforce = 5 // why are you throwing a club do you even weapon
 	throw_speed = 1
 	throw_range = 6
 /obj/item/chain
@@ -35,10 +47,10 @@
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
 	custom_materials = list(/datum/material/iron=450)
-	force = 12
+	force = 7
 	throwforce = 1 // why are you throwing a club do you even weapon
 	throw_speed = 1
-	throw_range = 7
+	throw_range = 4
 /obj/item/chisel
 	name = "chisel"
 	desc = "god i love my chisel"
@@ -52,18 +64,21 @@
 	desc = "its got little things in it"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "cyl"
+	custom_materials = list(/datum/material/iron=150)
 /obj/item/revp2
 	name = "revolver base"
 	desc = "finish that shit yo"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "revpart"
+	custom_materials = list(/datum/material/iron=150)
 /obj/item/handle
 	name = "handle"
 	desc = "cut things if you want"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "handle"
+	custom_materials = list(/datum/material/wood=150)
 /datum/crafting_recipe/revolver
-	name = "38 bullet"
+	name = "revolver"
 	reqs = list(
 			/obj/item/revp1 = 1,
 			/obj/item/handle = 1,

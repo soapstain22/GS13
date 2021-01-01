@@ -1,0 +1,25 @@
+"a" = (/turf/closed/mineral/random/no_caves,/area/space)
+"b" = (/turf/open/floor/plating/asteroid,/area/space)
+"c" = (/obj/structure/ladder/unbreakable/jacob,/turf/open/floor/plating/asteroid,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaa
+aaaaaabbbbbbbaaaaaa
+aaaaabbbbbbbbbbaaaa
+aaaabbbbbbbbbbbbaaa
+aaabbbbbbbbbbbbbaaa
+aaabbbbbbbbbbbbbaaa
+aabbbbbbbbbbbbbbbaa
+aabbbbbbbcbbbbbbbaa
+aabbbbbbbbbbbbbbbaa
+aabbbbbbbbbbbbbbaaa
+aabbbbbbbbbbbbbbaaa
+aaabbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbaaaa
+aaaabbbbbbbbbaaaaaa
+aaaaaaabbbbaaaaaaaa
+aaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaa
+"}
