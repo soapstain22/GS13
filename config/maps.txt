@@ -18,7 +18,6 @@ map outside
 	default
 endmap
 map gas
-	default
 	#voteweight 1.5
 	votable
 endmap

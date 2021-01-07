@@ -39,7 +39,8 @@ require only minor tweaks.
 #define ZTRAIT_ICE_RUINS "Ice Ruins"
 #define ZTRAIT_ICE_RUINS_UNDERGROUND "Ice Ruins Underground"
 #define ZTRAIT_ISOLATED_RUINS "Isolated Ruins" //Placing ruins on z levels with this trait will use turf reservation instead of usual placement.
-
+#define ZTRAIT_UNDERGROUND_RUINS "Underground Ruins"
+#define ZTRAIT_OUTDOORS_RUINS "Outdoors Ruins"
 // boolean - weather types that occur on the level
 #define ZTRAIT_SNOWSTORM "Weather_Snowstorm"
 #define ZTRAIT_ASHSTORM "Weather_Ashstorm"
@@ -69,11 +70,11 @@ require only minor tweaks.
 
 // default trait definitions, used by SSmapping
 #define ZTRAITS_CENTCOM list(ZTRAIT_CENTCOM = TRUE)
-#define ZTRAITS_STATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_STATION = TRUE)
-#define ZTRAITS_SPACE list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SPACE_RUINS = TRUE)
+#define ZTRAITS_STATION list(ZTRAIT_STATION = TRUE)
+#define ZTRAITS_SPACE list(ZTRAIT_SPACE_RUINS = TRUE)
 #define ZTRAITS_LAVALAND list(\
     ZTRAIT_MINING = TRUE, \
-    ZTRAIT_ASHSTORM = TRUE, \
+    ZTRAIT_ASHSTORM = FALSE, \
     ZTRAIT_LAVA_RUINS = TRUE, \
     ZTRAIT_BOMBCAP_MULTIPLIER = 2, \
     ZTRAIT_BASETURF = /turf/open/lava/smooth/lava_land_surface)
@@ -103,5 +104,6 @@ require only minor tweaks.
 #define PLACE_SAME_Z "same" //On same z level as original ruin
 #define PLACE_SPACE_RUIN "space" //On space ruin z level(s)
 #define PLACE_LAVA_RUIN "lavaland" //On lavaland ruin z levels(s)
+#define PLACE_UNDERGROUND_RUIN "lavaland" //On lavaland ruin z levels(s)
 #define PLACE_BELOW "below" //On z levl below - centered on same tile
 #define PLACE_ISOLATED "isolated" //On isolated ruin z level

@@ -1,11 +1,12 @@
-"a" = (/turf/closed/mineral/random,/area/space)
-"b" = (/mob/living/simple_animal/hostile/skeleton,/turf/open/floor/plating/asteroid,/area/space)
-"c" = (/turf/open/floor/plating/asteroid,/area/space)
-"d" = (/obj/item/flashlight/lantern,/turf/open/floor/plating/asteroid,/area/space)
+"a" = (/turf/closed/mineral/random,/area/surface/outdoors/underground/loops)
+"b" = (/mob/living/simple_animal/hostile/skeleton,/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/loops)
+"c" = (/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/loops)
+"d" = (/obj/item/flashlight/lantern,/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/loops)
+"e" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/loops)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaabccccccccccaaaaaaaaaa
-aaaaaaaaaaaaaaacccccccccccccccccccaaaaaa
+aaaaaaaaaaaaaaacccccccccccccbcccccaaaaaa
 aaaaaaaaaaaacccccccccaaaaaaccccccccaaaaa
 aaaaaaaaaaacccccccaaaaaaaaaaaccccccaaaaa
 aaaaaaaaaaccccccaaaaaaaaaaaaacccbccaaaaa
@@ -13,35 +14,35 @@ aaaaaaaaacccccaaaaaaaaaaaaaaccccccaaaaaa
 aaaaaaaaaccccaaaaaaaaaaaaccccccccaaaaaaa
 aaaaaaaaacccaaaaaaaaaccccccccccaaaaaaaaa
 aaaaaaaaccccaaaaaaaccdcccccccaaaaaaaaaaa
-aaaaaaaaccccaaaaaacccccccccccaaaaaaaaaaa
+aaaaaaaaccccaaaaaaccccccccbccaaaaaaaaaaa
 aaaaaaacbcccccccccccccccccccaaaaaaaaaaaa
 aaaaaaccccccccbcccccccccaaaaaaaaaaaaaaaa
 aaaaaaccccccccccccccccaaaaaaaaaaaaaaaaaa
 aaaaacccccaaaaaccccccaaaaaaaaaaaaaaaaaaa
 aaaaccccaaaaaaaaaccccaaaaacccccccccaaaaa
 aaaaccccaaaaaaaaaccdcaaccccccccccccccaaa
-aaaacccaaaaaaaaaaccccccccccccccccccccaaa
+aaaaccbaaaaaaaaaaccccccccccccccccccccaaa
 aaaccccaaaaaaaaacccccccccccaaacccccccaaa
 aaaccccaaaaaaaaaccccccccaaaaaaaacdccccaa
 aaaccccaaaaaaaaaccccccaaaaaaaaaaacccccca
 aaaaccccaaaaaaaacccccaaaaaaaaaaaaaccccca
 aaaaccccaaaaaaaccccccaaaaaaaaaaaaacccccc
-aaaaccccaaaaaaccccbccaaaaaaaaaaaaaaccccc
+aaaabcccaaaaaaccccbccaaaaaaaaaaaaaaccccc
 aaaaccccaaaccccccccccaaaaaaaaaaaaaaacccc
 aaaaacccaacccccccccccaaaaaaaaaaaaaaacccc
 aaaaaccccccccccaaaccaaaaaaaaaaaaaaaacccc
 aaaaaacccccccaaaaccccaaaaaaaaaaaaaaaaccc
 aaaaaacccccccaaaacccccccccaaaaaaaaaaaccc
-aaaaaacccccaaaaacccccccccccccccaaaaacccc
-aaaaaaaccccaaaaccccccccccccccccaaaaacccc
+aaaaaacccccaaaaacecccccccccccccaaaaacccc
+aaaaaaaccccaaaacccccccbccccccccaaaaacccc
 aaaaaaacccaaaaccccaaccccccccccccaaaacccc
 aaaaaaccccaaaccccaaaaaaaaaacccccaaaccccc
 aaaaaacccaaaccccaaaaaaaaaaaaccccaaacccca
 aaaaaccccaacccccaaaaaaaaaaaaccccaaacccca
 aaaaaccccccccccaaaaaaaaaaaaaccccaaccccca
 aaaacccccccccaaaaaaaaaaaaaaaaccccaccccca
-aaaaaccccccaaaaaaaaaaaaaaaaaacccccccccaa
+aaaaacbccccaaaaaaaaaaaaaaaaaacccccccccaa
 aaaaaaccccaaaaaaaaaaaaaaaaaaaaccccccccaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacccccccaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaccccbccaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}

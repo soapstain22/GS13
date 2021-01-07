@@ -1,29 +1,31 @@
-"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/space)
-"b" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/space)
-"c" = (/turf/open/floor/wood,/area/space)
-"d" = (/turf/closed/mineral/random/no_caves,/area/space)
-"e" = (/obj/structure/fermenting_barrel,/turf/open/floor/wood,/area/space)
-"f" = (/obj/structure/dresser,/turf/open/floor/wood,/area/space)
-"g" = (/obj/item/pickaxe,/turf/open/floor/wood,/area/space)
-"h" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/space)
-"i" = (/obj/structure/table/wood,/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/space)
-"j" = (/obj/structure/chair/wood,/turf/open/floor/wood,/area/space)
-"k" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 4},/turf/open/floor/wood,/area/space)
-"l" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 8},/turf/open/floor/wood,/area/space)
-"m" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 1},/turf/open/floor/wood,/area/space)
-"n" = (/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/space)
+"a" = (/turf/closed/mineral/random/no_caves,/area/surface/outdoors/underground/ruin/ruin1)
+"b" = (/turf/closed/wall/mineral/wood/nonmetal,/area/surface/outdoors/underground/ruin/ruin1)
+"c" = (/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"d" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"e" = (/obj/structure/fermenting_barrel,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"f" = (/obj/structure/dresser,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"g" = (/obj/item/pickaxe,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"h" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"i" = (/obj/structure/table/wood,/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"j" = (/mob/living/simple_animal/hostile/skeleton,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"k" = (/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"l" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"m" = (/obj/structure/chair/wood,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"n" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 4},/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"o" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 8},/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
+"p" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 1},/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/ruin1)
 
 (1,1,1) = {"
-dddddddddaaaaaaa
-dddddddddaccccca
-aaabbabbaaccccca
-aeecccccfbgchcca
-accccccccbccicca
-aaaaancccbcchcca
-accccccccaccccca
-ccccjjcccbccccca
-acckhhlccgccccca
-acccmmccccccccca
-acccccccccccccca
-aabaaacccaaaaaaa
+aaaaaaaaabbbbbbb
+aaaaaaaaabcccccb
+bbbddbddbbcccccb
+beecccccfdgchccb
+bccccccccdccijcb
+bbbbbkcccdcchccb
+bcccccclcbcccccb
+ccccmmcccdcccccb
+bccnhhoccgcccccb
+bcccppcccccccccb
+bccccccccccccccb
+bbdbbbcccbbbbbbb
 "}

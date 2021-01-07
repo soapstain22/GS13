@@ -78,12 +78,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	tunnel_allowed = TRUE
 	mob_spawn_allowed = TRUE
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-	luminosity           = TRUE
+	luminosity = TRUE
 	power_light = FALSE
 	power_equip = FALSE
 	power_environ = FALSE
 	valid_territory = FALSE
 	outdoors = TRUE
+	flora_allowed = TRUE
 /area/surface/outdoors/underground //monsters and ruins spawn here
 	icon_state = "explored"
 	tunnel_allowed = TRUE
@@ -95,6 +96,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	power_environ = FALSE
 	valid_territory = FALSE
 	outdoors = TRUE
+	flora_allowed = TRUE
 /area/surface/outdoors/underground/ruin
 	name = "Ruin"
 	valid_territory = TRUE

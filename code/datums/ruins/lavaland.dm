@@ -1,6 +1,5 @@
 // Hey! Listen! Update \config\lavaruinblacklist.txt with your new ruins!
-/datum/map_template/ruin/level1
-	prefix = "_maps/RandomRuins/LavaRuins/level1"
+
 
 /datum/map_template/ruin/lavaland
 	prefix = "_maps/RandomRuins/LavaRuins/"
@@ -10,27 +9,7 @@
 	allow_duplicates = FALSE
 
 //START UNDERGROUND THINGS
-/datum/map_template/ruin/level1/abandoned
-	name = "abandoned"
-	id = "abandoned"
-	description = "wood stuff."
-	suffix = "abandoned.dmm"
-/datum/map_template/ruin/level1/hole
-	name = "enter"
-	id = "enter"
-	description = "the hole."
-	suffix = "hole.dmm"
-	allow_duplicates = FALSE
-/datum/map_template/ruin/level1/small
-	name = "small"
-	id = "small"
-	description = "how quaint."
-	suffix = "small.dmm"
-/datum/map_template/ruin/level1/small
-	name = "small"
-	id = "small"
-	description = "how quaint."
-	suffix = "small.dmm"
+
 //END UNDERGROUND THINGS
 
 /datum/map_template/ruin/lavaland/biodome/beach

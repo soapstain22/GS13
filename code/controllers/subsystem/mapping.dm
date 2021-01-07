@@ -18,7 +18,8 @@ SUBSYSTEM_DEF(mapping)
 	var/list/lava_ruins_templates = list()
 	var/list/ice_ruins_templates = list()
 	var/list/ice_ruins_underground_templates = list()
-
+	var/list/underground_ruins_templates = list()
+	var/list/outdoors_ruins_templates = list()
 	var/datum/space_level/isolated_ruins_z //Created on demand during ruin loading.
 
 	var/list/shuttle_templates = list()
@@ -87,12 +88,17 @@ SUBSYSTEM_DEF(mapping)
 
 	// Generate mining ruins
 	loading_ruins = TRUE
+	var/list/outdoors_ruins = levels_by_trait(ZTRAIT_OUTDOORS_RUINS)
+	if (outdoors_ruins.len)
+		seedRuins(outdoors_ruins, CONFIG_GET(number/lavaland_budget), list(/area/surface/outdoors/unexplored), outdoors_ruins_templates)
+	var/list/underground_ruins = levels_by_trait(ZTRAIT_UNDERGROUND_RUINS)
+	if (underground_ruins.len)
+		seedRuins(underground_ruins, CONFIG_GET(number/lavaland_budget), list(/area/surface/outdoors/underground), underground_ruins_templates)
 	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
 	if (lava_ruins.len)
 		seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), list(/area/lavaland/surface/outdoors/unexplored), lava_ruins_templates)
 		for (var/lava_z in lava_ruins)
 			spawn_rivers(lava_z)
-
 	var/list/ice_ruins = levels_by_trait(ZTRAIT_ICE_RUINS)
 	if (ice_ruins.len)
 		// needs to be whitelisted for underground too so place_below ruins work
@@ -185,7 +191,8 @@ SUBSYSTEM_DEF(mapping)
 	unused_turfs = SSmapping.unused_turfs
 	turf_reservations = SSmapping.turf_reservations
 	used_turfs = SSmapping.used_turfs
-
+	underground_ruins_templates = SSmapping.underground_ruins_templates
+	outdoors_ruins_templates = SSmapping.outdoors_ruins_templates
 	config = SSmapping.config
 	next_map_config = SSmapping.next_map_config
 
@@ -412,7 +419,10 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			ice_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/space))
 			space_ruins_templates[R.name] = R
-
+		else if(istype(R, /datum/map_template/ruin/underground))
+			underground_ruins_templates[R.name] = R
+		else if(istype(R, /datum/map_template/ruin/outdoors))
+			outdoors_ruins_templates[R.name] = R
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()
 	var/list/unbuyable = generateMapList("[global.config.directory]/unbuyableshuttles.txt")
 

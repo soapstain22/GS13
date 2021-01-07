@@ -24,7 +24,8 @@
 	var/obj/item/stack/digResult = /obj/item/stack/ore/glass/basalt
 	/// Whether the turf has been dug or not
 	var/dug
-
+	planetary_atmos = TRUE
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 /turf/open/floor/plating/asteroid/Initialize()
 	var/proper_name = name
 	. = ..()
@@ -137,7 +138,6 @@
 	turf_type = /turf/open/floor/plating/asteroid/lowpressure
 
 /turf/open/floor/plating/asteroid/airless
-	initial_gas_mix = AIRLESS_ATMOS
 	baseturfs = /turf/open/floor/plating/asteroid/airless
 	turf_type = /turf/open/floor/plating/asteroid/airless
 
@@ -216,7 +216,11 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 						  /mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 50, /mob/living/simple_animal/hostile/asteroid/goldgrub = 10)
 
 	flora_spawn_list = list(/obj/structure/flora/tree/pine = 2, /obj/structure/flora/rock/icy = 2, /obj/structure/flora/rock/pile/icy = 2, /obj/structure/flora/grass/both = 12)
-	terrain_spawn_list = list()
+	terrain_spawn_list = list(/obj/structure/geyser/random = 1,
+		/obj/machinery/atmospherics/miner/geyser/water = 1,
+		/obj/machinery/atmospherics/miner/geyser/n2o = 1,
+		/obj/machinery/atmospherics/miner/geyser/plasma = 1,
+		/obj/machinery/atmospherics/miner/geyser/hydrogen = 1,)
 	data_having_type = /turf/open/floor/plating/asteroid/airless/cave/snow/has_data
 	turf_type = /turf/open/floor/plating/asteroid/snow/icemoon
 	choose_turf_type = list(/turf/open/floor/plating/asteroid/snow/icemoon = 19, /turf/open/floor/plating/ice/icemoon = 1)
@@ -245,7 +249,12 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	if (!flora_spawn_list)
 		flora_spawn_list = list(/obj/structure/flora/ash/leaf_shroom = 2 , /obj/structure/flora/ash/cap_shroom = 2 , /obj/structure/flora/ash/stem_shroom = 2 , /obj/structure/flora/ash/cacti = 1, /obj/structure/flora/ash/tall_shroom = 2)
 	if(!terrain_spawn_list)
-		terrain_spawn_list = list(/obj/structure/geyser/random = 1)
+		terrain_spawn_list = list(/obj/structure/geyser/random = 1,
+		/obj/machinery/atmospherics/miner/geyser/water = 1,
+		/obj/machinery/atmospherics/miner/geyser/n2o = 1,
+		/obj/machinery/atmospherics/miner/geyser/plasma = 1,
+		/obj/machinery/atmospherics/miner/geyser/hydrogen = 1,
+		)
 	. = ..()
 	if(!has_data)
 		produce_tunnel_from_data()

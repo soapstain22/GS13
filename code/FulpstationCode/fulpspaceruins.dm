@@ -13,7 +13,6 @@ DATU: Datums for map templates
 */
 
 // FSS1 : Space Shower
-
 /obj/item/paper/crumpled/bloody/Newshowers
     name = "note"
     info = {"I certainly did not expect this<br>

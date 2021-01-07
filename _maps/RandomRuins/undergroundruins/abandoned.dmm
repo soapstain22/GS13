@@ -1,13 +1,14 @@
-"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/space)
-"b" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/space)
-"c" = (/turf/open/floor/wood,/area/space)
+"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/surface/outdoors/underground/ruin/abandoned)
+"b" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/abandoned)
+"c" = (/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/abandoned)
+"d" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/abandoned)
 
 (1,1,1) = {"
 aaabbabbaa
 accccccccb
 accccccccb
 aaaaaccccb
-acccccccca
+accccdccca
 cccccccccb
 acccccccca
 acccccccca

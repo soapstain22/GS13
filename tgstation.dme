@@ -14,7 +14,6 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
-#include "_maps\map_files\outside\outside.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_globals.dm"
@@ -615,7 +614,9 @@
 #include "code\datums\mutations\touch.dm"
 #include "code\datums\ruins\icemoon.dm"
 #include "code\datums\ruins\lavaland.dm"
+#include "code\datums\ruins\outdoors.dm"
 #include "code\datums\ruins\space.dm"
+#include "code\datums\ruins\underground.dm"
 #include "code\datums\skills\_skill.dm"
 #include "code\datums\skills\cleaning.dm"
 #include "code\datums\skills\gaming.dm"
@@ -3043,7 +3044,6 @@
 #include "code\modules\ruins\icemoonruin_code\hotsprings.dm"
 #include "code\modules\ruins\icemoonruin_code\library.dm"
 #include "code\modules\ruins\icemoonruin_code\wrath.dm"
-#include "code\modules\ruins\lavalandruin_code\biodome_clown_planet.dm"
 #include "code\modules\ruins\lavalandruin_code\elephantgraveyard.dm"
 #include "code\modules\ruins\lavalandruin_code\pizzaparty.dm"
 #include "code\modules\ruins\lavalandruin_code\puzzle.dm"

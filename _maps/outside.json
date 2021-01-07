@@ -1,8 +1,12 @@
 {
-    "map_name": "outside",
-    "map_path": "map_files/outside",
-    "map_file": "outside.dmm",
-	"shuttles": {
-	    "cargo": "cargo_delta"
-    }
+	"map_name": "outside",
+	"map_path": "map_files/outside",
+	"map_file": "outside.dmm",
+
+    "shuttles": {
+	    "cargo": "cargo_box",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_construction"
+	}
 }

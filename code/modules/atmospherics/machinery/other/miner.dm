@@ -24,7 +24,7 @@
 	var/power_draw_dynamic_mol_coeff = 5	//DO NOT USE DYNAMIC SETTINGS UNTIL SOMEONE MAKES A USER INTERFACE/CONTROLLER FOR THIS!
 	var/power_draw_dynamic_kpa_coeff = 0.5
 	var/broken = FALSE
-	var/broken_message = "ERROR"
+	var/broken_message = "It has stopped"
 	idle_power_usage = 150
 	active_power_usage = 2000
 
@@ -42,25 +42,25 @@
 		return FALSE
 	var/turf/T = get_turf(src)
 	if(!isopenturf(T))
-		broken_message = "<span class='boldnotice'>VENT BLOCKED</span>"
+		broken_message = "<span class='boldnotice'>Its blocked</span>"
 		set_broken(TRUE)
 		return FALSE
 	var/turf/open/OT = T
 	if(OT.planetary_atmos)
-		broken_message = "<span class='boldwarning'>DEVICE NOT ENCLOSED IN A PRESSURIZED ENVIRONMENT</span>"
+		broken_message = "<span class='boldwarning'>Its not doing anything</span>"
 		set_broken(TRUE)
 		return FALSE
 	if(isspaceturf(T))
-		broken_message = "<span class='boldnotice'>AIR VENTING TO SPACE</span>"
+		broken_message = "<span class='boldnotice'>Its venting out into nothingness</span>"
 		set_broken(TRUE)
 		return FALSE
 	var/datum/gas_mixture/G = OT.return_air()
 	if(G.return_pressure() > (max_ext_kpa - ((spawn_mol*spawn_temp*R_IDEAL_GAS_EQUATION)/(CELL_VOLUME))))
-		broken_message = "<span class='boldwarning'>EXTERNAL PRESSURE OVER THRESHOLD</span>"
+		broken_message = "<span class='boldwarning'>Its not really letting gas out</span>"
 		set_broken(TRUE)
 		return FALSE
 	if(G.total_moles() > max_ext_mol)
-		broken_message = "<span class='boldwarning'>EXTERNAL AIR CONCENTRATION OVER THRESHOLD</span>"
+		broken_message = "<span class='boldwarning'>Its broken</span>"
 		set_broken(TRUE)
 		return FALSE
 	if(broken)

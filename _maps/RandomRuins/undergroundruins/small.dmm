@@ -1,21 +1,22 @@
-"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/space)
-"b" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/space)
-"c" = (/turf/open/floor/wood,/area/space)
-"d" = (/obj/effect/spawner/lootdrop/maintenance/two,/turf/open/floor/wood,/area/space)
-"e" = (/obj/effect/spawner/lootdrop/maintenance/three,/turf/open/floor/wood,/area/space)
-"f" = (/obj/effect/spawner/lootdrop/snowdin/dungeonlite,/turf/open/floor/wood,/area/space)
-"g" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/armory_contraband,/turf/open/floor/wood,/area/space)
-"h" = (/obj/structure/table/wood,/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/space)
+"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/surface/outdoors/underground/ruin/small)
+"b" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"c" = (/obj/effect/spawner/lootdrop/maintenance/two,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"d" = (/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"e" = (/obj/effect/spawner/lootdrop/maintenance/three,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"f" = (/obj/effect/spawner/lootdrop/snowdin/dungeonlite,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"g" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"h" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/armory_contraband,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
+"i" = (/obj/structure/table/wood,/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/small)
 
 (1,1,1) = {"
 aaabbabbaa
-adcccccccb
-aeccccccfb
-aaaaaccccb
-acccccccca
-cccccccccb
-accghgccfa
-acccccccca
-acccccccca
-aabaaaccca
+acdddddddb
+aeddddddfb
+aaaaaddddb
+addddddgda
+dddddddddb
+addhihddfa
+adddddddda
+adddddddda
+aabaaaddda
 "}

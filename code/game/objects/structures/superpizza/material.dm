@@ -39,6 +39,19 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("scrubber", /obj/machinery/portable_atmospherics/scrubber, 20, time = 50),
 	))
 // this is everything else
+/obj/item/melee/stick
+	name = "cool stick"
+	desc = "it is very fast"
+	icon_state = "nullrod"
+	inhand_icon_state = "nullrod"
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	force = 5
+	throwforce = 3
+	attack_verb = list("smacked")
+	w_class = WEIGHT_CLASS_SMALL
+/obj/item/melee/stick/attack(mob/living/target, mob/living/user)
+	user.changeNext_move(CLICK_CD_MELEE * 0.7)
 /datum/crafting_recipe/c38
 	name = "reshell 38 bullet"
 	reqs = list(
@@ -145,7 +158,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/stack/ore/silver = 60,
 		/obj/item/stack/ore/titanium = 9,
 		/obj/item/stack/ore/diamond = 3,
-		"" = 200
+
 		)
 /obj/effect/spawner/lootdrop/barrel/shit
 	name = "barrelspawn"
@@ -336,3 +349,65 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 /obj/structure/barrel/circ/deconstruct(disassembled = FALSE)
 	new /obj/effect/spawner/lootdrop/circ/ (loc, 1)
 	qdel(src)
+/obj/effect/spawner/lootdrop/treasure
+	name = "barrelspawn"
+	lootdoubles = TRUE
+	lootcount = 3
+	loot = list(
+		/obj/item/stack/medical/suture = 15,
+		/obj/item/stack/medical/mesh = 15,
+		/obj/item/coin/gold = 10,
+		)
+/obj/effect/spawner/lootdrop/treasureloot
+	name = "barrelspawn"
+	lootdoubles = TRUE
+	lootcount = 3
+	loot = list(
+		/obj/item/katana = 15,
+		)
+/obj/structure/closet/crate/wooden/chest
+	name = "chest"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "lootchest"
+/obj/effect/spawner/lootdrop/treasure/
+	lootdoubles = TRUE
+	lootcount = 3
+	loot = list(
+		/obj/effect/spawner/lootdrop/treasure = 15,
+		)
+
+/obj/structure/closet/crate/wooden/chest/PopulateContents()
+	..()
+	for(var/i in 1 to 12)
+		new /obj/item/coin/gold(src, 1, FALSE)
+/obj/machinery/atmospherics/miner/geyser
+	max_ext_kpa = 110
+	spawn_mol = 5
+	idle_power_usage = 0
+	active_power_usage = 0
+	desc = "Vents gasses from the planet's mantle"
+	name = "geyser"
+	icon = 'icons/obj/lavaland/terrain.dmi'
+	icon_state = "geyser"
+	use_power = 0
+/obj/machinery/atmospherics/miner/geyser/water
+	spawn_id = /datum/gas/water_vapor
+/obj/machinery/atmospherics/miner/geyser/n2o
+	spawn_id = /datum/gas/nitrous_oxide
+/obj/machinery/atmospherics/miner/geyser/plasma
+	spawn_id = /datum/gas/plasma
+/obj/machinery/atmospherics/miner/geyser/hydrogen
+	spawn_id = /datum/gas/hydrogen
+/obj/effect/spawner/lootdrop/minecraft
+	name = "barrelspawn"
+	lootdoubles = TRUE
+	lootcount = 1
+	loot = list(
+		/obj/machinery/atmospherics/miner/geyser/n2o = 5,
+		/obj/machinery/atmospherics/miner/geyser/water = 5,
+		/obj/machinery/atmospherics/miner/geyser/plasma = 5,
+		/obj/machinery/atmospherics/miner/geyser/hydrogen = 5,
+		/obj/structure/closet/crate/wooden/chest = 15,
+		/obj/structure/flora/rock = 50,
+		"" = 700
+		)

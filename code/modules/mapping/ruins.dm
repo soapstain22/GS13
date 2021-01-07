@@ -86,7 +86,7 @@
 		ruins_availible[R] = R.placement_weight
 	while(budget > 0 && (ruins_availible.len || forced_ruins.len))
 		var/datum/map_template/ruin/current_pick
-		var/forced = FALSE
+		var/forced = 0
 		var/forced_z	//If set we won't pick z level and use this one instead.
 		var/forced_turf //If set we place the ruin centered on the given turf
 		if(forced_ruins.len) //We have something we need to load right now, so just pick it
@@ -162,6 +162,8 @@
 									forced_ruins[linked] = target_z //I guess you might want a chain somehow
 								if(PLACE_LAVA_RUIN)
 									forced_ruins[linked] = pick(SSmapping.levels_by_trait(ZTRAIT_LAVA_RUINS))
+								if(PLACE_UNDERGROUND_RUIN)
+									forced_ruins[linked] = pick(SSmapping.levels_by_trait(ZTRAIT_UNDERGROUND_RUINS))
 								if(PLACE_SPACE_RUIN)
 									forced_ruins[linked] = pick(SSmapping.levels_by_trait(ZTRAIT_SPACE_RUINS))
 								if(PLACE_DEFAULT)
