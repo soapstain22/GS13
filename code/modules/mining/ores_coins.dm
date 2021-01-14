@@ -91,6 +91,51 @@
 	scan_state = "rock_Iron"
 	spreadChance = 20
 
+/obj/item/stack/ore/emerald
+	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
+	name = "emerald"
+	icon_state = "emerald"
+	inhand_icon_state = "emerald"
+	singular_name = "emerald"
+	w_class = WEIGHT_CLASS_TINY
+	mine_experience = 80
+	custom_materials = list(/datum/material/emerald=MINERAL_MATERIAL_AMOUNT)
+/obj/item/stack/ore/sapphire
+	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
+	name = "sapphire"
+	icon_state = "sapphire"
+	inhand_icon_state = "sapphire"
+	singular_name = "sapphire"
+	w_class = WEIGHT_CLASS_TINY
+	mine_experience = 40
+	custom_materials = list(/datum/material/sapphire=MINERAL_MATERIAL_AMOUNT)
+/obj/item/stack/ore/amethyst
+	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
+	name = "amethyst"
+	icon_state = "amethyst"
+	inhand_icon_state = "amethyst"
+	singular_name = "amethyst"
+	w_class = WEIGHT_CLASS_TINY
+	custom_materials = list(/datum/material/amethyst=MINERAL_MATERIAL_AMOUNT)
+	mine_experience = 10
+/obj/item/stack/ore/topaz
+	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
+	name = "topaz"
+	icon_state = "topaz"
+	inhand_icon_state = "topaz"
+	singular_name = "topaz"
+	w_class = WEIGHT_CLASS_TINY
+	mine_experience = 20
+	custom_materials = list(/datum/material/topaz=MINERAL_MATERIAL_AMOUNT)
+/obj/item/stack/ore/ruby
+	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
+	name = "ruby"
+	icon_state = "ruby"
+	inhand_icon_state = "ruby"
+	singular_name = "ruby"
+	w_class = WEIGHT_CLASS_TINY
+	mine_experience = 160
+	custom_materials = list(/datum/material/ruby=MINERAL_MATERIAL_AMOUNT)
 /obj/item/stack/ore/glass
 	name = "sand pile"
 	icon_state = "Glass ore"

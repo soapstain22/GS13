@@ -2,8 +2,8 @@
 	"map_name": "outside",
 	"map_path": "map_files/outside",
 	"map_file": "outside.dmm",
-
-    "shuttles": {
+	"traits": [{"Up" : 1, "Linkage" : "Cross", "Outdoors Ruins":true}, {"Up" : 1, "Down" : -1, "Linkage" : "Cross", "Underground Ruins":true}, {"Up" : 1, "Down" : -1, "Linkage" : "Cross", "Underground Ruins":true}, {"Up" : 1, "Down" : -1, "Linkage" : "Cross", "Underground Ruins":true}, {"Down" : -1, "Linkage" : "Cross", "Underground Ruins":true}],
+	"shuttles": {
 	    "cargo": "cargo_box",
 	    "ferry": "ferry_fancy",
 	    "whiteship": "whiteship_box",

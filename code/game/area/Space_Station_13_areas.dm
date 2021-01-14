@@ -104,7 +104,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/surface/outdoors/underground/hole
 	valid_territory = FALSE
 /area/surface/outdoors/underground/ruin/abandoned
-
+/area/surface/outdoors/underground/ruin/military
 /area/surface/outdoors/underground/ruin/laundro
 /area/surface/outdoors/underground/ruin/small
 /area/surface/outdoors/underground/ruin/rec

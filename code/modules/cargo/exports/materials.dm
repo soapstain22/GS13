@@ -35,7 +35,26 @@
 	cost = 500
 	material_id = /datum/material/diamond
 	message = "cm3 of diamonds"
-
+/datum/export/material/ruby
+	cost = 350
+	material_id = /datum/material/ruby
+	message = "cm3 of ruby"
+/datum/export/material/emerald
+	cost = 250
+	material_id = /datum/material/emerald
+	message = "cm3 of emerald"
+/datum/export/material/sapphire
+	cost = 200
+	material_id = /datum/material/sapphire
+	message = "cm3 of sapphire"
+/datum/export/material/topaz
+	cost = 100
+	material_id = /datum/material/topaz
+	message = "cm3 of topaz"
+/datum/export/material/amethyst
+	cost = 50
+	material_id = /datum/material/amethyst
+	message = "cm3 of amethyst"
 /datum/export/material/plasma
 	cost = 200
 	k_elasticity = 0

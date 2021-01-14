@@ -1,0 +1,55 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/plating/grass,/area/template_noop)
+"c" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 9},/turf/open/floor/plating/grass,/area/template_noop)
+"d" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/open/floor/plating/grass,/area/template_noop)
+"e" = (/turf/closed/wall/mineral/wood,/area/house1)
+"f" = (/obj/structure/fence,/turf/open/floor/plating/grass,/area/template_noop)
+"g" = (/obj/item/flashlight/lamp,/turf/open/floor/wood,/area/house1)
+"h" = (/obj/structure/bookcase,/turf/open/floor/wood,/area/house1)
+"i" = (/turf/open/floor/wood,/area/house1)
+"j" = (/obj/structure/fireplace,/obj/effect/decal/cleanable/blood{icon_state = "trails_2"; dir = 1},/obj/effect/decal/cleanable/blood{icon_state = "gib4-old"; dir = 4},/obj/effect/decal/cleanable/blood/innards,/turf/open/floor/wood,/area/house1)
+"k" = (/obj/item/bedsheet,/obj/structure/bed,/obj/effect/decal/cleanable/blood{icon_state = "u_psycopath_l"},/turf/open/floor/wood,/area/house1)
+"l" = (/obj/effect/decal/cleanable/blood{icon_state = "trails_2"; dir = 1},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/turf/open/floor/wood,/area/house1)
+"m" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/turf/open/floor/wood,/area/house1)
+"n" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 1},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/turf/open/floor/wood,/area/house1)
+"o" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/turf/open/floor/wood,/area/house1)
+"p" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/house1)
+"q" = (/obj/effect/decal/cleanable/blood/footprints,/turf/open/floor/wood,/area/house1)
+"r" = (/obj/effect/decal/cleanable/blood{icon_state = "ltrails_1"; dir = 10},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 4},/turf/open/floor/wood,/area/house1)
+"s" = (/obj/effect/decal/cleanable/blood{icon_state = "trails_2"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/turf/open/floor/wood,/area/house1)
+"t" = (/obj/effect/decal/cleanable/blood{icon_state = "trails_2"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 1},/turf/open/floor/wood,/area/house1)
+"u" = (/obj/effect/decal/cleanable/blood{icon_state = "u_madman_l"},/turf/open/floor/wood,/area/house1)
+"v" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 4},/turf/open/floor/wood,/area/house1)
+"w" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 4},/turf/open/floor/wood,/area/house1)
+"x" = (/obj/effect/decal/cleanable/blood/footprints,/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/turf/open/floor/wood,/area/house1)
+"y" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 1},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 4},/turf/open/floor/wood,/area/house1)
+"z" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 4},/obj/effect/decal/cleanable/blood,/turf/open/floor/wood,/area/house1)
+"A" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/turf/open/floor/wood,/area/house1)
+"B" = (/obj/effect/decal/cleanable/blood/footprints,/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 8},/turf/open/floor/wood,/area/house1)
+"C" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood2"; dir = 1},/turf/open/floor/wood,/area/house1)
+"D" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/open/floor/plating/grass,/area/template_noop)
+"E" = (/obj/structure/fence/door,/turf/open/floor/plating/grass,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaabbbbbbaaaaaaaaaa
+aaaaabbbbbbbbbbbbaaaaaa
+aaaabbbbbbbbbbbbbbaaaaa
+aaabbbbbbbbbbbbbbbbaaaa
+aabbbbbbbbbbbbbbbbbbaaa
+aabcdddeeeeeeeeebbbbbaa
+abbfbbbeghijiikebbbbbaa
+abbfbbbeiiilmnoebbbbbaa
+abbfbbbpiiqrstuebbbbbaa
+abbfbbbeiivwxyzebbbbbaa
+abbfbbbeiiiABCiebbbbbaa
+aabDdEdeeeeeeeeebbbbaaa
+aabbbbbbbbbbbbbbbbbbaaa
+aabbbbbbbbbbbbbbbbbbaaa
+aaabbbbbbbbbbbbbbbbaaaa
+aaaabbbbbbbbbbbbbbaaaaa
+aaaaaabbbbbbbbbbaaaaaaa
+aaaaaaaabbbbbbaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}

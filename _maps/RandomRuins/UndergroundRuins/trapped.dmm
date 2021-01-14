@@ -1,0 +1,23 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/item/storage/backpack/duffelbag,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/item/bedsheet,/turf/open/floor/plating/asteroid,/area/template_noop)
+"e" = (/obj/structure/chair/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
+"f" = (/obj/effect/decal/remains/human,/turf/open/floor/plating/asteroid,/area/template_noop)
+"g" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 4},/turf/open/floor/plating/asteroid,/area/template_noop)
+"h" = (/obj/structure/bonfire/prelit,/turf/open/floor/plating/asteroid,/area/template_noop)
+"i" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 8},/turf/open/floor/plating/asteroid,/area/template_noop)
+"j" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 1},/turf/open/floor/plating/asteroid,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaabbbbaaa
+abbbbbbbba
+abcdefbbbb
+bbbbbbbbbb
+bbgbhbibbb
+bbbbbbbbbb
+bbbbjbbbba
+abbbbbbbaa
+aabbbbaaaa
+"}

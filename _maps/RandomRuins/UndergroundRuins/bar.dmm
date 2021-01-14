@@ -1,0 +1,18 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/obj/structure/barricade/wooden,/turf/template_noop,/area/template_noop)
+"c" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/template_noop)
+"d" = (/turf/closed/wall/mineral/wood/nonmetal,/area/template_noop)
+"e" = (/turf/open/floor/wood,/area/template_noop)
+
+(1,1,1) = {"
+aaabbaccdd
+aaaaaaeeec
+aaaaaeeeec
+aaaaaeeeec
+aaaeeeeeed
+aaeeeeeeec
+deeeeeeeed
+deeeeeeeea
+deeeeeeaaa
+ddcddaaaaa
+"}

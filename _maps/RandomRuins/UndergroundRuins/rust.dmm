@@ -1,0 +1,27 @@
+"a" = (/turf/closed/wall/rust,/area/template_noop)
+"b" = (/obj/item/chair,/obj/effect/decal/cleanable/dirt/dust,/turf/open/floor/wood,/area/template_noop)
+"c" = (/obj/effect/decal/cleanable/dirt/dust,/turf/open/floor/wood,/area/template_noop)
+"d" = (/obj/structure/table/wood,/obj/effect/decal/cleanable/dirt/dust,/turf/open/floor/wood,/area/template_noop)
+"e" = (/obj/structure/closet/crate/trashcart,/obj/effect/decal/cleanable/dirt/dust,/turf/open/floor/wood,/area/template_noop)
+"f" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/template_noop)
+"g" = (/obj/structure/dresser,/turf/open/floor/carpet,/area/template_noop)
+"h" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet,/area/template_noop)
+"i" = (/obj/structure/bed,/obj/item/bedsheet/black,/turf/open/floor/carpet,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaa
+abbcccdccccca
+abccbcdccccca
+acccecdddddda
+accbcccccccca
+fccccccccccca
+accccccccccca
+aaaaaaaaaafaa
+accccccccccca
+accccccccccca
+aafaafaafaafa
+aghaghaghagha
+ahhahhahhahha
+ahiahiahiahia
+aaaaaaaaaaaaa
+"}

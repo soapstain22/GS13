@@ -1,0 +1,18 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/wood,/area/template_noop)
+"c" = (/obj/structure/closet/crate/wooden/chest,/turf/open/floor/wood,/area/template_noop)
+
+(1,1,1) = {"
+aaaabaaaaaa
+aaaabaaaaaa
+aaaababaaaa
+aaaababaaaa
+aaaabbbaaaa
+aaaabbbaaaa
+aaaabbbaaaa
+aaaabbbaaaa
+bbbbbbbbbba
+abbbbcbbbbb
+bbbbbbbbbba
+aaaaaaaaaaa
+"}

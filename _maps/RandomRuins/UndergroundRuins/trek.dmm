@@ -1,0 +1,22 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/closed/wall/mineral/iron,/area/template_noop)
+"c" = (/turf/open/floor/plating,/area/template_noop)
+"d" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaabaa
+abcaaaabca
+abcaccdbcc
+abccccdccd
+abccccccdd
+bbbbbccbbb
+cccccccbaa
+cccccccbca
+bcccccccaa
+bcccccccca
+bccddccbaa
+adccdccbca
+ddcccccbca
+addddccbaa
+abbbbaabaa
+"}

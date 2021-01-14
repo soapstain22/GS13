@@ -95,7 +95,6 @@
 	resistance_flags = NONE
 	material_drop = /obj/item/stack/sheet/metal
 	material_drop_amount = 5
-
 //////////////////////////////////////////////
 
 /obj/structure/closet/crate/proc/ClaimCoffin(mob/living/claimant) // NOTE: This can be any "closet" that you are resting AND inside of.

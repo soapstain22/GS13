@@ -13,7 +13,15 @@
 	name = "stockroom airlock"
 	desc = "The boss man gets the best stuff. Always and forever."
 	puzzle_id = "factory2"
-
+/obj/machinery/door/keycard/level1
+	name = "airlock"
+	desc = "A locked door"
+	puzzle_id = "level1"
+/obj/item/keycard/level1
+	name = "keycard"
+	desc = "A keycard"
+	color = "#1272f0"
+	puzzle_id = "level1"
 /obj/item/keycard/stockroom
 	name = "stockroom keycard"
 	desc = "The Heck Brewzone, first rate brewing and packaging. This one is labeled 'stockroom'."

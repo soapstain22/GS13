@@ -1,0 +1,54 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/closed/wall/mineral/wood/nonmetal,/area/template_noop)
+"c" = (/turf/open/floor/wood,/area/template_noop)
+"d" = (/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/template_noop)
+"e" = (/mob/living/simple_animal/hostile/skeleton,/turf/open/floor/wood,/area/template_noop)
+"f" = (/obj/effect/spawner/lootdrop/snowdin/dungeonmid,/turf/open/floor/wood,/area/template_noop)
+"g" = (/obj/item/stack/ore/gold,/turf/open/floor/wood,/area/template_noop)
+"h" = (/obj/structure/table/wood,/obj/item/candle,/turf/open/floor/wood,/area/template_noop)
+"i" = (/obj/structure/table/wood,/obj/item/coin/gold,/turf/open/floor/wood,/area/template_noop)
+"j" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/template_noop)
+"k" = (/obj/structure/table/wood,/obj/item/trash/plate,/turf/open/floor/wood,/area/template_noop)
+"l" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/snowdin/dungeonlite,/turf/open/floor/wood,/area/template_noop)
+"m" = (/obj/item/coin/gold,/turf/open/floor/wood,/area/template_noop)
+"n" = (/obj/structure/table/wood,/obj/item/pickaxe,/turf/open/floor/wood,/area/template_noop)
+"o" = (/obj/item/clothing/suit/apron/overalls,/turf/open/floor/wood,/area/template_noop)
+"p" = (/obj/item/clothing/suit/apron/overalls,/obj/item/clothing/head/hardhat,/turf/open/floor/wood,/area/template_noop)
+"q" = (/obj/structure/table/wood,/obj/item/clothing/head/hardhat,/turf/open/floor/wood,/area/template_noop)
+"r" = (/obj/item/candle/infinite,/turf/open/floor/wood,/area/template_noop)
+"s" = (/obj/structure/ore_box,/turf/open/floor/wood,/area/template_noop)
+"t" = (/obj/structure/table/wood,/obj/item/clothing/suit/apron/overalls,/obj/item/clothing/head/hardhat,/turf/open/floor/wood,/area/template_noop)
+"u" = (/obj/item/flashlight/lantern,/obj/structure/table/wood,/turf/open/floor/wood,/area/template_noop)
+"v" = (/obj/structure/table/wood,/obj/item/reagent_containers/food/drinks/bottle/moonshine,/turf/open/floor/wood,/area/template_noop)
+"w" = (/obj/item/coin/silver,/turf/open/floor/wood,/area/template_noop)
+"x" = (/obj/item/reagent_containers/food/drinks/bottle/moonshine,/turf/open/floor/wood,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aabbbbbbcccbbbbbbaaaaaa
+aabojpjqcccccnnjbaaaaaa
+aacqcdccecccccfqbaaaaaa
+aacqceccccccecrvbbbbbbb
+aabpcoccccccccccccsscsb
+aabbbbbcccccccgccsscscb
+aaaaaabccccccccccedcccc
+aaaaaabchiqcnqjcccccccb
+aaaaaabcknlcjnjcccccccb
+aaaaaabcccccccccbbbbbbb
+aaaaaaccccccccwmbaaaaaa
+aaaaaaccrccccgccbaaaaaa
+aaaaaabcscxcccccbaaaaaa
+aaaaaabcjnjctjvcbaaaaaa
+aaaaaabcknjcnqqcbaaaaaa
+aaaaaabccccccccrcaaaaaa
+aabbbbbcccccmccccaaaaaa
+aabfceccccccxcccbaaaaaa
+aabcccceccccccccbaaaaaa
+aabccnjccccecfccbaaaaaa
+aabmeunccecccccrbaaaaaa
+aabccccecbbbbbbbbaaaaaa
+aabccrccrbaaaaaaaaaaaaa
+aabbbbcccbaaaaaaaaaaaaa
+aaaaabcccbaaaaaaaaaaaaa
+aaaaabcccbaaaaaaaaaaaaa
+"}

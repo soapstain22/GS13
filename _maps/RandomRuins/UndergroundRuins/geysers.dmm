@@ -1,0 +1,19 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/machinery/atmospherics/miner/geyser/hydrogen,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/machinery/atmospherics/miner/geyser/n2o,/turf/open/floor/plating/asteroid,/area/template_noop)
+"e" = (/obj/machinery/atmospherics/miner/geyser/plasma,/turf/open/floor/plating/asteroid,/area/template_noop)
+"f" = (/obj/machinery/atmospherics/miner/geyser,/turf/open/floor/plating/asteroid,/area/template_noop)
+
+(1,1,1) = {"
+aaaaabbaaa
+aabcbdbbea
+bfbbbbdbba
+abcbbbbbaa
+aabdbcbbcb
+abbbbbebbb
+bebbbbbbaa
+abebebbeba
+abbbbbbbba
+aaabbdbaaa
+"}

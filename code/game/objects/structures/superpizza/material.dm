@@ -124,12 +124,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/reagent_containers/glass/bottle/ = 4,
 		/obj/machinery/hydroponics/soil = 10,
 		/obj/item/trash/can = 1,
-		/obj/structure/barrel/bota = 5,
-		/obj/structure/barrel/tool = 3,
-		/obj/structure/barrel/mats = 8,
-		/obj/structure/barrel/parts = 5,
 		/obj/structure/barrel/shit = 4,
-		/obj/structure/barrel/circ = 7,
 		/obj/item/cigbutt/roach = 1,
 		/obj/structure/flora/ausbushes/reedbush = 8,
 		/obj/structure/flora/tree/jungle = 30,
@@ -175,15 +170,40 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/kitchen/knife = 4,
 		/obj/item/lighter/greyscale = 2,
 		/obj/item/storage/fancy/cigarettes/cigpack_uplift = 3,
-		/obj/item/storage/box/syringes = 4,
-		/obj/item/storage/box/lights/mixed = 4,
-		/obj/item/storage/box/ = 6,
-		/obj/item/storage/box/shipping = 5,
-		/obj/item/storage/box/cups = 4,
-		/obj/item/storage/box/beakers = 3,
+		/obj/item/storage/box/syringes = 1,
+		/obj/item/storage/box/lights/mixed = 1,
+		/obj/item/storage/box/ = 2,
+		/obj/item/storage/box/beakers = 1,
 		/obj/item/healthanalyzer = 1,
 		/obj/item/soap = 1,
 		/obj/item/pen = 1,
+		/obj/item/storage/belt/utility = 5,
+		/obj/item/hatchet = 2,
+		/obj/item/plant_analyzer = 4,
+		/obj/item/storage/bag/plants/portaseeder = 6,
+		/obj/item/reagent_containers/glass/bucket = 3,
+		/obj/item/storage/box/stockparts/basic = 1,
+		/obj/item/stock_parts/manipulator = 6,
+		/obj/item/stock_parts/micro_laser = 6,
+		/obj/item/stock_parts/matter_bin = 6,
+		/obj/item/stock_parts/scanning_module = 3,
+		/obj/item/stock_parts/electrolite = 2,
+		/obj/item/stock_parts/capacitor = 3,
+		/obj/item/clothing/gloves/color/yellow = 1,
+		/obj/item/stack/cable_coil = 2,
+		/obj/item/stock_parts/cell = 1,
+		/obj/item/pickaxe = 3,
+		/obj/item/shovel = 3,
+		/obj/item/stack/sticky_tape = 2,
+		/obj/item/pipe_dispenser = 1,
+		/obj/item/weldingtool/ = 3,
+		/obj/item/multitool = 3,
+	 	/obj/item/screwdriver = 3,
+		/obj/item/wirecutters = 3,
+		/obj/item/wrench = 3,
+		/obj/item/crowbar = 3,
+		/obj/item/plant_analyzer = 4,
+
 		)
 
 /obj/structure/barrel/deconstruct(disassembled = FALSE)
@@ -256,20 +276,9 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	lootdoubles = TRUE
 	lootcount = 3
 	loot = list(
-		/obj/item/pipe_dispenser = 1,
-		/obj/item/weldingtool/ = 15,
-		/obj/item/multitool = 15,
-	 	/obj/item/screwdriver = 15,
-		/obj/item/wirecutters = 15,
-		/obj/item/wrench = 15,
-		/obj/item/crowbar = 15,
+
 		/obj/item/hammer = 6,
-		/obj/item/clothing/gloves/color/yellow = 1,
-		/obj/item/stack/cable_coil = 15,
-		/obj/item/stock_parts/cell = 5,
-		/obj/item/pickaxe = 15,
-		/obj/item/shovel = 5,
-		/obj/item/stack/sticky_tape = 15,
+
 		/obj/item/construction/plumbing = 1,
 		)
 
@@ -289,7 +298,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 /obj/effect/spawner/lootdrop/mats
 	name = "barrelspawn"
 	lootdoubles = TRUE
-	lootcount = 12
+	lootcount = 1
 	loot = list(
 		/obj/item/stack/sheet/metal/ = 180,
 		/obj/item/stack/sheet/glass/ = 50,

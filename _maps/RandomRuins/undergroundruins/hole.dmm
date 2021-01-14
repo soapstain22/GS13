@@ -1,7 +1,7 @@
-"a" = (/turf/closed/mineral/random/no_caves,/area/surface/outdoors/underground/hole)
-"b" = (/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/hole)
-"c" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/hole)
-"d" = (/obj/structure/ladder/unbreakable/jacob,/turf/open/floor/plating/asteroid,/area/surface/outdoors/underground/hole)
+"a" = (/turf/closed/mineral/random/no_caves,/area/template_noop)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/structure/ladder/unbreakable/jacob,/turf/open/floor/plating/asteroid,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaa

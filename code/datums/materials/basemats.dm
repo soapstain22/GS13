@@ -24,6 +24,36 @@
 	color = "#ECECEC"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	value_per_unit = 0.0025
+/datum/material/amethyst
+	name = "amethyst"
+	desc = "shitty!"
+	color = "#9966CC"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.025
+/datum/material/topaz
+	name = "topaz"
+	desc = "its ok!"
+	color = "#FFC87C"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.05
+/datum/material/sapphire
+	name = "sapphire"
+	desc = "its nice!"
+	color = "#0F52BA"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.1
+/datum/material/emerald
+	name = "emerald"
+	desc = "its good!"
+	color = "#50C878"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.125
+/datum/material/ruby
+	name = "ruby"
+	desc = "its great!"
+	color = "#E0115F"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	value_per_unit = 0.175
 /datum/material/brass
 	name = "brass"
 	desc = "brown but shiny"

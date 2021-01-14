@@ -1,17 +1,24 @@
-"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/surface/outdoors/underground/ruin/abandoned)
-"b" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/abandoned)
-"c" = (/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/abandoned)
-"d" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/wood,/area/surface/outdoors/underground/ruin/abandoned)
+"a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/template_noop)
+"b" = (/obj/structure/bookcase/random,/turf/open/floor/carpet,/area/template_noop)
+"c" = (/turf/open/floor/wood,/area/template_noop)
+"d" = (/obj/item/bedsheet,/obj/structure/bed,/turf/open/floor/carpet,/area/template_noop)
+"e" = (/turf/open/floor/carpet,/area/template_noop)
+"f" = (/obj/structure/chair/comfy/beige,/turf/open/floor/wood,/area/template_noop)
+"g" = (/obj/item/kirbyplants/fullysynthetic,/turf/open/floor/wood,/area/template_noop)
+"h" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/template_noop)
+"i" = (/obj/structure/chair/comfy/beige{icon_state = "comfychair"; dir = 8},/turf/open/floor/wood,/area/template_noop)
+"j" = (/obj/structure/table,/turf/open/floor/carpet,/area/template_noop)
+"k" = (/obj/structure/sink/kitchen{icon_state = "sink_alt"; dir = 4; pixel_x = -9},/turf/open/floor/carpet,/area/template_noop)
 
 (1,1,1) = {"
-aaabbabbaa
-accccccccb
-accccccccb
-aaaaaccccb
-accccdccca
-cccccccccb
-acccccccca
-acccccccca
-acccccccca
-aabaaaccca
+aaaaaaaaaa
+abdeaccfga
+aeeehcccia
+ajjjacccca
+aaaaahaaaa
+accchcccca
+akeeacccca
+ajeeacccca
+ajeeacccca
+aaaaaaacaa
 "}
