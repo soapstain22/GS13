@@ -1,6 +1,13 @@
 /datum/movespeed_modifier/obesity
 	multiplicative_slowdown = 1.5
-
+/datum/movespeed_modifier/weightless
+	multiplicative_slowdown = 0.9
+/datum/movespeed_modifier/light
+	multiplicative_slowdown = 1.1
+/datum/movespeed_modifier/heavy
+	multiplicative_slowdown = 1.3
+/datum/movespeed_modifier/med
+	multiplicative_slowdown = 1.2
 /datum/movespeed_modifier/monkey_reagent_speedmod
 	variable = TRUE
 

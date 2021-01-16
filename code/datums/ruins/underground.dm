@@ -67,3 +67,46 @@
 	description = "vampire"
 	suffix = "vampire.dmm"
 	allow_duplicates = TRUE
+/datum/map_template/ruin/underground/1
+	name = "1"
+	id = "1"
+	description = "1"
+	suffix = "cave1.dmm"
+	allow_duplicates = TRUE
+/datum/map_template/ruin/underground/2
+	name = "2"
+	id = "2"
+	description = "2"
+	suffix = "cave2.dmm"
+	allow_duplicates = TRUE
+/datum/map_template/ruin/underground/3
+	name = "3"
+	id = "3"
+	description = "3"
+	suffix = "cave3.dmm"
+	allow_duplicates = TRUE
+/datum/map_template/ruin/underground/4
+	name = "4"
+	id = "4"
+	description = "4"
+	suffix = "cave4.dmm"
+/datum/map_template/ruin/underground/5
+	name = "5"
+	id = "5"
+	description = "5"
+	suffix = "cave5.dmm"
+/datum/map_template/ruin/underground/6
+	name = "6"
+	id = "6"
+	description = "6"
+	suffix = "1.dmm"
+/datum/map_template/ruin/underground/7
+	name = "7"
+	id = "7"
+	description = "7"
+	suffix = "1.dmm"
+/datum/map_template/ruin/underground/8
+	name = "8"
+	id = "8"
+	description = "8"
+	suffix = "trek.dmm"

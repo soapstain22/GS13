@@ -37,6 +37,8 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("tracker electronics", /obj/item/electronics/tracker, 1, time = 18),
 	new/datum/stack_recipe("jacobs ladder", /obj/item/jacobs_ladder, 50, time = 50),
 	new/datum/stack_recipe("scrubber", /obj/machinery/portable_atmospherics/scrubber, 20, time = 50),
+	new/datum/stack_recipe("pump", /obj/machinery/portable_atmospherics/pump, 20, time = 50),
+	new/datum/stack_recipe("stasis machine", /obj/machinery/stasis, 20, time = 50),
 	))
 // this is everything else
 /obj/item/melee/stick
@@ -135,10 +137,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/reagent_containers/food/drinks/waterbottle/empty = 1,
 		/obj/effect/landmark/carpspawn = 1,
 		/obj/structure/flora/bush = 3,
-		/obj/structure/spawner/skeleton = 0.1,
 		/mob/living/simple_animal/chicken = 1,
-		/mob/living/simple_animal/cow = 1,
-
 		"" = 820
 		)
 /obj/effect/spawner/lootdrop/oreslmao
@@ -177,16 +176,16 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/healthanalyzer = 1,
 		/obj/item/soap = 1,
 		/obj/item/pen = 1,
-		/obj/item/storage/belt/utility = 5,
+		/obj/item/storage/belt/utility = 3,
 		/obj/item/hatchet = 2,
 		/obj/item/plant_analyzer = 4,
-		/obj/item/storage/bag/plants/portaseeder = 6,
+		/obj/item/storage/bag/plants/portaseeder = 3,
 		/obj/item/reagent_containers/glass/bucket = 3,
 		/obj/item/storage/box/stockparts/basic = 1,
 		/obj/item/stock_parts/manipulator = 6,
 		/obj/item/stock_parts/micro_laser = 6,
 		/obj/item/stock_parts/matter_bin = 6,
-		/obj/item/stock_parts/scanning_module = 3,
+		/obj/item/stock_parts/scanning_module = 6,
 		/obj/item/stock_parts/electrolite = 2,
 		/obj/item/stock_parts/capacitor = 3,
 		/obj/item/clothing/gloves/color/yellow = 1,
@@ -203,7 +202,10 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/wrench = 3,
 		/obj/item/crowbar = 3,
 		/obj/item/plant_analyzer = 4,
-
+		/obj/item/storage/part_replacer = 1,
+		/obj/item/throwing_star = 1,
+		/obj/item/flashlight/flare/torch = 1,
+		/obj/item/firing_pin/ = 1,
 		)
 
 /obj/structure/barrel/deconstruct(disassembled = FALSE)
@@ -346,6 +348,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/circuitboard/computer/arcade/battle = 15,
 		/obj/item/circuitboard/computer/arcade/orion_trail = 15,
 		/obj/item/circuitboard/machine/circulator = 15,
+
 		)
 /obj/structure/barrel/circ
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
@@ -358,40 +361,38 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 /obj/structure/barrel/circ/deconstruct(disassembled = FALSE)
 	new /obj/effect/spawner/lootdrop/circ/ (loc, 1)
 	qdel(src)
-/obj/effect/spawner/lootdrop/treasure
-	name = "barrelspawn"
-	lootdoubles = TRUE
-	lootcount = 3
-	loot = list(
-		/obj/item/stack/medical/suture = 15,
-		/obj/item/stack/medical/mesh = 15,
-		/obj/item/coin/gold = 10,
-		)
 /obj/effect/spawner/lootdrop/treasureloot
 	name = "barrelspawn"
 	lootdoubles = TRUE
-	lootcount = 3
+	lootcount = 1
 	loot = list(
-		/obj/item/katana = 15,
+		/obj/item/katana = 1,
+		/obj/item/clothing/suit/armor/vest = 3,
+		/obj/item/stack/medical/suture = 15,
+		/obj/item/stack/medical/mesh = 15,
+		/obj/item/ammo_box/a357 = 3,
+		/obj/item/ammo_box/magazine/m9mm = 3,
+		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/chainsaw = 2,
+		/obj/item/claymore/weak = 1,
+		/obj/item/gun/medbeam/ = 1,
+		/obj/item/gun/syringe = 3,
+		/obj/item/clothing/suit/jacket/miljacket = 5,
+		/obj/item/clothing/head/thenam = 5,
+		/obj/item/clothing/under/pants/camo = 5
 		)
 /obj/structure/closet/crate/wooden/chest
 	name = "chest"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "lootchest"
-/obj/effect/spawner/lootdrop/treasure/
-	lootdoubles = TRUE
-	lootcount = 3
-	loot = list(
-		/obj/effect/spawner/lootdrop/treasure = 15,
-		)
 
 /obj/structure/closet/crate/wooden/chest/PopulateContents()
 	..()
-	for(var/i in 1 to 12)
-		new /obj/item/coin/gold(src, 1, FALSE)
+	for(var/i in 1 to 3)
+		new /obj/effect/spawner/lootdrop/treasureloot(src, 1, FALSE)
 /obj/machinery/atmospherics/miner/geyser
-	max_ext_kpa = 110
-	spawn_mol = 5
+	max_ext_kpa = 130
+	spawn_mol = 9
 	idle_power_usage = 0
 	active_power_usage = 0
 	desc = "Vents gasses from the planet's mantle"

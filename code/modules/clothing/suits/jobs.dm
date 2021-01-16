@@ -90,6 +90,17 @@
 	blood_overlay_type = "armor"
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
 	resistance_flags = NONE
+	var/carrytrait = TRAIT_QUICK_BUILD
+	armor = list("melee" = 5, "bullet" = 4, "laser" = 3, "energy" = 4, "bomb" = 3, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 5)
+
+/obj/item/clothing/suit/hazardvest/equipped(mob/user, slot)
+	..()
+	if(slot == ITEM_SLOT_OCLOTHING)
+		ADD_TRAIT(user, carrytrait, CLOTHING_TRAIT)
+
+/obj/item/clothing/suit/hazardvest/dropped(mob/user)
+	..()
+	REMOVE_TRAIT(user, carrytrait, CLOTHING_TRAIT)
 
 //Lawyer
 /obj/item/clothing/suit/toggle/lawyer

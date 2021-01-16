@@ -1,24 +1,14 @@
 "a" = (/turf/closed/wall/mineral/iron,/area/template_noop)
 "b" = (/turf/open/floor/plasteel/checker,/area/template_noop)
-"c" = (/obj/item/candle/infinite{pixel_x = 11; pixel_y = 5},/turf/open/floor/plasteel/checker,/area/template_noop)
-"d" = (/obj/item/candle/infinite{pixel_x = 7; pixel_y = -6},/turf/open/floor/plasteel/checker,/area/template_noop)
-"e" = (/obj/item/candle/infinite{pixel_x = -6; pixel_y = 6},/obj/item/candle/infinite{pixel_x = 4; pixel_y = -2},/turf/open/floor/plasteel/checker,/area/template_noop)
-"f" = (/obj/item/candle/infinite{pixel_x = 6; pixel_y = 5},/obj/item/candle/infinite{pixel_x = 6; pixel_y = 5},/obj/item/candle/infinite{pixel_x = -5; pixel_y = -3},/turf/open/floor/plasteel/checker,/area/template_noop)
-"g" = (/obj/item/candle/infinite{pixel_x = -5; pixel_y = 8},/obj/item/candle/infinite{pixel_x = 4; pixel_y = -2},/turf/open/floor/plasteel/checker,/area/template_noop)
-"h" = (/obj/structure/closet/crate/coffin/metalcoffin,/turf/open/floor/plasteel/checker,/area/template_noop)
-"i" = (/obj/item/candle/infinite{pixel_x = 11; pixel_y = 13},/obj/item/candle/infinite,/turf/open/floor/plasteel/checker,/area/template_noop)
-"j" = (/obj/item/candle/infinite{pixel_x = -5; pixel_y = -3},/turf/open/floor/plasteel/checker,/area/template_noop)
-"k" = (/obj/item/candle/infinite{pixel_x = 6; pixel_y = 9},/turf/open/floor/plasteel/checker,/area/template_noop)
-"l" = (/obj/item/candle/infinite{pixel_x = 1; pixel_y = 6},/turf/open/floor/plasteel/checker,/area/template_noop)
-"m" = (/obj/item/candle/infinite{pixel_x = -9; pixel_y = -4},/obj/item/candle/infinite{pixel_x = 5; pixel_y = 5},/turf/open/floor/plasteel/checker,/area/template_noop)
-"n" = (/obj/item/candle/infinite{pixel_x = -6; pixel_y = 5},/obj/item/candle/infinite{pixel_x = 3; pixel_y = -5},/turf/open/floor/plasteel/checker,/area/template_noop)
+"c" = (/turf/open/floor/circuit,/area/template_noop)
+"d" = (/obj/machinery/anomalous_crystal/refresher,/turf/open/floor/circuit/red/anim,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaa
 abbbbbbba
-abcdefbba
-bbbghijbb
-abklmnbba
+abbcccbba
+bbbcdcbbb
+abbcccbba
 abbbbbbba
 aaaaaaaaa
 "}

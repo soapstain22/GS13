@@ -10,16 +10,17 @@
 "j" = (/obj/structure/table/wood,/obj/item/flashlight/lantern,/turf/open/floor/plastic,/area/laundry)
 "k" = (/obj/structure/table/wood,/obj/item/keycard/level1,/turf/open/floor/plastic,/area/laundry)
 "l" = (/obj/machinery/light/small,/turf/open/floor/plastic,/area/laundry)
+"m" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/open/floor/plastic,/area/laundry)
 
 (1,1,1) = {"
 aaaaaaaaaa
 abbcbbdefa
-aeeeeeeeea
+aeeeeemeea
 ageeeeeeha
 abbbbbeeea
 aeeeeeeeea
 ageijkeeha
-aeeeeeeeea
+ameeeeemea
 aeeleeleea
 aaaaaaaeaa
 "}

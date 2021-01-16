@@ -377,10 +377,12 @@
 
 
 /obj/item/claymore/weak
-	desc = "This one is rusted."
+	desc = "Very Wieldy."
 	force = 30
 	armour_penetration = 15
-
+/obj/item/claymore/weak/attack(mob/living/target, mob/living/user)
+	user.changeNext_move(CLICK_CD_MELEE * 1.3)
+	. = ..()
 /obj/item/claymore/weak/ceremonial
 	desc = "A rusted claymore, once at the heart of a powerful scottish clan struck down and oppressed by tyrants, it has been passed down the ages as a symbol of defiance."
 	force = 15

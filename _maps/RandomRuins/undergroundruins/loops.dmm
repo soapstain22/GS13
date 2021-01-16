@@ -3,7 +3,6 @@
 "c" = (/turf/open/floor/plating/asteroid,/area/template_noop)
 "d" = (/turf/closed/mineral/random,/area/template_noop)
 "e" = (/obj/item/flashlight/lantern,/turf/open/floor/plating/asteroid,/area/template_noop)
-"f" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/plating/asteroid,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaabccccccccccaaaaaaaaaa
@@ -34,7 +33,7 @@ aaaaacccddcccccccccccdddddddddddddddcccc
 aaaaaccccccccccdddccddddddddddddddddccbc
 aaaaaacccccccddddccccddddddddddddddddccc
 aaaaaacbcccccddddcccccccccdddddddddddccc
-aaaaaacccccdddddcfcbcccccccccccdddddcccc
+aaaaaacccccdddddcccbcccccccccccdddddcccc
 aaaaaaaccccddddcccccccbccccccccdddddcccc
 aaaaaaacccddddccccaaccccccccccbcddddcccc
 aaaaaaccccdddccccaaaaaaaaaacccccdddccccc

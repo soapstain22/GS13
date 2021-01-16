@@ -402,7 +402,7 @@
 	resistance_flags = NONE
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter, /obj/item/gun/ballistic/automatic/pistol, /obj/item/gun/ballistic/revolver, /obj/item/gun/ballistic/revolver/detective, /obj/item/radio)
-
+	armor = list("melee" = 3, "bullet" = 9, "laser" = 5,"energy" = 3, "bomb" = 0, "bio" = 30, "rad" = 0, "fire" = 0, "acid" = 0)
 /obj/item/clothing/suit/jacket/leather/overcoat
 	name = "leather overcoat"
 	desc = "That's a damn fine coat."
@@ -432,7 +432,8 @@
 	icon_state = "militaryjacket"
 	inhand_icon_state = "militaryjacket"
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter, /obj/item/gun/ballistic/automatic/pistol, /obj/item/gun/ballistic/revolver, /obj/item/radio)
-
+	armor = list("melee" = 6, "bullet" = 12, "laser" = 10,"energy" = 0, "bomb" = 14, "bio" = 30, "rad" = 0, "fire" = 0, "acid" = 0)
+	slowdown = 0.05
 /obj/item/clothing/suit/jacket/letterman
 	name = "letterman jacket"
 	desc = "A classic brown letterman jacket. Looks pretty hot and heavy."

@@ -2,21 +2,23 @@
 "b" = (/turf/closed/wall/mineral/iron,/area/template_noop)
 "c" = (/turf/open/floor/plating,/area/template_noop)
 "d" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"e" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/open/floor/plating,/area/template_noop)
+"f" = (/obj/structure/closet/crate/wooden/chest,/turf/open/floor/plating,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaabaa
 abcaaaabca
 abcaccdbcc
-abccccdccd
-abccccccdd
+abecccdccd
+abccccecdd
 bbbbbccbbb
 cccccccbaa
 cccccccbca
-bcccccccaa
-bcccccccca
+beccfeccaa
+bcceccccca
 bccddccbaa
 adccdccbca
 ddcccccbca
-addddccbaa
+addddcebaa
 abbbbaabaa
 "}

@@ -293,7 +293,7 @@
 
 /obj/machinery/computer/piratepad_control/ui_data(mob/user)
 	var/list/data = list()
-	data["points"] = points
+	data["total earned"] = points
 	data["pad"] = pad ? TRUE : FALSE
 	data["sending"] = sending
 	data["status_report"] = status_report
@@ -368,7 +368,7 @@
 		playsound(loc, 'sound/machines/wewewew.ogg', 70, TRUE)
 
 	points += value
-
+	new /obj/item/holochip(drop_location(), value)
 	if(!value)
 		status_report += "Nothing"
 

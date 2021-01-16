@@ -4,7 +4,7 @@
 "d" = (/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/template_noop)
 "e" = (/mob/living/simple_animal/hostile/skeleton,/turf/open/floor/wood,/area/template_noop)
 "f" = (/obj/effect/spawner/lootdrop/snowdin/dungeonmid,/turf/open/floor/wood,/area/template_noop)
-"g" = (/obj/item/stack/ore/gold,/turf/open/floor/wood,/area/template_noop)
+"g" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/open/floor/wood,/area/template_noop)
 "h" = (/obj/structure/table/wood,/obj/item/candle,/turf/open/floor/wood,/area/template_noop)
 "i" = (/obj/structure/table/wood,/obj/item/coin/gold,/turf/open/floor/wood,/area/template_noop)
 "j" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/template_noop)
@@ -18,7 +18,7 @@
 "r" = (/obj/item/candle/infinite,/turf/open/floor/wood,/area/template_noop)
 "s" = (/obj/structure/table/wood,/obj/item/reagent_containers/food/drinks/bottle/moonshine,/turf/open/floor/wood,/area/template_noop)
 "t" = (/obj/structure/ore_box,/turf/open/floor/wood,/area/template_noop)
-"u" = (/obj/item/coin/silver,/turf/open/floor/wood,/area/template_noop)
+"u" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/barrel/shit,/turf/open/floor/wood,/area/template_noop)
 "v" = (/obj/item/reagent_containers/food/drinks/bottle/moonshine,/turf/open/floor/wood,/area/template_noop)
 "w" = (/obj/structure/table/wood,/obj/item/clothing/suit/apron/overalls,/obj/item/clothing/head/hardhat,/turf/open/floor/wood,/area/template_noop)
 "x" = (/obj/item/flashlight/lantern,/obj/structure/table/wood,/turf/open/floor/wood,/area/template_noop)
@@ -27,28 +27,28 @@
 aaaaaaaaaaaaaaaaaaaaaaa
 aabbbbbbcccbbbbbbaaaaaa
 aabnjojpcccccqqjbaaaaaa
-aacpcdccecccccfpbaaaaaa
+aacpcdccecgcccfpbaaaaaa
 aacpceccccccecrsbbbbbbb
-aabocnccccccccccccttctb
+aabocnccccgcccccccttctb
 aabbbbbcccccccgccttctcb
 aaaaaabccccccccccedcccc
-aaaaaabchipcqpjcccccccb
-aaaaaabckqlcjqjcccccccb
+aaaaaabchipcqpjcccccgcb
+aaaaaabcuqlcjqjcccccccb
 aaaaaabcccccccccbbbbbbb
-aaaaaaccccccccumbaaaaaa
-aaaaaaccrccccgccbaaaaaa
+aaaaaacccccgccccbaaaaaa
+aaaaaaccrcccccccbaaaaaa
 aaaaaabctcvcccccbaaaaaa
 aaaaaabcjqjcwjscbaaaaaa
 aaaaaabckqjcqppcbaaaaaa
-aaaaaabccccccccrcaaaaaa
+aaaaaabgcccccccrcaaaaaa
 aabbbbbcccccmccccaaaaaa
-aabfceccccccvcccbaaaaaa
+aabcceccccccvcccbaaaaaa
 aabcccceccccccccbaaaaaa
-aabccqjccccecfccbaaaaaa
-aabmexqccecccccrbaaaaaa
+aabccqjccccegcccbaaaaaa
+aabmexqcceccccgrbaaaaaa
 aabccccecbbbbbbbbaaaaaa
 aabccrccrbaaaaaaaaaaaaa
 aabbbbcccbaaaaaaaaaaaaa
-aaaaabcccbaaaaaaaaaaaaa
+aaaaabccgbaaaaaaaaaaaaa
 aaaaabcccbaaaaaaaaaaaaa
 "}

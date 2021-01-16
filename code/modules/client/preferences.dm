@@ -112,7 +112,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	///Should we be in the widescreen mode set by the config?
 	var/widescreenpref = TRUE
 	///What size should pixels be displayed as? 0 is strech to fit
-	var/pixel_size = 1.5
+	var/pixel_size = 0
 	///What scaling method should we use? Distort means nearest neighbor
 	var/scaling_method = SCALING_METHOD_NORMAL
 	var/uplink_spawn_loc = UPLINK_PDA
