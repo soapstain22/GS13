@@ -2,8 +2,8 @@
 	name = "Mass Hallucination"
 	typepath = /datum/round_event/mass_hallucination
 	weight = 10
-	max_occurrences = 2
-	min_players = 1
+	max_occurrences = 0
+	min_players = 0
 
 /datum/round_event/mass_hallucination
 	fakeable = FALSE

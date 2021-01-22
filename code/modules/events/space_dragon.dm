@@ -1,10 +1,10 @@
 /datum/round_event_control/space_dragon
 	name = "Spawn Space Dragon"
 	typepath = /datum/round_event/ghost_role/space_dragon
-	max_occurrences = 1
+	max_occurrences = 5
 	weight = 5
-	earliest_start = 35 MINUTES
-	min_players = 20
+	earliest_start = 20 MINUTES
+	min_players = 5
 
 /datum/round_event/ghost_role/space_dragon
 	minimum_required = 1

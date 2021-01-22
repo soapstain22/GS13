@@ -48,7 +48,7 @@
 	time = 15
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/strobeshield
 	name = "Strobe Shield"
 	result = /obj/item/shield/riot/flash
@@ -58,7 +58,7 @@
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/strobeshield/New()
 	..()
 	blacklist |= subtypesof(/obj/item/shield/riot/)
@@ -72,7 +72,7 @@
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/stunprod
 	name = "Stunprod"
 	result = /obj/item/melee/baton/cattleprod
@@ -82,7 +82,7 @@
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/teleprod
 	name = "Teleprod"
 	result = /obj/item/melee/baton/cattleprod/teleprod
@@ -93,7 +93,7 @@
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/bola
 	name = "Bola"
 	result = /obj/item/restraints/legcuffs/bola
@@ -102,7 +102,7 @@
 	time = 20//15 faster than crafting them by hand!
 	category= CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/gonbola
 	name = "Gonbola"
 	result = /obj/item/restraints/legcuffs/bola/gonbola
@@ -112,7 +112,7 @@
 	time = 40
 	category= CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/tailclub
 	name = "Tail Club"
 	result = /obj/item/tailclub
@@ -121,7 +121,7 @@
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/tailwhip
 	name = "Liz O' Nine Tails"
 	result = /obj/item/melee/chainofcommand/tailwhip
@@ -338,7 +338,7 @@
 	time = 100
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
+	always_availible = TRUE
 /datum/crafting_recipe/chainsaw
 	name = "Chainsaw"
 	result = /obj/item/chainsaw
@@ -400,7 +400,7 @@
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/rods = 10)
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/scooter
 	name = "Scooter"
 	result = /obj/vehicle/ridden/scooter
@@ -408,7 +408,7 @@
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/rods = 12)
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/wheelchair
 	name = "Wheelchair"
 	result = /obj/vehicle/ridden/wheelchair
@@ -416,7 +416,7 @@
 				/obj/item/stack/rods = 6)
 	time = 100
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/motorized_wheelchair
 	name = "Motorized Wheelchair"
 	result = /obj/vehicle/ridden/wheelchair/motorized
@@ -429,7 +429,7 @@
 	tools = list(TOOL_WELDER, TOOL_SCREWDRIVER, TOOL_WRENCH)
 	time = 200
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/mousetrap
 	name = "Mouse Trap"
 	result = /obj/item/assembly/mousetrap
@@ -455,7 +455,7 @@
 		/obj/item/restraints/handcuffs/cable = 1
 	)
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/paperframes
 	name = "Paper Frames"
 	result = /obj/item/stack/sheet/paperframes/five
@@ -501,7 +501,7 @@
 	reqs = list(/obj/item/bodypart/r_arm/robot = 1, /obj/item/clothing/gloves/boxing = 1)
 	result = /obj/item/extendohand
 	category = CAT_MISC
-
+	always_availible = TRUE
 /datum/crafting_recipe/chemical_payload
 	name = "Chemical Payload (C4)"
 	result = /obj/item/bombcore/chemical
@@ -534,7 +534,7 @@
 	time = 30
 	reqs = list(/obj/item/stack/sheet/bone = 6)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/bonetalisman
 	name = "Bone Talisman"
 	result = /obj/item/clothing/accessory/talisman
@@ -542,7 +542,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 2,
 				/obj/item/stack/sheet/sinew = 1)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/bonecodpiece
 	name = "Skull Codpiece"
 	result = /obj/item/clothing/accessory/skullcodpiece
@@ -550,7 +550,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 2,
 				/obj/item/stack/sheet/animalhide/goliath_hide = 1)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/skilt
 	name = "Sinew Kilt"
 	result = /obj/item/clothing/accessory/skilt
@@ -566,14 +566,14 @@
 	reqs = list(/obj/item/stack/sheet/bone = 2,
 				/obj/item/stack/sheet/sinew = 1)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/skullhelm
 	name = "Skull Helmet"
 	result = /obj/item/clothing/head/helmet/skull
 	time = 30
 	reqs = list(/obj/item/stack/sheet/bone = 4)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/goliathcloak
 	name = "Goliath Cloak"
 	result = /obj/item/clothing/suit/hooded/cloak/goliath
@@ -582,7 +582,7 @@
 				/obj/item/stack/sheet/sinew = 2,
 				/obj/item/stack/sheet/animalhide/goliath_hide = 2) //it takes 4 goliaths to make 1 cloak if the plates are skinned
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/drakecloak
 	name = "Ash Drake Armour"
 	result = /obj/item/clothing/suit/hooded/cloak/drake
@@ -591,7 +591,7 @@
 				/obj/item/stack/sheet/sinew = 2,
 				/obj/item/stack/sheet/animalhide/ashdrake = 5)
 	category = CAT_PRIMAL
-
+	always_availible = TRUE
 /datum/crafting_recipe/firebrand
 	name = "Firebrand"
 	result = /obj/item/match/firebrand

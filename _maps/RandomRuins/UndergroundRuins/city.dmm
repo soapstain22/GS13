@@ -6,41 +6,47 @@
 "f" = (/obj/structure/punji_sticks,/turf/open/space/basic,/area/space)
 "g" = (/mob/living/simple_animal/hostile/retaliate/ghost,/turf/open/space/basic,/area/space)
 "h" = (/obj/effect/sliding_puzzle{reward_type = "/obj/item/granter/spell/charge"},/turf/open/space/basic,/area/space)
+"i" = (/obj/item/kinetic_crusher,/turf/open/space/basic,/area/space)
+"j" = (/obj/item/flashlight/lantern,/turf/open/space/basic,/area/space)
+"k" = (/obj/item/pickaxe/silver,/turf/open/space/basic,/area/space)
+"l" = (/obj/effect/mob_spawn/human/miner/explorer,/turf/open/space/basic,/area/space)
+"m" = (/obj/item/necromantic_stone,/turf/open/space/basic,/area/space)
+"n" = (/obj/structure/headpike,/turf/open/space/basic,/area/space)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaa
 aaaabaaaabaaaaaaaaaaaaaaaaaaaaaaaaabaaaa
 aaaabaaaabaaaaaaaaaaaaaaaaaaaaaaaaabaaaa
-aaaabaaaabbbbcbbbbaaaaaaaaaaaaaaaaabaaaa
-bbbbbaaaabaaaaaaabaaaaaaaaaaaaaaaaabbbbb
-baaacaaaabaaaaaaabaaaaaaaaaaaaaaaaaaaaab
+aaaabaijabbbbcbbbbaaaaaaaaaaaaaaaaabaaaa
+bbbbbaklabaaaaaaabaaaaaaaaaaaaaaaaabbbbb
+baaacaaaabaaaaaaabaaaaaaaaamaaaaaaaaaaab
 bababbbbbbaaaaaaabaaaaaaaaaaaaaaaaaaaaab
 babaabaaabaaahaaabaaaaaaaaaaaaaaaaaaaaab
 babdabababaaaaaaabaaaaaaaaaaaaaaaaaaaaab
 babdabababaaaaaaabaaaaaaaaaaaaaaaaaaaaab
-babdababaaaaaaaaabaaaaaaaaaaaaaaaaaaaaab
+babdabjbaajaaaaaabaaaaaaaaaaaaaaaaaaaaab
 babdaaabebbbbbbbbbaaaaaaaaaaaaaaaaaaaaab
-babbbbbbbbaaaaaaacaaaaaaaaaaaaaaaaaaaaab
+babbbbbbbbajaaeaacaaaaaaaaaaaaaaaaaaaaab
 baaaaaaaacaaaaaaabaaaaabaaaaaaaaaaaaaaab
-bbbbbbbbbbaaaaaaabaaaaabaaaaaaaaaaaaaaab
-beaeaeaaaaaaaabbbbaaaaabaaaaaaaaaaaaaaab
-beaaaeaeaaaaaabaaaaaaaabaaaaaaaaaaaaaaab
-beaeaaaeaaaaaabaaaaaaaaaaaaaaaaaaaaaaaab
-bfaffaaaabbaabbaaaaaaaaaaaaaaaaaaaaaaaab
-baaaabeaabaaaaaaabbbbbbaaaaaaaaaaaaaaaab
-bffafbeeabaaaaaaabaaaabaaaaaaaaaaaaaaaab
-baaaabaaabaaaabbbbaaaabaaaaaaaaaaaaaaaab
-bafffbaeabgaeaaaaaaaaaeaaaaaaaaaaaaaaaab
-baaaabaaabaaaaaaaeaaaaaaaaaaaaaaaaaaaaab
-bffafbbaebaaaabbbbaaaabbbbaaaaaaaaaaaaab
-baaaaaaaabaeaaaaabaaaabaaaaaaaaaaaaaaaab
-bfafafeaebaagaaaabaaaabaeaaaaaaaaaaaaaab
-baafaaaaebbbbbbaabaaaabaaaaaaaaaaaaaaaab
-bafafaeaabaaaaaaabaaaabaeaaaaaaaaaaaaaab
-bbbbbbeeabaeaaaaabaaaabaaaaaaaaaaaaaaaab
-aaaaabaaabaaabbbbbaaaabbbbbaaaaaaabbbbbb
-aaaaabaeaeaaabaaaaaaaaaaaabaaaaaaabaaaaa
-aaaaabeaaaaaabaaaaaaaaaaaabaaaaaaabaaaaa
+bbbbbbbbbbaaeaaejbaaaaabaaaaaaaaaaaaaaab
+beaeaeaaaneaanbbbbaaaaabaaaaaaaaaaaaaaab
+beaaaeaeaaaaaabaaaaaaaabbbbbbbbaaaaaaaab
+beaeaaaeaanaanbaaaaaaaaaaaaaaabaaabaaaab
+bfaffaaaabbaabbjaaaeaaaaajaaaabaaabaaaab
+baaaabeaabaaaaaaabbbbbbaaaaaaaabaabaaaab
+bffafbeeabaaaaaaabaaaabaaaaaaaaababaaaab
+baaaabaaabaaaabbbbjaajbaaaeaaaaaabbaaaab
+bafffbaeabgaeaaaaaaaaaeaaaaabaaaaabaaaab
+baaaabaaabaaaaaaaeaaaaaaaaaabbaaaaaaaaab
+bffafbbaebaaaabbbbaaaabbbbaababaaaaaaaab
+baaaaaaaabaeaaaaabaaaabaaaaabaabaaaaaaab
+bfafafeaebaagaajabaeeabaeaaabaaabbbaaaab
+baafaaaaebbbbbbaabaaaababbbbbaeaaaaaaaab
+bafafaeaabaaaaaaabeaaebaeaaabaabaaaaaaab
+bbbbbbeeabaeaaaaabaaaabaaaaabaabaaaaaaab
+aaaaabaaabaaabbbbbaaaabbbbbabaebaabbbbbb
+aaaaabaeaeaaabaaaaaaaaaaaabaeaabaabaaaaa
+aaaaabeaaaaaabaaaaaaaaaaaabaaaabaabaaaaa
 aaaaabbbbbbbbbaaaaaaaaaaaabbbbbbbbbaaaaa
 "}

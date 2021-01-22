@@ -1,0 +1,27 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/closed/wall/mineral/iron,/area/maintenance/department/science/central)
+"c" = (/obj/machinery/rnd/destructive_analyzer,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"d" = (/obj/machinery/rnd/experimentor,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"e" = (/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"f" = (/obj/machinery/computer/rdconsole/core,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"g" = (/turf/open/floor/circuit/telecomms/mainframe,/area/maintenance/department/science/central)
+"h" = (/mob/living/simple_animal/imp,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"i" = (/obj/machinery/power/apc/auto_name/east,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"j" = (/obj/machinery/rnd/server,/turf/open/floor/circuit/telecomms/mainframe,/area/maintenance/department/science/central)
+"k" = (/obj/machinery/door/airlock/research/glass,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"l" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"m" = (/mob/living/simple_animal/slaughter,/turf/open/floor/plasteel,/area/maintenance/department/science/central)
+"n" = (/obj/machinery/door/airlock/research,/turf/template_noop,/area/maintenance/department/science/central)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaabbbbbba
+bbbbcdefba
+bggbheeiba
+bjgkeehlba
+bggbemeeba
+bbbbeeeeba
+aaabheehba
+aaabbbnbba
+aaaaaaaaaa
+"}

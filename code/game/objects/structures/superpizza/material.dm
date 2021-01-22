@@ -18,7 +18,13 @@
 	hitsound = 'sound/weapons/gun/general/grenade_launch.ogg'
 	embedding = list()
 	novariants = TRUE
-
+/obj/machinery/chem_master/lab
+	layer = BELOW_OBJ_LAYER
+	icon = 'code/game/objects/structures/superpizza/chemical.dmi'
+	icon_state = "mixer0"
+	use_power = NO_POWER_USE
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	circuit = null
 /obj/item/stack/component/get_main_recipes()
 	. = ..()
 	. += GLOB.component_recipes
@@ -53,7 +59,26 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	attack_verb = list("smacked")
 	w_class = WEIGHT_CLASS_SMALL
 /obj/item/melee/stick/attack(mob/living/target, mob/living/user)
-	user.changeNext_move(CLICK_CD_MELEE * 0.7)
+	user.changeNext_move(CLICK_CD_MELEE * 0.3)
+/datum/crafting_recipe/hydrobin
+	name = "hydroponics bin"
+	always_availible = TRUE
+	reqs = list(
+			/obj/item/reagent_containers/glass/bucket = 2,
+			/obj/item/stack/sheet/metal/ = 20)
+	result = /obj/machinery/hydroponics
+	category = CAT_MISC
+	always_availible = TRUE
+/datum/crafting_recipe/chemlab
+	name = "chem lab"
+	always_availible = TRUE
+	reqs = list(
+			/obj/item/reagent_containers/glass/beaker = 3,
+			/obj/item/stack/component = 4,
+			/obj/item/stack/sheet/metal/ = 3)
+	result = /obj/machinery/chem_master/lab
+	category = CAT_MISC
+	always_availible = TRUE
 /datum/crafting_recipe/c38
 	name = "reshell 38 bullet"
 	reqs = list(
@@ -61,6 +86,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 			/obj/item/ammo_casing/c38/ = 1)
 	result = /obj/item/ammo_casing/c38
 	category = CAT_MISC
+
 /datum/crafting_recipe/a762
 	name = "reshell 7.62 bullet"
 	reqs = list(/datum/reagent/gunpowder = 1,
@@ -138,6 +164,9 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/effect/landmark/carpspawn = 1,
 		/obj/structure/flora/bush = 3,
 		/mob/living/simple_animal/chicken = 1,
+		/obj/effect/landmark/zombie/ = 1,
+		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
+		/obj/structure/closet/cardboard/ = 1,
 		"" = 820
 		)
 /obj/effect/spawner/lootdrop/oreslmao
@@ -370,16 +399,35 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/clothing/suit/armor/vest = 3,
 		/obj/item/stack/medical/suture = 15,
 		/obj/item/stack/medical/mesh = 15,
-		/obj/item/ammo_box/a357 = 3,
-		/obj/item/ammo_box/magazine/m9mm = 3,
-		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/ammo_box/a357 = 5,
+		/obj/item/ammo_box/magazine/m9mm = 5,
+		/obj/item/ammo_box/magazine/uzim9mm = 5,
 		/obj/item/chainsaw = 2,
 		/obj/item/claymore/weak = 1,
 		/obj/item/gun/medbeam/ = 1,
 		/obj/item/gun/syringe = 3,
-		/obj/item/clothing/suit/jacket/miljacket = 5,
-		/obj/item/clothing/head/thenam = 5,
-		/obj/item/clothing/under/pants/camo = 5
+		/obj/item/clothing/suit/jacket/miljacket = 4,
+		/obj/item/clothing/head/thenam = 3,
+		/obj/item/clothing/under/pants/camo = 3,
+		/obj/item/switchblade = 3,
+		/obj/item/clothing/glasses/meson/night = 3,
+		/obj/item/shield/riot = 3,
+		/obj/item/book/granter/crafting_recipe/guns = 3,
+		/obj/item/circuitboard/machine/autolathe = 3,
+		/obj/item/circuitboard/machine/protolathe/department/cargo = 1,
+		/obj/item/circuitboard/machine/protolathe/department/engineering = 1,
+		/obj/item/circuitboard/machine/protolathe/department/medical = 1,
+		/obj/item/circuitboard/machine/protolathe/department/service = 1,
+		/obj/item/circuitboard/machine/protolathe/department/security = 1,
+		/obj/item/circuitboard/machine/protolathe/department/science = 1,
+		/obj/item/gun/ballistic/revolver/ = 1,
+		/obj/item/reagent_containers/hypospray = 1,
+		/obj/item/reagent_containers/pill/charcoal = 15,
+		/obj/item/reagent_containers/pill/probital = 10,
+		/obj/item/reagent_containers/pill/patch/synthflesh = 2,
+		/obj/item/healthanalyzer = 10,
+		/obj/item/grenade/frag = 5,
+
 		)
 /obj/structure/closet/crate/wooden/chest
 	name = "chest"

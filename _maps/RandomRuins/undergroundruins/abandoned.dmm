@@ -7,18 +7,19 @@
 "g" = (/obj/item/kirbyplants/fullysynthetic,/turf/open/floor/wood,/area/template_noop)
 "h" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/template_noop)
 "i" = (/obj/structure/chair/comfy/beige{icon_state = "comfychair"; dir = 8},/turf/open/floor/wood,/area/template_noop)
-"j" = (/obj/structure/table,/turf/open/floor/carpet,/area/template_noop)
+"j" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/template_noop)
 "k" = (/obj/structure/sink/kitchen{icon_state = "sink_alt"; dir = 4; pixel_x = -9},/turf/open/floor/carpet,/area/template_noop)
+"l" = (/obj/structure/table/wood,/turf/open/floor/carpet,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaa
-abdeaccfga
+abdeajcfga
 aeeehcccia
-ajjjacccca
+alllacccca
 aaaaahaaaa
 accchcccca
 akeeacccca
-ajeeacccca
-ajeeacccca
+aleeajccja
+aleeajccja
 aaaaaaacaa
 "}

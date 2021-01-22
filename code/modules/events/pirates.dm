@@ -1,9 +1,9 @@
 /datum/round_event_control/pirates
 	name = "Space Pirates"
 	typepath = /datum/round_event/pirates
-	weight = 8
-	max_occurrences = 1
-	min_players = 10
+	weight = 0
+	max_occurrences = 0
+	min_players = 0
 	earliest_start = 30 MINUTES
 	gamemode_blacklist = list("nuclear")
 

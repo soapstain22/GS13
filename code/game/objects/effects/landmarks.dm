@@ -297,7 +297,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/carpspawn
 	name = "carpspawn"
 	icon_state = "carp_spawn"
-
+/obj/effect/landmark/zombie
+	name = "carpspawn"
+	icon_state = "carp_spawn"
 //observer start
 /obj/effect/landmark/observer_start
 	name = "Observer-Start"

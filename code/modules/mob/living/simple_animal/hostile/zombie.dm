@@ -20,7 +20,11 @@
 	minbodytemp = 0
 	status_flags = CANPUSH
 	del_on_death = 1
-	var/zombiejob = "Medical Doctor"
+	unsuitable_atmos_damage = 25
+	minbodytemp = 0
+	maxbodytemp = 1200
+	var/zombiejob = "Naked"
+	speed = 2.5
 	var/infection_chance = 3
 	var/obj/effect/mob_spawn/human/corpse/delayed/corpse
 

@@ -1,0 +1,18 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/closed/wall,/area/template_noop)
+"c" = (/turf/open/floor/carpet/red,/area/template_noop)
+"d" = (/turf/open/floor/carpet/orange,/area/template_noop)
+"e" = (/turf/open/floor/carpet/cyan,/area/template_noop)
+"f" = (/obj/structure/spawner/clown,/turf/open/floor/circuit,/area/template_noop)
+
+(1,1,1) = {"
+aabbdbbaa
+abccdccba
+bcecdcecb
+bccedeccb
+ddddfdddd
+bccedeccb
+bcecdcecb
+abccdccba
+aabbdbbaa
+"}

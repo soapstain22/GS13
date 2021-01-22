@@ -53,7 +53,7 @@
 	id = "vault"
 	description = "vault"
 	suffix = "vault.dmm"
-	allow_duplicates = FALSE
+	allow_duplicates = TRUE
 /datum/map_template/ruin/underground/geysers
 	name = "geysers"
 	id = "geysers"
@@ -67,12 +67,14 @@
 	description = "vampire"
 	suffix = "vampire.dmm"
 	allow_duplicates = TRUE
+	cost = 3
 /datum/map_template/ruin/underground/1
 	name = "1"
 	id = "1"
 	description = "1"
 	suffix = "cave1.dmm"
 	allow_duplicates = TRUE
+	cost = 5
 /datum/map_template/ruin/underground/2
 	name = "2"
 	id = "2"
@@ -90,23 +92,40 @@
 	id = "4"
 	description = "4"
 	suffix = "cave4.dmm"
+	cost = 4
 /datum/map_template/ruin/underground/5
 	name = "5"
 	id = "5"
 	description = "5"
 	suffix = "cave5.dmm"
+	cost = 1
 /datum/map_template/ruin/underground/6
 	name = "6"
 	id = "6"
 	description = "6"
-	suffix = "1.dmm"
+	suffix = "cave6.dmm"
+	allow_duplicates = TRUE
+	cost = 5
 /datum/map_template/ruin/underground/7
 	name = "7"
 	id = "7"
 	description = "7"
-	suffix = "1.dmm"
+	suffix = "cave7.dmm"
+	cost = 3
 /datum/map_template/ruin/underground/8
 	name = "8"
 	id = "8"
 	description = "8"
 	suffix = "trek.dmm"
+	cost = 3
+/datum/map_template/ruin/underground/9
+	name = "9"
+	id = "9"
+	description = "9"
+	suffix = "cave9.dmm"
+	cost = 3
+/datum/map_template/ruin/underground/10
+	name = "10"
+	id = "10"
+	description = "10"
+	suffix = "cave10.dmm"

@@ -1,0 +1,16 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/mob/living/simple_animal/imp,/turf/template_noop,/area/template_noop)
+"c" = (/mob/living/simple_animal/slaughter,/turf/template_noop,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaabaaa
+aabaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+aaaacaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+"}

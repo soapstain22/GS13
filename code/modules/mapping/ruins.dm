@@ -32,8 +32,8 @@
 				qdel(nest)
 			for(var/mob/living/simple_animal/monster in T)
 				qdel(monster)
-			for(var/obj/structure/flora/ash/plant in T)
-				qdel(plant)
+			for(var/obj/structure/flora in T)
+				qdel(flora)
 
 		load(central_turf,centered = TRUE)
 		loaded++
@@ -164,6 +164,8 @@
 									forced_ruins[linked] = pick(SSmapping.levels_by_trait(ZTRAIT_LAVA_RUINS))
 								if(PLACE_UNDERGROUND_RUIN)
 									forced_ruins[linked] = pick(SSmapping.levels_by_trait(ZTRAIT_UNDERGROUND_RUINS))
+								if(PLACE_OUTDOORS_RUIN)
+									forced_ruins[linked] = 5
 								if(PLACE_SPACE_RUIN)
 									forced_ruins[linked] = pick(SSmapping.levels_by_trait(ZTRAIT_SPACE_RUINS))
 								if(PLACE_DEFAULT)

@@ -1,0 +1,22 @@
+"a" = (/turf/closed/wall,/area/maintenance/department/medical)
+"b" = (/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/apron/surgical,/obj/structure/table/reinforced,/turf/open/floor/mineral/titanium,/area/maintenance/department/medical)
+"c" = (/obj/structure/table/reinforced,/turf/open/floor/mineral/titanium,/area/maintenance/department/medical)
+"d" = (/obj/structure/table/reinforced,/obj/machinery/power/apc/auto_name/north,/turf/open/floor/mineral/titanium,/area/maintenance/department/medical)
+"e" = (/obj/structure/table/reinforced,/obj/machinery/light{dir = 1},/turf/open/floor/mineral/titanium,/area/maintenance/department/medical)
+"f" = (/obj/item/storage/backpack/duffelbag/med/surgery,/obj/structure/table/reinforced,/turf/open/floor/mineral/titanium,/area/maintenance/department/medical)
+"g" = (/turf/open/floor/mineral/titanium/white,/area/maintenance/department/medical)
+"h" = (/obj/machinery/door/airlock/glass,/turf/open/floor/plating,/area/maintenance/department/medical)
+"i" = (/obj/machinery/computer/operating{dir = 8},/turf/open/floor/mineral/titanium/white,/area/maintenance/department/medical)
+"j" = (/obj/structure/table/optable,/turf/open/floor/mineral/titanium/white,/area/maintenance/department/medical)
+"k" = (/obj/machinery/iv_drip,/turf/open/floor/mineral/titanium/white,/area/maintenance/department/medical)
+"l" = (/obj/structure/table/reinforced,/obj/machinery/light,/turf/open/floor/mineral/titanium,/area/maintenance/department/medical)
+
+(1,1,1) = {"
+aaaaaaaaa
+abcdefcca
+acgggggca
+hggijkggh
+acgggggca
+accclccca
+aaaaaaaaa
+"}
