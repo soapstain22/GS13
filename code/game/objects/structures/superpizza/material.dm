@@ -31,8 +31,6 @@
 
 GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("solar panel base", /obj/item/solar_assembly, 4, time = 10, on_floor = FALSE), \
-	new/datum/stack_recipe("processing unit", /obj/machinery/mineral/processing_unit, 10, time = 30, one_per_turf = 1, on_floor = 1), \
-	new/datum/stack_recipe("processing unit console", /obj/machinery/mineral/processing_unit_console, 6, time = 25, one_per_turf = 1), \
 	new/datum/stack_recipe("conveyor switch", /obj/item/conveyor_switch_construct, 2, time = 5, one_per_turf = 0), \
 	new/datum/stack_recipe("conveyor belt", /obj/item/stack/conveyor, 2, time = 5, one_per_turf = 0), \
 	new/datum/stack_recipe("apc electronics", /obj/item/electronics/apc, 1, time = 18), \
@@ -41,12 +39,45 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("firelock electronics", /obj/item/electronics/firelock, 1, time = 18),
 	new/datum/stack_recipe("air alarm electronics", /obj/item/electronics/airlock, 1, time = 18),
 	new/datum/stack_recipe("tracker electronics", /obj/item/electronics/tracker, 1, time = 18),
-	new/datum/stack_recipe("jacobs ladder", /obj/item/jacobs_ladder, 50, time = 50),
 	new/datum/stack_recipe("scrubber", /obj/machinery/portable_atmospherics/scrubber, 20, time = 50),
 	new/datum/stack_recipe("pump", /obj/machinery/portable_atmospherics/pump, 20, time = 50),
 	new/datum/stack_recipe("stasis machine", /obj/machinery/stasis, 20, time = 50),
+	new/datum/stack_recipe("selling computer", /obj/machinery/computer/piratepad_control/ , 20, time = 50),
+	new/datum/stack_recipe("selling machine", /obj/machinery/piratepad, 20, time = 50),
 	))
 // this is everything else
+/obj/structure/flora/ash/flax
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "flaxplant"
+	name = "flax"
+	desc = "some flowers"
+	harvested_name = "flax"
+	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
+	harvest = /obj/item/grown/flax
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 4
+	harvest_time = 20
+	harvest_message_low = "You pluck a single strand"
+	harvest_message_med = "You pluck a number of strands, leaving a few unsuitable ones."
+	harvest_message_high = "You pluck quite a lot of strands."
+	regrowth_time_low = 2400
+	regrowth_time_high = 6000
+/obj/structure/flora/ash/aloe
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "aloe"
+	name = "leafy mushrooms"
+	desc = "A number of mushrooms, each of which surrounds a greenish sporangium with a number of leaf-like structures."
+	harvested_name = "leafless mushrooms"
+	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
+	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 4
+	harvest_time = 20
+	harvest_message_low = "You pluck a single, suitable leaf."
+	harvest_message_med = "You pluck a number of leaves, leaving a few unsuitable ones."
+	harvest_message_high = "You pluck quite a lot of suitable leaves."
+	regrowth_time_low = 2400
+	regrowth_time_high = 6000
 /obj/item/melee/stick
 	name = "cool stick"
 	desc = "it is very fast"
@@ -167,7 +198,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/effect/landmark/zombie/ = 1,
 		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
 		/obj/structure/closet/cardboard/ = 1,
-		"" = 820
+		"" = 520
 		)
 /obj/effect/spawner/lootdrop/oreslmao
 	name = "whores"
@@ -469,3 +500,4 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/structure/flora/rock = 50,
 		"" = 700
 		)
+

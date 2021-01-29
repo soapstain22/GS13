@@ -11,7 +11,8 @@
 	id = "trapped"
 	description = "trapped"
 	suffix = "trapped.dmm"
-	allow_duplicates = FALSE
+	allow_duplicates = TRUE
+	cost = 1
 /datum/map_template/ruin/underground/ruin1
 	name = "ruin1"
 	id = "ruin1"
@@ -23,7 +24,8 @@
 	id = "rec room"
 	description = "wow!"
 	suffix = "rec.dmm"
-	allow_duplicates = FALSE
+	allow_duplicates = TRUE
+	cost = 2
 /datum/map_template/ruin/underground/hut
 	name = "mining hut"
 	id = "mining hut"
@@ -34,47 +36,50 @@
 	name = "looping"
 	id = "looping"
 	description = "it loops"
-	suffix = "loop.dmm"
+	suffix = "loops.dmm"
 	allow_duplicates = FALSE
 /datum/map_template/ruin/underground/trashed
 	name = "trash"
 	id = "trash"
 	description = "garbo"
 	suffix = "bar.dmm"
-	allow_duplicates = FALSE
+	allow_duplicates = true
+	cost = 3
 /datum/map_template/ruin/underground/rust
 	name = "rust"
 	id = "rust"
 	description = "rust"
 	suffix = "rust.dmm"
 	allow_duplicates = FALSE
+	cost = 4
 /datum/map_template/ruin/underground/vault
 	name = "vault"
 	id = "vault"
 	description = "vault"
 	suffix = "vault.dmm"
 	allow_duplicates = TRUE
+	cost = 5
 /datum/map_template/ruin/underground/geysers
 	name = "geysers"
 	id = "geysers"
 	description = "geysers"
 	suffix = "geysers.dmm"
 	allow_duplicates = TRUE
-	cost = 1
+	cost = 4
 /datum/map_template/ruin/underground/vampire
 	name = "vampire"
 	id = "vampire"
 	description = "vampire"
 	suffix = "vampire.dmm"
 	allow_duplicates = TRUE
-	cost = 3
+	cost = 2
 /datum/map_template/ruin/underground/1
 	name = "1"
 	id = "1"
 	description = "1"
 	suffix = "cave1.dmm"
 	allow_duplicates = TRUE
-	cost = 5
+	cost = 3
 /datum/map_template/ruin/underground/2
 	name = "2"
 	id = "2"
@@ -92,7 +97,7 @@
 	id = "4"
 	description = "4"
 	suffix = "cave4.dmm"
-	cost = 4
+	cost = 2
 /datum/map_template/ruin/underground/5
 	name = "5"
 	id = "5"
@@ -105,7 +110,7 @@
 	description = "6"
 	suffix = "cave6.dmm"
 	allow_duplicates = TRUE
-	cost = 5
+	cost = 2
 /datum/map_template/ruin/underground/7
 	name = "7"
 	id = "7"
@@ -123,9 +128,19 @@
 	id = "9"
 	description = "9"
 	suffix = "cave9.dmm"
-	cost = 3
+	cost = 4
+	placement_weight = 2
 /datum/map_template/ruin/underground/10
 	name = "10"
 	id = "10"
 	description = "10"
 	suffix = "cave10.dmm"
+	placement_weight = 3
+/datum/map_template/ruin/underground/11
+	name = "ladder"
+	id = "ladder"
+	cost = 4
+	description = "10"
+	suffix = "ladder.dmm"
+	allow_duplicates = TRUE
+	placement_weight = 6

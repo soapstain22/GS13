@@ -2,8 +2,8 @@
 	title = "Cargo Technician"
 	department_head = list("Head of Personnel", "Quartermaster") // FULPSTATION FIX: Why was Quartermaster not included in this list? It says it below in supervisor.
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the quartermaster and the head of personnel"
 	selection_color = "#dcba97"
 

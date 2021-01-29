@@ -119,6 +119,58 @@
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
 	slowdown = 0.15
 	icon_state = "cardboard"
+/obj/item/clothing/head/serf
+	name = "serf hood"
+	desc = "protects yo hed"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	clothing_flags = SNUG_FIT
+	flags_inv = HIDEEARS|HIDEHAIR
+	cold_protection = CHEST|GROIN
+	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN
+	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
+	strip_delay = 60
+	equip_delay_other = 40
+	max_integrity = 250
+	resistance_flags = NONE
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
+	slowdown = 0.05
+	icon_state = "serf"
+/obj/item/clothing/under/serf
+	name = "serf clothing"
+	desc = "protects yo tits"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	body_parts_covered = CHEST|GROIN
+	cold_protection = CHEST|GROIN
+	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN
+	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
+	strip_delay = 60
+	equip_delay_other = 40
+	max_integrity = 250
+	resistance_flags = NONE
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
+	slowdown = 0.1
+	icon_state = "lin"
+/obj/item/clothing/shoes/serf
+	name = "the little booties"
+	desc = "protects yo toes"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	body_parts_covered = CHEST|GROIN
+	cold_protection = CHEST|GROIN
+	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN
+	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
+	strip_delay = 60
+	equip_delay_other = 40
+	max_integrity = 250
+	resistance_flags = NONE
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
+	slowdown = 0.05
+	icon_state = "serfshoe"
 /obj/item/clothing/suit/armor/wood
 	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
 	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
@@ -162,8 +214,38 @@
 	max_integrity = 250
 	resistance_flags = NONE
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.3
+	slowdown = 0.4
 	icon_state = "tit"
+/obj/item/stack/linen
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "linen"
+	resistance_flags = FLAMMABLE
+	force = 0
+	throwforce = 0
+	merge_type = /obj/item/stack/linen
+/obj/item/storage/backpack/sack
+	name = "sack"
+	desc = "things go in it"
+	icon_state = "giftbag0"
+	inhand_icon_state = "giftbag"
+/obj/item/stack/linen/get_main_recipes()
+	. = ..()
+	. += GLOB.linen_recipes
+
+GLOBAL_LIST_INIT(linen_recipes, list ( \
+	new/datum/stack_recipe("shirt", /obj/item/clothing/under/serf, 10, time = 5, one_per_turf = 0), \
+	new/datum/stack_recipe("the hat", /obj/item/clothing/head/serf, 5, time = 5, one_per_turf = 0), \
+	new/datum/stack_recipe("little booties", /obj/item/clothing/shoes/serf, 5, time = 5, one_per_turf = 0), \
+	new/datum/stack_recipe("sack", /obj/item/storage/backpack/sack, 20), \
+	null, \
+	new/datum/stack_recipe("plant bag", /obj/item/storage/bag/plants, 10), \
+	new/datum/stack_recipe("book bag", /obj/item/storage/bag/books, 10), \
+	new/datum/stack_recipe("mining satchel", /obj/item/storage/bag/ore, 10), \
+	new/datum/stack_recipe("chemistry bag", /obj/item/storage/bag/chemistry, 10), \
+	new/datum/stack_recipe("bio bag", /obj/item/storage/bag/bio, 10), \
+	new/datum/stack_recipe("construction bag", /obj/item/storage/bag/construction, 10), \
+	new/datum/stack_recipe("rug", /obj/item/stack/tile/carpet, 1), \
+	))
 /obj/item/clothing/head/thenam
 	name = "thenam helmet"
 	desc = "fite"
@@ -173,3 +255,60 @@
 	icon_state = "thenam"
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
 	slowdown = 0.05
+/obj/item/stack/string
+	name = "string"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "string"
+	resistance_flags = FLAMMABLE
+	force = 0
+	throwforce = 0
+	merge_type = /obj/item/stack/string
+	var/pull_effort = 30
+	var/loom_result = /obj/item/stack/linen
+/obj/item/seeds/flax
+	name = "pack of flax seeds"
+	desc = "A pack of seeds that'll grow into a flax plant. Assistants make good free labor if neccesary."
+	icon_state = "seed-flax"
+	species = "flax"
+	plantname = "Flax"
+	icon_harvest = "flax-harvest"
+	product = /obj/item/grown/flax
+	lifespan = 35
+	endurance = 25
+	maturation = 15
+	production = 1
+	yield = 2
+	potency = 50
+	instability = 15
+	growthstages = 3
+	growing_icon = 'icons/obj/hydroponics/growing.dmi'
+	icon_dead = "flax-dead"
+	mutatelist = list(/obj/item/seeds/flax)
+
+/obj/item/grown/flax
+	seed = /obj/item/seeds/flax
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "flax"
+	desc = "Flax"
+	icon_state = "flax"
+	force = 0
+	throwforce = 0
+	w_class = WEIGHT_CLASS_TINY
+	throw_speed = 2
+	throw_range = 3
+	attack_verb = list("whipped")
+	var/flax_type = /obj/item/stack/string
+	var/flax_name = "string"
+/obj/item/grown/flax/attack_self(mob/user)
+	user.show_message("<span class='notice'>You pull some [flax_name] out of the [name]!</span>", MSG_VISUAL)
+	var/seed_modifier = 0
+	if(seed)
+		seed_modifier = round(seed.potency / 25)
+	var/obj/item/stack/string = new flax_type(user.loc, 1 + seed_modifier)
+	var/old_flax_amount = string.amount
+	for(var/obj/item/stack/ST in user.loc)
+		if(ST != string && istype(ST, flax_type) && ST.amount < ST.max_amount)
+			ST.attackby(string, user)
+	if(string.amount > old_flax_amount)
+		to_chat(user, "<span class='notice'>You add the newly-formed [flax_name] to the stack. It now contains [string.amount] [flax_name].</span>")
+	qdel(src)

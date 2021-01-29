@@ -114,6 +114,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/gas
 	name = "gas station"
 	icon_state = "green"
+/area/reststop
+	name = "rest stop"
+	icon_state = "blue"
 /area/cafe
 	name = "cafe"
 	icon_state = "blue"

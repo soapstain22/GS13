@@ -12,3 +12,9 @@
 	description = "hut"
 	suffix = "hut.dmm"
 	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/cargo
+	name = "cargo"
+	id = "carge"
+	description = "cargo"
+	suffix = "cargo.dmm"
+	allow_duplicates = FALSE

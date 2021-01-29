@@ -90,7 +90,60 @@
 /turf/open/floor/plating/asteroid/ex_act(severity, target)
 	. = SEND_SIGNAL(src, COMSIG_ATOM_EX_ACT, severity, target)
 	contents_explosion(severity, target)
-
+/turf/open/floor/plating/asteroid/garbango/
+	var/spawntable
+	spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
+		/obj/structure/flora/ausbushes/fullgrass = 300,
+		/obj/structure/flora/rock = 30,
+		/obj/structure/flora/ausbushes/ywflowers = 9,
+		/obj/structure/flora/ausbushes/genericbush = 9,
+		/obj/structure/flora/grass/jungle/b = 13,
+		/obj/structure/flora/rock/jungle = 32,
+		/obj/structure/flora/junglebush = 19,
+		/obj/structure/flora/bush = 10,
+		/obj/effect/decal/remains/robot = 1,
+		/obj/effect/decal/cleanable/plastic = 1,
+		/obj/item/paper/crumpled/ = 2,
+		/obj/structure/flora/ausbushes/brflowers = 6,
+		/obj/item/reagent_containers/glass/bottle/ = 4,
+		/obj/machinery/hydroponics/soil = 10,
+		/obj/item/trash/can = 1,
+		/obj/structure/barrel/shit = 4,
+		/obj/item/cigbutt/roach = 1,
+		/obj/structure/flora/ausbushes/reedbush = 8,
+		/obj/structure/flora/tree/jungle = 90,
+		/obj/structure/flora/ausbushes/fernybush = 5,
+		/obj/structure/flora/ausbushes/stalkybush = 5,
+		/obj/structure/flora/ausbushes/grassybush = 5,
+		/obj/item/reagent_containers/glass/bottle/ = 1,
+		/obj/item/reagent_containers/food/drinks/waterbottle/empty = 1,
+		/obj/effect/landmark/carpspawn = 4,
+		/obj/structure/flora/bush = 4,
+		/mob/living/simple_animal/chicken = 1,
+		/obj/effect/landmark/zombie/ = 80,
+		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
+		/obj/structure/closet/cardboard/ = 1,
+		/obj/item/stack/component = 20,
+		/obj/structure/sink/puddle = 10,
+		/obj/structure/flora/ash/cacti = 20,
+		/obj/item/analyzer = 1,
+		/obj/item/storage/bag/trash = 2,
+		/obj/item/storage/pill_bottle/ = 2,
+		/obj/structure/flora/ash/flax = 7,
+		"" = 420 )
+/turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
+	if(prob(12))
+		var/shit = pickweight(spawntable)
+		if(!shit)
+			return
+		for(var/obj/structure/flora/F in range(4, T)) //Allows for growing patches, but not ridiculous stacks of flora
+			if(!istype(F, shit))
+				return
+		new shit(T)
+		return TRUE
+/turf/open/floor/plating/asteroid/garbango/Initialize(mapload)
+	. = ..()
+	SpawnShit(src)
 /turf/open/floor/plating/lavaland_baseturf
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 
@@ -343,7 +396,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 			break
 
 		// Chance to change our direction left or right.
-		if(i > 2 && prob(33))
+		if(i > 2 && prob(10))
 			// We can't go a full loop though
 			next_angle = -next_angle
 			setDir(angle2dir(dir2angle(dir) )+ next_angle)

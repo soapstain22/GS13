@@ -5,10 +5,10 @@
 	gender = PLURAL
 	name = "road sand"
 	baseturfs = /turf/open/floor/plating/road
-	icon = 'icons/turf/floors.dmi'
-	icon_state = "road"
-	icon_plating = "road"
-	postdig_icon_change = TRUE
+	icon = 'icons/superpizza/pavement.dmi'
+	icon_state = "pavement"
+	icon_plating = "pavement"
+	postdig_icon_change = FALSE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
@@ -18,10 +18,10 @@
 	/// Base turf type to be created by the tunnel
 	var/turf_type = /turf/open/floor/plating/road
 	/// Probability floor has a different icon state
-	var/floor_variance = 20
+	var/floor_variance = 0
 	attachment_holes = FALSE
 	/// Itemstack to drop when dug by a shovel
-	var/obj/item/stack/digResult = /obj/item/stack/ore/glass/basalt
+	var/obj/item/stack/digResult = ""
 	/// Whether the turf has been dug or not
 	var/dug
 	planetary_atmos = TRUE
@@ -137,7 +137,7 @@
 
 #define SPAWN_MEGAFAUNA "bluh bluh huge boss"
 #define SPAWN_BUBBLEGUM 6
-
+GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dragon = 2, /mob/living/simple_animal/hostile/zombie = 2, /mob/living/simple_animal/hostile/megafauna/wendigo = 2, /mob/living/simple_animal/hostile/jungle/leaper = 3, /mob/living/simple_animal/hostile/megafauna/dragon = 4, /mob/living/simple_animal/hostile/megafauna/colossus = 2, /mob/living/simple_animal/hostile/megafauna/bubblegum = SPAWN_BUBBLEGUM))
 
 
 /turf/open/floor/plating/road/airless/cave
@@ -146,7 +146,7 @@
 	/// Mobs that can spawn in the tunnel, weighted list
 	var/list/mob_spawn_list
 	/// Megafauna that can spawn in the tunnel, weighted list
-	var/list/megafauna_spawn_list
+	var/list/shitboyspawns
 	/// Flora that can spawn in the tunnel, weighted list
 	var/list/flora_spawn_list
 	/// Terrain that can spawn in the tunnel, weighted list
@@ -217,7 +217,7 @@
 	data_having_type = /turf/open/floor/plating/road/airless/cave/snow/has_data
 	turf_type = /turf/open/floor/plating/road/snow/icemoon
 	choose_turf_type = list(/turf/open/floor/plating/road/snow/icemoon = 19, /turf/open/floor/plating/ice/icemoon = 1)
-	pick_tunnel_width = list("1" = 3, "2" = 3)
+	pick_tunnel_width = list("1" = 2, "2" = 2)
 
 /turf/open/floor/plating/road/airless/cave/snow/underground
 	mob_spawn_list = list(/mob/living/simple_animal/hostile/asteroid/ice_demon = 50, /obj/structure/spawner/ice_moon/demonic_portal = 3, \
@@ -226,7 +226,7 @@
 	flora_spawn_list = list(/obj/structure/flora/rock/icy = 6, /obj/structure/flora/rock/pile/icy = 6)
 	data_having_type = /turf/open/floor/plating/road/airless/cave/snow/underground/has_data
 	choose_turf_type = null
-	pick_tunnel_width = list("1" = 3, "2" = 3, "3" = 3)
+	pick_tunnel_width = list("1" = 2, "2" = 2, "3" = 2)
 
 /turf/open/floor/plating/road/airless/cave/snow/has_data //subtype for producing a tunnel with given data
 	has_data = TRUE
@@ -236,17 +236,13 @@
 
 /turf/open/floor/plating/road/airless/cave/Initialize()
 	if (!mob_spawn_list)
-		mob_spawn_list = list(/mob/living/simple_animal/hostile/asteroid/goldgrub = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
-	if (!megafauna_spawn_list)
-		megafauna_spawn_list = GLOB.megafauna_spawn_list
+		mob_spawn_list = list(/mob/living/simple_animal/mouse = 5, /mob/living/simple_animal/chicken = 4, )
+	if (!shitboyspawns)
+		shitboyspawns = GLOB.shitboyspawns
 	if (!flora_spawn_list)
-		flora_spawn_list = list(/obj/structure/flora/ash/leaf_shroom = 2 , /obj/structure/flora/ash/cap_shroom = 2 , /obj/structure/flora/ash/stem_shroom = 2 , /obj/structure/flora/ash/cacti = 1, /obj/structure/flora/ash/tall_shroom = 2)
+		flora_spawn_list = list(/obj/structure/barrel/shit = 2, /obj/structure/flora/rock/pile = 2, /obj/effect/spawner/lootdrop/maintenance = 2)
 	if(!terrain_spawn_list)
-		terrain_spawn_list = list(/obj/structure/geyser/random = 1,
-		/obj/machinery/atmospherics/miner/geyser/water = 1,
-		/obj/machinery/atmospherics/miner/geyser/n2o = 1,
-		/obj/machinery/atmospherics/miner/geyser/plasma = 1,
-		/obj/machinery/atmospherics/miner/geyser/hydrogen = 1,
+		terrain_spawn_list = list(/obj/structure/barrel/shit = 1,
 		)
 	. = ..()
 	if(!has_data)
@@ -256,7 +252,7 @@
 /turf/open/floor/plating/road/airless/cave/proc/get_cave_data(set_length, exclude_dir = -1)
 	// If set_length (arg1) isn't defined, get a random length; otherwise assign our length to the length arg.
 	if(!set_length)
-		length = rand(25, 50)
+		length = rand(40, 60)
 	else
 		length = set_length
 
@@ -287,7 +283,7 @@
 	var/turf/open/floor/plating/asteroid/tunnel = src
 	var/next_angle = pick(45, -45)
 
-	var/tunnel_width = 3
+	var/tunnel_width = 2
 	if(pick_tunnel_width)
 		tunnel_width = text2num(pickweight(pick_tunnel_width))
 
@@ -373,21 +369,21 @@
 	if(!isarea(loc))
 		return
 	var/area/A = loc
-	if(prob(30))
+	if(prob(1))
 		if(!A.mob_spawn_allowed)
 			return
 		var/randumb = pickweight(mob_spawn_list)
 		if(!randumb)
 			return
 		while(randumb == SPAWN_MEGAFAUNA)
-			if(A.megafauna_spawn_allowed && megafauna_spawn_list && megafauna_spawn_list.len) //this is danger. it's boss time.
-				var/maybe_boss = pickweight(megafauna_spawn_list)
-				if(megafauna_spawn_list[maybe_boss])
+			if(A.megafauna_spawn_allowed && shitboyspawns && shitboyspawns.len) //this is danger. it's boss time.
+				var/maybe_boss = pickweight(shitboyspawns)
+				if(shitboyspawns[maybe_boss])
 					randumb = maybe_boss
 			else //this is not danger, don't spawn a boss, spawn something else
 				randumb = pickweight(mob_spawn_list)
 
-		for(var/thing in urange(12, T)) //prevents mob clumps
+		for(var/thing in urange(20, T)) //prevents mob clumps
 			if(!ishostile(thing) && !istype(thing, /obj/structure/spawner))
 				continue
 			if((ispath(randumb, /mob/living/simple_animal/hostile/megafauna) || ismegafauna(thing)) && get_dist(src, thing) <= 7)
@@ -398,7 +394,7 @@
 				return //prevents tendrils spawning in each other's collapse range
 
 		if(ispath(randumb, /mob/living/simple_animal/hostile/megafauna/bubblegum)) //there can be only one bubblegum, so don't waste spawns on it
-			megafauna_spawn_list.Remove(randumb)
+			shitboyspawns.Remove(randumb)
 
 		new randumb(T)
 		return TRUE
@@ -408,7 +404,7 @@
 
 /// Spawns a random flora in the tunnel, can spawn clumps of them
 /turf/open/floor/plating/road/airless/cave/proc/SpawnFlora(turf/T)
-	if(prob(12))
+	if(prob(3))
 		if(isarea(loc))
 			var/area/A = loc
 			if(!A.flora_allowed)
@@ -416,7 +412,7 @@
 		var/randumb = pickweight(flora_spawn_list)
 		if(!randumb)
 			return
-		for(var/obj/structure/flora/F in range(4, T)) //Allows for growing patches, but not ridiculous stacks of flora
+		for(var/obj/structure/flora/F in range(12, T)) //Allows for growing patches, but not ridiculous stacks of flora
 			if(!istype(F, randumb))
 				return
 		new randumb(T)

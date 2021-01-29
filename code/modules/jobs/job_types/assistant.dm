@@ -4,13 +4,13 @@ Assistant
 /datum/job/assistant
 	title = "Assistant"
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "absolutely everyone"
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	outfit = /datum/outfit/job/assistant
+	outfit = /datum/outfit/
 	antag_rep = 7
 	paycheck = PAYCHECK_ASSISTANT // Get a job. Job reassignment changes your paycheck now. Get over it.
 	paycheck_department = ACCOUNT_CIV

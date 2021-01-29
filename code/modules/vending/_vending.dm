@@ -68,7 +68,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	///Last mob to shop with us
 	var/last_shopper
 	var/tilted = FALSE
-	var/tiltable = TRUE
+	var/tiltable = FALSE
 	var/squish_damage = 75
 	var/forcecrit = 0
 	var/num_shards = 7

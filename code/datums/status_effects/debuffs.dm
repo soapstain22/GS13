@@ -112,9 +112,9 @@
 /datum/status_effect/incapacitating/sleeping/tick()
 	if(owner.maxHealth)
 		var/health_ratio = owner.health / owner.maxHealth
-		var/healing = -0.2
+		var/healing = -0.1
 		if((locate(/obj/structure/bed) in owner.loc))
-			healing -= 0.3
+			healing -= 0.15
 		else if((locate(/obj/structure/table) in owner.loc))
 			healing -= 0.1
 		for(var/obj/item/bedsheet/bedsheet in range(owner.loc,0))
@@ -122,7 +122,7 @@
 				continue
 			healing -= 0.1
 			break //Only count the first bedsheet
-		if(health_ratio > 0.8)
+		if(health_ratio < 0.5)
 			owner.adjustBruteLoss(healing)
 			owner.adjustFireLoss(healing)
 			owner.adjustToxLoss(healing * 0.5, TRUE, TRUE)
