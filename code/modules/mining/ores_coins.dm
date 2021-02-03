@@ -21,7 +21,8 @@
 	var/list/stack_overlays
 	var/scan_state = "" //Used by mineral turfs for their scan overlay.
 	var/spreadChance = 0 //Also used by mineral turfs for spreading veins
-
+	var/meltingpoint = 1000
+	var/burningpoint = 10000
 /obj/item/stack/ore/update_overlays()
 	. = ..()
 	var/difference = min(ORESTACK_OVERLAYS_MAX, amount) - (LAZYLEN(stack_overlays)+1)
@@ -57,15 +58,13 @@
 	if(isnull(refined_type))
 		return
 	else
-		var/probability = (rand(0,100))/100
-		var/burn_value = probability*amount
-		var/amountrefined = round(burn_value, 1)
-		if(amountrefined < 1)
-			qdel(src)
-		else
+		var/smelt = sqrt(exposed_temperature/meltingpoint)
+		var/amountrefined = round(smelt, 1)
+		if(smelt >= 1)
 			new refined_type(drop_location(),amountrefined)
 			qdel(src)
-
+		else
+			return
 /obj/item/stack/ore/uranium
 	name = "uranium ore"
 	icon_state = "Uranium ore"
@@ -78,7 +77,7 @@
 	mine_experience = 6
 	scan_state = "rock_Uranium"
 	spreadChance = 5
-
+	meltingpoint = 1132
 /obj/item/stack/ore/iron
 	name = "iron ore"
 	icon_state = "Iron ore"
@@ -90,7 +89,7 @@
 	mine_experience = 1
 	scan_state = "rock_Iron"
 	spreadChance = 20
-
+	meltingpoint = 1135
 /obj/item/stack/ore/emerald
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
 	name = "emerald"
@@ -118,6 +117,27 @@
 	w_class = WEIGHT_CLASS_TINY
 	custom_materials = list(/datum/material/amethyst=MINERAL_MATERIAL_AMOUNT)
 	mine_experience = 10
+//lmao ore only moment
+/obj/item/stack/ore/fake
+	mine_experience = 3
+	scan_state = "trash"
+	var/bypass_spawn = null
+/obj/item/stack/ore/fake/Initialize()
+	new bypass_spawn
+	qdel (src)
+
+/obj/item/stack/ore/fake/trash
+	mine_experience = 3
+	scan_state = "trash"
+	bypass_spawn = /obj/effect/spawner/lootdrop/barrel/shit
+/obj/item/stack/ore/fake/rocks
+	mine_experience = 1
+	scan_state = "minerals"
+	bypass_spawn = /obj/effect/spawner/lootdrop/minnyral
+/obj/item/stack/ore/fake/coal
+	mine_experience = 6
+	scan_state = "coal"
+	bypass_spawn = /obj/item/stack/sheet/mineral/coal
 /obj/item/stack/ore/topaz
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
 	name = "topaz"
@@ -146,7 +166,7 @@
 	refined_type = /obj/item/stack/sheet/glass
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 0 //its sand
-
+	meltingpoint = 1723
 GLOBAL_LIST_INIT(sand_recipes, list(\
 		new /datum/stack_recipe("sandstone", /obj/item/stack/sheet/mineral/sandstone, 1, 1, 50),\
 		new /datum/stack_recipe("aesthetic volcanic floor tile", /obj/item/stack/tile/basalt, 2, 1, 50)\
@@ -192,11 +212,10 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	mine_experience = 5
 	scan_state = "rock_Plasma"
 	spreadChance = 8
-
+	meltingpoint = 2300
 /obj/item/stack/ore/plasma/welder_act(mob/living/user, obj/item/I)
 	to_chat(user, "<span class='warning'>You can't hit a high enough temperature to smelt [src] properly!</span>")
 	return TRUE
-
 
 /obj/item/stack/ore/silver
 	name = "silver ore"
@@ -209,7 +228,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	refined_type = /obj/item/stack/sheet/mineral/silver
 	scan_state = "rock_Silver"
 	spreadChance = 5
-
+	meltingpoint = 962
 /obj/item/stack/ore/gold
 	name = "gold ore"
 	icon_state = "Gold ore"
@@ -221,7 +240,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	refined_type = /obj/item/stack/sheet/mineral/gold
 	scan_state = "rock_Gold"
 	spreadChance = 5
-
+	meltingpoint = 1064
 /obj/item/stack/ore/diamond
 	name = "diamond ore"
 	icon_state = "Diamond ore"
@@ -232,7 +251,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	refined_type = /obj/item/stack/sheet/mineral/diamond
 	mine_experience = 10
 	scan_state = "rock_Diamond"
-
+	meltingpoint = 4027
 /obj/item/stack/ore/bananium
 	name = "bananium ore"
 	icon_state = "Bananium ore"
@@ -255,7 +274,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	mine_experience = 3
 	scan_state = "rock_Titanium"
 	spreadChance = 5
-
+	meltingpoint = 1668
 /obj/item/stack/ore/slag
 	name = "slag"
 	desc = "Completely useless."

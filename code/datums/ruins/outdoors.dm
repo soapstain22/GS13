@@ -18,3 +18,9 @@
 	description = "cargo"
 	suffix = "cargo.dmm"
 	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/junk
+	name = "junk"
+	id = "junk"
+	description = "junk"
+	suffix = "junk.dmm"
+	allow_duplicates = FALSE

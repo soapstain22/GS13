@@ -69,3 +69,4 @@
 	icon_state = "camopants"
 	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50, "wound" = 10)
 	slowdown = 0.05
+	custom_price = 250

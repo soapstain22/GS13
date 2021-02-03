@@ -15,7 +15,7 @@
 	rack_sound = 'sound/weapons/gun/rifle/bolt_out.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/rifle/bolt_in.ogg'
 	tac_reloads = FALSE
-
+	custom_price = 1000
 /obj/item/gun/ballistic/rifle/update_overlays()
 	. = ..()
 	. += "[icon_state]_bolt[bolt_locked ? "_locked" : ""]"

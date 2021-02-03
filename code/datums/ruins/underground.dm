@@ -43,7 +43,7 @@
 	id = "trash"
 	description = "garbo"
 	suffix = "bar.dmm"
-	allow_duplicates = true
+	allow_duplicates = TRUE
 	cost = 3
 /datum/map_template/ruin/underground/rust
 	name = "rust"

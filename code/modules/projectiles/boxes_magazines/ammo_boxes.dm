@@ -83,7 +83,7 @@
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 5
 	multiple_sprites = AMMO_BOX_PER_BULLET
-
+	custom_price = 100
 /obj/item/ammo_box/n762
 	name = "ammo box (7.62x38mmR)"
 	icon_state = "10mmbox"

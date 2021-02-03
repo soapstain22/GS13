@@ -885,7 +885,12 @@
 	reagent_state = SOLID
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "metal"
-
+/datum/reagent/lithium/expose_turf(turf/T, reac_volume)
+	if(!isspaceturf(T))
+		var/obj/effect/decal/cleanable/chem_pile/lithium/reagentdecal = new(T)
+		reagentdecal = locate() in T //Might have merged with flour already there.
+		if(reagentdecal)
+			reagentdecal.reagents.add_reagent(/datum/reagent/lithium, reac_volume)
 /datum/reagent/lithium/on_mob_life(mob/living/carbon/M)
 	if((M.mobility_flags & MOBILITY_MOVE) && !isspaceturf(M.loc))
 		step(M, pick(GLOB.cardinals))

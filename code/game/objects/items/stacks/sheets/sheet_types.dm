@@ -108,6 +108,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	point_value = 2
 	tableVariant = /obj/structure/table
 	material_type = /datum/material/iron
+	/datum/component/hot_ice/proc/flame_react
 
 /obj/item/stack/sheet/metal/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)
@@ -359,7 +360,7 @@ GLOBAL_LIST_INIT(durathread_recipes, list ( \
 	. = ..()
 	. += GLOB.durathread_recipes
 
-/obj/item/stack/sheet/cotton
+/obj/item/stack/sheet/cotton/
 	name = "raw cotton bundle"
 	desc = "A bundle of raw cotton ready to be spun on the loom."
 	singular_name = "raw cotton ball"

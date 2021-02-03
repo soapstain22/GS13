@@ -152,11 +152,11 @@
 	return
 
 /turf/closed/mineral/random
-	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
+	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/fake/coal = 30, /obj/item/stack/ore/fake/rocks = 40, /obj/item/stack/ore/fake/trash = 10, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40, /obj/item/stack/ore/titanium = 11,
 		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 2, /obj/item/stack/ore/bluespace_crystal = 1)
 		//Currently, Adamantine won't spawn as it has no uses. -Durandan
-	var/mineralChance = 13
+	var/mineralChance = 20
 
 /turf/closed/mineral/random/Initialize()
 
@@ -337,8 +337,20 @@
 		/turf/closed/mineral/iron/ice/icemoon = 95)
 
 /turf/closed/mineral/iron
-	mineralType = /obj/item/stack/ore/iron
+	mineralType = /obj/item/stack/ore/iron/
 	scan_state = "rock_Iron"
+
+/turf/closed/mineral/coal
+	mineralType = /obj/item/stack/ore/fake/coal
+	scan_state = "rock_Coal"
+
+/turf/closed/mineral/rocks
+	mineralType = /obj/item/stack/ore/fake/rocks
+	scan_state = "minerals"
+
+/turf/closed/mineral/trash
+	mineralType = /obj/item/stack/ore/fake/trash
+	scan_state = "trash"
 
 /turf/closed/mineral/iron/volcanic
 	environment_type = "basalt"
@@ -439,6 +451,14 @@
 /turf/closed/mineral/silver
 	mineralType = /obj/item/stack/ore/silver
 	scan_state = "rock_Silver"
+
+/turf/closed/mineral/rocks
+	mineralType = /obj/effect/spawner/lootdrop/minnyral
+	scan_state = "minerals"
+
+/turf/closed/mineral/trash
+	mineralType = /obj/effect/spawner/lootdrop/maintenance
+	scan_state = "trash"
 
 /turf/closed/mineral/silver/volcanic
 	environment_type = "basalt"

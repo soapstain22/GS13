@@ -1,0 +1,78 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/structure/flora/rock,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/structure/flora/rock,/turf/template_noop,/area/template_noop)
+"e" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
+"f" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 9},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"g" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"h" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 4},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"i" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"j" = (/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"k" = (/obj/structure/fence,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"l" = (/obj/machinery/power/smes,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"m" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"n" = (/obj/structure/fence/door/opened,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"o" = (/obj/structure/fence/corner,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"p" = (/obj/machinery/power/smes,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"q" = (/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"r" = (/obj/effect/decal/cleanable/ash,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"s" = (/obj/item/reagent_containers/food/drinks/waterbottle/empty{pixel_x = 5; pixel_y = 8},/obj/item/reagent_containers/food/drinks/waterbottle/empty{pixel_x = -2; pixel_y = -5},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"t" = (/obj/item/toy/crayon/spraycan{pixel_x = -2; pixel_y = 3},/obj/item/toy/crayon/spraycan{pixel_x = 5},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"u" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"v" = (/obj/item/storage/toolbox/drone,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"w" = (/obj/item/reagent_containers/food/drinks/sillycup/smallcarton{pixel_x = -6; pixel_y = 6},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"x" = (/turf/closed/wall,/area/template_noop)
+"y" = (/obj/machinery/atmospherics/components/unary/thermomachine/freezer,/turf/open/floor/plating,/area/template_noop)
+"z" = (/turf/open/floor/plating,/area/template_noop)
+"A" = (/obj/item/toy/crayon/spraycan{pixel_x = 6; pixel_y = 10},/obj/item/toy/crayon/spraycan,/turf/open/floor/plating,/area/template_noop)
+"B" = (/obj/machinery/atmospherics/components/unary/tank,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"C" = (/obj/item/shard,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"D" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/obj/item/trash/boritos,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaafgggggggggggggghaaa
+aaaaijjjjjjjjjjjjjskaaa
+aaaaijjjjjjujjjjjjjkaaa
+aaaaijjjvjjjjwjjjjjkaaa
+aaaaijujlljppjxxxxjkaaa
+aaaaijjjqqjqqjxyzxjkaaa
+aaaaijjrjjjjjjxzAxjkaaa
+aaaaijBBjjjjujxxzxjkaaa
+aaaaijBBtjCjjjjjjjjkaaa
+aaaaijBBjjjjjjjjujjkaaa
+aaaaijjujjjjjjjjjrjkaaa
+aaaaDjjjjjjjjjjjjjjkaaa
+aaaamgggggggnggggggoaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,2) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaacaaaaaaaaaaa
+aaaaaaaababbadbaaaaaaaa
+aaaaaaaaabbbbbaaaaaaaaa
+aaaaaaadaabbcaabaaaaaaa
+aaaaaaabbbcbbbbbaaaaaaa
+aaaaaaaaaabebcaaaaaaaaa
+aaaaaaababbbbbbbaaaaaaa
+aaaaaabbcbbbcbadbaaaaaa
+aaaaaaaaaabbbbbcbaaaaaa
+aaaaaaaabbbbaabaaaaaaaa
+aaaaaaaaacacaaaaaaaaaaa
+aaaaaaaabaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}

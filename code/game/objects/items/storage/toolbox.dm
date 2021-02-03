@@ -217,7 +217,7 @@
 	inhand_icon_state = "ammobox"
 	drop_sound = 'sound/items/handling/ammobox_drop.ogg'
 	pickup_sound =  'sound/items/handling/ammobox_pickup.ogg'
-
+	custom_price = 1000
 /obj/item/storage/toolbox/ammo/PopulateContents()
 	new /obj/item/ammo_box/a762(src)
 	new /obj/item/ammo_box/a762(src)

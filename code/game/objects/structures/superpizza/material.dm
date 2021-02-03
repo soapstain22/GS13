@@ -53,7 +53,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	desc = "some flowers"
 	harvested_name = "flax"
 	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
-	harvest = /obj/item/grown/flax
+	harvest = /obj/item/grown/cotton/flax
 	needs_sharp_harvest = FALSE
 	harvest_amount_high = 4
 	harvest_time = 20
@@ -212,7 +212,14 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/stack/ore/silver = 60,
 		/obj/item/stack/ore/titanium = 9,
 		/obj/item/stack/ore/diamond = 3,
-
+		/obj/item/rock = 800,
+		/obj/item/rock/cinnabar = 40,
+		/obj/item/rock/lith = 50,
+		/obj/item/rock/niter = 50,
+		/obj/item/rock/sulf = 60,
+		/obj/item/rock/baux = 300,
+		/obj/item/rock/malachite = 200,
+		/obj/item/rock/salt = 100,
 		)
 /obj/effect/spawner/lootdrop/barrel/shit
 	name = "barrelspawn"
@@ -267,7 +274,19 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/firing_pin/ = 1,
 		)
-
+/obj/effect/spawner/lootdrop/minnyral
+	name = "mineralz"
+	lootdoubles = TRUE
+	lootcount = 1
+	loot = list(
+	/obj/item/rock = 4,
+	/obj/item/rock/cinnabar = 1,
+	/obj/item/rock/lith = 1,
+	/obj/item/rock/niter = 2,
+	/obj/item/rock/sulf = 1,
+	/obj/item/rock/baux = 2,
+	/obj/item/rock/malachite = 2,
+	/obj/item/rock/salt = 2,)
 /obj/structure/barrel/deconstruct(disassembled = FALSE)
 	new /obj/effect/spawner/lootdrop/barrel/ (loc, 1)
 	qdel(src)
@@ -433,7 +452,6 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/ammo_box/a357 = 5,
 		/obj/item/ammo_box/magazine/m9mm = 5,
 		/obj/item/ammo_box/magazine/uzim9mm = 5,
-		/obj/item/chainsaw = 2,
 		/obj/item/claymore/weak = 1,
 		/obj/item/gun/medbeam/ = 1,
 		/obj/item/gun/syringe = 3,
@@ -456,7 +474,6 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/reagent_containers/pill/charcoal = 15,
 		/obj/item/reagent_containers/pill/probital = 10,
 		/obj/item/reagent_containers/pill/patch/synthflesh = 2,
-		/obj/item/healthanalyzer = 10,
 		/obj/item/grenade/frag = 5,
 
 		)

@@ -786,3 +786,4 @@ nobiliumsuppression = INFINITY
 		if(new_heat_capacity > MINIMUM_HEAT_CAPACITY)
 			air.temperature = clamp((air.temperature*old_heat_capacity + energy_released)/new_heat_capacity,TCMB,INFINITY)
 		return REACTING
+

@@ -1,5 +1,5 @@
 //Radiation storms occur when the station passes through an irradiated area, and irradiate anyone not standing in protected areas (maintenance, emergency storage, etc.)
-/datum/weather/night
+/datum/weather/fog
 	name = "night"
 	desc = "sleepy time"
 

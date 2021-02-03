@@ -130,6 +130,7 @@
 		/obj/item/storage/bag/trash = 2,
 		/obj/item/storage/pill_bottle/ = 2,
 		/obj/structure/flora/ash/flax = 7,
+		/obj/effect/spawner/lootdrop/minnyral = 30,
 		"" = 420 )
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
 	if(prob(12))

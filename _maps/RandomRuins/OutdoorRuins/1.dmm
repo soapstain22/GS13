@@ -11,14 +11,19 @@
 "k" = (/obj/machinery/power/apc/auto_name/north,/turf/open/floor/plating,/area/reststop)
 "l" = (/turf/open/floor/plating,/area/reststop)
 "m" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/reststop)
-"n" = (/obj/machinery/light/small{brightness = 3; dir = 8},/turf/open/floor/plasteel/grimy,/area/reststop)
+"n" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/reststop)
 "o" = (/turf/open/floor/plasteel/grimy,/area/reststop)
-"p" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel/grimy,/area/reststop)
+"p" = (/obj/structure/urinal{pixel_z = 32},/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/reststop)
 "q" = (/obj/machinery/door/airlock/maintenance_hatch,/turf/open/floor/plating,/area/reststop)
 "r" = (/obj/structure/toilet{dir = 1},/turf/open/floor/plating,/area/reststop)
 "s" = (/turf/open/floor/plating/pavement,/area/template_noop)
 "t" = (/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 "u" = (/turf/open/floor/plating/road,/area/template_noop)
+"v" = (/obj/structure/sink{icon_state = "sink"; dir = 1},/obj/machinery/light/small{brightness = 3; dir = 8},/turf/open/floor/plasteel,/area/reststop)
+"w" = (/obj/structure/sink{pixel_z = 29},/obj/machinery/light/small{brightness = 3; dir = 8},/turf/open/floor/plasteel,/area/reststop)
+"x" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plating,/area/reststop)
+"y" = (/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/grimy,/area/reststop)
+"z" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/grimy,/area/reststop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaa
@@ -27,13 +32,13 @@ aaaabbbbbbbbbaaaaaaaaaa
 aaaabcbcbcbcbaaaaaaaaaa
 aaaabdbdbdbdbaaaaaaaaaa
 aaaadeeefeeebaaaaaaaaaa
-aaaabggggeeebaaaaaaaaaa
+aaaabvgggeenbaaaaaaaaaa
 aaaabbbbbbbbbbbbbbbbbaa
-aaaabhhhhiiibjjjjbklbaa
-aaaadeeemeeebnoopbllbaa
+aaaabwhhhiipbjjjjbklbaa
+aaaadeeemeeebooooblxbaa
 aaaabdbdbdbdbooooqllbaa
 aaaabrbrbrbrboooobbbbaa
-aaaabbbbbbbbboooobaaaaa
+aaaabbbbbbbbbyoozbaaaaa
 ttttttttttttttttttttttt
 sssssssssssssssssssssss
 sssssssssssssssssssssss

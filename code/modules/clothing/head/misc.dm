@@ -278,7 +278,7 @@
 	inhand_icon_state = "hunter"
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 15, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-
+	custom_price = 500
 /obj/item/clothing/head/cone
 	desc = "This cone is trying to warn you of something!"
 	name = "warning cone"

@@ -1,0 +1,66 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/structure/flora/rock,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/structure/flora/rock,/turf/template_noop,/area/template_noop)
+"e" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
+"f" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 9},/turf/template_noop,/area/template_noop)
+"g" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/template_noop,/area/template_noop)
+"h" = (/obj/structure/fence/post{icon_state = "post"; dir = 8},/obj/structure/fence/end{icon_state = "end"; dir = 1},/turf/template_noop,/area/template_noop)
+"i" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 4},/turf/template_noop,/area/template_noop)
+"j" = (/obj/structure/fence,/turf/template_noop,/area/template_noop)
+"k" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/template_noop,/area/template_noop)
+"l" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/template_noop,/area/template_noop)
+"m" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/turf/template_noop,/area/template_noop)
+"n" = (/obj/structure/fence/door,/turf/template_noop,/area/template_noop)
+"o" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 6},/turf/template_noop,/area/template_noop)
+"p" = (/obj/structure/fence/cut/medium,/turf/template_noop,/area/template_noop)
+"q" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/template_noop,/area/template_noop)
+"r" = (/obj/structure/fence/cut/medium{icon_state = "straight_cut2"; dir = 8},/turf/template_noop,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aafggggggghgggggggggiaa
+aajkkkkkllmlllllllllmaa
+aajkkkkkkkmlllllllllmaa
+aajkkkkkkkmlllllllllmaa
+aajkkkkkkkmlllllllllmaa
+aajkkkkkkkmlllllllllmaa
+aajllkkkkkmlllllllllmaa
+aafgngggggolllllllllmaa
+aajlllllllllllllllllmaa
+aaplllllllllllllllllmaa
+aajlllllllllllllllllmaa
+aajlllllllllllllllllmaa
+aajlllllllllllllllllmaa
+aajlllllllllllllllllmaa
+aaqggrggggggggngggggoaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,2) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaacaaaaaaaaaaa
+aaaaaaaababbadbaaaaaaaa
+aaaaaaaaabbbbbaaaaaaaaa
+aaaaaaadaabbcaabaaaaaaa
+aaaaaaabbbcbbbbbaaaaaaa
+aaaaaaaaaabebcaaaaaaaaa
+aaaaaaababbbbbbbaaaaaaa
+aaaaaabbcbbbcbadbaaaaaa
+aaaaaaaaaabbbbbcbaaaaaa
+aaaaaaaabbbbaabaaaaaaaa
+aaaaaaaaacacaaaaaaaaaaa
+aaaaaaaabaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}
