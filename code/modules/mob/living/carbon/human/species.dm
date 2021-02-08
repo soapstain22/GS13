@@ -1159,7 +1159,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		var/hunger_rate = HUNGER_FACTOR
 		var/datum/component/mood/mood = H.GetComponent(/datum/component/mood)
 		if(mood && mood.sanity > SANITY_DISTURBED)
-			hunger_rate *= max(0.5, 1 - 0.002 * mood.sanity) //0.85 to 0.75
+			hunger_rate *= max(0.5, 1 - 0.004 * mood.sanity) //0.85 to 0.75
 		// Whether we cap off our satiety or move it towards 0
 		if(H.satiety > MAX_SATIETY)
 			H.satiety = MAX_SATIETY
@@ -1176,7 +1176,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.adjust_nutrition(-hunger_rate)
 
 
-	if (H.nutrition > NUTRITION_LEVEL_FULL)
+	if (H.nutrition > NUTRITION_LEVEL_FAT)
 		if(H.overeatduration < 600) //capped so people don't take forever to unfat
 			H.overeatduration++
 	else
@@ -1213,14 +1213,22 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				H.remove_movespeed_modifier(/datum/movespeed_modifier/hunger)
 
 	switch(H.nutrition)
-		if(NUTRITION_LEVEL_FULL to INFINITY)
+		if(NUTRITION_LEVEL_FAT to INFINITY)
 			H.throw_alert("nutrition", /obj/screen/alert/fat)
-		if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FULL)
-			H.clear_alert("nutrition")
-		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
+		if(NUTRITION_LEVEL_CHUBBY to NUTRITION_LEVEL_FAT)
+			H.throw_alert("nutrition", /obj/screen/alert/chubby)
+		if(NUTRITION_LEVEL_SATISFIED to NUTRITION_LEVEL_CHUBBY)
+			H.throw_alert("nutrition", /obj/screen/alert/satisfied)
+		if(NUTRITION_LEVEL_WELL_FED to NUTRITION_LEVEL_SATISFIED)
+			H.throw_alert("nutrition", /obj/screen/alert/wellfed)
+		if(NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
+			H.throw_alert("nutrition", /obj/screen/alert/fed)
+		if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
 			H.throw_alert("nutrition", /obj/screen/alert/hungry)
-		if(0 to NUTRITION_LEVEL_STARVING)
+		if(NUTRITION_LEVEL_AUTOPHAGY to NUTRITION_LEVEL_STARVING)
 			H.throw_alert("nutrition", /obj/screen/alert/starving)
+		if(0 to NUTRITION_LEVEL_AUTOPHAGY)
+			H.throw_alert("nutrition", /obj/screen/alert/autophagy)
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0

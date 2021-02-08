@@ -1,7 +1,7 @@
 //Radiation storms occur when the station passes through an irradiated area, and irradiate anyone not standing in protected areas (maintenance, emergency storage, etc.)
-/datum/weather/night
-	name = "night"
-	desc = "sleepy time"
+/datum/weather/heat
+	name = "heat wave"
+	desc = "heat wave"
 
 	telegraph_duration = 200
 	telegraph_message = "<span class='danger'>Its getting late... Find shelter!</span>"
@@ -19,12 +19,7 @@
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
 	/area/ai_monitored/turret_protected/ai, /area/storage/emergency/starboard, /area/storage/emergency/port, /area/shuttle, /area/security/prison/safe, /area/security/prison/toilet)
 	target_trait = ZTRAIT_OUTDOORS_RUINS
-/datum/weather/night/weather_act(obj/effect/landmark/zombie)
 
-	for(var/obj/effect/landmark/zombie/SP in GLOB.landmarks_list)
-		if(prob(80))
-			new/mob/living/simple_animal/hostile/carp(SP.loc)
-			sleep 30
-		else
-			new/mob/living/simple_animal/hostile/carp/megacarp(SP.loc)
-			sleep 20
+/datum/weather/snow_storm/weather_act(mob/living/L, /obj/machinery/hydroponics/R)
+	L.adjust_bodytemperature(+rand(2,5))
+	R.adjustHealth(-rand(1,3))

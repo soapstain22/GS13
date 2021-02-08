@@ -4,7 +4,7 @@
 	desc = "sleepy time"
 
 	telegraph_duration = 200
-	telegraph_message = "<span class='danger'>Its getting late... Find shelter!</span>"
+	telegraph_message = "<span class='danger'>a fog fills the air</span>"
 	weather_message = "<span class='userdanger'><i>Goodnight!</i></span>"
 	telegraph_overlay = "sunset"
 	weather_duration_lower = 2100
@@ -19,12 +19,13 @@
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
 	/area/ai_monitored/turret_protected/ai, /area/storage/emergency/starboard, /area/storage/emergency/port, /area/shuttle, /area/security/prison/safe, /area/security/prison/toilet)
 	target_trait = ZTRAIT_OUTDOORS_RUINS
-/datum/weather/night/weather_act(obj/effect/landmark/zombie)
+/datum/weather/fog/weather_act(obj/effect/landmark/zombie)
 
 	for(var/obj/effect/landmark/zombie/SP in GLOB.landmarks_list)
-		if(prob(80))
-			new/mob/living/simple_animal/hostile/carp(SP.loc)
+		if(prob(50))
+			new/mob/living/simple_animal/hostile/eldritch/rust_spirit(SP.loc)
 			sleep 30
 		else
-			new/mob/living/simple_animal/hostile/carp/megacarp(SP.loc)
+		if(prob(70))
+			new/mob/living/simple_animal/hostile/eldritch/stalker(SP.loc)
 			sleep 20

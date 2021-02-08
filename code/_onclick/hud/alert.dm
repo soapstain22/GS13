@@ -153,20 +153,37 @@
 
 
 /obj/screen/alert/fat
-	name = "Fat"
-	desc = "You ate too much food, lardass. Run around the station and lose some weight."
+	name = "fat"
+	desc = "you are going to shit your pants"
 	icon_state = "fat"
-
+/obj/screen/alert/chubby
+	name = "chubby"
+	desc = "woah calm down tubby"
+	icon_state = "chubby"
+/obj/screen/alert/satisfied
+	name = "satisfied"
+	desc = "pretty fooded out"
+	icon_state = "satisfied"
+/obj/screen/alert/wellfed
+	name = "well fed"
+	desc = "i had some MORE food"
+	icon_state = "wellfed"
+/obj/screen/alert/fed
+	name = "fed"
+	desc = "i had some food"
+	icon_state = "fed"
 /obj/screen/alert/hungry
-	name = "Hungry"
-	desc = "Some food would be good right about now."
+	name = "hungry"
+	desc = "wow better eat food or you'll die!"
 	icon_state = "hungry"
-
 /obj/screen/alert/starving
 	name = "Starving"
-	desc = "You're severely malnourished. The hunger pains make moving around a chore."
+	desc = "you need to eat to survive, jackass"
 	icon_state = "starving"
-
+/obj/screen/alert/autophagy
+	name = "autophagy"
+	desc = "your body is now eating itself"
+	icon_state = "autophagy"
 /obj/screen/alert/gross
 	name = "Grossed out."
 	desc = "That was kind of gross..."

@@ -85,8 +85,8 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	inhand_icon_state = "nullrod"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 5
-	throwforce = 3
+	force = 2
+	throwforce = 1
 	attack_verb = list("smacked")
 	w_class = WEIGHT_CLASS_SMALL
 /obj/item/melee/stick/attack(mob/living/target, mob/living/user)

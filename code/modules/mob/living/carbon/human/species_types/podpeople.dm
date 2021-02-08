@@ -59,7 +59,7 @@
 				H.adjustFireLoss(rand(5,15))
 				H.show_message("<span class='userdanger'>The radiation beam singes you!</span>")
 		if(/obj/projectile/energy/florayield)
-			H.set_nutrition(min(H.nutrition+30, NUTRITION_LEVEL_FULL))
+			H.set_nutrition(min(H.nutrition+30, NUTRITION_LEVEL_FAT))
 		if(/obj/projectile/energy/florarevolution)
 			H.show_message("<span class='notice'>The radiation beam leaves you feeling disoriented!</span>")
 			H.Dizzy(15)

@@ -56,7 +56,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	rarity = 900
 /datum/gas/iron
 	id = "fe"
-	specific_heat = 1538
+	specific_heat = 2862
 	name = "Iron"
 	rarity = 900
 	moles_visible = MOLES_GAS_VISIBLE
@@ -95,12 +95,26 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	name = "Silicon"
 	rarity = 1000
 	moles_visible = MOLES_GAS_VISIBLE
+/datum/gas/nickel
+	id = "Ni"
+	specific_heat = 20
+	name = "Nickel"
+	rarity = 1000
 /datum/gas/carbon_dioxide //what the fuck is this?
 	id = "co2"
 	specific_heat = 30
 	name = "Carbon Dioxide"
 	rarity = 700
-
+/datum/gas/chlorine
+	id = "cl"
+	specific_heat = 20
+	name = "chlorine"
+	rarity = 1000
+/datum/gas/tin
+	id = "sn"
+	specific_heat = 20
+	name = "tin"
+	rarity = 1000
 /datum/gas/plasma
 	id = "plasma"
 	specific_heat = 200

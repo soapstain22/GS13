@@ -217,6 +217,8 @@
 	slowdown = 0.4
 	icon_state = "tit"
 /obj/item/stack/linen
+	name = "linen"
+	desc = "its like cloth but its cloth"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "linen"
 	resistance_flags = FLAMMABLE
@@ -233,13 +235,12 @@
 	. += GLOB.linen_recipes
 
 GLOBAL_LIST_INIT(linen_recipes, list ( \
-	new/datum/stack_recipe("shirt", /obj/item/clothing/under/serf, 10, time = 5, one_per_turf = 0), \
-	new/datum/stack_recipe("the hat", /obj/item/clothing/head/serf, 5, time = 5, one_per_turf = 0), \
-	new/datum/stack_recipe("little booties", /obj/item/clothing/shoes/serf, 5, time = 5, one_per_turf = 0), \
+	new/datum/stack_recipe("shirt", /obj/item/clothing/under/serf, 10, time = 30, one_per_turf = 0), \
+	new/datum/stack_recipe("the hat", /obj/item/clothing/head/serf, 5, time = 30, one_per_turf = 0), \
+	new/datum/stack_recipe("little booties", /obj/item/clothing/shoes/serf, 30, time = 5, one_per_turf = 0), \
 	new/datum/stack_recipe("sack", /obj/item/storage/backpack/sack, 20), \
+	new/datum/stack_recipe("forager sock", /obj/item/storage/bag/plants/portaseeder, 10), \
 	null, \
-	new/datum/stack_recipe("plant bag", /obj/item/storage/bag/plants, 10), \
-	new/datum/stack_recipe("book bag", /obj/item/storage/bag/books, 10), \
 	new/datum/stack_recipe("mining satchel", /obj/item/storage/bag/ore, 10), \
 	new/datum/stack_recipe("chemistry bag", /obj/item/storage/bag/chemistry, 10), \
 	new/datum/stack_recipe("bio bag", /obj/item/storage/bag/bio, 10), \

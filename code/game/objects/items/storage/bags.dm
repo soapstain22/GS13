@@ -204,18 +204,20 @@
 		/obj/item/grown,
 		/obj/item/reagent_containers/honeycomb,
 		/obj/item/graft,
+		/obj/item/rock,
+
 		))
 ////////
 
 /obj/item/storage/bag/plants/portaseeder
-	name = "portable seed extractor"
-	desc = "For the enterprising botanist on the go. Less efficient than the stationary model, it creates one seed per plant."
+	name = "forager sock"
+	desc = "you can put stuff in it then beat the shit out of it"
 	icon_state = "portaseeder"
 
 /obj/item/storage/bag/plants/portaseeder/verb/dissolve_contents()
-	set name = "Activate Seed Extraction"
+	set name = "beat the shit out of the bag"
 	set category = "Object"
-	set desc = "Activate to convert your plants into plantable seeds."
+	set desc = "makes seeds and dusts things off"
 	if(usr.incapacitated())
 		return
 	for(var/obj/item/O in contents)

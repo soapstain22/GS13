@@ -650,7 +650,7 @@
 	color = "#664330" // rgb: 102, 67, 48
 
 /datum/reagent/consumable/nutriment/stabilized/on_mob_life(mob/living/carbon/M)
-	if(M.nutrition > NUTRITION_LEVEL_FULL - 25)
+	if(M.nutrition > NUTRITION_LEVEL_FAT - 25)
 		M.adjust_nutrition(-3*nutriment_factor)
 	..()
 

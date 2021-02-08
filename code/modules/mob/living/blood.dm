@@ -23,7 +23,11 @@
 
 // Takes care blood loss and regeneration
 /mob/living/carbon/human/handle_blood()
-
+	switch(nutrition)
+		if(0 to NUTRITION_LEVEL_AUTOPHAGY)
+			adjustOxyLoss(round((NUTRITION_LEVEL_AUTOPHAGY - nutrition) * 0.02, 1))
+		if(NUTRITION_LEVEL_AUTOPHAGY to NUTRITION_LEVEL_STARVING)
+			adjustOxyLoss(round((NUTRITION_LEVEL_STARVING - nutrition) * 0.01, 1))
 	if(NOBLOOD in dna.species.species_traits || bleedsuppress || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
 		return
 
@@ -35,7 +39,6 @@
 			switch(nutrition)
 				if(0 to NUTRITION_LEVEL_STARVING)
 					nutrition_ratio = 0.1
-					adjustOxyLoss(round((NUTRITION_LEVEL_STARVING - nutrition) * 0.02, 1))
 				if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
 					nutrition_ratio = 0.4
 				if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)

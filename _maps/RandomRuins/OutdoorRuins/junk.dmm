@@ -5,7 +5,7 @@
 "e" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
 "f" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 9},/turf/template_noop,/area/template_noop)
 "g" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/template_noop,/area/template_noop)
-"h" = (/obj/structure/fence/post{icon_state = "post"; dir = 8},/obj/structure/fence/end{icon_state = "end"; dir = 1},/turf/template_noop,/area/template_noop)
+"h" = (/obj/effect/spawner/lootdrop/maintenance,/turf/template_noop,/area/template_noop)
 "i" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 4},/turf/template_noop,/area/template_noop)
 "j" = (/obj/structure/fence,/turf/template_noop,/area/template_noop)
 "k" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/template_noop,/area/template_noop)
@@ -16,28 +16,34 @@
 "p" = (/obj/structure/fence/cut/medium,/turf/template_noop,/area/template_noop)
 "q" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/template_noop,/area/template_noop)
 "r" = (/obj/structure/fence/cut/medium{icon_state = "straight_cut2"; dir = 8},/turf/template_noop,/area/template_noop)
+"s" = (/obj/effect/spawner/lootdrop/maintenance/two,/turf/template_noop,/area/template_noop)
+"t" = (/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/seed_vault,/turf/template_noop,/area/template_noop)
+"u" = (/obj/effect/spawner/lootdrop/bota,/turf/template_noop,/area/template_noop)
+"v" = (/obj/effect/spawner/lootdrop/minecraft,/turf/template_noop,/area/template_noop)
+"w" = (/obj/effect/spawner/lootdrop/tool,/turf/template_noop,/area/template_noop)
+"x" = (/obj/effect/spawner/lootdrop/parts,/turf/template_noop,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
-aafggggggghgggggggggiaa
-aajkkkkkllmlllllllllmaa
-aajkkkkkkkmlllllllllmaa
-aajkkkkkkkmlllllllllmaa
-aajkkkkkkkmlllllllllmaa
-aajkkkkkkkmlllllllllmaa
-aajllkkkkkmlllllllllmaa
-aafgngggggolllllllllmaa
-aajlllllllllllllllllmaa
-aaplllllllllllllllllmaa
-aajlllllllllllllllllmaa
-aajlllllllllllllllllmaa
-aajlllllllllllllllllmaa
-aajlllllllllllllllllmaa
-aaqggrggggggggngggggoaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
+aafgggggggggggggggggiaa
+ahjkkkkkllhhhhhhhhhhmaa
+aajkkkkkkkhhhhhhhhhhmha
+aajkkkskkkhhhhhhhhhhmaa
+ahjkkkkkkkhshhhhhshhmaa
+aajkkkkkkkhhhhhhsthhmha
+aujllskkkkhhhhhhhhhhmaa
+ahphhshhhhhhshhhhhhhmaa
+aajhhhhhhhhhhhhhhhhhmaa
+aaphhhhhhhhshhhhhhhhmaa
+aajhhhhshhhhhshhhhshmaa
+aajhshhhhhtshhhhhhhsmaa
+aajhhhhhhhhhhhhhhhhhmaa
+aajhhhhhhhhhhhhhhhhhmha
+aaqggrggggggggngggggoha
+haaahaavaaaaaaaaaaaaawa
+aaaaaaaaaaaaaaaaaaxaaaa
+aaaaaaaaaaaaavaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
 "}
 

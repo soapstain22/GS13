@@ -824,9 +824,9 @@
 
 	if(!HAS_TRAIT(src, TRAIT_NOHUNGER))
 		switch(nutrition)
-			if(NUTRITION_LEVEL_FULL to INFINITY)
+			if(NUTRITION_LEVEL_FAT to INFINITY)
 				to_chat(src, "<span class='info'>You're completely stuffed!</span>")
-			if(NUTRITION_LEVEL_WELL_FED to NUTRITION_LEVEL_FULL)
+			if(NUTRITION_LEVEL_WELL_FED to NUTRITION_LEVEL_FAT)
 				to_chat(src, "<span class='info'>You're well fed!</span>")
 			if(NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
 				to_chat(src, "<span class='info'>You're not hungry.</span>")

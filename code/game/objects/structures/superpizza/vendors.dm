@@ -5,17 +5,36 @@
 	payment_department = NO_FREEBIES
 	light_mask = "generic-light-mask"
 	resistance_flags = INDESTRUCTIBLE
-/obj/machinery/vending/secret/pee
-	products = (/obj/item/gun/energy/kinetic_accelerator/crossbow/large = 5,
-					/obj/item/katana = 3,
-					/obj/item/clothing/suit/armor/bulletproof = 20,
-					/obj/item/clothing/suit/armor/heavy = 20,
-					/obj/item/clothing/suit/armor/laserproof = 20,
-					/obj/item/clothing/head/thenam = 20,
-					/obj/item/clothing/head/helmet = 20,
-					/obj/item/clothing/head/hunter = 20,
-					/obj/item/clothing/under/pants/camo = 20,
-					/obj/item/clothing/suit/jacket/miljacket = 20,
-					/obj/item/gun/ballistic/rifle/boltaction = 20,
-					/obj/item/storage/toolbox/ammo = 20,
-					/obj/item/ammo_box/a762 = 150,)
+	use_power = NO_POWER_USE
+	active_power_usage = 0
+	idle_power_usage = 0
+/obj/machinery/vending/secret/comby/
+	name = "the combat vendy"
+	products = list(/obj/item/gun/energy/kinetic_accelerator/crossbow/large = 5,
+				/obj/item/katana = 3,
+				/obj/item/clothing/suit/armor/bulletproof = 20,
+				/obj/item/clothing/suit/armor/heavy = 20,
+				/obj/item/clothing/suit/armor/laserproof = 20,
+				/obj/item/clothing/head/thenam = 20,
+				/obj/item/clothing/head/helmet = 20,
+				/obj/item/clothing/head/hunter = 20,
+				/obj/item/clothing/under/pants/camo = 20,
+				/obj/item/clothing/suit/jacket/miljacket = 20,
+				/obj/item/gun/ballistic/rifle/boltaction = 20,
+				/obj/item/storage/toolbox/ammo = 20,
+				/obj/item/ammo_box/a762 = 150,)
+/obj/machinery/vending/secret/minecraft/
+	name = "minecraft burger"
+	products = list(/obj/item/gun/energy/kinetic_accelerator/crossbow/large = 5,
+				/obj/item/katana = 3,
+				/obj/item/clothing/suit/armor/bulletproof = 20,
+				/obj/item/clothing/suit/armor/heavy = 20,
+				/obj/item/clothing/suit/armor/laserproof = 20,
+				/obj/item/clothing/head/thenam = 20,
+				/obj/item/clothing/head/helmet = 20,
+				/obj/item/clothing/head/hunter = 20,
+				/obj/item/clothing/under/pants/camo = 20,
+				/obj/item/clothing/suit/jacket/miljacket = 20,
+				/obj/item/gun/ballistic/rifle/boltaction = 20,
+				/obj/item/storage/toolbox/ammo = 20,
+				/obj/item/ammo_box/a762 = 150,)
