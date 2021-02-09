@@ -13,6 +13,72 @@
 	integrity_failure = 0.33
 	smooth = SMOOTH_FALSE
 	deconstruction_ready = 0
+/obj/item/stack/metaldust
+	max_amount = 100000
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	desc = "for metal i think"
+	icon_state = "metal"
+	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	resistance_flags = FIRE_PROOF
+	meltingpoint = 1538
+	burningpoint = 2870
+	gaseousstate = /datum/gas/iron
+	solidstate = /obj/item/stack/metalfrags
+	dens = 0.141 //how many molecules it takes for a single fragment to form
+	custom_materials = list(/datum/material/iron=1)
+/obj/item/stack/metalfrags/update_icon_state()
+	if(novariants)
+		return
+	icon_state = "[initial(icon_state)][amount < 5 ? amount : ""]"
+	var/how_many_things = amount < 5 ? "fragment" : "fragments"
+	name = "metal [how_many_things]"
+	desc = "oh boy! [how_many_things]!"
+/obj/item/molten/ironore
+	name = "iron ore"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	desc = "for metal i think"
+	icon_state = "molteniron"
+	meltingpoint = 1538
+	burningpoint = 2870
+	gaseousstate = /datum/gas/iron
+	solidstate = /obj/item/stack/metalfrags
+	dens = 0.141 //how many molecules it takes for a fragment to form
+	custom_materials = list(/datum/material/iron=1)
+/obj/item/molten
+	name = "molten metal"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	desc = "hot"
+	icon_state = "molteniron"
+	var/meltingpoint = null
+	var/burningpoint = null
+	var/gaseousstate = null
+	var/solidstate = null
+	var/liquidstate = null
+	var/dens = null //how many molecules it takes for a fragment to form
+/obj/item/stack/temperature_expose(exposed_temperature, exposed_volume)
+	. = ..()
+		switch(exposed_temperature)
+			if(0 to meltingpoint)
+				if(isnull(solidstate))
+					return
+				else
+					new solidstate(drop_location(),amount*dens)
+					qdel(src)
+			if(meltingpoint to burningpoint)
+				return
+			if(burningpoint to INFINITY)
+				if(isnull(solidstate))
+					return
+				else
+					loc.atmos_spawn_air("[gaseousstate]=[amount/dens];TEMP=[burningpoint]")
+					qdel(src)
+
+/obj/item/molten/pickup(mob/living/carbon/user)
+	if(..())
+		if(prob(50))
+			user.Paralyze(100)
+			to_chat(user, "<span class='userdanger'>You are stunned by [src] as you try picking it up!</span>")
+
 /obj/item/handfile
 	name = "file"
 	desc = "you can use it."
@@ -264,6 +330,7 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	force = 5
 	throwforce = 5
 	w_class = WEIGHT_CLASS_TINY
+/obj/item/rock/rock
 /obj/item/rock/cinnabar
 	icon_state = "cinnabar"
 	grind_results = list(/datum/reagent/mercury = 10)

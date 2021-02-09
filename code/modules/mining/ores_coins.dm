@@ -21,8 +21,6 @@
 	var/list/stack_overlays
 	var/scan_state = "" //Used by mineral turfs for their scan overlay.
 	var/spreadChance = 0 //Also used by mineral turfs for spreading veins
-	var/meltingpoint = 1000
-	var/burningpoint = 10000
 /obj/item/stack/ore/update_overlays()
 	. = ..()
 	var/difference = min(ORESTACK_OVERLAYS_MAX, amount) - (LAZYLEN(stack_overlays)+1)
@@ -58,9 +56,10 @@
 	if(isnull(refined_type))
 		return
 	else
-		var/smelt = sqrt(exposed_temperature/meltingpoint)
+		var/smelt = exposed_temperature/meltingpoint
 		var/amountrefined = round(smelt, 1)
-		if(smelt >= 1)
+		var/burn = exposed_temperature/burningpoint
+		if(amountrefined >= 1 && burn < 1)
 			new refined_type(drop_location(),amountrefined)
 			qdel(src)
 		else

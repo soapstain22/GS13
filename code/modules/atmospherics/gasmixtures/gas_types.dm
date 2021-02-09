@@ -60,6 +60,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	name = "Iron"
 	rarity = 900
 	moles_visible = MOLES_GAS_VISIBLE
+	gas_overlay = "fe"
 /datum/gas/gold
 	id = "au"
 	specific_heat = 1064

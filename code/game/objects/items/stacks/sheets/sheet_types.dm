@@ -108,8 +108,12 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	point_value = 2
 	tableVariant = /obj/structure/table
 	material_type = /datum/material/iron
+	meltingpoint = 1538
+	burningpoint = 2870
+	gaseousstate = /datum/gas/iron
 	/datum/component/hot_ice/proc/flame_react
-
+//smelt
+//endsmelt
 /obj/item/stack/sheet/metal/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)
 	qdel(src)

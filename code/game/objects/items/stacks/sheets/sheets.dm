@@ -14,7 +14,6 @@
 	var/point_value = 0 //turn-in value for the gulag stacker - loosely relative to its rarity.
 	///What type of wall does this sheet spawn
 	var/walltype
-
 /obj/item/stack/sheet/Initialize(mapload, new_amount, merge)
 	. = ..()
 	pixel_x = rand(-4, 4)

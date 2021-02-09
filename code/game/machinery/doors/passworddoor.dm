@@ -46,7 +46,7 @@
 	if(density)
 		if(firstuse==TRUE)
 			if(ask_for_pass(user))
-			open()
+				open()
 		else
 			do_animate("deny")
 /obj/machinery/door/password/update_icon_state()

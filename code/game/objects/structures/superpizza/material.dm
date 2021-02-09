@@ -16,7 +16,6 @@
 	max_amount = 50
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	hitsound = 'sound/weapons/gun/general/grenade_launch.ogg'
-	embedding = list()
 	novariants = TRUE
 /obj/machinery/chem_master/lab
 	layer = BELOW_OBJ_LAYER
@@ -62,6 +61,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	harvest_message_high = "You pluck quite a lot of strands."
 	regrowth_time_low = 2400
 	regrowth_time_high = 6000
+	max_integrity = 35
 /obj/structure/flora/ash/aloe
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "aloe"
@@ -78,25 +78,26 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	harvest_message_high = "You pluck quite a lot of suitable leaves."
 	regrowth_time_low = 2400
 	regrowth_time_high = 6000
+	max_integrity = 35
 /obj/item/melee/stick
-	name = "cool stick"
-	desc = "it is very fast"
-	icon_state = "nullrod"
-	inhand_icon_state = "nullrod"
+	name = "stick"
+	desc = "brown and sticky"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "stick"
+	inhand_icon_state = "wood"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 2
+	force = 3
 	throwforce = 1
+	attackspeed = 0.8
 	attack_verb = list("smacked")
 	w_class = WEIGHT_CLASS_SMALL
-/obj/item/melee/stick/attack(mob/living/target, mob/living/user)
-	user.changeNext_move(CLICK_CD_MELEE * 0.3)
 /datum/crafting_recipe/hydrobin
 	name = "hydroponics bin"
 	always_availible = TRUE
 	reqs = list(
 			/obj/item/reagent_containers/glass/bucket = 2,
-			/obj/item/stack/sheet/metal/ = 20)
+			/obj/item/stack/sheet/metal/ = 4)
 	result = /obj/machinery/hydroponics
 	category = CAT_MISC
 	always_availible = TRUE
@@ -130,7 +131,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	desc = "gear"
 	icon_state = "gear"
 	custom_materials = list(/datum/material/brass=450)
-	force = 7
+	force = 2
 	throwforce = 1 // why are you throwing a club do you even weapon
 	throw_speed = 1
 	throw_range = 7
