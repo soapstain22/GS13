@@ -67,9 +67,6 @@
 			P.roll_and_drop(src)
 
 	ScrapeAway()
-/turf/closed/wall/proc/hardbreak()
-	if(hardness)
-		dismantle_wall(1)
 
 /turf/closed/wall/proc/break_wall()
 	new sheet_type(src, sheet_amount)
@@ -189,9 +186,6 @@
 
 /turf/closed/wall/attackby(obj/item/W, mob/user, params)
 	user.changeNext_move(CLICK_CD_MELEE)
-	var/damn = W.force/2
-	if (prob(damn))
-		add_dent(WALL_DENT_HIT)
 	if (!user.IsAdvancedToolUser())
 		to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return

@@ -1,19 +1,19 @@
 //Radiation storms occur when the station passes through an irradiated area, and irradiate anyone not standing in protected areas (maintenance, emergency storage, etc.)
 /datum/weather/fog
-	name = "fog"
+	name = "night"
 	desc = "sleepy time"
 
 	telegraph_duration = 200
 	telegraph_message = "<span class='danger'>a fog fills the air</span>"
 	weather_message = "<span class='userdanger'><i>Goodnight!</i></span>"
-	telegraph_overlay = "fog"
+	telegraph_overlay = "sunset"
 	weather_duration_lower = 2100
 	weather_duration_upper = 2600
-	weather_overlay = "fogloop"
+	weather_overlay = "dark"
 	overlay_layer = 15
 	barometer_predictable = TRUE
 	end_duration = 200
-	end_message = "<span class='notice'>a fog fills the area</span>"
+	end_message = "<span class='notice'>The sun rises.</span>"
 	end_overlay = "sunrise"
 	area_type = /area/surface/outdoors/unexplored
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
@@ -25,6 +25,7 @@
 		if(prob(50))
 			new/mob/living/simple_animal/hostile/eldritch/rust_spirit(SP.loc)
 			sleep 30
+		else
 		if(prob(70))
 			new/mob/living/simple_animal/hostile/eldritch/stalker(SP.loc)
 			sleep 20

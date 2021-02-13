@@ -93,7 +93,7 @@
 /turf/open/floor/plating/asteroid/garbango/
 	var/spawntable
 	spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
-		/obj/structure/flora/ausbushes/fullgrass = 100,
+		/obj/structure/flora/ausbushes/fullgrass = 300,
 		/obj/structure/flora/rock = 30,
 		/obj/structure/flora/ausbushes/ywflowers = 9,
 		/obj/structure/flora/ausbushes/genericbush = 9,
@@ -107,9 +107,9 @@
 		/obj/structure/flora/ausbushes/brflowers = 6,
 		/obj/item/reagent_containers/glass/bottle/ = 4,
 		/obj/machinery/hydroponics/soil = 10,
-		/obj/item/trash/can = 5,
+		/obj/item/trash/can = 1,
 		/obj/structure/barrel/shit = 4,
-		/obj/item/cigbutt/roach = 2,
+		/obj/item/cigbutt/roach = 1,
 		/obj/structure/flora/ausbushes/reedbush = 8,
 		/obj/structure/flora/tree/jungle = 90,
 		/obj/structure/flora/ausbushes/fernybush = 5,
@@ -118,9 +118,9 @@
 		/obj/item/reagent_containers/glass/bottle/ = 1,
 		/obj/item/reagent_containers/food/drinks/waterbottle/empty = 1,
 		/obj/effect/landmark/carpspawn = 4,
-		/obj/structure/flora/bush = 7,
+		/obj/structure/flora/bush = 4,
 		/mob/living/simple_animal/chicken = 1,
-		/obj/effect/landmark/zombie/ = 20,
+		/obj/effect/landmark/zombie/ = 80,
 		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
 		/obj/structure/closet/cardboard/ = 1,
 		/obj/item/stack/component = 20,
@@ -129,13 +129,9 @@
 		/obj/item/analyzer = 1,
 		/obj/item/storage/bag/trash = 2,
 		/obj/item/storage/pill_bottle/ = 2,
-		/obj/structure/flora/ash/flax = 20,
-		/obj/effect/spawner/lootdrop/minnyral = 35,
-		/obj/item/melee/stick = 100,
-		/obj/item/clothing/head/trucker = 1,
-		/obj/item/clothing/head/cone = 1,
-		/obj/item/storage/toolbox/emergency = 1,
-		"" = 200 )
+		/obj/structure/flora/ash/flax = 7,
+		/obj/effect/spawner/lootdrop/minnyral = 30,
+		"" = 420 )
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
 	if(prob(12))
 		var/shit = pickweight(spawntable)

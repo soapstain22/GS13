@@ -129,7 +129,7 @@
 	if(novariants)
 		return
 	icon_state = "[initial(icon_state)][amount < 5 ? amount : ""]"
-	var/how_many_things = amount < 5 ? "piece" : ""
+	var/how_many_things = amount < 5 ? "piece" : "coil"
 	name = "string [how_many_things]"
 	desc = "A [how_many_things] of string."
 

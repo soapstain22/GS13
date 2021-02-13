@@ -146,9 +146,9 @@
 		if (!do_mob(user, src, 80))
 			return
 		// Make Stake
-		var/obj/item/melee/stick/new_item = new(usr.loc)
-		user.visible_message("[user] finishes carving a stick out of [src].", \
-				 "<span class='notice'>You finish carving a stick out of [src].</span>")
+		var/obj/item/stake/basic/new_item = new(usr.loc)
+		user.visible_message("[user] finishes carving a stake out of [src].", \
+				 "<span class='notice'>You finish carving a stake out of [src].</span>")
 		// Prepare to Put in Hands (if holding wood)
 		var/obj/item/stack/sheet/mineral/wood/thisStack = src
 		var/replace = (user.get_inactive_held_item()==thisStack)

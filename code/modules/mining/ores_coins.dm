@@ -51,6 +51,19 @@
 
 	return TRUE
 
+/obj/item/stack/ore/fire_act(exposed_temperature, exposed_volume)
+	. = ..()
+	if(isnull(refined_type))
+		return
+	else
+		var/smelt = exposed_temperature/meltingpoint
+		var/amountrefined = round(smelt, 1)
+		var/burn = exposed_temperature/burningpoint
+		if(amountrefined >= 1 && burn < 1)
+			new refined_type(drop_location(),amountrefined)
+			qdel(src)
+		else
+			return
 /obj/item/stack/ore/uranium
 	name = "uranium ore"
 	icon_state = "Uranium ore"
@@ -75,12 +88,7 @@
 	mine_experience = 1
 	scan_state = "rock_Iron"
 	spreadChance = 20
-	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
-	gaseousstate = /datum/gas/iron
-	liquidstate = /obj/item/stack/molteniron
-	solidstate = /obj/item/stack/sheet/metal
+	meltingpoint = 1135
 /obj/item/stack/ore/emerald
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
 	name = "emerald"
@@ -113,9 +121,8 @@
 	mine_experience = 3
 	scan_state = "trash"
 	var/bypass_spawn = null
-/obj/item/stack/ore/fake/Initialize(mapload)
-	..()
-	new bypass_spawn(loc)
+/obj/item/stack/ore/fake/Initialize()
+	new bypass_spawn
 	qdel (src)
 
 /obj/item/stack/ore/fake/trash
@@ -158,12 +165,7 @@
 	refined_type = /obj/item/stack/sheet/glass
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 0 //its sand
-	meltingpoint = 1400
-	burningpoint = 2000
-	dens = 43.8
-	gaseousstate = null
-	liquidstate = /obj/item/stack/metaldust
-	solidstate = /obj/item/stack/sheet/glass
+	meltingpoint = 1723
 GLOBAL_LIST_INIT(sand_recipes, list(\
 		new /datum/stack_recipe("sandstone", /obj/item/stack/sheet/mineral/sandstone, 1, 1, 50),\
 		new /datum/stack_recipe("aesthetic volcanic floor tile", /obj/item/stack/tile/basalt, 2, 1, 50)\

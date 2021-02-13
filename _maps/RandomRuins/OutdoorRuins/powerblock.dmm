@@ -18,12 +18,16 @@
 "r" = (/obj/effect/decal/cleanable/ash,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 "s" = (/obj/item/reagent_containers/food/drinks/waterbottle/empty{pixel_x = 5; pixel_y = 8},/obj/item/reagent_containers/food/drinks/waterbottle/empty{pixel_x = -2; pixel_y = -5},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 "t" = (/obj/item/toy/crayon/spraycan{pixel_x = -2; pixel_y = 3},/obj/item/toy/crayon/spraycan{pixel_x = 5},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
-"u" = (/obj/structure/barrel/shit,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"u" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"v" = (/obj/item/storage/toolbox/drone,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"w" = (/obj/item/reagent_containers/food/drinks/sillycup/smallcarton{pixel_x = -6; pixel_y = 6},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 "x" = (/turf/closed/wall,/area/template_noop)
 "y" = (/obj/machinery/atmospherics/components/unary/thermomachine/freezer,/turf/open/floor/plating,/area/template_noop)
 "z" = (/turf/open/floor/plating,/area/template_noop)
 "A" = (/obj/item/toy/crayon/spraycan{pixel_x = 6; pixel_y = 10},/obj/item/toy/crayon/spraycan,/turf/open/floor/plating,/area/template_noop)
 "B" = (/obj/machinery/atmospherics/components/unary/tank,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"C" = (/obj/item/shard,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"D" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/obj/item/trash/boritos,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaa
@@ -31,17 +35,17 @@ aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaafgggggggggggggghaaa
-aaaaijjjjjjjjujjjjskaaa
-aaaaijjjjjjjjjjjjjjkaaa
-aaaaijujjjjjjjjjjjjkaaa
-aaaaijjjlljppjxxxxjkaaa
+aaaaijjjjjjjjjjjjjskaaa
+aaaaijjjjjjujjjjjjjkaaa
+aaaaijjjvjjjjwjjjjjkaaa
+aaaaijujlljppjxxxxjkaaa
 aaaaijjjqqjqqjxyzxjkaaa
 aaaaijjrjjjjjjxzAxjkaaa
-aaaaijBBjjjjjjxxzxjkaaa
-aaaaijBBtjjjjjjjjjjkaaa
-aaaaijBBjjjjjujjjjjkaaa
-aaaaijjjjjjjjjjjjjukaaa
-aaaaiujjjjjjjjjjjjjkaaa
+aaaaijBBjjjjujxxzxjkaaa
+aaaaijBBtjCjjjjjjjjkaaa
+aaaaijBBjjjjjjjjujjkaaa
+aaaaijjujjjjjjjjjrjkaaa
+aaaaDjjjjjjjjjjjjjjkaaa
 aaaamgggggggnggggggoaaa
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
