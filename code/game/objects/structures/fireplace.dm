@@ -3,13 +3,12 @@
 #define MAXIMUM_BURN_TIMER 3000
 
 /obj/structure/fireplace
-	name = "fireplace"
+	name = "furnace"
 	desc = "A large stone brick fireplace."
-	icon = 'icons/obj/fireplace.dmi'
-	icon_state = "fireplace"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "furn"
 	density = FALSE
 	anchored = TRUE
-	pixel_x = -16
 	resistance_flags = FIRE_PROOF
 	var/lit = FALSE
 
@@ -37,7 +36,7 @@
 		ignite()
 		return TRUE
 
-/obj/structure/fireplace/attackby(obj/item/T, mob/user)
+/obj/structure/fireplace/attackby(obj/item/T, mob/user, params)
 	if(istype(T, /obj/item/stack/sheet/mineral/wood))
 		var/obj/item/stack/sheet/mineral/wood/wood = T
 		var/space_remaining = MAXIMUM_BURN_TIMER - burn_time_remaining()
@@ -66,24 +65,33 @@
 		qdel(T)
 	else if(try_light(T,user))
 		return
-	else
+	if(user.a_intent == INTENT_HARM)
+		return ..()
+	if(user.transferItemToLoc(src, drop_location()))
+		return 1
 		. = ..()
+/obj/structure/rack/attackby(obj/item/W, mob/user, params)
+	if (W.tool_behaviour == TOOL_WRENCH && !(flags_1&NODECONSTRUCT_1) && user.a_intent != INTENT_HELP)
+		W.play_tool_sound(src)
+		deconstruct(TRUE)
+		return
 
 /obj/structure/fireplace/update_overlays()
 	. = ..()
 	if(lit)
 		switch(burn_time_remaining())
-			if(0 to 500)
-				. += "fireplace_fire0"
+			if(0)
+				. += "furn"
+			if(1 to 500)
+				. += "furn1"
 			if(500 to 1000)
-				. += "fireplace_fire1"
+				. += "furn2"
 			if(1000 to 1500)
-				. += "fireplace_fire2"
+				. += "furn3"
 			if(1500 to 2000)
-				. += "fireplace_fire3"
+				. += "furn4"
 			if(2000 to MAXIMUM_BURN_TIMER)
-				. += "fireplace_fire4"
-		. += "fireplace_glow"
+				. += "furn5"
 
 /obj/structure/fireplace/proc/adjust_light()
 	if(!lit)
@@ -108,10 +116,22 @@
 	if(world.time > flame_expiry_timer)
 		put_out()
 		return
-
+	var/turf/current_location = get_turf(src)
+	current_location.hotspot_expose(fuel_added,500,1)
+	for(var/A in current_location)
+		if(A == src)
+			continue
+		if(isobj(A))
+			var/obj/O = A
+			O.fire_act(1000, 500)
+		else if(isliving(A))
+			var/mob/living/L = A
+			L.adjust_fire_stacks(4)
+			L.IgniteMob()
 	playsound(src, 'sound/effects/comfyfire.ogg',50,FALSE, FALSE, TRUE)
 	var/turf/T = get_turf(src)
-	T.hotspot_expose(700, 5)
+
+	T.hotspot_expose(fuel_added*3, 5)
 	update_icon()
 	adjust_light()
 
@@ -150,3 +170,12 @@
 	update_icon()
 	adjust_light()
 	desc = initial(desc)
+
+/obj/structure/fireplace/proc/CheckOxygen()
+	if(isopenturf(loc))
+		var/turf/open/O = loc
+		if(O.air)
+			var/loc_gases = O.air.gases
+			if(loc_gases[/datum/gas/oxygen] && loc_gases[/datum/gas/oxygen][MOLES] >= 5)
+				return TRUE
+	return FALSE

@@ -178,17 +178,18 @@
 	if(istype(O, /obj/item/reagent_containers/food/snacks/monkeycube))
 		var/obj/item/reagent_containers/food/snacks/monkeycube/cube = O
 		cube.Expand()
-
 	// Dehydrated carp
 	else if(istype(O, /obj/item/toy/plush/carpplushie/dehy_carp))
 		var/obj/item/toy/plush/carpplushie/dehy_carp/dehy = O
 		dehy.Swell() // Makes a carp
-
 	else if(istype(O, /obj/item/stack/sheet/hairlesshide))
 		var/obj/item/stack/sheet/hairlesshide/HH = O
 		new /obj/item/stack/sheet/wethide(get_turf(HH), HH.amount)
 		qdel(HH)
-
+	else if(istype(O, /obj/item/stack/clay))
+		var/obj/item/stack/clay/HH = O
+		new /obj/item/stack/wetclay(get_turf(HH), HH.amount)
+		qdel(HH)
 /*
  *	Water reaction to a mob
  */

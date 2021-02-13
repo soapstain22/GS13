@@ -13,7 +13,35 @@
 	integrity_failure = 0.33
 	smooth = SMOOTH_FALSE
 	deconstruction_ready = 0
+/turf/open/floor/stones
+	name = "stones"
+	desc = "do not eat"
+	icon_state = "roks"
+	floor_tile = /obj/item/rock/rock
+/turf/open/floor/stones/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(!.)
+		if(W.tool_behaviour == TOOL_SHOVEL || W.tool_behaviour == TOOL_MINING)
+
+			if(!isturf(user.loc))
+				return
+
+			to_chat(user, "<span class='notice'>You start digging up the rocks</span>")
+
+			if(W.use_tool(src, user, 40, volume=50))
+				to_chat(user, "<span class='notice'>You dig a hole.</span>")
+				new /obj/item/rock/rock(src, 5)
+				make_plating()
+/datum/crafting_recipe/rockfloor
+	name = "stone floor"
+	reqs = list(
+		/obj/item/rock/rock = 6,)
+	result = /turf/open/floor/stones/
+	category = CAT_MISC
+	always_availible = TRUE
+	time = 40
 /obj/item/stack/metaldust
+	name = "metal dust"
 	max_amount = 100000
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	desc = "for metal i think"
@@ -23,62 +51,88 @@
 	meltingpoint = 1538
 	burningpoint = 2870
 	gaseousstate = /datum/gas/iron
-	solidstate = /obj/item/stack/metalfrags
+	solidstate = /obj/item/stack/metaldust
 	dens = 0.141 //how many molecules it takes for a single fragment to form
 	custom_materials = list(/datum/material/iron=1)
-/obj/item/stack/metalfrags/update_icon_state()
+/obj/item/stack/metaldust/get_main_recipes()
+	. = ..()
+	. += GLOB.dustrecipies
+
+GLOBAL_LIST_INIT(dustrecipies, list ( \
+	new/datum/stack_recipe("make into sheet", /obj/item/stack/sheet/metal, 1000, time = 0, one_per_turf = 0), ))
+/obj/item/stack/metaldust/update_icon_state()
 	if(novariants)
 		return
 	icon_state = "[initial(icon_state)][amount < 5 ? amount : ""]"
 	var/how_many_things = amount < 5 ? "fragment" : "fragments"
 	name = "metal [how_many_things]"
 	desc = "oh boy! [how_many_things]!"
-/obj/item/molten/ironore
+/obj/item/stack/molteniron
 	name = "iron ore"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	desc = "for metal i think"
 	icon_state = "molteniron"
 	meltingpoint = 1538
 	burningpoint = 2870
+	dens = 141
 	gaseousstate = /datum/gas/iron
-	solidstate = /obj/item/stack/metalfrags
-	dens = 0.141 //how many molecules it takes for a fragment to form
-	custom_materials = list(/datum/material/iron=1)
-/obj/item/molten
-	name = "molten metal"
+	liquidstate = /obj/item/stack/molteniron
+	solidstate = /obj/item/stack/sheet/metal
+/obj/item/stack/moltenglass
+	name = "molten glass"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	desc = "hot"
-	icon_state = "molteniron"
-	var/meltingpoint = null
-	var/burningpoint = null
-	var/gaseousstate = null
-	var/solidstate = null
-	var/liquidstate = null
-	var/dens = null //how many molecules it takes for a fragment to form
-/obj/item/stack/temperature_expose(exposed_temperature, exposed_volume)
-	. = ..()
-		switch(exposed_temperature)
-			if(0 to meltingpoint)
-				if(isnull(solidstate))
-					return
-				else
-					new solidstate(drop_location(),amount*dens)
-					qdel(src)
-			if(meltingpoint to burningpoint)
-				return
-			if(burningpoint to INFINITY)
-				if(isnull(solidstate))
-					return
-				else
-					loc.atmos_spawn_air("[gaseousstate]=[amount/dens];TEMP=[burningpoint]")
-					qdel(src)
-
-/obj/item/molten/pickup(mob/living/carbon/user)
+	desc = "haha blow glass ripass"
+	icon_state = "moltenglass"
+/obj/item/stack/moltenglass/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	..()
+	if(exposed_temperature < 1538)
+		new /obj/item/stack/moltenglass (drop_location(), 1)
+		use(1)
+	if(exposed_temperature > 2870)
+		atmos_spawn_air("fe=[amount*dens];TEMP=2871")
+		use(amount)
+/obj/item/stack/molteniron/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	..()
+	if(exposed_temperature < 1538)
+		new /obj/item/stack/sheet/metal (drop_location(), 1)
+		use(1)
+	if(exposed_temperature > 2870)
+		atmos_spawn_air("fe=[amount*dens];TEMP=2871")
+		use(amount)
+/obj/item/stack/sheet/metal/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	..()
+	if(exposed_temperature > 1538)
+		new /obj/item/stack/molteniron(drop_location(), 1)
+		use(1)
+/obj/item/stack/molteniron/pickup(mob/living/carbon/user)
 	if(..())
 		if(prob(50))
 			user.Paralyze(100)
 			to_chat(user, "<span class='userdanger'>You are stunned by [src] as you try picking it up!</span>")
-
+/obj/item/stack/ore/iron/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	..()
+	if(exposed_temperature > 1538)
+		new /obj/item/stack/molteniron(drop_location(), 1)
+		use(1)
+/obj/item/stack/molteniron/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/hammer))
+		var/obj/item/stack/molteniron/R
+		var/choice = input(user, "What would you like to make?", "Molten Metal") as null|anything in list("pickaxehead","shovelhead","hatchet")
+		switch(choice)
+			if("pickaxehead")
+				to_chat(user, "<span class='notice'>You make a [src].</span>")
+				new /obj/item/pickaxehead(loc)
+				R.use(1)
+			if("shovelhead")
+				to_chat(user, "<span class='notice'>You make a [src].</span>")
+				new /obj/item/shovelhead(loc)
+				R.use(1)
+			if("hatchet")
+				to_chat(user, "<span class='notice'>You make a [src].</span>")
+				new /obj/item/hatchet/wooden(loc)
+				R.use(1)
+			else
+				return ..()
 /obj/item/handfile
 	name = "file"
 	desc = "you can use it."
@@ -201,8 +255,23 @@
 	max_integrity = 250
 	resistance_flags = NONE
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.05
+	slowdown = 0.0
 	icon_state = "serf"
+/obj/item/clothing/head/trucker
+	name = "trucker hat"
+	desc = "jesus christ the smell"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	clothing_flags = SNUG_FIT
+	heat_protection = HEAD
+	max_heat_protection_temperature = 5
+	strip_delay = 60
+	equip_delay_other = 40
+	max_integrity = 250
+	resistance_flags = NONE
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
+	slowdown = 0.0
+	icon_state = "trucker"
 /obj/item/clothing/under/serf
 	name = "serf clothing"
 	desc = "protects yo tits"
@@ -327,10 +396,21 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	desc = "it is a little stone"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "rock"
-	force = 5
+	force = 7
 	throwforce = 5
 	w_class = WEIGHT_CLASS_TINY
+	attackspeed = 1.5
+/obj/item/rock/sharprock
+	icon_state = "sharp"
+	name = "sharp rock"
+	desc = "you can slit your own throat and finally be free from this hell or not lmao"
+	sharpness = SHARP_EDGED
+	force = 8
 /obj/item/rock/rock
+/obj/item/rock/rock/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/rock/rock))
+		new /obj/item/rock/sharprock(loc)
+		qdel(src)
 /obj/item/rock/cinnabar
 	icon_state = "cinnabar"
 	grind_results = list(/datum/reagent/mercury = 10)
@@ -376,3 +456,24 @@ obj/effect/decal/cleanable/chem_pile/lithium
 	gender = NEUTER
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "ash"
+/turf/closed/wall/brick
+	name = brickwall
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "brickwall"
+	desc = "the wall"
+	canSmoothWith = null
+	hardness = 35
+	slicing_duration = 150 //welding through the ice+metal
+	bullet_sizzle = TRUE
+/obj/item/stack/brick
+	name = "brick"
+	desc = "unfortunately it is no longer brown"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "brick"
+/obj/item/stack/brick/update_icon_state()
+	if(novariants)
+		return
+	icon_state = "[initial(icon_state)][amount < 7 ? amount : ""]"
+	var/how_many_things = amount < 5 ? "piece" : ""
+	name = "brick[how_many_things]"
+	desc = "A [how_many_things] of string."

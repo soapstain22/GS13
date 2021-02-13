@@ -50,7 +50,7 @@
 	/obj/item/reagent_containers/food/snacks/grown/tea,
 	/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
 	/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
-	/obj/item/reagent_containers/food/snacks/grown/wheat))
+	/obj/item/reagent_containers/food/snacks/grown/wheat, /obj/item/reagent_containers/food/snacks/grown/grass))
 
 /obj/item/grown/log/attackby(obj/item/W, mob/user, params)
 	if(W.get_sharpness())
@@ -78,7 +78,13 @@
 			qdel(src)
 			return
 		else
-			to_chat(usr, "<span class='warning'>You must dry this first!</span>")
+			user.show_message("<span class='notice'>You wrap \the [W] around the log, turning it into a torch!</span>")
+			var/obj/item/flashlight/flare/torch/T = new /obj/item/flashlight/flare/torch(user.loc)
+			usr.dropItemToGround(W)
+			usr.put_in_active_hand(T)
+			qdel(leaf)
+			qdel(src)
+			return
 	else
 		return ..()
 
