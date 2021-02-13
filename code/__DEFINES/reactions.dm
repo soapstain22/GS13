@@ -69,4 +69,4 @@
 
 #define IRON_MELTING_POINT			1538
 #define IRON_BOILING_POINT			2862
-#define IRON_DENSITY				7.874
+#define IRON_DENSITY				0.141

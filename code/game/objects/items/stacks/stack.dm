@@ -44,6 +44,8 @@
 	var/solidstate = null
 	var/liquidstate = null
 	var/dens = null //how many molecules it takes for a fragment to form
+	var/temperature = 20 //how hot it is
+	var/combustable = null
 
 /obj/item/stack/on_grind()
 	for(var/i in 1 to grind_results.len) //This should only call if it's ground, so no need to check if grind_results exists

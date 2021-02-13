@@ -79,19 +79,6 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	regrowth_time_low = 2400
 	regrowth_time_high = 6000
 	max_integrity = 35
-/obj/item/melee/stick
-	name = "stick"
-	desc = "brown and sticky"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "stick"
-	inhand_icon_state = "wood"
-	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 3
-	throwforce = 1
-	attackspeed = 0.8
-	attack_verb = list("smacked")
-	w_class = WEIGHT_CLASS_SMALL
 /datum/crafting_recipe/hydrobin
 	name = "hydroponics bin"
 	always_availible = TRUE
@@ -169,7 +156,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	lootdoubles = FALSE
 	loot = list(
 		/obj/structure/flora/ausbushes/sparsegrass = 60,
-		/obj/structure/flora/ausbushes/fullgrass = 300,
+		/obj/structure/flora/ausbushes/fullgrass = 100,
 		/obj/structure/flora/rock = 30,
 		/obj/structure/flora/ausbushes/ywflowers = 9,
 		/obj/structure/flora/ausbushes/genericbush = 9,
@@ -199,7 +186,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/effect/landmark/zombie/ = 1,
 		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
 		/obj/structure/closet/cardboard/ = 1,
-		"" = 520
+		"" = 300
 		)
 /obj/effect/spawner/lootdrop/oreslmao
 	name = "whores"
@@ -227,8 +214,8 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	lootdoubles = TRUE
 	lootcount = 3
 	loot = list(
-		/obj/item/kitchen/fork/plastic = 9,
-		/obj/item/kitchen/knife/plastic = 9,
+		/obj/item/kitchen/fork/plastic = 1,
+		/obj/item/kitchen/knife/plastic = 1,
 		/obj/item/mop = 6,
 		/obj/item/reagent_containers/glass/beaker = 5,
 		/obj/item/reagent_containers/glass/bowl = 6,
@@ -272,22 +259,29 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 		/obj/item/plant_analyzer = 4,
 		/obj/item/storage/part_replacer = 1,
 		/obj/item/throwing_star = 1,
-		/obj/item/flashlight/flare/torch = 1,
+		/obj/item/flashlight/flare/ = 1,
+		/obj/item/flashlight/ = 1,
 		/obj/item/firing_pin/ = 1,
+		/obj/item/trash/waffles/ = 1,
+		/obj/item/paper/crumpled/ = 1,
+		/obj/item/lighter = 1,
+		/obj/item/laser_pointer = 1,
+		/obj/item/storage/wallet/random = 1,
 		)
 /obj/effect/spawner/lootdrop/minnyral
 	name = "mineralz"
 	lootdoubles = TRUE
 	lootcount = 1
 	loot = list(
-	/obj/item/rock = 4,
+	/obj/item/rock/rock = 5,
 	/obj/item/rock/cinnabar = 1,
 	/obj/item/rock/lith = 1,
 	/obj/item/rock/niter = 2,
 	/obj/item/rock/sulf = 1,
 	/obj/item/rock/baux = 2,
 	/obj/item/rock/malachite = 2,
-	/obj/item/rock/salt = 2,)
+	/obj/item/rock/salt = 2,
+	/obj/item/stack/clay = 4,)
 /obj/structure/barrel/deconstruct(disassembled = FALSE)
 	new /obj/effect/spawner/lootdrop/barrel/ (loc, 1)
 	qdel(src)
