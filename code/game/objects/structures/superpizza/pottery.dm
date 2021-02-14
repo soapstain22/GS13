@@ -111,6 +111,6 @@
 	. += GLOB.clayrec
 
 GLOBAL_LIST_INIT(clayrec, list ( \
-	new/datum/stack_recipe("clay bowl", /obj/item/pottery/wetbowl, 4, time = 10, on_floor = FALSE), \/obj/item/pottery/brick
+	new/datum/stack_recipe("clay bowl", /obj/item/pottery/wetbowl, 4, time = 10, on_floor = FALSE), \
 	new/datum/stack_recipe("brick", /obj/item/pottery/brick, 1, time = 10, on_floor = FALSE), \
 	))

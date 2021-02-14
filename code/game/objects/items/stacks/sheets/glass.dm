@@ -21,7 +21,7 @@ GLOBAL_LIST_INIT(glass_recipes, list ( \
 	inhand_icon_state = "sheet-glass"
 	custom_materials = list(/datum/material/glass=MINERAL_MATERIAL_AMOUNT)
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 100)
-	resistance_flags = ACID_PROOF
+	resistance_flags = ACID_PROOF||FIRE_PROOF
 	merge_type = /obj/item/stack/sheet/glass
 	grind_results = list(/datum/reagent/silicon = 20)
 	material_type = /datum/material/glass

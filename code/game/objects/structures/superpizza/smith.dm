@@ -13,11 +13,19 @@
 	integrity_failure = 0.33
 	smooth = SMOOTH_FALSE
 	deconstruction_ready = 0
+/obj/item/stack/tile/stones
+	name = "fitted stones"
+	singular_name = "fitted stone"
+	desc = "stones."
+	icon_state = "tile_bcircuit"
+	inhand_icon_state = "tile-bcircuit"
+	turf_type = /turf/open/floor/stones
 /turf/open/floor/stones
 	name = "stones"
 	desc = "do not eat"
 	icon_state = "roks"
-	floor_tile = /obj/item/rock/rock
+	tiled_dirt = FALSE
+	floor_tile = /obj/item/stack/tile/stones
 /turf/open/floor/stones/attackby(obj/item/W, mob/user, params)
 	. = ..()
 	if(!.)
@@ -83,14 +91,36 @@ GLOBAL_LIST_INIT(dustrecipies, list ( \
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	desc = "haha blow glass ripass"
 	icon_state = "moltenglass"
-/obj/item/stack/moltenglass/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	resistance_flags = FIRE_PROOF
+
+
+/obj/item/stack/moltenglass/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/hammer))
+		var/obj/item/stack/molteniron/R
+		var/choice = input(user, "What would you like to make?", "Molten Glass") as null|anything in list("beaker")
+		switch(choice)
+			if("beaker")
+				to_chat(user, "<span class='notice'>You make a [src].</span>")
+				new /obj/item/reagent_containers/glass/beaker(loc)
+				R.use(1)
+			if("bottle")
+				to_chat(user, "<span class='notice'>You make a [src].</span>")
+				new /obj/item/reagent_containers/food/drinks/bottle(loc)
+				R.use(1)
+			else
+				return ..()
+
+/obj/item/stack/ore/glass/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	..()
-	if(exposed_temperature < 1538)
+	if(exposed_temperature < 1723)
 		new /obj/item/stack/moltenglass (drop_location(), 1)
 		use(1)
-	if(exposed_temperature > 2870)
-		atmos_spawn_air("fe=[amount*dens];TEMP=2871")
-		use(amount)
+/obj/item/stack/moltenglass/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	..()
+	if(exposed_temperature > 1723)
+		new /obj/item/stack/sheet/glass (drop_location(), 1)
+		use(1)
+
 /obj/item/stack/molteniron/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	..()
 	if(exposed_temperature < 1538)
@@ -117,7 +147,7 @@ GLOBAL_LIST_INIT(dustrecipies, list ( \
 /obj/item/stack/molteniron/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/hammer))
 		var/obj/item/stack/molteniron/R
-		var/choice = input(user, "What would you like to make?", "Molten Metal") as null|anything in list("pickaxehead","shovelhead","hatchet")
+		var/choice = input(user, "What would you like to make?", "Molten Metal") as null|anything in list("pickaxehead","shovelhead","hatchet","chisel")
 		switch(choice)
 			if("pickaxehead")
 				to_chat(user, "<span class='notice'>You make a [src].</span>")
@@ -130,6 +160,10 @@ GLOBAL_LIST_INIT(dustrecipies, list ( \
 			if("hatchet")
 				to_chat(user, "<span class='notice'>You make a [src].</span>")
 				new /obj/item/hatchet/wooden(loc)
+				R.use(1)
+			if("chisel")
+				to_chat(user, "<span class='notice'>You make a [src].</span>")
+				new /obj/item/chisel(loc)
 				R.use(1)
 			else
 				return ..()
@@ -411,6 +445,9 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 	if(istype(I, /obj/item/rock/rock))
 		new /obj/item/rock/sharprock(loc)
 		qdel(src)
+	if(istype(I, /obj/item/chisel))
+		new /obj/item/stack/stonebrick(loc)
+		qdel(src)
 /obj/item/rock/cinnabar
 	icon_state = "cinnabar"
 	grind_results = list(/datum/reagent/mercury = 10)
@@ -457,7 +494,7 @@ obj/effect/decal/cleanable/chem_pile/lithium
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "ash"
 /turf/closed/wall/brick
-	name = brickwall
+	name = "brickwall"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "brickwall"
 	desc = "the wall"
@@ -470,6 +507,11 @@ obj/effect/decal/cleanable/chem_pile/lithium
 	desc = "unfortunately it is no longer brown"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "brick"
+/obj/item/stack/stonebrick
+	name = "stone brick"
+	desc = "unfortunately it is no longer brown"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "brick"
 /obj/item/stack/brick/update_icon_state()
 	if(novariants)
 		return
@@ -477,3 +519,10 @@ obj/effect/decal/cleanable/chem_pile/lithium
 	var/how_many_things = amount < 5 ? "piece" : ""
 	name = "brick[how_many_things]"
 	desc = "A [how_many_things] of string."
+/obj/item/stack/brick/get_main_recipes()
+	. = ..()
+	. += GLOB.brick_recipe
+
+GLOBAL_LIST_INIT(brick_recipe, list ( \
+	new/datum/stack_recipe("brick wall", /turf/closed/wall/brick, 4, time = 60, one_per_turf = 0)
+	))
