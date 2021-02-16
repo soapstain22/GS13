@@ -12,24 +12,28 @@
 	layer = FLY_LAYER
 	var/log_amount = 10
 	max_integrity = 160
-/obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
-	if(log_amount && (!(flags_1 & NODECONSTRUCT_1)))
-		if(W.get_sharpness() && W.force > 0)
-			if(W.hitsound)
-				playsound(get_turf(src), W.hitsound, 100, FALSE, FALSE)
-			user.visible_message("<span class='notice'>[user] begins to cut down [src] with [W].</span>","<span class='notice'>You begin to cut down [src] with [W].</span>", "<span class='hear'>You hear the sound of sawing.</span>")
-			if(do_after(user, 1000/W.force, target = src)) //5 seconds with 20 force, 8 seconds with a hatchet, 20 seconds with a shard.
-				user.visible_message("<span class='notice'>[user] fells [src] with the [W].</span>","<span class='notice'>You fell [src] with the [W].</span>", "<span class='hear'>You hear the sound of a tree falling.</span>")
-				playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE)
-				user.log_message("cut down [src] at [AREACOORD(src)]", LOG_ATTACK)
-				for(var/i=1 to log_amount)
-					new /obj/item/grown/log/tree(get_turf(src))
-				var/obj/structure/flora/stump/S = new(loc)
-				S.name = "[name] stump"
-				qdel(src)
-	else
-		return ..()
 
+/obj/structure/flora/tree/Destroy()
+	playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE)
+	for(var/i=1 to log_amount)
+		new /obj/item/grown/log/tree(get_turf(src))
+	var/obj/structure/flora/stump/S = new(loc)
+	S.name = "[name] stump"
+	qdel(src)
+/obj/structure/flora/tree/update_icon_state()
+	. = ..()
+	var/integrity = obj_integrity*100/max_integrity
+	switch(integrity)
+		if(85 to 100)
+			icon_state = "tree1"
+		if(65 to 85)
+			icon_state = "tree2"
+		if(45 to 65)
+			icon_state = "tree3"
+		if(25 to 45)
+			icon_state = "tree4"
+		else
+			icon_state = "tree5"
 /obj/structure/flora/stump
 	name = "stump"
 	desc = "This represents our promise to the crew, and the station itself, to cut down as many trees as possible." //running naked through the trees

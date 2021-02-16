@@ -214,8 +214,6 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	lootdoubles = TRUE
 	lootcount = 3
 	loot = list(
-		/obj/item/kitchen/fork/plastic = 1,
-		/obj/item/kitchen/knife/plastic = 1,
 		/obj/item/mop = 6,
 		/obj/item/reagent_containers/glass/beaker = 5,
 		/obj/item/reagent_containers/glass/bowl = 6,
