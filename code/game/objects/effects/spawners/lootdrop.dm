@@ -473,7 +473,15 @@
 				/obj/effect/spawner/bundle/costume/mafia/checkered = 2,
 				/obj/effect/spawner/bundle/costume/mafia/beige = 5
 				)
+/obj/effect/spawner/lootdrop/urban
+	name = "mafia outfit spawner"
+	loot = list(
+				/obj/item/trash/can = 20,
+				/obj/effect/decal/cleanable/glass = 5,
+				/obj/effect/decal/cleanable/plastic = 2,
+				/obj/item/reagent_containers/food/drinks/waterbottle/empty = 5
 
+				)
 //finds the probabilities of items spawning from a loot spawner's loot pool
 /obj/item/loot_table_maker
 	icon = 'icons/effects/landmarks_static.dmi'

@@ -14,6 +14,7 @@
 	smooth = SMOOTH_FALSE
 	deconstruction_ready = 0
 /obj/item/stack/tile/stones
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "fitted stones"
 	singular_name = "fitted stone"
 	desc = "stones."
@@ -21,6 +22,7 @@
 	inhand_icon_state = "tile-bcircuit"
 	turf_type = /turf/open/floor/stones
 /turf/open/floor/stones
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "stones"
 	desc = "do not eat"
 	icon_state = "roks"

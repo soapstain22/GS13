@@ -1,4 +1,4 @@
-//component things
+x//component things
 /obj/item/stack/component
 	name = "components"
 	desc = "just a bunch of shit."

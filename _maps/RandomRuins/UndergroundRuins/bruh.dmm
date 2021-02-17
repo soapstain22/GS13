@@ -2,7 +2,6 @@
 "b" = (/turf/closed/wall/mineral/wood/nonmetal,/area/template_noop)
 "c" = (/turf/open/floor/wood,/area/template_noop)
 "d" = (/obj/item/flashlight/lantern,/turf/open/floor/wood,/area/template_noop)
-"e" = (/mob/living/simple_animal/hostile/skeleton,/turf/open/floor/wood,/area/template_noop)
 "f" = (/obj/effect/spawner/lootdrop/snowdin/dungeonmid,/turf/open/floor/wood,/area/template_noop)
 "g" = (/obj/item/stack/ore/gold,/turf/open/floor/wood,/area/template_noop)
 "h" = (/obj/structure/table/wood,/obj/item/candle,/turf/open/floor/wood,/area/template_noop)
@@ -27,11 +26,11 @@
 aaaaaaaaaaaaaaaaaaaaaaa
 aabbbbbbcccbbbbbbaaaaaa
 aabojpjqcccccnnjbaaaaaa
-aacqcdccecccccfqbaaaaaa
-aacqceccccccecrvbbbbbbb
+aacqcdccccccccfqbaaaaaa
+aacqccccccccccrvbbbbbbb
 aabpcoccccccccccccsscsb
 aabbbbbcccccccgccsscscb
-aaaaaabccccccccccedcccc
+aaaaaabcccccccccccdcccc
 aaaaaabchiqcnqjcccccccb
 aaaaaabcknlcjnjcccccccb
 aaaaaabcccccccccbbbbbbb
@@ -42,11 +41,11 @@ aaaaaabcjnjctjvcbaaaaaa
 aaaaaabcknjcnqqcbaaaaaa
 aaaaaabccccccccrcaaaaaa
 aabbbbbcccccmccccaaaaaa
-aabfceccccccxcccbaaaaaa
-aabcccceccccccccbaaaaaa
-aabccnjccccecfccbaaaaaa
-aabmeunccecccccrbaaaaaa
-aabccccecbbbbbbbbaaaaaa
+aabfccccccccxcccbaaaaaa
+aabcccccccccccccbaaaaaa
+aabccnjccccccfccbaaaaaa
+aabmcunccccccccrbaaaaaa
+aabccccccbbbbbbbbaaaaaa
 aabccrccrbaaaaaaaaaaaaa
 aabbbbcccbaaaaaaaaaaaaa
 aaaaabcccbaaaaaaaaaaaaa

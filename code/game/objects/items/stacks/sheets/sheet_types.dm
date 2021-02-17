@@ -114,7 +114,6 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	gaseousstate = /datum/gas/iron
 	liquidstate = /obj/item/stack/molteniron
 	solidstate = /obj/item/stack/sheet/metal
-	/datum/component/hot_ice/proc/flame_react
 /obj/item/stack/sheet/metal/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)
 	qdel(src)
@@ -251,7 +250,12 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/wood/fifty
 	amount = 50
-
+/obj/item/stack/rods/update_icon_state()
+	var/amount = get_amount()
+	if(amount <= 7)
+		icon_state = "sheet-wood_[amount]"
+	else
+		icon_state = "sheet-wood"
 /*
  * Bamboo
  */

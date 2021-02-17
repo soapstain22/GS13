@@ -91,8 +91,7 @@
 	. = SEND_SIGNAL(src, COMSIG_ATOM_EX_ACT, severity, target)
 	contents_explosion(severity, target)
 /turf/open/floor/plating/asteroid/garbango/
-	var/spawntable
-	spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
+	var/spawntable  = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
 		/obj/structure/flora/ausbushes/fullgrass = 100,
 		/obj/structure/flora/rock = 30,
 		/obj/structure/flora/ausbushes/ywflowers = 9,
@@ -136,6 +135,8 @@
 		/obj/item/clothing/head/cone = 1,
 		/obj/item/storage/toolbox/emergency = 1,
 		"" = 200 )
+
+//make the sun peak at 486000
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
 	if(prob(12))
 		var/shit = pickweight(spawntable)
