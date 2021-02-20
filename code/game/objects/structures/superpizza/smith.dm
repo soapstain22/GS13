@@ -18,7 +18,7 @@
 	name = "fitted stones"
 	singular_name = "fitted stone"
 	desc = "stones."
-	icon_state = "tile_bcircuit"
+	icon_state = "metal10"
 	inhand_icon_state = "tile-bcircuit"
 	turf_type = /turf/open/floor/stones
 /turf/open/floor/stones
@@ -521,10 +521,31 @@ obj/effect/decal/cleanable/chem_pile/lithium
 	var/how_many_things = amount < 5 ? "piece" : ""
 	name = "brick[how_many_things]"
 	desc = "A [how_many_things] of string."
+/obj/item/stack/panel
+	name = "paneling"
+	desc = "wow"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "panel"
 /obj/item/stack/brick/get_main_recipes()
 	. = ..()
 	. += GLOB.brick_recipe
 
 GLOBAL_LIST_INIT(brick_recipe, list ( \
 	new/datum/stack_recipe("brick wall", /turf/closed/wall/brick, 4, time = 60, one_per_turf = 0)
+	))
+/obj/structure/window/panel
+	max_integrity = 60
+	armor = list("melee" = 0, "bullet" = 20, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	name = "plywood"
+	desc = "cheap and wood"
+	icon = 'code/game/objects/structures/superpizza/creative.dmi'
+	icon_state = "paneling"
+	glass_type = /obj/item/stack/panel
+	opacity = TRUE
+/obj/item/stack/panel/get_main_recipes()
+	. = ..()
+	. += GLOB.plywoodrec
+
+GLOBAL_LIST_INIT(plywoodrec, list ( \
+	new/datum/stack_recipe("wood panel", /obj/structure/window/panel, 1, time = 20, one_per_turf = 0)
 	))

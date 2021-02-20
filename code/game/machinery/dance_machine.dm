@@ -60,7 +60,45 @@
 
 	if(songs.len)
 		selection = pick(songs)
+/obj/machinery/jukebox/cdplayer
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	icon_state = "stereo"
+	var/obj/item/cd/diskette = null
+/obj/machinery/jukebox/cdplayer/Initialize()
 
+
+/obj/machinery/jukebox/cdplayer/attackby(obj/item/I, mob/user, params)
+	if (istype(I, /obj/item/cd)) //INSERT SOME DISKETTES
+		// Insert disk
+		if (!user.transferItemToLoc(I,src))
+			return
+		// If insertion was successful and there's already a diskette in the console, eject the old one.
+		if(diskette)
+			eject_disk(user)
+		// Set the new diskette.
+		diskette = I
+		to_chat(user, "<span class='notice'>You insert [I].</span>")
+		cdin()
+		return
+
+/obj/machinery/jukebox/cdplayer/proc/cdin()
+	. = ..()
+	var/list/songs = diskette.tracks
+	if(songs.len)
+		selection = pick(songs)
+/obj/machinery/jukebox/cdplayer/proc/eject_disk(mob/user)
+	// Check for diskette.
+	if(!diskette)
+		return
+	var/list/songs/ = list()
+	to_chat(user, "<span class='notice'>You eject [diskette] from [src].</span>")
+
+	// If the disk shouldn't pop into the user's hand for any reason, drop it on the console instead.
+	if(!istype(user) || !Adjacent(user) || !user.put_in_active_hand(diskette))
+		diskette.forceMove(drop_location())
+	diskette = null
+
+/obj/machinery/jukebox/attackby(obj/item/O, mob/user, params)
 /obj/machinery/jukebox/Destroy()
 	dance_over()
 	return ..()

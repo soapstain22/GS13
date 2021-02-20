@@ -20,6 +20,9 @@
 	var/obj/structure/flora/stump/S = new(loc)
 	S.name = "[name] stump"
 	qdel(src)
+/obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	update_icon_state()
 /obj/structure/flora/tree/update_icon_state()
 	. = ..()
 	var/integrity = obj_integrity*100/max_integrity
@@ -135,10 +138,6 @@
 	pixel_x = -48
 	pixel_y = -20
 
-/obj/structure/flora/tree/jungle/Initialize()
-	icon_state = "[icon_state][rand(1, 6)]"
-	. = ..()
-
 /obj/structure/flora/tree/jungle/small
 	pixel_y = 0
 	pixel_x = -32
@@ -200,7 +199,6 @@
 
 /obj/structure/flora/bush/Destroy()
 	new /obj/item/grown/cotton(get_turf(src))
-	. = ..()
 /obj/structure/flora/ausbushes
 	name = "bush"
 	desc = "Some kind of plant."
@@ -228,7 +226,6 @@
 
 /obj/structure/flora/ausbushes/reedbush/Destroy()
 	new /obj/item/grown/log/bamboo(get_turf(src))
-	. = ..()
 /obj/structure/flora/ausbushes/leafybush
 	icon_state = "leafybush_1"
 

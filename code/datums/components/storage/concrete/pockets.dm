@@ -33,6 +33,14 @@
 /datum/component/storage/concrete/pockets/small/fedora/detective
 	attack_hand_interact = TRUE // so the detectives would discover pockets in their hats
 
+/datum/component/storage/concrete/pockets/small/cd
+	attack_hand_interact = TRUE // so the detectives would discover pockets in their hats
+
+/datum/component/storage/concrete/pockets/small/cd/Initialize()
+	. = ..()
+	set_holdable(list(
+		/obj/item/cd))
+
 /datum/component/storage/concrete/pockets/chefhat
 	attack_hand_interact = TRUE
 	max_items = 1
