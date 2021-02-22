@@ -49,10 +49,10 @@
 /obj/item/storage/bag/tray/pan
 	name = "frying pan"
 	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
-	icon_state = "fryingpan"
+	icon_state = "pan"
 	desc = "A metal tray to lay food on."
-	force = 5
-	throwforce = 10
+	force = 10
+	throwforce = 5
 	throw_speed = 3
 	throw_range = 5
 	flags_1 = CONDUCT_1
@@ -104,6 +104,7 @@
 	name = "stop sign"
 	desc = "RED MEANS STOP ASSHOLE"
 	icon_state = "stop"
+	layer = ABOVE_MOB_LAYER
 /obj/structure/stopsign/deconstruct(disassembled = FALSE)
 	new /obj/item/stack/sheet/metal (loc, 1)
 	new /obj/item/stopsign (loc, 1)

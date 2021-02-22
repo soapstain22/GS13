@@ -3,48 +3,41 @@
 "c" = (/obj/structure/flora/rock,/turf/open/floor/plating/asteroid,/area/template_noop)
 "d" = (/obj/structure/flora/rock,/turf/template_noop,/area/template_noop)
 "e" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
-"f" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 9},/turf/template_noop,/area/template_noop)
-"g" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/template_noop,/area/template_noop)
-"h" = (/obj/effect/spawner/lootdrop/maintenance,/turf/template_noop,/area/template_noop)
-"i" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 4},/turf/template_noop,/area/template_noop)
-"j" = (/obj/structure/fence,/turf/template_noop,/area/template_noop)
-"k" = (/obj/effect/spawner/lootdrop/barrel/shit,/turf/template_noop,/area/template_noop)
-"l" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/template_noop,/area/template_noop)
-"m" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/turf/template_noop,/area/template_noop)
-"n" = (/obj/structure/fence/door,/turf/template_noop,/area/template_noop)
-"o" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 6},/turf/template_noop,/area/template_noop)
-"p" = (/obj/structure/fence/cut/medium,/turf/template_noop,/area/template_noop)
-"q" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/template_noop,/area/template_noop)
-"r" = (/obj/structure/fence/cut/medium{icon_state = "straight_cut2"; dir = 8},/turf/template_noop,/area/template_noop)
-"s" = (/obj/effect/spawner/lootdrop/maintenance/two,/turf/template_noop,/area/template_noop)
-"t" = (/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/seed_vault,/turf/template_noop,/area/template_noop)
-"u" = (/obj/effect/spawner/lootdrop/bota,/turf/template_noop,/area/template_noop)
-"v" = (/obj/effect/spawner/lootdrop/minecraft,/turf/template_noop,/area/template_noop)
-"w" = (/obj/effect/spawner/lootdrop/tool,/turf/template_noop,/area/template_noop)
-"x" = (/obj/effect/spawner/lootdrop/parts,/turf/template_noop,/area/template_noop)
+"f" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 9},/turf/open/floor/plating/asteroid,/area/template_noop)
+"g" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/open/floor/plating/asteroid,/area/template_noop)
+"h" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 4},/turf/open/floor/plating/asteroid,/area/template_noop)
+"i" = (/obj/structure/fence,/turf/open/floor/plating/asteroid,/area/template_noop)
+"j" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/turf/open/floor/plating/asteroid,/area/template_noop)
+"k" = (/obj/structure/grille,/turf/open/floor/plating/asteroid,/area/template_noop)
+"l" = (/obj/structure/closet/crate/trashcart,/turf/open/floor/plating/asteroid,/area/template_noop)
+"m" = (/obj/structure/fence/cut/medium,/turf/open/floor/plating/asteroid,/area/template_noop)
+"n" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/open/floor/plating/asteroid,/area/template_noop)
+"o" = (/obj/structure/fence/cut/medium{icon_state = "straight_cut2"; dir = 8},/turf/open/floor/plating/asteroid,/area/template_noop)
+"p" = (/obj/structure/fence/door,/turf/open/floor/plating/asteroid,/area/template_noop)
+"q" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 6},/turf/open/floor/plating/asteroid,/area/template_noop)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aafgggggggggggggggggiaa
-ahjkkkkkllhhhhhhhhhhmaa
-aajkkkkkkkhhhhhhhhhhmha
-aajkkkskkkhhhhhhhhhhmaa
-ahjkkkkkkkhshhhhhshhmaa
-aajkkkkkkkhhhhhhsthhmha
-aujllskkkkhhhhhhhhhhmaa
-ahphhshhhhhhshhhhhhhmaa
-aajhhhhhhhhhhhhhhhhhmaa
-aaphhhhhhhhshhhhhhhhmaa
-aajhhhhshhhhhshhhhshmaa
-aajhshhhhhtshhhhhhhsmaa
-aajhhhhhhhhhhhhhhhhhmaa
-aajhhhhhhhhhhhhhhhhhmha
-aaqggrggggggggngggggoha
-haaahaavaaaaaaaaaaaaawa
-aaaaaaaaaaaaaaaaaaxaaaa
-aaaaaaaaaaaaavaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbb
+bbfggggggggggggggggghbb
+bbibbbbbbbbbbbbbbbbbjbb
+bbibbbbbbbbbbbbbbbbbjbb
+bbibkbbbbbbbbbbbbbbbjbb
+bbibkbbbbbbbbbbbbbbbjbb
+bbibkbbbblbblbbbbbbbjbb
+bbibbbbkkbbbbbbbbbbbjbb
+bbmbbbbbbbbbbbbbbbbbjbb
+bbibbbbbbbbbbbkbbbbbjbb
+bbmbbbbbbbbbbbbbbbbbjbb
+bbibbbbbbbbbbbbbbbbbjbb
+bbibbbbbbbbbbbbbbbbbjbb
+bbibbbbbbbbbbbbbbbbbjbb
+bbibblbbbbbbbbbbbbbbjbb
+bbnggoggggggggpgggggqbb
+bbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbb
 "}
 
 (1,1,2) = {"

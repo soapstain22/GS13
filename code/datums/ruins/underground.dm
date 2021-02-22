@@ -144,3 +144,15 @@
 	suffix = "ladder.dmm"
 	allow_duplicates = TRUE
 	placement_weight = 6
+/datum/map_template/ruin/underground/laundro
+	name = "laundro"
+	id = "laundro"
+	description = "laundro"
+	suffix = "laundro.dmm"
+	allow_duplicates = FALSE
+/datum/map_template/ruin/underground/mall
+	name = "mall"
+	id = "mall"
+	description = "mall"
+	suffix = "mall.dmm"
+	allow_duplicates = FALSE

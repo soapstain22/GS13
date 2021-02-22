@@ -24,3 +24,21 @@
 	description = "junk"
 	suffix = "junk.dmm"
 	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/powerblock
+	name = "powerblock"
+	id = "powerblock"
+	description = "powerblock"
+	suffix = "powerblock.dmm"
+	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/cabin
+	name = "cabin"
+	id = "cabin"
+	description = "cabin"
+	suffix = "cabin.dmm"
+	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/bbarena
+	name = "bb arena"
+	id = "bbguns"
+	description = "foite"
+	suffix = "airsoft.dmm"
+	allow_duplicates = FALSE

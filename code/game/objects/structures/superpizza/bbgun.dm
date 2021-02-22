@@ -65,6 +65,8 @@
 	can_be_sawn_off = FALSE
 
 /obj/item/gun/ballistic/bb/tommy
+	name = "bb thompson"
+	desc = "A bb gun"
 	icon_state = "thom"
 	semi_auto = TRUE
 	mag_type = /obj/item/ammo_box/magazine/bb
@@ -104,7 +106,6 @@
 	icon_state = "rifle"
 	lefthand_file = 'code/game/objects/structures/superpizza/leftbbgun.dmi'
 	righthand_file = 'code/game/objects/structures/superpizza/rightbbgun.dmi'
-	worn_icon_state = null
 	mag_type = /obj/item/ammo_box/magazine/internal/bbrifle
 	bolt_wording = "bolt"
 	bolt_type = BOLT_TYPE_STANDARD

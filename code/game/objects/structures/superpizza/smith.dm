@@ -547,5 +547,23 @@ GLOBAL_LIST_INIT(brick_recipe, list ( \
 	. += GLOB.plywoodrec
 
 GLOBAL_LIST_INIT(plywoodrec, list ( \
-	new/datum/stack_recipe("wood panel", /obj/structure/window/panel, 1, time = 20, one_per_turf = 0)
+	new/datum/stack_recipe("wood panel", /obj/structure/window/panel, 1, time = 20, one_per_turf = 0),
+	new/datum/stack_recipe("wood wall", /obj/structure/window/panel/fulltile, 1, time = 20, one_per_turf = 1)
 	))
+/obj/structure/window/panel/fulltile
+	icon = 'code/game/objects/structures/superpizza/creative.dmi'
+	icon_state = "ply1"
+	dir = FULLTILE_WINDOW_DIR
+	max_integrity = 50
+	fulltile = TRUE
+	flags_1 = PREVENT_CLICK_UNDER_1
+	smooth = SMOOTH_TRUE
+	var/list/icon_states = list("ply1", "ply2", "ply3", "ply4", "ply5", "ply6", "ply7")
+/obj/structure/window/panel/spawnDebris(location)
+	. = list()
+	. += new /obj/item/stack/panel(location)
+
+/obj/structure/window/panel/fulltile/Initialize()
+	. = ..()
+	if(islist(icon_states && icon_states.len))
+		icon_state = pick(icon_states)

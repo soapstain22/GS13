@@ -11,9 +11,9 @@
 	weather_duration_upper = 2600
 	weather_overlay = "fogloop"
 	overlay_layer = 15
-	barometer_predictable = TRUE
+	barometer_predictable = FALSE
 	end_duration = 200
-	end_message = "<span class='notice'>a fog fills the area</span>"
+	end_message = "<span class='notice'>the fog dissapates</span>"
 	end_overlay = "sunrise"
 	area_type = /area/surface/outdoors/unexplored
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
@@ -28,3 +28,20 @@
 		if(prob(70))
 			new/mob/living/simple_animal/hostile/eldritch/stalker(SP.loc)
 			sleep 20
+/datum/round_event_control/fog
+	name = "fog"
+	typepath = /datum/round_event/fog
+	weight = 30
+	min_players = 0
+	earliest_start = 0 MINUTES
+
+/datum/round_event/fog
+
+
+/datum/round_event/fog/setup()
+	startWhen = 3
+	endWhen = startWhen + 1
+	announceWhen	= 1
+
+/datum/round_event/fog/start()
+	SSweather.run_weather(/datum/weather/fog)

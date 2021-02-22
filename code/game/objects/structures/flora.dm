@@ -132,7 +132,7 @@
 
 /obj/structure/flora/tree/jungle
 	name = "tree"
-	icon_state = "tree"
+	icon_state = "tree1"
 	desc = "It's seriously hampering your view of the jungle."
 	icon = 'icons/obj/flora/jungletrees.dmi'
 	pixel_x = -48
