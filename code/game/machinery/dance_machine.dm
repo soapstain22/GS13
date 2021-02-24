@@ -83,7 +83,6 @@
 
 /obj/machinery/jukebox/cdplayer/proc/cdin()
 	. = ..()
-	var/list/songs = diskette.tracks
 	if(songs.len)
 		selection = pick(songs)
 /obj/machinery/jukebox/cdplayer/proc/eject_disk(mob/user)

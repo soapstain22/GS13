@@ -70,11 +70,6 @@
 	if(user.transferItemToLoc(src, drop_location()))
 		return 1
 		. = ..()
-/obj/structure/rack/attackby(obj/item/W, mob/user, params)
-	if (W.tool_behaviour == TOOL_WRENCH && !(flags_1&NODECONSTRUCT_1) && user.a_intent != INTENT_HELP)
-		W.play_tool_sound(src)
-		deconstruct(TRUE)
-		return
 
 /obj/structure/fireplace/update_overlays()
 	. = ..()

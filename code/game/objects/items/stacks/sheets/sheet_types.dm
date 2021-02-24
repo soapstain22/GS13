@@ -250,7 +250,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/wood/fifty
 	amount = 50
-/obj/item/stack/rods/update_icon_state()
+/obj/item/stack/sheet/mineral/wood/update_icon_state()
 	var/amount = get_amount()
 	if(amount <= 7)
 		icon_state = "sheet-wood_[amount]"

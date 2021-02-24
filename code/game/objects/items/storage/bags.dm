@@ -204,7 +204,6 @@
 		/obj/item/grown,
 		/obj/item/reagent_containers/honeycomb,
 		/obj/item/graft,
-		/obj/item/rock,
 
 		))
 ////////

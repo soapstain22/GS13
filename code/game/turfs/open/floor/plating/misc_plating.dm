@@ -8,8 +8,8 @@ turf/open/floor/plating/pavement/
 	icon = 'icons/superpizza/pavement.dmi'
 	icon_state = "pavement"
 	icon_plating = "pavement"
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_GENERIC_HEAVY
+	barefootstep = FOOTSTEP_GENERIC_HEAVY
 turf/open/floor/plating/pavement/burn_tile()
 	return
 turf/open/floor/plating/pavement/break_tile()
