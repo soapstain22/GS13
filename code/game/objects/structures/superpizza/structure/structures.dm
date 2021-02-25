@@ -1,14 +1,3 @@
-/obj/structure/barricade/stonewall
-	name = "stonewall"
-	desc = "stonewall"
-	icon = 'icons/obj/smooth_structures/stones.dmi'
-	icon_state = "sandbags"
-	max_integrity = 400
-	proj_pass_rate = 20
-	pass_flags = LETPASSTHROW
-	climbable = TRUE
-	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/obj/structure/barricade/stonewall, /obj/structure/barricade/sandbags, /turf/closed/wall, /turf/closed/wall/r_wall, /obj/structure/falsewall, /obj/structure/falsewall/reinforced, /turf/closed/wall/rust, /turf/closed/wall/r_wall/rust, /obj/structure/barricade/security)
 /obj/structure/stopsign
 	icon = 'code/game/objects/structures/superpizza/tall.dmi'
 	name = "stop sign"
@@ -21,37 +10,61 @@
 	use_power = NO_POWER_USE
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	circuit = null
-/obj/structure/flora/ash/flax
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "flaxplant"
-	name = "flax"
-	desc = "some flowers"
-	harvested_name = "flax"
-	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
-	harvest = /obj/item/grown/cotton/flax
-	needs_sharp_harvest = FALSE
-	harvest_amount_high = 4
-	harvest_time = 20
-	harvest_message_low = "You pluck a single strand"
-	harvest_message_med = "You pluck a number of strands, leaving a few unsuitable ones."
-	harvest_message_high = "You pluck quite a lot of strands."
-	regrowth_time_low = 2400
-	regrowth_time_high = 6000
-	max_integrity = 35
-/obj/structure/flora/ash/aloe
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "aloe"
-	name = "leafy mushrooms"
-	desc = "A number of mushrooms, each of which surrounds a greenish sporangium with a number of leaf-like structures."
-	harvested_name = "leafless mushrooms"
-	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
-	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf
-	needs_sharp_harvest = FALSE
-	harvest_amount_high = 4
-	harvest_time = 20
-	harvest_message_low = "You pluck a single, suitable leaf."
-	harvest_message_med = "You pluck a number of leaves, leaving a few unsuitable ones."
-	harvest_message_high = "You pluck quite a lot of suitable leaves."
-	regrowth_time_low = 2400
-	regrowth_time_high = 6000
-	max_integrity = 35
+
+
+/obj/structure/filingcabinet/chestdrawer/random
+	..()
+	var/spawntable  = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
+		/obj/structure/flora/ausbushes/fullgrass = 100,
+		/obj/structure/flora/rock = 30,
+		/obj/structure/flora/ausbushes/ywflowers = 9,
+		/obj/structure/flora/ausbushes/genericbush = 9,
+		/obj/structure/flora/grass/jungle/b = 13,
+		/obj/structure/flora/rock/jungle = 32,
+		/obj/structure/flora/junglebush = 19,
+		/obj/structure/flora/bush = 10,
+		/obj/effect/decal/remains/robot = 1,
+		/obj/effect/decal/cleanable/plastic = 1,
+		/obj/item/paper/crumpled/ = 2,
+		/obj/structure/flora/ausbushes/brflowers = 6,
+		/obj/item/reagent_containers/glass/bottle/ = 4,
+		/obj/machinery/hydroponics/soil = 10,
+		/obj/item/trash/can = 5,
+		/obj/structure/barrel/shit = 4,
+		/obj/item/cigbutt/roach = 2,
+		/obj/structure/flora/ausbushes/reedbush = 8,
+		/obj/structure/flora/tree/jungle = 90,
+		/obj/structure/flora/ausbushes/fernybush = 5,
+		/obj/structure/flora/ausbushes/stalkybush = 5,
+		/obj/structure/flora/ausbushes/grassybush = 5,
+		/obj/item/reagent_containers/glass/bottle/ = 1,
+		/obj/item/reagent_containers/food/drinks/waterbottle/empty = 1,
+		/obj/effect/landmark/carpspawn = 4,
+		/obj/structure/flora/bush = 7,
+		/mob/living/simple_animal/chicken = 1,
+		/obj/effect/landmark/zombie/ = 20,
+		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
+		/obj/structure/closet/cardboard/ = 1,
+		/obj/item/stack/component = 20,
+		/obj/structure/sink/puddle = 10,
+		/obj/structure/flora/ash/cacti = 20,
+		/obj/item/analyzer = 1,
+		/obj/item/storage/bag/trash = 2,
+		/obj/item/storage/pill_bottle/ = 2,
+		/obj/structure/flora/ash/flax = 20,
+		/obj/effect/spawner/lootdrop/minnyral = 35,
+		/obj/item/melee/stick = 100,
+		/obj/item/clothing/head/trucker = 1,
+		/obj/item/clothing/head/cone = 1,
+		/obj/item/storage/toolbox/emergency = 1,
+		"" = 200 )
+/obj/structure/filingcabinet/chestdrawer/random/Initialize(mapload)
+	..()
+
+/obj/structure/filingcabinet/chestdrawer/random/proc/SpawnShit(turf/T)
+	if(prob(60))
+		var/shit = pickweight(spawntable)
+		if(!shit)
+			return
+		new shit(T)
+		return TRUE

@@ -87,6 +87,7 @@
 	icon_state = "emerald"
 	inhand_icon_state = "emerald"
 	singular_name = "emerald"
+	scan_state = "emerald"
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 80
 	custom_materials = list(/datum/material/emerald=MINERAL_MATERIAL_AMOUNT)
@@ -98,6 +99,7 @@
 	singular_name = "sapphire"
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 40
+	scan_state = "sapphire"
 	custom_materials = list(/datum/material/sapphire=MINERAL_MATERIAL_AMOUNT)
 /obj/item/stack/ore/amethyst
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
@@ -105,6 +107,7 @@
 	icon_state = "amethyst"
 	inhand_icon_state = "amethyst"
 	singular_name = "amethyst"
+	scan_state = "amethyst"
 	w_class = WEIGHT_CLASS_TINY
 	custom_materials = list(/datum/material/amethyst=MINERAL_MATERIAL_AMOUNT)
 	mine_experience = 10
@@ -122,10 +125,14 @@
 	mine_experience = 3
 	scan_state = "trash"
 	bypass_spawn = /obj/effect/spawner/lootdrop/barrel/shit
-/obj/item/stack/ore/fake/rocks
+/obj/item/stack/ore/fake/salt
+	mine_experience = 3
+	scan_state = "salt"
+	bypass_spawn = /obj/effect/spawner/lootdrop/salt
+/obj/item/stack/ore/fake/stone
 	mine_experience = 1
-	scan_state = "minerals"
-	bypass_spawn = /obj/effect/spawner/lootdrop/minnyral
+	scan_state = "stone"
+	bypass_spawn = /obj/effect/spawner/lootdrop/stone
 /obj/item/stack/ore/fake/coal
 	mine_experience = 6
 	scan_state = "coal"
@@ -138,6 +145,7 @@
 	singular_name = "topaz"
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 20
+	scan_state = "topaz"
 	custom_materials = list(/datum/material/topaz=MINERAL_MATERIAL_AMOUNT)
 /obj/item/stack/ore/ruby
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
@@ -145,6 +153,7 @@
 	icon_state = "ruby"
 	inhand_icon_state = "ruby"
 	singular_name = "ruby"
+	scan_state = "ruby"
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 160
 	custom_materials = list(/datum/material/ruby=MINERAL_MATERIAL_AMOUNT)

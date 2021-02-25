@@ -90,6 +90,22 @@
 	inhand_icon_state = "ipickaxe"
 	force = 10
 	throwforce = 7
+/obj/item/copperpickaxehead
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "copperpickaxehead"
+	name = "copper pickaxe head"
+	desc = "minefuckis"
+	inhand_icon_state = "ipickaxe"
+	force = 7
+	throwforce = 5
+/obj/item/coppershovelhead
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "coppershovelhead"
+	name = "pickaxe head"
+	desc = "minefuckis"
+	inhand_icon_state = "ipickaxe"
+	force = 7
+	throwforce = 5
 /obj/item/shovelhead
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "shovelhead"
@@ -123,3 +139,11 @@
 	icon_state = "spring"
 	force = 1
 	throwforce = 5
+/obj/item/stopsign
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	name = "stop sign"
+	desc = "RED MEANS STOP ASSHOLE"
+	icon_state = "stopsign"
+	force = 5
+	throwforce = 10
+

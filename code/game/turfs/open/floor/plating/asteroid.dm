@@ -130,12 +130,12 @@
 		/obj/item/storage/bag/trash = 2,
 		/obj/item/storage/pill_bottle/ = 2,
 		/obj/structure/flora/ash/flax = 20,
-		/obj/effect/spawner/lootdrop/minnyral = 35,
+		/obj/effect/spawner/lootdrop/minnyral = 70,
 		/obj/item/melee/stick = 100,
 		/obj/item/clothing/head/trucker = 1,
 		/obj/item/clothing/head/cone = 1,
 		/obj/item/storage/toolbox/emergency = 1,
-		"" = 200 )
+		"" = 90 )
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
 	if(prob(60))
 		var/shit = pickweight(spawntable)

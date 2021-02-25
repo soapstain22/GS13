@@ -19,21 +19,6 @@
 	D.set_vehicle_dir_layer(WEST, OBJ_LAYER)
 
 //stopsign
-/obj/item/stopsign
-	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
-	name = "stop sign"
-	desc = "RED MEANS STOP ASSHOLE"
-	icon_state = "stopsign"
-	force = 5
-	throwforce = 10
-/obj/item/wirecutters/bolt
-	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
-	name = "bolt cutters"
-	desc = "can circumsize you and cut rods like nobodys buisness"
-	icon_state = "boltcutters"
-	force = 5
-	throwforce = 10
-	toolspeed = 0
 
 
 	layer = ABOVE_MOB_LAYER
@@ -41,3 +26,19 @@
 	new /obj/item/stack/sheet/metal (loc, 1)
 	new /obj/item/stopsign (loc, 1)
 	qdel(src)
+// this is everything else
+/obj/item/ammo_casing/homemade
+	name = "bullet"
+	desc = "a generic bullet"
+	caliber = "420"
+	projectile_type = /obj/projectile/bullet/a357
+
+/obj/structure/closet/crate/wooden/chest
+	name = "chest"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "lootchest"
+
+/obj/structure/closet/crate/wooden/chest/PopulateContents()
+	..()
+	for(var/i in 1 to 3)
+		new /obj/effect/spawner/lootdrop/treasureloot(src, 1, FALSE)

@@ -135,3 +135,17 @@
 	chamber_round()
 	bolt_locked = FALSE
 	update_icon()
+/obj/item/storage/bag/tray/pan
+	name = "frying pan"
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	icon_state = "pan"
+	desc = "A metal tray to lay food on."
+	force = 20
+	throwforce = 5
+	throw_speed = 3
+	throw_range = 5
+	flags_1 = CONDUCT_1
+	custom_materials = list(/datum/material/iron=3000)
+	lefthand_file = 'code/game/objects/structures/superpizza/lefthand.dmi'
+	righthand_file = 'code/game/objects/structures/superpizza/righthand.dmi'
+	slot_flags = null

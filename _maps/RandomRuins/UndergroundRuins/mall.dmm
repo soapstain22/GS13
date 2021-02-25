@@ -6,10 +6,7 @@
 "f" = (/turf/open/floor/plating,/area/space)
 "g" = (/obj/structure/table,/turf/open/floor/plasteel,/area/space)
 "h" = (/turf/open/floor/carpet/blue,/area/space)
-"i" = (/obj/structure/rack,/turf/open/floor/carpet/blue,/area/space)
-"j" = (/obj/structure/rack,/obj/item/cdcase,/turf/open/floor/carpet/blue,/area/space)
-"k" = (/obj/structure/rack,/obj/item/cd/weezer,/turf/open/floor/carpet/blue,/area/space)
-"l" = (/obj/structure/rack,/obj/item/cd,/turf/open/floor/carpet/blue,/area/space)
+"l" = (/obj/structure/rack,/turf/open/floor/carpet/blue,/area/space)
 "m" = (/obj/structure/chair{dir = 4},/turf/open/floor/plating/pavement/sidewalk,/area/space)
 "n" = (/obj/structure/table,/turf/open/floor/plating/pavement/sidewalk,/area/space)
 "o" = (/obj/structure/chair{dir = 8},/turf/open/floor/plating/pavement/sidewalk,/area/space)
@@ -62,15 +59,15 @@ avavavavacccccaddDDDddtcccccccccwccaccccaucccccuaucccccccuacccccadddddddabbbbbbb
 axaxaxaxacyaccadddddddtcccccccccwccaccccaucccccuaucccccccuccccccadddddddabbbbbbbbbbbbbbbb
 acccccccccyaccadddddddtuuuuuuuuuwccaccccaucccccuaucccccccuacccccadddddddabbbbbbbbbbbbbbbb
 acccccccccyaccadddddddaaaaaaaaaaaaaaaaaaaaacccaaaaaaaaaaaaaaaaaaadddddddabbbbbbbbbbbbbbbb
-axaxaxaxacyaccadddddddehijkliiihhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
+axaxaxaxacyaccadddddddehlllllllhhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 azaAazazacyacccdddddddehhhhhhhhhhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
-aaaaaaaaaaaacccddDDDddehiiiiiiihhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
+aaaaaaaaaaaacccddDDDddehlllllllhhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 avavavavacyacccddDfDddahhhhhhhhhhhahhhhhaaaaaaaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 axaxaxaxacyaccaddDfDddhhhhhhhhhhhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 acccccccccyaccaddDfDddahhhhhhhhhhhahhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
-acccccccccyaccaddDDDddehiiiiiiihhhBhhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
+acccccccccyaccaddDDDddehlllllllhhhBhhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 axaxaxaxacyaccadddddddehhhhhhhhhhhBhhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
-azazazazacccccadddddddehiiiiiiihhhBhhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
+azazazazacccccadddddddehlllllllhhhBhhhhhacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 aaaaaaaaaaaaaaadddddddaaaaaaaaaaaaaaaaaaacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 acccaccEgggcccadddddddtccccaccuuuuuuuuuuacccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb
 acccacccccccccadddddddcccccaccccccccccccccccccaccccccccccccccccccdddddddabbbbbbbbbbbbbbbb

@@ -1,0 +1,34 @@
+/obj/structure/flora/ash/flax
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "flaxplant"
+	name = "flax"
+	desc = "some flowers"
+	harvested_name = "flax"
+	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
+	harvest = /obj/item/grown/cotton/flax
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 4
+	harvest_time = 20
+	harvest_message_low = "You pluck a single strand"
+	harvest_message_med = "You pluck a number of strands, leaving a few unsuitable ones."
+	harvest_message_high = "You pluck quite a lot of strands."
+	regrowth_time_low = 2400
+	regrowth_time_high = 6000
+	max_integrity = 35
+/obj/structure/flora/ash/aloe
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "aloe"
+	name = "leafy mushrooms"
+	desc = "A number of mushrooms, each of which surrounds a greenish sporangium with a number of leaf-like structures."
+	harvested_name = "leafless mushrooms"
+	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
+	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 4
+	harvest_time = 20
+	harvest_message_low = "You pluck a single, suitable leaf."
+	harvest_message_med = "You pluck a number of leaves, leaving a few unsuitable ones."
+	harvest_message_high = "You pluck quite a lot of suitable leaves."
+	regrowth_time_low = 2400
+	regrowth_time_high = 6000
+	max_integrity = 35

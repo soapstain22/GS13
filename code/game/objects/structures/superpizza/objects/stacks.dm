@@ -17,169 +17,11 @@
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	hitsound = 'sound/weapons/gun/general/grenade_launch.ogg'
 	novariants = TRUE
-
-// this is everything else
-
-
-/obj/structure/barrel/shit
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel6"
-	max_integrity = 25
-	anchored = TRUE
-	density = 1
-/obj/structure/barrel/shit/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/barrel/shit (loc, 1)
-	qdel(src)
-/obj/item/ammo_casing/homemade
-	name = "bullet"
-	desc = "a generic bullet"
-	caliber = "420"
-	projectile_type = /obj/projectile/bullet/a357
-/obj/item/brasstube
-	name = "brass tube"
-	desc = "wack"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "brasspipe"
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	custom_materials = list(/datum/material/brass=450)
-	force = 7
-	throwforce = 1 // why are you throwing a club do you even weapon
-	throw_speed = 1
-	throw_range = 7
-
-/obj/structure/barrel/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/barrel/ (loc, 1)
-	qdel(src)
-
-/obj/structure/barrel/bota
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel3"
-	max_integrity = 25
-	anchored = TRUE
-	density = 1
-/obj/structure/barrel/bota/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/bota/ (loc, 1)
-	qdel(src)
-
-/
-/obj/structure/barrel/parts
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel2"
-	max_integrity = 25
-	anchored = TRUE
-	density = 1
-/obj/structure/barrel/parts/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/parts/ (loc, 1)
-	qdel(src)
-
-
-/obj/effect/spawner/lootdrop/tool
-	name = "barrelspawn"
-	lootdoubles = TRUE
-	lootcount = 3
-	loot = list(
-
-		/obj/item/hammer = 6,
-
-		/obj/item/construction/plumbing = 1,
-		)
-
-/obj/structure/barrel/tool
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel4"
-	max_integrity = 25
-	anchored = TRUE
-	density = 1
-// MATS
-/obj/structure/barrel/tool/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/tool/ (loc, 1)
-	qdel(src)
-
-
-/obj/structure/barrel/mats
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel1"
-	max_integrity = 25
-	anchored = TRUE
-	density = 1
-/obj/structure/barrel/mats/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/mats/ (loc, 1)
-	qdel(src)
-// CIRC
-
-/obj/structure/barrel/circ
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "barrel"
-	desc = "barrel"
-	icon_state = "barrel5"
-	max_integrity = 25
-	anchored = TRUE
-	density = 1
-/obj/structure/barrel/circ/deconstruct(disassembled = FALSE)
-	new /obj/effect/spawner/lootdrop/circ/ (loc, 1)
-	qdel(src)
-
-/obj/structure/closet/crate/wooden/chest
-	name = "chest"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "lootchest"
-
-/obj/structure/closet/crate/wooden/chest/PopulateContents()
-	..()
-	for(var/i in 1 to 3)
-		new /obj/effect/spawner/lootdrop/treasureloot(src, 1, FALSE)
-/obj/machinery/atmospherics/miner/geyser
-	max_ext_kpa = 130
-	spawn_mol = 9
-	idle_power_usage = 0
-	active_power_usage = 0
-	desc = "Vents gasses from the planet's mantle"
-	name = "geyser"
-	icon = 'icons/obj/lavaland/terrain.dmi'
-	icon_state = "geyser"
-	use_power = 0
-/obj/machinery/atmospherics/miner/geyser/water
-	spawn_id = /datum/gas/water_vapor
-/obj/machinery/atmospherics/miner/geyser/n2o
-	spawn_id = /datum/gas/nitrous_oxide
-/obj/machinery/atmospherics/miner/geyser/plasma
-	spawn_id = /datum/gas/plasma
-/obj/machinery/atmospherics/miner/geyser/hydrogen
-	spawn_id = /datum/gas/hydrogen
-
-
 /obj/item/stack/brick
 	name = "brick"
 	desc = "unfortunately it is no longer brown"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "brick"
-/obj/item/stack/brick/update_icon_state()
-	if(novariants)
-		return
-	icon_state = "[initial(icon_state)][amount < 7 ? amount : ""]"
-	name = "brick"
-	desc = "brown bricks"
-/turf/closed/wall/brick
-	name = "brickwall"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "brickwall"
-	desc = "the wall"
-	canSmoothWith = null
-	hardness = 35
-	slicing_duration = 150 //welding through the ice+metal
-	bullet_sizzle = TRUE
-	thermal_conductivity = 0.025
 /obj/item/stack/stone
 	name = "stone"
 	desc = "stone"
@@ -191,6 +33,7 @@
 	throwforce = 10
 	throw_speed = 3
 	throw_range = 7
+	novariants = 0
 	attack_verb = list("hit", "bludgeoned", "whacked")
 /obj/item/stack/stone/get_main_recipes()
 	. = ..()
@@ -268,7 +111,7 @@
 	custom_materials = list(/datum/material/sulphur=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sulphur
 	mine_experience = 1
-	scan_state = "rock_Iron"
+	scan_state = "sulphur"
 	spreadChance = 20
 	meltingpoint = 1538
 	burningpoint = 2870
@@ -347,12 +190,14 @@
 	grind_results = list(/datum/reagent/aluminium = 10)
 
 /obj/item/stack/niter
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "niter"
 	desc = "nitre if you are bri'ish"
 	icon_state = "niter"
 	grind_results = list(/datum/reagent/saltpetre = 10)
 
 /obj/item/stack/salt
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "salt"
 	desc = "salt rock"
 	icon_state = "salt"

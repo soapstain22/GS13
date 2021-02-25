@@ -151,12 +151,67 @@
 			gets_drilled(null, FALSE)
 	return
 
+
+
+
+
+
+/turf/closed/mineral/dirt
+	name = "dirt"
+	icon = 'icons/turf/mining.dmi'
+	icon_state = "dirt"
+	smooth = null
+	canSmoothWith = null
+	baseturfs = /turf/open/floor/plating/asteroid/
+/turf/closed/mineral/dirt/attackby(obj/item/I, mob/user, params)
+	if (!user.IsAdvancedToolUser())
+		to_chat(usr, "<span class='warning'>You don't have the dexterity to do this!</span>")
+		return
+
+	if(I.tool_behaviour == TOOL_SHOVEL)
+		var/turf/T = user.loc
+		if (!isturf(T))
+			return
+
+		if(last_act + (40 * I.toolspeed) > world.time)//prevents message spam
+			return
+		last_act = world.time
+		to_chat(user, "<span class='notice'>You start digging...</span>")
+
+		if(I.use_tool(src, user, 40, volume=50))
+			if(ismineralturf(src))
+				to_chat(user, "<span class='notice'>You finish digging.</span>")
+				gets_drilled(user, TRUE)
+				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
+	else
+		return attack_hand(user)
+/turf/closed/mineral/dirt/Initialize()
+	icon = 'icons/turf/mining.dmi'
+/turf/closed/mineral/dirt/Bumped(atom/movable/AM)
+	..()
+	if(ishuman(AM))
+		var/mob/living/carbon/human/H = AM
+		var/obj/item/I = H.is_holding_tool_quality(TOOL_SHOVEL || TOOL_MINING)
+		if(I)
+			attackby(I, H)
+		return
+	else if(iscyborg(AM))
+		var/mob/living/silicon/robot/R = AM
+		if(R.module_active && R.module_active.tool_behaviour == TOOL_MINING || R.module_active && R.module_active.tool_behaviour == TOOL_SHOVEL)
+			attackby(R.module_active, R)
+			return
+	else
+		return
+
+
+
+
 /turf/closed/mineral/random
-	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/fake/coal = 30, /obj/item/stack/ore/fake/rocks = 40, /obj/item/stack/ore/fake/trash = 10, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
+	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/sulphur = 10, /turf/closed/mineral/dirt= 1000,/obj/item/stack/ore/fake/coal = 30, /obj/item/stack/ore/fake/stone = 200, /obj/item/stack/ore/fake/trash = 10, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40, /obj/item/stack/ore/titanium = 11,
-		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 2, /obj/item/stack/ore/bluespace_crystal = 1)
+		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 10, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/stack/ore/fake/salt = 30, /obj/item/stack/ore/copper = 40, /obj/item/stack/ore/ruby = 2, /obj/item/stack/ore/emerald = 3, /obj/item/stack/ore/sapphire = 4, /obj/item/stack/ore/topaz = 5, /obj/item/stack/ore/amethyst = 6,)
 		//Currently, Adamantine won't spawn as it has no uses. -Durandan
-	var/mineralChance = 20
+	var/mineralChance = 100
 
 /turf/closed/mineral/random/Initialize()
 
@@ -345,13 +400,34 @@
 	scan_state = "rock_Coal"
 
 /turf/closed/mineral/rocks
-	mineralType = /obj/item/stack/ore/fake/rocks
-	scan_state = "minerals"
+	mineralType = /obj/item/stack/ore/fake/stone
+	scan_state = "stone"
+
+/turf/closed/mineral/salt
+	mineralType = /obj/item/stack/ore/fake/salt
+	scan_state = "salt"
 
 /turf/closed/mineral/trash
 	mineralType = /obj/item/stack/ore/fake/trash
 	scan_state = "trash"
-
+/turf/closed/mineral/copper
+	mineralType = /obj/item/stack/ore/copper
+	scan_state = "copper"
+/turf/closed/mineral/sulphur
+	mineralType = /obj/item/stack/ore/sulphur
+	scan_state = "sulphur"
+/turf/closed/mineral/amethyst
+	mineralType = /obj/item/stack/ore/amethyst
+	scan_state = "amethyst"
+/turf/closed/mineral/sapphire
+	mineralType = /obj/item/stack/ore/sapphire
+	scan_state = "sapphire"
+/turf/closed/mineral/topaz
+	mineralType = /obj/item/stack/ore/topaz
+	scan_state = "topaz"
+/turf/closed/mineral/emerald
+	mineralType = /obj/item/stack/ore/emerald
+	scan_state = "emerald"
 /turf/closed/mineral/iron/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface

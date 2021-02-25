@@ -42,5 +42,6 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 
 GLOBAL_LIST_INIT(stone_recipe, list ( \
 	new/datum/stack_recipe("short stone wall", /obj/structure/barricade/stonewall, 8, time = 30, one_per_turf = 1),
-	new/datum/stack_recipe("hearth flooring", /obj/item/stack/tile/hearth, 4, time = 20, one_per_turf = 0)
+	new/datum/stack_recipe("hearth flooring", /obj/item/stack/tile/hearth, 8, time = 20, one_per_turf = 0),
+	new/datum/stack_recipe("rock floor", /obj/item/stack/tile/rocks, 4, time = 20, one_per_turf = 0)
 	))

@@ -65,6 +65,22 @@
 		/obj/item/reagent_containers/pill/patch/synthflesh = 2,
 		/obj/item/grenade/frag = 5,
 		)
+/obj/effect/spawner/lootdrop/salt
+	name = "barrelspawn"
+	lootdoubles = TRUE
+	lootcount = 3
+	loot = list(
+		/obj/item/stack/niter = 2,
+		/obj/item/stack/salt = 5,
+		)
+/obj/effect/spawner/lootdrop/stone
+	name = "barrelspawn"
+	lootdoubles = TRUE
+	lootcount = 4
+	loot = list(
+		/obj/item/stack/stone = 3,
+		"" = 1,
+		)
 /obj/effect/spawner/lootdrop/minecraft
 	name = "barrelspawn"
 	lootdoubles = TRUE
@@ -128,7 +144,6 @@ obj/effect/spawner/lootdrop/parts
 	lootcount = 5
 	loot = list(
 		/obj/item/chain= 1,
-		/obj/item/brasstube = 1,
 		/obj/item/gear = 1,
 		/obj/item/handle = 1,
 		/obj/item/revp1 = 1,
