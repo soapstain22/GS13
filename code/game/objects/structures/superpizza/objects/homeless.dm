@@ -42,3 +42,18 @@
 	..()
 	for(var/i in 1 to 3)
 		new /obj/effect/spawner/lootdrop/treasureloot(src, 1, FALSE)
+
+
+/obj/item/reagent_containers/food/drinks/jug
+	name = "plastic jug"
+	desc = "A jug"
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	icon_state = "jug"
+	inhand_icon_state = "bottle"
+	custom_materials = list(/datum/material/plastic=1000)
+	volume = 100
+	amount_per_transfer_from_this = 10
+	fill_icon_thresholds = list(0, 10, 20, 30, 40, 50, 60, 70, 80, 90)
+	isGlass = FALSE
+	// The 2 bottles have separate cap overlay icons because if the bottle falls over while bottle flipping the cap stays fucked on the moved overlay
+	custom_price = 30

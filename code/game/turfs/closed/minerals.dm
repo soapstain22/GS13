@@ -185,8 +185,6 @@
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
 	else
 		return attack_hand(user)
-/turf/closed/mineral/dirt/Initialize()
-	icon = 'icons/turf/mining.dmi'
 /turf/closed/mineral/dirt/Bumped(atom/movable/AM)
 	..()
 	if(ishuman(AM))
