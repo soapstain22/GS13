@@ -98,6 +98,7 @@
 	inhand_icon_state = "ipickaxe"
 	force = 7
 	throwforce = 5
+	custom_materials = list(/datum/material/copper=1000)
 /obj/item/coppershovelhead
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "coppershovelhead"
@@ -106,6 +107,7 @@
 	inhand_icon_state = "ipickaxe"
 	force = 7
 	throwforce = 5
+	custom_materials = list(/datum/material/copper=1000)
 /obj/item/shovelhead
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "shovelhead"

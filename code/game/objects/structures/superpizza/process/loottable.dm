@@ -108,7 +108,6 @@
 		/obj/item/stack/ore/titanium = 0.2,
 		/obj/item/stack/ore/diamond = 0.1,
 		/obj/item/stack/ore/cinnabar = 10,
-		/obj/item/stack/ore/lithium = 20,
 		/obj/item/stack/niter = 50,
 		/obj/item/stack/ore/sulphur = 60,
 		/obj/item/stack/ore/Aluminum = 100,
@@ -122,7 +121,6 @@
 	lootcount = 1
 	loot = list(
 	/obj/item/stack/ore/cinnabar = 1,
-	/obj/item/stack/ore/lithium = 1,
 	/obj/item/stack/niter = 2,
 	/obj/item/stack/ore/sulphur = 1,
 	/obj/item/stack/ore/Aluminum = 2,

@@ -13,7 +13,7 @@
 	custom_materials = list(/datum/material/iron=12050) //metal needed for a crowbar and for a knife, why the FUCK does a knife cost 6 metal sheets while a crowbar costs 0.025 sheets? shit makes no sense fuck this
 /obj/item/pickaxe/copper
 	name = "copper pickaxe"
-	icon_state = "copperpickaxe"
+	icon_state = "cpickaxe"
 	inhand_icon_state = "cpickaxe"
 	worn_icon_state = "cpickaxe"
 	toolspeed = 1.5

@@ -65,34 +65,19 @@
 //LITHIUM
 /datum/material/lithium
 	name = "lithium"
-	desc = "essentially just stone"
+	desc = "low density, reactive metal"
 	color = "#808080"
-	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/lithium
 	value_per_unit = 0.0025
-/obj/item/stack/ore/lithium
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	name = "Pegmatite"
-	desc = "do not use this or i will kill you"
-	grind_results = list(/datum/reagent/lithium = 10)
-	icon_state = "pegmatite"
-	points = 1
-	custom_materials = list(/datum/material/lithium=MINERAL_MATERIAL_AMOUNT)
-	refined_type = /obj/item/stack/sheet/lithium
-	mine_experience = 1
-	scan_state = "rock_Iron"
-	spreadChance = 20
-	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
 /obj/item/stack/sheet/lithium
 	novariants = FALSE
 	name = "lithium"
-	desc = "highly reactive and flammable"
+	desc = "reactive to nitrogen and oxygen, but very slowly."
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "lithium"
 	grind_results = list(/datum/reagent/lithium = 10)
-
+	custom_materials = list(/datum/material/lithium=MINERAL_MATERIAL_AMOUNT)
 //SULFUR
 /datum/material/sulphur
 	name = "sulphur"
@@ -122,7 +107,7 @@
 	desc = "for bombs"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "sulphur"
-
+	grind_results = list(/datum/reagent/sulfur = 10)
 
 //COPPER
 /datum/material/copper

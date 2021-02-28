@@ -22,7 +22,7 @@
 
 /datum/design/broom
 	name="Push Broom"
-	id="pushbroom"
+	id ="pushbroom"
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(/datum/material/iron = 2000)
 	build_path = /obj/item/pushbroom
@@ -154,7 +154,7 @@
 	name = "Cable Coil"
 	id = "cable_coil"
 	build_type = AUTOLATHE
-	materials = list(/datum/material/iron = 10, /datum/material/glass = 5)
+	materials = list(/datum/material/copper = 100)
 	build_path = /obj/item/stack/cable_coil
 	category = list("initial","Tools","Tool Designs")
 	maxstack = MAXCOIL
@@ -172,7 +172,7 @@
 	name = "APC Module"
 	id = "power control"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 100, /datum/material/glass = 100)
+	materials = list(/datum/material/iron = 100, /datum/material/copper = 100)
 	build_path = /obj/item/electronics/apc
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -181,7 +181,7 @@
 	name = "Airlock Electronics"
 	id = "airlock_board"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
+	materials = list(/datum/material/iron = 50, /datum/material/copper = 50)
 	build_path = /obj/item/electronics/airlock
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -190,7 +190,7 @@
 	name = "Firelock Circuitry"
 	id = "firelock_board"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
+	materials = list(/datum/material/iron = 50, /datum/material/copper = 50)
 	build_path = /obj/item/electronics/firelock
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -199,7 +199,7 @@
 	name = "Air Alarm Electronics"
 	id = "airalarm_electronics"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
+	materials = list(/datum/material/iron = 50, /datum/material/copper = 50)
 	build_path = /obj/item/electronics/airalarm
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -208,7 +208,7 @@
 	name = "Fire Alarm Electronics"
 	id = "firealarm_electronics"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
+	materials = list(/datum/material/iron = 50, /datum/material/copper = 50)
 	build_path = /obj/item/electronics/firealarm
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -307,7 +307,14 @@
 	build_path = /obj/item/stack/sheet/metal
 	category = list("initial","Construction")
 	maxstack = 50
-
+/datum/design/copper
+	name = "Copper"
+	id = "copper"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/copper = MINERAL_MATERIAL_AMOUNT)
+	build_path = /obj/item/stack/sheet/copper
+	category = list("initial","Construction")
+	maxstack = 50
 /datum/design/glass
 	name = "Glass"
 	id = "glass"
@@ -629,7 +636,7 @@
 	name = "Igniter"
 	id = "igniter"
 	build_type = AUTOLATHE
-	materials = list(/datum/material/iron = 500, /datum/material/glass = 50)
+	materials = list(/datum/material/iron = 500, /datum/material/copper = 50)
 	build_path = /obj/item/assembly/igniter
 	category = list("initial", "Misc")
 
@@ -637,7 +644,7 @@
 	name = "Condenser"
 	id = "condenser"
 	build_type = AUTOLATHE
-	materials = list(/datum/material/iron=250, /datum/material/glass=300)
+	materials = list(/datum/material/iron=250, /datum/material/copper=300)
 	build_path = /obj/item/assembly/igniter/condenser
 	category = list("initial", "Misc")
 
@@ -645,7 +652,7 @@
 	name = "Remote Signaling Device"
 	id = "signaler"
 	build_type = AUTOLATHE
-	materials = list(/datum/material/iron = 400, /datum/material/glass = 120)
+	materials = list(/datum/material/iron = 400, /datum/material/copper = 120)
 	build_path = /obj/item/assembly/signaler
 	category = list("initial", "T-Comm")
 

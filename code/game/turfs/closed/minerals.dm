@@ -163,6 +163,7 @@
 	smooth = null
 	canSmoothWith = null
 	baseturfs = /turf/open/floor/plating/asteroid/
+	smooth_icon = 'icons/turf/smoothdirt.dmi'
 /turf/closed/mineral/dirt/attackby(obj/item/I, mob/user, params)
 	if (!user.IsAdvancedToolUser())
 		to_chat(usr, "<span class='warning'>You don't have the dexterity to do this!</span>")

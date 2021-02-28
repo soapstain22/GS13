@@ -7,7 +7,7 @@
 	name = "igniter"
 	desc = "A small electronic device able to ignite combustible substances."
 	icon_state = "igniter"
-	custom_materials = list(/datum/material/iron=500, /datum/material/glass=50)
+	custom_materials = list(/datum/material/iron=500, /datum/material/copper=50)
 	var/datum/effect_system/spark_spread/sparks
 	heat = 1000
 	drop_sound = 'sound/items/handling/component_drop.ogg'
@@ -53,7 +53,7 @@
 	name = "condenser"
 	desc = "A small electronic device able to chill their surroundings."
 	icon_state = "freezer"
-	custom_materials = list(/datum/material/iron=250, /datum/material/glass=300)
+	custom_materials = list(/datum/material/iron=250, /datum/material/copper=300)
 	heat = 200
 
 /obj/item/assembly/igniter/condenser/activate()
