@@ -2,7 +2,7 @@
 	name = "hearth"
 	desc = "Extremely sturdy."
 	icon_state = "hearth"
-	thermal_conductivity = 0.025
+	thermal_conductivity = INFINITY
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	heat_capacity = INFINITY
 	floor_tile = /obj/item/stack/tile/hearth

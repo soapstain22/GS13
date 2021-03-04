@@ -54,6 +54,7 @@
 	meltingpoint = 1538
 	burningpoint = 2870
 	dens = 141
+	resistance_flags = FIRE_PROOF
 /datum/material/mercury
 	name = "mercury"
 	desc = "mercury"
@@ -97,10 +98,11 @@
 	refined_type = /obj/item/stack/sulphur
 	mine_experience = 1
 	scan_state = "sulphur"
-	spreadChance = 20
+	spreadChance = 3
 	meltingpoint = 1538
 	burningpoint = 2870
 	dens = 141
+	resistance_flags = FIRE_PROOF
 /obj/item/stack/sulphur
 	novariants = FALSE
 	name = "sulphur"
@@ -108,7 +110,7 @@
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "sulphur"
 	grind_results = list(/datum/reagent/sulfur = 10)
-
+	resistance_flags = FIRE_PROOF
 //COPPER
 /datum/material/copper
 	name = "copper"
@@ -129,19 +131,148 @@
 	refined_type = /obj/item/stack/sheet/copper
 	mine_experience = 1
 	scan_state = "copper"
-	spreadChance = 20
+	spreadChance = 1
 	meltingpoint = 1538
 	burningpoint = 2870
 	dens = 141
+	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/copper
 	novariants = FALSE
 	name = "copper"
 	desc = "for copper"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/metals.dmi'
 	icon_state = "copper"
 	grind_results = list(/datum/reagent/copper = 10)
-
-
+	point_value = 20
+	custom_materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/copper
+	material_type = /datum/material/copper
+	resistance_flags = FIRE_PROOF
+//lead
+/datum/material/lead
+	name = "lead"
+	desc = "lead"
+	color = "#878687"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/lead
+	value_per_unit = 0.0025
+	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
+	strength_modifier = 1.5
+	weight = 0.2
+/obj/item/stack/ore/lead
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "galena"
+	novariants = FALSE
+	desc = "its got lead"
+	icon_state = "galena"
+	grind_results = list(/datum/reagent/aluminium = 10)
+	points = 1
+	custom_materials = list(/datum/material/lead=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/lead
+	mine_experience = 1
+	scan_state = "lead"
+	spreadChance = 4
+	meltingpoint = 327.46
+	burningpoint = 1749
+	dens = 54.7
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/sheet/lead
+	novariants = FALSE
+	icon_state = "lead"
+	name = "lead"
+	desc = "lead"
+	icon = 'code/game/objects/structures/superpizza/metals.dmi'
+	grind_results = list(/datum/reagent/aluminium = 10)
+	custom_materials = list(/datum/material/lead=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/lead
+	material_type = /datum/material/lead
+	resistance_flags = FIRE_PROOF
+	meltingpoint = 327.46
+	burningpoint = 1749
+	dens = 54.7
+	gaseousstate = /datum/gas/lead
+//tin
+/datum/material/tin
+	name = "tin"
+	desc = "tin"
+	color = "#878687"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/tin
+	value_per_unit = 0.0025
+	weight = 0.05
+/obj/item/stack/ore/tin
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "cassiterite"
+	novariants = FALSE
+	desc = "its got tin"
+	icon_state = "cassiterite"
+	grind_results = list(/datum/reagent/aluminium = 10)
+	points = 1
+	custom_materials = list(/datum/material/tin=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/tin
+	mine_experience = 1
+	scan_state = "tin"
+	spreadChance = 7
+	meltingpoint = 1538
+	burningpoint = 2870
+	dens = 61.6
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/sheet/tin
+	novariants = FALSE
+	icon_state = "tin"
+	name = "tin"
+	desc = "tin"
+	icon = 'code/game/objects/structures/superpizza/metals.dmi'
+	grind_results = list(/datum/reagent/aluminium = 10)
+	custom_materials = list(/datum/material/tin=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/tin
+	material_type = /datum/material/tin
+	resistance_flags = FIRE_PROOF
+	meltingpoint = 1538
+	burningpoint = 2870
+	dens = 61.6
+	gaseousstate = /datum/gas/tin
+//zinc
+/datum/material/zinc
+	name = "zinc"
+	desc = "zinc"
+	color = "#878687"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/zinc
+	value_per_unit = 0.0025
+	weight = 0.05
+/obj/item/stack/ore/zinc
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "sphalerite"
+	novariants = FALSE
+	desc = "its got zinc"
+	icon_state = "sphalerite"
+	grind_results = list(/datum/reagent/aluminium = 10)
+	points = 1
+	custom_materials = list(/datum/material/zinc=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/zinc
+	mine_experience = 1
+	scan_state = "zinc"
+	spreadChance = 12
+	meltingpoint = 419.5
+	burningpoint = 907
+	dens = 138
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/sheet/zinc
+	novariants = FALSE
+	icon_state = "zinc"
+	name = "zinc"
+	desc = "zinc"
+	icon = 'code/game/objects/structures/superpizza/metals.dmi'
+	grind_results = list(/datum/reagent/aluminium = 10)
+	custom_materials = list(/datum/material/zinc=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/zinc
+	material_type = /datum/material/zinc
+	resistance_flags = FIRE_PROOF
+	meltingpoint = 419.5
+	burningpoint = 907
+	dens = 138
+	gaseousstate = /datum/gas/zinc
 //ALUMINUM
 /datum/material/Aluminum
 	name = "Aluminum"
@@ -150,6 +281,7 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/Aluminum
 	value_per_unit = 0.0025
+	weight = 0.02
 /obj/item/stack/ore/Aluminum
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "bauxite"
@@ -163,31 +295,78 @@
 	mine_experience = 1
 	scan_state = "aluminum"
 	spreadChance = 20
-	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
+	meltingpoint = 660.3
+	burningpoint = 2470
+	dens = 100
+	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/Aluminum
 	novariants = FALSE
-	icon_state = "Aluminum"
+	icon_state = "aluminum"
 	name = "Aluminum"
 	desc = "Aluminum"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/metals.dmi'
 	grind_results = list(/datum/reagent/aluminium = 10)
-
+	custom_materials = list(/datum/material/Aluminum=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/Aluminum
+	material_type = /datum/material/Aluminum
+	resistance_flags = FIRE_PROOF
+	meltingpoint = 660.3
+	burningpoint = 2470
+	dens = 100
+	gaseousstate = /datum/gas/aluminum
+/datum/material/Nickel
+	name = "Nickel"
+	desc = "Nickel"
+	color = "#878687"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/Nickel
+	value_per_unit = 0.0025
+	weight = 0.05
+/obj/item/stack/ore/Nickel
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	name = "Garnierite"
+	novariants = FALSE
+	desc = "its got Nickel"
+	icon_state = "Garnierite"
+	grind_results = list(/datum/reagent/aluminium = 10)
+	points = 1
+	custom_materials = list(/datum/material/Nickel=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/Nickel
+	mine_experience = 10
+	scan_state = "Nickel"
+	spreadChance = 20
+	meltingpoint = 1455
+	burningpoint = 2913
+	dens = 152
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/sheet/Nickel
+	novariants = FALSE
+	icon_state = "nickel"
+	name = "Nickel"
+	desc = "Nickel"
+	icon = 'code/game/objects/structures/superpizza/metals.dmi'
+	custom_materials = list(/datum/material/Nickel=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/Nickel
+	material_type = /datum/material/Nickel
+	resistance_flags = FIRE_PROOF
+	meltingpoint = 1455
+	burningpoint = 2913
+	dens = 152
+	gaseousstate = /datum/gas/nickel
 /obj/item/stack/niter
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "niter"
 	desc = "nitre if you are bri'ish"
 	icon_state = "niter"
 	grind_results = list(/datum/reagent/saltpetre = 10)
-
+	resistance_flags = FIRE_PROOF
 /obj/item/stack/salt
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	name = "salt"
 	desc = "salt rock"
 	icon_state = "salt"
 	grind_results = list(/datum/reagent/consumable/sodiumchloride = 10)
-
+	resistance_flags = FIRE_PROOF
 /obj/item/stack/brick
 	name = "brick"
 	desc = "can clack off your head killing you instantly"
@@ -200,8 +379,7 @@
 /obj/item/stack/brick/get_main_recipes()
 	. = ..()
 	. += GLOB.brick_recipe
-
-
+//lead
 //clay and wet clay. CHECK POTTERY.dm FOR REACTIONS TO WATER AND FIREACT
 /obj/item/stack/clay
 	name = "clay"

@@ -34,7 +34,9 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/texture_layer_icon_state
 	///a cached filter for the texture icon
 	var/cached_texture_filter
-
+	var/toolmod = 1
+	var/melttemp
+	var/weight = 0
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)
@@ -79,7 +81,8 @@ Simple datum which is instanced once per type and is used for every object of sa
 		o.modify_max_integrity(new_max_integrity)
 		o.force *= strength_modifier
 		o.throwforce *= strength_modifier
-
+		o.toolspeed /= toolmod
+		o.slowdown += weight
 		var/list/temp_armor_list = list() //Time to add armor modifiers!
 
 		if(!istype(o.armor))

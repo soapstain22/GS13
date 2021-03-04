@@ -48,7 +48,9 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	var/dangerous = FALSE //currently used by canisters
 	var/fusion_power = 0 //How much the gas accelerates a fusion reaction
 	var/rarity = 0 // relative rarity compared to other gases, used when setting up the reactions list.
-
+	var/solidstate
+	var/liquidstate
+	var/density
 /datum/gas/oxygen
 	id = "o2"
 	specific_heat = 20
@@ -73,6 +75,16 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	name = "Zinc"
 	rarity = 900
 	moles_visible = MOLES_GAS_VISIBLE
+/datum/gas/aluminum
+	id = "al"
+	specific_heat = 20
+	name = "aluminum"
+	rarity = 900
+/datum/gas/lead
+	id = "pb"
+	specific_heat = 20
+	name = "lead"
+	rarity = 900
 /datum/gas/copper
 	id = "cu"
 	specific_heat = 1084

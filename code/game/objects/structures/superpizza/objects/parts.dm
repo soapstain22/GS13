@@ -129,7 +129,6 @@
 	name = "gear"
 	desc = "gear"
 	icon_state = "gear"
-	custom_materials = list(/datum/material/brass=450)
 	force = 2
 	throwforce = 1 // why are you throwing a club do you even weapon
 	throw_speed = 1

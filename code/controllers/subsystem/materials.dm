@@ -22,6 +22,14 @@ SUBSYSTEM_DEF(materials)
 		new /datum/stack_recipe("Toilet", /obj/structure/toilet/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 		new /datum/stack_recipe("Sink", /obj/structure/sink/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 		new /datum/stack_recipe("Floor tile", /obj/item/stack/tile/material, 1, 4, 20, applies_mats = TRUE),
+		new /datum/stack_recipe("Helmet", /obj/item/clothing/head/helmet/knight/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("Armor", /obj/item/clothing/head/helmet/knight/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("pickaxe", /obj/item/pickaxe/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("cautery", /obj/item/cautery/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("retractor", /obj/item/retractor/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("scalpel", /obj/item/scalpel/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("hemostat", /obj/item/hemostat/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("shovel", /obj/item/shovel/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 	)
 
 ///Ran on initialize, populated the materials and materials_by_category dictionaries with their appropiate vars (See these variables for more info)

@@ -23,7 +23,7 @@
 	var/resistance_flags = NONE // INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ON_FIRE | UNACIDABLE | ACID_PROOF
 
 	var/acid_level = 0 //how much acid is on that obj
-
+	var/toolspeed = 1
 	var/persistence_replacement //have something WAY too amazing to live to the next round? Set a new path here. Overuse of this var will make me upset.
 	var/current_skin //Has the item been reskinned?
 	var/list/unique_reskin //List of options to reskin.
@@ -35,7 +35,7 @@
 	var/req_one_access_txt = "0"
 	/// Custom fire overlay icon
 	var/custom_fire_overlay
-
+	var/slowdown
 	var/renamedByPlayer = FALSE //set when a player uses a pen on a renamable object
 
 	var/drag_slowdown // Amont of multiplicative slowdown applied if pulled. >1 makes you slower, <1 makes you faster.

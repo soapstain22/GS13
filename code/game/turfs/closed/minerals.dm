@@ -75,6 +75,7 @@
 				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
 				gets_drilled(user, TRUE)
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
+				I.obj_integrity -= 1
 	else
 		return attack_hand(user)
 
@@ -206,7 +207,7 @@
 
 
 /turf/closed/mineral/random
-	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/sulphur = 10, /turf/closed/mineral/dirt= 1000,/obj/item/stack/ore/fake/coal = 30, /obj/item/stack/ore/fake/stone = 200, /obj/item/stack/ore/fake/trash = 10, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
+	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/sulphur = 10, /turf/closed/mineral/dirt= 1000,/obj/item/stack/ore/fake/coal = 100, /obj/item/stack/ore/fake/stone = 200, /obj/item/stack/ore/fake/trash = 10, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40, /obj/item/stack/ore/titanium = 11,
 		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 10, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/stack/ore/fake/salt = 30, /obj/item/stack/ore/copper = 40, /obj/item/stack/ore/ruby = 2, /obj/item/stack/ore/emerald = 3, /obj/item/stack/ore/sapphire = 4, /obj/item/stack/ore/topaz = 5, /obj/item/stack/ore/amethyst = 6,)
 		//Currently, Adamantine won't spawn as it has no uses. -Durandan
