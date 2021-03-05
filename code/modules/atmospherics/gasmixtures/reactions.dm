@@ -88,6 +88,7 @@ nobiliumsuppression = INFINITY
 			air.gases[/datum/gas/water_vapor][MOLES] -= MOLES_GAS_VISIBLE
 			. = REACTING
 
+
 //tritium combustion: combustion of oxygen and tritium (treated as hydrocarbons). creates hotspots. exothermic
 /datum/gas_reaction/nitrous_decomp
 	priority = 0

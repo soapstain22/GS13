@@ -1,37 +1,71 @@
-
-/obj/item/clothing/suit/armor/cardboard
+/obj/item/clothing/under/color/greyscale
+	name = "jumpsuit"
+	icon_state = "grey"
+	inhand_icon_state = "gy_suit"
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/under/greyscale
+	name = "clothing"
+	desc = "very nice!"
 	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
 	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	body_parts_covered = CHEST
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.15
-	icon_state = "cardboard"
-/obj/item/clothing/head/serf
-	name = "serf hood"
-	desc = "protects yo hed"
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
+	icon_state = "cloth"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/under/smock/greyscale
+	name = "smock"
+	desc = "very nice!"
 	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
 	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	clothing_flags = SNUG_FIT
-	flags_inv = HIDEEARS|HIDEHAIR
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.0
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
+	icon_state = "smock"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/head/hood/greyscale
+	name = "hood"
+	desc = "very nice!"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
 	icon_state = "serf"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/head/greyscale
+	name = "hood"
+	desc = "very nice!"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
+	icon_state = "head"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/shoes/greyscale
+	name = "shoes"
+	desc = "protects yo toes"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
+	icon_state = "serfshoe"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/storage/backpack/sack/greyscale
+	name = "sack"
+	desc = "things go in it"
+	icon_state = "giftbag0"
+	inhand_icon_state = "giftbag"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/head/that/greyscale
+	name = "top-hat"
+	desc = "It's an amish looking hat."
+	icon_state = "tophat"
+	inhand_icon_state = "that"
+	throwforce = 1
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/head/hat/greyscale
+	name = "hat"
+	desc = "what is it supposed to be? just pointy?"
+	icon_state = "hat"
+	inhand_icon_state = "hat"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/head/trucker
 	name = "trucker hat"
 	desc = "jesus christ the smell"
@@ -47,91 +81,6 @@
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
 	slowdown = 0.0
 	icon_state = "trucker"
-/obj/item/clothing/under/serf
-	name = "serf clothing"
-	desc = "protects yo tits"
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	body_parts_covered = CHEST|GROIN
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.1
-	icon_state = "lin"
-/obj/item/clothing/shoes/serf
-	name = "the little booties"
-	desc = "protects yo toes"
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	body_parts_covered = CHEST|GROIN
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.05
-	icon_state = "serfshoe"
-/obj/item/clothing/suit/armor/wood
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	body_parts_covered = CHEST
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.15
-	icon_state = "wood"
-/obj/item/clothing/suit/armor/metal
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	body_parts_covered = CHEST
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.30
-	icon_state = "steel"
-/obj/item/clothing/suit/armor/tit
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	body_parts_covered = CHEST
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST|GROIN
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
-	max_integrity = 250
-	resistance_flags = NONE
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
-	slowdown = 0.4
-	icon_state = "tit"
-/obj/item/storage/backpack/sack
-	name = "sack"
-	desc = "things go in it"
-	icon_state = "giftbag0"
-	inhand_icon_state = "giftbag"
-
 /obj/item/clothing/head/thenam
 	name = "thenam helmet"
 	desc = "fite"

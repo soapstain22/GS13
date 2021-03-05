@@ -49,7 +49,7 @@
 	custom_materials = list(/datum/material/mercury=MINERAL_MATERIAL_AMOUNT)
 	refined_type = null
 	mine_experience = 1
-	scan_state = "rock_Iron"
+	scan_state = "cinnabar"
 	spreadChance = 20
 	meltingpoint = 1538
 	burningpoint = 2870
@@ -333,7 +333,7 @@
 	custom_materials = list(/datum/material/Nickel=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/Nickel
 	mine_experience = 10
-	scan_state = "Nickel"
+	scan_state = "nickel"
 	spreadChance = 20
 	meltingpoint = 1455
 	burningpoint = 2913

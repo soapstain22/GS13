@@ -14,6 +14,7 @@
 	max_integrity = 160
 
 /obj/structure/flora/tree/Destroy()
+	. = ..()
 	playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE)
 	for(var/i=1 to log_amount)
 		new /obj/item/grown/log/tree(get_turf(src))
@@ -158,6 +159,7 @@
 			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
 
 /obj/structure/flora/grass/Destroy()
+	. = ..()
 	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
 
 

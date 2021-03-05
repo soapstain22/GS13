@@ -2,8 +2,11 @@
 /obj/item/stack/ore/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	..()
 	if(exposed_temperature > meltingpoint)
-		new refined_type(drop_location(), 1) // sheet to molten
-		use(1)
+		if(!refined_type)
+			return
+		if(refined_type)
+			new refined_type(drop_location(), 1) // sheet to molten
+			use(1)
 //iron dust
 
 /datum/gas_reaction/iron/react(datum/gas_mixture/air)

@@ -18,6 +18,11 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 
 		gas_info[META_GAS_FUSION_POWER] = initial(gas.fusion_power)
 		gas_info[META_GAS_DANGER] = initial(gas.dangerous)
+		gas_info[META_GAS_LIQUID] = initial(gas.liquidstate)
+		gas_info[META_GAS_SOLID] = initial(gas.solidstate)
+		gas_info[META_GAS_BOIL] = initial(gas.boiling)
+		gas_info[META_GAS_MELT] = initial(gas.melting)
+		gas_info[META_GAS_DENS] = initial(gas.dens)
 		gas_info[META_GAS_ID] = initial(gas.id)
 		.[gas_path] = gas_info
 
@@ -50,7 +55,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	var/rarity = 0 // relative rarity compared to other gases, used when setting up the reactions list.
 	var/solidstate
 	var/liquidstate
-	var/density //grams per mol
+	var/dens //grams per mol
 	var/boiling
 	var/melting
 /datum/gas/oxygen
@@ -58,7 +63,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 20
 	name = "Oxygen"
 	rarity = 900
-	density = 31.998
+	dens = 31.998
 /datum/gas/iron
 	id = "fe"
 	specific_heat = 2862
@@ -66,7 +71,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	rarity = 900
 	moles_visible = MOLES_GAS_VISIBLE
 	gas_overlay = "fe"
-	density = 55.85
+	dens = 55.85
 	boiling = 2861
 	melting = 1538
 /datum/gas/gold
@@ -74,7 +79,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 1064
 	name = "gold"
 	rarity = 900
-	density = 196.966569
+	dens = 196.966569
 	moles_visible = MOLES_GAS_VISIBLE
 	boiling = 2856
 	melting = 1064
@@ -83,7 +88,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 907
 	name = "Zinc"
 	rarity = 900
-	density = 65.39
+	dens = 65.39
 	moles_visible = MOLES_GAS_VISIBLE
 	boiling = 907
 	melting = 419.53
@@ -92,7 +97,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 20
 	name = "aluminum"
 	rarity = 900
-	density = 26.9815385
+	dens = 26.9815385
 	boiling = 2519
 	melting = 660.32
 /datum/gas/lead
@@ -100,7 +105,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 20
 	name = "lead"
 	rarity = 900
-	density = 207.2
+	dens = 207.2
 	boiling = 1749
 	melting = 327.46
 /datum/gas/copper
@@ -108,7 +113,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 1084
 	name = "Copper"
 	rarity = 900
-	density = 63.546
+	dens = 63.546
 	moles_visible = MOLES_GAS_VISIBLE
 	boiling = 1084.62
 	melting = 2562
@@ -117,27 +122,27 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 3550
 	name = "Carbon"
 	rarity = 900
-	density = 12.011
+	dens = 12.011
 	moles_visible = MOLES_GAS_VISIBLE
 /datum/gas/nitrogen
 	id = "n2"
 	specific_heat = 20
 	name = "Nitrogen"
 	rarity = 1000
-	density = 28.014
+	dens = 28.014
 /datum/gas/silicon
 	id = "si"
 	specific_heat = 20
 	name = "Silicon"
 	rarity = 1000
 	moles_visible = MOLES_GAS_VISIBLE
-	density = 28.085
+	dens = 28.085
 /datum/gas/nickel
 	id = "Ni"
 	specific_heat = 20
 	name = "Nickel"
 	rarity = 1000
-	density = 58.69
+	dens = 58.69
 	boiling = 2913
 	melting = 1455
 /datum/gas/carbon_dioxide //what the fuck is this?
@@ -145,13 +150,13 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 30
 	name = "Carbon Dioxide"
 	rarity = 700
-	density = 44.009
+	dens = 44.009
 /datum/gas/chlorine
 	id = "cl"
 	specific_heat = 20
 	name = "chlorine"
 	rarity = 1000
-	density = 70.9
+	dens = 70.9
 	boiling = -34.04
 	melting = -101.5
 /datum/gas/tin
@@ -159,7 +164,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = 20
 	name = "tin"
 	rarity = 1000
-	density = 118.71
+	dens = 118.71
 	boiling = 2602
 	melting = 231.9
 /datum/gas/plasma
@@ -170,7 +175,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	moles_visible = MOLES_GAS_VISIBLE
 	dangerous = TRUE
 	rarity = 800
-	density = 2.39
+	dens = 2.39
 
 /datum/gas/water_vapor
 	id = "water_vapor"
@@ -199,7 +204,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	fusion_power = 10
 	dangerous = TRUE
 	rarity = 600
-	density = 44.013
+	dens = 44.013
 /datum/gas/nitryl
 	id = "no2"
 	specific_heat = 20
@@ -258,14 +263,14 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	moles_visible = MOLES_GAS_VISIBLE *30
 	fusion_power = -5
 	rarity = 10
-	density = 137.4
+	dens = 137.4
 /datum/gas/hydrogen
 	id = "hydrogen"
 	specific_heat = 15
 	name = "Hydrogen"
 	dangerous = TRUE
 	rarity = 700
-	density = 2.016
+	dens = 2.016
 /obj/effect/overlay/gas
 	icon = 'icons/effects/atmospherics.dmi'
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT

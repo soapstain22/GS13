@@ -10,6 +10,11 @@
 #define META_GAS_DANGER			5
 #define META_GAS_ID				6
 #define META_GAS_FUSION_POWER   7
+#define META_GAS_LIQUID 8
+#define META_GAS_SOLID 9
+#define META_GAS_BOIL 10
+#define META_GAS_MELT 11
+#define META_GAS_DENS 12
 //ATMOS
 //stuff you should probably leave well alone!
 /// kPa*L/(K*mol)
