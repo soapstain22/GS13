@@ -137,6 +137,10 @@
 	mine_experience = 6
 	scan_state = "coal"
 	bypass_spawn = /obj/item/stack/sheet/mineral/coal
+/obj/item/stack/ore/fake/niter
+	mine_experience = 6
+	scan_state = "niter"
+	bypass_spawn = /obj/item/stack/niter
 /obj/item/stack/ore/topaz
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
 	name = "topaz"

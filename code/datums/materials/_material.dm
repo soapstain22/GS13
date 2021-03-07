@@ -37,6 +37,10 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/toolmod = 1
 	var/melttemp
 	var/weight = 0
+	var/coldprotection = 1
+	var/coldvulnerable = 1
+	var/heatprotection = 1
+	var/heatvulnerable = 1
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)
@@ -83,6 +87,12 @@ Simple datum which is instanced once per type and is used for every object of sa
 		o.throwforce *= strength_modifier
 		o.toolspeed /= toolmod
 		o.slowdown += weight
+		o.drag_slowdown += weight
+		o.min_cold_protection_temperature *= coldprotection
+		o.max_cold_protection_temperature *= coldvulnerable
+		o.min_heat_protection_temperature *= heatvulnerable
+		o.max_heat_protection_temperature *= heatprotection
+
 		var/list/temp_armor_list = list() //Time to add armor modifiers!
 
 		if(!istype(o.armor))

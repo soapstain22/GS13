@@ -207,12 +207,128 @@
 
 
 /turf/closed/mineral/random
-	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/sulphur = 10, /turf/closed/mineral/dirt= 1000,/obj/item/stack/ore/fake/coal = 100, /obj/item/stack/ore/fake/stone = 200, /obj/item/stack/ore/fake/trash = 10, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
-		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40, /obj/item/stack/ore/titanium = 11,
-		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 10, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/stack/ore/fake/salt = 30, /obj/item/stack/ore/copper = 40, /obj/item/stack/ore/ruby = 2, /obj/item/stack/ore/emerald = 3, /obj/item/stack/ore/sapphire = 4, /obj/item/stack/ore/topaz = 5, /obj/item/stack/ore/amethyst = 6,)
-		//Currently, Adamantine won't spawn as it has no uses. -Durandan
+	var/list/mineralSpawnChanceList = list(
+	/turf/closed/mineral/dirt= 1000,
+	/obj/item/stack/ore/fake/stone = 400,
+	/obj/item/stack/ore/iron = 120,
+	/obj/item/stack/ore/fake/coal = 100,
+	/obj/item/stack/ore/aluminum = 84,
+	/obj/item/stack/ore/sulphur = 54,
+	/obj/item/stack/ore/fake/salt = 44,
+	/obj/item/stack/ore/nickel = 43,
+	/obj/item/stack/ore/tin = 37,
+	/obj/item/stack/ore/copper = 34,
+	/obj/item/stack/ore/zinc = 32,
+	/obj/item/stack/ore/plasma = 20,
+	/obj/item/stack/ore/titanium = 11,
+	/obj/item/stack/ore/amethyst = 6,
+	/obj/item/stack/ore/topaz = 5,
+	/obj/item/stack/ore/uranium = 5,
+	/obj/item/stack/ore/sapphire = 4,
+	/obj/item/stack/ore/emerald = 3,
+	/obj/item/stack/ore/silver = 2,
+	/obj/item/stack/ore/ruby = 2,
+	/obj/item/stack/ore/gold = 1,
+	/obj/item/stack/ore/diamond = 0.7,
+	/obj/item/stack/ore/bluespace_crystal = 0.5,
+
+	/turf/open/floor/plating/asteroid/airless/cave = 10,
+	/obj/item/stack/ore/fake/trash = 1,
+	/turf/closed/mineral/gibtonite = 4, )
 	var/mineralChance = 100
 
+/turf/closed/mineral/random/Sedimentary
+	mineralSpawnChanceList = list(
+	/turf/closed/mineral/dirt= 1000,
+	/obj/item/stack/ore/fake/stone = 200,
+
+	/obj/item/stack/ore/iron = 120,
+	/obj/item/stack/ore/fake/coal = 100,
+	/obj/item/stack/ore/aluminum = 84,
+	/obj/item/stack/ore/sulphur = 54,
+	/obj/item/stack/ore/fake/salt = 44,
+	/obj/item/stack/ore/nickel = 43,
+	/obj/item/stack/ore/tin = 37,
+	/obj/item/stack/ore/copper = 34,
+	/obj/item/stack/ore/zinc = 32,
+	/obj/item/stack/ore/fake/niter = 12,
+	/obj/item/stack/ore/tetrahedrite = 12,
+	/turf/open/floor/plating/asteroid/airless/cave = 10,
+	/obj/item/stack/ore/fake/trash = 1,
+	/turf/closed/mineral/gibtonite = 4,)
+	mineralChance = 100
+
+/turf/closed/mineral/random/IgneousExtrusive
+	mineralSpawnChanceList = list(
+	/turf/closed/mineral/dirt= 30,
+	/obj/item/stack/ore/fake/stone = 400,
+	/obj/item/stack/ore/iron = 400,
+	/obj/item/stack/ore/fake/coal = 100,
+	/obj/item/stack/ore/aluminum = 84,
+	/obj/item/stack/ore/copper = 84,
+
+	/turf/open/floor/plating/asteroid/airless/cave = 10,
+	/obj/item/stack/ore/fake/trash = 1,
+	/turf/closed/mineral/gibtonite = 4, )
+	mineralChance = 100
+
+/turf/closed/mineral/random/Metamorphic
+	mineralSpawnChanceList = list(
+	/turf/closed/mineral/dirt= 1000,
+	/obj/item/stack/ore/fake/stone = 400,
+	/obj/item/stack/ore/iron = 120,
+	/obj/item/stack/ore/fake/coal = 100,
+	/obj/item/stack/ore/aluminum = 84,
+	/obj/item/stack/ore/sulphur = 54,
+	/obj/item/stack/ore/fake/salt = 44,
+	/obj/item/stack/ore/nickel = 43,
+	/obj/item/stack/ore/tin = 37,
+	/obj/item/stack/ore/copper = 34,
+	/obj/item/stack/ore/zinc = 32,
+	/obj/item/stack/ore/plasma = 20,
+	/obj/item/stack/ore/titanium = 11,
+	/obj/item/stack/ore/amethyst = 6,
+	/obj/item/stack/ore/topaz = 5,
+	/obj/item/stack/ore/uranium = 5,
+	/obj/item/stack/ore/sapphire = 4,
+	/obj/item/stack/ore/emerald = 3,
+	/obj/item/stack/ore/silver = 2,
+	/obj/item/stack/ore/ruby = 2,
+	/obj/item/stack/ore/gold = 1,
+	/obj/item/stack/ore/diamond = 0.7,
+	/obj/item/stack/ore/bluespace_crystal = 0.5,
+
+	/turf/open/floor/plating/asteroid/airless/cave = 10,
+	/obj/item/stack/ore/fake/trash = 1,
+	/turf/closed/mineral/gibtonite = 4, )
+	mineralChance = 100
+
+/turf/closed/mineral/random/Igneousintrusive
+	mineralSpawnChanceList = list(
+	/turf/closed/mineral/dirt= 1000,
+	/obj/item/stack/ore/fake/stone = 400,
+	/obj/item/stack/ore/iron = 120,
+	/obj/item/stack/ore/tetrahedrite = 100,
+	/obj/item/stack/ore/nickel = 43,
+	/obj/item/stack/ore/copper = 12,
+	/obj/item/stack/ore/zinc = 32,
+	/obj/item/stack/ore/plasma = 20,
+	/obj/item/stack/ore/titanium = 11,
+	/obj/item/stack/ore/amethyst = 6,
+	/obj/item/stack/ore/topaz = 5,
+	/obj/item/stack/ore/uranium = 5,
+	/obj/item/stack/ore/sapphire = 4,
+	/obj/item/stack/ore/emerald = 3,
+	/obj/item/stack/ore/silver = 2,
+	/obj/item/stack/ore/ruby = 2,
+	/obj/item/stack/ore/gold = 1,
+	/obj/item/stack/ore/diamond = 0.7,
+	/obj/item/stack/ore/bluespace_crystal = 0.5,
+
+	/turf/open/floor/plating/asteroid/airless/cave = 10,
+	/obj/item/stack/ore/fake/trash = 1,
+	/turf/closed/mineral/gibtonite = 4, )
+	mineralChance = 100
 /turf/closed/mineral/random/Initialize()
 
 	mineralSpawnChanceList = typelist("mineralSpawnChanceList", mineralSpawnChanceList)
@@ -406,13 +522,27 @@
 /turf/closed/mineral/salt
 	mineralType = /obj/item/stack/ore/fake/salt
 	scan_state = "salt"
-
+/turf/closed/mineral/tetrahedrite
+	mineralType = /obj/item/stack/ore/tetrahedrite
+	scan_state = "tetrahedrite"
 /turf/closed/mineral/trash
 	mineralType = /obj/item/stack/ore/fake/trash
 	scan_state = "trash"
 /turf/closed/mineral/copper
 	mineralType = /obj/item/stack/ore/copper
 	scan_state = "copper"
+/turf/closed/mineral/zinc
+	mineralType = /obj/item/stack/ore/zinc
+	scan_state = "zinc"
+/turf/closed/mineral/lead
+	mineralType = /obj/item/stack/ore/lead
+	scan_state = "lead"
+/turf/closed/mineral/tin
+	mineralType = /obj/item/stack/ore/tin
+	scan_state = "tin"
+/turf/closed/mineral/nickel
+	mineralType = /obj/item/stack/ore/nickel
+	scan_state = "zinc"
 /turf/closed/mineral/sulphur
 	mineralType = /obj/item/stack/ore/sulphur
 	scan_state = "sulphur"

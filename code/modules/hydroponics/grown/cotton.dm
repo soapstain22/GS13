@@ -124,7 +124,7 @@
 	throwforce = 0
 	merge_type = /obj/item/stack/sheet/cotton/flax
 	pull_effort = 30
-	loom_result = /obj/item/stack/linen
+	loom_result = /obj/item/stack/fabric/linen
 /obj/item/stack/sheet/cotton/flax/update_icon_state()
 	if(novariants)
 		return

@@ -110,7 +110,7 @@
 		/obj/item/stack/ore/cinnabar = 10,
 		/obj/item/stack/niter = 50,
 		/obj/item/stack/ore/sulphur = 60,
-		/obj/item/stack/ore/Aluminum = 100,
+		/obj/item/stack/ore/aluminum = 100,
 		/obj/item/stack/ore/copper = 200,
 		/obj/item/stack/salt = 100,
 		/obj/item/stack/clay = 400,
@@ -123,7 +123,7 @@
 	/obj/item/stack/ore/cinnabar = 1,
 	/obj/item/stack/niter = 2,
 	/obj/item/stack/ore/sulphur = 1,
-	/obj/item/stack/ore/Aluminum = 2,
+	/obj/item/stack/ore/aluminum = 2,
 	/obj/item/stack/ore/copper = 2,
 	/obj/item/stack/salt = 2,
 	/obj/item/stack/clay = 4,)
