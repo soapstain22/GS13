@@ -125,6 +125,18 @@
 	merge_type = /obj/item/stack/sheet/cotton/flax
 	pull_effort = 30
 	loom_result = /obj/item/stack/fabric/linen
+/obj/item/stack/sheet/cotton/silk
+	name = "webs"
+	desc = "webby gooby silk yucky"
+	singular_name = "web"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "web"
+	resistance_flags = FLAMMABLE
+	force = 0
+	throwforce = 0
+	merge_type = /obj/item/stack/sheet/cotton/silk
+	pull_effort = 30
+	loom_result = /obj/item/stack/fabric/silk
 /obj/item/stack/sheet/cotton/flax/update_icon_state()
 	if(novariants)
 		return

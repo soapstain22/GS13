@@ -19,17 +19,19 @@
 	var/last_act = 0
 	var/scan_state = "" //Holder for the image we display when we're pinged by a mining scanner
 	var/defer_change = 0
-	var/damage = 10
+	var/maxDamage = 10
+	var/damage = null
+	var/mutable_appearance/crack_overlay
 /turf/closed/mineral/Initialize()
 	if (!canSmoothWith)
 		canSmoothWith = list(/turf/closed/mineral, /turf/closed/indestructible)
 	var/matrix/M = new
+	damage = maxDamage
 	M.Translate(-4, -4)
 	transform = M
 	icon = smooth_icon
-	for(var/turf/closed/mineral/S)
-		if(scan_state)
-			overlays += scan_state
+	if(scan_state)
+		overlays += scan_state
 	. = ..()
 
 /turf/closed/mineral/proc/Spread_Vein()
@@ -68,20 +70,36 @@
 		if (!isturf(T))
 			return
 
-		if(last_act + (40 * I.toolspeed) > world.time)//prevents message spam
+		if(last_act + (2 * I.toolspeed) > world.time)//prevents message spam
 			return
 		last_act = world.time
 		to_chat(user, "<span class='notice'>You start picking...</span>")
 
-		if(I.use_tool(src, user, 1, volume=50))
+		if(I.use_tool(src, user, 3, volume=50))
 			if(ismineralturf(src))
 				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
 				damage -= 1
-				gets_drilled(user, TRUE)
-				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
 				I.obj_integrity -= 1
-	else
-		return attack_hand(user)
+				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
+				if(damage <= 1)
+					gets_drilled(user, TRUE)
+				else
+					return attack_hand(user)
+/turf/closed/mineral/update_overlays()
+	. = ..()
+	if(!QDELETED(src))
+
+		var/ratio = damage / maxDamage
+		ratio = CEILING(ratio*4, 1) * 25
+
+		if(smooth)
+			QUEUE_SMOOTH(src)
+
+		cut_overlay(crack_overlay)
+		if(ratio > 75)
+			return
+		crack_overlay = mutable_appearance('icons/obj/structures.dmi', "damage[ratio]", -(layer+0.1))
+		. += crack_overlay
 
 /turf/closed/mineral/proc/gets_drilled(user, give_exp = FALSE)
 	if (mineralType && (mineralAmt > 0))
@@ -244,6 +262,7 @@
 /turf/closed/mineral/random/Sedimentary
 	smooth_icon = 'icons/turf/smoothsandstone.dmi'
 	mineralSpawnChanceList = list(
+	/obj/item/stack/ore/fake/stone 	= 200,
 	/turf/closed/mineral/dirt		= 300,
 	/obj/item/stack/ore/hematite	= 120,
 	/obj/item/stack/ore/limonite	= 120,
@@ -253,8 +272,9 @@
 	/obj/item/stack/ore/sulphur 	= 54,
 	/obj/item/stack/ore/fake/salt 	= 44,
 	/obj/item/stack/ore/fake/trash 	= 3,
-	/turf/open/floor/plating/asteroid/airless/cave = 1,)
-	mineralChance = 50
+	/obj/item/stack/ore/fake/sandstone = 500,
+	/turf/open/floor/plating/asteroid/airless/cave = 1)
+	mineralChance = 60
 
 /turf/closed/mineral/random/IgneousExtrusive
 	smooth_icon = 'icons/turf/smoothandestite.dmi'
@@ -286,9 +306,9 @@
 		/obj/item/stack/ore/tetrahedrite = 120,
 		/obj/item/stack/ore/iron = 120,
 		/obj/item/stack/ore/gold = 23,
-		/obj/item/stack/ore/granite = 50)
-
-	mineralChance = 20
+		/obj/item/stack/ore/granite = 200,
+		/turf/open/floor/plating/asteroid/airless/cave = 1,)
+	mineralChance = 60
 /turf/closed/mineral/random/Initialize()
 
 	mineralSpawnChanceList = typelist("mineralSpawnChanceList", mineralSpawnChanceList)

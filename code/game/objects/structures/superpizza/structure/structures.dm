@@ -66,7 +66,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/bin/proc/deconstruction_hints(mob/user)
-	return "<span class='notice'>The top is <b>screwed</b> on, but the main <b>bolts</b> are also visible.</span>"
+	return "<span class='notice'>It is bolted in</span>"
 
 /obj/structure/bin/attack_tk()
 	return FALSE

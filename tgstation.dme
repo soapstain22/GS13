@@ -1346,6 +1346,7 @@
 #include "code\game\objects\structures\signs\signs_departments.dm"
 #include "code\game\objects\structures\signs\signs_maps.dm"
 #include "code\game\objects\structures\signs\signs_warning.dm"
+#include "code\game\objects\structures\superpizza\creatures\cave_assistant.dm"
 #include "code\game\objects\structures\superpizza\objects\clothing.dm"
 #include "code\game\objects\structures\superpizza\objects\homeless.dm"
 #include "code\game\objects\structures\superpizza\objects\parts.dm"

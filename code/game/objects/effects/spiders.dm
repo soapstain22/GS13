@@ -30,6 +30,8 @@
 /obj/structure/spider/stickyweb
 	var/genetic = FALSE
 	icon_state = "stickyweb1"
+/obj/structure/spider/stickyweb/Destroy()
+	new /obj/item/stack/sheet/cotton/silk
 
 /obj/structure/spider/stickyweb/Initialize()
 	if(prob(50))

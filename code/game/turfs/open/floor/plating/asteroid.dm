@@ -301,7 +301,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 
 /turf/open/floor/plating/asteroid/airless/cave/Initialize()
 	if (!mob_spawn_list)
-		mob_spawn_list = list(/mob/living/simple_animal/hostile/asteroid/goldgrub = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
+		mob_spawn_list = list(/mob/living/simple_animal/hostile/poison/giant_spider/nurse = 1, /mob/living/simple_animal/hostile/retaliate/frog = 1, /mob/living/simple_animal/hostile/skeleton = 2, /mob/living/simple_animal/hostile/asteroid/gutlunch = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
 	if (!megafauna_spawn_list)
 		megafauna_spawn_list = GLOB.megafauna_spawn_list
 	if (!flora_spawn_list)

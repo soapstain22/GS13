@@ -283,7 +283,14 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 			. += "[src] is made of cold-resistant materials."
 		if(resistance_flags & FIRE_PROOF)
 			. += "[src] is made of fire-retardant materials."
-
+	var/healthpercent = (obj_integrity/max_integrity) * 100
+	switch(healthpercent)
+		if(50 to 99)
+			return  "It looks slightly damaged."
+		if(25 to 50)
+			return  "It appears heavily damaged."
+		if(0 to 25)
+			return  "<span class='warning'>It's falling apart!</span>"
 	if(!user.research_scanner)
 		return
 
@@ -832,7 +839,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	// Run the start check here so we wouldn't have to call it manually.
 	if(!delay && !tool_start_check(user, amount))
 		return
-
+	if(obj_integrity<=1)
+		qdel(src)
 	var/skill_modifier = 1
 
 	if(tool_behaviour == TOOL_MINING && ishuman(user))

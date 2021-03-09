@@ -22,6 +22,14 @@
 	desc = "unfortunately it is no longer brown"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "brick"
+/datum/material/stone
+	name = "stone"
+	desc = "rocks"
+	color = "#9c9c9c"
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
+	value_per_unit = 0.0025
+	weight = 0.05
+	texture_layer_icon_state = "stone"
 /obj/item/stack/stone
 	name = "stone"
 	desc = "stone"
@@ -35,6 +43,8 @@
 	throw_range = 7
 	novariants = 0
 	attack_verb = list("hit", "bludgeoned", "whacked")
+	custom_materials = list(/datum/material/stone=MINERAL_MATERIAL_AMOUNT)
+	material_type = /datum/material/stone
 /obj/item/stack/stone/get_main_recipes()
 	. = ..()
 	. += GLOB.stone_recipe
@@ -458,6 +468,14 @@
 	burningpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
+/datum/material/andestite
+	name = "andestite"
+	desc = "andestite"
+	color = "#969696"
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
+	value_per_unit = 0.0025
+	weight = 0.05
+	texture_layer_icon_state = "stone"
 /obj/item/stack/ore/andestite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "andestite"
@@ -471,6 +489,14 @@
 	burningpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
+/datum/material/granite
+	name = "granite"
+	desc = "granite"
+	color = "#e0bcad"
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
+	value_per_unit = 0.0025
+	weight = 0.05
+	texture_layer_icon_state = "stone"
 /obj/item/stack/ore/granite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "granite"
@@ -483,6 +509,16 @@
 	meltingpoint = 327.46
 	burningpoint = 1749
 	dens = 54.7
+	custom_materials = list(/datum/material/granite=MINERAL_MATERIAL_AMOUNT)
+	material_type = /datum/material/granite
+/datum/material/marble
+	name = "marble"
+	desc = "marble"
+	color = "#FFFFFF"
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
+	value_per_unit = 0.0025
+	weight = 0.05
+	texture_layer_icon_state = "stone"
 /obj/item/stack/ore/marble
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "marble"
@@ -495,7 +531,8 @@
 	meltingpoint = 327.46
 	burningpoint = 1749
 	dens = 54.7
-
+	custom_materials = list(/datum/material/marble=MINERAL_MATERIAL_AMOUNT)
+	material_type = /datum/material/marble
 /obj/item/stack/brick
 	name = "brick"
 	desc = "can clack off your head killing you instantly"
@@ -505,6 +542,7 @@
 	throwforce = 20
 	throw_speed = 4
 	throw_range = 5
+//	texture_layer_icon_state = brick
 /obj/item/stack/brick/get_main_recipes()
 	. = ..()
 	. += GLOB.brick_recipe
@@ -580,9 +618,9 @@
 	heatvulnerable = 1.1
 /obj/item/stack/fabric/silk
 	name = "silk"
-	desc = "its like cloth but its cloth"
+	desc = "made out of materials(?)"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "linen"
+	icon_state = "silk"
 	resistance_flags = FLAMMABLE
 	force = 0
 	throwforce = 0
