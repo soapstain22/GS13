@@ -426,7 +426,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 //And now for our lavaland dwelling friends, sand, but in stone form! Truly revolutionary.
 /datum/material/sandstone
 	name = "sandstone"
-	desc = "Bialtaakid 'ant taerif ma hdha."
+	desc = "stohn"
 	color = "#B77D31"
 	categories = list(MAT_CATEGORY_RIGID = TRUE)
 	sheet_type = /obj/item/stack/sheet/mineral/sandstone

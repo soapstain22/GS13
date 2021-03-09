@@ -28,7 +28,7 @@
 /obj/item/pickaxe/rusted
 	name = "rusty pickaxe"
 	desc = "A pickaxe that's been left to rust."
-	attack_verb = list("ineffectively hit")
+	attack_verb = list("hit")
 	force = 1
 	throwforce = 1
 

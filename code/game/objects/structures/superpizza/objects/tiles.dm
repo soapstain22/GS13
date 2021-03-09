@@ -1,7 +1,7 @@
 /obj/item/stack/tile/hearth
-	name = "plastic tile"
-	singular_name = "plastic floor tile"
-	desc = "A tile of cheap, flimsy plastic flooring."
+	name = "hearth"
+	singular_name = "hearth"
+	desc = "A hearth"
 	icon_state = "tile_plastic"
 	turf_type = /turf/open/floor/hearth
 /obj/item/stack/tile/rocks

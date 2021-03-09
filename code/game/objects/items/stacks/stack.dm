@@ -86,7 +86,10 @@
 					var/list/temp = SSmaterials.rigid_stack_recipes.Copy()
 					recipes += temp
 				if(MAT_CATEGORY_FABRIC_RECIPES)
-					var/list/temp = SSmaterials.rigid_stack_recipes.Copy()
+					var/list/temp = SSmaterials.fabric_stack_recipes.Copy()
+					recipes += temp
+				if(MAT_CATEGORY_MASON_RECIPES)
+					var/list/temp = SSmaterials.mason_stack_recipes.Copy()
 					recipes += temp
 	update_weight()
 	update_icon()

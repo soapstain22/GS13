@@ -27,14 +27,7 @@
 	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
 	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
 	icon_state = "serf"
-	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
-/obj/item/clothing/head/greyscale
-	name = "hood"
-	desc = "very nice!"
-	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
-	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
-	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
-	icon_state = "head"
+	cold_protection = HEAD
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/shoes/greyscale
 	name = "shoes"
@@ -65,6 +58,7 @@
 	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
 	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
 	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	cold_protection = HEAD
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/head/trucker
 	name = "trucker hat"
@@ -90,3 +84,10 @@
 	icon_state = "thenam"
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10, "wound" = 10)
 	slowdown = 0.05
+/obj/item/clothing/head/beanie/greyscale
+	name = "beanie"
+	desc = "A stylish beanie. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their heads."
+	icon_state = "beanie" //Default white
+	custom_price = 60
+	cold_protection = HEAD
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix

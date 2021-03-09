@@ -4,7 +4,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 /proc/meta_gas_list()
 	. = subtypesof(/datum/gas)
 	for(var/gas_path in .)
-		var/list/gas_info = new(7)
+		var/list/gas_info = new(12)
 		var/datum/gas/gas = gas_path
 
 		gas_info[META_GAS_SPECIFIC_HEAT] = initial(gas.specific_heat)
@@ -53,11 +53,11 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	var/dangerous = FALSE //currently used by canisters
 	var/fusion_power = 0 //How much the gas accelerates a fusion reaction
 	var/rarity = 0 // relative rarity compared to other gases, used when setting up the reactions list.
-	var/solidstate
-	var/liquidstate
-	var/dens //grams per mol
-	var/boiling
-	var/melting
+	var/solidstate =""
+	var/liquidstate =""
+	var/dens = 0//grams per mol
+	var/boiling = 0
+	var/melting = 0
 /datum/gas/oxygen
 	id = "o2"
 	specific_heat = 20

@@ -3,16 +3,16 @@
 	name = "fog"
 	desc = "sleepy time"
 
-	telegraph_duration = 200
+	telegraph_duration = 100
 	telegraph_message = "<span class='danger'>a fog fills the air</span>"
-	weather_message = "<span class='userdanger'><i>Goodnight!</i></span>"
+	weather_message = "<span class='userdanger'><i>the fog has set in!</i></span>"
 	telegraph_overlay = "fog"
-	weather_duration_lower = 2100
-	weather_duration_upper = 2600
+	weather_duration_lower = 1000
+	weather_duration_upper = 2000
 	weather_overlay = "fogloop"
 	overlay_layer = 15
 	barometer_predictable = FALSE
-	end_duration = 200
+	end_duration = 100
 	end_message = "<span class='notice'>the fog dissapates</span>"
 	end_overlay = "sunrise"
 	area_type = /area/surface/outdoors/unexplored

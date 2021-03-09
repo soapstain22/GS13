@@ -25,7 +25,7 @@
 /obj/item/stack/stone
 	name = "stone"
 	desc = "stone"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	icon_state = "rock"
 	inhand_icon_state = "rock"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -88,7 +88,7 @@
 	sheet_type = /obj/item/stack/sulphur
 	value_per_unit = 0.0025
 /obj/item/stack/ore/sulphur
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "sulphur"
 	desc = "its got stank"
 	icon_state = "sulphur"
@@ -107,7 +107,7 @@
 	novariants = FALSE
 	name = "sulphur"
 	desc = "for bombs"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	icon_state = "sulphur"
 	grind_results = list(/datum/reagent/sulfur = 10)
 	resistance_flags = FIRE_PROOF
@@ -120,7 +120,7 @@
 	sheet_type = /obj/item/stack/sheet/copper
 	value_per_unit = 0.0025
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
-/obj/item/stack/ore/copper
+/obj/item/stack/ore/malachite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "malachite"
 	desc = "its got copper"
@@ -137,6 +137,23 @@
 	burningpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
+/obj/item/stack/ore/tetrahedrite
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
+	name = "tetrahedrite"
+	novariants = TRUE
+	desc = "its got copper"
+	icon_state = "tetrahedrite"
+	grind_results = list(/datum/reagent/copper = 10, /datum/reagent/silver = 2)
+	points = 3
+	custom_materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT,)
+	refined_type = /obj/item/stack/sheet/copper
+	mine_experience = 1
+	scan_state = "tetrahedrite"
+	spreadChance = 4
+	meltingpoint = 327.46
+	burningpoint = 1749
+	dens = 54.7
+	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/copper
 	novariants = FALSE
 	name = "copper"
@@ -149,6 +166,7 @@
 	merge_type = /obj/item/stack/sheet/copper
 	material_type = /datum/material/copper
 	resistance_flags = FIRE_PROOF
+	gaseousstate = /datum/gas/copper
 //lead
 /datum/material/lead
 	name = "lead"
@@ -164,7 +182,7 @@
 	coldvulnerable = 0.9
 	heatprotection = 1.2
 	heatvulnerable = 0.9
-/obj/item/stack/ore/lead
+/obj/item/stack/ore/galena
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "galena"
 	novariants = FALSE
@@ -209,7 +227,7 @@
 	coldvulnerable = 1.1
 	heatprotection = 0.9
 	heatvulnerable = 1.1
-/obj/item/stack/ore/tin
+/obj/item/stack/ore/cassiterite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "cassiterite"
 	novariants = FALSE
@@ -254,7 +272,7 @@
 	coldvulnerable = 1
 	heatprotection = 1
 	heatvulnerable = 1
-/obj/item/stack/ore/zinc
+/obj/item/stack/ore/sphalerite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "sphalerite"
 	novariants = FALSE
@@ -301,10 +319,10 @@
 	heatvulnerable = 1.3
 /obj/item/stack/ore/aluminum
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
-	name = "bauxite"
+	name = "native aluminum"
 	novariants = FALSE
 	desc = "its got Aluminum"
-	icon_state = "bauxite"
+	icon_state = "aluminum"
 	grind_results = list(/datum/reagent/aluminium = 10)
 	points = 1
 	custom_materials = list(/datum/material/aluminum=MINERAL_MATERIAL_AMOUNT)
@@ -343,7 +361,7 @@
 	coldvulnerable = 1
 	heatprotection = 1
 	heatvulnerable = 1
-/obj/item/stack/ore/nickel
+/obj/item/stack/ore/garnierite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "Garnierite"
 	novariants = FALSE
@@ -374,35 +392,84 @@
 	dens = 152
 	gaseousstate = /datum/gas/nickel
 /obj/item/stack/niter
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "niter"
 	desc = "nitre if you are bri'ish"
 	icon_state = "niter"
 	grind_results = list(/datum/reagent/saltpetre = 10)
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/salt
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "salt"
 	desc = "salt rock"
 	icon_state = "salt"
 	grind_results = list(/datum/reagent/consumable/sodiumchloride = 10)
 	resistance_flags = FIRE_PROOF
-/obj/item/stack/ore/tetrahedrite
+
+
+/obj/item/stack/ore/hematite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
-	name = "tetrahedrite"
-	novariants = TRUE
-	desc = "its got copper"
-	icon_state = "tetrahedrite"
-	grind_results = list(/datum/reagent/copper = 10, /datum/reagent/silver = 2)
-	points = 3
-	custom_materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT,)
-	refined_type = /obj/item/stack/sheet/copper
+	name = "hematite"
+	desc = "its got iron"
+	icon_state = "hematite"
+	novariants = FALSE
+	grind_results = list(/datum/reagent/iron = 10)
+	points = 1
+	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/metal
 	mine_experience = 1
-	scan_state = "tetrahedrite"
-	spreadChance = 4
-	meltingpoint = 327.46
-	burningpoint = 1749
-	dens = 54.7
+	scan_state = "hematite"
+	spreadChance = 1
+	meltingpoint = 1538
+	burningpoint = 2870
+	dens = 141
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/ore/magnetite
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
+	name = "magnetite"
+	desc = "its got iron"
+	icon_state = "magnetite"
+	novariants = FALSE
+	grind_results = list(/datum/reagent/iron = 10)
+	points = 1
+	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/metal
+	mine_experience = 1
+	scan_state = "magnetite"
+	spreadChance = 1
+	meltingpoint = 1538
+	burningpoint = 2870
+	dens = 141
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/ore/limonite
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
+	name = "limonite"
+	desc = "its got iron"
+	icon_state = "limonite"
+	novariants = FALSE
+	grind_results = list(/datum/reagent/iron = 10)
+	points = 1
+	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/metal
+	mine_experience = 1
+	scan_state = "limonite"
+	spreadChance = 1
+	meltingpoint = 1538
+	burningpoint = 2870
+	dens = 141
+	resistance_flags = FIRE_PROOF
+/obj/item/stack/ore/andestite
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
+	name = "andestite"
+	desc = "its got andestite"
+	icon_state = "andestite"
+	novariants = FALSE
+	mine_experience = 1
+	scan_state = ""
+	spreadChance = 1
+	meltingpoint = 1538
+	burningpoint = 2870
+	dens = 141
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/ore/granite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
@@ -416,7 +483,19 @@
 	meltingpoint = 327.46
 	burningpoint = 1749
 	dens = 54.7
-	resistance_flags = FIRE_PROOF
+/obj/item/stack/ore/marble
+	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
+	name = "marble"
+	novariants = TRUE
+	desc = "very common"
+	icon_state = ""
+	points = 0
+	mine_experience = 0
+	spreadChance = 4
+	meltingpoint = 327.46
+	burningpoint = 1749
+	dens = 54.7
+
 /obj/item/stack/brick
 	name = "brick"
 	desc = "can clack off your head killing you instantly"
@@ -469,7 +548,7 @@
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/fabric/linen
 	value_per_unit = 0.0025
-	weight = 0.05
+	weight = 0.0
 	coldprotection = 1.1
 	coldvulnerable = 1
 	heatprotection = 1
@@ -485,4 +564,29 @@
 	merge_type = /obj/item/stack/fabric/linen
 	material_type = /datum/material/linen
 	custom_materials = list(/datum/material/linen=MINERAL_MATERIAL_AMOUNT)
+
+//linen
+/datum/material/silk
+	name = "linen"
+	desc = "linen"
+	color = "#faf0e6"
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/fabric/linen
+	value_per_unit = 0.0025
+	weight = 0.0
+	coldprotection = 1.1
+	coldvulnerable = 1
+	heatprotection = 1
+	heatvulnerable = 1.1
+/obj/item/stack/fabric/silk
+	name = "silk"
+	desc = "its like cloth but its cloth"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "linen"
+	resistance_flags = FLAMMABLE
+	force = 0
+	throwforce = 0
+	merge_type = /obj/item/stack/fabric/silk
+	material_type = /datum/material/silk
+	custom_materials = list(/datum/material/silk=MINERAL_MATERIAL_AMOUNT)
 

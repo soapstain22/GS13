@@ -517,3 +517,10 @@
 /obj/structure/curtain/cloth/fancy
 	icon_type = "cur_fancy"
 	icon_state = "cur_fancy-open"
+
+/obj/structure/curtain/greyscale
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	var/buildstacktype = null
+/obj/structure/curtain/greyscale/deconstruct(disassembled = TRUE)
+	new buildstacktype (loc, 4)
+	qdel(src)

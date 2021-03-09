@@ -11,14 +11,6 @@
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron=12050) //metal needed for a crowbar and for a knife, why the FUCK does a knife cost 6 metal sheets while a crowbar costs 0.025 sheets? shit makes no sense fuck this
-/obj/item/pickaxe/copper
-	name = "copper pickaxe"
-	icon_state = "cpickaxe"
-	inhand_icon_state = "cpickaxe"
-	worn_icon_state = "cpickaxe"
-	toolspeed = 1.5
-	desc = "A pickaxe with a diamond pick head. Extremely robust at cracking rock walls and digging up dirt."
-	force = 5
 /obj/item/shovel/copper
 	name = "copper shovel"
 	icon_state = "cshovel"
@@ -57,3 +49,6 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
 /obj/item/crowbar/greyscale
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
+/obj/structure/girder
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
+	//fuk u

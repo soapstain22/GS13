@@ -25,7 +25,7 @@
 /obj/item/mining_scanner/admin
 
 /obj/item/mining_scanner/admin/attack_self(mob/user)
-	for(var/turf/closed/mineral/M in world)
+	for(var/turf/closed/mineral/M)
 		if(M.scan_state)
 			M.icon_state = M.scan_state
 	qdel(src)
@@ -75,13 +75,11 @@
 
 /obj/effect/temp_visual/mining_overlay
 	plane = FULLSCREEN_PLANE
-	layer = FLASH_LAYER
 	icon = 'icons/effects/ore_visuals.dmi'
 	appearance_flags = 0 //to avoid having TILE_BOUND in the flags, so that the 480x480 icon states let you see it no matter where you are
-	duration = 35
+	duration = INFINITY
 	pixel_x = -224
 	pixel_y = -224
 
 /obj/effect/temp_visual/mining_overlay/Initialize()
 	. = ..()
-	animate(src, alpha = 0, time = duration, easing = EASE_IN)

@@ -8,8 +8,6 @@ turf/open/floor/plating/pavement/
 	icon = 'icons/superpizza/pavement.dmi'
 	icon_state = "pavement"
 	icon_plating = "pavement"
-	footstep = FOOTSTEP_GENERIC_HEAVY
-	barefootstep = FOOTSTEP_GENERIC_HEAVY
 turf/open/floor/plating/pavement/burn_tile()
 	return
 turf/open/floor/plating/pavement/break_tile()
@@ -19,8 +17,6 @@ turf/open/floor/plating/pavement/sidewalk
 	icon = 'icons/superpizza/pavement.dmi'
 	icon_state = "concrete"
 	icon_plating = "concrete"
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
 /turf/open/floor/plating/lowpressure
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
 	baseturfs = /turf/open/floor/plating/lowpressure

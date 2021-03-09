@@ -9,10 +9,6 @@
 	icon_state = "pavement"
 	icon_plating = "pavement"
 	postdig_icon_change = FALSE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
-	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	/// Environment type for the turf
 	var/environment_type = "road"
 	/// Base turf type to be created by the tunnel
@@ -252,7 +248,7 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
 /turf/open/floor/plating/road/airless/cave/proc/get_cave_data(set_length, exclude_dir = -1)
 	// If set_length (arg1) isn't defined, get a random length; otherwise assign our length to the length arg.
 	if(!set_length)
-		length = rand(40, 60)
+		length = rand(70, 200)
 	else
 		length = set_length
 
@@ -281,9 +277,9 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
   */
 /turf/open/floor/plating/road/airless/cave/proc/make_tunnel(dir)
 	var/turf/open/floor/plating/asteroid/tunnel = src
-	var/next_angle = pick(45, -45)
+	var/next_angle = pick(12, -12)
 
-	var/tunnel_width = 2
+	var/tunnel_width = 3
 	if(pick_tunnel_width)
 		tunnel_width = text2num(pickweight(pick_tunnel_width))
 
@@ -291,9 +287,9 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
 		if(!sanity)
 			break
 
-		var/list/L = list(45)
+		var/list/L = list(12)
 		if(ISODD(dir2angle(dir))) // We're going at an angle and we want thick angled tunnels.
-			L += -45
+			L += -12
 
 		// Expand the edges of our tunnel
 		for(var/edge_angle in L)

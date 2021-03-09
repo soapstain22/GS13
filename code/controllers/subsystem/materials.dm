@@ -39,11 +39,14 @@ SUBSYSTEM_DEF(materials)
 	var/list/fabric_stack_recipes = list(
 		new /datum/stack_recipe("hood", 	/obj/item/clothing/head/hood/greyscale, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 		new /datum/stack_recipe("top hat",	/obj/item/clothing/head/helmet/knight/greyscale, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("hat",		/obj/item/clothing/head/greyscale, 13, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("hat",		/obj/item/clothing/head/hat/greyscale, 13, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 		new /datum/stack_recipe("smock", 	/obj/item/clothing/under/smock/greyscale, 22, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 		new /datum/stack_recipe("clothing", /obj/item/clothing/under/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 		new /datum/stack_recipe("jumpsuit", /obj/item/clothing/under/color/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 		new /datum/stack_recipe("sack", 	/obj/item/storage/backpack/sack/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	)
+	var/list/mason_stack_recipes = list(
+		new /datum/stack_recipe("carving_block", 	/obj/structure/carving_block, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 	)
 ///Ran on initialize, populated the materials and materials_by_category dictionaries with their appropiate vars (See these variables for more info)
 /datum/controller/subsystem/materials/proc/InitializeMaterials()

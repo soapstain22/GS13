@@ -111,7 +111,7 @@
 		/obj/item/stack/niter = 50,
 		/obj/item/stack/ore/sulphur = 60,
 		/obj/item/stack/ore/aluminum = 100,
-		/obj/item/stack/ore/copper = 200,
+		/obj/item/stack/ore/malachite = 200,
 		/obj/item/stack/salt = 100,
 		/obj/item/stack/clay = 400,
 		)
@@ -120,11 +120,10 @@
 	lootdoubles = TRUE
 	lootcount = 1
 	loot = list(
-	/obj/item/stack/ore/cinnabar = 1,
 	/obj/item/stack/niter = 2,
 	/obj/item/stack/ore/sulphur = 1,
 	/obj/item/stack/ore/aluminum = 2,
-	/obj/item/stack/ore/copper = 2,
+	/obj/item/stack/ore/malachite = 2,
 	/obj/item/stack/salt = 2,
 	/obj/item/stack/clay = 4,)
 /obj/effect/spawner/lootdrop/mats

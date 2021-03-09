@@ -253,9 +253,11 @@
 	inhand_icon_state = "knight_red"
 
 /obj/item/clothing/suit/armor/riot/knight/greyscale
-	name = "knight armour"
+	name = "armour"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
 	desc = "A classic suit of armour, able to be made from many different materials."
-	icon_state = "knight_greyscale"
+	icon_state = "armor"
 	inhand_icon_state = "knight_greyscale"
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
 	armor = list("melee" = 35, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 10, "fire" = 40, "acid" = 40, "wound" = 15)

@@ -3,8 +3,8 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list("Head of Security")
 	faction = "Station"
-	total_positions = 4 //Kept in for posterity
-	spawn_positions = 4 //ditto
+	total_positions = 0 //Kept in for posterity
+	spawn_positions = 0 //ditto
 	supervisors = "the head of security, and the head of your assigned department"
 	selection_color = "#ffeeee"
 	minimal_player_age = 1

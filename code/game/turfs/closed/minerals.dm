@@ -19,7 +19,7 @@
 	var/last_act = 0
 	var/scan_state = "" //Holder for the image we display when we're pinged by a mining scanner
 	var/defer_change = 0
-
+	var/damage = 10
 /turf/closed/mineral/Initialize()
 	if (!canSmoothWith)
 		canSmoothWith = list(/turf/closed/mineral, /turf/closed/indestructible)
@@ -27,6 +27,9 @@
 	M.Translate(-4, -4)
 	transform = M
 	icon = smooth_icon
+	for(var/turf/closed/mineral/S)
+		if(scan_state)
+			overlays += scan_state
 	. = ..()
 
 /turf/closed/mineral/proc/Spread_Vein()
@@ -70,9 +73,10 @@
 		last_act = world.time
 		to_chat(user, "<span class='notice'>You start picking...</span>")
 
-		if(I.use_tool(src, user, 40, volume=50))
+		if(I.use_tool(src, user, 1, volume=50))
 			if(ismineralturf(src))
 				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
+				damage -= 1
 				gets_drilled(user, TRUE)
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
 				I.obj_integrity -= 1
@@ -215,10 +219,10 @@
 	/obj/item/stack/ore/aluminum = 84,
 	/obj/item/stack/ore/sulphur = 54,
 	/obj/item/stack/ore/fake/salt = 44,
-	/obj/item/stack/ore/nickel = 43,
-	/obj/item/stack/ore/tin = 37,
-	/obj/item/stack/ore/copper = 34,
-	/obj/item/stack/ore/zinc = 32,
+	/obj/item/stack/ore/garnierite = 43,
+	/obj/item/stack/ore/cassiterite = 37,
+	/obj/item/stack/ore/malachite = 34,
+	/obj/item/stack/ore/sphalerite = 32,
 	/obj/item/stack/ore/plasma = 20,
 	/obj/item/stack/ore/titanium = 11,
 	/obj/item/stack/ore/amethyst = 6,
@@ -238,97 +242,53 @@
 	var/mineralChance = 100
 
 /turf/closed/mineral/random/Sedimentary
+	smooth_icon = 'icons/turf/smoothsandstone.dmi'
 	mineralSpawnChanceList = list(
-	/turf/closed/mineral/dirt= 1000,
-	/obj/item/stack/ore/fake/stone = 200,
-
-	/obj/item/stack/ore/iron = 120,
-	/obj/item/stack/ore/fake/coal = 100,
-	/obj/item/stack/ore/aluminum = 84,
-	/obj/item/stack/ore/sulphur = 54,
-	/obj/item/stack/ore/fake/salt = 44,
-	/obj/item/stack/ore/nickel = 43,
-	/obj/item/stack/ore/tin = 37,
-	/obj/item/stack/ore/copper = 34,
-	/obj/item/stack/ore/zinc = 32,
-	/obj/item/stack/ore/fake/niter = 12,
-	/obj/item/stack/ore/tetrahedrite = 12,
-	/turf/open/floor/plating/asteroid/airless/cave = 10,
-	/obj/item/stack/ore/fake/trash = 1,
-	/turf/closed/mineral/gibtonite = 4,)
-	mineralChance = 100
+	/turf/closed/mineral/dirt		= 300,
+	/obj/item/stack/ore/hematite	= 120,
+	/obj/item/stack/ore/limonite	= 120,
+	/obj/item/stack/ore/fake/coal	= 500,
+	/obj/item/stack/ore/fake/niter	= 100,
+	/obj/item/stack/ore/magnetite 	= 84,
+	/obj/item/stack/ore/sulphur 	= 54,
+	/obj/item/stack/ore/fake/salt 	= 44,
+	/obj/item/stack/ore/fake/trash 	= 3,
+	/turf/open/floor/plating/asteroid/airless/cave = 1,)
+	mineralChance = 50
 
 /turf/closed/mineral/random/IgneousExtrusive
+	smooth_icon = 'icons/turf/smoothandestite.dmi'
 	mineralSpawnChanceList = list(
-	/turf/closed/mineral/dirt= 30,
-	/obj/item/stack/ore/fake/stone = 400,
-	/obj/item/stack/ore/iron = 400,
-	/obj/item/stack/ore/fake/coal = 100,
-	/obj/item/stack/ore/aluminum = 84,
-	/obj/item/stack/ore/copper = 84,
-
+	/obj/item/stack/ore/tetrahedrite	= 75,
+	/obj/item/stack/ore/garnierite		= 32,
+	/obj/item/stack/ore/galena			= 54,
+	/obj/item/stack/ore/cassiterite		= 12,
+	/obj/item/stack/ore/andestite 		= 50,
 	/turf/open/floor/plating/asteroid/airless/cave = 10,
 	/obj/item/stack/ore/fake/trash = 1,
 	/turf/closed/mineral/gibtonite = 4, )
 	mineralChance = 100
 
 /turf/closed/mineral/random/Metamorphic
+	smooth_icon = 'icons/turf/smoothmarble.dmi'
 	mineralSpawnChanceList = list(
-	/turf/closed/mineral/dirt= 1000,
-	/obj/item/stack/ore/fake/stone = 400,
-	/obj/item/stack/ore/iron = 120,
-	/obj/item/stack/ore/fake/coal = 100,
-	/obj/item/stack/ore/aluminum = 84,
-	/obj/item/stack/ore/sulphur = 54,
-	/obj/item/stack/ore/fake/salt = 44,
-	/obj/item/stack/ore/nickel = 43,
-	/obj/item/stack/ore/tin = 37,
-	/obj/item/stack/ore/copper = 34,
-	/obj/item/stack/ore/zinc = 32,
-	/obj/item/stack/ore/plasma = 20,
-	/obj/item/stack/ore/titanium = 11,
-	/obj/item/stack/ore/amethyst = 6,
-	/obj/item/stack/ore/topaz = 5,
-	/obj/item/stack/ore/uranium = 5,
-	/obj/item/stack/ore/sapphire = 4,
-	/obj/item/stack/ore/emerald = 3,
-	/obj/item/stack/ore/silver = 2,
-	/obj/item/stack/ore/ruby = 2,
-	/obj/item/stack/ore/gold = 1,
-	/obj/item/stack/ore/diamond = 0.7,
-	/obj/item/stack/ore/bluespace_crystal = 0.5,
-
+	/obj/item/stack/ore/marble = 120,
+	/obj/item/stack/ore/sphalerite = 42,
+	/obj/item/stack/ore/galena = 25,
 	/turf/open/floor/plating/asteroid/airless/cave = 10,
 	/obj/item/stack/ore/fake/trash = 1,
 	/turf/closed/mineral/gibtonite = 4, )
-	mineralChance = 100
+	mineralChance = 50
 
 /turf/closed/mineral/random/Igneousintrusive
+	smooth_icon = 'icons/turf/smoothgranite.dmi'
 	mineralSpawnChanceList = list(
-	/turf/closed/mineral/dirt= 1000,
-	/obj/item/stack/ore/fake/stone = 400,
-	/obj/item/stack/ore/iron = 120,
-	/obj/item/stack/ore/tetrahedrite = 100,
-	/obj/item/stack/ore/nickel = 43,
-	/obj/item/stack/ore/copper = 12,
-	/obj/item/stack/ore/zinc = 32,
-	/obj/item/stack/ore/plasma = 20,
-	/obj/item/stack/ore/titanium = 11,
-	/obj/item/stack/ore/amethyst = 6,
-	/obj/item/stack/ore/topaz = 5,
-	/obj/item/stack/ore/uranium = 5,
-	/obj/item/stack/ore/sapphire = 4,
-	/obj/item/stack/ore/emerald = 3,
-	/obj/item/stack/ore/silver = 2,
-	/obj/item/stack/ore/ruby = 2,
-	/obj/item/stack/ore/gold = 1,
-	/obj/item/stack/ore/diamond = 0.7,
-	/obj/item/stack/ore/bluespace_crystal = 0.5,
+		/obj/item/stack/ore/tetrahedrite = 120,
+		/obj/item/stack/ore/iron = 120,
+		/obj/item/stack/ore/gold = 23,
+		/obj/item/stack/ore/granite = 50)
 
-	/turf/open/floor/plating/asteroid/airless/cave = 10,
-	/obj/item/stack/ore/fake/trash = 1,
-	/turf/closed/mineral/gibtonite = 4, )
-	mineralChance = 100
+	mineralChance = 20
 /turf/closed/mineral/random/Initialize()
 
 	mineralSpawnChanceList = typelist("mineralSpawnChanceList", mineralSpawnChanceList)
@@ -528,21 +488,24 @@
 /turf/closed/mineral/trash
 	mineralType = /obj/item/stack/ore/fake/trash
 	scan_state = "trash"
-/turf/closed/mineral/copper
-	mineralType = /obj/item/stack/ore/copper
-	scan_state = "copper"
-/turf/closed/mineral/zinc
-	mineralType = /obj/item/stack/ore/zinc
-	scan_state = "zinc"
-/turf/closed/mineral/lead
-	mineralType = /obj/item/stack/ore/lead
-	scan_state = "lead"
-/turf/closed/mineral/tin
-	mineralType = /obj/item/stack/ore/tin
-	scan_state = "tin"
-/turf/closed/mineral/nickel
-	mineralType = /obj/item/stack/ore/nickel
-	scan_state = "zinc"
+/turf/closed/mineral/malachite
+	mineralType = /obj/item/stack/ore/malachite
+	scan_state = "malachite"
+/turf/closed/mineral/magnetite
+	mineralType = /obj/item/stack/ore/magnetite
+	scan_state = "magnetite"
+/turf/closed/mineral/sphalerite
+	mineralType = /obj/item/stack/ore/sphalerite
+	scan_state = "sphalerite"
+/turf/closed/mineral/galena
+	mineralType = /obj/item/stack/ore/galena
+	scan_state = "galena"
+/turf/closed/mineral/cassiterite
+	mineralType = /obj/item/stack/ore/cassiterite
+	scan_state = "cassiterite"
+/turf/closed/mineral/garnierite
+	mineralType = /obj/item/stack/ore/garnierite
+	scan_state = "garnierite"
 /turf/closed/mineral/sulphur
 	mineralType = /obj/item/stack/ore/sulphur
 	scan_state = "sulphur"

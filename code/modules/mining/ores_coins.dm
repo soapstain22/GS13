@@ -129,10 +129,6 @@
 	mine_experience = 3
 	scan_state = "salt"
 	bypass_spawn = /obj/effect/spawner/lootdrop/salt
-/obj/item/stack/ore/fake/stone
-	mine_experience = 1
-	scan_state = "stone"
-	bypass_spawn = /obj/effect/spawner/lootdrop/stone
 /obj/item/stack/ore/fake/coal
 	mine_experience = 6
 	scan_state = "coal"
@@ -141,6 +137,14 @@
 	mine_experience = 6
 	scan_state = "niter"
 	bypass_spawn = /obj/item/stack/niter
+/obj/item/stack/ore/fake/stone
+	bypass_spawn = /obj/item/stack/stone
+/obj/item/stack/ore/fake/granite
+	bypass_spawn = /obj/item/stack/ore/granite
+/obj/item/stack/ore/fake/marble
+	bypass_spawn = /obj/item/stack/ore/marble
+/obj/item/stack/ore/fake/sandstone
+	bypass_spawn = /obj/item/stack/sheet/mineral/sandstone
 /obj/item/stack/ore/topaz
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
 	name = "topaz"

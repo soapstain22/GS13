@@ -2,7 +2,7 @@
 //machineryness
 
 /obj/structure/mineral_door
-	name = "metal door"
+	name = "door"
 	density = TRUE
 	anchored = TRUE
 	opacity = TRUE
@@ -12,7 +12,7 @@
 	icon_state = "metal"
 	max_integrity = 200
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 100, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
-	CanAtmosPass = ATMOS_PASS_DENSITY
+	CanAtmosPass = ATMOS_PASS_NO
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
 	rad_insulation = RAD_MEDIUM_INSULATION
 
@@ -25,6 +25,14 @@
 
 	var/sheetType = /obj/item/stack/sheet/metal //what we're made of
 	var/sheetAmount = 7 //how much we drop when deconstructed
+/obj/structure/mineral_door/greyscale
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	var/buildstacktype = null
+/obj/structure/curtain/greyscale/deconstruct(disassembled = TRUE)
+	new buildstacktype (loc, 4)
+	qdel(src)
+
+
 
 /obj/structure/mineral_door/Initialize()
 	. = ..()

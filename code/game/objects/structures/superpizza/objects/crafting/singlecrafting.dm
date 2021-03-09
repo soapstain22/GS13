@@ -17,6 +17,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("stasis machine", /obj/machinery/stasis, 20, time = 50),
 	new/datum/stack_recipe("selling computer", /obj/machinery/computer/piratepad_control/ , 20, time = 50),
 	new/datum/stack_recipe("selling machine", /obj/machinery/piratepad, 20, time = 50),
+	new/datum/stack_recipe("fan", /obj/structure/fans/tiny, 1, time = 20),
 	))
 
 GLOBAL_LIST_INIT(clayrec, list ( \
