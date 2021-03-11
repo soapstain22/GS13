@@ -15,6 +15,7 @@
 #define META_GAS_BOIL 10
 #define META_GAS_MELT 11
 #define META_GAS_DENS 12
+#define META_GAS_MMASS 13
 //ATMOS
 //stuff you should probably leave well alone!
 /// kPa*L/(K*mol)

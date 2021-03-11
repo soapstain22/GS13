@@ -283,14 +283,14 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 			. += "[src] is made of cold-resistant materials."
 		if(resistance_flags & FIRE_PROOF)
 			. += "[src] is made of fire-retardant materials."
-	var/healthpercent = (obj_integrity/max_integrity) * 100
-	switch(healthpercent)
-		if(50 to 99)
-			return  "It looks slightly damaged."
-		if(25 to 50)
-			return  "It appears heavily damaged."
-		if(0 to 25)
-			return  "<span class='warning'>It's falling apart!</span>"
+		var/healthpercent = (obj_integrity/max_integrity) * 100
+		switch(healthpercent)
+			if(50 to 99)
+				return  "It looks slightly damaged."
+			if(25 to 50)
+				return  "It appears heavily damaged."
+			if(0 to 25)
+				return  "<span class='warning'>It's falling apart!</span>"
 	if(!user.research_scanner)
 		return
 
@@ -842,19 +842,26 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(obj_integrity<=1)
 		qdel(src)
 	var/skill_modifier = 1
-
+	var/matfac = 1
 	if(tool_behaviour == TOOL_MINING && ishuman(user))
 		var/mob/living/carbon/human/H = user
+		matfac = impact_yield
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/mining, SKILL_SPEED_MODIFIER)
 		if(H.mind.get_skill_level(/datum/skill/mining) >= SKILL_LEVEL_JOURNEYMAN && prob(H.mind.get_skill_modifier(/datum/skill/mining, SKILL_PROBS_MODIFIER))) // we check if the skill level is greater than Journeyman and then we check for the probality for that specific level.
 			mineral_scan_pulse(get_turf(H), SKILL_LEVEL_JOURNEYMAN - 2) //SKILL_LEVEL_JOURNEYMAN = 3 So to get range of 1+ we have to subtract 2 from it,.
 	if(tool_behaviour == TOOL_WRENCH && ishuman(user))
 		var/mob/living/carbon/human/H = user
+		matfac = bending_yield
+		obj_integrity -= prob(bending_strain_at_yield-bending_yield)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
+		matfac = torsion_yield
+		obj_integrity -= prob(torsion_strain_at_yield-torsion_yield)
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
+		matfac = shear_yield
+		obj_integrity -= prob(shear_strain_at_yield-shear_yield)
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_WELDER && ishuman(user))
@@ -862,12 +869,14 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_CROWBAR && ishuman(user))
 		var/mob/living/carbon/human/H = user
+		matfac = tensile_yield
+		obj_integrity -= prob(tensile_strain_at_yield-tensile_yield)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_MULTITOOL && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 
-	delay *= toolspeed * skill_modifier
+	delay *= toolspeed * skill_modifier * matfac
 
 
 	// Play tool sound at the beginning of tool usage.

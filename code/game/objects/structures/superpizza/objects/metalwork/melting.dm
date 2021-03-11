@@ -21,38 +21,19 @@
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	desc = "for metal i think"
 	icon_state = "metaldust"
-	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
 	resistance_flags = FIRE_PROOF
-	dens = 0.141 //how many molecules it takes for a single fragment to form
+	novariants = FALSE
+	dens = 0.1 // one mol will create this much
 	custom_materials = list(/datum/material/iron=1)
-	novariants = FALSE
-/obj/item/stack/metaldust/get_main_recipes()
-	. = ..()
-	. += GLOB.dustrecipies
-GLOBAL_LIST_INIT(dustrecipies, list ( \
-	new/datum/stack_recipe("make into sheet", /obj/item/stack/sheet/metal, 1000, time = 0, one_per_turf = 0), ))
-//copper dust
+	var/buildstacktype = /obj/item/stack/sheet/metal
+	gaseousstate = /datum/gas/iron
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
+	//gas doesnt know what a custom material is :)
 
-/obj/item/stack/copperdust //iron enters the gaseous state but doesnt have enough to form a sheet when it comes back down, this is where the dust comes in
-	name = "copper dust"
-	max_amount = 100000
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	desc = "for metal i think"
-	icon_state = "copperdust"
-	custom_materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT)
-	resistance_flags = FIRE_PROOF
-	dens = 0.141 //how many molecules it takes for a single fragment to form
-	novariants = FALSE
-/obj/item/stack/copperdust/get_main_recipes()
-	. = ..()
-	. += GLOB.copperdust
-GLOBAL_LIST_INIT(copperdust, list ( \
-	new/datum/stack_recipe("make into sheet", /obj/item/stack/sheet/copper, 1000, time = 0, one_per_turf = 0), ))
-
-/obj/item/stack/copperdust/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+/obj/item/stack/metaldust/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	..()
 	if(exposed_temperature > 2562)
-		atmos_spawn_air("cu=[dens];TEMP=2563") // molten to gas
+		atmos_spawn_air("[gaseousstate]=[dens];TEMP=exposed_temperature") // molten to gas
 		use(1)
 
 

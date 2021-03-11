@@ -112,7 +112,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	beauty_modifier = 0.15
 	integrity_modifier = 0.6
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1.1)
-	toolmod = 1.4
+	toolmod = 6
 /datum/material/gold/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
@@ -127,7 +127,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	alpha = 132
 	value_per_unit = 0.25
 	beauty_modifier = 0.3
-	integrity_modifier = 1.2
+	integrity_modifier = 2.2
 	armor_modifiers = list("melee" = 1.3, "bullet" = 1.3, "laser" = 0.6, "energy" = 1, "bomb" = 1.2, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1)
 	toolmod = 3
 /datum/material/diamond/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)

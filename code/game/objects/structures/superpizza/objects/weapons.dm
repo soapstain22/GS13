@@ -92,7 +92,19 @@
 	paralyze = 15
 	speed = 0.6
 	knockdown = 6
-	hitsound = 'sound/effects/meteorimpact.ogg'
+/obj/projectile/bullet/arrow
+	name = "arrow"
+	icon_state = "lowbb"
+	damage = 50
+	speed = 1
+/obj/item/ammo_casing/arrow
+	name = "arrow"
+	desc = "arrow"
+	caliber = "arrow"
+	projectile_type = /obj/projectile/bullet/arrow
+	icon = 'code/game/objects/structures/superpizza/bbguns.dmi'
+	icon_state = "arrow"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
 
 /obj/item/ammo_box/magazine/internal/bbrifle
 	name = "bb gun chamber"
@@ -149,3 +161,48 @@
 	lefthand_file = 'code/game/objects/structures/superpizza/lefthand.dmi'
 	righthand_file = 'code/game/objects/structures/superpizza/righthand.dmi'
 	slot_flags = null
+
+
+
+/obj/item/ammo_box/magazine/internal/crossbow
+	name = "crossbow chamber"
+	ammo_type = /obj/item/ammo_casing/arrow
+	max_ammo = 1
+/obj/item/gun/ballistic/rifle/crossbow
+	name = "crossbow"
+	desc = "A crossbow"
+	icon = 'code/game/objects/structures/superpizza/bbguns.dmi'
+	icon_state = "cbow"
+	lefthand_file = 'code/game/objects/structures/superpizza/leftbbgun.dmi'
+	righthand_file = 'code/game/objects/structures/superpizza/rightbbgun.dmi'
+	mag_type = /obj/item/ammo_box/magazine/internal/crossbow
+	inhand_icon_state = "cbow"
+	bolt_wording = "string"
+	bolt_type = BOLT_TYPE_STANDARD
+	semi_auto = FALSE
+	internal_magazine = TRUE
+	fire_sound = 'sound/weapons/gun/rifle/shot.ogg'
+	fire_sound_volume = 90
+	vary_fire_sound = FALSE
+	rack_sound = 'sound/weapons/gun/rifle/bolt_out.ogg'
+	bolt_drop_sound = 'sound/weapons/gun/rifle/bolt_in.ogg'
+	tac_reloads = FALSE
+	custom_price = 500
+	mag_display_ammo = TRUE
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
+/obj/item/gun/ballistic/rifle/cbow/rack(mob/user = null)
+	if (bolt_locked == FALSE)
+		to_chat(user, "<span class='notice'>You pull back the [src].</span>")
+		playsound(src, rack_sound, rack_sound_volume, rack_sound_vary)
+		process_chamber(FALSE, FALSE, FALSE)
+		bolt_locked = TRUE
+		update_icon()
+		return
+	drop_bolt(user)
+/obj/item/gun/ballistic/rifle/cbow/drop_bolt(mob/user = null)
+	playsound(src, bolt_drop_sound, bolt_drop_sound_volume, FALSE)
+	if (user)
+		to_chat(user, "<span class='notice'>You safely release the [src].</span>")
+	chamber_round()
+	bolt_locked = FALSE
+	update_icon()

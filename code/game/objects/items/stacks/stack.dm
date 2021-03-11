@@ -38,11 +38,7 @@
 	var/absorption_capacity
 	/// How quickly we lower the blood flow on a cut wound we're bandaging. Expected lifetime of this bandage in ticks is thus absorption_capacity/absorption_rate, or until the cut heals, whichever comes first
 	var/absorption_rate
-	var/meltingpoint = null
-	var/burningpoint = null
-	var/gaseousstate = null
-	var/solidstate = null
-	var/liquidstate = null
+
 	var/dens = null //how many molecules it takes for a fragment to form
 	var/temperature = 20 //how hot it is
 	var/combustable = null
