@@ -78,7 +78,6 @@
 		if(I.use_tool(src, user, 5, volume=50))
 			if(ismineralturf(src))
 				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
-				damage -= 1
 				I.obj_integrity -= 0.5
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
 				if(damage <= 1)
@@ -260,7 +259,7 @@
 	var/mineralChance = 100
 
 /turf/closed/mineral/random/Sedimentary
-	maxDamage = 3
+	maxDamage = 6
 	smooth_icon = 'icons/turf/smoothsandstone.dmi'
 	mineralSpawnChanceList = list(
 	/obj/item/stack/ore/fake/stone 	= 200,
@@ -278,7 +277,7 @@
 	mineralChance = 60
 
 /turf/closed/mineral/random/IgneousExtrusive
-	maxDamage = 5
+	maxDamage = 9
 	smooth_icon = 'icons/turf/smoothandestite.dmi'
 	mineralSpawnChanceList = list(
 	/obj/item/stack/ore/tetrahedrite	= 75,
@@ -312,7 +311,7 @@
 		/obj/item/stack/ore/granite = 200,
 		/turf/open/floor/plating/asteroid/airless/cave = 1,)
 	mineralChance = 60
-	maxDamage = 4
+	maxDamage = 20
 /turf/closed/mineral/random/Initialize()
 
 	mineralSpawnChanceList = typelist("mineralSpawnChanceList", mineralSpawnChanceList)

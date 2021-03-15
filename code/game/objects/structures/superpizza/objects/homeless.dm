@@ -57,3 +57,16 @@
 	isGlass = FALSE
 	// The 2 bottles have separate cap overlay icons because if the bottle falls over while bottle flipping the cap stays fucked on the moved overlay
 	custom_price = 30
+/obj/item/reagent_containers/food/drinks/trophy/greyscale
+	name = "mug"
+	desc = "mug"
+	icon_state = "pewter_cup"
+	w_class = WEIGHT_CLASS_TINY
+	force = 1
+	throwforce = 1
+	amount_per_transfer_from_this = 5
+	custom_materials = list(MAT_CATEGORY_STONE=500)
+	possible_transfer_amounts = list()
+	volume = 5
+	spillable = TRUE
+	resistance_flags = FIRE_PROOF

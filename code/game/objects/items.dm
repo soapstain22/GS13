@@ -845,23 +845,20 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/matfac = 1
 	if(tool_behaviour == TOOL_MINING && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		matfac = impact_yield
+		obj_integrity -= 1
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/mining, SKILL_SPEED_MODIFIER)
 		if(H.mind.get_skill_level(/datum/skill/mining) >= SKILL_LEVEL_JOURNEYMAN && prob(H.mind.get_skill_modifier(/datum/skill/mining, SKILL_PROBS_MODIFIER))) // we check if the skill level is greater than Journeyman and then we check for the probality for that specific level.
 			mineral_scan_pulse(get_turf(H), SKILL_LEVEL_JOURNEYMAN - 2) //SKILL_LEVEL_JOURNEYMAN = 3 So to get range of 1+ we have to subtract 2 from it,.
 	if(tool_behaviour == TOOL_WRENCH && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		matfac = bending_yield
-		obj_integrity -= prob(bending_strain_at_yield-bending_yield)
+		obj_integrity -= 1
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
-		matfac = torsion_yield
-		obj_integrity -= prob(torsion_strain_at_yield-torsion_yield)
+		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
-		matfac = shear_yield
-		obj_integrity -= prob(shear_strain_at_yield-shear_yield)
+		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_WELDER && ishuman(user))
@@ -869,8 +866,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_CROWBAR && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		matfac = tensile_yield
-		obj_integrity -= prob(tensile_strain_at_yield-tensile_yield)
+		obj_integrity -= 1
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_MULTITOOL && ishuman(user))
 		var/mob/living/carbon/human/H = user

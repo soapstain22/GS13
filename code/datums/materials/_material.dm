@@ -18,8 +18,6 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/sheet_type
 	///This is a modifier for force, and resembles the strength of the material
 	var/strength_modifier = 1
-	var/sharp_modifier
-	var/gaseousstate = null
 	///This is a modifier for integrity, and resembles the strength of the material
 	var/integrity_modifier = 1
 	///This is the amount of value per 1 unit of the material
@@ -36,32 +34,12 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/texture_layer_icon_state
 	///a cached filter for the texture icon
 	var/cached_texture_filter
-	var/toolmod = 1
-	var/melttemp
+	var/toolspeed_modifier = 1
 	var/weight = 0
-	var/spec_heat = null
 	var/coldprotection = 1
 	var/coldvulnerable = 1
 	var/heatprotection = 1
 	var/heatvulnerable = 1
-	var/bending_yield = null
-	var/bending_fracture = null
-	var/bending_strain_at_yield = null
-	var/shear_yield = null
-	var/shear_fracture = null
-	var/shear_strain_at_yield = null
-	var/tensile_yield = null
-	var/tensile_fracture = null
-	var/tensile_strain_at_yield = null
-	var/compressive_yield = null
-	var/compressive_fracture = null
-	var/compressive_strain_at_yield = null
-	var/torsion_yield = null
-	var/torsion_fracture = null
-	var/torsion_strain_at_yield = null
-	var/impact_yield = null
-	var/impact_fracture = null
-	var/impact_strain_at_yield = null
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)
@@ -106,7 +84,7 @@ Simple datum which is instanced once per type and is used for every object of sa
 		o.modify_max_integrity(new_max_integrity)
 		o.force *= strength_modifier
 		o.throwforce *= strength_modifier
-		o.toolspeed /= toolmod
+		o.toolspeed /= toolspeed_modifier
 		o.slowdown += weight
 		o.drag_slowdown += weight
 		o.min_cold_protection_temperature *= coldprotection
@@ -117,26 +95,6 @@ Simple datum which is instanced once per type and is used for every object of sa
 		o.throwforce *= strength_modifier
 //		o.force *= sharp_modifier
 //		o.throwforce *= sharp_modifier
-		o.impact_strain_at_yield = impact_strain_at_yield
-		o.bending_yield = bending_yield
-		o.bending_fracture = bending_fracture
-		o.bending_strain_at_yield = bending_strain_at_yield
-		o.shear_yield = shear_yield
-		o.shear_fracture = shear_fracture
-		o.shear_strain_at_yield = shear_strain_at_yield
-		o.tensile_yield = tensile_yield
-		o.tensile_fracture = tensile_fracture
-		o.tensile_strain_at_yield = tensile_strain_at_yield
-		o.compressive_yield = compressive_yield
-		o.compressive_fracture = compressive_fracture
-		o.compressive_strain_at_yield = compressive_strain_at_yield
-		o.torsion_yield = torsion_yield
-		o.torsion_fracture = torsion_fracture
-		o.torsion_strain_at_yield = torsion_strain_at_yield
-		o.impact_yield = impact_yield
-		o.impact_fracture = impact_fracture
-		o.impact_strain_at_yield = impact_strain_at_yield
-		o.gaseousstate = gaseousstate
 		var/list/temp_armor_list = list() //Time to add armor modifiers!
 
 		if(!istype(o.armor))

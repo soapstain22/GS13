@@ -3,7 +3,8 @@
 
 /// Hard materials, such as iron or metal
 #define MAT_CATEGORY_RIGID "rigid material"
-
+#define MAT_CATEGORY_FABRIC "fabric material"
+#define MAT_CATEGORY_STONE "stone material"
 ///Use this flag on TRUE if you want the basic recipes
 #define MAT_CATEGORY_BASE_RECIPES "basic recipes"
 ///Use this flag on TRUE if you want the basic recipes

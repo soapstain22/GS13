@@ -42,30 +42,8 @@
 	var/min_heat_protection_temperature
 	var/max_heat_protection_temperature
 	var/drag_slowdown // Amont of multiplicative slowdown applied if pulled. >1 makes you slower, <1 makes you faster.
-	var/meltingpoint = null
-	var/burningpoint = null
-	var/gaseousstate = null
-	var/solidstate = null
-	var/liquidstate = null
 	vis_flags = VIS_INHERIT_PLANE //when this be added to vis_contents of something it inherit something.plane, important for visualisation of obj in openspace.
-	var/bending_yield = 1
-	var/bending_fracture = 0.1
-	var/bending_strain_at_yield = 1.1
-	var/shear_yield = 1
-	var/shear_fracture = 0.1
-	var/shear_strain_at_yield = 1.1
-	var/tensile_yield = 1
-	var/tensile_fracture = 0.1
-	var/tensile_strain_at_yield = 1.1
-	var/compressive_yield = 1
-	var/compressive_fracture = 0.1
-	var/compressive_strain_at_yield = 1.1
-	var/impact_yield = 1
-	var/impact_fracture = 0.1
-	var/impact_strain_at_yield = 1.1
-	var/torsion_yield = 1
-	var/torsion_fracture = 0.1
-	var/torsion_strain_at_yield = 1.1
+
 /obj/vv_edit_var(vname, vval)
 	if(vname == NAMEOF(src, obj_flags))
 		if ((obj_flags & DANGEROUS_POSSESSION) && !(vval & DANGEROUS_POSSESSION))

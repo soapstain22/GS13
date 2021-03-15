@@ -21,6 +21,7 @@
 	var/list/stack_overlays
 	var/scan_state = "" //Used by mineral turfs for their scan overlay.
 	var/spreadChance = 0 //Also used by mineral turfs for spreading veins
+	var/meltingpoint
 /obj/item/stack/ore/update_overlays()
 	. = ..()
 	var/difference = min(ORESTACK_OVERLAYS_MAX, amount) - (LAZYLEN(stack_overlays)+1)
@@ -76,11 +77,6 @@
 	scan_state = "rock_Iron"
 	spreadChance = 20
 	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
-	gaseousstate = /datum/gas/iron
-	liquidstate = /obj/item/stack/molteniron
-	solidstate = /obj/item/stack/sheet/metal
 /obj/item/stack/ore/emerald
 	icon = 'code/game/objects/structures/superpizza/jewels.dmi'
 	name = "emerald"
@@ -176,11 +172,6 @@
 	w_class = WEIGHT_CLASS_TINY
 	mine_experience = 0 //its sand
 	meltingpoint = 1400
-	burningpoint = 2000
-	dens = 43.8
-	gaseousstate = null
-	liquidstate = /obj/item/stack/metaldust
-	solidstate = /obj/item/stack/sheet/glass
 GLOBAL_LIST_INIT(sand_recipes, list(\
 		new /datum/stack_recipe("sandstone", /obj/item/stack/sheet/mineral/sandstone, 1, 1, 50),\
 		new /datum/stack_recipe("aesthetic volcanic floor tile", /obj/item/stack/tile/basalt, 2, 1, 50)\

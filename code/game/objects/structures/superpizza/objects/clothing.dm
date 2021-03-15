@@ -12,6 +12,17 @@
 	armor = list("melee" = 1, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "wound" = 1)
 	icon_state = "cloth"
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/head/that/greyscale
+	name = "top-hat"
+	desc = "It's an amish looking hat."
+	icon_state = "tophat"
+	inhand_icon_state = "that"
+	throwforce = 1
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/suit/hazardvest/greyscale
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/suit/apron/chef
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/under/smock/greyscale
 	name = "smock"
 	desc = "very nice!"

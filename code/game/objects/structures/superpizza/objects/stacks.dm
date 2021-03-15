@@ -62,8 +62,6 @@
 	scan_state = "cinnabar"
 	spreadChance = 20
 	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
 	resistance_flags = FIRE_PROOF
 /datum/material/mercury
 	name = "mercury"
@@ -108,10 +106,8 @@
 	refined_type = /obj/item/stack/sulphur
 	mine_experience = 1
 	scan_state = "sulphur"
-	spreadChance = 3
+	spreadChance = 70
 	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sulphur
 	novariants = FALSE
@@ -142,10 +138,8 @@
 	refined_type = /obj/item/stack/sheet/copper
 	mine_experience = 1
 	scan_state = "copper"
-	spreadChance = 1
-	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 141
+	spreadChance = 70
+	meltingpoint = 1085
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/ore/tetrahedrite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
@@ -159,10 +153,8 @@
 	refined_type = /obj/item/stack/sheet/copper
 	mine_experience = 1
 	scan_state = "tetrahedrite"
-	spreadChance = 4
-	meltingpoint = 327.46
-	burningpoint = 1749
-	dens = 54.7
+	spreadChance = 70
+	meltingpoint = 1085
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/copper
 	novariants = FALSE
@@ -176,18 +168,17 @@
 	merge_type = /obj/item/stack/sheet/copper
 	material_type = /datum/material/copper
 	resistance_flags = FIRE_PROOF
-	gaseousstate = /datum/gas/copper
 //lead
 /datum/material/lead
 	name = "lead"
 	desc = "lead"
-	color = "#878687"
+	color = "#212121"
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/lead
 	value_per_unit = 0.0025
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
 	strength_modifier = 1.5
-	weight = 0.1
+	weight = 0.2
 	coldprotection = 1.2
 	coldvulnerable = 0.9
 	heatprotection = 1.2
@@ -198,16 +189,13 @@
 	novariants = FALSE
 	desc = "its got lead"
 	icon_state = "galena"
-	grind_results = list(/datum/reagent/aluminium = 10)
 	points = 1
 	custom_materials = list(/datum/material/lead=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/lead
 	mine_experience = 1
 	scan_state = "lead"
-	spreadChance = 4
+	spreadChance = 85
 	meltingpoint = 327.46
-	burningpoint = 1749
-	dens = 54.7
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/lead
 	novariants = FALSE
@@ -219,39 +207,39 @@
 	merge_type = /obj/item/stack/sheet/lead
 	material_type = /datum/material/lead
 	resistance_flags = FIRE_PROOF
-	meltingpoint = 327.46
-	burningpoint = 1749
-	dens = 54.7
-	gaseousstate = /datum/gas/lead
 //tin
 /datum/material/tin
 	name = "tin"
 	desc = "tin"
-	color = "#878687"
+	color = "#d3d4d5"
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/tin
 	value_per_unit = 0.0025
-	weight = 0.05
+	weight = 0.1
+	strength_modifier = 0.70
+	integrity_modifier = 0.60
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
 	coldprotection = 0.9
 	coldvulnerable = 1.1
 	heatprotection = 0.9
 	heatvulnerable = 1.1
+	integrity_modifier = 0.67
+	toolspeed_modifier = 0.8
+	strength_modifier = 0.7
 /obj/item/stack/ore/cassiterite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "cassiterite"
 	novariants = FALSE
 	desc = "its got tin"
 	icon_state = "cassiterite"
-	grind_results = list(/datum/reagent/aluminium = 10)
 	points = 1
 	custom_materials = list(/datum/material/tin=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/tin
 	mine_experience = 1
 	scan_state = "tin"
-	spreadChance = 7
-	meltingpoint = 1538
-	burningpoint = 2870
+	spreadChance = 91
+	meltingpoint = 231
+	boilingpoint = 2602
 	dens = 61.6
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/tin
@@ -260,20 +248,15 @@
 	name = "tin"
 	desc = "tin"
 	icon = 'code/game/objects/structures/superpizza/metals.dmi'
-	grind_results = list(/datum/reagent/aluminium = 10)
 	custom_materials = list(/datum/material/tin=MINERAL_MATERIAL_AMOUNT)
 	merge_type = /obj/item/stack/sheet/tin
 	material_type = /datum/material/tin
 	resistance_flags = FIRE_PROOF
-	meltingpoint = 1538
-	burningpoint = 2870
-	dens = 61.6
-	gaseousstate = /datum/gas/tin
 //zinc
 /datum/material/zinc
 	name = "zinc"
 	desc = "zinc"
-	color = "#878687"
+	color = "#92898a"
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/zinc
 	value_per_unit = 0.0025
@@ -282,22 +265,22 @@
 	coldvulnerable = 1
 	heatprotection = 1
 	heatvulnerable = 1
+	integrity_modifier = 0.9
+	toolspeed_modifier = 1.2
+	strength_modifier = 1
 /obj/item/stack/ore/sphalerite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "sphalerite"
 	novariants = FALSE
 	desc = "its got zinc"
 	icon_state = "sphalerite"
-	grind_results = list(/datum/reagent/aluminium = 10)
 	points = 1
 	custom_materials = list(/datum/material/zinc=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/zinc
 	mine_experience = 1
 	scan_state = "zinc"
-	spreadChance = 12
+	spreadChance = 80
 	meltingpoint = 419.5
-	burningpoint = 907
-	dens = 138
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/zinc
 	novariants = FALSE
@@ -305,28 +288,26 @@
 	name = "zinc"
 	desc = "zinc"
 	icon = 'code/game/objects/structures/superpizza/metals.dmi'
-	grind_results = list(/datum/reagent/aluminium = 10)
 	custom_materials = list(/datum/material/zinc=MINERAL_MATERIAL_AMOUNT)
 	merge_type = /obj/item/stack/sheet/zinc
 	material_type = /datum/material/zinc
 	resistance_flags = FIRE_PROOF
-	meltingpoint = 419.5
-	burningpoint = 907
-	dens = 138
-	gaseousstate = /datum/gas/zinc
 //ALUMINUM
 /datum/material/aluminum
 	name = "Aluminum"
 	desc = "Aluminum"
-	color = "#878687"
+	color = "#d0d5db"
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/aluminum
 	value_per_unit = 0.0025
 	weight = 0.02
-	coldprotection = 1
+	coldprotection = 0.2
 	coldvulnerable = 1.3
-	heatprotection = 1
+	heatprotection = 0.2
 	heatvulnerable = 1.3
+	integrity_modifier = 0.9
+	toolspeed_modifier = 1.2
+	strength_modifier = 1
 /obj/item/stack/ore/aluminum
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "native aluminum"
@@ -339,10 +320,8 @@
 	refined_type = /obj/item/stack/sheet/aluminum
 	mine_experience = 1
 	scan_state = "aluminum"
-	spreadChance = 20
+	spreadChance = 51
 	meltingpoint = 660.3
-	burningpoint = 2470
-	dens = 100
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/aluminum
 	novariants = FALSE
@@ -355,14 +334,10 @@
 	merge_type = /obj/item/stack/sheet/aluminum
 	material_type = /datum/material/aluminum
 	resistance_flags = FIRE_PROOF
-	meltingpoint = 660.3
-	burningpoint = 2470
-	dens = 100
-	gaseousstate = /datum/gas/aluminum
 /datum/material/nickel
 	name = "nickel"
 	desc = "nickel"
-	color = "#878687"
+	color = "#b5b6b5"
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/nickel
 	value_per_unit = 0.0025
@@ -371,6 +346,9 @@
 	coldvulnerable = 1
 	heatprotection = 1
 	heatvulnerable = 1
+	integrity_modifier = 0.9
+	toolspeed_modifier = 1.2
+	strength_modifier = 1
 /obj/item/stack/ore/garnierite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "Garnierite"
@@ -382,10 +360,8 @@
 	refined_type = /obj/item/stack/sheet/nickel
 	mine_experience = 10
 	scan_state = "nickel"
-	spreadChance = 20
+	spreadChance = 85
 	meltingpoint = 1455
-	burningpoint = 2913
-	dens = 152
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/sheet/nickel
 	novariants = FALSE
@@ -397,10 +373,6 @@
 	merge_type = /obj/item/stack/sheet/nickel
 	material_type = /datum/material/nickel
 	resistance_flags = FIRE_PROOF
-	meltingpoint = 1455
-	burningpoint = 2913
-	dens = 152
-	gaseousstate = /datum/gas/nickel
 /obj/item/stack/niter
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "niter"
@@ -431,7 +403,7 @@
 	scan_state = "hematite"
 	spreadChance = 1
 	meltingpoint = 1538
-	burningpoint = 2870
+	boilingpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/ore/magnetite
@@ -448,7 +420,7 @@
 	scan_state = "magnetite"
 	spreadChance = 1
 	meltingpoint = 1538
-	burningpoint = 2870
+	boilingpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
 /obj/item/stack/ore/limonite
@@ -465,7 +437,7 @@
 	scan_state = "limonite"
 	spreadChance = 1
 	meltingpoint = 1538
-	burningpoint = 2870
+	boilingpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
 /datum/material/andestite
@@ -486,7 +458,7 @@
 	scan_state = ""
 	spreadChance = 1
 	meltingpoint = 1538
-	burningpoint = 2870
+	boilingpoint = 2870
 	dens = 141
 	resistance_flags = FIRE_PROOF
 /datum/material/granite
@@ -507,7 +479,7 @@
 	mine_experience = 1
 	spreadChance = 4
 	meltingpoint = 327.46
-	burningpoint = 1749
+	boilingpoint = 1749
 	dens = 54.7
 	custom_materials = list(/datum/material/granite=MINERAL_MATERIAL_AMOUNT)
 	material_type = /datum/material/granite
@@ -529,7 +501,7 @@
 	mine_experience = 0
 	spreadChance = 4
 	meltingpoint = 327.46
-	burningpoint = 1749
+	boilingpoint = 1749
 	dens = 54.7
 	custom_materials = list(/datum/material/marble=MINERAL_MATERIAL_AMOUNT)
 	material_type = /datum/material/marble
@@ -583,7 +555,7 @@
 	name = "linen"
 	desc = "linen"
 	color = "#faf0e6"
-	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC = TRUE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/fabric/linen
 	value_per_unit = 0.0025
 	weight = 0.0
@@ -608,7 +580,7 @@
 	name = "linen"
 	desc = "linen"
 	color = "#faf0e6"
-	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC = TRUE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/fabric/linen
 	value_per_unit = 0.0025
 	weight = 0.0

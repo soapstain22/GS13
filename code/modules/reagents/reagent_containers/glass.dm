@@ -243,7 +243,8 @@
 		ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET,\
 		ITEM_SLOT_DEX_STORAGE
 	)
-
+/obj/item/reagent_containers/glass/bucket/greyscale
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
 /obj/item/reagent_containers/glass/bucket/wooden
 	name = "wooden bucket"
 	icon_state = "woodbucket"
