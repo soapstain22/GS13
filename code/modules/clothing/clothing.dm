@@ -26,7 +26,7 @@
 	var/clothing_flags = NONE
 
 	/// What items can be consumed to repair this clothing (must by an /obj/item/stack)
-	var/repairable_by = /obj/item/stack/sheet/cloth
+	repairable_by = /obj/item/stack/sheet/cloth
 
 	//Var modification - PLEASE be careful with this I know who you are and where you live
 	var/list/user_vars_to_edit //VARNAME = VARVALUE eg: "name" = "butts"
@@ -285,8 +285,12 @@
 		armor_list += list("MAGIC" = armor.magic)
 	if(armor.melee)
 		armor_list += list("MELEE" = armor.melee)
-	if(armor.rad)
-		armor_list += list("RADIATION" = armor.rad)
+	if(armor.slash)
+		armor_list += list("SLASH" = armor.slash)
+	if(armor.stab)
+		armor_list += list("STAB" = armor.stab)
+	if(armor.crush)
+		armor_list += list("CRUSH" = armor.crush)
 
 	if(LAZYLEN(durability_list))
 		durability_list.Cut()

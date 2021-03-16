@@ -14,7 +14,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("tracker electronics", /obj/item/electronics/tracker, 1, time = 18),
 	new/datum/stack_recipe("scrubber", /obj/machinery/portable_atmospherics/scrubber, 20, time = 50),
 	new/datum/stack_recipe("pump", /obj/machinery/portable_atmospherics/pump, 20, time = 50),
-	new/datum/stack_recipe("stasis machine", /obj/machinery/stasis, 20, time = 50),
+	new/datum/stack_recipe("sewing machine board", /obj/item/circuitboard/machine/sewingmachine, 20, time = 50),
 	new/datum/stack_recipe("selling computer", /obj/machinery/computer/piratepad_control/ , 20, time = 50),
 	new/datum/stack_recipe("selling machine", /obj/machinery/piratepad, 20, time = 50),
 	new/datum/stack_recipe("fan", /obj/structure/fans/tiny, 1, time = 20),

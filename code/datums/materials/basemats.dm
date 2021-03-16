@@ -97,7 +97,10 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	beauty_modifier = 0.075
 	integrity_modifier = 0.9
 	toolspeed_modifier = 1.2
-	strength_modifier = 1
+	strength_modifier = 1.2
+	weight = 0.13
+	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "stab" = 1.1, "slash" = 1.1, "crush" = 1.1)
+	toolspeed_modifier = 0.625
 /datum/material/silver/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
@@ -113,10 +116,10 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.0625
 	beauty_modifier = 0.4
 	integrity_modifier = 0.5
-	toolspeed_modifier = 1.2
-	strength_modifier = 1
-	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1.1)
-	weight = 0.2
+	toolspeed_modifier = 0.6
+	strength_modifier = 2.45
+	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "stab" = 1.1, "slash" = 1.1, "crush" = 0.8)
+	weight = 0.24
 /datum/material/gold/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
@@ -131,11 +134,11 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	alpha = 132
 	value_per_unit = 0.25
 	beauty_modifier = 0.3
-	integrity_modifier = 2
+	integrity_modifier = 2.5
 	toolspeed_modifier = 2
-	strength_modifier = 0.9
-	armor_modifiers = list("melee" = 1.3, "bullet" = 1.3, "laser" = 0.6, "energy" = 1, "bomb" = 1.2, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1)
-
+	strength_modifier = 0.3
+	armor_modifiers = list("melee" = 1.5, "bullet" = 1.5, "laser" = 0.6, "energy" = 1, "bomb" = 1.2, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "stab" = 1.3, "slash" = 1.3, "crush" = 0.8)
+	brittleness = 0.214
 
 /datum/material/diamond/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(15, BRUTE, BODY_ZONE_HEAD, wound_bonus = 7)

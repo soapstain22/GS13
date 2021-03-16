@@ -28,6 +28,7 @@
 	color = "#9c9c9c"
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
 	value_per_unit = 0.0025
+	armor_modifiers = list("melee" = 3, "bullet" = 3, "laser" = 3, "energy" = 3, "bomb" = 2, "bio" = 0, "rad" =1, "fire" = 5, "acid" = 1.1, "slash" = 3, "stab" = 3, "crush" = 1)
 	weight = 0.05
 	texture_layer_icon_state = "stone"
 /obj/item/stack/stone
@@ -125,7 +126,12 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/copper
 	value_per_unit = 0.0025
-	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
+	armor_modifiers = list("melee" = 0.64, "bullet" = 0.7, "laser" = 0.7, "energy" = 0.1, "bomb" = 1, "bio" = 0, "rad" =1, "fire" = 0.7, "acid" = 1.1, "slash" = 1, "stab" = 1, "crush" = 1)
+	integrity_modifier = 0.75
+	toolspeed_modifier = 0.75
+	strength_modifier = 7
+	brittleness = 0
+	weight = 0.13
 /obj/item/stack/ore/malachite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "malachite"
@@ -176,13 +182,15 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/lead
 	value_per_unit = 0.0025
-	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
+	integrity_modifier = 0.375
+	armor_modifiers = list("melee" = 1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 4, "fire" = 2, "acid" = 1.1, "slash" = 1.2, "stab" = 1, "crush" = 0.5)
 	strength_modifier = 1.5
-	weight = 0.2
-	coldprotection = 1.2
-	coldvulnerable = 0.9
-	heatprotection = 1.2
-	heatvulnerable = 0.9
+	weight = 0.14
+	brittleness = 12
+	coldprotection = 1
+	coldvulnerable = 1
+	heatprotection = 1.5
+	heatvulnerable = 0.5
 /obj/item/stack/ore/galena
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "galena"
@@ -215,17 +223,17 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/tin
 	value_per_unit = 0.0025
-	weight = 0.1
+	weight = 0.07
 	strength_modifier = 0.70
-	integrity_modifier = 0.60
-	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 1.8, "fire" = 0.7, "acid" = 1.1)
+	integrity_modifier = 0.375
+	armor_modifiers = list("melee" = 0.8, "bullet" = 0.6, "laser" = 0.9, "energy" = 0.5, "bomb" = 0.3, "bio" = 0, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "slash" = 1, "stab" = 1, "crush" = 0.7)
 	coldprotection = 0.9
 	coldvulnerable = 1.1
 	heatprotection = 0.9
 	heatvulnerable = 1.1
-	integrity_modifier = 0.67
-	toolspeed_modifier = 0.8
-	strength_modifier = 0.7
+	integrity_modifier = 0.25
+	toolspeed_modifier = 0.375
+	strength_modifier = 0.75
 /obj/item/stack/ore/cassiterite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "cassiterite"
@@ -260,14 +268,15 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/zinc
 	value_per_unit = 0.0025
-	weight = 0.05
+	weight = 0.09
 	coldprotection = 1
 	coldvulnerable = 1
 	heatprotection = 1
 	heatvulnerable = 1
-	integrity_modifier = 0.9
+	integrity_modifier = 0.625
 	toolspeed_modifier = 1.2
 	strength_modifier = 1
+	brittleness = 1.8
 /obj/item/stack/ore/sphalerite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "sphalerite"
@@ -300,7 +309,7 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/aluminum
 	value_per_unit = 0.0025
-	weight = 0.02
+	weight = 0.03
 	coldprotection = 0.2
 	coldvulnerable = 1.3
 	heatprotection = 0.2
@@ -308,6 +317,7 @@
 	integrity_modifier = 0.9
 	toolspeed_modifier = 1.2
 	strength_modifier = 1
+	brittleness = 1
 /obj/item/stack/ore/aluminum
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "native aluminum"
@@ -341,7 +351,7 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/nickel
 	value_per_unit = 0.0025
-	weight = 0.05
+	weight = 0.13
 	coldprotection = 1
 	coldvulnerable = 1
 	heatprotection = 1

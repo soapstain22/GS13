@@ -43,15 +43,11 @@
 	var/hacked_price = 50
 
 	var/list/categories = list(
-							"Under",
-							"Over",
-							"Hats",
-							"Shoes",
-							"Gloves",
-							"Neck",
-							"Misc",
-							"Backpack",
-							"Belt"
+							"Tools",
+							"Parts",
+							"Weapons",
+							"Armor",
+							"Weapons",
 							)
 
 /obj/machinery/smithy/Initialize()

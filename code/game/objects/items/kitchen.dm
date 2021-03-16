@@ -32,7 +32,7 @@
 	item_flags = EYE_STAB
 	sharpness = SHARP_POINTY
 	var/datum/reagent/forkload //used to eat omelette
-
+	attacktype = "stab"
 /obj/item/kitchen/fork/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] stabs \the [src] into [user.p_their()] chest! It looks like [user.p_theyre()] trying to take a bite out of [user.p_them()]self!</span>")
 	playsound(src, 'sound/items/eatfood.ogg', 50, TRUE)
@@ -84,7 +84,7 @@
 	throw_speed = 3
 	throw_range = 6
 	custom_materials = list(/datum/material/iron=12000)
-	attack_verb = list("slashed", "stabbed", "sliced", "tore", "lacerated", "ripped", "diced", "cut")
+	attack_verb = list("slashed", "sliced", "tore", "lacerated", "ripped", "diced", "cut")
 	sharpness = SHARP_EDGED
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	item_flags = EYE_STAB
@@ -92,7 +92,7 @@
 	custom_price = 250
 	wound_bonus = -5
 	bare_wound_bonus = 10
-
+	attacktype = "slash"
 /obj/item/kitchen/knife/ComponentInitialize()
 	. = ..()
 	set_butchering()

@@ -40,6 +40,7 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/coldvulnerable = 1
 	var/heatprotection = 1
 	var/heatvulnerable = 1
+	var/brittleness = 0
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)
@@ -95,6 +96,8 @@ Simple datum which is instanced once per type and is used for every object of sa
 		o.throwforce *= strength_modifier
 //		o.force *= sharp_modifier
 //		o.throwforce *= sharp_modifier
+		o.repairable_by = sheet_type
+		o.brittleness = brittleness
 		var/list/temp_armor_list = list() //Time to add armor modifiers!
 
 		if(!istype(o.armor))

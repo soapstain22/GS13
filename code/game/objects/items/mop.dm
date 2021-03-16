@@ -18,7 +18,7 @@
 	var/mopspeed = 15
 	force_string = "robust... against germs"
 	var/insertable = TRUE
-
+	attacktype = "crush"
 /obj/item/mop/Initialize()
 	. = ..()
 	create_reagents(mopcap)

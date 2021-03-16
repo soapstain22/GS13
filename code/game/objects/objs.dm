@@ -7,7 +7,7 @@
 
 	var/damtype = BRUTE
 	var/force = 0
-
+	var/attacktype = "melee" //crush slash or stab
 	/// How good a given object is at causing wounds on carbons. Higher values equal better shots at creating serious wounds.
 	var/wound_bonus = 0
 	/// If this attacks a human with no wound armor on the affected body part, add this to the wound mod. Some attacks may be significantly worse at wounding if there's even a slight layer of armor to absorb some of it vs bare flesh
@@ -19,7 +19,7 @@
 	var/integrity_failure = 0 //0 if we have no special broken behavior, otherwise is a percentage of at what point the obj breaks. 0.5 being 50%
 	///Damage under this value will be completely ignored
 	var/damage_deflection = 0
-
+	var/repairable_by = null
 	var/resistance_flags = NONE // INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ON_FIRE | UNACIDABLE | ACID_PROOF
 
 	var/acid_level = 0 //how much acid is on that obj
@@ -27,7 +27,7 @@
 	var/persistence_replacement //have something WAY too amazing to live to the next round? Set a new path here. Overuse of this var will make me upset.
 	var/current_skin //Has the item been reskinned?
 	var/list/unique_reskin //List of options to reskin.
-
+	var/brittleness = 0
 	// Access levels, used in modules\jobs\access.dm
 	var/list/req_access
 	var/req_access_txt = "0"
@@ -244,6 +244,9 @@
 			                  bomb = text2num(result["values"]["bomb"]),\
 			                  bio = text2num(result["values"]["bio"]),\
 			                  rad = text2num(result["values"]["rad"]),\
+			                  slash = text2num(result["values"]["slash"]),\
+			                  stab = text2num(result["values"]["stab"]),\
+			                  crush = text2num(result["values"]["crush"]),\
 			                  fire = text2num(result["values"]["fire"]),\
 			                  acid = text2num(result["values"]["acid"]))
 				log_admin("[key_name(usr)] modified the armor on [src] ([type]) to melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser], energy: [armor.energy], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], fire: [armor.fire], acid: [armor.acid]")

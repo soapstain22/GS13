@@ -75,10 +75,11 @@
 		last_act = world.time
 		to_chat(user, "<span class='notice'>You start picking...</span>")
 
-		if(I.use_tool(src, user, 5, volume=50))
+		if(I.use_tool(src, user, 3, volume=50))
 			if(ismineralturf(src))
 				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
-				I.obj_integrity -= 0.5
+				I.obj_integrity -= 1
+				damage -= 1
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
 				if(damage <= 1)
 					gets_drilled(user, TRUE)

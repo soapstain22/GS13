@@ -12,6 +12,7 @@
 	throwforce = 10
 	throw_speed = 3
 	throw_range = 7
+	attacktype = "crush"
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("swept", "brushed off", "bludgeoned", "whacked")
 	resistance_flags = FLAMMABLE

@@ -22,7 +22,7 @@
 	toolspeed = 0.5
 	var/on = FALSE
 	var/wielded = FALSE // track wielded status on item
-
+	attacktype = "slash"
 /obj/item/chainsaw/Initialize()
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)

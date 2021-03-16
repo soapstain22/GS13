@@ -269,8 +269,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 /obj/item/examine(mob/user) //This might be spammy. Remove?
 	. = ..()
-
-	. += "[gender == PLURAL ? "They are" : "It is"] a [weightclass2text(w_class)] item."
+	var/healthpercent = (obj_integrity/max_integrity) * 100
+	. += "[gender == PLURAL ? "They are" : "It is"] a [weightclass2text(w_class)] item. Its currently at [healthpercent]%"
 
 	if(resistance_flags & INDESTRUCTIBLE)
 		. += "[src] seems extremely robust! It'll probably withstand anything that could happen to it!"
@@ -283,14 +283,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 			. += "[src] is made of cold-resistant materials."
 		if(resistance_flags & FIRE_PROOF)
 			. += "[src] is made of fire-retardant materials."
-		var/healthpercent = (obj_integrity/max_integrity) * 100
-		switch(healthpercent)
-			if(50 to 99)
-				return  "It looks slightly damaged."
-			if(25 to 50)
-				return  "It appears heavily damaged."
-			if(0 to 25)
-				return  "<span class='warning'>It's falling apart!</span>"
+
 	if(!user.research_scanner)
 		return
 
@@ -849,18 +842,26 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/mining, SKILL_SPEED_MODIFIER)
 		if(H.mind.get_skill_level(/datum/skill/mining) >= SKILL_LEVEL_JOURNEYMAN && prob(H.mind.get_skill_modifier(/datum/skill/mining, SKILL_PROBS_MODIFIER))) // we check if the skill level is greater than Journeyman and then we check for the probality for that specific level.
 			mineral_scan_pulse(get_turf(H), SKILL_LEVEL_JOURNEYMAN - 2) //SKILL_LEVEL_JOURNEYMAN = 3 So to get range of 1+ we have to subtract 2 from it,.
+		for(prob(brittleness/obj_integrity))
+			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_WRENCH && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		for(prob(brittleness/obj_integrity))
+			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		for(prob(brittleness/obj_integrity))
+			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		for(prob(brittleness/obj_integrity))
+			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_WELDER && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
@@ -868,6 +869,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		for(prob(brittleness/obj_integrity))
+			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_MULTITOOL && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
