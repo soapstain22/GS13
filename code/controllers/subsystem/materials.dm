@@ -18,23 +18,8 @@ SUBSYSTEM_DEF(materials)
 	var/list/list/material_combos
 	///List of stackcrafting recipes for materials using rigid materials
 	var/list/rigid_stack_recipes = list(
-		new /datum/stack_recipe("Chair", 		/obj/structure/chair/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
-		new /datum/stack_recipe("Toilet", 		/obj/structure/toilet/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
-		new /datum/stack_recipe("Sink",			/obj/structure/sink/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
-		new /datum/stack_recipe("girder",		/obj/structure/girder, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
-		new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 4, 20, applies_mats = TRUE),
-		new /datum/stack_recipe("Helmet",		/obj/item/clothing/head/helmet/knight/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("Armor",		/obj/item/clothing/head/helmet/knight/greyscale, 30, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("pickaxe",		/obj/item/pickaxe/greyscale, 2, 1, 30, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("shovel", 		/obj/item/shovel/greyscale, 2, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("cautery",		/obj/item/cautery/greyscale, 1, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("retractor",	/obj/item/retractor/greyscale, 5, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("scalpel",		/obj/item/scalpel/greyscale, 5, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("hemostat",		/obj/item/hemostat/greyscale, 4, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("wrench",		/obj/item/wrench/greyscale, 3, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("wirecutters",	/obj/item/wirecutters/greyscale, 4, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("screwdriver",	/obj/item/screwdriver/greyscale, 3, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("crowbar",		/obj/item/crowbar/greyscale, 2, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
+		new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
 		new /datum/stack_recipe("stairs",		/obj/structure/stairs, 10, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = FALSE),
 	)
 	var/list/fabric_stack_recipes = list(
@@ -48,7 +33,9 @@ SUBSYSTEM_DEF(materials)
 
 	)
 	var/list/mason_stack_recipes = list(
-		new /datum/stack_recipe("carving_block", 	/obj/structure/carving_block, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("carving block", 	/obj/structure/carving_block, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+		new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
+		new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
 	)
 ///Ran on initialize, populated the materials and materials_by_category dictionaries with their appropiate vars (See these variables for more info)
 /datum/controller/subsystem/materials/proc/InitializeMaterials()

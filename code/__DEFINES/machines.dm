@@ -48,6 +48,7 @@
 #define MACHINING		(1<<11)
 #define MASONRY			(1<<12)
 #define SOLDERING		(1<<13)
+#define CARPENTRY		(1<<14)
 //Note: More than one of these can be added to a design but imprinter and lathe designs are incompatable.
 
 //Modular computer/NTNet defines

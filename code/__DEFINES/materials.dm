@@ -5,11 +5,13 @@
 #define MAT_CATEGORY_RIGID "rigid material"
 #define MAT_CATEGORY_FABRIC "fabric material"
 #define MAT_CATEGORY_STONE "stone material"
+#define MAT_CATEGORY_WOOD "wood material"
 ///Use this flag on TRUE if you want the basic recipes
 #define MAT_CATEGORY_BASE_RECIPES "basic recipes"
 ///Use this flag on TRUE if you want the basic recipes
 #define MAT_CATEGORY_FABRIC_RECIPES "fabric recipes"
 #define MAT_CATEGORY_MASON_RECIPES "mason recipes"
+#define MAT_CATEGORY_WOOD_RECIPES "wood recipes"
 /// Flag for atoms, this flag ensures it isn't re-colored by materials. Useful for snowflake icons such as default toolboxes.
 #define MATERIAL_COLOR (1<<0)
 #define MATERIAL_ADD_PREFIX (1<<1)

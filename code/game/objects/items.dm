@@ -839,26 +839,33 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(tool_behaviour == TOOL_MINING && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
+		H.adjust_nutrition(-0.3)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/mining, SKILL_SPEED_MODIFIER)
 		if(H.mind.get_skill_level(/datum/skill/mining) >= SKILL_LEVEL_JOURNEYMAN && prob(H.mind.get_skill_modifier(/datum/skill/mining, SKILL_PROBS_MODIFIER))) // we check if the skill level is greater than Journeyman and then we check for the probality for that specific level.
 			mineral_scan_pulse(get_turf(H), SKILL_LEVEL_JOURNEYMAN - 2) //SKILL_LEVEL_JOURNEYMAN = 3 So to get range of 1+ we have to subtract 2 from it,.
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
+			visible_message("<span class='danger'>[src] shatters into a million pieces!</span>")
+			qdel(src)
+
 	if(tool_behaviour == TOOL_WRENCH && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
+		H.adjust_nutrition(-0.3)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
+		H.adjust_nutrition(-0.3)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
+		H.adjust_nutrition(-0.3)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
@@ -868,6 +875,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(tool_behaviour == TOOL_CROWBAR && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
+		H.adjust_nutrition(-0.3)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity

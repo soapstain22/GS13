@@ -2,27 +2,27 @@
 #define AUTOLATHE_CATEGORY_MENU	2
 #define AUTOLATHE_SEARCH_MENU	3
 
-/datum/techweb/specialized/autounlocking/smithy
-	design_autounlock_buildtypes = SMITHING
-	allowed_buildtypes = SMITHING
+/datum/techweb/specialized/autounlocking/carpentry
+	design_autounlock_buildtypes = CARPENTRY
+	allowed_buildtypes = CARPENTRY
 
-/obj/item/circuitboard/machine/smithy
-	name = "Electric Smithy (Machine Board)"
+/obj/item/circuitboard/machine/carpentry
+	name = "sawmill (Machine Board)"
 	icon_state = "generic"
-	build_path = /obj/machinery/smithy
+	build_path = /obj/machinery/carpentry
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 3,
 		/obj/item/stock_parts/manipulator = 1,)
-/obj/machinery/smithy
+/obj/machinery/carpentry
 	icon = 'code/game/objects/structures/superpizza/objects/workshops/workshops.dmi'
-	name = "smithy"
-	desc = "It produces items using METOL"
-	icon_state = "smithy"
+	name = "carpentry"
+	desc = "It produces items using WOODT"
+	icon_state = "carpentry"
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 10
 	active_power_usage = 100
-	circuit = /obj/item/circuitboard/machine/smithy
+	circuit = /obj/item/circuitboard/machine/carpentry
 	layer = BELOW_OBJ_LAYER
 
 	var/operating = FALSE
@@ -43,24 +43,21 @@
 	var/hacked_price = 50
 
 	var/list/categories = list(
-							"Tools",
-							"Parts",
-							"Weapons",
-							"Armor",
-							"Weapons",
+							"Crafts",
+							"Furniture",
 							)
 
-/obj/machinery/smithy/Initialize()
-	AddComponent(/datum/component/material_container, SSmaterials.materialtypes_by_category[MAT_CATEGORY_RIGID], 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
+/obj/machinery/carpentry/Initialize()
+	AddComponent(/datum/component/material_container, SSmaterials.materialtypes_by_category[MAT_CATEGORY_WOOD], 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
 	. = ..()
 
-	stored_research = new /datum/techweb/specialized/autounlocking/smithy
+	stored_research = new /datum/techweb/specialized/autounlocking/carpentry
 	matching_designs = list()
 
-/obj/machinery/smithy/Destroy()
+/obj/machinery/carpentry/Destroy()
 	return ..()
 
-/obj/machinery/smithy/ui_interact(mob/user)
+/obj/machinery/carpentry/ui_interact(mob/user)
 	. = ..()
 	if(!is_operational())
 		return
@@ -75,20 +72,20 @@
 		if(AUTOLATHE_SEARCH_MENU)
 			dat = search_win(user)
 
-	var/datum/browser/popup = new(user, "smithy", name, 400, 500)
+	var/datum/browser/popup = new(user, "carpentry", name, 400, 500)
 	popup.set_content(dat)
 	popup.open()
 
-/obj/machinery/smithy/on_deconstruction()
+/obj/machinery/carpentry/on_deconstruction()
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 	materials.retrieve_all()
 
-/obj/machinery/smithy/attackby(obj/item/O, mob/user, params)
+/obj/machinery/carpentry/attackby(obj/item/O, mob/user, params)
 	if (busy)
-		to_chat(user, "<span class=\"alert\">The smithy is busy</span>")
+		to_chat(user, "<span class=\"alert\">The carpentry is busy</span>")
 		return TRUE
 
-	if(default_deconstruction_screwdriver(user, "autolathe_t", "autolathe", O))
+	if(default_deconstruction_screwdriver(user, "carpentry_t", "carpentry", O))
 		updateUsrDialog()
 		return TRUE
 
@@ -121,19 +118,19 @@
 	return ..()
 
 
-/obj/machinery/smithy/proc/AfterMaterialInsert(item_inserted, id_inserted, amount_inserted)
+/obj/machinery/carpentry/proc/AfterMaterialInsert(item_inserted, id_inserted, amount_inserted)
 	if(istype(item_inserted, /obj/item/stack/ore/bluespace_crystal))
 		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else if(custom_materials && custom_materials.len && custom_materials[SSmaterials.GetMaterialRef(/datum/material/glass)])
-		flick("autolathe_r",src)//plays glass insertion animation by default otherwise
+		flick("carpentry_r",src)//plays glass insertion animation by default otherwise
 	else
-		flick("autolathe_o",src)//plays metal insertion animation
+		flick("carpentry_o",src)//plays metal insertion animation
 
 
 		use_power(min(1000, amount_inserted / 100))
 	updateUsrDialog()
 
-/obj/machinery/smithy/Topic(href, href_list)
+/obj/machinery/carpentry/Topic(href, href_list)
 	if(..())
 		return
 	if (!busy)
@@ -206,13 +203,13 @@
 					matching_designs.Add(D)
 			updateUsrDialog()
 	else
-		to_chat(usr, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
+		to_chat(usr, "<span class=\"alert\">The sawmill is busy. Please wait for completion of previous operation.</span>")
 
 	updateUsrDialog()
 
 	return
 
-/obj/machinery/smithy/proc/make_item(power, list/materials_used, list/picked_materials, multiplier, coeff, is_stack, mob/user)
+/obj/machinery/carpentry/proc/make_item(power, list/materials_used, list/picked_materials, multiplier, coeff, is_stack, mob/user)
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 	var/atom/A = drop_location()
 	use_power(power)
@@ -222,11 +219,11 @@
 	if(is_stack)
 		var/obj/item/stack/N = new being_built.build_path(A, multiplier)
 		N.update_icon()
-		N.smithy_crafted(src)
+		N.carpentry_crafted(src)
 	else
 		for(var/i=1, i<=multiplier, i++)
 			var/obj/item/new_item = new being_built.build_path(A)
-			new_item.smithy_crafted(src)
+			new_item.carpentry_crafted(src)
 
 			if(length(picked_materials))
 				new_item.set_custom_materials(picked_materials, 1 / multiplier) //Ensure we get the non multiplied amount
@@ -236,11 +233,11 @@
 						user.client.give_award(/datum/award/achievement/misc/getting_an_upgrade, user)
 
 
-	icon_state = "autolathe"
+	icon_state = "carpentry"
 	busy = FALSE
 	updateDialog()
 
-/obj/machinery/smithy/RefreshParts()
+/obj/machinery/carpentry/RefreshParts()
 	var/T = 0
 	for(var/obj/item/stock_parts/matter_bin/MB in component_parts)
 		T += MB.rating*75000
@@ -251,13 +248,13 @@
 		T -= M.rating*0.2
 	prod_coeff = min(1,max(0,T)) // Coeff going 1 -> 0,8 -> 0,6 -> 0,4
 
-/obj/machinery/smithy/examine(mob/user)
+/obj/machinery/carpentry/examine(mob/user)
 	. += ..()
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 	if(in_range(user, src) || isobserver(user))
 		. += "<span class='notice'>The status display reads: Storing up to <b>[materials.max_amount]</b> material units.<br>Material consumption at <b>[prod_coeff*100]%</b>.</span>"
 
-/obj/machinery/smithy/proc/main_win(mob/user)
+/obj/machinery/carpentry/proc/main_win(mob/user)
 	var/dat = "<div class='statusDisplay'><h3>Smithing Menu:</h3><br>"
 	dat += materials_printout()
 
@@ -283,7 +280,7 @@
 	dat += "</tr></table></div>"
 	return dat
 
-/obj/machinery/smithy/proc/category_win(mob/user,selected_category)
+/obj/machinery/carpentry/proc/category_win(mob/user,selected_category)
 	var/dat = "<A href='?src=[REF(src)];menu=[AUTOLATHE_MAIN_MENU]'>Return to main menu</A>"
 	dat += "<div class='statusDisplay'><h3>Browsing [selected_category]:</h3><br>"
 	dat += materials_printout()
@@ -320,7 +317,7 @@
 	dat += "</div>"
 	return dat
 
-/obj/machinery/smithy/proc/search_win(mob/user)
+/obj/machinery/carpentry/proc/search_win(mob/user)
 	var/dat = "<A href='?src=[REF(src)];menu=[AUTOLATHE_MAIN_MENU]'>Return to main menu</A>"
 	dat += "<div class='statusDisplay'><h3>Search results:</h3><br>"
 	dat += materials_printout()
@@ -349,7 +346,7 @@
 	dat += "</div>"
 	return dat
 
-/obj/machinery/smithy/proc/materials_printout()
+/obj/machinery/carpentry/proc/materials_printout()
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 	var/dat = "<b>Total amount:</b> [materials.total_amount] / [materials.max_amount] cm<sup>3</sup><br>"
 	for(var/mat_id in materials.materials)
@@ -359,7 +356,7 @@
 			dat += "<b>[M.name] amount:</b> [mineral_amount] cm<sup>3</sup><br>"
 	return dat
 
-/obj/machinery/smithy/proc/can_build(datum/design/D, amount = 1)
+/obj/machinery/carpentry/proc/can_build(datum/design/D, amount = 1)
 	if(D.make_reagents.len)
 		return FALSE
 
@@ -375,7 +372,7 @@
 	return materials.has_materials(required_materials)
 
 
-/obj/machinery/smithy/proc/get_design_cost(datum/design/D)
+/obj/machinery/carpentry/proc/get_design_cost(datum/design/D)
 	var/coeff = (ispath(D.build_path, /obj/item/stack) ? 1 : prod_coeff)
 	var/dat
 	for(var/i in D.materials)
@@ -388,5 +385,5 @@
 
 //Called when the object is constructed by an autolathe
 //Has a reference to the autolathe so you can do !!FUN!! things with hacked lathes
-/obj/item/proc/smithy_crafted(obj/machinery/autolathe/A)
+/obj/item/proc/carpentry_crafted(obj/machinery/autolathe/A)
 	return

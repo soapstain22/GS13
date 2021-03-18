@@ -135,6 +135,7 @@
 		/obj/item/clothing/head/trucker = 1,
 		/obj/item/clothing/head/cone = 1,
 		/obj/item/storage/toolbox/emergency = 1,
+		/mob/living/simple_animal/hostile/squirrel = 5,
 		"" = 90 )
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
 	if(prob(60))
