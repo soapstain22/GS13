@@ -5,7 +5,7 @@
 	icon_state = "fireaxe"
 	anchored = TRUE
 	density = FALSE
-	armor = list("melee" = 50, "bullet" = 20, "laser" = 0, "energy" = 100, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50)
+	armor = list("melee" = 50, "bullet" = 20, "laser" = 0, "energy" = 100, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	max_integrity = 150
 	integrity_failure = 0.33
 	var/locked = TRUE

@@ -14,7 +14,7 @@
 	icon_state = "dio_headband"
 	worn_icon = 'icons/mob/clothing_dio.dmi'
 	clothing_flags = SNUG_FIT
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 100)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
 
 /obj/item/clothing/shoes/dioshoes
 	name = "Fabulous Shoes"
@@ -32,7 +32,7 @@
 	icon_state = "dio_jacket"
 	worn_icon = 'icons/mob/clothing_dio.dmi'
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 100)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
 
 /obj/item/clothing/under/costume/diojumpsuit
 	name = "Menacing Jumpsuit"

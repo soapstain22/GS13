@@ -232,7 +232,7 @@
 	flags_inv = HIDEHAIR
 	slot_flags = ITEM_SLOT_HEAD
 	resistance_flags = NONE
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 75, "acid" = 50) //Weak melee protection, because you can wear it on your head
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 75, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1) //Weak melee protection, because you can wear it on your head
 	slot_equipment_priority = list( \
 		ITEM_SLOT_BACK, ITEM_SLOT_ID,\
 		ITEM_SLOT_ICLOTHING, ITEM_SLOT_OCLOTHING,\
@@ -250,7 +250,7 @@
 	icon_state = "woodbucket"
 	inhand_icon_state = "woodbucket"
 	custom_materials = list(/datum/material/wood = MINERAL_MATERIAL_AMOUNT * 2)
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	resistance_flags = FLAMMABLE
 
 /obj/item/reagent_containers/glass/bucket/attackby(obj/O, mob/user, params)

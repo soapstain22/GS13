@@ -3,7 +3,7 @@
 	name = "\improper Tank"
 	icon = 'icons/mecha/mecha_96x96.dmi'
 	icon_state = "five_stars"
-	armor = list("melee" = 100, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 100, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
 	exit_delay = 40
 	step_in = 4
 	dir_in = 1 //Facing North.

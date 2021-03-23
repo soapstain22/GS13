@@ -77,7 +77,7 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/breadslice/xenomeat
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 10)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 30, /datum/reagent/consumable/nutriment/vitamin = 5)
-	tastes = list("bread" = 10, "acid" = 10)
+	tastes = list("bread" = 10, "acid" = 10, "stab" = 1, "slash" = 1, "crush" = 1)
 	foodtype = GRAIN | MEAT
 	value = FOOD_EXOTIC
 

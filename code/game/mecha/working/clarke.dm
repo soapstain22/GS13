@@ -10,7 +10,7 @@
 	lights_power = 7
 	deflect_chance = 10
 	step_energy_drain = 15 //slightly higher energy drain since you movin those wheels FAST
-	armor = list("melee" = 20, "bullet" = 10, "laser" = 20, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 70, "fire" = 100, "acid" = 100) //low armor to compensate for fire protection and speed
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 20, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 70, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1) //low armor to compensate for fire protection and speed
 	max_equip = 7
 	wreckage = /obj/structure/mecha_wreckage/clarke
 	enter_delay = 40

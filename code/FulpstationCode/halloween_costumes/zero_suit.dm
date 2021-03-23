@@ -12,7 +12,7 @@
 /obj/item/clothing/suit/space/hardsuit/toy/
 	name = "toy hardsuit"
 	desc = "Comes packaged with the 'My First Singularity Playset'"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	clothing_flags = NONE
 	min_cold_protection_temperature = null
 	max_heat_protection_temperature = null
@@ -36,7 +36,7 @@
 	name = "toy hardsuit helmet"
 	desc = "With working flashlight!"
 	max_integrity = 300
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	clothing_flags = NONE
 	min_cold_protection_temperature = null
 	max_heat_protection_temperature = null
