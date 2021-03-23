@@ -852,36 +852,36 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
 		H.adjust_nutrition(-0.3)
-		//skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		H.adjust_nutrition(-0.3)
-		//skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		H.adjust_nutrition(-0.3)
-		//skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_WELDER && ishuman(user))
 		var/mob/living/carbon/human/H = user
-	//	skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_CROWBAR && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
 		H.adjust_nutrition(-0.3)
-		//skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
 	if(tool_behaviour == TOOL_MULTITOOL && ishuman(user))
 		var/mob/living/carbon/human/H = user
-	//	skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
+		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 
 	delay *= toolspeed * skill_modifier * matfac
 

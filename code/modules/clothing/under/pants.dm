@@ -67,6 +67,6 @@
 	name = "camo pants"
 	desc = "A pair of woodland camouflage pants. Probably not the best choice for a space station."
 	icon_state = "camopants"
-	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1, "wound" = 10)
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50, "wound" = 10)
 	slowdown = 0.05
 	custom_price = 250

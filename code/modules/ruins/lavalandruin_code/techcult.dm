@@ -61,7 +61,7 @@
 	name = "armored techpriest robes"
 	desc = "An armored version of robes worn by followers of the machine god."
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/pickaxe, /obj/item/organ/regenerative_core/legion, /obj/item/kitchen/knife/combat/bone, /obj/item/kitchen/knife/combat/survival, /obj/item/gun/energy)
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 20, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 60, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 30, "bullet" = 10, "laser" = 20, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 60)
 	hoodtype = /obj/item/clothing/head/hooded/techpriest/armor/plate
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|ARMS
@@ -76,7 +76,7 @@
 /obj/item/clothing/head/hooded/techpriest/armor/plate
 	name = "armored techpriest's hood"
 	desc = "An armored version of hood worn by followers of the machine god."
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 20, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 60, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 30, "bullet" = 10, "laser" = 20, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 60)
 	min_cold_protection_temperature = FIRE_HELM_MIN_TEMP_PROTECT
 	max_heat_protection_temperature = FIRE_HELM_MAX_TEMP_PROTECT
 
@@ -89,7 +89,7 @@
 /obj/item/clothing/suit/hooded/techpriest/armor/lead
 	name = "blessed tech robes"
 	desc = "From the rage of the beast, Machine God protect us."
-	armor = list("melee" = 75, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 40, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 75, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 40, "fire" = 100, "acid" = 100)
 	hoodtype = /obj/item/clothing/head/hooded/techpriest/armor/lead
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -104,7 +104,7 @@
 /obj/item/clothing/head/hooded/techpriest/armor/lead
 	name = "blessed tech hood"
 	desc = "From the weakness of the mind, Omnissiah set us free."
-	armor = list("melee" = 75, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 40, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 75, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 40, "fire" = 100, "acid" = 100)
 	heat_protection = HEAD
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF

@@ -16,7 +16,7 @@
 	brightness_on = 1
 	on = FALSE
 	hat_type = "sans"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1) //just dodge, duh
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0) //just dodge, duh
 	resistance_flags = null
 	flags_inv = HIDEHAIR|HIDEFACIALHAIR
 	clothing_flags = SNUG_FIT

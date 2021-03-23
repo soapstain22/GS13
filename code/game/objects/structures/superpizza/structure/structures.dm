@@ -16,6 +16,7 @@
 	..()
 	var/spawnbin  = list(
 		/obj/item/paper/crumpled/ = 2,
+		/obj/item/trash/can = 5,
 		/obj/item/pen = 5,
 		"" = 200 )
 /obj/structure/filingcabinet/chestdrawer/random/Initialize(mapload)
@@ -49,7 +50,7 @@
 	icon_state = "bin"
 	density = TRUE
 	anchored = TRUE
-	layer = BELOW_OBJ_LAYER
+	layer = POOP_LAYER
 	climbable = TRUE
 	pass_flags = LETPASSTHROW //You can throw objects over this, despite it's density.")
 	var/buildstack = /obj/item/stack/sheet/metal

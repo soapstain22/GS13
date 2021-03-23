@@ -40,7 +40,7 @@
 //X-TREME Laser Tag Helmets
 
 /obj/item/clothing/head/helmet/redtaghelm/deadly
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 60,"energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 60,"energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	var/hit_reflect_chance = 50
 
 /obj/item/clothing/head/helmet/redtaghelm/deadly/IsReflect(def_zone)
@@ -50,7 +50,7 @@
 		return TRUE
 
 /obj/item/clothing/head/helmet/bluetaghelm/deadly
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 60,"energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 60,"energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	var/hit_reflect_chance = 50
 
 /obj/item/clothing/head/helmet/bluetaghelm/deadly/IsReflect(def_zone)
@@ -65,7 +65,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	cold_protection = CHEST|GROIN|ARMS
 	heat_protection = CHEST|GROIN|ARMS
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	var/hit_reflect_chance = 50
 
 /obj/item/clothing/suit/bluetag/deadly_laser_tag/IsReflect(def_zone)
@@ -78,7 +78,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	cold_protection = CHEST|GROIN|ARMS
 	heat_protection = CHEST|GROIN|ARMS
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	var/hit_reflect_chance = 50
 
 /obj/item/clothing/suit/redtag/deadly_laser_tag/IsReflect(def_zone)

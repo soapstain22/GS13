@@ -30,7 +30,7 @@
 	inhand_icon_state = "digi_combats"
 	resistance_flags = FIRE_PROOF
 	permeability_coefficient = 0.05
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 40, "acid" = 20, "stab" = 1, "slash" = 1, "crush" = 1)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 40, "acid" = 20)
 
 
 /obj/item/clothing/shoes/jackboots/digitigrade

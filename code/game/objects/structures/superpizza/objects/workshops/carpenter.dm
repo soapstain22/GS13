@@ -7,7 +7,7 @@
 	allowed_buildtypes = CARPENTRY
 
 /obj/item/circuitboard/machine/carpentry
-	name = "wood lathe (Machine Board)"
+	name = "sawmill (Machine Board)"
 	icon_state = "generic"
 	build_path = /obj/machinery/carpentry
 	req_components = list(
@@ -85,7 +85,7 @@
 		to_chat(user, "<span class=\"alert\">The carpentry is busy</span>")
 		return TRUE
 
-	if(default_deconstruction_screwdriver(user, "woodlathe_t", "woodlathe", O))
+	if(default_deconstruction_screwdriver(user, "carpentry_t", "carpentry", O))
 		updateUsrDialog()
 		return TRUE
 
@@ -122,9 +122,9 @@
 	if(istype(item_inserted, /obj/item/stack/ore/bluespace_crystal))
 		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else if(custom_materials && custom_materials.len && custom_materials[SSmaterials.GetMaterialRef(/datum/material/glass)])
-		flick("woodlathe_r",src)//plays glass insertion animation by default otherwise
+		flick("carpentry_r",src)//plays glass insertion animation by default otherwise
 	else
-		flick("woodlathe_c",src)//plays metal insertion animation
+		flick("carpentry_o",src)//plays metal insertion animation
 
 
 		use_power(min(1000, amount_inserted / 100))
