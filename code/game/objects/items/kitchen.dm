@@ -28,7 +28,7 @@
 	flags_1 = CONDUCT_1
 	attack_verb = list("attacked", "stabbed", "poked")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30, "stab" = 1, "slash" = 1, "crush" = 1)
 	item_flags = EYE_STAB
 	sharpness = SHARP_POINTY
 	var/datum/reagent/forkload //used to eat omelette
@@ -86,7 +86,7 @@
 	custom_materials = list(/datum/material/iron=12000)
 	attack_verb = list("slashed", "sliced", "tore", "lacerated", "ripped", "diced", "cut")
 	sharpness = SHARP_EDGED
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	item_flags = EYE_STAB
 	var/bayonet = FALSE	//Can this be attached to a gun?
 	custom_price = 250
@@ -229,7 +229,7 @@
 	force = 8
 	throwforce = 12
 	attack_verb = list("shanked", "shivved")
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	custom_materials = list(/datum/material/glass=400)
 
 /obj/item/kitchen/knife/shiv/carrot

@@ -190,7 +190,7 @@
 	desc = "A special syndicate version of plasma containment suit. Capable of everything it's smaller version can do and offers a good protection against hostile environment."
 	w_class = WEIGHT_CLASS_NORMAL
 	slowdown = 0.2
-	armor = list("melee" = 20, "bullet" = 30, "laser" = 20,"energy" = 20, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 80, "acid" = 80)
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20,"energy" = 20, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 80, "acid" = 80, "stab" = 1, "slash" = 1, "crush" = 1)
 	cell = /obj/item/stock_parts/cell/hyper
 
 /obj/item/storage/box/syndie_kit/plasmeme/ComponentInitialize()

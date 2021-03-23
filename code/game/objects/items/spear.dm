@@ -17,7 +17,7 @@
 	attack_verb = list("attacked", "poked", "jabbed", "tore", "lacerated", "gored")
 	sharpness = SHARP_EDGED // i know the whole point of spears is that they're pointy, but edged is more devastating at the moment so
 	max_integrity = 200
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30, "stab" = 1, "slash" = 1, "crush" = 1)
 	var/war_cry = "AAAAARGH!!!"
 	var/icon_prefix = "spearglass"
 	wound_bonus = -15

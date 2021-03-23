@@ -6,7 +6,7 @@
 	layer = SIGN_LAYER
 	custom_materials = list(/datum/material/plastic = 2000)
 	max_integrity = 100
-	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	///Determines if a sign is unwrenchable.
 	var/buildable_sign = TRUE
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
@@ -33,7 +33,7 @@
 	righthand_file = 'icons/mob/inhands/items_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/plastic = 2000)
-	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	resistance_flags = FLAMMABLE
 	max_integrity = 100
 	///The type of sign structure that will be created when placed on a turf, the default looks just like a sign backing item.

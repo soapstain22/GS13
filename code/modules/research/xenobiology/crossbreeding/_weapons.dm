@@ -56,7 +56,7 @@ Slimecrossing Weapons
 	icon_state = "adamshield"
 	inhand_icon_state = "adamshield"
 	w_class = WEIGHT_CLASS_HUGE
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 70)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 70, "stab" = 1, "slash" = 1, "crush" = 1)
 	slot_flags = ITEM_SLOT_BACK
 	block_chance = 75
 	force = 0

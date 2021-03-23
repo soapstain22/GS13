@@ -5,7 +5,7 @@
 	name = "ninja hood"
 	icon_state = "s-ninja"
 	inhand_icon_state = "s-ninja_mask"
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 30,"energy" = 15, "bomb" = 30, "bio" = 30, "rad" = 25, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 30,"energy" = 15, "bomb" = 30, "bio" = 30, "rad" = 25, "fire" = 100, "acid" = 100, "stab" = 1, "slash" = 1, "crush" = 1)
 	strip_delay = 12
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	blockTracking = 1//Roughly the only unique thing about this helmet.

@@ -28,7 +28,7 @@
 	color = "#9c9c9c"
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
 	value_per_unit = 0.0025
-	armor_modifiers = list("melee" = 3, "bullet" = 3, "laser" = 3, "energy" = 3, "bomb" = 2, "bio" = 0, "rad" =1, "fire" = 5, "acid" = 1.1, "slash" = 3, "stab" = 3, "crush" = 1)
+	armor_modifiers = list("melee" = 3, "bullet" = 3, "laser" = 3, "energy" = 3, "bomb" = 2, "bio" = 0, "rad" =1, "fire" = 5, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 3, "stab" = 3, "crush" = 1)
 	weight = 0.05
 	texture_layer_icon_state = "stone"
 /obj/item/stack/stone
@@ -126,11 +126,11 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/copper
 	value_per_unit = 0.0025
-	armor_modifiers = list("melee" = 0.64, "bullet" = 0.7, "laser" = 0.7, "energy" = 0.1, "bomb" = 1, "bio" = 0, "rad" =1, "fire" = 0.7, "acid" = 1.1, "slash" = 1, "stab" = 1, "crush" = 1)
+	armor_modifiers = list("melee" = 0.64, "bullet" = 0.7, "laser" = 0.7, "energy" = 0.1, "bomb" = 1, "bio" = 0, "rad" =1, "fire" = 0.7, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 1, "stab" = 1, "crush" = 1)
 	integrity_modifier = 0.75
 	toolspeed_modifier = 0.75
 	strength_modifier = 7
-	brittleness = 0
+	brittleness = 0.001
 	weight = 0.13
 /obj/item/stack/ore/malachite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
@@ -183,7 +183,7 @@
 	sheet_type = /obj/item/stack/sheet/lead
 	value_per_unit = 0.0025
 	integrity_modifier = 0.375
-	armor_modifiers = list("melee" = 1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 4, "fire" = 2, "acid" = 1.1, "slash" = 1.2, "stab" = 1, "crush" = 0.5)
+	armor_modifiers = list("melee" = 1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 4, "fire" = 2, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 1.2, "stab" = 1, "crush" = 0.5)
 	strength_modifier = 1.5
 	weight = 0.14
 	brittleness = 12
@@ -226,7 +226,7 @@
 	weight = 0.07
 	strength_modifier = 0.70
 	integrity_modifier = 0.375
-	armor_modifiers = list("melee" = 0.8, "bullet" = 0.6, "laser" = 0.9, "energy" = 0.5, "bomb" = 0.3, "bio" = 0, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "slash" = 1, "stab" = 1, "crush" = 0.7)
+	armor_modifiers = list("melee" = 0.8, "bullet" = 0.6, "laser" = 0.9, "energy" = 0.5, "bomb" = 0.3, "bio" = 0, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 1, "stab" = 1, "crush" = 0.7)
 	coldprotection = 0.9
 	coldvulnerable = 1.1
 	heatprotection = 0.9

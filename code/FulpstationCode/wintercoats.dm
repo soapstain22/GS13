@@ -10,7 +10,7 @@
 	inhand_icon_state = "wintercoat_hos"
 	lefthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_righthand.dmi'
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90) // Same as the HoS trench coat
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90, "stab" = 1, "slash" = 1, "crush" = 1) // Same as the HoS trench coat
 	cold_protection = CHEST|GROIN|LEGS|ARMS // Alright, so *technically* the coat doesn't actually cover the legs, but this has to be as good as the HoS trench coat otherwise it will never be used.
 	heat_protection = CHEST|GROIN|LEGS|ARMS // This may or may not kill the game.
 	strip_delay = 80 // Anti-ERP Technology
@@ -32,7 +32,7 @@
 	lefthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/analyzer, /obj/item/sensor_device, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/assembly/flash/handheld)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50) // Same as CMO's labcoat.
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1) // Same as CMO's labcoat.
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/head
 
 /obj/item/clothing/head/hooded/winterhood/medical/head
@@ -51,7 +51,7 @@
 	lefthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/assembly/flash/handheld)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 10, "bio" = 40, "rad" = 0, "fire" = 40, "acid" = 40) // -10 from normal labcoat, +10 to bomb from Sci winter coat.
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 10, "bio" = 40, "rad" = 0, "fire" = 40, "acid" = 40, "stab" = 1, "slash" = 1, "crush" = 1) // -10 from normal labcoat, +10 to bomb from Sci winter coat.
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/science/head
 
 /obj/item/clothing/head/hooded/winterhood/science/head
@@ -68,7 +68,7 @@
 	inhand_icon_state = "wintercoat_ce"
 	lefthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_righthand.dmi'
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 45) // 20 extra rad protection. Why not?
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 45, "stab" = 1, "slash" = 1, "crush" = 1) // 20 extra rad protection. Why not?
 	allowed = list(/obj/item/flashlight, /obj/item/assembly/flash/handheld, /obj/item/melee/classic_baton/telescopic, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/construction/rcd, /obj/item/pipe_dispenser, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering/head
 
@@ -87,7 +87,7 @@
 	inhand_icon_state = "wintercoat_hop"
 	lefthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/phoenix_nest/wintercoat_righthand.dmi'
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50) // Weaker armor vest. (-5% Melee, Bullet, Laser)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1) // Weaker armor vest. (-5% Melee, Bullet, Laser)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/captain/hop
 
 /obj/item/clothing/head/hooded/winterhood/captain/hop
@@ -119,7 +119,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/law
 
 /obj/item/clothing/head/hooded/winterhood/security/law
@@ -137,7 +137,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter)
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/service/bar
 
 /obj/item/clothing/head/hooded/winterhood/service/bar
@@ -155,7 +155,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/chem
 
 /obj/item/clothing/head/hooded/winterhood/medical/chem
@@ -173,7 +173,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/gen
 
 /obj/item/clothing/head/hooded/winterhood/medical/gen
@@ -191,7 +191,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/paper, /obj/item/soap, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/sec/pris
 
 /obj/item/clothing/head/hooded/winterhood/sec/pris
@@ -209,7 +209,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/med/para
 
 /obj/item/clothing/head/hooded/winterhood/med/para
@@ -246,7 +246,7 @@
 	lefthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_lefthand.dmi'
 	righthand_file = 'icons/fulpicons/Penguins_cove/Winter_Coat_Pile/wintercoat_righthand.dmi'
 	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
-	armor = list("melee" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "stab" = 1, "slash" = 1, "crush" = 1)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/service/chap
 
 /obj/item/clothing/head/hooded/winterhood/service/chap
