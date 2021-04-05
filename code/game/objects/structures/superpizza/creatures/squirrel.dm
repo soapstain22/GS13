@@ -7,8 +7,8 @@
 	icon_dead = "squirrel"
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	vision_range = 2
-	aggro_vision_range = 9
+	vision_range = 5
+	aggro_vision_range = 14
 	move_to_delay = 1
 	friendly_verb_continuous = "harmlessly rolls into"
 	friendly_verb_simple = "harmlessly roll into"
@@ -51,7 +51,7 @@
 			Aggro()
 			visible_message("<span class='danger'>The [name] tries to flee from [target.name]!</span>")
 			retreat_distance = 10
-			minimum_distance = 10
+			minimum_distance = 20
 
 /mob/living/simple_animal/hostile/squirrel/AttackingTarget()
 	if(istype(target, /obj/item/stack/ore))
@@ -83,7 +83,7 @@
 	. = ..()
 
 
-/mob/living/simple_animal/squirrel/process()
+/mob/living/simple_animal/hostile/squirrel/process()
 	if(prob(33))
 		var/list/nearby = oview(10, src)
 		if(nearby.len)

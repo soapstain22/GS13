@@ -260,7 +260,7 @@
 	var/mineralChance = 100
 
 /turf/closed/mineral/random/Sedimentary
-	maxDamage = 6
+	maxDamage = 5
 	smooth_icon = 'icons/turf/smoothsandstone.dmi'
 	mineralSpawnChanceList = list(
 	/obj/item/stack/ore/fake/stone 	= 200,
@@ -278,7 +278,7 @@
 	mineralChance = 60
 
 /turf/closed/mineral/random/IgneousExtrusive
-	maxDamage = 9
+	maxDamage = 10
 	smooth_icon = 'icons/turf/smoothandestite.dmi'
 	mineralSpawnChanceList = list(
 	/obj/item/stack/ore/tetrahedrite	= 75,
@@ -292,7 +292,8 @@
 	mineralChance = 100
 
 /turf/closed/mineral/random/Metamorphic
-	maxDamage = 10
+	turf_type = /turf/open/floor/plating/asteroid/granite
+	maxDamage = 15
 	smooth_icon = 'icons/turf/smoothmarble.dmi'
 	mineralSpawnChanceList = list(
 	/obj/item/stack/ore/marble = 120,
@@ -302,7 +303,7 @@
 	/obj/item/stack/ore/fake/trash = 1,
 	/turf/closed/mineral/gibtonite = 4, )
 	mineralChance = 50
-
+	turf_type = /turf/open/floor/plating/asteroid/granite
 /turf/closed/mineral/random/Igneousintrusive
 	smooth_icon = 'icons/turf/smoothgranite.dmi'
 	mineralSpawnChanceList = list(

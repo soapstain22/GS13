@@ -2,25 +2,26 @@
 "b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
 "c" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/plating/asteroid,/area/template_noop)
 "d" = (/obj/structure/ladder/unbreakable/jacob,/turf/open/floor/plating/asteroid,/area/template_noop)
+"e" = (/obj/effect/decal/remains/human,/turf/open/floor/plating/asteroid,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaa
-aaaaaabbbbbbbaaaaaa
-aaaaabbbbbbbbbbaaaa
-aaaabbbbbbbbbbbbaaa
+aaaaaaaaaaaaaaaaaaa
+aaaaabaaaaaaabbaaaa
+aaaabbbbabbaabbbaaa
 aaabbbbbbbbbbbbbaaa
 aaabbbbbbbbbbbbbaaa
 aabbbbbbbbbbbbbbbaa
-aabbcbbbbdbbbbbbbaa
-aabbbbbbbbbbbbbbbaa
-aabbbbbbbbbbbbbbaaa
-aabbbbbbbbbbbbbbaaa
-aaabbbbbbbbbbbbbaaa
-aaaabbbbbbbbbbbaaaa
-aaaabbbbbbbbbaaaaaa
-aaaaaaabbbbaaaaaaaa
+aaabcebbbdbbbbbbbaa
+aaabbbbbbbbbbbbbbaa
+aaabbbaaaabbbbbbaaa
+aaaabaaaaaabbbbbaaa
+aaaaaaaaaaaebbbbaaa
+aaaaaaaaaaaabbbaaaa
+aaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaa
 "}

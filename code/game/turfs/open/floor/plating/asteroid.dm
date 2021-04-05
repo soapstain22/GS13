@@ -18,7 +18,7 @@
 	/// Base turf type to be created by the tunnel
 	var/turf_type = /turf/open/floor/plating/asteroid
 	/// Probability floor has a different icon state
-	var/floor_variance = 20
+	var/floor_variance = 100
 	attachment_holes = FALSE
 	/// Itemstack to drop when dug by a shovel
 	var/obj/item/stack/digResult = /obj/item/stack/ore/glass/basalt
@@ -162,7 +162,15 @@
 	environment_type = "basalt"
 	floor_variance = 15
 	digResult = /obj/item/stack/ore/glass/basalt
-
+/turf/open/floor/plating/asteroid/granite
+	name = "volcanic floor"
+	baseturfs = /turf/open/floor/plating/asteroid/basalt
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "basalt"
+	icon_plating = "basalt"
+	environment_type = "basalt"
+	floor_variance = 15
+	digResult = /obj/item/stack/ore/glass/basalt
 /turf/open/floor/plating/asteroid/basalt/lava //lava underneath
 	baseturfs = /turf/open/lava/smooth
 

@@ -17,7 +17,9 @@
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
-
+/turf/open/floor/wood/Initialize()
+	. = ..()
+	icon_state = "wood[rand(0, 2)]"
 /turf/open/floor/gym
 	desc = "Maple flooring durable enough for lots of foot traffic."
 	icon_state = "gym"
