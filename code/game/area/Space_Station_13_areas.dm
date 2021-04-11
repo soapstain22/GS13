@@ -85,7 +85,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	luminosity = 5
 	outdoors = TRUE
 	flora_allowed = TRUE
-
+	exposed = TRUE
 /area/surface/outdoors/underground //monsters and ruins spawn here
 	icon_state = "explored"
 	tunnel_allowed = TRUE

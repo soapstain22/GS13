@@ -5,7 +5,7 @@
 	blocks_air = TRUE
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
 	rad_insulation = RAD_MEDIUM_INSULATION
-
+	var/hp = 10
 /turf/closed/AfterChange()
 	. = ..()
 	SSair.high_pressure_delta -= src

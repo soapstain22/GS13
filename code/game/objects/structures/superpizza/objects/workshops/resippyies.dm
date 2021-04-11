@@ -142,17 +142,24 @@
 	build_path = 	/obj/item/melee/baseball_bat
 	category = list("initial","crafts")
 /datum/design/barrel
-	name = "bat"
-	id = "bat "
+	name = "barrel"
+	id = "barrel"
 	build_type = CARPENTRY
 	materials = list(MAT_CATEGORY_WOOD = 1000)
 	build_path = 	/obj/structure/fermenting_barrel
 	category = list("initial","Furniture")
 
 /datum/design/chair
-	name = "bat"
-	id = "bat "
+	name = "chair"
+	id = "chair"
 	build_type = CARPENTRY
 	materials = list(MAT_CATEGORY_WOOD = 1000)
 	build_path = 	/obj/item/chair/wood
 	category = list("initial","Furniture")
+/datum/design/rifle
+	name = "rifle stock"
+	id = "rifle"
+	build_type = CARPENTRY
+	materials = list(MAT_CATEGORY_WOOD = 1000)
+	build_path = 	/obj/item/weaponcrafting/stock
+	category = list("Crafts")

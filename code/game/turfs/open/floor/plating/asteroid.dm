@@ -92,7 +92,7 @@
 	contents_explosion(severity, target)
 /turf/open/floor/plating/asteroid/garbango/
 	light_range = 2
-	var/spawntable  = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
+	var/spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
 		/obj/structure/flora/ausbushes/fullgrass = 100,
 		/obj/structure/flora/rock = 30,
 		/obj/structure/flora/ausbushes/ywflowers = 9,
@@ -106,7 +106,7 @@
 		/obj/item/paper/crumpled/ = 2,
 		/obj/structure/flora/ausbushes/brflowers = 6,
 		/obj/item/reagent_containers/glass/bottle/ = 4,
-		/obj/machinery/hydroponics/soil = 10,
+		/obj/machinery/hydroponics/soil = 70,
 		/obj/item/trash/can = 5,
 		/obj/structure/barrel/shit = 4,
 		/obj/item/cigbutt/roach = 2,
@@ -131,18 +131,22 @@
 		/obj/item/storage/pill_bottle/ = 2,
 		/obj/structure/flora/ash/flax = 20,
 		/obj/effect/spawner/lootdrop/minnyral = 70,
-		/obj/item/melee/stick = 100,
+		/obj/item/melee/stick = 50,
 		/obj/item/clothing/head/trucker = 1,
 		/obj/item/clothing/head/cone = 1,
 		/obj/item/storage/toolbox/emergency = 1,
 		/mob/living/simple_animal/hostile/squirrel = 5,
 		"" = 90 )
+/turf/open/floor/plating/asteroid/garbango/proc/updatelight()
+	var/rawtime = station_time()
+	var/time = sin(rawtime/30)
+	light_range = time
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
-	if(prob(60))
+	if(prob(80))
 		var/shit = pickweight(spawntable)
 		if(!shit)
 			return
-		for(var/obj/structure/flora/F in range(4, T)) //Allows for growing patches, but not ridiculous stacks of flora
+		for(var/obj/structure/flora/F in range(5, T)) //Allows for growing patches, but not ridiculous stacks of flora
 			if(!istype(F, shit))
 				return
 		new shit(T)

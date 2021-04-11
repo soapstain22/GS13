@@ -108,12 +108,14 @@
 		/obj/item/stack/ore/titanium = 0.2,
 		/obj/item/stack/ore/diamond = 0.1,
 		/obj/item/stack/ore/cinnabar = 10,
+		/obj/item/stack/ore/granite = 10,
+		/obj/item/stack/ore/marble = 10,
 		/obj/item/stack/niter = 50,
 		/obj/item/stack/ore/sulphur = 60,
-		/obj/item/stack/ore/aluminum = 100,
-		/obj/item/stack/ore/malachite = 200,
-		/obj/item/stack/salt = 100,
-		/obj/item/stack/clay = 400,
+		/obj/item/stack/ore/aluminum = 30,
+		/obj/item/stack/ore/malachite = 50,
+		/obj/item/stack/salt = 10,
+		/obj/item/stack/clay = 40,
 		)
 /obj/effect/spawner/lootdrop/minnyral
 	name = "mineralz"

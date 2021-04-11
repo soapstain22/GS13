@@ -24,23 +24,17 @@
 		hostedby = CONFIG_GET(string/hostedby)
 
 	var/server_caption = CONFIG_GET(string/servercaption)
-	s+= "<b>[server_caption]</b>" // SSETH FANS WELCOME! // "<b>The Problems of the Future, <i>Today!</i></b>"  // "<b>[station_name()]</b>";	// FULPSTATION: We don't display the name of the Station anymore
-	s += " ("
-	//s += "<a href=\"[CONFIG_GET(string/forumurl)]\">"//Change this to wherever you want the hub to link to.
-	//	s += "[game_version]"
-	//s += "Forums"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-	//s += "</a>"
-	//s += " | "
+	s += "<br><b>What Befell of Space Station 13</b>"
+	s += "<br>A hand-crafted, survival horror adventure spin-off, taking place during a return to the earth near a gas station left to fester."
+	s += "<br><b>You will not be led by the hand.</b>"
+
 	s += "<a href=\"[CONFIG_GET(string/discordurl)]\">"//Change this to wherever you want the hub to link to
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
-	s += ")<br>"
 
-	// Fulp Description
-	s += "<br>: <b><marquee>woah what is this</marquee></b>"
-	s += "<br>Cool: \[<b>Very</b>\]"
+
 	if(GLOB.master_mode)
-		s += "<br>Mode: \[<b>" + (GLOB.master_mode == "secret_extended" ? "secret" : GLOB.master_mode) + "</b>"//\]" // FULPSTATION: What's the point in making it secret if it's going to just say the actual mode (extended)?
+	//	s += "<br>Mode: \[<b>" + (GLOB.master_mode == "secret_extended" ? "secret" : GLOB.master_mode) + "</b>"//\]" // FULPSTATION: What's the point in making it secret if it's going to just say the actual mode (extended)?
 		// NOTE: If this is the LAST THING to be added to the description, then it'll end with a ] anyway. So don't include it here
 
 	var/players = GLOB.clients.len
@@ -58,7 +52,7 @@
 	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
 
 	if (!host && hostedby)
-		features += "hosted by <b>[hostedby]</b>"
+		features += "<b>You will not be led by the hand.</b>"
 
 	// FUPLP REMOVE: We don't list features!
 	//if (features)

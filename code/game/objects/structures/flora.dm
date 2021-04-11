@@ -138,7 +138,7 @@
 	icon = 'icons/obj/flora/jungletrees.dmi'
 	pixel_x = -48
 	pixel_y = -20
-
+	density = 1
 /obj/structure/flora/tree/jungle/small
 	pixel_y = 0
 	pixel_x = -32
@@ -433,7 +433,7 @@
 	/// Itemstack that is dropped when a rock is mined with a pickaxe
 	var/obj/item/stack/mineResult = /obj/effect/spawner/lootdrop/oreslmao
 	/// Amount of the itemstack to drop
-	var/mineAmount = 20
+	var/mineAmount = 60
 
 /obj/structure/flora/rock/Initialize()
 	. = ..()

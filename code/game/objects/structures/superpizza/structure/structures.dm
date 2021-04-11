@@ -14,24 +14,13 @@
 
 /obj/structure/filingcabinet/chestdrawer/random
 	..()
-	var/spawnbin  = list(
+	var/spawnbin = list(
 		/obj/item/paper/crumpled/ = 2,
 		/obj/item/pen = 5,
 		"" = 200 )
-/obj/structure/filingcabinet/chestdrawer/random/Initialize(mapload)
-	..()
-
-/obj/structure/filingcabinet/chestdrawer/random/proc/SpawnShit(turf/T)
-	if(prob(60))
-		var/shit = pickweight(spawnbin)
-		if(!shit)
-			return
-		new shit(T)
-		return TRUE
-
-
-
-
+/obj/structure/filingcabinet/chestdrawer/random/Initialize()
+	. = ..()
+	contents = pick(spawnbin)
 
 
 

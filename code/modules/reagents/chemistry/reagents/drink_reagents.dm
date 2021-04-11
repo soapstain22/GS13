@@ -827,6 +827,8 @@
 
 /datum/reagent/consumable/menthol/on_mob_life(mob/living/L)
 	L.apply_status_effect(/datum/status_effect/throat_soothed)
+	if(L.getFireLoss() && prob(5))
+		L.heal_bodypart_damage(1,0, 0)
 	..()
 
 /datum/reagent/consumable/grenadine

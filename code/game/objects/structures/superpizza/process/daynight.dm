@@ -71,7 +71,7 @@ var/list/dncTurfs = list()					//#050505 - íî÷ü
 	dncColor = DNClist[currentDncStage]
 	if(!dncTurfs.len)
 		for(var/area/A in GLOB.the_station_areas)
-			//var/area/awaymission/snowdin/E = A
+			var/area/surface/outdoors/unexplored/E = A
 			for(var/turf/T in A.contents)
 				dncTurfs.Add(T)
 	DncIterate(1)

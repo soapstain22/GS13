@@ -506,7 +506,7 @@
 	name = "marble"
 	novariants = TRUE
 	desc = "very common"
-	icon_state = ""
+	icon_state = "marble"
 	points = 0
 	mine_experience = 0
 	spreadChance = 4

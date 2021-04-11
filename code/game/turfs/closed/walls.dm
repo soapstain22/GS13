@@ -20,7 +20,6 @@
 	var/sheet_type = /obj/item/stack/sheet/metal
 	var/sheet_amount = 2
 	var/girder_type = /obj/structure/girder
-
 	canSmoothWith = list(
 	/turf/closed/wall,
 	/turf/closed/wall/r_wall,
@@ -189,13 +188,19 @@
 
 /turf/closed/wall/attackby(obj/item/W, mob/user, params)
 	user.changeNext_move(CLICK_CD_MELEE)
-	var/damn = W.force/2
+	var/damn = W.force/hardness
+	playsound(src, 'sound/weapons/genhit.ogg', 25, TRUE)
+	to_chat(user, "<span class='warning'>You swing at the wall</span>")
 	if (prob(damn))
 		add_dent(WALL_DENT_HIT)
+		playsound(src, 'sound/effects/meteorimpact.ogg', 100, TRUE)
+		hp -= 1
+		if (hp <= 0)
+			dismantle_wall(1)
 	if (!user.IsAdvancedToolUser())
 		to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return
-
+	return TRUE
 	//get the user's location
 	if(!isturf(user.loc))
 		return	//can't do this stuff whilst inside objects and such

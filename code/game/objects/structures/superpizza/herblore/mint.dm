@@ -8,7 +8,7 @@
 	lifespan = 55
 	endurance = 35
 	yield = 5
-	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
+	growing_icon = 'code/game/objects/structures/superpizza/herblore/herb.dmi'
 	icon_grow = "apple-grow"
 	icon_dead = "apple-dead"
 	genes = list(/datum/plant_gene/trait/repeated_harvest)

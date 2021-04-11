@@ -11,8 +11,6 @@ SUBSYSTEM_DEF(nightshift)
 	var/high_security_mode = FALSE
 
 /datum/controller/subsystem/nightshift/Initialize()
-	if(!CONFIG_GET(flag/enable_night_shifts))
-		can_fire = FALSE
 	return ..()
 
 /datum/controller/subsystem/nightshift/fire(resumed = FALSE)
@@ -28,6 +26,13 @@ SUBSYSTEM_DEF(nightshift)
 	var/announcing = TRUE
 	var/time = station_time()
 	var/night_time = (time < nightshift_end_time) || (time > nightshift_start_time)
+	var/rawtime = 1 + sin(time/864000)
+	log_world("[rawtime]")
+	for(var/area in GLOB.sortedAreas)
+		var/area/A = area
+		if(initial(A.exposed) == 1)
+			for(var/turf/S in A)
+				S.set_light(rawtime)
 	if(high_security_mode != emergency)
 		high_security_mode = emergency
 		if(night_time)
@@ -45,7 +50,7 @@ SUBSYSTEM_DEF(nightshift)
 	nightshift_active = active
 	if(announce)
 		if (active)
-			announce("Good evening, crew. To reduce power consumption and stimulate the circadian rhythms of some species, all of the lights aboard the station have been dimmed for the night.")
+			announce("Good evening, crew. You are Gay")
 		else
 			announce("Good morning, crew. As it is now day time, all of the lights aboard the station have been restored to their former brightness.")
 	for(var/A in GLOB.apcs_list)
@@ -53,3 +58,6 @@ SUBSYSTEM_DEF(nightshift)
 		if (APC.area && (APC.area.type in GLOB.the_station_areas))
 			APC.set_nightshift(active)
 			CHECK_TICK
+/turf/proc/gaysex()
+	light_power = 1 // Intensity of the light.
+	light_range = 0 // Range in tiles of the light.

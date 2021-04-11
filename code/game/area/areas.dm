@@ -73,7 +73,7 @@
 	var/unique = TRUE
 	/// If people are allowed to suicide in it. Mostly for OOC stuff like minigames
 	var/block_suicide = FALSE
-
+	var/exposed = FALSE
 	var/no_air = null
 
 	var/parallax_movedir = 0

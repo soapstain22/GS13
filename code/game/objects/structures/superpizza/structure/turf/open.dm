@@ -44,3 +44,6 @@
 	if(force)
 		..()
 	return //unplateable
+/turf/open/floor/material/basket
+	floor_tile = /obj/item/stack/tile/material/basket
+	icon_state = "floor2"

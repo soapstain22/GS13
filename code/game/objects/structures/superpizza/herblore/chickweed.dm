@@ -1,28 +1,26 @@
-/obj/item/seeds/apple
-	name = "pack of apple seeds"
-	desc = "These seeds grow into apple trees."
-	icon_state = "seed-apple"
-	species = "apple"
-	plantname = "Apple Tree"
-	product = /obj/item/reagent_containers/food/snacks/grown/apple
+/obj/item/seeds/chickweed
+	name = "pack of chickweed seeds"
+	desc = "These seeds grow into chickweed trees."
+	icon_state = "seed-chickweed"
+	species = "chickweed"
+	plantname = "chickweed"
+	product = /obj/item/reagent_containers/food/snacks/grown/chickweed
 	lifespan = 55
 	endurance = 35
 	yield = 5
-	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
-	icon_grow = "apple-grow"
-	icon_dead = "apple-dead"
+	growing_icon = 'code/game/objects/structures/superpizza/herblore/herb.dmi'
+	icon_grow = "chickweed-grow"
+	icon_dead = "chickweed-dead"
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/apple/gold)
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/datum/reagent/consumable/menthol = 0.01, /datum/reagent/consumable/nutriment = 0.01)
 
-/obj/item/reagent_containers/food/snacks/grown/apple
-	seed = /obj/item/seeds/apple
-	name = "apple"
+/obj/item/reagent_containers/food/snacks/grown/chickweed
+	seed = /obj/item/seeds/chickweed
+	name = "chickweed"
 	desc = "It's a little piece of Eden."
-	icon_state = "apple"
+	icon_state = "chickweed"
 	filling_color = "#FF4500"
-	bitesize = 100 // Always eat the apple in one bite
+	bitesize = 100 // Always eat the chickweed in one bite
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/applejuice = 0)
-	tastes = list("apple" = 1)
+	tastes = list("chickweed" = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/hcider

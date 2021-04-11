@@ -128,6 +128,9 @@ Simple datum which is instanced once per type and is used for every object of sa
 		O.barefootstep = turf_sound_override
 		O.clawfootstep = turf_sound_override
 		O.heavyfootstep = turf_sound_override
+	if(!isopenturf(T))
+		var/turf/closed/O = T
+		O.hp *= integrity_modifier
 	return
 
 ///This proc is called when the material is removed from an object.

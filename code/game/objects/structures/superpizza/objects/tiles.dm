@@ -10,3 +10,11 @@
 	icon_state = "stoneturf"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	turf_type = /turf/open/floor/rocks
+/obj/item/stack/tile/material/basket
+	name = "basket weave floor tile"
+	singular_name = "floor tile"
+	desc = "The ground you walk on."
+	throwforce = 3
+	icon_state = "material_tile"
+	turf_type = /turf/open/floor/material/basket
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
