@@ -6,7 +6,8 @@
 	canSmoothWith = list(/turf/closed/wall/material)
 	smooth = SMOOTH_TRUE
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
-/turf/closed/wall/material/break_wall()
+	girder_type = null
+turf/closed/wall/material/break_wall()
 	for(var/i in custom_materials)
 		var/datum/material/M = i
 		new M.sheet_type(src, FLOOR(custom_materials[M] / MINERAL_MATERIAL_AMOUNT, 1))

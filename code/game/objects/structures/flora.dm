@@ -20,7 +20,6 @@
 		new /obj/item/grown/log/tree(get_turf(src))
 	var/obj/structure/flora/stump/S = new(loc)
 	S.name = "[name] stump"
-	qdel(src)
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
 	. = ..()
 	update_icon_state()

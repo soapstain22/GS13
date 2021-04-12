@@ -248,7 +248,7 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
 /turf/open/floor/plating/road/airless/cave/proc/get_cave_data(set_length, exclude_dir = -1)
 	// If set_length (arg1) isn't defined, get a random length; otherwise assign our length to the length arg.
 	if(!set_length)
-		length = rand(70, 200)
+		length = rand(70, 90)
 	else
 		length = set_length
 
@@ -276,10 +276,10 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
   *
   */
 /turf/open/floor/plating/road/airless/cave/proc/make_tunnel(dir)
-	var/turf/open/floor/plating/asteroid/tunnel = src
-	var/next_angle = pick(12, -12)
+	var/turf/open/floor/plating/asteroid/garbango/tunnel = src
+	var/next_angle = pick(45, -45)
 
-	var/tunnel_width = 3
+	var/tunnel_width = 1
 	if(pick_tunnel_width)
 		tunnel_width = text2num(pickweight(pick_tunnel_width))
 
@@ -287,13 +287,13 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
 		if(!sanity)
 			break
 
-		var/list/L = list(12)
+		var/list/L = list(45)
 		if(ISODD(dir2angle(dir))) // We're going at an angle and we want thick angled tunnels.
-			L += -12
+			L += -45
 
 		// Expand the edges of our tunnel
 		for(var/edge_angle in L)
-			var/turf/open/floor/plating/asteroid/edge = tunnel
+			var/turf/open/floor/plating/asteroid/garbango/edge = tunnel
 			for(var/current_tunnel_width = 1 to tunnel_width)
 				if(!sanity)
 					break

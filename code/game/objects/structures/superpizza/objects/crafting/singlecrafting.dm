@@ -38,3 +38,29 @@ GLOBAL_LIST_INIT(stone_recipe, list (
 	new/datum/stack_recipe("hearth flooring", /obj/item/stack/tile/hearth, 8, time = 20, one_per_turf = 0),
 	new/datum/stack_recipe("rock floor", /obj/item/stack/tile/rocks, 4, time = 20, one_per_turf = 0)
 	))
+
+
+
+
+
+
+GLOBAL_LIST_INIT(rigid_stack_recipes, list(
+	new /datum/stack_recipe("Wall",			/obj/structure/girder, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
+	new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
+	new /datum/stack_recipe("stairs",		/obj/structure/stairs, 10, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = FALSE),
+	))
+GLOBAL_LIST_INIT(fabric_stack_recipes, list(
+	new /datum/stack_recipe("hood", 		/obj/item/clothing/head/hood/greyscale, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("top hat",		/obj/item/clothing/head/helmet/knight/greyscale, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("hat",			/obj/item/clothing/head/that/greyscale, 13, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("smock", 		/obj/item/clothing/under/smock/greyscale, 22, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("clothing", 	/obj/item/clothing/under/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("jumpsuit",		/obj/item/clothing/under/color/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("sack",			/obj/item/storage/backpack/sack/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+
+	))
+GLOBAL_LIST_INIT(mason_stack_recipes, list(
+	new /datum/stack_recipe("carving block", 	/obj/structure/carving_block, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+	new /datum/stack_recipe("Wall",			/obj/structure/girder, 4, 1, 20,  one_per_turf = 1, on_floor = 1, applies_mats = TRUE),
+	new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
+	))

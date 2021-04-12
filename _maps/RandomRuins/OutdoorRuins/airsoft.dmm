@@ -6,7 +6,7 @@
 "f" = (/turf/closed/wall,/area/template_noop)
 "g" = (/obj/item/clothing/suit/armor/reactive/table,/turf/closed/wall,/area/template_noop)
 "h" = (/turf/open/floor/plating,/area/template_noop)
-"i" = (/obj/structure/window/panel/fulltile,/turf/open/floor/plating,/area/template_noop)
+"i" = (/obj/structure/window/reinforced/tinted/fulltile,/turf/open/floor/plating,/area/template_noop)
 "j" = (/obj/item/clothing/suit/armor/reactive/table,/turf/open/floor/plating,/area/template_noop)
 "k" = (/obj/structure/chair,/turf/open/floor/plating,/area/template_noop)
 "l" = (/obj/structure/table/wood,/turf/open/floor/plating,/area/template_noop)

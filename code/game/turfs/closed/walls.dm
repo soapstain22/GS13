@@ -191,7 +191,7 @@
 	var/damn = W.force/hardness
 	playsound(src, 'sound/weapons/genhit.ogg', 25, TRUE)
 	to_chat(user, "<span class='warning'>You swing at the wall</span>")
-	if (prob(damn))
+	if (prob(damn*20))
 		add_dent(WALL_DENT_HIT)
 		playsound(src, 'sound/effects/meteorimpact.ogg', 100, TRUE)
 		hp -= 1

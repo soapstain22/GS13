@@ -470,7 +470,8 @@ GLOBAL_LIST_INIT(abductor_recipes, list ( \
 		return ..()
 
 /obj/item/stack/sheet/mineral/coal/fire_act(exposed_temperature, exposed_volume)
-	atmos_spawn_air("hydrogen=3;TEMP=[exposed_temperature+40]")
+	. = ..()
+	atmos_spawn_air("hydrogen=3;TEMP=[exposed_temperature]")
 	use(1)
 
 /obj/item/stack/sheet/mineral/coal/five

@@ -17,26 +17,7 @@ SUBSYSTEM_DEF(materials)
 	///A cache of all material combinations that have been used
 	var/list/list/material_combos
 	///List of stackcrafting recipes for materials using rigid materials
-	var/list/rigid_stack_recipes = list(
-		new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
-		new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
-		new /datum/stack_recipe("stairs",		/obj/structure/stairs, 10, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = FALSE),
-	)
-	var/list/fabric_stack_recipes = list(
-		new /datum/stack_recipe("hood", 		/obj/item/clothing/head/hood/greyscale, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("top hat",		/obj/item/clothing/head/helmet/knight/greyscale, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("hat",			/obj/item/clothing/head/that/greyscale, 13, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("smock", 		/obj/item/clothing/under/smock/greyscale, 22, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("clothing", 	/obj/item/clothing/under/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("jumpsuit",		/obj/item/clothing/under/color/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("sack",			/obj/item/storage/backpack/sack/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 
-	)
-	var/list/mason_stack_recipes = list(
-		new /datum/stack_recipe("carving block", 	/obj/structure/carving_block, 15, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
-		new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
-		new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
-	)
 ///Ran on initialize, populated the materials and materials_by_category dictionaries with their appropiate vars (See these variables for more info)
 /datum/controller/subsystem/materials/proc/InitializeMaterials()
 	materials = list()

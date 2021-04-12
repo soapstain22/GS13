@@ -92,8 +92,8 @@
 	contents_explosion(severity, target)
 /turf/open/floor/plating/asteroid/garbango/
 	light_range = 2
-	var/spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 60,
-		/obj/structure/flora/ausbushes/fullgrass = 100,
+	var/spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 40,
+		/obj/structure/flora/ausbushes/fullgrass = 40,
 		/obj/structure/flora/rock = 30,
 		/obj/structure/flora/ausbushes/ywflowers = 9,
 		/obj/structure/flora/ausbushes/genericbush = 9,
@@ -111,7 +111,7 @@
 		/obj/structure/barrel/shit = 4,
 		/obj/item/cigbutt/roach = 2,
 		/obj/structure/flora/ausbushes/reedbush = 8,
-		/obj/structure/flora/tree/jungle = 90,
+		/obj/structure/flora/tree/jungle = 50,
 		/obj/structure/flora/ausbushes/fernybush = 5,
 		/obj/structure/flora/ausbushes/stalkybush = 5,
 		/obj/structure/flora/ausbushes/grassybush = 5,
@@ -125,7 +125,7 @@
 		/obj/structure/closet/cardboard/ = 1,
 		/obj/item/stack/component = 20,
 		/obj/structure/sink/puddle = 10,
-		/obj/structure/flora/ash/cacti = 20,
+		/obj/structure/flora/ash/cacti = 5,
 		/obj/item/analyzer = 1,
 		/obj/item/storage/bag/trash = 2,
 		/obj/item/storage/pill_bottle/ = 2,
@@ -133,22 +133,19 @@
 		/obj/effect/spawner/lootdrop/minnyral = 70,
 		/obj/item/melee/stick = 50,
 		/obj/item/clothing/head/trucker = 1,
-		/obj/item/clothing/head/cone = 1,
+		/obj/item/clothing/head/cone = 7,
 		/obj/item/storage/toolbox/emergency = 1,
 		/mob/living/simple_animal/hostile/squirrel = 5,
-		"" = 90 )
+		"" = 5 )
 /turf/open/floor/plating/asteroid/garbango/proc/updatelight()
 	var/rawtime = station_time()
 	var/time = sin(rawtime/30)
 	light_range = time
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
-	if(prob(80))
+	if(prob(50))
 		var/shit = pickweight(spawntable)
 		if(!shit)
 			return
-		for(var/obj/structure/flora/F in range(5, T)) //Allows for growing patches, but not ridiculous stacks of flora
-			if(!istype(F, shit))
-				return
 		new shit(T)
 		return TRUE
 /turf/open/floor/plating/asteroid/garbango/Initialize(mapload)

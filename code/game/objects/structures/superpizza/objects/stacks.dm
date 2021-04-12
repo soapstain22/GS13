@@ -140,7 +140,6 @@
 	novariants = FALSE
 	grind_results = list(/datum/reagent/copper = 10)
 	points = 1
-	custom_materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/copper
 	mine_experience = 1
 	scan_state = "copper"
@@ -155,7 +154,6 @@
 	icon_state = "tetrahedrite"
 	grind_results = list(/datum/reagent/copper = 10, /datum/reagent/silver = 2)
 	points = 3
-	custom_materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT,)
 	refined_type = /obj/item/stack/sheet/copper
 	mine_experience = 1
 	scan_state = "tetrahedrite"
@@ -198,7 +196,6 @@
 	desc = "its got lead"
 	icon_state = "galena"
 	points = 1
-	custom_materials = list(/datum/material/lead=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/lead
 	mine_experience = 1
 	scan_state = "lead"
@@ -241,7 +238,6 @@
 	desc = "its got tin"
 	icon_state = "cassiterite"
 	points = 1
-	custom_materials = list(/datum/material/tin=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/tin
 	mine_experience = 1
 	scan_state = "tin"
@@ -284,7 +280,6 @@
 	desc = "its got zinc"
 	icon_state = "sphalerite"
 	points = 1
-	custom_materials = list(/datum/material/zinc=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/zinc
 	mine_experience = 1
 	scan_state = "zinc"
@@ -366,7 +361,6 @@
 	desc = "its got nickel"
 	icon_state = "garnierite"
 	points = 1
-	custom_materials = list(/datum/material/nickel=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/nickel
 	mine_experience = 10
 	scan_state = "nickel"
@@ -407,7 +401,6 @@
 	novariants = FALSE
 	grind_results = list(/datum/reagent/iron = 10)
 	points = 1
-	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/metal
 	mine_experience = 1
 	scan_state = "hematite"
@@ -424,7 +417,6 @@
 	novariants = FALSE
 	grind_results = list(/datum/reagent/iron = 10)
 	points = 1
-	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/metal
 	mine_experience = 1
 	scan_state = "magnetite"
@@ -441,7 +433,6 @@
 	novariants = FALSE
 	grind_results = list(/datum/reagent/iron = 10)
 	points = 1
-	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/metal
 	mine_experience = 1
 	scan_state = "limonite"
@@ -491,7 +482,6 @@
 	meltingpoint = 327.46
 	boilingpoint = 1749
 	dens = 54.7
-	custom_materials = list(/datum/material/granite=MINERAL_MATERIAL_AMOUNT)
 	material_type = /datum/material/granite
 /datum/material/marble
 	name = "marble"
@@ -609,4 +599,15 @@
 	merge_type = /obj/item/stack/fabric/silk
 	material_type = /datum/material/silk
 	custom_materials = list(/datum/material/silk=MINERAL_MATERIAL_AMOUNT)
-
+/datum/material/leather
+	name = "linen"
+	desc = "linen"
+	color = "#faf0e6"
+	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC = TRUE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/leather
+	value_per_unit = 0.003
+	weight = 0.0
+	coldprotection = 1.1
+	coldvulnerable = 1
+	heatprotection = 1.2
+	heatvulnerable = 0.9

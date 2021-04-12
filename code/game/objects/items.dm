@@ -852,7 +852,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
 		H.adjust_nutrition(-0.3)
-		H.mind.adjust_experience(/datum/skill/engineering, 1)
+		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
@@ -860,7 +860,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		H.adjust_nutrition(-0.3)
-		H.mind.adjust_experience(/datum/skill/engineering, 1)
+		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
@@ -868,7 +868,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
 		H.adjust_nutrition(-0.3)
-		H.mind.adjust_experience(/datum/skill/engineering, 1)
+		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity
@@ -879,7 +879,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
 		H.adjust_nutrition(-0.3)
-		H.mind.adjust_experience(/datum/skill/engineering, 1)
+		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 		for(prob(brittleness/obj_integrity))
 			obj_integrity - max_integrity

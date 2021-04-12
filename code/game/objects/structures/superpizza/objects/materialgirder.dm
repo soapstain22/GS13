@@ -1,6 +1,5 @@
 /obj/structure/girder/greyscale
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
-	var/buildstacktype
 /obj/structure/girder/greyscale/attackby(obj/item/W, mob/user, params)
 	var/platingmodifier = 1
 	if(HAS_TRAIT(user, TRAIT_QUICK_BUILD))

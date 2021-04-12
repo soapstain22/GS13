@@ -11,7 +11,8 @@
 	max_integrity = 200
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
 	rad_insulation = RAD_VERY_LIGHT_INSULATION
-
+	var/sheet_type = /obj/item/stack/sheet/metal
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
 /obj/structure/girder/examine(mob/user)
 	. = ..()
 	switch(state)
@@ -40,8 +41,7 @@
 		to_chat(user, "<span class='notice'>You start slicing apart the girder...</span>")
 		if(W.use_tool(src, user, 40, volume=100))
 			to_chat(user, "<span class='notice'>You slice apart the girder.</span>")
-			var/obj/item/stack/sheet/metal/M = new (loc, 2)
-			M.add_fingerprint(user)
+			new sheet_type (loc, 2)
 			qdel(src)
 
 	else if(istype(W, /obj/item/stack))
@@ -234,8 +234,7 @@
 				return
 			state = GIRDER_DISASSEMBLED
 			to_chat(user, "<span class='notice'>You disassemble the girder.</span>")
-			var/obj/item/stack/sheet/metal/M = new (loc, 2)
-			M.add_fingerprint(user)
+			new sheet_type (loc, 2)
 			qdel(src)
 		return TRUE
 
@@ -287,8 +286,7 @@
 		to_chat(user, "<span class='notice'>You start unsecuring the girder...</span>")
 		if(tool.use_tool(src, user, 40, volume=100))
 			to_chat(user, "<span class='notice'>You unsecure the girder.</span>")
-			var/obj/structure/girder/displaced/D = new (loc)
-			transfer_fingerprints_to(D)
+			new sheet_type (loc)
 			qdel(src)
 		return TRUE
 

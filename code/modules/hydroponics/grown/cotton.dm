@@ -125,6 +125,7 @@
 	merge_type = /obj/item/stack/sheet/cotton/flax
 	pull_effort = 30
 	loom_result = /obj/item/stack/fabric/linen
+	custom_materials = list(/datum/material/linen=MINERAL_MATERIAL_AMOUNT/4)
 /obj/item/stack/sheet/cotton/silk
 	name = "webs"
 	desc = "webby gooby silk yucky"
