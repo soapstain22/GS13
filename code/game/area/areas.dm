@@ -561,8 +561,12 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	// Ambience goes down here -- make sure to list each area separately for ease of adding things in later, thanks! Note: areas adjacent to each other should have the same sounds to prevent cutoff when possible.- LastyScratch
 	if(L.client && !L.client.ambience_playing && L.client.prefs.toggles & SOUND_SHIP_AMBIENCE)
 		L.client.ambience_playing = 1
-		SEND_SOUND(L, sound('sound/ambience/shipambience.ogg', repeat = 1, wait = 0, volume = 35, channel = CHANNEL_BUZZ))
-
+		if(270000<=station_time()<=702000) //grempwon:)
+			SEND_SOUND(L, sound('sound/ambience/afternoon.ogg', repeat = 1, wait = 0, volume = 35, channel = CHANNEL_BUZZ))
+		if(270000<=station_time()>=702000)
+			SEND_SOUND(L, sound('sound/ambience/night.ogg', repeat = 1, wait = 0, volume = 35, channel = CHANNEL_BUZZ))
+		if(270000>=station_time()<=702000)
+			SEND_SOUND(L, sound('sound/ambience/morning.ogg', repeat = 1, wait = 0, volume = 35, channel = CHANNEL_BUZZ))
 	if(!(L.client && (L.client.prefs.toggles & SOUND_AMBIENCE)))
 		return //General ambience check is below the ship ambience so one can play without the other
 

@@ -41,7 +41,8 @@
 			icon_plating = "[environment_type]_dug"
 			icon_state = "[environment_type]_dug"
 	dug = TRUE
-
+	if(below())
+		ChangeTurf(/turf/open/transparent/openspace)
 /// If the user can dig the turf
 /turf/open/floor/plating/asteroid/proc/can_dig(mob/user)
 	if(!dug)
@@ -93,7 +94,7 @@
 /turf/open/floor/plating/asteroid/garbango/
 	light_range = 2
 	var/spawntable = list(/obj/structure/flora/ausbushes/sparsegrass = 40,
-		/obj/structure/flora/ausbushes/fullgrass = 40,
+		/obj/structure/flora/ausbushes/fullgrass = 60,
 		/obj/structure/flora/rock = 30,
 		/obj/structure/flora/ausbushes/ywflowers = 9,
 		/obj/structure/flora/ausbushes/genericbush = 9,
@@ -112,6 +113,7 @@
 		/obj/item/cigbutt/roach = 2,
 		/obj/structure/flora/ausbushes/reedbush = 8,
 		/obj/structure/flora/tree/jungle = 50,
+		/obj/structure/flora/ash/aloe = 10,
 		/obj/structure/flora/ausbushes/fernybush = 5,
 		/obj/structure/flora/ausbushes/stalkybush = 5,
 		/obj/structure/flora/ausbushes/grassybush = 5,
@@ -130,8 +132,9 @@
 		/obj/item/storage/bag/trash = 2,
 		/obj/item/storage/pill_bottle/ = 2,
 		/obj/structure/flora/ash/flax = 20,
-		/obj/effect/spawner/lootdrop/minnyral = 70,
+		/obj/effect/spawner/lootdrop/minnyral = 30,
 		/obj/item/melee/stick = 50,
+		/obj/item/stack/stone = 20,
 		/obj/item/clothing/head/trucker = 1,
 		/obj/item/clothing/head/cone = 7,
 		/obj/item/storage/toolbox/emergency = 1,
@@ -139,15 +142,17 @@
 		"" = 5 )
 /turf/open/floor/plating/asteroid/garbango/proc/updatelight()
 	var/rawtime = station_time()
-	var/time = sin(rawtime/30)
+	var/time = 2*sin(rawtime/60)
 	light_range = time
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
 	if(prob(50))
 		var/shit = pickweight(spawntable)
 		if(!shit)
 			return
+		for(var/obj/structure/flora/F in range(4, T)) //Allows for growing patches, but not ridiculous stacks of flora
+			if(!istype(F, shit))
+				return
 		new shit(T)
-		return TRUE
 /turf/open/floor/plating/asteroid/garbango/Initialize(mapload)
 	. = ..()
 	SpawnShit(src)

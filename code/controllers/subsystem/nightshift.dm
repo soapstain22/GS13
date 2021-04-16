@@ -1,6 +1,6 @@
 SUBSYSTEM_DEF(nightshift)
 	name = "Night Shift"
-	wait = 150
+	wait = 100
 	flags = SS_NO_TICK_CHECK
 
 	var/nightshift_active = FALSE
@@ -26,7 +26,7 @@ SUBSYSTEM_DEF(nightshift)
 	var/announcing = TRUE
 	var/time = station_time()
 	var/night_time = (time < nightshift_end_time) || (time > nightshift_start_time)
-	var/rawtime = 1.3*sin(time^2/360)
+	var/rawtime = -1+2*sin(0.00000432*time)
 	log_world("[rawtime]")
 	for(var/area in GLOB.sortedAreas)
 		var/area/A = area

@@ -18,6 +18,20 @@
 	/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
 	/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
 	/obj/item/reagent_containers/food/snacks/grown/wheat, /obj/item/reagent_containers/food/snacks/grown/grass))
+/obj/item/melee/stick/attackby(obj/item/W, mob/user, params)
+	if(W.get_temperature() > 300)//If the temperature of the object is over 300, then ignite
+		var/turf/T = get_turf(src)
+		message_admins("Coal ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(T)]")
+		log_game("Coal ignited by [key_name(user)] in [AREACOORD(T)]")
+		fire_act(W.get_temperature())
+		return TRUE
+	else
+		return ..()
+
+/obj/item/melee/stick/fire_act(exposed_temperature, exposed_volume)
+	. = ..()
+	atmos_spawn_air("hydrogen=1;TEMP=[exposed_temperature]")
+	use(1)
 /obj/item/handfile
 	name = "file"
 	desc = "you can use it."

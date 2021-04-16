@@ -22,6 +22,7 @@
 	var/maxDamage = 10
 	var/damage = null
 	var/mutable_appearance/crack_overlay
+	var/can_dig_here = 1
 /turf/closed/mineral/Initialize()
 	if (!canSmoothWith)
 		canSmoothWith = list(/turf/closed/mineral, /turf/closed/indestructible)

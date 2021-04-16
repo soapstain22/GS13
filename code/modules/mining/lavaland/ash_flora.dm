@@ -25,7 +25,7 @@
 
 /obj/structure/flora/ash/Initialize()
 	. = ..()
-	base_icon = "[icon_state][rand(1, 4)]"
+	base_icon = "[icon_state]"
 	icon_state = base_icon
 
 /obj/structure/flora/ash/proc/harvest(user)

@@ -1,6 +1,6 @@
 /obj/item/seeds/chickweed
 	name = "pack of chickweed seeds"
-	desc = "These seeds grow into chickweed trees."
+	desc = "These seeds grow into chickweed."
 	icon_state = "seed-chickweed"
 	species = "chickweed"
 	plantname = "chickweed"
@@ -17,7 +17,7 @@
 /obj/item/reagent_containers/food/snacks/grown/chickweed
 	seed = /obj/item/seeds/chickweed
 	name = "chickweed"
-	desc = "It's a little piece of Eden."
+	desc = "It's a little piece of shit."
 	icon_state = "chickweed"
 	filling_color = "#FF4500"
 	bitesize = 100 // Always eat the chickweed in one bite

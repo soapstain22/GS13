@@ -16,8 +16,10 @@
 /obj/structure/flora/tree/Destroy()
 	. = ..()
 	playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE)
-	for(var/i=1 to log_amount)
-		new /obj/item/grown/log/tree(get_turf(src))
+	new /obj/item/grown/log(get_turf(src))
+	new /obj/item/grown/log(get_turf(src))
+	new /obj/item/grown/log(get_turf(src))
+	new /obj/item/grown/log(get_turf(src))
 	var/obj/structure/flora/stump/S = new(loc)
 	S.name = "[name] stump"
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
@@ -199,6 +201,7 @@
 //newbushes
 
 /obj/structure/flora/bush/Destroy()
+	. = ..()
 	new /obj/item/grown/cotton(get_turf(src))
 /obj/structure/flora/ausbushes
 	name = "bush"
@@ -226,6 +229,7 @@
 			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
 
 /obj/structure/flora/ausbushes/reedbush/Destroy()
+	. = ..()
 	new /obj/item/grown/log/bamboo(get_turf(src))
 /obj/structure/flora/ausbushes/leafybush
 	icon_state = "leafybush_1"
@@ -257,8 +261,8 @@
 		if(BURN)
 			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
 /obj/structure/flora/ausbushes/grassybush/Destroy()
-	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
 	. = ..()
+	new /obj/item/reagent_containers/food/snacks/grown/grass(get_turf(src))
 /obj/structure/flora/ausbushes/grassybush/Initialize()
 	icon_state = "grassybush_[rand(1, 4)]"
 	. = ..()

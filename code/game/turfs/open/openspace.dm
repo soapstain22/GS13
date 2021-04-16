@@ -22,7 +22,8 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 	//mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	var/can_cover_up = TRUE
 	var/can_build_on = TRUE
-
+	var/can_dig_here = FALSE
+	var/retard = null
 /turf/open/transparent/openspace/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
@@ -36,7 +37,7 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 
 /turf/open/transparent/openspace/Initialize() // handle plane and layer here so that they don't cover other obs/turfs in Dream Maker
 	. = ..()
-
+	retard = below()
 	vis_contents += GLOB.openspace_backdrop_one_for_all //Special grey square for projecting backdrop darkness filter on it.
 
 /turf/open/transparent/openspace/can_have_cabling()
@@ -83,6 +84,9 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 
 /turf/open/transparent/openspace/proc/CanBuildHere()
 	return can_build_on
+/turf/open/transparent/openspace/proc/CanDigHere()
+	return can_dig_here
+
 
 /turf/open/transparent/openspace/attackby(obj/item/C, mob/user, params)
 	..()
@@ -126,7 +130,16 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 				to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 		else
 			to_chat(user, "<span class='warning'>The plating is going to need some support! Place metal rods first.</span>")
-
+	if(C.tool_behaviour == TOOL_MINING)
+		var/turf/T = below()
+		if(T.flags_1 & NO_RUINS_1)
+			ChangeTurf(/turf/open/floor/plating, null, CHANGETURF_IGNORE_AIR)
+			return
+		if(!ismineralturf(T))
+			return
+		var/turf/closed/mineral/M = T
+		M.mineralAmt = 0
+		M.gets_drilled()
 /turf/open/transparent/openspace/rcd_vals(mob/user, obj/item/construction/rcd/the_rcd)
 	if(!CanBuildHere())
 		return FALSE

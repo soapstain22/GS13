@@ -3,53 +3,42 @@
 "c" = (/obj/structure/flora/rock,/turf/open/floor/plating/asteroid,/area/template_noop)
 "d" = (/obj/structure/flora/rock,/turf/template_noop,/area/template_noop)
 "e" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
-"f" = (/turf/closed/wall,/area/template_noop)
-"g" = (/obj/item/clothing/suit/armor/reactive/table,/turf/closed/wall,/area/template_noop)
-"h" = (/turf/open/floor/plating,/area/template_noop)
-"i" = (/obj/structure/window/reinforced/tinted/fulltile,/turf/open/floor/plating,/area/template_noop)
-"j" = (/obj/item/clothing/suit/armor/reactive/table,/turf/open/floor/plating,/area/template_noop)
-"k" = (/obj/structure/chair,/turf/open/floor/plating,/area/template_noop)
-"l" = (/obj/structure/table/wood,/turf/open/floor/plating,/area/template_noop)
-"m" = (/obj/structure/barricade/wooden,/turf/open/floor/plating,/area/template_noop)
-"n" = (/obj/structure/table,/obj/item/gun/ballistic/rifle/bb,/obj/item/gun/ballistic/bb,/obj/item/gun/ballistic/bb,/obj/item/gun/ballistic/bb,/obj/item/gun/ballistic/bb,/turf/open/floor/plating,/area/template_noop)
-"o" = (/obj/structure/table,/turf/open/floor/plating,/area/template_noop)
-"p" = (/obj/structure/table,/obj/item/gun/ballistic/bb/tommy,/obj/item/gun/ballistic/bb/tommy,/obj/item/gun/ballistic/bb/tommy,/turf/open/floor/plating,/area/template_noop)
-"q" = (/obj/structure/table,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/obj/item/ammo_box/magazine/bb,/turf/open/floor/plating,/area/template_noop)
+"f" = (/turf/open/transparent/openspace,/area/template_noop)
 "r" = (/turf/open/space/basic,/area/space)
 
 (1,1,1) = {"
-ffffffffffffffffffffffffffffffffgfffffffbbbb
-fhhhhhhhhhhhhhhihhhhihhhhhhhhhhhjhhihhhfbbbb
-fhhhhhhihhihhhhihhhhihiiiiiihhhijhhihhhfbbbb
-fhhhhhhihhihhhhihhhhihkhhhhhhhhihhhhhhhfbbbb
-fhhhhhhihhihhhhihhhhhhhhhhhhhhhihhhihhhfbbbb
-fhhhiiiihhiiiiiihhhhiiiiihhiiiiihhhiihifbbbb
-flhhihhhhhhhhhihhhhhhhhhhhhhhhhhhhhihhhfbbbb
-fhhhihhhhhhhhhihhhhhhhhhhhhhhhhhhhhihhhfbbbb
-fhhhhhhihhhhhhihhhhhhhhhhhhhhhhhhhhlhhhfbbbb
-fhhhhhhihhhhhhlhhhhhhhhhhhhhhhhhhhhihhhfbbbb
-fhhhhhhmhhhhhhlhhhhhhhhhhhhhhhhhhhhihhhfbbbb
-fhhhhhhmhhhhhhlhhhhhhhhhhhhhhhhhhhhihhhfbbbb
-fhhhhhhihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfbbbb
-fhhhihhihhhhhhhhhhhhhhhhhhhihhiiiiiiiiifbbbb
-fhhhihhhhhhhhhhhhhhhhhhhhhhihhhhhhhhhhhfbbbb
-fhhhihhhhhhiiiiiiihiiiiimihihhhhhhhhhhhfbbbb
-fhhhihhhhhhhhhhhihhhhhhihhhihhhhhhhhhhhfbbbb
-fhllihhhhhhihhhhihhhhhhhhhhihhhhhhhhhhhfbbbb
-fhhhhhhhhhhihhhhihhhhhhihhhihhhhhhhhhhhfbbbb
-fhhhihhhhhhihhhhhhhhhhhihhhihhnohhhophhfbbbb
-fhhhihhhhhhihiiiiiiihiiihhhihhhhhhhhhhhfbbbb
-fhhhhhhhhhhihhhhhhhhhhhlhhhihhhhhhhhhhhfbbbb
-fhhhihhhhhhlhhhhhhhhhhhihhhihhhhhhhhhhhfbbbb
-fhhhillhhllihhhhhhhhhhhihhhihhqqhhhoohhfbbbb
-fhhhhhhhhhhihhhhhhhhhhhihhhihhhhhhhhhhhfbbbb
-fhhhhhhhhhhiiihiiiiiiiiihhhihhhhhhhhhhhfbbbb
-fhhhhhhhhhhhhhhhhhhhhhhhhhhihhhhhhhhhhhfbbbb
-ffffffffffffffffffffffffffffffffffhfffffbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbfbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbfbbbbbbbbbbbbbfbbbbbbbb
+bbbbbbbbbbffbbbbbbbffffffbbbbbffbfffbbbbbbbb
+bbbbbfbfffffffbbbbbbffffffffffffffffbbbbbbbb
+bbbbbffffffffbbbbbbbbbbffffffffffffffbbbbbbb
+bbbbbffffffbbbbbbbbbbbbbbbffffffffffffbbbbbb
+bbbbbfffffbbbbbbbbbbbbbbbbbfffffffffffbbbbbb
+bbbbbfffffbbbbbbbbbbbbbbbffffffffffbfffbbbbb
+bbbbfffffbbbbbbbbbffffffffffffffbbbbbffbbbbb
+bbbbfffffbbbbbbfffffffffffffffbbbbbbbfffbbbb
+bbbffffffbffffffffffffffffffbbbbbbbbbfffbbbb
+bfffffffffffffffffffffffffbbbbbbbbbbbbbffbbb
+bfffffffffffffffffffffffffbbbbbbbbbbbbbbfbbb
+bbbfffffffffffffffffffffbfbbbbbbbbbbbbbbbbbb
+bbffffffbbbbbbbffffffffbbfbbbbbbbbbbbbbbbbbb
+bbbffbbbbbbbbbfffffffbfbbbbbbbbbbbbbbffbbbbb
+bbbffbbbbbbbbbffffbfbbfbbbbbbbbbbbbbfffffbbb
+bbbbfbbbbbbbbbbfffbbbbbbbbbbbbbbbbbfffffffbb
+bbbbbbbbbbbbbbbffffbbbbbbbbbbbbbbbbfffffffbb
+bbbbbbbbbbbbbbbffffbbbbbbbbbbbbbbbffffffffbb
+bbbbbbbbbbbbbbfffffbbbbbbbbbbbbbbfffffffffbb
+bbbbbbbbbbbbbbfffffbbbbbbbbbbbbbbfffffffffbb
+bbbbbbbbbbbbbbbfffffbbbbbbbbffbfffffffffffbb
+bbbbfffffffffffffffffffbfffffffffffffffffffb
+fffbfffffffffffffffffffffffffffffffffffffbbb
+fffffffffffffffbfffffffffffffffffffffffbbbbb
+bbbbbbfffffffffbfffffffffffffffffffffbbbbbbb
+bbbbbbbbbbbbbbbbbbbffffffffffffbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbfffbbbbbbbbbbbbbbbbbbbbb
 "}
 
 (1,1,2) = {"

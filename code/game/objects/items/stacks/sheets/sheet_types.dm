@@ -246,12 +246,10 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	amount = 50
 /obj/item/stack/sheet/mineral/wood/update_icon_state()
 	var/amount = get_amount()
-	if(amount <= 6)
-		icon_state = "sheet-wood_[amount]"
 	if(amount > 6)
 		icon_state = "sheet-wood_7"
 	else
-		icon_state = "sheet-wood"
+		icon_state = "sheet-wood_[amount]"
 /*
  * Bamboo
  */

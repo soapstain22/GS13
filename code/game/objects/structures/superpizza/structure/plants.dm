@@ -22,7 +22,7 @@
 	desc = "A number of mushrooms, each of which surrounds a greenish sporangium with a number of leaf-like structures."
 	harvested_name = "leafless mushrooms"
 	harvested_desc = "A bunch of formerly-leafed mushrooms, with their sporangiums exposed. Scandalous?"
-	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf
+	harvest = /obj/item/reagent_containers/food/snacks/grown/aloe
 	needs_sharp_harvest = FALSE
 	harvest_amount_high = 4
 	harvest_time = 20
