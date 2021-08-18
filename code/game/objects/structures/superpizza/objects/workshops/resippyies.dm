@@ -125,15 +125,14 @@
 	build_type = SMITHING
 	materials = list(MAT_CATEGORY_RIGID = 1000)
 	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
-	category = list("initial","Armor")
-/datum/design/hat
-	name = "hat"
-	id = "hatgrey"
+	category = list("Armor")
+/datum/design/helmet
+	name = "Helmet"
+	id = "Helmet"
 	build_type = SMITHING
 	materials = list(MAT_CATEGORY_RIGID = 1000)
-	build_path = /obj/item/clothing/head/helmet/knight/greyscale
-	category = list("initial","Armor")
-/obj/item/clothing/head/helmet/knight/greyscale
+	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
+	category = list("Armor")
 //wood
 
 /datum/design/crate
