@@ -32,7 +32,10 @@
 		if(buildstacktype)
 			new buildstacktype(loc,buildstackamount)
 	..()
-
+/obj/structure/bed/wood
+	icon_state = "woodbed"
+	buildstacktype = /obj/item/stack/sheet/mineral/wood
+	buildstackamount = 4
 /obj/structure/bed/attack_paw(mob/user)
 	return attack_hand(user)
 

@@ -122,3 +122,96 @@
 				new M.sheet_type(T, FLOOR(custom_materials[M] / MINERAL_MATERIAL_AMOUNT, 1))
 		qdel(src)
 
+
+
+
+
+
+
+
+
+
+
+/obj/machinery/power/lampo
+	name = "lamp"
+	desc = "A pole with powerful mounted lights on it. Due to its high power draw, it must be powered by a direct connection to a wire node."
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "lamp"
+	density = TRUE
+	max_integrity = 100
+	integrity_failure = 0.8
+	idle_power_usage = 100
+	active_power_usage = 1000
+	anchored = FALSE
+	light_power = 1
+	var/list/light_setting_list = list(0, 5, 10, 15)
+	var/light_power_coefficient = 200
+	var/setting = 0
+
+/obj/machinery/power/lampo/process()
+	var/turf/T = get_turf(src)
+	var/obj/structure/cable/C = locate() in T
+	if(!C && powernet)
+		disconnect_from_network()
+	if(setting > 0) //If on
+		if(avail(active_power_usage))
+			add_load(active_power_usage)
+		else
+			change_setting(0)
+	else if(avail(idle_power_usage))
+		add_load(idle_power_usage)
+
+/obj/machinery/power/lampo/proc/change_setting(newval, mob/user)
+	if((newval < 0) || (newval > light_setting_list.len))
+		return
+	setting = newval
+	active_power_usage = light_setting_list[setting] * light_power_coefficient
+	if(!avail(active_power_usage) && setting > 0)
+		return change_setting(setting - 1)
+	set_light(light_setting_list[setting], light_power)
+	var/setting_text = ""
+	if(setting > 0)
+		icon_state = "[initial(icon_state)]_on"
+	else
+		icon_state = initial(icon_state)
+	switch(setting)
+		if(1)
+			setting_text = "OFF"
+		if(2)
+			setting_text = "ON"
+	if(user)
+		to_chat(user, "<span class='notice'>You set [src] to [setting_text].</span>")
+
+/obj/machinery/power/lampo/attackby(obj/item/O, mob/user, params)
+	if(O.tool_behaviour == TOOL_WRENCH)
+		default_unfasten_wrench(user, O, time = 20)
+		change_setting(1)
+		if(anchored)
+			connect_to_network()
+		else
+			disconnect_from_network()
+	else
+		. = ..()
+
+/obj/machinery/power/floodlight/attack_hand(mob/user)
+	. = ..()
+	if(.)
+		return
+	var/current = setting
+	if(current == 1)
+		current = light_setting_list.len
+	else
+		current--
+	change_setting(current, user)
+
+/obj/machinery/power/floodlight/obj_break(damage_flag)
+	. = ..()
+	if(!.)
+		return
+	playsound(loc, 'sound/effects/glassbr3.ogg', 100, TRUE)
+	new /obj/item/reagent_containers/food/drinks/bottle(loc)
+	new /obj/item/light/bulb/broken(loc)
+	qdel(src)
+
+/obj/machinery/power/floodlight/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	playsound(src, 'sound/effects/glasshit.ogg', 75, TRUE)

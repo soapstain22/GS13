@@ -4,7 +4,7 @@
 	name = "abandoned"
 	id = "helo"
 	description = "wat."
-	suffix = "1.dmm"
+	suffix = "outlet.dmm"
 	allow_duplicates = FALSE
 /datum/map_template/ruin/outdoors/hut
 	name = "hut"
@@ -41,4 +41,16 @@
 	id = "bbguns"
 	description = "foite"
 	suffix = "airsoft.dmm"
+	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/bball
+	name = "bball"
+	id = "bball"
+	description = "bball"
+	suffix = "bball.dmm"
+	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/facility
+	name = "facility"
+	id = "facility"
+	description = "facility"
+	suffix = "facility.dmm"
 	allow_duplicates = FALSE

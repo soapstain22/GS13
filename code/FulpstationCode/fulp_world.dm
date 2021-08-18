@@ -24,9 +24,9 @@
 		hostedby = CONFIG_GET(string/hostedby)
 
 	var/server_caption = CONFIG_GET(string/servercaption)
-	s += "<br><b>What Befell of Space Station 13</b>"
-	s += "<br>A hand-crafted, survival horror adventure spin-off, taking place during a return to the earth near a gas station left to fester."
-	s += "<br><b>You will not be led by the hand.</b>"
+	s += "<br><b>Gas Station 13</b>"
+	s += "<br>A /TG/ station wilderness adventure"
+	s += "<br><b>Enjoy summer vacation in the middle of fuckass nowhere!</b>"
 
 	s += "<a href=\"[CONFIG_GET(string/discordurl)]\">"//Change this to wherever you want the hub to link to
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
@@ -52,7 +52,7 @@
 	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
 
 	if (!host && hostedby)
-		features += "<b>You will not be led by the hand.</b>"
+		features += "<marquee>bet your ss13 server cant do this!</marquee>"
 
 	// FUPLP REMOVE: We don't list features!
 	//if (features)

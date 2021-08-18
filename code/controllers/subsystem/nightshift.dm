@@ -1,12 +1,12 @@
 SUBSYSTEM_DEF(nightshift)
 	name = "Night Shift"
-	wait = 100
+	wait = 5000
 	flags = SS_NO_TICK_CHECK
 
 	var/nightshift_active = FALSE
 	var/nightshift_start_time = 702000		//7:30 PM, station time
 	var/nightshift_end_time = 270000		//7:30 AM, station time
-	var/nightshift_first_check = 30 SECONDS
+	var/nightshift_first_check = 5 SECONDS
 
 	var/high_security_mode = FALSE
 
@@ -26,13 +26,16 @@ SUBSYSTEM_DEF(nightshift)
 	var/announcing = TRUE
 	var/time = station_time()
 	var/night_time = (time < nightshift_end_time) || (time > nightshift_start_time)
-	var/rawtime = -1+2*sin(0.00000432*time)
+	var/rawtime = sin(0.00000864*time)
+	var/flavor = "#DEDF64"
+	var/list/DNClist = list("#DEDF64", "#999999", "#777777", "#521C07", "#050505","#303030")
 	log_world("[rawtime]")
+	//flavor = DNClist[currentDncStage]
 	for(var/area in GLOB.sortedAreas)
 		var/area/A = area
 		if(initial(A.exposed) == 1)
 			for(var/turf/S in A)
-				S.set_light(rawtime)
+				S.set_light(6, rawtime)
 	if(high_security_mode != emergency)
 		high_security_mode = emergency
 		if(night_time)
@@ -50,9 +53,9 @@ SUBSYSTEM_DEF(nightshift)
 	nightshift_active = active
 	if(announce)
 		if (active)
-			announce("Good evening, crew. You are Gay")
+			announce("night")
 		else
-			announce("Good morning, crew. As it is now day time, all of the lights aboard the station have been restored to their former brightness.")
+			announce("morning")
 	for(var/A in GLOB.apcs_list)
 		var/obj/machinery/power/apc/APC = A
 		if (APC.area && (APC.area.type in GLOB.the_station_areas))

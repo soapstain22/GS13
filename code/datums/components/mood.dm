@@ -189,7 +189,7 @@
 		if(9)
 			setSanity(sanity+0.6, SANITY_NEUTRAL, SANITY_MAXIMUM)
 	HandleNutrition()
-
+	HandleSleep()
 ///Sets sanity to the specified amount and applies effects.
 /datum/component/mood/proc/setSanity(amount, minimum=SANITY_INSANE, maximum=SANITY_GREAT, override = FALSE)
 	// If we're out of the acceptable minimum-maximum range move back towards it in steps of 0.7

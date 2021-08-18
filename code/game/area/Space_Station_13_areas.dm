@@ -77,7 +77,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "unexplored"
 	tunnel_allowed = TRUE
 	mob_spawn_allowed = TRUE
-	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	power_light = FALSE
 	power_equip = FALSE
 	power_environ = FALSE
@@ -86,7 +86,8 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	outdoors = TRUE
 	flora_allowed = TRUE
 	exposed = TRUE
-/area/surface/outdoors/underground //monsters and ruins spawn here
+
+	/area/surface/outdoors/underground //monsters and ruins spawn here
 	icon_state = "explored"
 	tunnel_allowed = TRUE
 	mob_spawn_allowed = TRUE
@@ -98,6 +99,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	valid_territory = FALSE
 	outdoors = TRUE
 	flora_allowed = TRUE
+	afternoonsounds ='sound/ambience/shipambience.ogg'
+	nightsounds = 'sound/ambience/shipambience.ogg'
+	morningsounds = 'sound/ambience/shipambience.ogg'
 /area/surface/outdoors/underground/ruin
 	name = "Ruin"
 	valid_territory = TRUE

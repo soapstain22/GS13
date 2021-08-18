@@ -16,7 +16,7 @@
 /obj/machinery/smithy
 	icon = 'code/game/objects/structures/superpizza/objects/workshops/workshops.dmi'
 	name = "smithy"
-	desc = "It produces items using METOL"
+	desc = "It produces items using metal and electricity"
 	icon_state = "smithy"
 	density = TRUE
 	use_power = IDLE_POWER_USE
@@ -47,7 +47,6 @@
 							"Parts",
 							"Weapons",
 							"Armor",
-							"Weapons",
 							)
 
 /obj/machinery/smithy/Initialize()

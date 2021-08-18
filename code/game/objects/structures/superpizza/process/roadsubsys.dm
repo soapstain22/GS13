@@ -232,7 +232,7 @@ GLOBAL_LIST_INIT(shitboyspawns, list(/mob/living/simple_animal/hostile/space_dra
 
 /turf/open/floor/plating/road/airless/cave/Initialize()
 	if (!mob_spawn_list)
-		mob_spawn_list = list(/mob/living/simple_animal/mouse = 5, /mob/living/simple_animal/chicken = 4, )
+		mob_spawn_list = null //list(/mob/living/simple_animal/mouse = 5, /mob/living/simple_animal/chicken = 4, )
 	if (!shitboyspawns)
 		shitboyspawns = GLOB.shitboyspawns
 	if (!flora_spawn_list)

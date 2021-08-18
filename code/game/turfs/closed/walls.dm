@@ -187,20 +187,21 @@
 	add_fingerprint(user)
 
 /turf/closed/wall/attackby(obj/item/W, mob/user, params)
-	user.changeNext_move(CLICK_CD_MELEE)
-	var/damn = W.force/hardness
-	playsound(src, 'sound/weapons/genhit.ogg', 25, TRUE)
-	to_chat(user, "<span class='warning'>You swing at the wall</span>")
-	if (prob(damn*20))
-		add_dent(WALL_DENT_HIT)
-		playsound(src, 'sound/effects/meteorimpact.ogg', 100, TRUE)
-		hp -= 1
-		if (hp <= 0)
-			dismantle_wall(1)
-	if (!user.IsAdvancedToolUser())
-		to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
-		return
-	return TRUE
+	if((user.a_intent != INTENT_HELP))
+		user.changeNext_move(CLICK_CD_MELEE)
+		var/damn = W.force/hardness
+		playsound(src, 'sound/weapons/genhit.ogg', 25, TRUE)
+		to_chat(user, "<span class='warning'>You swing at the wall</span>")
+		if (prob(damn*20))
+			add_dent(WALL_DENT_HIT)
+			playsound(src, 'sound/effects/meteorimpact.ogg', 100, TRUE)
+			hp -= 1
+			if (hp <= 0)
+				dismantle_wall(1)
+		if (!user.IsAdvancedToolUser())
+			to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
+			return
+		return TRUE
 	//get the user's location
 	if(!isturf(user.loc))
 		return	//can't do this stuff whilst inside objects and such

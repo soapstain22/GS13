@@ -413,10 +413,6 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 
 		if(istype(R, /datum/map_template/ruin/lavaland))
 			lava_ruins_templates[R.name] = R
-		else if(istype(R, /datum/map_template/ruin/icemoon/underground))
-			ice_ruins_underground_templates[R.name] = R
-		else if(istype(R, /datum/map_template/ruin/icemoon))
-			ice_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/space))
 			space_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/underground))

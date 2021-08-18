@@ -15,9 +15,9 @@
 		/obj/item/stock_parts/manipulator = 1,)
 /obj/machinery/carpentry
 	icon = 'code/game/objects/structures/superpizza/objects/workshops/workshops.dmi'
-	name = "carpentry"
-	desc = "It produces items using WOODT"
-	icon_state = "carpentry"
+	name = "woodlathe"
+	desc = "It produces items using WOOD"
+	icon_state = "woodlathe"
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 10

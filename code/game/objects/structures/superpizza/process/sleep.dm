@@ -1,0 +1,15 @@
+datum/component/mood/proc/HandleSleep()
+	var/mob/living/L = parent
+	switch(L.sleepy)
+		if(NUTRITION_LEVEL_WELL_FED to INFINITY)
+			add_event(null, "sleepy", /datum/mood_event/wellrested)
+		if( NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
+			add_event(null, "sleepy", /datum/mood_event/rested)
+		if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
+			clear_event(null, "sleepy")
+		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
+			add_event(null, "sleepy", /datum/mood_event/drowsy)
+		if(0 to NUTRITION_LEVEL_STARVING)
+			add_event(null, "sleepy", /datum/mood_event/exhausted)
+/mob/proc/adjust_sleep(var/change) //Honestly FUCK the oldcoders for putting nutrition on /mob someone else can move it up because holy hell I'd have to fix SO many typechecks
+	sleepy = max(0, sleepy + change)

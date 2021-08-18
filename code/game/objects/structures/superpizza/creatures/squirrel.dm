@@ -1,4 +1,4 @@
-/mob/living/simple_animal/hostile/squirrel
+/mob/living/simple_animal/hostile/squirrel //fixme this whole fucking thing
 	name = "squirrel"
 	desc = "A fat fucking squirrel"
 	icon = 'code/game/objects/structures/superpizza/creatures/creature.dmi'

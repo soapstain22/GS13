@@ -47,13 +47,7 @@
 	materials = list(MAT_CATEGORY_FABRIC = 1000)
 	build_path = /obj/item/clothing/suit/hazardvest/greyscale
 	category = list("initial","Over")
-/datum/design/tophat
-	name = "top hat"
-	id = "tophat"
-	build_type = SEWING
-	materials = list(MAT_CATEGORY_FABRIC = 1000)
-	build_path = /obj/item/clothing/head/that/greyscale
-	category = list("initial","Hats")
+
 /datum/design/pickaxe
 	name = "pickaxe"
 	id = "pickaxe"
@@ -124,7 +118,23 @@
 	materials = list(MAT_CATEGORY_RIGID = 1000)
 	build_path = /obj/item/wrench/greyscale
 	category = list("initial","Tools")
-
+//unlockable
+/datum/design/armor
+	name = "armor"
+	id = "armyor"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 1000)
+	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
+	category = list("initial","Armor")
+/datum/design/hat
+	name = "hat"
+	id = "hatgrey"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 1000)
+	build_path = /obj/item/clothing/head/helmet/knight/greyscale
+	category = list("initial","Armor")
+/obj/item/clothing/head/helmet/knight/greyscale
+//wood
 
 /datum/design/crate
 	name = "crate"
@@ -134,13 +144,7 @@
 	build_path = /obj/structure/closet/crate/wooden
 	category = list("initial","Furniture")
 
-/datum/design/bat
-	name = "bat"
-	id = "bat "
-	build_type = CARPENTRY
-	materials = list(MAT_CATEGORY_WOOD = 4000)
-	build_path = 	/obj/item/melee/baseball_bat
-	category = list("initial","crafts")
+
 /datum/design/barrel
 	name = "barrel"
 	id = "barrel"
@@ -154,8 +158,9 @@
 	id = "chair"
 	build_type = CARPENTRY
 	materials = list(MAT_CATEGORY_WOOD = 1000)
-	build_path = 	/obj/item/chair/wood
+	build_path = /obj/item/chair/wood
 	category = list("initial","Furniture")
+//unlockable
 /datum/design/rifle
 	name = "rifle stock"
 	id = "rifle"
@@ -163,3 +168,11 @@
 	materials = list(MAT_CATEGORY_WOOD = 1000)
 	build_path = 	/obj/item/weaponcrafting/stock
 	category = list("Crafts")
+
+/datum/design/bat
+	name = "bat"
+	id = "bat "
+	build_type = CARPENTRY
+	materials = list(MAT_CATEGORY_WOOD = 4000)
+	build_path = 	/obj/item/melee/baseball_bat
+	category = list("crafts")

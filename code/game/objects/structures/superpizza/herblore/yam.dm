@@ -24,4 +24,4 @@
 	bitesize = 15 // Always eat the yam in one bite
 	foodtype = FRUIT
 	tastes = list("yam" = 1)
-	distill_reagent = /datum/reagent/consumable/ethanol/hcider
+	distill_reagent = /datum/reagent/consumable/ethanol/hcider //

@@ -1,32 +1,3 @@
-/obj/item/melee/stick
-	name = "stick"
-	desc = "brown and sticky"
-	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
-	icon_state = "stick"
-	inhand_icon_state = "wood"
-	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 3
-	throwforce = 1
-	attackspeed = 0.8
-	attack_verb = list("smacked")
-	w_class = WEIGHT_CLASS_SMALL
-	tool_behaviour = TOOL_SHOVEL
-	toolspeed = 2
-	var/static/list/accepted = typecacheof(list(/obj/item/reagent_containers/food/snacks/grown/tobacco,
-	/obj/item/reagent_containers/food/snacks/grown/tea,
-	/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
-	/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
-	/obj/item/reagent_containers/food/snacks/grown/wheat, /obj/item/reagent_containers/food/snacks/grown/grass))
-/obj/item/melee/stick/attackby(obj/item/W, mob/user, params)
-	if(W.get_temperature() > 300)//If the temperature of the object is over 300, then ignite
-		var/turf/T = get_turf(src)
-		message_admins("Coal ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(T)]")
-		log_game("Coal ignited by [key_name(user)] in [AREACOORD(T)]")
-		fire_act(W.get_temperature())
-		return TRUE
-	else
-		return ..()
 
 /obj/item/melee/stick/fire_act(exposed_temperature, exposed_volume)
 	. = ..()

@@ -255,8 +255,7 @@
 	icon_state = "knight_green"
 	inhand_icon_state = "knight_green"
 	armor = list("melee" = 50, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "stab" = 1, "slash" = 1, "crush" = 1)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEHAIR
 	strip_delay = 80
 	dog_fashion = null
 

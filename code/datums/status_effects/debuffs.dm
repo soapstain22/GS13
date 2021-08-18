@@ -77,7 +77,17 @@
 /datum/status_effect/incapacitating/unconscious/tick()
 	if(owner.getStaminaLoss())
 		owner.adjustStaminaLoss(-0.3) //reduce stamina loss by 0.3 per tick, 6 per 2 seconds
-
+	var/rest = 1
+	if((locate(/obj/structure/bed) in owner.loc))
+		rest = 7
+	else if((locate(/obj/structure/table) in owner.loc))
+		rest = 3
+	for(var/obj/item/bedsheet/bedsheet in range(owner.loc,0))
+		if(bedsheet.loc != owner.loc) //bedsheets in your backpack/neck don't give you comfort
+			continue
+		rest += 3
+		break //Only count the first bedsheet
+	owner.adjust_sleep(rest)
 //SLEEPING
 /datum/status_effect/incapacitating/sleeping
 	id = "sleeping"
@@ -113,16 +123,20 @@
 	if(owner.maxHealth)
 		var/health_ratio = owner.health / owner.maxHealth
 		var/healing = -0.1
+		var/rest = 5
 		if((locate(/obj/structure/bed) in owner.loc))
 			healing -= 0.15
+			rest = 7
 		else if((locate(/obj/structure/table) in owner.loc))
 			healing -= 0.1
+			rest = 0.2
 		for(var/obj/item/bedsheet/bedsheet in range(owner.loc,0))
 			if(bedsheet.loc != owner.loc) //bedsheets in your backpack/neck don't give you comfort
 				continue
 			healing -= 0.1
 			break //Only count the first bedsheet
 		if(health_ratio < 0.5)
+			owner.adjust_sleep(rest)
 			owner.adjustBruteLoss(healing)
 			owner.adjustFireLoss(healing)
 			owner.adjustToxLoss(healing * 0.5, TRUE, TRUE)

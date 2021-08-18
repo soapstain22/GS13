@@ -4,7 +4,7 @@
 	desc = "A capacitor engineered with a mix of bluespace and quantum technologies."
 	id = "quantumcap"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron =225, /datum/material/glass =180, /datum/material/gold =135, /datum/material/diamond = 90)
+	materials = list(/datum/material/iron =225, /datum/material/glass =180, /datum/material/lead =210, /datum/material/gold =135, /datum/material/diamond = 90)
 	build_path = /obj/item/stock_parts/capacitor/quantumcap
 	category = list("Stock Parts")
 	lathe_time_factor = 0.2

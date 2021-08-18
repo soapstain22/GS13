@@ -91,3 +91,28 @@
 	description = "<span class='nicegreen'>There's nothing like the feeling of a freshly laundered jumpsuit.</span>\n"
 	mood_change = 2
 	timeout = 10 MINUTES
+
+/datum/mood_event/drowsy
+	description = "<span class='warning'>I might need to sleep at some point</span>\n"
+	mood_change = -2
+/datum/mood_event/exhausted
+	description = "<span class='warning'>I need to sleep very soon.</span>\n"
+	mood_change = -4
+/datum/mood_event/rested
+	description = "<span class='nicegreen'>I am rested</span>\n"
+	mood_change = 2
+/datum/mood_event/wellrested
+	description = "<span class='nicegreen'>I am very well rested</span>\n"
+	mood_change = 4
+/datum/mood_event/comfy
+	description = "<span class='nicegreen'>Look at me all bundled up!</span>\n"
+	mood_change = 2
+/datum/mood_event/supercomfy
+	description = "<span class='nicegreen'>I am so comfortable its not even funny</span>\n"
+	mood_change = 4
+/datum/mood_event/uncomfy
+	description = "<span class='warning'>I need to sit down somewhere</span>\n"
+	mood_change = -2
+/datum/mood_event/superuncomfy
+	description = "<span class='warning'>Everything is sore, I need to sit down.</span>\n"
+	mood_change = -4

@@ -14,7 +14,6 @@
 	max_integrity = 160
 
 /obj/structure/flora/tree/Destroy()
-	. = ..()
 	playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE)
 	new /obj/item/grown/log(get_turf(src))
 	new /obj/item/grown/log(get_turf(src))
@@ -22,6 +21,7 @@
 	new /obj/item/grown/log(get_turf(src))
 	var/obj/structure/flora/stump/S = new(loc)
 	S.name = "[name] stump"
+	. = ..()
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
 	. = ..()
 	update_icon_state()

@@ -1,7 +1,8 @@
 /obj/item/seeds/chickweed
 	name = "pack of chickweed seeds"
 	desc = "These seeds grow into chickweed."
-	icon_state = "seed-chickweed"
+	icon_state = "chickweedseeds"
+	icon = 'code/game/objects/structures/superpizza/herblore/herb.dmi'
 	species = "chickweed"
 	plantname = "chickweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/chickweed
@@ -16,6 +17,7 @@
 
 /obj/item/reagent_containers/food/snacks/grown/chickweed
 	seed = /obj/item/seeds/chickweed
+	icon = 'code/game/objects/structures/superpizza/herblore/herb.dmi'
 	name = "chickweed"
 	desc = "It's a little piece of shit."
 	icon_state = "chickweed"

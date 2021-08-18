@@ -37,6 +37,10 @@ GLOBAL_LIST_INIT(trash_loot, list(//junk: useless, very easy to get, or ghetto c
 		/obj/item/disk/data = 1,
 		/obj/item/stack/sheet/cardboard = 1,
 		/obj/item/storage/box = 1,
+		/obj/item/clipboard = 1,
+		/obj/item/clothing/gloves/boxing =1,
+		/obj/item/clothing/glasses/material = 1,
+		/obj/item/clothing/glasses/meson = 1,
 
 		/obj/item/reagent_containers/food/drinks/drinkingglass = 1,
 		/obj/item/coin/silver = 1,
@@ -54,8 +58,8 @@ GLOBAL_LIST_INIT(trash_loot, list(//junk: useless, very easy to get, or ghetto c
 		/obj/item/clothing/mask/breath = 1,
 		/obj/item/shard = 1,
 
-		/obj/item/stake/basic = 1, //FULP
-		/obj/item/stake/hardened = 1, //FULP
+		//obj/item/stake/basic = 1, //FULP
+		//obj/item/stake/hardened = 1, //FULP
 
 		/obj/item/reagent_containers/pill/floorpill = 1,
 		/obj/item/toy/eightball = 1,
@@ -85,7 +89,14 @@ GLOBAL_LIST_INIT(common_loot, list( //common: basic items
 		/obj/item/pushbroom = 1,
 		/obj/item/reagent_containers/glass/bucket = 1,
 		/obj/item/toy/crayon/spraycan = 1,
+		/obj/item/pipe/binary/bendable = 1,
+		/obj/item/pipe/trinary = 1,
+		/obj/item/pipe = 1,
+		/obj/item/pipe/quaternary = 1,
+		/obj/machinery/atmospherics/components/binary/passive_gate = 1,
+		/obj/machinery/atmospherics/components/unary/passive_vent = 1,
 		) = 1,
+
 
 	list(//equipment
 		/obj/item/clothing/mask/gas = 1,
@@ -172,6 +183,7 @@ GLOBAL_LIST_INIT(uncommon_loot, list(//uncommon: useful items
 		/obj/item/melee/baton/cattleprod = 1,
 		/obj/item/throwing_star = 1,
 		/obj/item/pen/fountain = 1,
+		/obj/item/ammo_casing/shotgun/buckshot = 1,
 		) = 8,
 
 	list(//equipment
@@ -190,9 +202,9 @@ GLOBAL_LIST_INIT(uncommon_loot, list(//uncommon: useful items
 		) = 8,
 
 	list(//strange objects
-		/obj/item/book/granter/language_book/random = 5, //FULP
-		/obj/item/stake/hardened/silver = 2, //FULP	"" = 3
-		/obj/item/relic = 5,
+		//obj/item/book/granter/language_book/random = 5, //FULP
+		//obj/item/stake/hardened/silver = 2, //FULP	"" = 3
+		//obj/item/relic = 5,
 		) = 8,
 
 	list(//construction and crafting

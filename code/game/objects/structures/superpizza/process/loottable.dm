@@ -76,10 +76,10 @@
 /obj/effect/spawner/lootdrop/stone
 	name = "barrelspawn"
 	lootdoubles = TRUE
-	lootcount = 4
+	lootcount = 20
 	loot = list(
 		/obj/item/stack/stone = 3,
-		"" = 1,
+		"" = 2,
 		)
 /obj/effect/spawner/lootdrop/minecraft
 	name = "barrelspawn"

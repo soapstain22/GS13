@@ -1,218 +1,223 @@
-"aa" = (/turf/closed/wall,/area/space)
-"ab" = (/turf/template_noop,/area/space)
-"ac" = (/turf/open/floor/plasteel,/area/space)
-"ad" = (/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"ae" = (/obj/structure/window/fulltile,/turf/template_noop,/area/space)
-"af" = (/turf/open/floor/plating,/area/space)
-"ag" = (/obj/structure/table,/turf/open/floor/plasteel,/area/space)
-"ah" = (/turf/open/floor/carpet/blue,/area/space)
-"ai" = (/obj/item/plunger,/turf/open/floor/plasteel,/area/space)
-"aj" = (/obj/structure/closet/crate/engineering/electrical,/turf/open/floor/plasteel,/area/space)
-"ak" = (/obj/item/poster/random_contraband,/obj/item/poster/random_official,/turf/open/floor/plasteel,/area/space)
-"al" = (/obj/structure/rack,/turf/open/floor/carpet/blue,/area/space)
-"am" = (/obj/structure/chair{dir = 4},/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"an" = (/obj/structure/table,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"ao" = (/obj/structure/chair{dir = 8},/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"ap" = (/obj/structure/table,/turf/open/floor/plating,/area/space)
-"aq" = (/obj/structure/window/fulltile,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"ar" = (/obj/item/transfer_valve,/turf/open/floor/plasteel,/area/space)
-"as" = (/obj/structure/reagent_dispensers/cooking_oil,/turf/open/floor/plating,/area/space)
-"at" = (/obj/structure/window/fulltile,/turf/open/floor/plasteel,/area/space)
-"au" = (/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"av" = (/obj/structure/toilet,/turf/open/floor/plasteel,/area/space)
-"aw" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/space)
-"ax" = (/obj/structure/mineral_door/plastic,/turf/open/floor/plasteel,/area/space)
-"ay" = (/obj/structure/sink{dir = 8; pixel_x = 11},/turf/open/floor/plasteel,/area/space)
-"az" = (/obj/structure/toilet{dir = 1},/turf/open/floor/plasteel,/area/space)
-"aA" = (/obj/effect/decal/cleanable/blood/gibs,/obj/effect/decal/cleanable/blood,/obj/structure/toilet{dir = 1},/turf/open/floor/plasteel,/area/space)
-"aB" = (/obj/structure/table/reinforced,/turf/open/floor/carpet/blue,/area/space)
-"aC" = (/obj/machinery/paystand,/obj/structure/table,/turf/open/floor/plasteel,/area/space)
-"aD" = (/obj/structure/flora/ausbushes/brflowers,/turf/open/floor/plating,/area/space)
-"aE" = (/obj/item/clothing/head/helmet{pixel_x = -4; pixel_y = 3},/obj/item/clothing/head/helmet,/obj/item/clothing/head/helmet{pixel_x = 5; pixel_y = -3},/obj/structure/table,/turf/open/floor/plasteel,/area/space)
-"aF" = (/obj/item/melee/skateboard/pro,/turf/open/floor/plasteel,/area/space)
-"aG" = (/obj/item/poster/random_contraband,/obj/item/poster/random_official,/obj/item/poster/random_official,/obj/item/poster/random_official,/turf/open/floor/plasteel,/area/space)
-"aH" = (/obj/item/poster/random_contraband,/turf/open/floor/plasteel,/area/space)
-"aI" = (/obj/structure/rack,/obj/item/binoculars,/turf/open/floor/plasteel,/area/space)
-"aJ" = (/obj/structure/closet/crate,/turf/open/floor/plasteel,/area/space)
-"aK" = (/obj/structure/closet/crate/trashcart,/turf/open/floor/plasteel,/area/space)
-"aL" = (/obj/structure/rack,/obj/item/toner,/turf/open/floor/plasteel,/area/space)
-"aM" = (/obj/structure/rack,/obj/item/camera,/obj/item/camera,/obj/item/camera,/turf/open/floor/plasteel,/area/space)
-"aN" = (/obj/structure/rack,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/space)
-"aO" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/space)
-"aP" = (/obj/structure/table,/obj/structure/sign/poster/contraband/eat{pixel_y = 32},/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"aQ" = (/obj/structure/table,/obj/structure/sign/poster/contraband/donut_corp{pixel_y = 32},/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"aR" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plating,/area/space)
-"aS" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plating,/area/space)
-"aT" = (/obj/item/camera,/turf/open/floor/plasteel,/area/space)
-"aU" = (/obj/structure/rack,/obj/item/tape/random,/obj/item/tape/random,/obj/item/tape/random,/obj/item/tape/random,/turf/open/floor/plasteel,/area/space)
-"aV" = (/obj/item/wirecutters,/turf/open/floor/plasteel,/area/space)
-"aW" = (/obj/structure/rack,/obj/item/taperecorder/empty,/obj/item/taperecorder/empty,/obj/item/taperecorder/empty,/turf/open/floor/plasteel,/area/space)
-"aX" = (/obj/machinery/vending/snack/teal,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"aY" = (/obj/machinery/vending/cola/red,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"aZ" = (/obj/item/caution,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"ba" = (/obj/structure/chair,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"bb" = (/obj/machinery/processor,/turf/open/floor/plating,/area/space)
-"bc" = (/obj/item/lighter/greyscale{pixel_x = -10; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = -5; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = 0; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = 5; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = 10; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = -10; pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = -10; pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = -5; pixel_y = -2},/obj/item/lighter/greyscale{pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = 5; pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = 10; pixel_y = -2},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bd" = (/obj/structure/rack,/obj/item/storage/fancy/cigarettes/cigpack_carp{pixel_x = -5; pixel_y = 8},/obj/item/storage/fancy/cigarettes/cigpack_midori{pixel_x = -5; pixel_y = 5},/obj/item/storage/fancy/cigarettes/cigpack_robust{pixel_x = -5; pixel_y = 1},/obj/item/storage/fancy/cigarettes/cigpack_robustgold{pixel_x = -5; pixel_y = -3},/obj/item/storage/fancy/cigarettes/cigpack_uplift{pixel_x = 6; pixel_y = 8},/obj/item/storage/fancy/cigarettes/cigpack_xeno{pixel_x = 5; pixel_y = 4},/obj/item/storage/fancy/cigarettes/dromedaryco{pixel_x = 5; pixel_y = -1},/obj/item/storage/fancy/cigarettes{pixel_x = 5; pixel_y = -5},/turf/open/floor/plasteel,/area/space)
-"be" = (/obj/item/storage/fancy/cigarettes/cigars/cohiba,/obj/item/storage/fancy/cigarettes/cigars/havana{pixel_y = 3},/turf/open/floor/plasteel,/area/space)
-"bf" = (/obj/item/storage/fancy/rollingpapers{pixel_x = -2; pixel_y = -5},/obj/item/storage/fancy/rollingpapers{pixel_x = -1; pixel_y = -2},/obj/item/storage/fancy/rollingpapers{pixel_x = 0; pixel_y = 1},/obj/item/storage/fancy/rollingpapers{pixel_x = 1; pixel_y = 4},/turf/open/floor/plasteel,/area/space)
-"bg" = (/obj/item/paper/crumpled,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"bh" = (/obj/structure/sink{dir = 4; pixel_x = -12},/turf/open/floor/plating,/area/space)
-"bi" = (/obj/structure/sink{dir = 8; pixel_x = 11},/turf/open/floor/plating,/area/space)
-"bj" = (/obj/structure/closet/crate/bin,/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"bk" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel,/area/space)
-"bl" = (/turf/closed/wall/mineral/wood,/area/space)
-"bm" = (/obj/structure/table/wood,/turf/open/floor/plasteel,/area/space)
-"bn" = (/obj/structure/table/wood,/obj/structure/sign/poster/official/fruit_bowl{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
-"bo" = (/obj/structure/sink{dir = 4; pixel_x = -12},/turf/open/floor/plasteel,/area/space)
-"bp" = (/obj/structure/table/wood/poker,/turf/open/floor/plasteel,/area/space)
-"bq" = (/obj/structure/table/wood/fancy,/turf/open/floor/plasteel,/area/space)
-"br" = (/obj/item/reagent_containers/food/snacks/breadslice/moldy,/turf/open/floor/plasteel,/area/space)
-"bs" = (/obj/machinery/vending/cola/sodie,/turf/open/floor/plasteel,/area/space)
-"bt" = (/obj/structure/sign/poster/contraband/space_up{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
-"bu" = (/obj/structure/rack,/obj/item/kitchen/fork,/turf/open/floor/plasteel,/area/space)
-"bv" = (/obj/structure/rack,/obj/item/storage/bag/tray/pan,/turf/open/floor/plasteel,/area/space)
-"bw" = (/obj/item/reagent_containers/food/snacks/deadmouse,/turf/open/floor/plasteel,/area/space)
-"bx" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
-"by" = (/obj/item/pushbroom,/turf/open/floor/plasteel,/area/space)
-"bz" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/chips,/turf/open/floor/plasteel,/area/space)
-"bA" = (/obj/structure/rack,/obj/item/storage/box/dishdrive,/turf/open/floor/plasteel,/area/space)
-"bB" = (/obj/structure/rack,/obj/item/storage/box/lights/bulbs,/turf/open/floor/plasteel,/area/space)
-"bC" = (/obj/structure/rack,/obj/item/storage/box/gloves,/turf/open/floor/plasteel,/area/space)
-"bD" = (/obj/structure/rack,/obj/item/storage/box/lights/tubes,/turf/open/floor/plasteel,/area/space)
-"bE" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/canned/beans,/turf/open/floor/plasteel,/area/space)
-"bF" = (/obj/structure/rack,/obj/item/storage/box,/turf/open/floor/plasteel,/area/space)
-"bG" = (/obj/item/storage/box/gum{pixel_y = 6},/obj/item/storage/box/gum{pixel_y = 3},/obj/item/storage/box/gum,/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bH" = (/obj/structure/rack,/obj/structure/sign/poster/contraband/shamblers_juice{pixel_x = 32},/turf/open/floor/plasteel,/area/space)
-"bI" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/branrequests,/turf/open/floor/plasteel,/area/space)
-"bJ" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/canned/peaches,/turf/open/floor/plasteel,/area/space)
-"bK" = (/obj/structure/rack,/obj/item/storage/box,/obj/item/storage/box,/turf/open/floor/plasteel,/area/space)
-"bL" = (/obj/structure/rack,/obj/item/storage/cans/sixsoda,/turf/open/floor/plasteel,/area/space)
-"bM" = (/obj/item/reagent_containers/food/snacks/candy{pixel_x = -3; pixel_y = 7},/obj/item/reagent_containers/food/snacks/candy{pixel_x = 1; pixel_y = 6},/obj/item/reagent_containers/food/snacks/candy{pixel_x = 5; pixel_y = 5},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bN" = (/obj/item/razor,/turf/open/floor/plasteel,/area/space)
-"bO" = (/obj/structure/sign/poster/official/twelve_gauge{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
-"bP" = (/obj/structure/sign/poster/contraband/revolver{pixel_x = 32},/obj/item/wrench,/turf/open/floor/plasteel,/area/space)
-"bQ" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/cornchips,/turf/open/floor/plasteel,/area/space)
-"bR" = (/obj/structure/rack,/obj/item/storage/fancy/candle_box,/turf/open/floor/plasteel,/area/space)
-"bS" = (/obj/item/cardpack/series_one,/obj/item/cardpack/series_one,/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bT" = (/obj/item/storage/pill_bottle,/turf/open/floor/plasteel,/area/space)
-"bU" = (/obj/item/storage/pill_bottle,/obj/item/storage/pill_bottle/iron{pixel_x = 6},/obj/item/storage/pill_bottle/mannitol{pixel_x = -6},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bV" = (/obj/item/storage/pill_bottle/multiver{pixel_x = -8},/obj/item/storage/pill_bottle/mutadone{pixel_x = -2; pixel_y = 0},/obj/item/storage/pill_bottle/neurine{pixel_x = 9},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bW" = (/obj/item/storage/pill_bottle/penacid,/obj/item/storage/pill_bottle/probital{pixel_x = -8},/obj/item/storage/pill_bottle/psicodine{pixel_x = 7},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bX" = (/obj/item/storage/pill_bottle/epinephrine,/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"bY" = (/obj/item/reagent_containers/food/drinks/colocup{pixel_x = 2; pixel_y = -2},/obj/item/reagent_containers/food/drinks/colocup{pixel_x = -5; pixel_y = -7},/turf/open/floor/plasteel,/area/space)
-"bZ" = (/obj/structure/rack,/obj/item/stack/sticky_tape,/turf/open/floor/plasteel,/area/space)
-"ca" = (/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -5; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -5; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -8; pixel_y = 3},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/bungo{pixel_y = 7},/turf/open/floor/plasteel,/area/space)
-"cb" = (/obj/item/reagent_containers/food/snacks/dough,/turf/open/floor/plasteel,/area/space)
-"cc" = (/obj/item/pda{pixel_x = -4},/obj/item/pda{pixel_y = -4},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cd" = (/obj/structure/sign/poster/contraband/borg_fancy_2{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
-"ce" = (/obj/item/cartridge/curator,/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cf" = (/obj/item/cartridge/detective,/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cg" = (/obj/structure/sign/poster/official/pda_ad{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
-"ch" = (/obj/structure/sign/poster/contraband/borg_fancy_1{pixel_y = 32},/turf/open/floor/plasteel,/area/space)
-"ci" = (/obj/item/radio{pixel_x = -7},/obj/item/radio{pixel_x = 5},/obj/item/radio,/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cj" = (/turf/open/floor/plasteel/grimy,/area/space)
-"ck" = (/obj/machinery/vending/cola/space_up,/turf/open/floor/plasteel/grimy,/area/space)
-"cl" = (/obj/structure/sink/kitchen,/turf/open/floor/plasteel,/area/space)
-"cm" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = 6},/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = 2},/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = -2},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = 6},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = 2},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = -2},/turf/open/floor/plasteel,/area/space)
-"cn" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/berry{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/choco{pixel_x = 7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/choco{pixel_x = 7; pixel_y = 4},/obj/item/reagent_containers/food/snacks/donut/choco{pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel,/area/space)
-"co" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/apple{pixel_x = 6; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/jelly/berry{pixel_x = -8; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/plain{pixel_x = -8; pixel_y = 2},/obj/item/reagent_containers/food/snacks/donut/plain{pixel_x = 6; pixel_y = 5},/obj/item/reagent_containers/food/snacks/donut/plain{pixel_x = 6; pixel_y = 0},/turf/open/floor/plasteel,/area/space)
-"cp" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 7},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 4},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 1},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = -2},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = 9; pixel_y = -2},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = 9; pixel_y = 9},/turf/open/floor/plasteel,/area/space)
-"cq" = (/obj/item/laser_pointer,/turf/open/floor/plasteel,/area/space)
-"cr" = (/obj/structure/sign/poster/contraband/c20r{pixel_x = 32},/turf/open/floor/plasteel,/area/space)
-"cs" = (/obj/item/cartridge/janitor{pixel_y = 8},/obj/item/cartridge/signal{pixel_y = 3},/obj/item/cartridge/engineering{pixel_y = -2},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"ct" = (/obj/item/cartridge/medical,/obj/item/cartridge/hop{pixel_y = -6},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cu" = (/obj/structure/table,/obj/item/card/id,/turf/open/floor/plasteel,/area/space)
-"cv" = (/obj/item/pda{pixel_x = -3; pixel_y = 4},/obj/item/pda{pixel_x = 5},/obj/item/pda{pixel_x = -2; pixel_y = -4},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cw" = (/obj/item/card/data/disk,/turf/open/floor/plasteel,/area/space)
-"cx" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/grimy,/area/space)
-"cy" = (/obj/item/radio/headset{pixel_x = -6; pixel_y = 8},/obj/item/radio/headset{pixel_x = -6; pixel_y = 3},/obj/item/radio/headset{pixel_x = -6; pixel_y = -2},/obj/item/radio/headset{pixel_x = 7; pixel_y = 8},/obj/item/radio/headset{pixel_x = 7; pixel_y = 3},/obj/item/radio/headset{pixel_x = 7; pixel_y = -2},/obj/structure/rack,/turf/open/floor/plasteel,/area/space)
-"cz" = (/obj/item/card/id,/obj/item/card/id,/obj/item/card/id,/obj/item/card/id,/turf/open/floor/plasteel,/area/space)
-"cA" = (/obj/structure/filingcabinet/chestdrawer/random,/turf/open/floor/plasteel,/area/space)
-"cB" = (/obj/structure/chair/office{dir = 8},/turf/open/floor/plasteel,/area/space)
-"cC" = (/obj/structure/fluff/hedge,/turf/open/floor/plating,/area/space)
-"cD" = (/obj/structure/chair{dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/space)
-"cE" = (/obj/machinery/vending/cola,/turf/open/floor/plasteel,/area/space)
+"aa" = (/turf/closed/wall,/area/template_noop)
+"ab" = (/turf/open/floor/plasteel,/area/template_noop)
+"ac" = (/obj/structure/filingcabinet/chestdrawer/random,/turf/open/floor/plasteel,/area/template_noop)
+"ad" = (/turf/open/floor/plating,/area/template_noop)
+"ae" = (/obj/item/plunger,/turf/open/floor/plasteel,/area/template_noop)
+"af" = (/obj/structure/closet/crate/engineering/electrical,/turf/open/floor/plasteel,/area/template_noop)
+"ag" = (/obj/item/poster/random_contraband,/obj/item/poster/random_official,/turf/open/floor/plasteel,/area/template_noop)
+"ah" = (/obj/item/transfer_valve,/turf/open/floor/plasteel,/area/template_noop)
+"ai" = (/obj/structure/table,/turf/open/floor/plasteel,/area/template_noop)
+"aj" = (/obj/item/poster/random_contraband,/obj/item/poster/random_official,/obj/item/poster/random_official,/obj/item/poster/random_official,/turf/open/floor/plasteel,/area/template_noop)
+"ak" = (/obj/item/poster/random_contraband,/turf/open/floor/plasteel,/area/template_noop)
+"al" = (/obj/structure/rack,/obj/item/binoculars,/turf/open/floor/plasteel,/area/template_noop)
+"am" = (/obj/structure/closet/crate,/turf/open/floor/plasteel,/area/template_noop)
+"an" = (/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"ao" = (/obj/structure/closet/crate/trashcart,/turf/open/floor/plasteel,/area/template_noop)
+"ap" = (/obj/structure/rack,/obj/item/toner,/turf/open/floor/plasteel,/area/template_noop)
+"aq" = (/obj/structure/rack,/obj/item/camera,/obj/item/camera,/obj/item/camera,/turf/open/floor/plasteel,/area/template_noop)
+"ar" = (/obj/structure/rack,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/template_noop)
+"as" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/template_noop)
+"at" = (/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"au" = (/obj/structure/chair{dir = 4},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"av" = (/obj/structure/table,/obj/structure/sign/poster/contraband/eat{pixel_y = 32},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aw" = (/obj/structure/chair{dir = 8},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"ax" = (/obj/structure/table,/obj/structure/sign/poster/contraband/donut_corp{pixel_y = 32},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"ay" = (/obj/structure/table,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"az" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plating,/area/template_noop)
+"aA" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plating,/area/template_noop)
+"aB" = (/obj/structure/table,/turf/open/floor/plating,/area/template_noop)
+"aC" = (/obj/item/camera,/turf/open/floor/plasteel,/area/template_noop)
+"aD" = (/obj/structure/rack,/obj/item/tape/random,/obj/item/tape/random,/obj/item/tape/random,/obj/item/tape/random,/turf/open/floor/plasteel,/area/template_noop)
+"aE" = (/obj/item/wirecutters,/turf/open/floor/plasteel,/area/template_noop)
+"aF" = (/obj/structure/rack,/obj/item/taperecorder/empty,/obj/item/taperecorder/empty,/obj/item/taperecorder/empty,/turf/open/floor/plasteel,/area/template_noop)
+"aG" = (/obj/structure/window/fulltile,/turf/open/floor/plasteel,/area/template_noop)
+"aH" = (/obj/machinery/vending/snack/teal,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aI" = (/obj/machinery/vending/cola/red,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aJ" = (/obj/item/caution,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aK" = (/obj/structure/chair,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aL" = (/obj/machinery/processor,/turf/open/floor/plating,/area/template_noop)
+"aM" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/template_noop)
+"aN" = (/obj/item/lighter/greyscale{pixel_x = -10; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = -5; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = 0; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = 5; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = 10; pixel_y = 5},/obj/item/lighter/greyscale{pixel_x = -10; pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = -10; pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = -5; pixel_y = -2},/obj/item/lighter/greyscale{pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = 5; pixel_y = -2},/obj/item/lighter/greyscale{pixel_x = 10; pixel_y = -2},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"aO" = (/obj/structure/rack,/obj/item/storage/fancy/cigarettes/cigpack_carp{pixel_x = -5; pixel_y = 8},/obj/item/storage/fancy/cigarettes/cigpack_midori{pixel_x = -5; pixel_y = 5},/obj/item/storage/fancy/cigarettes/cigpack_robust{pixel_x = -5; pixel_y = 1},/obj/item/storage/fancy/cigarettes/cigpack_robustgold{pixel_x = -5; pixel_y = -3},/obj/item/storage/fancy/cigarettes/cigpack_uplift{pixel_x = 6; pixel_y = 8},/obj/item/storage/fancy/cigarettes/cigpack_xeno{pixel_x = 5; pixel_y = 4},/obj/item/storage/fancy/cigarettes/dromedaryco{pixel_x = 5; pixel_y = -1},/obj/item/storage/fancy/cigarettes{pixel_x = 5; pixel_y = -5},/turf/open/floor/plasteel,/area/template_noop)
+"aP" = (/obj/item/storage/fancy/cigarettes/cigars/cohiba,/obj/item/storage/fancy/cigarettes/cigars/havana{pixel_y = 3},/turf/open/floor/plasteel,/area/template_noop)
+"aQ" = (/obj/item/storage/fancy/rollingpapers{pixel_x = -2; pixel_y = -5},/obj/item/storage/fancy/rollingpapers{pixel_x = -1; pixel_y = -2},/obj/item/storage/fancy/rollingpapers{pixel_x = 0; pixel_y = 1},/obj/item/storage/fancy/rollingpapers{pixel_x = 1; pixel_y = 4},/turf/open/floor/plasteel,/area/template_noop)
+"aR" = (/obj/structure/flora/ausbushes/brflowers,/turf/open/floor/plating,/area/template_noop)
+"aS" = (/obj/structure/window/fulltile,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aT" = (/obj/structure/fluff/hedge,/turf/open/floor/plating,/area/template_noop)
+"aU" = (/obj/structure/chair{dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aV" = (/obj/item/paper/crumpled,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"aW" = (/obj/structure/sink{dir = 4; pixel_x = -12},/turf/open/floor/plating,/area/template_noop)
+"aX" = (/obj/structure/sink{dir = 8; pixel_x = 11},/turf/open/floor/plating,/area/template_noop)
+"aY" = (/obj/structure/reagent_dispensers/cooking_oil,/turf/open/floor/plating,/area/template_noop)
+"aZ" = (/turf/template_noop,/area/template_noop)
+"ba" = (/obj/structure/closet/crate/bin,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"bb" = (/obj/structure/toilet,/turf/open/floor/plasteel,/area/template_noop)
+"bc" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel,/area/template_noop)
+"bd" = (/obj/structure/chair/office{dir = 8},/turf/open/floor/plasteel,/area/template_noop)
+"be" = (/obj/structure/mineral_door/plastic,/turf/open/floor/plasteel,/area/template_noop)
+"bf" = (/obj/structure/sink{dir = 8; pixel_x = 11},/turf/open/floor/plasteel,/area/template_noop)
+"bg" = (/obj/structure/window/fulltile,/turf/template_noop,/area/template_noop)
+"bh" = (/turf/open/floor/carpet/blue,/area/template_noop)
+"bi" = (/obj/structure/rack,/turf/open/floor/carpet/blue,/area/template_noop)
+"bj" = (/obj/structure/table/reinforced,/turf/open/floor/carpet/blue,/area/template_noop)
+"bk" = (/turf/closed/wall/mineral/wood,/area/template_noop)
+"bl" = (/obj/structure/toilet{dir = 1},/turf/open/floor/plasteel,/area/template_noop)
+"bm" = (/obj/effect/decal/cleanable/blood/gibs,/obj/effect/decal/cleanable/blood,/obj/structure/toilet{dir = 1},/turf/open/floor/plasteel,/area/template_noop)
+"bn" = (/obj/structure/table/wood,/turf/open/floor/plasteel,/area/template_noop)
+"bo" = (/obj/structure/table/wood,/obj/structure/sign/poster/official/fruit_bowl{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"bp" = (/obj/structure/sink{dir = 4; pixel_x = -12},/turf/open/floor/plasteel,/area/template_noop)
+"bq" = (/obj/structure/table/wood/poker,/turf/open/floor/plasteel,/area/template_noop)
+"br" = (/obj/structure/table/wood/fancy,/turf/open/floor/plasteel,/area/template_noop)
+"bs" = (/obj/item/reagent_containers/food/snacks/breadslice/moldy,/turf/open/floor/plasteel,/area/template_noop)
+"bt" = (/obj/item/clothing/head/helmet{pixel_x = -4; pixel_y = 3},/obj/item/clothing/head/helmet,/obj/item/clothing/head/helmet{pixel_x = 5; pixel_y = -3},/obj/structure/table,/turf/open/floor/plasteel,/area/template_noop)
+"bu" = (/obj/machinery/vending/cola/sodie,/turf/open/floor/plasteel,/area/template_noop)
+"bv" = (/obj/structure/sign/poster/contraband/space_up{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"bw" = (/obj/structure/rack,/obj/item/kitchen/fork,/turf/open/floor/plasteel,/area/template_noop)
+"bx" = (/obj/structure/rack,/obj/item/storage/bag/tray/pan,/turf/open/floor/plasteel,/area/template_noop)
+"by" = (/obj/item/reagent_containers/food/snacks/deadmouse,/turf/open/floor/plasteel,/area/template_noop)
+"bz" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/template_noop)
+"bA" = (/obj/item/pushbroom,/turf/open/floor/plasteel,/area/template_noop)
+"bB" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/chips,/turf/open/floor/plasteel,/area/template_noop)
+"bC" = (/obj/structure/rack,/obj/item/storage/box/dishdrive,/turf/open/floor/plasteel,/area/template_noop)
+"bD" = (/obj/structure/rack,/obj/item/storage/box/lights/bulbs,/turf/open/floor/plasteel,/area/template_noop)
+"bE" = (/obj/structure/rack,/obj/item/storage/box/gloves,/turf/open/floor/plasteel,/area/template_noop)
+"bF" = (/obj/structure/rack,/obj/item/storage/box/lights/tubes,/turf/open/floor/plasteel,/area/template_noop)
+"bG" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/canned/beans,/turf/open/floor/plasteel,/area/template_noop)
+"bH" = (/obj/structure/rack,/obj/item/storage/box,/turf/open/floor/plasteel,/area/template_noop)
+"bI" = (/obj/machinery/paystand,/obj/structure/table,/turf/open/floor/plasteel,/area/template_noop)
+"bJ" = (/obj/item/storage/box/gum{pixel_y = 6},/obj/item/storage/box/gum{pixel_y = 3},/obj/item/storage/box/gum,/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"bK" = (/obj/structure/rack,/obj/structure/sign/poster/contraband/shamblers_juice{pixel_x = 32},/turf/open/floor/plasteel,/area/template_noop)
+"bL" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/branrequests,/turf/open/floor/plasteel,/area/template_noop)
+"bM" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/canned/peaches,/turf/open/floor/plasteel,/area/template_noop)
+"bN" = (/obj/item/melee/skateboard/pro,/turf/open/floor/plasteel,/area/template_noop)
+"bO" = (/obj/structure/rack,/obj/item/storage/box,/obj/item/storage/box,/turf/open/floor/plasteel,/area/template_noop)
+"bP" = (/obj/structure/rack,/obj/item/storage/cans/sixsoda,/turf/open/floor/plasteel,/area/template_noop)
+"bQ" = (/obj/item/reagent_containers/food/snacks/candy{pixel_x = -3; pixel_y = 7},/obj/item/reagent_containers/food/snacks/candy{pixel_x = 1; pixel_y = 6},/obj/item/reagent_containers/food/snacks/candy{pixel_x = 5; pixel_y = 5},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"bR" = (/obj/item/razor,/turf/open/floor/plasteel,/area/template_noop)
+"bS" = (/obj/structure/sign/poster/official/twelve_gauge{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"bT" = (/obj/structure/sign/poster/contraband/revolver{pixel_x = 32},/obj/item/wrench,/turf/open/floor/plasteel,/area/template_noop)
+"bU" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/cornchips,/turf/open/floor/plasteel,/area/template_noop)
+"bV" = (/obj/structure/rack,/obj/item/storage/fancy/candle_box,/turf/open/floor/plasteel,/area/template_noop)
+"bW" = (/obj/item/cardpack/series_one,/obj/item/cardpack/series_one,/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"bX" = (/obj/item/storage/pill_bottle,/turf/open/floor/plasteel,/area/template_noop)
+"bY" = (/obj/item/storage/pill_bottle,/obj/item/storage/pill_bottle/iron{pixel_x = 6},/obj/item/storage/pill_bottle/mannitol{pixel_x = -6},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"bZ" = (/obj/item/storage/pill_bottle/multiver{pixel_x = -8},/obj/item/storage/pill_bottle/mutadone{pixel_x = -2; pixel_y = 0},/obj/item/storage/pill_bottle/neurine{pixel_x = 9},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"ca" = (/obj/item/storage/pill_bottle/penacid,/obj/item/storage/pill_bottle/probital{pixel_x = -8},/obj/item/storage/pill_bottle/psicodine{pixel_x = 7},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cb" = (/obj/item/storage/pill_bottle/epinephrine,/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cc" = (/obj/item/reagent_containers/food/drinks/colocup{pixel_x = 2; pixel_y = -2},/obj/item/reagent_containers/food/drinks/colocup{pixel_x = -5; pixel_y = -7},/turf/open/floor/plasteel,/area/template_noop)
+"cd" = (/obj/structure/rack,/obj/item/stack/sticky_tape,/turf/open/floor/plasteel,/area/template_noop)
+"ce" = (/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -5; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -5; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -8; pixel_y = 3},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/bungo{pixel_y = 7},/turf/open/floor/plasteel,/area/template_noop)
+"cf" = (/obj/item/reagent_containers/food/snacks/dough,/turf/open/floor/plasteel,/area/template_noop)
+"cg" = (/obj/item/pda{pixel_x = -4},/obj/item/pda{pixel_y = -4},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"ch" = (/obj/structure/sign/poster/contraband/borg_fancy_2{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"ci" = (/obj/item/cartridge/curator,/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cj" = (/obj/item/cartridge/detective,/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"ck" = (/obj/structure/sign/poster/official/pda_ad{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"cl" = (/obj/structure/sign/poster/contraband/borg_fancy_1{pixel_y = 32},/turf/open/floor/plasteel,/area/template_noop)
+"cm" = (/obj/item/radio{pixel_x = -7},/obj/item/radio{pixel_x = 5},/obj/item/radio,/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cn" = (/turf/open/floor/plasteel/grimy,/area/template_noop)
+"co" = (/obj/machinery/vending/cola/space_up,/turf/open/floor/plasteel/grimy,/area/template_noop)
+"cp" = (/obj/structure/sink/kitchen,/turf/open/floor/plasteel,/area/template_noop)
+"cq" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = 6},/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = 2},/obj/item/reagent_containers/food/snacks/donut/jelly/caramel{pixel_x = -7; pixel_y = -2},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = 6},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = 2},/obj/item/reagent_containers/food/snacks/donut/jelly/plain{pixel_x = 7; pixel_y = -2},/turf/open/floor/plasteel,/area/template_noop)
+"cr" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/berry{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/choco{pixel_x = 7; pixel_y = 8},/obj/item/reagent_containers/food/snacks/donut/choco{pixel_x = 7; pixel_y = 4},/obj/item/reagent_containers/food/snacks/donut/choco{pixel_x = 7; pixel_y = 0},/turf/open/floor/plasteel,/area/template_noop)
+"cs" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/apple{pixel_x = 6; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/jelly/berry{pixel_x = -8; pixel_y = 9},/obj/item/reagent_containers/food/snacks/donut/plain{pixel_x = -8; pixel_y = 2},/obj/item/reagent_containers/food/snacks/donut/plain{pixel_x = 6; pixel_y = 5},/obj/item/reagent_containers/food/snacks/donut/plain{pixel_x = 6; pixel_y = 0},/turf/open/floor/plasteel,/area/template_noop)
+"ct" = (/obj/structure/rack,/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 10},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 7},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 4},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = 1},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = -4; pixel_y = -2},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = 9; pixel_y = -2},/obj/item/reagent_containers/food/snacks/donut/meat{pixel_x = 9; pixel_y = 9},/turf/open/floor/plasteel,/area/template_noop)
+"cu" = (/obj/item/laser_pointer,/turf/open/floor/plasteel,/area/template_noop)
+"cv" = (/obj/structure/sign/poster/contraband/c20r{pixel_x = 32},/turf/open/floor/plasteel,/area/template_noop)
+"cw" = (/obj/item/cartridge/janitor{pixel_y = 8},/obj/item/cartridge/signal{pixel_y = 3},/obj/item/cartridge/engineering{pixel_y = -2},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cx" = (/obj/item/cartridge/medical,/obj/item/cartridge/hop{pixel_y = -6},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cy" = (/obj/structure/table,/obj/item/card/id,/turf/open/floor/plasteel,/area/template_noop)
+"cz" = (/obj/item/pda{pixel_x = -3; pixel_y = 4},/obj/item/pda{pixel_x = 5},/obj/item/pda{pixel_x = -2; pixel_y = -4},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cA" = (/obj/item/card/data/disk,/turf/open/floor/plasteel,/area/template_noop)
+"cB" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/grimy,/area/template_noop)
+"cC" = (/obj/machinery/vending/cola,/turf/open/floor/plasteel,/area/template_noop)
+"cD" = (/obj/item/radio/headset{pixel_x = -6; pixel_y = 8},/obj/item/radio/headset{pixel_x = -6; pixel_y = 3},/obj/item/radio/headset{pixel_x = -6; pixel_y = -2},/obj/item/radio/headset{pixel_x = 7; pixel_y = 8},/obj/item/radio/headset{pixel_x = 7; pixel_y = 3},/obj/item/radio/headset{pixel_x = 7; pixel_y = -2},/obj/structure/rack,/turf/open/floor/plasteel,/area/template_noop)
+"cE" = (/obj/item/card/id,/obj/item/card/id,/obj/item/card/id,/obj/item/card/id,/turf/open/floor/plasteel,/area/template_noop)
+"cF" = (/obj/machinery/sewingmachine,/turf/open/floor/plasteel,/area/template_noop)
+"cG" = (/obj/machinery/smartfridge/food,/turf/open/floor/plasteel,/area/template_noop)
+"cH" = (/obj/machinery/power/floodlight,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"cI" = (/obj/machinery/power/emitter,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"cJ" = (/obj/machinery/power/rad_collector,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaacacacacacacacacacacacacacacacacaaacacacacaaacacacacacacacacacacacacaacAacacacacaaacacacacacacacacacacaaacacacacacacacacacacacacacacacacacacacacafafafafafafafafaaafafafafafafaa
-aaacacacaiacacacajacacacacacacacacaaacacacacacacacacacacacacacacacacacaaacacacacacaaacacacacacacacacacacaaacacacacacacacacacacacacacacacacacacacacafafafafafafafafaaafafafafafafaa
-aaacakacacacacacacacacacacacacacacaaacacacacaaacacacacacacacacacaracacaaacacacaaaaaaacacacacacacacacacacaaagagagagagagagagagagagagagagagagagagagagaaafafafafafafafaaafafafafafafaa
-aaacaGacaHacacacacacacacacacacacacaaacacacacacacacacacacacacacacacacacaaacacacagacacacacacacacacacacacacaaacacacacacacacacacacacacacacacacacacacacaaaaaaaaafaaaaaaaaaaaaafaaaaaaaa
-aaacacacacacacacacacacacacacacacacaaacacacacacacacacacacacacacacacacacaaacacacagacacacacacacacacacacacacaaacacacacacacacacacacacacacacacacacacacacaaafafafafafafafafafafafafafafaa
-aaacacacacacacacacacacacacacacacacaaacacacacaaaIacacacacacacacacacacacaaacacacagacacacacacacacacacacacacaaacacacacacacacacacacacacacacacacacacacacaaafafafafafafafafafafafafafafaa
-aaacaJaJaJacacacacacacacacacacacacaaacacacacaaauacacacacacacacacacacacaaacacacaaauacauacacacacacauacauacaaacacacacacaaaaaaaaaaaaaaaaaaaaaaacacacacaaaaaaaaaaafafafafafafafafafafaa
-aaacacacacacacaKaKacacacacacacacacaaacacacacaaaLacacacaMacacacacacacacaaacacacaaaNacauacacacacacauacauaOaaacacacacacadadadamaPaoadamaQaoadadadadadamanaoadaaaRafafafaSapafafafapaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaaacacacacaaauacacacaTacacacacacacacaaacacacaaauacauacacacacacauacauacaaacacacacadadadadadadadadadadadadadadadadadadadadaaapafafafaSapafafafapaa
-aaacacacacacaaacacacacacacacaaacacaaacacacacaaaUacacacacacacacacacacacaaacacacaaauacauacacacacacauacauacaaacacacadadadadadamanaoadamanaoadadadadadamanaoadaaapafafafaSapafafafapaa
-aaacacacacacacacacacacacacacaaacaVaaacacacacaaaWacacacacacacacacacacacaaacacacaaacacacacacacacacacacacacaaacacadadadadadadadadadadadadadadadadadadadadadadaaapafafafapapafafafapaa
-aaacacacacacaaacacacacacacacaaacaaaaaaaaaaaaaaaaacacacaaacacaaacacacacaaaaaaaaaaatatatataaacaaatatatataaaaacadadadadadadadamanaoadamanaoadadadadadamanaoadaaapafafafapapafafafapaa
-aaacacacacacaaacacacacacacacaaadadadaXadadadadadadadadadadadadadadadadadaYadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaapafafafapapafafafapaa
-aaaaaaacaaaaaaaaaaaaaaaaaaaaaaadadadadadadadadadadadadadadaZadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadbaadadbaadaaapafafafapbbafafafapaa
-aaacacacacawbcacacacacbdbebfaaadadaDaDaDaDadadadadaDaDaDaDaDadadadadadadaDaDaDaDaDadadadadadaDaDaDaDaDadadadadadaDaDaDaDaDadadadadadaDaDaDaDadadanadadanadaaapafafafapbbafafafapaa
-aaacacacacawacacacacacacacacaqadadaDcCcCaDadadadadaDcCcCcCaDadadadadadadaDcCcCcCaDadadadadadaDcCcCcCaDadadadadadaDcCcCcCaDadadadadadaDcCcCaDadadcDadadcDadaaapafafafapbbafafafaRaa
-aaacacacacawawawawawawawawawaqadbgaDcCaDaDadadadadaDaDaDaDaDadadadadadadaDaDaDaDaDadadadadadaDaDaDaDaDadadadadadaDaDaDaDaDadadadadadaDaDcCaDadadadadadadadaabhafafafafafafafafbiaa
-aaacacacacacacacacacacacacacaaadadaDcCaDadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaDaDaDadadbaadadbaadaaafafafafafafafafafafaa
-aaacacacacacacacacacacacacacacadadaDaDaDadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadanadadanadaaasasasafafafafafafafaa
-aaacacacacacacacacacacacacacacadadadadadadadadadadataaatatatatataaaaaaaaaaaaacacaaatatataaatatataaatatatacacacatatataaaaaaaaaaaaaaadadadadadadadcDadadcDadaaaaaaaaaaaaaaaaaaaaaaaa
-aaacacacacacacacacacacacacacaaadadadadadadadadadacacacacacacacacaaauauauacaaacacaaacacacauacacauaaacacaaatacataaacacaacAacacacacaaadadadadadadadadadadadaaabababababababababababab
-aaacacacacacacacacacacacacacaqadadadbjadadadadacacacacacacacacacaaacacacacaaacacacacacacauacacauaaauacacacacacacacauaaacacacacacaaadadadadadadadadadadaaababababababababababababab
-aaacacacacacacacacacacacacacaqadadaDaDaDadadatacacauauauauauauauaaacacacacaaacacacacacacauacacauaaauacacacacacacacauaaacacacacacaaadadadadadadadadadaaabababababababababababababab
-aaacacacacacacacacacacacacacaaadadaDcCaDadadaaacacauauauauauauauaaaaacaaacaaaaaaaaauacacauacacauaaauacacacacacacacauaaacacacacacaaadadadadadadadadaaababababababababababababababab
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadaDcCaDadadatacacacacacacacacacacacacaaacaccAagaaauacacauacacauaaauacacacacacacacauaaaaaaacaaaaaaadadadadadadadaaabababababababababababababababab
-aaavaaavaaavaaavaabkacacacacaaadadaDcCaDadadatacacacacacacacacacawacacaaacacaccBaaauacacacacacauaaauacacacacacacacauaaacacacacacaaadadadadadadadaaabababababababababababababababab
-aaaxaaaxaaaxaaaxaaacayaaacacaaadadaDaDaDadadatacacacacacacacacacawacacaaacacacacaaauacacacacacauaaauacacacacacacacauacacacacacacaaadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacayaaacacaaadadadadadadadatauauauauauauauauauawacacaaacacacacaaauacacacacacauaaauacacacacacacacauaaacacacacacaaadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacayaaacacaaadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadaaabababababababababababababababab
-aaaxaaaxaaaxaaaxaaacayaaacacaaadadadadadadadaeahalalalalalalalahaBahaaacacacacacaaacacacacacaablblblblblblblacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaazaaaAaaazaaazaaacayaaacacacadadadbjadadadaeahahahahahahahahahaBahaaacacacacacaaacacacacacaablbmbmbmbnbmacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaaaaaaaaaaaaaaaaaaaaaaaacacacadadaDaDaDadadaeahalalalalalalalahaBaBaaacacacacacaaaaaaaaaaacaablbmacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaavaaavaaavaaavaaacayaaacacacadadaDcCaDadadaaahahahahahahahahahahahacacacacacacaaacacacacacaablboacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaaxaaaxaaaxaaaxaaacayaaacacaaadadaDcCaDadadahahahahahahahahahahahahaaaaaaaaaaacaaacacacacacaaacacacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacayaaacacaaadadaDcCaDadadaaahahahahahahahahahahahaaacacacacacaaacacacacacaaacacacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacayaaacacaaadadaDaDaDadadaeahalalalalalalalahahahaaacacacacacaaaaaaaaaaaaaaacacacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaaxaaaxaaaxaaaxaaacayaaacacaaadadadadadadadaeahahahahahahahahahahahaaacacacacacaaacacacacacaaacacacacacacacacacacacbpbpacacacacacadadadadadadadaaabababababababababababababababab
-aaazaaazaaazaaazaabkacacacacaaadadadadadadadaeahalalalalalalalahahahaaacacacacacaaacacacacacaaacacbqbqbqacacacacacacbpbpacacacacacadadadadadadadaaabababababababababababababababab
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaaacacbqbqbqacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacbraaacacaEagagagacacacaaadadadadadadadatacacbsacaaacacacbtacacacaubuaubvauaaacacbwacacaaacacacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacaaacacacacacacacacacaaadadadbjadadadacacbxacacaaacacacacacacacbxacacacacacacacacacacaaacacacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacaaacacacacacacacacacaaadadaDaDaDadadacacacacacaaacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadaaabababababababababababababababab
-aaacacacaaacacacbyacacacacacacadadaDcCaDadadatacacbxacaaacacaabzacacauaaauacacauaaacacacacacacaabAbBbCbDacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacaaacacacacacacacacacacadadaDcCaDadadatacacagagagacacaaauacacbEaabFacacauaaacbxacacacacaaacacacacacacacacacbxacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacaaacacacacacacacacacaaadadaDcCaDadadatacacaCacbGacacaaauacacbHaaauacacbIaaacacacacacacacacbxacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacaaacacacacacacacacacaaadadaDaDaDadadatacbxacacacbxacaabJbxacbFaaauacacauaaaaaaaaacaaaaaaacacacacacacacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacaaacacaFacacacacacacaaadadadadadadadatacacagagagacacaabKacacbLaaauacacbFaaacacacaccAagaaacacacacacbxacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadatacacaCacbMacacaaauacacbFaaauacacauaaauauacacacacaaaaaaaaaaaaaabNacacacacbxacacacbxacadadadadadadadaaabababababababababababababababab
-aabkacacacacacacacacacacbObPaaadadadadadadadatacacacacacacacaabLacacauaabQacacbRaaacacacacacacaacAacacacacaaacacacacacacacacacbkacadadadadadadadaaabababababababababababababababab
-aaacbxacacaHacacacacacacacacatadadadadadadadatacacagagagacacaabKacacauaabKacacauaaauauacauauacaaacacacacacaaacacacacbxacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacacacacacbxacacacacacatadadadbjadadadatacacaCacbSacacacacacacacacacbxacacaaacacacacbxacaaacacacacacaaacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacacacacacaaadadaDaDaDadadatbTacbxacacacbxacacacbxacacacacacacaabUbVacbWbXacaaacacacacacaaacacacacacacacacacacacadadadadadadadaaabababababababababababababababab
-aaacacacacbxacacacacacacacacacadadaDcCaDadadatacacacacacbYacauauauaubZauaubRauauaaaaaaaaaaaaaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacacacacacaaadadaDcCaDadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaacacacaccbaaacacacacccaccdceagcfcgacchciacacaaadadadadadadadaaabababababababababababababababab
-aaacacacacacacacacacacacbxacatadadaDcCaDadadaacjcjcjckckcjcjcjbmclagaacmcnaacocpaaacacacacacacaaaccqacacacacacacacbxacacacacacacaaadadadadadadadaaabababababababababababababababab
-aaacacbxacacacacacacacacacacatadadaDaDaDadadaacjcjcjcjcjcjcjcjbmacacacacacacacacacacacacacacacaaacacacacacacacacacacacacacacacacaaadadadadadadadaaabababababababababababababababab
-aacAacacacacacacacacacacaccraaadadadadadadadaacjcjcjcjcjcjcjcjbmbmbmbmbmbmbmbmbmaaacacacacacacaabxcsagagctbxacacacaccucvacacacacaaadadadadadadadaaabababababababababababababababab
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadaccjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjaaacacacacacacaaacacacacacacacacacacacacacacbxacaaadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadadadadadadaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjaaaaacacacacacaaaccwacacbxacacacacacbxacacacacacaaadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadadadadadadaacjcxcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcEaaacacacacacaaacacaccyacacczacacacacacacacacacaaadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadadbjadadadaaaaaaacaaaaaaacacacaaacacacaaacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaaaaaaaaadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadaDaDaDadadadadadadadadadadadadadadadadadadadadadadadadadadadbjadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadaDcCaDadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadaDcCaDaDaDadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadaDcCcCcCaDadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadaDaDaDaDaDadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaabababababababababababababaaadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababab
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaadadadadadadadadadadadadadadadadadadadadaaabababababababababababababababababababababababababababababababababab
-abababababababababababababababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababababab
+aaababababababababababababababababaaababababaaababababababababababababaaacababababaaababababababababababaaababababababababababababababababababababadadadadadadadadaaadadadadadadaa
+aaabababaeabababafababababababababaaabababababababababababababababababaaabababababaaababababababababababaaababababababababababababababababababababadadadadadadadadaaadadadadadadaa
+aaabagababababababababababababababaaababababaaabababababababababahababaaabababaaaaaaababababababababababaaaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaadadadadadadadaaadadadadadadaa
+aaabajabakababababababababababababaaabababababababababababababababababaaabababaiababababababababababababaaababababababababababababababababababababaaaaaaaaadaaaaaaaaaaaaadaaaaaaaa
+aaababababababababababababababababaaabababababababababababababababababaaabababaiababababababababababababaaababababababababababababababababababababaaadadadadadadadadadadadadadadaa
+aaababababababababababababababababaaababababaaalabababababababababababaaabababaiababababababababababababaaababababababababababababababababababababaaadadadadadadadadadadadadadadaa
+aaabamamamababababababababababababaaababababaaanabababababababababababaaabababaaanabanabababababanabanabaaabababababaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaadadadadadadadadadadaa
+aaababababababaoaoababababababababaaababababaaapabababaqabababababababaaabababaaarabanabababababanabanasaaabababababatatatauavawatauaxawatatatatatauayawataaazadadadaAaBadadadaBaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaaababababaaanabababaCabababababababaaabababaaanabanabababababanabanabaaababababatatatatatatatatatatatatatatatatatatatataaaBadadadaAaBadadadaBaa
+aaabababababaaabababababababaaababaaababababaaaDabababababababababababaaabababaaanabanabababababanabanabaaabababatatatatatauayawatauayawatatatatatauayawataaaBadadadaAaBadadadaBaa
+aaabababababababababababababaaabaEaaababababaaaFabababababababababababaaabababaaababababababababababababaaababatatatatatatatatatatatatatatatatatatatatatataaaBadadadaBaBadadadaBaa
+aaabababababaaabababababababaaabaaaaaaaaaaaaaaaaabababaaababaaababababaaaaaaaaaaaGaGaGaGaaabaaaGaGaGaGaaaaabatatatatatatatauayawatauayawatatatatatauayawataaaBadadadaBaBadadadaBaa
+aaabababababaaabababababababaaatatataHatatatatatatatatatatatatatatatatataIatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaBadadadaBaBadadadaBaa
+aaaaaaabaaaaaaaaaaaaaaaaaaaaaaatatatatatatatatatatatatatataJatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataKatataKataaaBadadadaBaLadadadaBaa
+aaababababaMaNababababaOaPaQaaatataRaRaRaRatatatataRaRaRaRaRatatatatatataRaRaRaRaRatatatatataRaRaRaRaRatatatatataRaRaRaRaRatatatatataRaRaRaRatatayatatayataaaBadadadaBaLadadadaBaa
+aaababababaMababababababababaSatataRaTaTaRatatatataRaTaTaTaRatatatatatataRaTaTaTaRatatatatataRaTaTaTaRatatatatataRaTaTaTaRatatatatataRaTaTaRatataUatataUataaaBadadadaBaLadadadazaa
+aaababababaMaMaMaMaMaMaMaMaMaSataVaRaTaRaRatatatataRaRaRaRaRatatatatatataRaRaRaRaRatatatatataRaRaRaRaRatatatatataRaRaRaRaRatatatatataRaRaTaRatatatatatatataaaWadadadadadadadadaXaa
+aaabababababababababababababaaatataRaTaRatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataRaRaRatataKatataKataaadadadadadadadadadadaa
+aaababababababababababababababatataRaRaRatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatayatatayataaaYaYaYadadadadadadadaa
+aaababababababababababababababatatatatatatatatatataGaaaGaGaGaGaGaaaaaaaaaaaaababaaaGaGaGaaaGaGaGaaaGaGaGabababaGaGaGaaaaaaaaaaaaaaatatatatatatataUatataUataaaaaaaaaaaaaaaaaaaaaaaa
+aaabababababababababababababaaatatatatatatatatatababababababababaaanananabaaababaaabababanababanaaababaaaGabaGaaababaaacababababaaatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababababababaSatatatbaatatatatabababababababababaaababababaaababababababanababanaaanabababababababanaaabababababaaatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababababababaSatataRaRaRatataGababanananananananaaababababaaababababababanababanaaanabababababababanaaabababababaaatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababababababaaatataRaTaRatataaababanananananananaaaaabaaabaaaaaaaaanababanababanaaanabababababababanaaabababababaaatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatataRaTaRatataGababababababababababababaaababacaiaaanababanababanaaanabababababababanaaaaaaabaaaaaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabbaabbaabbaabbaabcababababaaatataRaTaRatataGabababababababababaMababaaabababbdaaanabababababanaaanabababababababanaaabababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabeaabeaabeaabeaaabbfaaababaaatataRaRaRatataGabababababababababaMababaaababababaaanabababababanaaanabababababababanababababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababbfaaababaaatatatatatatataGanananananananananaMababaaababababaaanabababababanaaanabababababababanaaabababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababbfaaababaaatatatatatatataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabeaabeaabeaabeaaabbfaaababaaatatatatatatatbgbhbibibibibibibibhbjbhaaabababababaaabababababaabkbkbkbkbkbkbkabababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aablaabmaablaablaaabbfaaabababatatatbaatatatbgbhbhbhbhbhbhbhbhbhbjbhaaabababababaaabababababaabkbnbnbnbobnababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaaaaaaaaaaaaaaaaaaaaaaabababatataRaRaRatatbgbhbibibibibibibibhbjbjaaabababababaaaaaaaaaaabaabkbnababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabbaabbaabbaabbaaabbfaaabababatataRaTaRatataabhbhbhbhbhbhbhbhbhbhbhababababababaaabababababaabkbpababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabeaabeaabeaabeaaabbfaaababaaatataRaTaRatatbhbhbhbhbhbhbhbhbhbhbhbhaaaaaaaaaaabaaabababababaaababababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababbfaaababaaatataRaTaRatataabhbhbhbhbhbhbhbhbhbhbhaaabababababaaabababababaaababababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababbfaaababaaatataRaRaRatatbgbhbibibibibibibibhbhbhaaabababababaaaaaaaaaaaaaaababababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabeaabeaabeaabeaaabbfaaababaaatatatatatatatbgbhbhbhbhbhbhbhbhbhbhbhaaabababababaaabababababaaabababababababababababbqbqabababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aablaablaablaablaabcababababaaatatatatatatatbgbhbibibibibibibibhbhbhaaabababababaaabababababaaababbrbrbrababababababbqbqabababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaababbrbrbrabababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaababbsaaababbtaiaiaiabababaaatatatatatatataGababbuabaaabababbvabababanbwanbxanaaababbyababaaababababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaabababababababababaaatatatbaatatatababbzababaaabababababababbzababababababababababaaababababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaabababababababababaaatataRaRaRatatabababababaaababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaabababbAababababababatataRaTaRatataGababbzabaaababaabBababanaaanababanaaababababababaabCbDbEbFabababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaababababababababababatataRaTaRatataGababaiaiaiababaaanababbGaabHababanaaabbzababababaaabababababababababbzabababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaabababababababababaaatataRaTaRatataGababbIabbJababaaanababbKaaanababbLaaababababababababbzabababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaabababababababababaaatataRaRaRatataGabbzabababbzabaabMbzabbHaaanababanaaaaaaaaabaaaaaaabababababababababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababaaababbNababababababaaatatatatatatataGababaiaiaiababaabOababbPaaanababbHaaababababacaiaaabababababbzabababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatataGababbIabbQababaaanababbHaaanababanaaananababababaaaaaaaaaaaaaabRababababbzabababbzabatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aabcababababababababababbSbTaaatatatatatatataGabababababababaabPababanaabUababbVaaababababababaaacababababaaabababababababababbcabatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabbzababakababcFabababababaGatatatatatatataGababaiaiaiababaabOababanaabOababanaaananabananabaaabababababaaababababbzababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababbzabababababaGatatatbaatatataGababbIabbWabababababababababbzababaaababababbzabaaabababababaaabababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababababababaaatataRaRaRatataGbXabbzabababbzabababbzababababababaabYbZabcacbabaaabababababaaabababababababababababatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaababababbzabababababababababatataRaTaRatataGabababababccabanananancdananbVananaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababababababaaatataRaTaRatataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaceababababcfaaababababcgabchciaicjckabclcmababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaabababababababababababbzabaGatataRaTaRatataacncncncococncncncGcpaiaacqcraacsctaaababababababaaabcuabababababababbzababababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaababbzababababababababababaGatataRaRaRatataacncncncncncncncnbnabababababababababababababababaaababababababababababababababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaacabababababababababababcvaaatatatatatatataacncncncncncncncnbnbnbnbnbnbnbnbnbnaaababababababaabzcwaiaicxbzababababcyczababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatatabcncncncncncncncncncncncncncncncncnaaababababababaaababababababababababababababbzabaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatataacncncncncncncncncncncncncncncncncnaaaaabababababaaabcAababbzabababababbzabababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatataacncBcncncncncncncncncncncncncncncncCaaabababababaaabababcDababcEabababababababababaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatbaatatataaaaaaabaaaaaaabababaaabababaaabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatataRaRaRatatatatatatatatatatatatatatatatatatatatatatatatatatatbaatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatataRaTaRatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatataRaTaRaRaRatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatataRaTaTaTaRatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatataRaRaRaRaRatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatatatatatatatatatatcHatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatatatatcIcIatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatatatatatatcJatatatatatatatatatatatatataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatcJatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatcJatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaatatatatatatatatatatatatatatatatatatatataaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
+aZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
 "}

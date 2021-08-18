@@ -1,12 +1,13 @@
 /datum/round_event_control/rain
-	name = "Bruh Moment"
+	name = "rain"
 	typepath = /datum/round_event/rain
-	weight = 10
-	min_players = 1
-	max_occurrences = 500
-
+	weight = 30
+	min_players = 0
+	earliest_start = 0 MINUTES
 /datum/round_event/rain
-	startWhen = 2
+
+/datum/round_event/rain/setup()
+	startWhen = 3
 	fakeable = FALSE
 
 /datum/round_event/rain/start()

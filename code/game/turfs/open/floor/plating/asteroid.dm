@@ -135,24 +135,26 @@
 		/obj/effect/spawner/lootdrop/minnyral = 30,
 		/obj/item/melee/stick = 50,
 		/obj/item/stack/stone = 20,
+		/obj/item/stack/sheet/metal = 40,
 		/obj/item/clothing/head/trucker = 1,
 		/obj/item/clothing/head/cone = 7,
 		/obj/item/storage/toolbox/emergency = 1,
-		/mob/living/simple_animal/hostile/squirrel = 5,
-		"" = 5 )
+		/obj/structure/filingcabinet/chestdrawer/random = 3,
+		/obj/vehicle/ridden/atv/kart = 0.3,
+		/mob/living/simple_animal/hostile/bear = 1,
+		"" = 1120 )
 /turf/open/floor/plating/asteroid/garbango/proc/updatelight()
-	var/rawtime = station_time()
-	var/time = 2*sin(rawtime/60)
-	light_range = time
+	var/time = station_time()
+	light_range = sin(0.00000864*time)
+//DOTHIS make a switch for time and color, also make it not shit
 /turf/open/floor/plating/asteroid/garbango/proc/SpawnShit(turf/T)
-	if(prob(50))
-		var/shit = pickweight(spawntable)
-		if(!shit)
-			return
-		for(var/obj/structure/flora/F in range(4, T)) //Allows for growing patches, but not ridiculous stacks of flora
-			if(!istype(F, shit))
-				return
-		new shit(T)
+//	if(prob(50))
+	var/shit = pickweight(spawntable)
+//		if(!shit)
+//			return
+//		for(var/obj/structure/flora/F in range(4, T)) //Allows for growing patches, but not ridiculous stacks of flora
+//			if(!istype(F, shit))
+	new shit(T)
 /turf/open/floor/plating/asteroid/garbango/Initialize(mapload)
 	. = ..()
 	SpawnShit(src)
@@ -316,7 +318,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 
 /turf/open/floor/plating/asteroid/airless/cave/Initialize()
 	if (!mob_spawn_list)
-		mob_spawn_list = list(/mob/living/simple_animal/hostile/poison/giant_spider/nurse = 1, /mob/living/simple_animal/hostile/retaliate/frog = 1, /mob/living/simple_animal/hostile/skeleton = 2, /mob/living/simple_animal/hostile/asteroid/gutlunch = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
+		mob_spawn_list = list(/mob/living/simple_animal/hostile/poison/giant_spider/nurse = 1, /mob/living/simple_animal/hostile/asteroid/gutlunch = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
 	if (!megafauna_spawn_list)
 		megafauna_spawn_list = GLOB.megafauna_spawn_list
 	if (!flora_spawn_list)

@@ -48,7 +48,7 @@
 	material_type = /datum/material/stone
 /obj/item/stack/stone/get_main_recipes()
 	. = ..()
-	. += GLOB.stone_recipe
+	. += GLOB.mason_stack_recipes
 
 /obj/item/stack/ore/cinnabar
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'

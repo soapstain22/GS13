@@ -1,46 +1,8 @@
 //pickaxes
 //shovels
 //axe head
-/obj/item/melee/stick/attackby(obj/item/W, mob/user, params)
-	if(CheckAccepted(W))
-		var/obj/item/reagent_containers/food/snacks/grown/leaf = W
-		if(leaf.dry)
-			user.show_message("<span class='notice'>You wrap \the [W] around the log, turning it into a torch!</span>")
-			var/obj/item/flashlight/flare/torch/T = new /obj/item/flashlight/flare/torch(user.loc)
-			usr.dropItemToGround(W)
-			usr.put_in_active_hand(T)
-			qdel(leaf)
-			qdel(src)
-			return
-		else
-			user.show_message("<span class='notice'>You wrap \the [W] around the log, turning it into a torch!</span>")
-			var/obj/item/flashlight/flare/torch/T = new /obj/item/flashlight/flare/torch(user.loc)
-			usr.dropItemToGround(W)
-			usr.put_in_active_hand(T)
-			qdel(leaf)
-			qdel(src)
-			return
-	else
-		return ..()
 
-/obj/item/melee/stick/proc/CheckAccepted(obj/item/I)
-	return is_type_in_typecache(I, accepted)
 
-/obj/item/stack/moltenglass/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/hammer))
-		var/obj/item/stack/molteniron/R
-		var/choice = input(user, "What would you like to make?", "Molten Glass") as null|anything in list("beaker")
-		switch(choice)
-			if("beaker")
-				to_chat(user, "<span class='notice'>You make a [src].</span>")
-				new /obj/item/reagent_containers/glass/beaker(loc)
-				R.use(1)
-			if("bottle")
-				to_chat(user, "<span class='notice'>You make a [src].</span>")
-				new /obj/item/reagent_containers/food/drinks/bottle(loc)
-				R.use(1)
-			else
-				return ..()
 
 
 

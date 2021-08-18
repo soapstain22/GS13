@@ -20,8 +20,8 @@
 /datum/crafting_recipe/axe
 	name = "hatchet"
 	reqs = list(
-           /obj/item/stack/sheet/metal = 1,
-           /obj/item/stack/sheet/mineral/wood = 1)
+           /obj/item/stack/sheet/metal = 3,
+           /obj/item/stack/sheet/mineral/wood = 5)
 	result = /obj/item/hatchet/wooden
 	time = 60
 	category = CAT_MISC
@@ -43,64 +43,6 @@
 	oneuse = FALSE
 	remarks = list("1 + 1 = 2..........", "drugs.......", "readin...", "pills here",)
 //Pickaxe recipes
-/datum/crafting_recipe/diamondpick
-	name = "diamond pickaxe"
-	reqs = list(
-           /obj/item/stack/sheet/mineral/diamond = 5,
-           /obj/item/stack/sheet/mineral/wood = 1)
-	result = /obj/item/pickaxe/diamond
-	category = CAT_MISC
-	always_availible = TRUE
-	time = 60
-/datum/crafting_recipe/silverpick
-	name = "silver pickaxe"
-	reqs = list(
-           /obj/item/stack/sheet/mineral/silver = 5,
-           /obj/item/stack/sheet/mineral/wood = 1)
-	result = /obj/item/pickaxe/silver
-	category = CAT_MISC
-	always_availible = TRUE
-	time = 60
-/datum/crafting_recipe/jackhammer
-	name = "jackhammer"
-	reqs = list(
-           /obj/item/stack/sheet/mineral/silver = 5,
-           /obj/item/stack/sheet/mineral/titanium = 5,
-           /obj/item/stack/sheet/mineral/diamond = 5,
-           /obj/item/stack/sheet/mineral/silver = 5,
-           /obj/item/stack/sheet/metal = 20,)
-	result = /obj/item/pickaxe/drill/jackhammer
-	category = CAT_MISC
-	always_availible = TRUE
-	time = 60
-
-/obj/item/book/granter/crafting_recipe/minecraft
-	name = "minecraft players guide"
-	desc = "brown bricks"
-	crafting_recipe_types = list(/datum/crafting_recipe/diamondpick,/datum/crafting_recipe/silverpick, /datum/crafting_recipe/jackhammer)
-	icon = 'icons/obj/library.dmi'
-	icon_state = "boneworking_learing"
-	oneuse = FALSE
-	remarks = list("woah", "how curious", "readin...", "fuk",)
-/obj/effect/spawner/lootdrop/research
-	name = "resercsh"
-	lootdoubles = FALSE
-	loot = list(
-		/obj/item/book/granter/crafting_recipe/guns = 3,
-		/obj/item/book/granter/spell/summonitem = 3,
-		/obj/item/book/granter/crafting_recipe/medi = 3,
-		/obj/item/book/granter/crafting_recipe/minecraft = 3,
-		)
-
-/datum/crafting_recipe/research
-	name = "conduct research experiment"
-	reqs = list(
-           /obj/item/paper/ = 5)
-	tools = list(/obj/item/pen = 1)
-	result = /obj/effect/spawner/lootdrop/research
-	category = CAT_MISC
-	always_availible = TRUE
-	time = 60
 
 //bb gun
 /datum/crafting_recipe/bbgun
@@ -156,3 +98,10 @@
 				/obj/item/ammo_casing/a762 = 1)
 	result = /obj/item/ammo_casing/a762
 	category = CAT_MISC
+/datum/crafting_recipe/component
+	name = "make component"
+	reqs = list(/obj/item/stack/sheet/copper = 1,
+				/obj/item/stack/sheet/metal = 1)
+	result = /obj/item/stack/component
+	category = CAT_MISC
+	always_availible = TRUE

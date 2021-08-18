@@ -36,7 +36,10 @@
 		"smmon_6.gif" 				= 'icons/program_icons/smmon_6.gif',
 		"borg_mon.gif"				= 'icons/program_icons/borg_mon.gif'
 	)
-
+/datum/asset/simple/javatari
+	assets = list(
+		"javatari.js" 			= 'arcade/javatari.js-master/release/stable/5.0/embedded/javatari.js',
+	)
 /datum/asset/simple/radar_assets
 	assets = list(
 		"ntosradarbackground.png"	= 'icons/UI_Icons/tgui/ntosradar_background.png',
