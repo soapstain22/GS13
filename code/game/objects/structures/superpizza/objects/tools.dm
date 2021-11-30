@@ -22,7 +22,7 @@
 /obj/item/wirecutters/bolt
 	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
 	name = "bolt cutters"
-	desc = "can circumsize you and cut rods like nobodys buisness"
+	desc = "cut rods like nobodys buisness"
 	icon_state = "boltcutters"
 	force = 5
 	throwforce = 10

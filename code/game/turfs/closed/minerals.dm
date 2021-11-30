@@ -198,16 +198,21 @@
 		if (!isturf(T))
 			return
 
-		if(last_act + (40 * I.toolspeed) > world.time)//prevents message spam
+		if(last_act + (2 * I.toolspeed) > world.time)//prevents message spam
 			return
 		last_act = world.time
-		to_chat(user, "<span class='notice'>You start digging...</span>")
+		to_chat(user, "<span class='notice'>You start picking...</span>")
 
-		if(I.use_tool(src, user, 40, volume=50))
+		if(I.use_tool(src, user, 2, volume=50))
 			if(ismineralturf(src))
-				to_chat(user, "<span class='notice'>You finish digging.</span>")
-				gets_drilled(user, TRUE)
+				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
+				I.obj_integrity -= 0.1
+				damage -= 1
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
+				if(damage <= 1)
+					gets_drilled(user, TRUE)
+				else
+					return attack_hand(user)
 	else
 		return attack_hand(user)
 /turf/closed/mineral/dirt/Bumped(atom/movable/AM)

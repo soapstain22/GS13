@@ -54,7 +54,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/inhand_y_dimension = 32
 	var/attackspeed = 1
 
-	max_integrity = 200
+	max_integrity = 400
 
 	obj_flags = NONE
 	///Item flags for the item

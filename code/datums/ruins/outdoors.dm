@@ -54,3 +54,9 @@
 	description = "facility"
 	suffix = "facility.dmm"
 	allow_duplicates = FALSE
+/datum/map_template/ruin/outdoors/shitworld
+	name = "facility"
+	id = "facility"
+	description = "facility"
+	suffix = "facility.dmm"
+	allow_duplicates = FALSE

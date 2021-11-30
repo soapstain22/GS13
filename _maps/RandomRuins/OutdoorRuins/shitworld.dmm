@@ -1,0 +1,100 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/structure/flora/rock,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/structure/flora/rock,/turf/template_noop,/area/template_noop)
+"e" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
+"f" = (/turf/closed/wall/r_wall,/area/science/mixing)
+"g" = (/turf/open/floor/plasteel,/area/science/mixing)
+"h" = (/turf/open/floor/engine/n2o,/area/science/mixing)
+"i" = (/turf/open/floor/engine/plasma,/area/science/mixing)
+"j" = (/obj/machinery/atmospherics/components/unary/vent_scrubber,/turf/open/floor/engine/n2o,/area/science/mixing)
+"k" = (/obj/machinery/atmospherics/components/unary/vent_scrubber,/turf/open/floor/engine/plasma,/area/science/mixing)
+"l" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/science/mixing)
+"m" = (/obj/structure/window/plasma/fulltile,/obj/machinery/atmospherics/pipe/simple,/turf/open/floor/engine,/area/science/mixing)
+"n" = (/turf/open/floor/engine,/area/science/mixing)
+"o" = (/obj/machinery/atmospherics/pipe/manifold,/turf/open/floor/engine,/area/science/mixing)
+"p" = (/turf/closed/wall,/area/science/mixing)
+"q" = (/obj/machinery/pipedispenser,/turf/open/floor/plasteel,/area/science/mixing)
+"r" = (/obj/machinery/atmospherics/pipe/manifold,/turf/open/floor/plasteel,/area/science/mixing)
+"s" = (/obj/item/tank/internals/generic,/turf/open/floor/plasteel,/area/science/mixing)
+"t" = (/obj/machinery/light,/turf/open/floor/plasteel,/area/science/mixing)
+"u" = (/obj/machinery/door/airlock,/turf/closed/wall/r_wall,/area/science/mixing)
+"v" = (/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/toxins_mixing_input{icon_state = "inje_map-2"; dir = 4},/turf/open/floor/engine,/area/science/mixing)
+"w" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 4},/turf/closed/wall/r_wall,/area/science/mixing)
+"x" = (/obj/machinery/airalarm/mixingchamber{icon_state = "alarm0"; dir = 4},/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 4},/turf/closed/wall/r_wall,/area/science/mixing)
+"y" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 4},/turf/open/floor/plasteel,/area/science/mixing)
+"z" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 10},/turf/open/floor/plasteel,/area/science/mixing)
+"A" = (/obj/machinery/power/apc/auto_name/north,/turf/open/floor/plasteel,/area/science/mixing)
+"B" = (/obj/machinery/air_sensor/atmos/incinerator_tank,/turf/open/floor/engine,/area/science/mixing)
+"C" = (/obj/machinery/door/airlock/research/glass/incinerator/toxmix_interior,/turf/open/floor/engine,/area/science/mixing)
+"D" = (/obj/machinery/door/airlock/research/glass/incinerator/toxmix_exterior,/turf/open/floor/engine,/area/science/mixing)
+"E" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 9},/turf/open/floor/plasteel,/area/science/mixing)
+"F" = (/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxins_mixing_output{icon_state = "vent_map_siphon_on-2"; dir = 4},/turf/open/floor/engine,/area/science/mixing)
+"G" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 10},/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/science/mixing)
+"H" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 5},/turf/open/floor/plasteel,/area/science/mixing)
+"I" = (/obj/item/tank/internals/oxygen/red,/turf/open/floor/plasteel,/area/science/mixing)
+"J" = (/obj/item/screwdriver,/turf/open/floor/plasteel,/area/science/mixing)
+"K" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 1},/turf/open/floor/plasteel,/area/science/mixing)
+"L" = (/obj/machinery/reagentgrinder,/turf/open/floor/plasteel,/area/science/mixing)
+"M" = (/obj/item/assembly/mousetrap,/turf/open/floor/plasteel,/area/science/mixing)
+"N" = (/obj/item/assembly/igniter,/turf/open/floor/plasteel,/area/science/mixing)
+"O" = (/obj/item/rack_parts,/turf/open/floor/plasteel,/area/science/mixing)
+"P" = (/obj/item/wrench,/turf/open/floor/plasteel,/area/science/mixing)
+"Q" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plasteel,/area/science/mixing)
+"R" = (/obj/item/tank/internals/plasma/empty,/turf/open/floor/plasteel,/area/science/mixing)
+"S" = (/obj/item/tank/internals/plasma,/turf/open/floor/plasteel,/area/science/mixing)
+"T" = (/obj/machinery/atmospherics/components/unary/thermomachine/freezer,/turf/open/floor/plasteel,/area/science/mixing)
+"U" = (/obj/machinery/atmospherics/components/unary/thermomachine/heater,/turf/open/floor/plasteel,/area/science/mixing)
+"V" = (/obj/machinery/atmospherics/components/unary/portables_connector,/turf/open/floor/plasteel,/area/science/mixing)
+"W" = (/obj/item/tank/internals/oxygen,/turf/open/floor/plasteel,/area/science/mixing)
+"X" = (/obj/machinery/atmospherics/pipe/simple,/turf/closed/wall/r_wall,/area/science/mixing)
+"Y" = (/obj/machinery/portable_atmospherics/scrubber,/turf/open/floor/plasteel,/area/science/mixing)
+"Z" = (/obj/machinery/portable_atmospherics/canister,/turf/open/floor/plasteel,/area/science/mixing)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaafffffffffffffffffaa
+aaaafgggggggggggggggfaa
+aaaafgfffffffffffffgfaa
+aaaafgfhhhfiiifhhhfgfaa
+aaaafgfhjhfikifhjhfgfaa
+aaafflffmfffmfffmffgfaa
+aaafnnnnnnnnonnnnnpgfaa
+aaafgqgrgggggggrggpgfaa
+aaafsggggtgggggtggpgfaa
+aaafffffffffufffffpgfaa
+aaafnnvwwxyzgfggAgpgfaa
+aaafnBnCnDgEglgggglgfaa
+aaafnnFwwwGHgfggIgpgfaa
+aaafffffJKgggfLggspffaa
+aaafMNOfPKKggfgQggpaaaa
+aaafRgSfgTUgVfQgggpaaaa
+aaalggWfffffXfgggYpaaaa
+aaapgRggggggHggZggpaaaa
+aaapggggggggggggggpaaaa
+aaappppppppppppppppaaaa
+"}
+
+(1,1,2) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaacaaaaaaaaaaa
+aaaaaaaababbadbaaaaaaaa
+aaaaaaaaabbbbbaaaaaaaaa
+aaaaaaadaabbcaabaaaaaaa
+aaaaaaabbbcbbbbbaaaaaaa
+aaaaaaaaaabebcaaaaaaaaa
+aaaaaaababbbbbbbaaaaaaa
+aaaaaabbcbbbcbadbaaaaaa
+aaaaaaaaaabbbbbcbaaaaaa
+aaaaaaaabbbbaabaaaaaaaa
+aaaaaaaaacacaaaaaaaaaaa
+aaaaaaaabaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}
