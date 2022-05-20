@@ -1,0 +1,77 @@
+"a" = (/turf/closed/wall,/area/ware)
+"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/turf/open/floor/plasteel,/area/template_noop)
+"d" = (/turf/open/floor/plasteel,/area/ware)
+"e" = (/turf/open/floor/wood,/area/ware)
+"f" = (/obj/item/storage/box/syringes,/turf/open/floor/wood,/area/ware)
+"g" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/ware)
+"h" = (/obj/item/storage/box/lights,/turf/open/floor/plasteel,/area/ware)
+"i" = (/obj/item/roller,/turf/open/floor/plasteel,/area/ware)
+"j" = (/obj/item/pickaxe,/turf/open/floor/plasteel,/area/ware)
+"k" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel,/area/ware)
+"l" = (/obj/item/storage/toolbox/electrical,/turf/open/floor/plasteel,/area/ware)
+"m" = (/turf/open/floor/plasteel/grimy,/area/ware)
+"n" = (/obj/item/shovel,/turf/open/floor/plasteel,/area/ware)
+"o" = (/obj/machinery/power/lampo,/turf/open/floor/plasteel,/area/ware)
+"p" = (/obj/machinery/power/apc/auto_name/north,/turf/open/floor/plasteel,/area/ware)
+"q" = (/obj/item/storage/box/donkpockets/donkpocketberry,/turf/open/floor/plasteel,/area/ware)
+"r" = (/obj/item/storage/box/cups,/turf/open/floor/plasteel,/area/ware)
+"s" = (/obj/structure/table/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
+"t" = (/obj/item/book/granter/crafting_recipe/guns,/turf/open/floor/plasteel,/area/ware)
+"u" = (/obj/structure/stopsign,/turf/open/floor/plasteel,/area/template_noop)
+"v" = (/obj/structure/table/wood,/turf/open/floor/plasteel,/area/ware)
+"w" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ware)
+"x" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/grimy,/area/ware)
+"y" = (/obj/effect/spawner/lootdrop/gloves,/turf/open/floor/plasteel,/area/ware)
+"z" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/ware)
+"A" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/wood,/area/ware)
+"B" = (/obj/item/crowbar,/turf/open/floor/plasteel,/area/ware)
+"C" = (/obj/item/binoculars,/turf/open/floor/wood,/area/ware)
+"D" = (/obj/item/coin/iron,/turf/open/floor/plasteel,/area/ware)
+"E" = (/obj/item/coin/silver,/turf/open/floor/wood,/area/ware)
+"F" = (/obj/item/ammo_box/c38,/turf/open/floor/plasteel,/area/ware)
+"G" = (/obj/item/coin/iron,/turf/open/floor/wood,/area/ware)
+"H" = (/obj/item/ammo_box/c10mm,/turf/open/floor/plasteel,/area/ware)
+"I" = (/obj/item/crowbar,/turf/open/floor/plasteel,/area/template_noop)
+"J" = (/obj/item/ammo_box/a762,/turf/open/floor/plasteel,/area/ware)
+"K" = (/obj/structure/table/wood,/obj/item/ammo_box/c38/trac,/turf/open/floor/plasteel,/area/ware)
+"L" = (/obj/item/reagent_containers/food/snacks/chococoin,/turf/open/floor/plasteel,/area/ware)
+"M" = (/obj/item/coin/iron,/turf/open/floor/plasteel/grimy,/area/ware)
+"N" = (/obj/item/analyzer,/turf/open/floor/plasteel,/area/ware)
+"O" = (/obj/item/coin/silver,/turf/open/floor/plasteel,/area/ware)
+"P" = (/obj/item/crowbar,/turf/open/floor/plating/asteroid,/area/template_noop)
+
+(1,1,1) = {"
+baaaaabbbbbaaaaaaaaaacbbbbbbbbbbbbbbbbbbbbbb
+badddabbbbbaeeefaBddacbbbbbbbbbbbbbbbbbbbbbb
+bgdddaaaaaaaeeCeadddacbbbbbbbbbbbbbbbbbssssb
+bgdddahidddaeeeeadDdacbsssbbbbbbbbbbbbbsbbsb
+badddaddjddaeeeeadddacbsbssbbbbbbbbbbbbsbbsb
+baddaaaagaaaagaaaagaacbsbbsbssssbbsssbbsbbsb
+baddadddddddddddddddacbssssbsbbsbssbssbssssb
+baddadddddddddeeEeedacbsbbbbsbbsbsbbbsbsbbbb
+baddadddddddddeeeeedacbsbbbbsssbbsssssbsbbbb
+baddaaagadddddeeeeedgcbsbbbbbbbbbbbbbbbbbbbb
+baddaFddaagaadeeeeedacbbbbbbbbbbbbbbbbbbbbbb
+baddadddaddkadeeeeGdacbbbbbbbbbbbbbbbbbbbbbb
+baddaHdladtdadddddddaucccIcccccaaaaaaaabbbbb
+baddaaaaaaaaaaaaaaaaaaaaaagaaaaammmmmmabbbbb
+baddatndJaodKdpaddwddddddddddwtammmxmmabbbbb
+baddaddLdadddddadddddddddddddddammmmmmabbbbb
+baddaaagaagadddadddddddddddddddaMmmmmmabbbbb
+badddddddddaddyaddNddddddddddddammmmmmabbbbb
+badeeeeeeedaddyaOdvdddvddvdddddammmmmmabbbbb
+badeeeeeeedaddyaddvdddddddddvddammmmmmabbbbb
+badeezzeeedaaaaaddvdwdddddddvddammmMmxabbbbb
+badeezeeeedddddaddvddddddddvvddammmmmmabbbbb
+badeAeeeeedddddadddvddddddvvdddamxmMmmabbbbb
+badeeeeeeedddddgdddvvvvvvvvddddammmmmmabbbbb
+badddddddddddddadddddddddddddwdammmmmmabbbbb
+baaaaaagaaaadddadddddqrddddddddammmmmmabbbbb
+bbbbbbbbPbbadddadddddddddddddddammmmmmabbbbb
+bbbbbbbbbbbadddadddddddddddddddammmmmmabbbbb
+bbbbbbbbbbbadddadddddddddddddddammmmmmabbbbb
+bbbbbbbbbbbadddaaaaaaaaaaaaaaaaaaaggaaabbbbb
+bbbbbbbbbbbaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+"}

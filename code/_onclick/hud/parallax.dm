@@ -305,7 +305,7 @@
 	icon_state = "asteroids"
 
 /obj/screen/parallax_layer/planet
-	icon_state = "planet"
+	icon_state = "earth"
 	blend_mode = BLEND_OVERLAY
 	absolute = TRUE //Status of seperation
 	speed = 3

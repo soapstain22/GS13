@@ -1,0 +1,53 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/obj/structure/flora/rock,/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/structure/flora/rock,/turf/template_noop,/area/template_noop)
+"d" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid,/area/template_noop)
+"s" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaasaaaaaaaaaaa
+aaaaaaaabassaabaaaaaaaa
+aaaaaaaaasbsssaaaaaaaaa
+aaaaaaaaaasssaasaaaaaaa
+aaaaaaabssssssbsaaaaaaa
+aaaaaaaaacsdssaaaaaaaaa
+aaaaaaabassssbssaaaaaaa
+aaaaaasssbssssaasaaaaaa
+aaaaaaaaaasbssssbaaaaaa
+aaaaaaaabsssaasaaaaaaaa
+aaaaaaaaasasaaaaaaaaaaa
+aaaaaaaasaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,2) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaabaaaaaaaaaaa
+aaaaaaaasassacsaaaaaaaa
+aaaaaaaaasssssaaaaaaaaa
+aaaaaaacaassbaasaaaaaaa
+aaaaaaasssbsssssaaaaaaa
+aaaaaaaaaasdsbaaaaaaaaa
+aaaaaaasasssssssaaaaaaa
+aaaaaassbsssbsacsaaaaaa
+aaaaaaaaaasssssbsaaaaaa
+aaaaaaaassssaasaaaaaaaa
+aaaaaaaaababaaaaaaaaaaa
+aaaaaaaasaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}
