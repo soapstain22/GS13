@@ -7,6 +7,7 @@
 	sheet_type = /obj/item/stack/sheet/metal
 	value_per_unit = 0.0025
 	weight = 0.1
+	texture_layer_icon_state = "iron"
 /datum/material/iron/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
@@ -307,7 +308,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.01
 	beauty_modifier = 0.1
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 0.4, "energy" = 0.4, "bomb" = 1, "bio" = 0.2, "rad" = 0, "fire" = 0, "acid" = 0.3, "stab" = 1, "slash" = 1, "crush" = 1)
-
+	texture_layer_icon_state = "wood"
 /datum/material/wood/on_applied_obj(obj/source, amount, material_flags)
 	. = ..()
 	if(material_flags & MATERIAL_AFFECT_STATISTICS)
@@ -463,7 +464,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	M.reagents.add_reagent(/datum/reagent/water, rand(5, 10))
 	return TRUE
 
-/datum/material/runedmetal
+/datum/material/runed
 	name = "runed metal"
 	desc = "Mir'ntrath barhah Nar'sie."
 	color = "#3C3434"

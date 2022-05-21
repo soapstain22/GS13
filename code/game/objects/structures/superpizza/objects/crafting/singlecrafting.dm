@@ -39,9 +39,9 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 
 
 GLOBAL_LIST_INIT(rigid_stack_recipes, list(
-//	new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 1, 20,time = 30  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
+	new /datum/stack_recipe("Wall",			/obj/structure/barricade/stonewall, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 	new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
-	new /datum/stack_recipe("stairs",		/obj/structure/stairs, 10, 1, 20, one_per_turf = TRUE, on_floor = FALSE, applies_mats = FALSE),
+	new /datum/stack_recipe("stairs",		/obj/structure/stairs, 3, 1, 20, one_per_turf = TRUE, on_floor = FALSE, applies_mats = FALSE),
 	))
 GLOBAL_LIST_INIT(fabric_stack_recipes, list(
 	new /datum/stack_recipe("hood", 		/obj/item/clothing/head/beanie/greyscale, 10, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
@@ -54,7 +54,7 @@ GLOBAL_LIST_INIT(fabric_stack_recipes, list(
 	))
 GLOBAL_LIST_INIT(mason_stack_recipes, list(
 	new /datum/stack_recipe("carving block", 	/obj/structure/carving_block, 15, 1, 20, one_per_turf = TRUE, on_floor = FALSE, applies_mats = TRUE),
-	new /datum/stack_recipe("Wall",			/obj/structure/girder, 4, 1, 20,  one_per_turf = TRUE, on_floor = 1, applies_mats = TRUE),
+	new /datum/stack_recipe("Wall",			/obj/structure/barricade/stonewall, 4, 1, 20,  one_per_turf = TRUE, on_floor = 1, applies_mats = TRUE),
 	new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
 	new /datum/stack_recipe("stairs",		/obj/structure/stairs, 3, 1, 3, one_per_turf = TRUE, on_floor = TRUE, applies_mats = FALSE),
 	))

@@ -8,20 +8,15 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	var/buildstacktype = null
 /obj/structure/barricade/stonewall/attackby(obj/item/I, mob/user)
-	if(istype(I,buildstacktype))
+	if(istype(I, /obj/item/stack))
 		var/obj/item/stack/W = I
-		if(W.amount < 4)
-			to_chat(user, "<span class='warning'>You need at least four stone to make a wall!</span>")
+		if(W.get_amount() < 2)
 			return
-		else
-			to_chat(user, "<span class='notice'>You start adding [I] to [src]...</span>")
-			if(do_after(user, 25, target=src))
-				W.use(4)
-				var/turf/T = get_turf(src)
-				T.PlaceOnTop(/turf/closed/wall/stone)
-				qdel(src)
-				return
-	return ..()
+		if(istype(W, /obj/item/stack))
+			var/turf/T = get_turf(src)
+			var/turf/newturf = T.PlaceOnTop(/turf/closed/wall/material, flags = CHANGETURF_INHERIT_AIR)
+			newturf.set_custom_materials(W.custom_materials)
+		return ..()
 /obj/structure/barricade/brickwall
 	name = "brickwall"
 	desc = "stonewall"
