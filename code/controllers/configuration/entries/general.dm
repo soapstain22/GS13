@@ -222,7 +222,7 @@
 	config_entry_value = "https://www.github.com/tgstation/-tg-station"
 
 /datum/config_entry/string/discordurl // FULP Addition
-	config_entry_value = "https://discord.gg/SVu782A"
+	config_entry_value = "https://discord.gg/ZvDchCMuUm"
 
 /datum/config_entry/string/roundstatsurl
 

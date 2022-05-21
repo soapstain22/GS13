@@ -1,7 +1,19 @@
 
+/obj/item/melee/stick
+	name = "stick"
+	desc = "brown and sticky."
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "stick"
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	custom_materials = list(/datum/material/wood=150)
+	force = 5
+	throwforce = 1 // why are you throwing a club do you even weapon
+	throw_speed = 1
+	throw_range = 6
 /obj/item/melee/stick/fire_act(exposed_temperature, exposed_volume)
 	. = ..()
-	atmos_spawn_air("hydrogen=1;TEMP=[exposed_temperature]")
+	atmos_spawn_air("hydrogen=0.3;TEMP=[exposed_temperature]")
 	use(1)
 /obj/item/handfile
 	name = "file"

@@ -1,6 +1,6 @@
 /obj/structure/barricade/stonewall
-	name = "stonewall"
-	desc = "stonewall"
+	name = "short wall"
+	desc = "a wall that can be expanded by adding more material"
 	icon = 'icons/obj/smooth_structures/stones.dmi'
 	icon_state = "sandbags"
 	smooth = SMOOTH_TRUE
@@ -16,6 +16,7 @@
 			var/turf/T = get_turf(src)
 			var/turf/newturf = T.PlaceOnTop(/turf/closed/wall/material, flags = CHANGETURF_INHERIT_AIR)
 			newturf.set_custom_materials(W.custom_materials)
+			qdel(src)
 		return ..()
 /obj/structure/barricade/brickwall
 	name = "brickwall"

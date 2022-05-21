@@ -19,6 +19,13 @@
 	new /obj/item/grown/log(get_turf(src))
 	new /obj/item/grown/log(get_turf(src))
 	new /obj/item/grown/log(get_turf(src))
+	new /obj/item/grown/log(get_turf(src))
+	new /obj/item/melee/stick(get_turf(src))
+	new /obj/item/melee/stick(get_turf(src))
+	new /obj/item/melee/stick(get_turf(src))
+	new /obj/item/melee/stick(get_turf(src))
+	new /obj/item/melee/stick(get_turf(src))
+	new /obj/item/melee/stick(get_turf(src))
 	var/obj/structure/flora/stump/S = new(loc)
 	S.name = "[name] stump"
 	. = ..()

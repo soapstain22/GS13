@@ -21,6 +21,9 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/suit/hazardvest/greyscale
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	icon_state = "hazard"
+
 /obj/item/clothing/suit/apron/chef
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/under/smock/greyscale

@@ -46,9 +46,6 @@
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	custom_materials = list(/datum/material/stone=MINERAL_MATERIAL_AMOUNT)
 	material_type = /datum/material/stone
-/obj/item/stack/stone/get_main_recipes()
-	. = ..()
-	. += GLOB.mason_stack_recipes
 
 /obj/item/stack/ore/cinnabar
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'

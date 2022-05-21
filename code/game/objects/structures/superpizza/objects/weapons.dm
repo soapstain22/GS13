@@ -190,7 +190,7 @@
 	custom_price = 500
 	mag_display_ammo = TRUE
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
-/obj/item/gun/ballistic/rifle/cbow/rack(mob/user = null)
+/obj/item/gun/ballistic/rifle/crossbow/rack(mob/user = null)
 	if (bolt_locked == FALSE)
 		to_chat(user, "<span class='notice'>You pull back the [src].</span>")
 		playsound(src, rack_sound, rack_sound_volume, rack_sound_vary)
@@ -199,7 +199,7 @@
 		update_icon()
 		return
 	drop_bolt(user)
-/obj/item/gun/ballistic/rifle/cbow/drop_bolt(mob/user = null)
+/obj/item/gun/ballistic/rifle/crossbow/drop_bolt(mob/user = null)
 	playsound(src, bolt_drop_sound, bolt_drop_sound_volume, FALSE)
 	if (user)
 		to_chat(user, "<span class='notice'>You safely release the [src].</span>")
