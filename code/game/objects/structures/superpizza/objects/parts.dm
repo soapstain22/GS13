@@ -137,6 +137,7 @@
 	icon_state = "spring"
 	force = 1
 	throwforce = 5
+	custom_materials = list(/datum/material/iron=650)
 /obj/item/stopsign
 	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
 	name = "stop sign"
@@ -144,4 +145,6 @@
 	icon_state = "stopsign"
 	force = 5
 	throwforce = 10
+	custom_materials = list(/datum/material/iron=750)
+
 

@@ -23,7 +23,7 @@
 
 	layer = ABOVE_MOB_LAYER
 /obj/structure/stopsign/deconstruct(disassembled = FALSE)
-	new /obj/item/stack/sheet/metal (loc, 1)
+	new /obj/item/stack/rods (loc, 1)
 	new /obj/item/stopsign (loc, 1)
 	qdel(src)
 // this is everything else
