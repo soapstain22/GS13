@@ -9,10 +9,11 @@
 	var/buildstacktype = null
 /obj/structure/barricade/stonewall/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack))
+
 		var/obj/item/stack/W = I
 		if(W.get_amount() < 2)
 			return
-		if(istype(W, /obj/item/stack))
+		if(istype(W, buildstacktype))
 			var/turf/T = get_turf(src)
 			var/turf/newturf = T.PlaceOnTop(/turf/closed/wall/material, flags = CHANGETURF_INHERIT_AIR)
 			newturf.set_custom_materials(W.custom_materials)

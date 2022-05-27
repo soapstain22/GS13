@@ -20,3 +20,9 @@ turf/closed/wall/material/break_wall()
 /turf/closed/wall/material/mat_update_desc(mat)
 	desc = "A huge chunk of [mat] used to separate rooms."
 
+/turf/closed/wall/material/stone
+	custom_materials = list(/datum/material/stone = 4000)
+	set_custom_materials(custom_materials)
+/turf/closed/wall/material/iron
+	custom_materials = list(/datum/material/iron = 4000)
+	set_custom_materials(custom_materials)
