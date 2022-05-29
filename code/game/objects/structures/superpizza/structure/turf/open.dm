@@ -1,6 +1,6 @@
 /turf/open/floor/hearth
-	name = "hearth"
-	desc = "Extremely sturdy."
+	name = "concrete floor"
+	desc = "conk creet babey!"
 	icon_state = "hearth"
 	thermal_conductivity = INFINITY
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'

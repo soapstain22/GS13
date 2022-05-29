@@ -147,4 +147,27 @@
 	throwforce = 10
 	custom_materials = list(/datum/material/iron=750)
 
-
+/obj/item/bikewheel
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	name = "bike wheel"
+	desc = "RED MEANS STOP ASSHOLE"
+	icon_state = "bikewheel"
+	force = 5
+	throwforce = 10
+	custom_materials = list(/datum/material/iron=750)
+/obj/item/pedals
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	name = "bike pedal"
+	desc = "peddels"
+	icon_state = "pedals"
+	force = 5
+	throwforce = 10
+	custom_materials = list(/datum/material/iron=750)
+/obj/item/bike_body
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	name = "bike body"
+	desc = "bike but NAKED"
+	icon_state = "bikebody"
+	force = 5
+	throwforce = 10
+	custom_materials = list(/datum/material/iron=750)

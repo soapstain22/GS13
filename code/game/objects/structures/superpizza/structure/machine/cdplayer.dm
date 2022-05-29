@@ -29,6 +29,11 @@
 	name = "cd case"
 	desc = "An old cd case"
 	icon_state = "cdcase"
+/obj/item/VHS/
+	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
+	name = "VHS tape"
+	desc = "Might be someones wedding, might be porn."
+	icon_state = "cdcase"
 //weezer cd
 /obj/item/cd/weezer
 	name = "Weezer - Blue Album"
