@@ -1340,6 +1340,7 @@
 #include "code\game\objects\structures\signs\signs_departments.dm"
 #include "code\game\objects\structures\signs\signs_maps.dm"
 #include "code\game\objects\structures\signs\signs_warning.dm"
+#include "code\game\objects\structures\superpizza\tv.dm"
 #include "code\game\objects\structures\superpizza\creatures\squirrel.dm"
 #include "code\game\objects\structures\superpizza\herblore\chickweed.dm"
 #include "code\game\objects\structures\superpizza\herblore\yam.dm"
