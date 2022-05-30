@@ -23,6 +23,7 @@
 /obj/machinery/crttv
 	icon = 'code/game/objects/structures/superpizza/machine.dmi'
 	icon_state = "crt"
+	density = 1
 	var/obj/item/vhs/tape = null
 	var/paused
 	var/playbackRate
@@ -38,7 +39,7 @@
 		tape = I
 		to_chat(user, "<span class='notice'>You insert [I].</span>")
 		playsound( I, 50, FALSE, FALSE)
-		return
+		return ..()
 /obj/machinery/crttv/proc/screen_setup(mob/user)
 	var/dat = "<html>"
 	dat += "<body onload=\"script();\">"
@@ -99,6 +100,8 @@ function script(){
 	screen_setup(user)
 
 /obj/machinery/crttv/Topic(href, href_list)
+	if(..())
+		return
 	//usr.unset_machine()
 	tape.currentTime = href_list["mode"]
 	paused = href_list["pause"]
