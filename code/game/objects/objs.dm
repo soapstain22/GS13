@@ -42,6 +42,31 @@
 	var/min_heat_protection_temperature
 	var/max_heat_protection_temperature
 	var/drag_slowdown // Amont of multiplicative slowdown applied if pulled. >1 makes you slower, <1 makes you faster.
+	var/IMPACT_YIELD = 100000
+	var/IMPACT_FRACTURE = 200000
+	var/IMPACT_STRAIN_AT_YIELD = 100
+	var/COMPRESSIVE_YIELD = 200000
+	var/COMPRESSIVE_FRACTURE = 100000
+	var/COMPRESSIVE_STRAIN_AT_YIELD = 100
+	var/TENSILE_YIELD = 100000
+	var/TENSILE_FRACTURE = 200000
+	var/TENSILE_STRAIN_AT_YIELD = 100
+	var/TORSION_YIELD = 100000
+	var/TORSION_FRACTURE = 200000
+	var/TORSION_STRAIN_AT_YIELD = 100
+	var/SHEAR_YIELD = 100000
+	var/SHEAR_FRACTURE = 200000
+	var/SHEAR_STRAIN_AT_YIELD = 100
+	var/BENDING_YIELD = 100000
+	var/BENDING_FRACTURE = 200000
+	var/BENDING_STRAIN_AT_YIELD = 100
+	var/impact_stress = 0
+	var/compressive_stress = 0
+	var/tensile_stress = 0
+	var/torsion_stress = 0
+	var/shear_stress = 0
+	var/bending_stress = 0
+	var/tool_behaviour
 	vis_flags = VIS_INHERIT_PLANE //when this be added to vis_contents of something it inherit something.plane, important for visualisation of obj in openspace.
 
 /obj/vv_edit_var(vname, vval)

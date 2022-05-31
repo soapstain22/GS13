@@ -2,10 +2,11 @@
 	icon = 'code/game/objects/structures/superpizza/garbage.dmi'
 	name = "VHS tape"
 	desc = "Might be someones wedding, might be porn."
-	icon_state = "cdcase"
+	icon_state = "vhs"
 	var/vid = "https://cdn.discordapp.com/attachments/792542629874237482/976953462954790922/Obliteration.mp4"
 	var/aud = null
 	var/currentTime = 0
+/obj/item/vhs/random
 /obj/item/vhs/proc/getFinalPos(){
 
 }

@@ -41,6 +41,24 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/heatprotection = 1
 	var/heatvulnerable = 1
 	var/brittleness = 0.001
+	var/IMPACT_YIELD
+	var/IMPACT_FRACTURE
+	var/IMPACT_STRAIN_AT_YIELD
+	var/COMPRESSIVE_YIELD
+	var/COMPRESSIVE_FRACTURE
+	var/COMPRESSIVE_STRAIN_AT_YIELD
+	var/TENSILE_YIELD
+	var/TENSILE_FRACTURE
+	var/TENSILE_STRAIN_AT_YIELD
+	var/TORSION_YIELD
+	var/TORSION_FRACTURE
+	var/TORSION_STRAIN_AT_YIELD
+	var/SHEAR_YIELD
+	var/SHEAR_FRACTURE
+	var/SHEAR_STRAIN_AT_YIELD
+	var/BENDING_YIELD
+	var/BENDING_FRACTURE
+	var/BENDING_STRAIN_AT_YIELD
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)
@@ -85,9 +103,41 @@ Simple datum which is instanced once per type and is used for every object of sa
 		o.modify_max_integrity(new_max_integrity)
 		o.force *= strength_modifier
 		o.throwforce *= strength_modifier
+		if(istype(o, /obj/item/))
+			o.IMPACT_YIELD = IMPACT_YIELD
+			o.IMPACT_FRACTURE = IMPACT_FRACTURE
+			o.IMPACT_STRAIN_AT_YIELD = IMPACT_STRAIN_AT_YIELD
+			o.COMPRESSIVE_YIELD = COMPRESSIVE_YIELD
+			o.COMPRESSIVE_FRACTURE = COMPRESSIVE_FRACTURE
+			o.COMPRESSIVE_STRAIN_AT_YIELD = COMPRESSIVE_STRAIN_AT_YIELD
+			o.TENSILE_YIELD = TENSILE_YIELD
+			o.TENSILE_FRACTURE = TENSILE_FRACTURE
+			o.TENSILE_STRAIN_AT_YIELD = TENSILE_STRAIN_AT_YIELD
+			o.TORSION_YIELD = TORSION_YIELD
+			o.TORSION_FRACTURE = TORSION_FRACTURE
+			o.TORSION_STRAIN_AT_YIELD = TORSION_STRAIN_AT_YIELD
+			o.SHEAR_YIELD = SHEAR_YIELD
+			o.SHEAR_FRACTURE = SHEAR_FRACTURE
+			o.SHEAR_STRAIN_AT_YIELD = SHEAR_STRAIN_AT_YIELD
+			o.BENDING_YIELD = BENDING_YIELD
+			o.BENDING_FRACTURE = BENDING_FRACTURE
+			o.BENDING_STRAIN_AT_YIELD =BENDING_STRAIN_AT_YIELD
+
+			if (material_flags & MATERIAL_AFFECT_STATISTICS)
+				if (o.tool_behaviour == TOOL_CROWBAR)
+					o.toolspeed = 100000
+					o.toolspeed /= TENSILE_YIELD
+
+				if (o.tool_behaviour == TOOL_SCREWDRIVER)
+					o.toolspeed = 100000
+					o.toolspeed /= TORSION_YIELD
+				if (o.tool_behaviour == TOOL_MINING)
+					o.toolspeed = 100000
+					o.toolspeed /= IMPACT_YIELD
 		o.toolspeed /= toolspeed_modifier
 		o.slowdown += weight
 		o.drag_slowdown += weight
+
 		o.min_cold_protection_temperature *= coldprotection
 		o.max_cold_protection_temperature *= coldvulnerable
 		o.min_heat_protection_temperature *= heatvulnerable

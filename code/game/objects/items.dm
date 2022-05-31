@@ -145,7 +145,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/sharpness = SHARP_NONE
 
 	///How a tool acts when you use it on something, such as wirecutters cutting wires while multitools measure power
-	var/tool_behaviour = NONE
 	///How fast does the tool work
 
 
@@ -182,7 +181,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/list/juice_results
 
 	var/canMouseDown = FALSE
-
 
 /obj/item/Initialize()
 
@@ -850,39 +848,42 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 	if(tool_behaviour == TOOL_WRENCH && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		obj_integrity -= 1
-		H.adjust_nutrition(-0.3)
+		torsion_stress += TORSION_STRAIN_AT_YIELD
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		for(prob(brittleness/obj_integrity))
-			obj_integrity - max_integrity
+		if (torsion_stress >= TORSION_FRACTURE)
+			playsound(H, "snap", 25, TRUE)
+			qdel(src)
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
-		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
+		torsion_stress += TORSION_STRAIN_AT_YIELD
 		H.adjust_nutrition(-0.3)
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		for(prob(brittleness/obj_integrity))
-			obj_integrity - max_integrity
+		if (torsion_stress >= TORSION_FRACTURE)
+			playsound(H, "snap", 25, TRUE)
+			qdel(src)
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
-		obj_integrity -= 1
 		var/mob/living/carbon/human/H = user
+		shear_stress += SHEAR_STRAIN_AT_YIELD
 		H.adjust_nutrition(-0.3)
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		for(prob(brittleness/obj_integrity))
-			obj_integrity - max_integrity
+		if (shear_stress >= SHEAR_FRACTURE)
+			playsound(H, "crunch", 25, TRUE)
+			qdel(src)
 	if(tool_behaviour == TOOL_WELDER && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
 	if(tool_behaviour == TOOL_CROWBAR && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		obj_integrity -= 1
+		tensile_stress += TENSILE_STRAIN_AT_YIELD
 		H.adjust_nutrition(-0.3)
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		for(prob(brittleness/obj_integrity))
-			obj_integrity - max_integrity
+		if (tensile_stress >= TENSILE_FRACTURE)
+			playsound(H, "smash", 25, TRUE)
+			qdel(src)
 	if(tool_behaviour == TOOL_MULTITOOL && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
