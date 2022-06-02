@@ -1,7 +1,13 @@
 "a" = (/turf/template_noop,/area/template_noop)
-"b" = (/turf/open/floor/plasteel,/area/template_noop)
-"c" = (/obj/structure/holohoop{icon_state = "hoop"; dir = 4},/turf/open/floor/plasteel,/area/template_noop)
-"d" = (/obj/structure/holohoop{icon_state = "hoop"; dir = 8},/turf/open/floor/plasteel,/area/template_noop)
+"b" = (/turf/closed/wall/brick,/area/template_noop)
+"c" = (/obj/structure/fence{icon_state = "straight"; dir = 8},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"d" = (/obj/structure/fence/door/opened{icon_state = "door_opened"; dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"e" = (/obj/structure/fence{icon_state = "straight"; dir = 1},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"f" = (/turf/open/floor/plating/pavement,/area/template_noop)
+"g" = (/obj/structure/holohoop{icon_state = "hoop"; dir = 4},/turf/open/floor/plating/pavement,/area/template_noop)
+"h" = (/obj/structure/holohoop{icon_state = "hoop"; dir = 8},/turf/open/floor/plating/pavement,/area/template_noop)
+"i" = (/obj/structure/fence{icon_state = "straight"; dir = 4},/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"j" = (/obj/structure/fence/door/opened,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 "t" = (/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 
 (1,1,1) = {"
@@ -9,17 +15,17 @@ aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa
 attttttttttttttttttttta
-attttttttttttttttttttta
-attbbbbbbbbbbbbbbbbbtta
-attbbbbbbbbbbbbbbbbbtta
-attbbbbbbbbbbbbbbbbbtta
-attbbbbbbbbbbbbbbbbbtta
-attcbbbbbbbbbbbbbbbdtta
-attbbbbbbbbbbbbbbbbbtta
-attbbbbbbbbbbbbbbbbbtta
-attbbbbbbbbbbbbbbbbbtta
-attbbbbbbbbbbbbbbbbbtta
-attttttttttttttttttttta
+atbcccccccdcccccccccbta
+atefffffffffffffffffeta
+atefffffffffffffffffeta
+atefffffffffffffffffeta
+atefffffffffffffffffeta
+ategfffffffffffffffheta
+atefffffffffffffffffeta
+atefffffffffffffffffeta
+atefffffffffffffffffeta
+atefffffffffffffffffeta
+atbiiiiiiiijiiiiiiiibta
 attttttttttttttttttttta
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaa

@@ -1,77 +1,98 @@
-"a" = (/turf/closed/wall,/area/ware)
-"b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
-"c" = (/turf/open/floor/plasteel,/area/template_noop)
-"d" = (/turf/open/floor/plasteel,/area/ware)
-"e" = (/turf/open/floor/wood,/area/ware)
-"f" = (/obj/item/storage/box/syringes,/turf/open/floor/wood,/area/ware)
-"g" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/ware)
-"h" = (/obj/item/storage/box/lights,/turf/open/floor/plasteel,/area/ware)
-"i" = (/obj/item/roller,/turf/open/floor/plasteel,/area/ware)
-"j" = (/obj/item/pickaxe,/turf/open/floor/plasteel,/area/ware)
-"k" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel,/area/ware)
-"l" = (/obj/item/storage/toolbox/electrical,/turf/open/floor/plasteel,/area/ware)
-"m" = (/turf/open/floor/plasteel/grimy,/area/ware)
-"n" = (/obj/item/shovel,/turf/open/floor/plasteel,/area/ware)
-"o" = (/obj/machinery/power/lampo,/turf/open/floor/plasteel,/area/ware)
-"p" = (/obj/machinery/power/apc/auto_name/north,/turf/open/floor/plasteel,/area/ware)
-"q" = (/obj/item/storage/box/donkpockets/donkpocketberry,/turf/open/floor/plasteel,/area/ware)
-"r" = (/obj/item/storage/box/cups,/turf/open/floor/plasteel,/area/ware)
-"s" = (/obj/structure/table/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
-"t" = (/obj/item/book/granter/crafting_recipe/guns,/turf/open/floor/plasteel,/area/ware)
-"u" = (/obj/structure/stopsign,/turf/open/floor/plasteel,/area/template_noop)
-"v" = (/obj/structure/table/wood,/turf/open/floor/plasteel,/area/ware)
-"w" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ware)
-"x" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/grimy,/area/ware)
-"y" = (/obj/effect/spawner/lootdrop/gloves,/turf/open/floor/plasteel,/area/ware)
-"z" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/ware)
-"A" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/wood,/area/ware)
-"B" = (/obj/item/crowbar,/turf/open/floor/plasteel,/area/ware)
-"C" = (/obj/item/binoculars,/turf/open/floor/wood,/area/ware)
-"D" = (/obj/item/coin/iron,/turf/open/floor/plasteel,/area/ware)
-"E" = (/obj/item/coin/silver,/turf/open/floor/wood,/area/ware)
-"F" = (/obj/item/ammo_box/c38,/turf/open/floor/plasteel,/area/ware)
-"G" = (/obj/item/coin/iron,/turf/open/floor/wood,/area/ware)
-"H" = (/obj/item/ammo_box/c10mm,/turf/open/floor/plasteel,/area/ware)
-"I" = (/obj/item/crowbar,/turf/open/floor/plasteel,/area/template_noop)
-"J" = (/obj/item/ammo_box/a762,/turf/open/floor/plasteel,/area/ware)
-"K" = (/obj/structure/table/wood,/obj/item/ammo_box/c38/trac,/turf/open/floor/plasteel,/area/ware)
-"L" = (/obj/item/reagent_containers/food/snacks/chococoin,/turf/open/floor/plasteel,/area/ware)
-"M" = (/obj/item/coin/iron,/turf/open/floor/plasteel/grimy,/area/ware)
-"N" = (/obj/item/analyzer,/turf/open/floor/plasteel,/area/ware)
-"O" = (/obj/item/coin/silver,/turf/open/floor/plasteel,/area/ware)
-"P" = (/obj/item/crowbar,/turf/open/floor/plating/asteroid,/area/template_noop)
+"aa" = (/turf/closed/wall,/area/ware)
+"ab" = (/turf/open/floor/plating/asteroid,/area/template_noop)
+"ac" = (/turf/open/floor/plating/pavement/sidewalk,/area/ware)
+"ad" = (/turf/open/floor/plasteel,/area/ware)
+"ae" = (/turf/open/floor/wood,/area/ware)
+"af" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plating/pavement/sidewalk,/area/ware)
+"ag" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/ware)
+"ah" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plasteel,/area/ware)
+"ai" = (/obj/effect/spawner/lootdrop/grille_or_trash,/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plasteel,/area/ware)
+"aj" = (/obj/structure/closet/crate/trashcart,/turf/open/floor/plating/road,/area/ware)
+"ak" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel,/area/ware)
+"al" = (/obj/item/storage/toolbox/electrical,/turf/open/floor/plasteel,/area/ware)
+"am" = (/turf/open/floor/plasteel/grimy,/area/ware)
+"an" = (/turf/open/floor/plating/road,/area/ware)
+"ao" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plating/road,/area/ware)
+"ap" = (/obj/machinery/power/apc/auto_name/north,/turf/open/floor/plasteel,/area/ware)
+"aq" = (/obj/item/storage/box/donkpockets/donkpocketberry,/turf/open/floor/plasteel,/area/ware)
+"ar" = (/obj/item/storage/box/cups,/turf/open/floor/plasteel,/area/ware)
+"as" = (/obj/effect/spawner/lootdrop/grille_or_trash,/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plating/road,/area/ware)
+"at" = (/obj/item/book/granter/crafting_recipe/guns,/turf/open/floor/plasteel,/area/ware)
+"au" = (/obj/item/storage/box/lights,/turf/open/floor/plating/road,/area/ware)
+"av" = (/obj/structure/table/wood,/turf/open/floor/plasteel,/area/ware)
+"aw" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ware)
+"ax" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/grimy,/area/ware)
+"ay" = (/obj/item/roller,/turf/open/floor/plating/road,/area/ware)
+"az" = (/obj/structure/closet/crate/trashcart,/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plating/road,/area/ware)
+"aA" = (/obj/item/pickaxe,/turf/open/floor/plating/road,/area/ware)
+"aB" = (/obj/item/crowbar,/turf/open/floor/plasteel,/area/ware)
+"aC" = (/obj/structure/stopsign{step_y = 15},/turf/open/floor/plating/pavement/sidewalk,/area/ware)
+"aD" = (/obj/item/coin/iron,/turf/open/floor/plasteel,/area/ware)
+"aE" = (/obj/item/coin/silver,/turf/open/floor/wood,/area/ware)
+"aF" = (/obj/item/ammo_box/c38,/turf/open/floor/plasteel,/area/ware)
+"aG" = (/obj/item/coin/iron,/turf/open/floor/wood,/area/ware)
+"aH" = (/obj/item/ammo_box/c10mm,/turf/open/floor/plasteel,/area/ware)
+"aI" = (/turf/open/floor/plating/asteroid,/area/ware)
+"aJ" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/wood,/area/ware)
+"aK" = (/obj/structure/table/wood,/obj/item/ammo_box/c38/trac,/turf/open/floor/plasteel,/area/ware)
+"aL" = (/obj/item/crowbar,/turf/open/floor/plating/pavement/sidewalk,/area/ware)
+"aM" = (/obj/item/coin/iron,/turf/open/floor/plasteel/grimy,/area/ware)
+"aN" = (/obj/item/analyzer,/turf/open/floor/plasteel,/area/ware)
+"aO" = (/obj/item/coin/silver,/turf/open/floor/plasteel,/area/ware)
+"aP" = (/obj/item/crowbar,/turf/open/floor/plating/asteroid,/area/template_noop)
+"aQ" = (/turf/open/floor/plating,/area/ware)
+"aR" = (/obj/item/shovel,/obj/item/hatchet/wooden,/turf/open/floor/plating,/area/ware)
+"aS" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plating,/area/ware)
+"aT" = (/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plating,/area/ware)
+"aU" = (/obj/structure/table/wood,/obj/item/flashlight/lamp{step_x = 3; step_y = 8},/turf/open/floor/plasteel,/area/ware)
+"aV" = (/obj/item/kirbyplants/random,/turf/open/floor/plasteel,/area/ware)
+"aW" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/floor/plasteel/grimy,/area/ware)
+"aX" = (/obj/machinery/door/airlock/maintenance_hatch,/turf/open/floor/plating,/area/ware)
+"aY" = (/obj/structure/bed,/obj/item/bedsheet/random,/turf/open/floor/plasteel,/area/ware)
+"aZ" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 1},/turf/open/floor/plasteel,/area/ware)
+"ba" = (/turf/open/floor/carpet/red,/area/ware)
+"bb" = (/obj/structure/chair/wood,/turf/open/floor/carpet/red,/area/ware)
+"bc" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/carpet/red,/area/ware)
+"bd" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/glowstick,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/carpet/red,/area/ware)
+"be" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/carpet/red,/area/ware)
+"bf" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/carpet/red,/area/ware)
+"bg" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/space)
+"bh" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/carpet/red,/area/ware)
+"bi" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 8},/turf/open/floor/carpet/red,/area/ware)
+"bj" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 1},/turf/open/floor/carpet/red,/area/ware)
+"bk" = (/obj/structure/table/wood,/turf/open/floor/plasteel/grimy,/area/ware)
 
 (1,1,1) = {"
-baaaaabbbbbaaaaaaaaaacbbbbbbbbbbbbbbbbbbbbbb
-badddabbbbbaeeefaBddacbbbbbbbbbbbbbbbbbbbbbb
-bgdddaaaaaaaeeCeadddacbbbbbbbbbbbbbbbbbssssb
-bgdddahidddaeeeeadDdacbsssbbbbbbbbbbbbbsbbsb
-badddaddjddaeeeeadddacbsbssbbbbbbbbbbbbsbbsb
-baddaaaagaaaagaaaagaacbsbbsbssssbbsssbbsbbsb
-baddadddddddddddddddacbssssbsbbsbssbssbssssb
-baddadddddddddeeEeedacbsbbbbsbbsbsbbbsbsbbbb
-baddadddddddddeeeeedacbsbbbbsssbbsssssbsbbbb
-baddaaagadddddeeeeedgcbsbbbbbbbbbbbbbbbbbbbb
-baddaFddaagaadeeeeedacbbbbbbbbbbbbbbbbbbbbbb
-baddadddaddkadeeeeGdacbbbbbbbbbbbbbbbbbbbbbb
-baddaHdladtdadddddddaucccIcccccaaaaaaaabbbbb
-baddaaaaaaaaaaaaaaaaaaaaaagaaaaammmmmmabbbbb
-baddatndJaodKdpaddwddddddddddwtammmxmmabbbbb
-baddaddLdadddddadddddddddddddddammmmmmabbbbb
-baddaaagaagadddadddddddddddddddaMmmmmmabbbbb
-badddddddddaddyaddNddddddddddddammmmmmabbbbb
-badeeeeeeedaddyaOdvdddvddvdddddammmmmmabbbbb
-badeeeeeeedaddyaddvdddddddddvddammmmmmabbbbb
-badeezzeeedaaaaaddvdwdddddddvddammmMmxabbbbb
-badeezeeeedddddaddvddddddddvvddammmmmmabbbbb
-badeAeeeeedddddadddvddddddvvdddamxmMmmabbbbb
-badeeeeeeedddddgdddvvvvvvvvddddammmmmmabbbbb
-badddddddddddddadddddddddddddwdammmmmmabbbbb
-baaaaaagaaaadddadddddqrddddddddammmmmmabbbbb
-bbbbbbbbPbbadddadddddddddddddddammmmmmabbbbb
-bbbbbbbbbbbadddadddddddddddddddammmmmmabbbbb
-bbbbbbbbbbbadddadddddddddddddddammmmmmabbbbb
-bbbbbbbbbbbadddaaaaaaaaaaaaaaaaaaaggaaabbbbb
-bbbbbbbbbbbaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+abaaaaaaaaacacacafacacacacacacacaaaaaaaaaaacacacacacacacacacacababababababababababababab
+abaaahaiaaajanananaoananaoananaoaaaBadahaaacananananananananacababababababababababababab
+abagadaiaaanaoaoajananaoananananaaadadadaaacananananananananacababababababababababababab
+abagadadaaasauayanananananaoanazaaadaDadaaacananananananananacababababababababababababab
+abaaadadaaaoazanaAanananananajajaaahadadaaacananananananananaCacacacacacacacacacacacacaI
+abaaadadaaaaaaaaaaaaagaaaaaaaaaaaaaaagaaaaacananananananananananananananananananaIanaIaI
+abaaadadaaadadadadadadahadadadadadadadadaaacaoananananananananananananananananananaIanan
+abaaahadagadadadadadadadadadaeaeaEaeaeadaaacananananaoananananananananananananananananaI
+abaaaiadaaadadadadadadadadadaeaeaeaeaeadaaacananananananananacacacacacacacacacacacaIaIaI
+abaaahadaaaaaaagaaadadadadadaJaeaeaeaeadagacananananananananacababababababababababababab
+abaaadadaaaFahadaaaaagaaaaadaeaeaeaeaJadaaacananananananananacababababababababababababab
+abaaadadaaadadadaaahadakaaadaeaeaeaeaGadaaacananaoanananananacababababababababababababab
+abaaadadaaaHadalaaadatadaaadadadadadadadaaacacacacaLacacacacacaaaaaaaaaaaaaaaaababababab
+abaaahadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaaaaaaaaaaamamamamamamaaababababab
+abaaadadaaaQaRaSaTaaadadaKaUapaaaVadawadadaaahadadadadadadawataaamaWamaxamamaaababababab
+abaaadadaaaQaQaQaSaaadadadadadaaadadadadadaaadadavavavavadadadaaamamamamamamaaababababab
+abaaadadaaaaaaaXaaaaagaaadadaYaaadadadawadaaadadavaZadadadadadaaaMamamamamamaaababababab
+abaaadadadadadadadadadaaadadaYaaadadaNadadaaaVadadadahadadadaVaaamamaxamamamaaababababab
+abaaadaeaeaeaeaeaeaeadaaadadaYaaaOahadadadaaaaaaaaaaagaaaaaaaaaaamamamamamamaaababababab
+abaaadaebababbbabcaeadaaaUadaYaaadadadadadadadadadadadadadadadaaamamamamamamaaababababab
+abaaadaebabdbebfbaaeadaaaaaaaaaaadadadadbgadadadadadadadawadadaaamamamaMamaxaaababababab
+abaaadaebabebhbfbiaeadadadadaVaaadawadadadadadadadadadadadadadaaamamamamamamaaababababab
+abaaadaebcbjbababaaeadadadadadaaadadadadawadadawadadadadadadadaaamaxamaMamamaaababababab
+abaaadaeaeaeaeaeaJaeadadawadadagadadadadadadadadadadadadadadadagamamamamaWaxaaababababab
+abaaaVadadadadadadadadadadadaVaaadadadadadadadadadadadadadawadagamamamamamamaaababababab
+abaaaaaaaaaaaaagaaaaaaaaaaaaaaaaadadadawadaqaradadadawadadadadaaamamamamamamaaababababab
+ababababababababaPababababababaaadadadadadadadadadadadadahadadaaamambkbkbkamaaababababab
+abababababababababababababababaaadahadadadawadadadadadadadadadaaamamamamamamaaababababab
+abababababababababababababababaaadadadadadadadadadadadadadadadaaamamamamamamaaababababab
+abababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagaaaaaaababababab
+abababababababababababababababababababababababababababababababababababababababababababab
+abababababababababababababababababababababababababababababababababababababababababababab
 "}

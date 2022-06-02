@@ -7,26 +7,33 @@
 "g" = (/obj/machinery/computer/cargo,/turf/open/floor/plasteel,/area/quartermaster/storage)
 "h" = (/obj/structure/plasticflaps,/turf/open/floor/plasteel,/area/quartermaster/storage)
 "i" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/quartermaster/storage)
-"j" = (/obj/item/holosign_creator/atmos,/obj/item/holosign_creator/atmos,/obj/item/holosign_creator/atmos,/obj/item/holosign_creator/atmos,/turf/open/floor/plasteel,/area/quartermaster/storage)
+"j" = (/turf/template_noop,/area/space)
 "k" = (/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/quartermaster/storage)
 "l" = (/obj/effect/baseturf_helper/asteroid,/turf/open/floor/plasteel,/area/quartermaster/storage)
-"m" = (/obj/item/pipe_dispenser,/obj/item/pipe_dispenser,/turf/open/floor/plasteel,/area/quartermaster/storage)
+"m" = (/turf/open/floor/plating/pavement/sidewalk,/area/space)
 "n" = (/obj/docking_port/stationary{dir = 8; dwidth = 5; height = 7; id = "supply_home"; name = "Cargo Bay"; width = 12},/turf/template_noop,/area/template_noop)
 "o" = (/obj/item/inducer,/obj/item/inducer,/turf/open/floor/plasteel,/area/quartermaster/storage)
 "p" = (/turf/open/floor/plating/road/airless/cave,/area/template_noop)
 "q" = (/turf/open/floor/plating/road,/area/template_noop)
+"r" = (/turf/open/floor/plating/road,/area/space)
+"s" = (/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
+"t" = (/obj/machinery/door/airlock/mining{name = "cargo airlock"},/turf/open/floor/plasteel,/area/quartermaster/storage)
+"u" = (/obj/effect/mob_spawn/human/corpse/cargo_tech,/turf/open/floor/plasteel,/area/quartermaster/storage)
 
 (1,1,1) = {"
-qqqqqqqqqqqqqqqqqqqq
-pqqqqqqqqqqqqqqqqqqp
-qqqqqqqqqqqqqqqqqqqq
-aaaaaaaaaaabbbbcbbbb
-aaaaaaaaaaabddeddfgb
-aaaaaaaaaaahddddddib
-aaaaaaaaaaacddddddjb
-aaaaaaaaaaabklddddmb
-aaaaaaaaaancddddddob
-aaaaaaaaaaahddddddib
-aaaaaaaaaaabdddddddb
-aaaaaaaaaaabbbbbbbbb
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjmmmmmmmmmmmmmmmmmmmmmmj
+jjjjrrjrrrrrrrrrrrrrrrrrrrrrrm
+aaaaqaqqqqqqqqqqqqqqrrrrjrrrrm
+aaaaqaqqqqqqqqqqqqqprrrrrrrrrj
+aasassassssssssqssssmmrrrrjrrm
+aaaaaaaaaaabbbbtbbbbjmrrrrrrrm
+aaaaaaaaaaabddeddfgbjmrrrrjrrj
+aaaaaaaaaaahddddddibjjrjrrrrrm
+aaaaaaaaaaacdddddddbjmrrrrrrjm
+aaaaaaaaaaabkldddddbjmrrrrrrjj
+aaaaaaaaaancddddddobjjjrrrjjrj
+aaaaaaaaaaahduddddibjjjrrjjjrj
+aaaaaaaaaaabdddddddbjjjjjjjjjj
+aaaaaaaaaaabbbbbbbbbjjjjjjjjjj
 "}

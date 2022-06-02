@@ -18,7 +18,6 @@
 "r" = (/obj/structure/toilet{dir = 1},/turf/open/floor/plating,/area/reststop)
 "s" = (/turf/open/floor/plating/pavement,/area/template_noop)
 "t" = (/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
-"u" = (/turf/open/floor/plating/road,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaa
@@ -34,12 +33,12 @@ aaaadeeemeeebnoopbllbaa
 aaaabdbdbdbdbooooqllbaa
 aaaabrbrbrbrboooobbbbaa
 aaaabbbbbbbbboooobaaaaa
-ttttttttttttttttttttttt
-sssssssssssssssssssssss
-sssssssssssssssssssssss
-sssssssssssssssssssssss
-sssssssssssssssssssssss
-sssssssssssssssssssssss
-sssssssssssssssssssssss
-susssssssssssssssssssss
+aaaattttttttttttttttaaa
+aaaasssssssssssssssssaa
+aassssaassssssssssssssa
+aassssssssssssssssssssa
+asassssssssssssassssaaa
+aaasssssssssssssssssssa
+aasassssssssssssssssasa
+aaaaatttatttttttttttaaa
 "}

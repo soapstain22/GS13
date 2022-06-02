@@ -1,6 +1,6 @@
 "a" = (/turf/template_noop,/area/template_noop)
 "b" = (/turf/closed/wall/mineral/wood,/area/template_noop)
-"c" = (/turf/open/floor/plating/road/airless/cave,/area/template_noop)
+"c" = (/obj/machinery/hydroponics/soil,/turf/open/floor/plating/asteroid,/area/template_noop)
 "d" = (/obj/item/seeds/corn{pixel_x = -2; pixel_y = 1},/obj/item/seeds/corn{pixel_x = 4; pixel_y = 2},/obj/item/seeds/corn,/obj/structure/table,/turf/open/floor/wood,/area/template_noop)
 "e" = (/turf/open/floor/wood,/area/template_noop)
 "f" = (/obj/item/secateurs,/obj/item/cultivator/rake,/obj/structure/table,/obj/item/plant_analyzer,/obj/item/shovel/spade,/obj/item/shovel/spade,/turf/open/floor/wood,/area/template_noop)
@@ -17,40 +17,41 @@
 "q" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 6},/turf/open/floor/plating/asteroid,/area/template_noop)
 "r" = (/obj/structure/fence,/turf/open/floor/plating/asteroid,/area/template_noop)
 "s" = (/turf/open/floor/plating/asteroid,/area/template_noop)
-"t" = (/obj/machinery/hydroponics,/turf/open/floor/plating/asteroid,/area/template_noop)
+"t" = (/obj/item/seeds/sugarcane,/obj/machinery/hydroponics/soil,/turf/open/floor/plating/asteroid,/area/template_noop)
 "u" = (/obj/item/seeds/cabbage,/turf/open/floor/plating/asteroid,/area/template_noop)
-"v" = (/obj/item/seeds/sugarcane,/turf/open/floor/plating/asteroid,/area/template_noop)
+"v" = (/obj/item/match,/turf/open/floor/wood,/area/template_noop)
 "w" = (/obj/item/seeds/cotton,/turf/open/floor/plating/asteroid,/area/template_noop)
-"x" = (/obj/item/seeds/orange,/turf/open/floor/plating/asteroid,/area/template_noop)
-"y" = (/obj/item/seeds/cannabis,/turf/open/floor/plating/asteroid,/area/template_noop)
+"x" = (/obj/item/hatchet/wooden,/turf/open/floor/wood,/area/template_noop)
+"y" = (/obj/structure/mineral_door/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
 "z" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 1},/turf/open/floor/plating/asteroid,/area/template_noop)
 "A" = (/obj/structure/fence/corner,/turf/open/floor/plating/asteroid,/area/template_noop)
 "B" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/template_noop)
 "C" = (/obj/machinery/seed_extractor,/turf/open/floor/wood,/area/template_noop)
 "D" = (/obj/item/storage/bag/plants/portaseeder,/turf/open/floor/wood,/area/template_noop)
 "E" = (/obj/structure/barricade/wooden/crude,/turf/open/floor/wood,/area/template_noop)
-"F" = (/turf/open/floor/plating/road,/area/template_noop)
+"F" = (/obj/item/seeds/orange,/obj/machinery/hydroponics/soil,/turf/open/floor/plating/asteroid,/area/template_noop)
+"G" = (/obj/item/seeds/cannabis,/obj/machinery/hydroponics/soil,/turf/open/floor/plating/asteroid,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaa
 aaaabBbbbbbjbBbaaaaaaaa
 aaaabdCfgbeeeebaaaaaaaa
-aaaabheeebeeeebaaacaaaa
+aaaabheeebeeeebaaaaaaaa
 aaaabieeejeeeeBaaaaaaaa
-aaaabkeeebeeeebFFFFFFFF
-aaaablDDmbeeeebFFFFFFFF
+aaaabkeeebeeeebaaaaaaaa
+aaaablDDmbeeeebaaaaaaaa
 nooobBbEbbbjebbooopoooq
 rsssssssssssssssssssssr
 rsssssssssssssssssssssr
-rsttuttsttssssssssssssr
+rsssusssssssssssssssssr
+rscccscccscccsssbbbbssr
+rscccsctcscccsssbvxbssr
+rsssssswssssssssyeebssr
+rsccFscccscccsssbbbbssr
+rscccscGcscccsssssssssr
 rsssssssssssssssssssssr
-rsttsttvttssssssssssssr
-rsssssswssssssssssssssr
-rsttxttsttssssssssssssr
-rssssssyssssssssssssssr
-rsttsttsttssssssssssssr
-rsssssssssssssssssssssr
-rsttsttsttssssssssssssr
+rscccscccscccsssssssssr
+rscccscccscccsssssssssr
 rsssssssssssssssssssssr
 zoooooooooooooooooooooA
 "}
