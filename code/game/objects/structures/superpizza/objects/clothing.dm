@@ -23,7 +23,11 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
 	icon_state = "hazard"
-
+/obj/item/clothing/suit/jacket/greyscale
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+	icon_state = "jacket"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
 /obj/item/clothing/suit/apron/chef
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/under/smock/greyscale
@@ -41,6 +45,15 @@
 	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
 	armor = list("melee" = 4, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 4, "acid" = 1, "stab" = 1, "slash" = 1, "crush" = 1, "wound" = 1, "slash" = 1, "stab" = 2, "crush" = 5,)
 	icon_state = "serf"
+	cold_protection = HEAD
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
+/obj/item/clothing/head/cowboy/greyscale
+	name = "cowboy hat"
+	desc = "very cow! very boy!"
+	icon = 'code/game/objects/structures/superpizza/clothicon.dmi'
+	worn_icon = 'code/game/objects/structures/superpizza/clothing.dmi'
+	armor = list("melee" = 2, "bullet" = 2, "laser" = 3, "energy" = 2, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 4, "acid" = 1, "stab" = 1, "slash" = 1, "crush" = 1, "wound" = 1, "slash" = 1, "stab" = 2, "crush" = 5,)
+	icon_state = "cowboy"
 	cold_protection = HEAD
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 /obj/item/clothing/shoes/greyscale

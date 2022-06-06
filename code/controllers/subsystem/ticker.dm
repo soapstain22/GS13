@@ -523,6 +523,8 @@ SUBSYSTEM_DEF(ticker)
 			news_message = "The crew of [station_name()] has been evacuated amid unconfirmed reports of enemy activity."
 		if(BLOB_WIN)
 			news_message = "[station_name()] was overcome by an unknown biological outbreak, killing all crew on board. Don't let it happen to you! Remember, a clean work station is a safe work station."
+		if(VICTORY)
+			news_message = "the machine was successfully built by [winner()]!"
 		if(BLOB_NUKE)
 			news_message = "[station_name()] is currently undergoing decontanimation after a controlled burst of radiation was used to remove a biological ooze. All employees were safely evacuated prior, and are enjoying a relaxing vacation."
 		if(BLOB_DESTROYED)

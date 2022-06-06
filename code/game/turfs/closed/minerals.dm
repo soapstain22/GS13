@@ -236,7 +236,6 @@
 
 /turf/closed/mineral/random
 	var/list/mineralSpawnChanceList = list(
-	/turf/closed/mineral/dirt= 1000,
 	/obj/item/stack/ore/fake/stone = 400,
 	/obj/item/stack/ore/iron = 120,
 	/obj/item/stack/ore/fake/coal = 100,
@@ -259,7 +258,6 @@
 	/obj/item/stack/ore/gold = 1,
 	/obj/item/stack/ore/diamond = 0.7,
 	/obj/item/stack/ore/bluespace_crystal = 0.5,
-
 	/turf/open/floor/plating/asteroid/airless/cave = 10,
 	/obj/item/stack/ore/fake/trash = 1,
 	/turf/closed/mineral/gibtonite = 4, )
@@ -270,7 +268,6 @@
 	smooth_icon = 'icons/turf/smoothsandstone.dmi'
 	mineralSpawnChanceList = list(
 	/obj/item/stack/ore/fake/stone 	= 200,
-	/turf/closed/mineral/dirt		= 300,
 	/obj/item/stack/ore/hematite	= 120,
 	/obj/item/stack/ore/limonite	= 120,
 	/obj/item/stack/ore/fake/coal	= 500,
@@ -280,7 +277,7 @@
 	/obj/item/stack/ore/fake/salt 	= 44,
 	/obj/item/stack/ore/fake/trash 	= 3,
 	/obj/item/stack/ore/fake/sandstone = 500,
-	/turf/open/floor/plating/asteroid/airless/cave = 1)
+	/turf/open/floor/plating/asteroid/airless/cave = 10)
 	mineralChance = 60
 
 /turf/closed/mineral/random/IgneousExtrusive
@@ -317,7 +314,7 @@
 		/obj/item/stack/ore/iron = 120,
 		/obj/item/stack/ore/gold = 23,
 		/obj/item/stack/ore/granite = 200,
-		/turf/open/floor/plating/asteroid/airless/cave = 1,)
+		/turf/open/floor/plating/asteroid/airless/cave = 3,)
 	mineralChance = 60
 	maxDamage = 20
 /turf/closed/mineral/random/Initialize()

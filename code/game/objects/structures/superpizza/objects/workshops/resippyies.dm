@@ -47,7 +47,13 @@
 	materials = list(MAT_CATEGORY_FABRIC = 1000)
 	build_path = /obj/item/clothing/suit/hazardvest/greyscale
 	category = list("initial","Over")
-
+/datum/design/jacket
+	name = "jacket"
+	id = "jacket"
+	build_type = SEWING
+	materials = list(MAT_CATEGORY_FABRIC = 2000)
+	build_path = /obj/item/clothing/suit/jacket/greyscale
+	category = list("initial","Over")
 /datum/design/pickaxe
 	name = "pickaxe"
 	id = "pickaxe"

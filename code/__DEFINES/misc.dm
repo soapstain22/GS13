@@ -338,7 +338,7 @@ GLOBAL_LIST_INIT(pda_styles, sortList(list(MONO, VT, ORBITRON, SHARE)))
 #define SHUTTLE_HIJACK 24
 #define GANG_DESTROYED 25
 #define GANG_OPERATING 26
-
+#define VICTORY 27
 #define FIELD_TURF 1
 #define FIELD_EDGE 2
 

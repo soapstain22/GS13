@@ -268,3 +268,150 @@ obj/effect/spawner/lootdrop/parts
 		"" = 300
 		)
 
+/obj/effect/spawner/lootdrop/clothes
+	name = "grassass"
+	lootdoubles = FALSE
+	loot = list(
+		/obj/structure/flora/ausbushes/sparsegrass = 60,
+		/obj/structure/flora/ausbushes/fullgrass = 100,
+		/obj/structure/flora/rock = 30,
+		/obj/structure/flora/ausbushes/ywflowers = 9,
+		/obj/structure/flora/ausbushes/genericbush = 9,
+		/obj/structure/flora/grass/jungle/b = 13,
+		/obj/structure/flora/rock/jungle = 32,
+		/obj/structure/flora/junglebush = 19,
+		/obj/structure/flora/bush = 10,
+		/obj/effect/decal/remains/robot = 1,
+		/obj/effect/decal/cleanable/plastic = 1,
+		/obj/item/paper/crumpled/ = 2,
+		/obj/structure/flora/ausbushes/brflowers = 6,
+		/obj/item/reagent_containers/glass/bottle/ = 4,
+		/obj/machinery/hydroponics/soil = 10,
+		/obj/item/trash/can = 1,
+		/obj/structure/barrel/shit = 4,
+		/obj/item/cigbutt/roach = 1,
+		/obj/structure/flora/ausbushes/reedbush = 8,
+		/obj/structure/flora/tree/jungle = 30,
+		/obj/structure/flora/ausbushes/fernybush = 5,
+		/obj/structure/flora/ausbushes/stalkybush = 5,
+		/obj/structure/flora/ausbushes/grassybush = 5,
+		/obj/item/reagent_containers/glass/bottle/ = 1,
+		/obj/item/reagent_containers/food/drinks/waterbottle/empty = 1,
+		/obj/effect/landmark/carpspawn = 1,
+		/obj/structure/flora/bush = 3,
+		/mob/living/simple_animal/chicken = 1,
+		/obj/effect/landmark/zombie/ = 1,
+		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
+		/obj/structure/closet/cardboard/ = 1,
+		"" = 300
+		)
+
+/obj/effect/spawner/lootdrop/pantce
+	name = "grassass"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/clothing/under/pants/tan = 1,
+		/obj/item/clothing/under/pants/blackjeans = 1,
+		/obj/item/clothing/under/pants/khaki = 1,
+		/obj/item/clothing/under/pants/jeans = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/shoe
+	name = "pantce"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/clothing/under/pants/tan = 1,
+		/obj/item/clothing/under/pants/blackjeans = 1,
+		/obj/item/clothing/under/pants/khaki = 1,
+		/obj/item/clothing/under/pants/jeans = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/beeny
+	name = "beeny"
+	lootdoubles = FALSE
+	lootcount = 5
+	loot = list(
+		/obj/item/clothing/head/beanie/red = 1,
+		/obj/item/clothing/head/beanie/green = 1,
+		/obj/item/clothing/head/beanie/yellow = 1,
+		/obj/item/clothing/head/beanie/orange = 1,
+		/obj/item/clothing/head/beanie/purple = 1,
+		/obj/item/clothing/head/beanie/cyan = 1,
+		/obj/item/clothing/head/beanie/darkblue = 1,
+		"" = 10
+		)
+/obj/effect/spawner/lootdrop/jaked
+	name = "beeny"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/clothing/suit/jacket/leather = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/constructors
+	name = "constructors"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/screwdriver = 3,
+		/obj/item/wirecutters = 3,
+		/obj/item/wrench = 3,
+		/obj/item/crowbar = 3,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/milisurplus
+	name = "milisurplus"
+	lootdoubles = FALSE
+	lootcount = 1
+	loot = list(
+		/obj/item/clothing/suit/jacket/miljacket = 1,
+		/obj/item/clothing/head/thenam = 1,
+		/obj/item/clothing/under/pants/camo = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/computa
+	name = "computa"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/clothing/suit/jacket/leather = 1,
+		/obj/item/clothing/under/pants/blackjeans = 1,
+		/obj/item/clothing/under/pants/khaki = 1,
+		/obj/item/clothing/under/pants/jeans = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/factory
+	name = "factory"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/electronics/apc = 1,
+		/obj/item/electronics/airlock = 1,
+		/obj/item/electronics/tracker = 1,
+		/obj/item/electronics/airalarm = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/tunnel
+	name = "jaked"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/clothing/mask/cigarette = 1,
+		/obj/item/clothing/under/pants/blackjeans = 1,
+		/obj/item/clothing/under/pants/khaki = 1,
+		/obj/item/clothing/under/pants/jeans = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/bathroom
+	name = "beeny"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/clothing/suit/jacket/leather = 1,
+		/obj/item/clothing/under/pants/blackjeans = 1,
+		/obj/item/clothing/under/pants/khaki = 1,
+		/obj/item/clothing/under/pants/jeans = 1,
+		"" = 5
+		)

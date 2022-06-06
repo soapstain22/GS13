@@ -20,7 +20,6 @@
 	var/min_temperature = 0
 	var/max_temperature = 0
 	var/target_temperature = T20C
-	var/heat_capacity = 0
 	var/interactive = TRUE // So mapmakers can disable interaction.
 
 /obj/machinery/atmospherics/components/unary/thermomachine/Initialize()

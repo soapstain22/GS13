@@ -59,6 +59,7 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/BENDING_YIELD
 	var/BENDING_FRACTURE
 	var/BENDING_STRAIN_AT_YIELD
+	var/thermal_conductivity
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)

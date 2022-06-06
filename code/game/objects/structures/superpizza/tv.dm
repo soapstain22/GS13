@@ -37,6 +37,8 @@
 		if(tape)
 			eject_tape(user)
 		// Set the new diskette.
+		else
+			screen_setup(user)
 		tape = I
 		to_chat(user, "<span class='notice'>You insert [I].</span>")
 		playsound( I, 50, FALSE, FALSE)

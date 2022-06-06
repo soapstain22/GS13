@@ -130,6 +130,7 @@
 	strength_modifier = 7
 	brittleness = 0.001
 	weight = 0.13
+	thermal_conductivity = 370
 /obj/item/stack/ore/malachite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "malachite"

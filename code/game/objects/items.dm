@@ -268,8 +268,55 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 /obj/item/examine(mob/user) //This might be spammy. Remove?
 	. = ..()
 	var/healthpercent = (obj_integrity/max_integrity) * 100
+	var/comp = (compressive_stress/COMPRESSIVE_FRACTURE) * 100
+	var/impa = (obj_integrity/IMPACT_FRACTURE) * 100
+	var/bent = (bending_stress/BENDING_FRACTURE) * 100
+	var/shea = (shear_stress/SHEAR_FRACTURE) * 100
+	var/tors = (torsion_stress/TORSION_FRACTURE) * 100
+	var/tens = (tensile_stress/TENSILE_FRACTURE) * 100
 	. += "[gender == PLURAL ? "They are" : "It is"] a [weightclass2text(w_class)] item. Its currently at [healthpercent]%"
-
+	switch(comp)
+		if(25 to 50)
+			. += "Its looking a bit cracked."
+		if(51 to 75)
+			. += "Its cracked all over."
+		if(76 to 100)
+			. += "Its about to shatter!"
+	switch(impa)
+		if(25 to 50)
+			. += "Its looking a bit dented."
+		if(51 to 75)
+			. += "Its quite deformed."
+		if(76 to 100)
+			. += "Its about to fracture!"
+	switch(bent)
+		if(25 to 50)
+			. += "Its looking a bit bent."
+		if(51 to 75)
+			. += "Its bent all over."
+		if(76 to 100)
+			. += "Its about to snap!"
+	switch(shea)
+		if(25 to 50)
+			. += "Its looking a bit dull."
+		if(51 to 75)
+			. += "Its dull."
+		if(76 to 100)
+			. += "Its almost dulled!."
+	switch(tors)
+		if(25 to 50)
+			. += "Its looking a bit twisted."
+		if(51 to 75)
+			. += "Its notably twisted."
+		if(76 to 100)
+			. += "Its about to tear!"
+	switch(tens)
+		if(25 to 50)
+			. += "Its looking a bit stretched."
+		if(51 to 75)
+			. += "Its stretched out."
+		if(76 to 100)
+			. += "It can't be stretched much more!"
 	if(resistance_flags & INDESTRUCTIBLE)
 		. += "[src] seems extremely robust! It'll probably withstand anything that could happen to it!"
 	else

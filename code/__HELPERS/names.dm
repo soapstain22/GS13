@@ -31,7 +31,10 @@ GLOBAL_VAR(command_name)
 	GLOB.command_name = name
 
 	return name
-
+/proc/winner()
+	return GLOB.winner
+/proc/setwinner(var/winner)
+	GLOB.winner = winner
 /proc/station_name()
 	if(!GLOB.station_name)
 		var/newname
