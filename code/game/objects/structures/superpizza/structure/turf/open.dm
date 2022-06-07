@@ -44,6 +44,19 @@
 	if(force)
 		..()
 	return //unplateable
+/turf/open/floor/bathroom
+	floor_tile = /obj/item/stack/tile/bathroom
+	icon = 'code/game/objects/structures/superpizza/floors.dmi'
+	icon_state = "bathroom"
+	heat_capacity = 5000
+	broken_states = list("bathroomb1","bathroomb2","bathroomb3", "bathroomb4")
+/turf/open/floor/linoleum
+	floor_tile = /obj/item/stack/tile/linoleum
+	icon = 'code/game/objects/structures/superpizza/floors.dmi'
+	icon_state = "linoleum"
+	heat_capacity = 6000
+	broken_states = list("linoleum_busted2","linoleum_busted1","linoleum_busted3", "linoleum_busted4")
 /turf/open/floor/material/basket
 	floor_tile = /obj/item/stack/tile/material/basket
-	icon_state = "floor2"
+	icon = 'code/game/objects/structures/superpizza/floors.dmi'
+	icon_state = "basket"

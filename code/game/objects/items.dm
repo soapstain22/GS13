@@ -269,7 +269,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	. = ..()
 	var/healthpercent = (obj_integrity/max_integrity) * 100
 	var/comp = (compressive_stress/COMPRESSIVE_FRACTURE) * 100
-	var/impa = (obj_integrity/IMPACT_FRACTURE) * 100
+	var/impa = (impact_stress/IMPACT_FRACTURE) * 100
 	var/bent = (bending_stress/BENDING_FRACTURE) * 100
 	var/shea = (shear_stress/SHEAR_FRACTURE) * 100
 	var/tors = (torsion_stress/TORSION_FRACTURE) * 100

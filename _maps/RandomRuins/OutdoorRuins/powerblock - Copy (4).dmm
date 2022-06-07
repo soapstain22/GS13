@@ -23,52 +23,35 @@
 "y" = (/obj/machinery/atmospherics/components/unary/thermomachine/freezer,/turf/open/floor/plating,/area/template_noop)
 "z" = (/turf/open/floor/plating,/area/template_noop)
 "A" = (/obj/item/toy/crayon/spraycan{pixel_x = 6; pixel_y = 10},/obj/item/toy/crayon/spraycan,/turf/open/floor/plating,/area/template_noop)
-"B" = (/obj/machinery/atmospherics/components/unary/tank,/turf/open/floor/plating/pavement/sidewalk,/area/template_noop)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaafgggggggggggggghaaa
-aaaaijjjjjjjjujjjjskaaa
-aaaaijjjjjjjjjjjjjjkaaa
-aaaaijujjjjjjjjjjjjkaaa
-aaaaijjjlljppjxxxxjkaaa
-aaaaijjjqqjqqjxyzxjkaaa
-aaaaijjrjjjjjjxzAxjkaaa
-aaaaijBBjjjjjjxxzxjkaaa
-aaaaijBBtjjjjjjjjjjkaaa
-aaaaijBBjjjjjujjjjjkaaa
-aaaaijjjjjjjjjjjjjukaaa
-aaaaiujjjjjjjjjjjjjkaaa
-aaaamgggggggnggggggoaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
+fggggggggggggggh
+ijjjjjjjjujjjjsk
+ijjjjjjjjjjjjjjk
+ijujxxxxxjjjjjjk
+ijjjlljppjxxxxjk
+ijjjqqjqqjxyzxjk
+ijjrjjjjjjxzAxjk
+ijjjxxxxxjxxzxjk
+ijjjtjjjjjjjjjjk
+ijjjjjjjjujjjjjk
+ijjjjjjjjjjjjjuk
+iujjjjjjjjjjjjjk
+mgggggggnggggggo
 "}
 
 (1,1,2) = {"
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaacaaaaaaaaaaa
-aaaaaaaababbadbaaaaaaaa
-aaaaaaaaabbbbbaaaaaaaaa
-aaaaaaadaabbcaabaaaaaaa
-aaaaaaabbbcbbbbbaaaaaaa
-aaaaaaaaaabebcaaaaaaaaa
-aaaaaaababbbbbbbaaaaaaa
-aaaaaabbcbbbcbadbaaaaaa
-aaaaaaaaaabbbbbcbaaaaaa
-aaaaaaaabbbbaabaaaaaaaa
-aaaaaaaaacacaaaaaaaaaaa
-aaaaaaaabaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaadaabbcaab
+aaaaaaabbbcbbbbb
+aaaaaaaaaabebcaa
+aaaaaaababbbbbbb
+aaaaaabbcbbbcbad
+aaaaaaaaaabbbbbc
+aaaaaaaabbbbaaba
+aaaaaaaaacacaaaa
+aaaaaaaabaaaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
 "}

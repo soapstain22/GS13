@@ -318,14 +318,14 @@ obj/effect/spawner/lootdrop/parts
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/shoe
-	name = "pantce"
+	name = "chues"
 	lootdoubles = FALSE
-	lootcount = 3
+	lootcount = 1
 	loot = list(
-		/obj/item/clothing/under/pants/tan = 1,
-		/obj/item/clothing/under/pants/blackjeans = 1,
-		/obj/item/clothing/under/pants/khaki = 1,
-		/obj/item/clothing/under/pants/jeans = 1,
+		/obj/item/clothing/shoes/laceup = 1,
+		/obj/item/clothing/shoes/workboots = 1,
+		/obj/item/clothing/shoes/sandal = 1,
+		/obj/item/clothing/shoes/sneakers/black = 1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/beeny
@@ -345,7 +345,7 @@ obj/effect/spawner/lootdrop/parts
 /obj/effect/spawner/lootdrop/jaked
 	name = "beeny"
 	lootdoubles = FALSE
-	lootcount = 3
+	lootcount = 1
 	loot = list(
 		/obj/item/clothing/suit/jacket/leather = 1,
 		"" = 5
@@ -353,7 +353,7 @@ obj/effect/spawner/lootdrop/parts
 /obj/effect/spawner/lootdrop/constructors
 	name = "constructors"
 	lootdoubles = FALSE
-	lootcount = 3
+	lootcount = 1
 	loot = list(
 		/obj/item/screwdriver = 3,
 		/obj/item/wirecutters = 3,
@@ -376,10 +376,11 @@ obj/effect/spawner/lootdrop/parts
 	lootdoubles = FALSE
 	lootcount = 3
 	loot = list(
-		/obj/item/clothing/suit/jacket/leather = 1,
-		/obj/item/clothing/under/pants/blackjeans = 1,
-		/obj/item/clothing/under/pants/khaki = 1,
-		/obj/item/clothing/under/pants/jeans = 1,
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stock_parts/matter_bin = 1,
+		/obj/item/stock_parts/micro_laser = 1,
+		/obj/item/stock_parts/scanning_module = 1,
+		/obj/item/stock_parts/capacitor = 1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/factory
@@ -394,24 +395,44 @@ obj/effect/spawner/lootdrop/parts
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/tunnel
-	name = "jaked"
+	name = "tunnel"
 	lootdoubles = FALSE
-	lootcount = 3
+	lootcount = 1
 	loot = list(
 		/obj/item/clothing/mask/cigarette = 1,
-		/obj/item/clothing/under/pants/blackjeans = 1,
-		/obj/item/clothing/under/pants/khaki = 1,
-		/obj/item/clothing/under/pants/jeans = 1,
+		/obj/item/reagent_containers/syringe = 1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/bathroom
-	name = "beeny"
+	name = "poop"
 	lootdoubles = FALSE
-	lootcount = 3
+	lootcount = 1
 	loot = list(
-		/obj/item/clothing/suit/jacket/leather = 1,
-		/obj/item/clothing/under/pants/blackjeans = 1,
-		/obj/item/clothing/under/pants/khaki = 1,
-		/obj/item/clothing/under/pants/jeans = 1,
+		/obj/item/soap/deluxe = 1,
+		/obj/item/soap = 1,
+		/obj/item/bikehorn/rubberducky/plasticducky = 1,
+		/obj/item/reagent_containers/glass/rag = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/car
+	name = "car parts"
+	lootdoubles = FALSE
+	lootcount = 1
+	loot = list(
+		/obj/item/reagent_containers/antifreeze = 1,
+		/obj/item/soap = 1,
+		/obj/item/bikehorn/rubberducky/plasticducky = 1,
+		/obj/item/reagent_containers/glass/rag = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/chemofcull
+	name = "car parts"
+	lootdoubles = FALSE
+	lootcount = 1
+	loot = list(
+		/obj/item/reagent_containers/glue = 1,
+		/obj/item/reagent_containers/paintthinner = 1,
+		/obj/item/reagent_containers/varnish = 1,
+		/obj/item/reagent_containers/antifreeze = 1,
 		"" = 5
 		)

@@ -26,3 +26,6 @@ turf/closed/wall/material/break_wall()
 /turf/closed/wall/material/iron
 	custom_materials = list(/datum/material/iron = 4000)
 	set_custom_materials(custom_materials)
+/turf/closed/wall/material/concrete
+	custom_materials = list(/datum/material/iron = 4000)
+	set_custom_materials(custom_materials)

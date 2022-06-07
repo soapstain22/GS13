@@ -20,3 +20,13 @@
 	bullet_sizzle = TRUE
 	thermal_conductivity = 0.025
 	girder_type = /obj/structure/barricade/sandbags
+/turf/closed/wall/concrete
+	name = "concrete wall"
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+	icon_state = "concrete"
+	desc = "concrete wall"
+	canSmoothWith = null
+	hardness = 40
+	slicing_duration = 150 //welding through the ice+metal
+	bullet_sizzle = TRUE
+	thermal_conductivity = 0.020

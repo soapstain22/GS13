@@ -18,3 +18,17 @@
 	icon_state = "material_tile"
 	turf_type = /turf/open/floor/material/basket
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+/obj/item/stack/tile/bathroom
+	name = "basket weave floor tile"
+	singular_name = "floor tile"
+	desc = "The ground you walk on."
+	throwforce = 3
+	icon = 'code/game/objects/structures/superpizza/floors.dmi'
+	icon_state = "bathroomt"
+	turf_type = /turf/open/floor/bathroom
+/obj/item/stack/tile/linoleum
+	name = "linoleum tiling"
+	desc = "old people floors"
+	turf_type = /turf/open/floor/linoleum
+	icon = 'code/game/objects/structures/superpizza/floors.dmi'
+	icon_state = "linot"

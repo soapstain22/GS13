@@ -7,7 +7,8 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("sewing machine board", 		/obj/item/circuitboard/machine/sewingmachine, 2, time = 50),
 	new/datum/stack_recipe("masonry machine board", 	/obj/item/circuitboard/machine/masonry, 2, time = 50),
 	new/datum/stack_recipe("smithing machine board", 	/obj/item/circuitboard/machine/smithy, 2, time = 50),
-	new/datum/stack_recipe("coal generator", 			/obj/item/circuitboard/machine/coalgen, 4, time = 10, on_floor = FALSE),
+	new/datum/stack_recipe("power compressor", 			/obj/item/circuitboard/machine/power_compressor, 2, time = 10, on_floor = FALSE),
+	new/datum/stack_recipe("power turbine", 			/obj/item/circuitboard/machine/power_turbine, 2, time = 10, on_floor = FALSE),
 	new/datum/stack_recipe("apc electronics",			/obj/item/electronics/apc, 1, time = 18),
 	new/datum/stack_recipe("air alarm electronics",		/obj/item/electronics/airlock, 1, time = 18),
 	new/datum/stack_recipe("tracker electronics", 		/obj/item/electronics/tracker, 1, time = 18),
@@ -15,6 +16,7 @@ GLOBAL_LIST_INIT(component_recipes, list ( \
 	new/datum/stack_recipe("selling machine", 			/obj/machinery/piratepad, 20, time = 50),
 	new/datum/stack_recipe("fan", 						/obj/structure/fans/tiny, 1, time = 20),
 	new/datum/stack_recipe("stairs",					/obj/structure/stairs, 3, 1, 3, one_per_turf = TRUE, on_floor = TRUE, applies_mats = FALSE),
+	new/datum/stack_recipe("THE MACHINE!!!!!!!!",		/obj/item/circuitboard/machine/themachine, 3, 1, 3, one_per_turf = TRUE, on_floor = TRUE, applies_mats = FALSE),
 	))
 
 GLOBAL_LIST_INIT(clayrec, list ( \
