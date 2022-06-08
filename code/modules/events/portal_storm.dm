@@ -2,14 +2,12 @@
 	name = "Portal Storm: Syndicate Shocktroops"
 	typepath = /datum/round_event/portal_storm/syndicate_shocktroop
 	weight = 30
-	min_players = 0
-	earliest_start = 0 MINUTES
+	min_players = 15
 
 /datum/round_event/portal_storm/syndicate_shocktroop
 	boss_types = list(/mob/living/simple_animal/hostile/syndicate/melee/space/stormtrooper = 2)
 	hostile_types = list(/mob/living/simple_animal/hostile/syndicate/melee/space = 8,\
 						/mob/living/simple_animal/hostile/syndicate/ranged/space = 2)
-
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
 	typepath = /datum/round_event/portal_storm/portal_storm_narsie
@@ -20,7 +18,6 @@
 	boss_types = list(/mob/living/simple_animal/hostile/construct/artificer/hostile = 6)
 	hostile_types = list(/mob/living/simple_animal/hostile/construct/juggernaut/hostile = 8,\
 						/mob/living/simple_animal/hostile/construct/wraith/hostile = 6)
-
 /datum/round_event/portal_storm
 	startWhen = 7
 	endWhen = 999

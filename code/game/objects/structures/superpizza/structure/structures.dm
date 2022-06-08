@@ -125,16 +125,16 @@
 
 
 
-
-
-
-
-
+/obj/structure/table/granite
+	buildstack = /obj/item/stack/ore/granite
+	custom_materials = list(/datum/material/granite = 2000)
+	icon = 'icons/obj/smooth_structures/marbletable.dmi'
+	icon_state = "marble_table"
 
 
 /obj/machinery/power/lampo
 	name = "lamp"
-	desc = "A pole with powerful mounted lights on it. Due to its high power draw, it must be powered by a direct connection to a wire node."
+	desc = "A lamp"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "lamp"
 	density = TRUE

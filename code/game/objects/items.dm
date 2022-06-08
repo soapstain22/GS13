@@ -877,10 +877,21 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	// Run the start check here so we wouldn't have to call it manually.
 	if(!delay && !tool_start_check(user, amount))
 		return
-	if(obj_integrity<=1)
+	if (shear_stress >= SHEAR_FRACTURE)
+		playsound(user, "crunch", 25, TRUE)
+		qdel(src)
+	if (torsion_stress >= TORSION_FRACTURE)
+		playsound(user, "snap", 25, TRUE)
+		qdel(src)
+	if (tensile_stress >= TENSILE_FRACTURE)
+		playsound(user, "smash", 25, TRUE)
+		qdel(src)
+	if(impact_stress/IMPACT_FRACTURE>=1)
+		playsound(user, "smash", 25, TRUE)
 		qdel(src)
 	var/skill_modifier = 1
 	var/matfac = 1
+
 	if(tool_behaviour == TOOL_MINING && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		obj_integrity -= 1
@@ -889,7 +900,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		if(H.mind.get_skill_level(/datum/skill/mining) >= SKILL_LEVEL_JOURNEYMAN && prob(H.mind.get_skill_modifier(/datum/skill/mining, SKILL_PROBS_MODIFIER))) // we check if the skill level is greater than Journeyman and then we check for the probality for that specific level.
 			mineral_scan_pulse(get_turf(H), SKILL_LEVEL_JOURNEYMAN - 2) //SKILL_LEVEL_JOURNEYMAN = 3 So to get range of 1+ we have to subtract 2 from it,.
 		for(prob(brittleness/obj_integrity))
-			obj_integrity - max_integrity
 			visible_message("<span class='danger'>[src] shatters into a million pieces!</span>")
 			qdel(src)
 
@@ -898,27 +908,21 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		torsion_stress += TORSION_STRAIN_AT_YIELD
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		if (torsion_stress >= TORSION_FRACTURE)
-			playsound(H, "snap", 25, TRUE)
-			qdel(src)
+
 	if(tool_behaviour == TOOL_SCREWDRIVER && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		torsion_stress += TORSION_STRAIN_AT_YIELD
 		H.adjust_nutrition(-0.3)
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		if (torsion_stress >= TORSION_FRACTURE)
-			playsound(H, "snap", 25, TRUE)
-			qdel(src)
+
 	if(tool_behaviour == TOOL_WIRECUTTER && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		shear_stress += SHEAR_STRAIN_AT_YIELD
 		H.adjust_nutrition(-0.3)
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		if (shear_stress >= SHEAR_FRACTURE)
-			playsound(H, "crunch", 25, TRUE)
-			qdel(src)
+
 	if(tool_behaviour == TOOL_WELDER && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
@@ -928,9 +932,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		H.adjust_nutrition(-0.3)
 		user.mind?.adjust_experience(/datum/skill/engineering, 5)
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)
-		if (tensile_stress >= TENSILE_FRACTURE)
-			playsound(H, "smash", 25, TRUE)
-			qdel(src)
 	if(tool_behaviour == TOOL_MULTITOOL && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		skill_modifier = H.mind.get_skill_modifier(/datum/skill/engineering, SKILL_SPEED_MODIFIER)

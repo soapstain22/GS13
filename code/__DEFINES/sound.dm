@@ -32,6 +32,8 @@
 										'sound/ambience/ambicha4.ogg', 'sound/ambience/ambiholy.ogg', 'sound/ambience/ambiholy2.ogg',\
 										'sound/ambience/ambiholy3.ogg')
 
+#define CAVE list('sound/ambience/cave1.ogg', 'sound/ambience/cave2.ogg')
+
 #define HIGHSEC list('sound/ambience/ambidanger.ogg', 'sound/ambience/ambidanger2.ogg')
 
 #define RUINS list('sound/ambience/ambimine.ogg', 'sound/ambience/ambicave.ogg', 'sound/ambience/ambiruin.ogg',\

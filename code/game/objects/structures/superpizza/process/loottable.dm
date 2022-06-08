@@ -414,6 +414,40 @@ obj/effect/spawner/lootdrop/parts
 		/obj/item/reagent_containers/glass/rag = 1,
 		"" = 5
 		)
+/obj/effect/spawner/lootdrop/bedroom
+	name = "bedroom"
+	lootdoubles = FALSE
+	lootcount = 1
+	loot = list(
+		/obj/item/paper/crumpled = 1,
+		/obj/item/pen = 1,
+		/obj/item/throwing_star/toy = 1,
+		/obj/item/reagent_containers/glass/rag = 1,
+		/obj/item/toy/eightball = 1,
+		/obj/item/toy/cards/deck = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/closet
+	name = "bedroom"
+	lootdoubles = FALSE
+	lootcount = 1
+	loot = list(
+		/obj/item/clothing/under/pants/jeans = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/kitchen
+	name = "bedroom"
+	lootdoubles = FALSE
+	lootcount = 1
+	loot = list(
+		/obj/item/kitchen/knife = 1,
+		/obj/item/kitchen/knife/plastic = 1,
+		/obj/item/kitchen/rollingpin = 1,
+		/obj/item/reagent_containers/glass/rag = 1,
+		/obj/item/kitchen/spoon/plastic = 1,
+		/obj/item/storage/bag/tray/pan = 1,
+		"" = 5
+		)
 /obj/effect/spawner/lootdrop/car
 	name = "car parts"
 	lootdoubles = FALSE

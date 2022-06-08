@@ -1,5 +1,5 @@
 "a" = (/turf/closed/wall/mineral/wood/nonmetal,/area/template_noop)
-"b" = (/obj/structure/bookcase/random,/turf/open/floor/carpet,/area/template_noop)
+"b" = (/obj/structure/closet/cabinet,/obj/effect/spawner/lootdrop/closet,/turf/open/floor/carpet,/area/template_noop)
 "c" = (/turf/open/floor/wood,/area/template_noop)
 "d" = (/obj/item/bedsheet,/obj/structure/bed,/turf/open/floor/carpet,/area/template_noop)
 "e" = (/turf/open/floor/carpet,/area/template_noop)
@@ -7,21 +7,24 @@
 "g" = (/obj/item/kirbyplants/fullysynthetic,/turf/open/floor/wood,/area/template_noop)
 "h" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/template_noop)
 "i" = (/obj/structure/chair/comfy/beige{icon_state = "comfychair"; dir = 8},/turf/open/floor/wood,/area/template_noop)
-"j" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/template_noop)
+"j" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/open/floor/wood,/area/template_noop)
 "k" = (/turf/open/floor/bathroom,/area/template_noop)
-"l" = (/obj/structure/table/wood,/turf/open/floor/carpet,/area/template_noop)
+"l" = (/obj/effect/spawner/lootdrop/bedroom,/turf/open/floor/carpet,/area/template_noop)
 "m" = (/obj/structure/sink/kitchen{icon_state = "sink_alt"; dir = 4; pixel_x = -9},/turf/open/floor/bathroom,/area/template_noop)
 "n" = (/obj/structure/toilet{dir = 4},/turf/open/floor/bathroom,/area/template_noop)
+"o" = (/obj/structure/table,/turf/open/floor/wood,/area/template_noop)
+"p" = (/obj/machinery/crttv{icon_state = "crt"; dir = 1},/turf/open/floor/wood,/area/template_noop)
+"q" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/bedroom,/turf/open/floor/carpet,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaa
-abdeajcfga
-aeeehcccia
-alllacccca
+abdlajoooa
+aeeehcccca
+aqleacccoa
 aaaaahaaaa
-akkkhcccca
-amkkacccca
-akkkajccja
-ankkajccja
+akkkhcofga
+amkkacccia
+akkkacccca
+ankkacpcoa
 aaaaaaacaa
 "}

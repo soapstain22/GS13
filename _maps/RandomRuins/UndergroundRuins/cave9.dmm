@@ -1,22 +1,50 @@
 "a" = (/turf/template_noop,/area/template_noop)
 "b" = (/turf/open/floor/plating/asteroid,/area/template_noop)
-"c" = (/obj/effect/decal/cleanable/blood/old{icon_state = "floor3-old"},/turf/open/floor/plating/asteroid,/area/template_noop)
-"d" = (/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plating/asteroid,/area/template_noop)
-"e" = (/obj/effect/decal/cleanable/blood/old{icon_state = "floor7-old"},/turf/open/floor/plating/asteroid,/area/template_noop)
+"c" = (/obj/item/stack/sheet/mineral/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
+"d" = (/obj/effect/decal/cleanable/ash{step_x = 15; step_y = 0},/turf/open/floor/plating/asteroid,/area/template_noop)
+"e" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/turf/open/floor/rocks,/area/template_noop)
+"f" = (/obj/structure/chair{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/open/floor/rocks,/area/template_noop)
+"g" = (/obj/structure/window/reinforced{dir = 1},/obj/effect/decal/cleanable/blood/footprints,/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/turf/open/floor/rocks,/area/template_noop)
+"h" = (/obj/structure/window/reinforced{dir = 1},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 1},/obj/effect/decal/cleanable/blood/footprints,/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/rocks,/area/template_noop)
+"i" = (/obj/effect/decal/cleanable/ash{step_x = 10; step_y = 5},/turf/open/floor/plating/asteroid,/area/template_noop)
+"j" = (/obj/structure/window/reinforced{dir = 8},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 8},/turf/open/floor/rocks,/area/template_noop)
+"k" = (/obj/item/gun/ballistic/bb,/obj/effect/decal/cleanable/blood{step_x = 0; step_y = 0},/turf/open/floor/rocks,/area/template_noop)
+"l" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/effect/decal/remains/human,/turf/open/floor/rocks,/area/template_noop)
+"m" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 1},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/rocks,/area/template_noop)
+"n" = (/obj/effect/decal/cleanable/ash{step_x = 5; step_y = 29},/turf/open/floor/plating/asteroid,/area/template_noop)
+"o" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/turf/open/floor/rocks,/area/template_noop)
+"p" = (/obj/effect/decal/cleanable/blood/footprints,/obj/structure/window/reinforced,/turf/open/floor/rocks,/area/template_noop)
+"q" = (/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 4},/obj/effect/decal/cleanable/blood/footprints{icon_state = "blood1"; dir = 1},/obj/structure/window/reinforced,/turf/open/floor/rocks,/area/template_noop)
+"r" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/ash{step_x = 23; step_y = 10},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/turf/open/floor/rocks,/area/template_noop)
+"s" = (/obj/effect/decal/cleanable/ash{step_x = 15; step_y = 5},/obj/effect/decal/cleanable/ash{step_x = 8; step_y = 25},/obj/effect/decal/cleanable/ash{step_x = 15; step_y = 27},/turf/open/floor/plating/asteroid,/area/template_noop)
+"t" = (/obj/effect/decal/cleanable/blood/old{icon_state = "floor7-old"},/obj/effect/decal/cleanable/ash{step_x = 3; step_y = 24},/turf/open/floor/plating/asteroid,/area/template_noop)
+"u" = (/obj/effect/decal/cleanable/ash{step_x = 4; step_y = 10},/obj/effect/decal/cleanable/ash{step_x = 17; step_y = 3},/turf/open/floor/plating/asteroid,/area/template_noop)
+"v" = (/obj/effect/decal/cleanable/ash{step_x = 5; step_y = 6},/obj/effect/decal/cleanable/ash{step_x = 29; step_y = 14},/obj/effect/decal/cleanable/ash{step_x = 22; step_y = 12},/turf/open/floor/plating/asteroid,/area/template_noop)
+"w" = (/obj/effect/decal/cleanable/ash{step_x = 22; step_y = 7},/obj/effect/decal/cleanable/ash{step_x = 17; step_y = 5},/obj/item/stack/sheet/mineral/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
+"x" = (/obj/effect/decal/cleanable/ash{step_x = 7; step_y = 7},/obj/effect/decal/cleanable/ash{step_x = 20; step_y = 18},/obj/effect/decal/cleanable/ash{step_x = 25; step_y = 21},/turf/open/floor/plating/asteroid,/area/template_noop)
+"y" = (/obj/effect/decal/cleanable/ash{step_x = 0; step_y = 8},/obj/effect/decal/cleanable/ash{step_x = 3; step_y = 29},/obj/effect/decal/cleanable/ash{step_x = 10; step_y = 0},/obj/item/stack/sheet/mineral/wood,/turf/open/floor/plating/asteroid,/area/template_noop)
+"z" = (/obj/effect/decal/cleanable/ash{step_x = 14; step_y = 28},/obj/effect/decal/cleanable/ash{step_x = 18; step_y = 17},/obj/effect/decal/cleanable/ash{step_x = 15; step_y = 13},/obj/effect/decal/cleanable/ash{step_x = 3; step_y = 2},/turf/open/floor/plating/asteroid,/area/template_noop)
+"A" = (/obj/effect/decal/cleanable/ash{step_x = 14; step_y = 28},/obj/effect/decal/cleanable/ash{step_x = 8; step_y = 14},/turf/open/floor/plating/asteroid,/area/template_noop)
+"B" = (/obj/effect/decal/cleanable/ash{step_x = 15; step_y = 23},/turf/open/floor/plating/asteroid,/area/template_noop)
+"C" = (/obj/effect/decal/cleanable/ash{step_x = 10; step_y = 30},/turf/open/floor/plating/asteroid,/area/template_noop)
+"D" = (/obj/effect/decal/cleanable/ash{step_x = 12; step_y = 20},/turf/open/floor/plating/asteroid,/area/template_noop)
+"E" = (/obj/effect/decal/cleanable/ash{step_x = 21; step_y = 0},/turf/open/floor/plating/asteroid,/area/template_noop)
+"F" = (/obj/effect/decal/cleanable/ash{step_x = 9; step_y = 30},/turf/open/floor/plating/asteroid,/area/template_noop)
+"G" = (/obj/effect/decal/cleanable/ash{step_x = 0; step_y = 29},/turf/open/floor/plating/asteroid,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaa
 aaaaaaabba
 aaaaabbbbb
-abbbbbbbbb
-bbbbbbbbbb
-bbcbbbbbba
-bbbbdbebba
-abbbbbbbaa
-aabbbbbaaa
-aaabbbaaaa
-aaabbbbaaa
-aaabbbbbaa
-aaabbbbbaa
+abccbbbbdb
+befghcibbb
+cjklmbbnba
+bopqrstbba
+auvwxybbaa
+aazABbCaaa
+aaabDbaaaa
+aaabEbbaaa
+aaaFbbbbaa
+aaabbGbbaa
 aaaabbbaaa
 "}

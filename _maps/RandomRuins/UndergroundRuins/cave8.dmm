@@ -1,40 +1,26 @@
-"a" = (/turf/template_noop,/area/template_noop)
-"b" = (/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,/turf/open/floor/plating,/area/template_noop)
-"c" = (/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"d" = (/turf/closed/wall/mineral/plastitanium,/area/template_noop)
-"e" = (/turf/open/floor/circuit/red,/area/template_noop)
-"f" = (/turf/open/floor/mineral/plastitanium/red,/area/template_noop)
-"g" = (/obj/structure/table/reinforced,/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"h" = (/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,/turf/closed/wall/mineral/plastitanium,/area/template_noop)
-"i" = (/obj/machinery/door/airlock/grunge,/turf/open/floor/plating,/area/template_noop)
-"j" = (/obj/machinery/door/airlock/grunge,/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"k" = (/obj/structure/spawner/syndicate,/turf/open/floor/mineral/plastitanium/red,/area/template_noop)
-"l" = (/obj/item/defibrillator/loaded,/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"m" = (/obj/machinery/computer/med_data/syndie,/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"n" = (/obj/machinery/computer/communications,/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"o" = (/obj/machinery/computer/card,/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"p" = (/obj/machinery/computer{icon_state = "computer"; dir = 4},/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"q" = (/obj/machinery/computer{icon_state = "computer"; dir = 8},/turf/open/floor/mineral/plastitanium,/area/template_noop)
-"r" = (/obj/machinery/computer/security/wooden_tv,/turf/open/floor/mineral/plastitanium,/area/template_noop)
+"a" = (/turf/closed/wall,/area/template_noop)
+"b" = (/turf/open/floor/plasteel,/area/template_noop)
+"c" = (/obj/item/pipe_dispenser,/turf/open/floor/plasteel,/area/template_noop)
+"d" = (/obj/item/candle{step_x = -6; step_y = 6},/turf/open/floor/plasteel,/area/template_noop)
+"e" = (/obj/item/candle,/turf/open/floor/plasteel,/area/template_noop)
+"f" = (/turf/open/floor/hearth,/area/template_noop)
+"g" = (/obj/structure/fans/tiny,/turf/open/floor/hearth,/area/template_noop)
+"h" = (/obj/machinery/atmospherics/components/unary/passive_vent,/turf/open/floor/hearth,/area/template_noop)
+"i" = (/obj/machinery/atmospherics/pipe/simple,/turf/closed/wall,/area/template_noop)
+"j" = (/obj/machinery/atmospherics/pipe/simple,/turf/open/floor/plasteel,/area/template_noop)
+"k" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 5},/turf/open/floor/plasteel,/area/template_noop)
+"l" = (/obj/machinery/atmospherics/pipe/simple{icon_state = "pipe11-2"; dir = 8},/turf/open/floor/plasteel,/area/template_noop)
+"m" = (/obj/machinery/portable_atmospherics/canister,/obj/machinery/atmospherics/components/unary/portables_connector{icon_state = "connector_map-2"; dir = 8},/turf/open/floor/plasteel,/area/template_noop)
 
 (1,1,1) = {"
-aaaaaaaabbbbbbbaaa
-aaaaaaaabcmnocbaaa
-aaaaaaaabpcccqbaaa
-dddddaaadpcccqdaaa
-deeeddddddfffddddd
-deeedclccdfffdrggd
-ddiddccccdffficcch
-dfffdccccdfffdcccd
-dfffdccccifffdcccd
-dfffdccccdfffddddd
-dfffddidddfffdrggd
-dffffffffffffdccch
-dfffffffffffficccd
-dffffffffffffdcccd
-dfffffdbibddjddddd
-dffkffdcccdccccdaa
-dfffffdcccdcccgdaa
-dfffffdcccdcccgdaa
-dddddddbibddddddaa
+aaaaaaaaaaa
+abbbbbbbbba
+abbbbbbbcba
+aaaadbebbba
+affgbbbebba
+ahfabbbbbba
+aiaabbbbdba
+bjbbbebbbba
+bklllllmbba
+aaaaaaaaaaa
 "}

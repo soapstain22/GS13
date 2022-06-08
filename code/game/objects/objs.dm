@@ -66,8 +66,8 @@
 	var/torsion_stress = 0
 	var/shear_stress = 0
 	var/bending_stress = 0
-	var/heat_capacity
-	var/meltingpoint
+	var/heat_capacity_modif
+	var/meltingpoint = 100000
 	var/tool_behaviour
 	vis_flags = VIS_INHERIT_PLANE //when this be added to vis_contents of something it inherit something.plane, important for visualisation of obj in openspace.
 

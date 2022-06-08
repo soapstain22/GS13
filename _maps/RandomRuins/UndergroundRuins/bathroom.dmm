@@ -1,0 +1,49 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/closed/wall,/area/template_noop)
+"c" = (/turf/open/floor/bathroom,/area/template_noop)
+"d" = (/obj/effect/spawner/lootdrop/bathroom,/turf/open/floor/bathroom,/area/template_noop)
+"e" = (/obj/machinery/shower{dir = 4},/turf/open/floor/bathroom,/area/template_noop)
+"f" = (/obj/machinery/shower{dir = 8},/turf/open/floor/bathroom,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
+aaaabcccccccccccccccccccbaaaaaaaaaaaaaaa
+aaaabcccdccccdccccdcccccbaaaaaaaaaaaaaaa
+aaaabcccccccccccccccccccbaaaaaaaaaaaaaaa
+aaaabedfbecfbecfbecfbeccbaaaaaaaaaaaaaaa
+aaaabecfbecfbecfbecfbeccbaaaaaaaaaaaaaaa
+aaaabecfbecfbecfbecfbeccbaaaaaaaaaaaaaaa
+aaaabecfbecfbecfbecfbeccbaaaaaaaaaaaaaaa
+aaaabecfbedfbedfbecfbedcbaaaaaaaaaaaaaaa
+aaaabecfbecfbecfbecfbeccbaaaaaaaaaaaaaaa
+aaaabecfbecfbecfbecfbeccbaaaaaaaaaaaaaaa
+aaaabcccccccccccccdcccccbaaaaaaaaaaaaaaa
+aaaabcccccccccccccccccccbaaaaaaaaaaaaaaa
+aaaabccdccccccccccccccccbaaaaaaaaaaaaaaa
+aaaabcccbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
+aaaabcccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabcccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabcccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabcccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

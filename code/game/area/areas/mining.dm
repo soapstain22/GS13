@@ -166,7 +166,7 @@
 	icon_state = "unexplored"
 	tunnel_allowed = TRUE
 	mob_spawn_allowed = TRUE
-
+	ambientsounds = CAVE
 /area/icemoon/surface/outdoors/unexplored/rivers // rivers spawn here
 	icon_state = "danger"
 

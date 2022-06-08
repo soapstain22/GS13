@@ -44,6 +44,7 @@ GLOBAL_LIST_INIT(rigid_stack_recipes, list(
 	new /datum/stack_recipe("Wall",			/obj/structure/barricade/stonewall, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 	new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
 	new /datum/stack_recipe("stairs",		/obj/structure/stairs, 3, 1, 20, one_per_turf = TRUE, on_floor = FALSE, applies_mats = FALSE),
+//	new /datum/stack_recipe("Start work",	/obj/item/work, 1, 1, 20, one_per_turf = false, on_floor = FALSE, applies_mats = TRUE),
 	))
 GLOBAL_LIST_INIT(fabric_stack_recipes, list(
 	new /datum/stack_recipe("hood", 		/obj/item/clothing/head/beanie/greyscale, 10, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
@@ -52,6 +53,7 @@ GLOBAL_LIST_INIT(fabric_stack_recipes, list(
 	new /datum/stack_recipe("clothing", 	/obj/item/clothing/under/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 	new /datum/stack_recipe("jumpsuit",		/obj/item/clothing/under/color/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
 	new /datum/stack_recipe("sack",			/obj/item/storage/backpack/sack/greyscale, 20, 1, 20, one_per_turf = FALSE, on_floor = FALSE, applies_mats = TRUE),
+
 
 	))
 GLOBAL_LIST_INIT(mason_stack_recipes, list(

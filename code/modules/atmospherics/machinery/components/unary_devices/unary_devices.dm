@@ -7,7 +7,8 @@
 	construction_type = /obj/item/pipe/directional
 	var/uid
 	var/static/gl_uid = 1
-
+	var/heat_capacity
+	var/heatcapacity
 /obj/machinery/atmospherics/components/unary/SetInitDirections()
 	initialize_directions = dir
 

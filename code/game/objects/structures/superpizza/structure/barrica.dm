@@ -9,7 +9,6 @@
 	var/buildstacktype = null
 /obj/structure/barricade/stonewall/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack))
-
 		var/obj/item/stack/W = I
 		if(W.get_amount() < 2)
 			return

@@ -13,30 +13,44 @@
 	suffix = "trapped.dmm"
 	allow_duplicates = TRUE
 	cost = 1
+/datum/map_template/ruin/underground/loops
+	name = "loops"
+	id = "loops"
+	description = "loops!"
+	suffix = "loops.dmm"
+	allow_duplicates = FALSE
 /datum/map_template/ruin/underground/ruin1
 	name = "ruin1"
 	id = "ruin1"
 	description = "up to no good."
 	suffix = "ruin1.dmm"
 	allow_duplicates = FALSE
+/datum/map_template/ruin/underground/cave9
+	name = "cave9"
+	id = "cave9"
+	description = "cave9!"
+	suffix = "cave9.dmm"
+	allow_duplicates = FALSE
+	cost = 1
 /datum/map_template/ruin/underground/rec
 	name = "rec room"
 	id = "rec room"
 	description = "wow!"
 	suffix = "rec.dmm"
-	allow_duplicates = TRUE
-	cost = 2
+	allow_duplicates = FALSE
+	cost = 1
+/datum/map_template/ruin/underground/small
+	name = "small"
+	id = "small"
+	description = "small!"
+	suffix = "small.dmm"
+	allow_duplicates = FALSE
+	cost = 1
 /datum/map_template/ruin/underground/hut
 	name = "mining hut"
 	id = "mining hut"
 	description = "wow!"
 	suffix = "hut.dmm"
-	allow_duplicates = FALSE
-/datum/map_template/ruin/underground/loop
-	name = "looping"
-	id = "looping"
-	description = "it loops"
-	suffix = "loops.dmm"
 	allow_duplicates = FALSE
 /datum/map_template/ruin/underground/trashed
 	name = "trash"
@@ -155,4 +169,10 @@
 	id = "mall"
 	description = "mall"
 	suffix = "mall.dmm"
+	allow_duplicates = FALSE
+/datum/map_template/ruin/underground/bathroom
+	name = "bathroom"
+	id = "bathroom"
+	description = "bathroom"
+	suffix = "bathroom.dmm"
 	allow_duplicates = FALSE

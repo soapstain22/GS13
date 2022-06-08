@@ -1,11 +1,29 @@
-"a" = (/turf/closed/wall/r_wall,/area/template_noop)
-"b" = (/obj/effect/spawner/lootdrop/armory_contraband/cybersun,/turf/open/floor/engine,/area/template_noop)
-"c" = (/obj/machinery/door/airlock/vault/derelict,/turf/template_noop,/area/template_noop)
+"a" = (/turf/closed/wall/material/concrete,/area/template_noop)
+"b" = (/turf/open/floor/plasteel,/area/template_noop)
+"c" = (/obj/structure/bookcase/random,/turf/open/floor/plasteel,/area/template_noop)
+"d" = (/obj/structure/table/wood,/turf/open/floor/plasteel,/area/template_noop)
+"e" = (/obj/item/book/granter/crafting_recipe/guns,/turf/open/floor/plasteel,/area/template_noop)
+"f" = (/turf/template_noop,/area/template_noop)
+"g" = (/obj/structure/chair/wood,/turf/open/floor/plasteel,/area/template_noop)
+"h" = (/turf/open/floor/carpet,/area/template_noop)
+"i" = (/obj/structure/chair/wood{dir = 4},/turf/open/floor/plasteel,/area/template_noop)
+"j" = (/obj/structure/chair/wood{icon_state = "wooden_chair"; dir = 8},/turf/open/floor/plasteel,/area/template_noop)
+"k" = (/obj/structure/chair/wood{dir = 1},/turf/open/floor/plasteel,/area/template_noop)
 
 (1,1,1) = {"
-aaaaa
-abbba
-abbba
-abbba
-aacaa
+aaaaaaaaaaaaaaa
+abbccbccbbbdbba
+acbbbbbbbbbdbba
+acbbbbbbbbbdbba
+acbbbbbbbbbddba
+abebbbbbbbbbbba
+acbccbcbbccccca
+acbccbcbbcaaaaa
+acbccbcbbcabfff
+abbbbbbbbbabfff
+abbggbbhhbabfff
+abiddjbhhbbbfff
+abbkkbbhhbabfff
+abbbbbbbbbabfff
+aaaaaaaaaaabfff
 "}

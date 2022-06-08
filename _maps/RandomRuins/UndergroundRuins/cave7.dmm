@@ -1,28 +1,29 @@
 "a" = (/turf/template_noop,/area/template_noop)
 "b" = (/turf/closed/wall/material/stone,/area/template_noop)
 "c" = (/obj/structure/rack,/turf/open/floor/wood,/area/template_noop)
-"d" = (/obj/structure/closet/cabinet,/obj/item/vhs/random{step_x = 1; step_y = -8},/obj/item/vhs/random{step_x = 1; step_y = -5},/obj/item/vhs/random{step_x = 1; step_y = -2},/turf/open/floor/wood,/area/template_noop)
-"e" = (/obj/machinery/crttv,/turf/open/floor/wood,/area/template_noop)
-"f" = (/obj/structure/dresser,/turf/open/floor/wood,/area/template_noop)
+"d" = (/obj/structure/closet/cabinet,/obj/item/vhs/random{step_x = 1; step_y = -8},/obj/item/vhs/random{step_x = 1; step_y = -5},/obj/item/vhs/random{step_x = 1; step_y = -2},/turf/open/floor/linoleum,/area/template_noop)
+"e" = (/obj/machinery/crttv,/turf/open/floor/linoleum,/area/template_noop)
+"f" = (/obj/structure/dresser,/turf/open/floor/linoleum,/area/template_noop)
 "g" = (/turf/open/floor/wood,/area/template_noop)
-"h" = (/obj/structure/bed,/turf/open/floor/wood,/area/template_noop)
+"h" = (/turf/open/floor/linoleum,/area/template_noop)
 "i" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/template_noop)
-"j" = (/obj/machinery/light{dir = 8},/turf/open/floor/wood,/area/template_noop)
-"k" = (/obj/structure/table/wood,/obj/item/lighter{step_x = -7; step_y = -2},/turf/open/floor/wood,/area/template_noop)
+"j" = (/obj/structure/bed,/turf/open/floor/linoleum,/area/template_noop)
+"k" = (/obj/machinery/light{dir = 8},/turf/open/floor/linoleum,/area/template_noop)
 "l" = (/turf/open/floor/carpet,/area/template_noop)
 "m" = (/obj/effect/spawner/structure/window,/turf/open/floor/wood,/area/template_noop)
-"n" = (/obj/structure/closet/crate/wooden/toy,/turf/open/floor/wood,/area/template_noop)
-"o" = (/obj/item/vhs/random,/turf/open/floor/wood,/area/template_noop)
+"n" = (/obj/item/vhs/random,/turf/open/floor/linoleum,/area/template_noop)
+"o" = (/obj/structure/table/wood,/obj/item/lighter{step_x = -7; step_y = -2},/turf/open/floor/linoleum,/area/template_noop)
 "p" = (/obj/item/vhs/random,/turf/open/floor/carpet,/area/template_noop)
+"q" = (/obj/structure/closet/crate/wooden/toy,/turf/open/floor/linoleum,/area/template_noop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaa
 aabbbbbbbbbaaaa
-aabcbdefghbaaaa
-aabibjggokbaaaa
-aabgggplggmaaaa
-aagggglpggbaaaa
-aabggggggnbaaaa
+aabcbdefhjbaaaa
+aabibkhhnobaaaa
+aabhhhplhhmaaaa
+aaghhhlphhbaaaa
+aabhhhhhhqbaaaa
 aabbbbbbbbbaaaa
 aaaaaaaaaaaaaaa
 "}
