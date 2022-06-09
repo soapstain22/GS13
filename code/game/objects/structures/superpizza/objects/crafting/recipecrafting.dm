@@ -34,38 +34,7 @@
 	time = 60
 	category = CAT_MISC
 	always_availible = TRUE
-/obj/item/book/granter/crafting_recipe/guns
-	name = "what is guns"
-	desc = "thats so funny"
-	crafting_recipe_types = list(/datum/crafting_recipe/revolver, /datum/crafting_recipe/ishotgun, /datum/crafting_recipe/c38,)
-	icon = 'icons/obj/library.dmi'
-	icon_state = "bullot"
-	oneuse = FALSE
-	remarks = list("woah", "fuckin hell", "bullet in gun...", "bang",)
-/obj/item/book/granter/crafting_recipe/machine
-	name = "part guy"
-	desc = "also known as the parts book"
-	crafting_recipe_types = list(/datum/crafting_recipe/manip1, /datum/crafting_recipe/matbin1, /datum/crafting_recipe/capac1, /datum/crafting_recipe/laser1, /datum/crafting_recipe/battery1, /datum/crafting_recipe/scan1)
-	icon = 'icons/obj/library.dmi'
-	icon_state = "part"
-	oneuse = FALSE
-	remarks = list("woah", "oh man thats fucked", "who came up with this shit", "ew no way",)
-/obj/item/book/granter/crafting_recipe/amish
-	name = "amish technology"
-	desc = "also known as the tools book"
-	crafting_recipe_types = list(/datum/crafting_recipe/axe, /datum/crafting_recipe/bike)
-	icon = 'icons/obj/library.dmi'
-	icon_state = "amish"
-	oneuse = FALSE
-	remarks = list("hardware", "parts", "pomcuter", "wtf",)
-/obj/item/book/granter/crafting_recipe/medi
-	name = "meddysin"
-	desc = "degree lmao"
-	crafting_recipe_types = list(/datum/crafting_recipe/ivdrip,/datum/crafting_recipe/wheelchair)
-	icon = 'icons/obj/library.dmi'
-	icon_state = "boneworking_learing"
-	oneuse = FALSE
-	remarks = list("1 + 1 = 2..........", "drugs.......", "readin...", "pills here",)
+
 //Pickaxe recipes
 
 //bb gun
@@ -73,28 +42,32 @@
 	name = "bb gun"
 	reqs = list(
            /obj/item/pipe = 1,
-           /obj/item/spring = 1,
+           /obj/item/stack/minipart/spring = 3,
+           /obj/item/stack/minipart/bolt = 2,
+           /obj/item/stack/sheet/metal = 4,
            /obj/item/weaponcrafting/stock = 1,
-           /obj/machinery/atmospherics/components/binary/passive_gate = 1,
+           /obj/machinery/atmospherics/components/binary/passive_gate = 1
            )
-	result = /obj/item/pickaxe/shitaxe
+	result = /obj/item/gun/ballistic/rifle/bb
 	category = CAT_MISC
 	always_availible = TRUE
 	time = 60
 /datum/crafting_recipe/revolver
 	name = "revolver"
 	reqs = list(
-			/obj/item/revp1 = 1,
-			/obj/item/handle = 1,
-			/obj/item/revp2 = 1)
+			/obj/item/stack/minipart/bolt = 1,
+			/obj/item/stack/minipart/spring =1,
+			/obj/item/stack/sheet/metal/ = 4)
 	result = /obj/item/gun/ballistic/revolver
 	category = CAT_WEAPON
+	time = 120
 /datum/crafting_recipe/hydrobin
 	name = "hydroponics bin"
 	always_availible = TRUE
 	reqs = list(
 			/obj/item/reagent_containers/glass/bucket = 2,
-			/obj/item/stack/sheet/metal/ = 4)
+			/obj/item/stack/sheet/metal/ = 4,
+			/obj/item/stack/minipart/bolt = 8)
 	result = /obj/machinery/hydroponics
 	category = CAT_MISC
 	always_availible = TRUE

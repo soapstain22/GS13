@@ -265,6 +265,10 @@ obj/effect/spawner/lootdrop/parts
 		/obj/effect/landmark/zombie/ = 1,
 		/obj/item/storage/toolbox/mechanical/old/clean/ = 1,
 		/obj/structure/closet/cardboard/ = 1,
+		/obj/item/stack/minipart/screw =1,
+		/obj/item/stack/minipart/nail = 1,
+		/obj/item/stack/minipart/bolt = 1,
+		/obj/item/stack/minipart/spring =1,
 		"" = 300
 		)
 
@@ -355,10 +359,12 @@ obj/effect/spawner/lootdrop/parts
 	lootdoubles = FALSE
 	lootcount = 1
 	loot = list(
-		/obj/item/screwdriver = 3,
-		/obj/item/wirecutters = 3,
-		/obj/item/wrench = 3,
-		/obj/item/crowbar = 3,
+		/obj/item/screwdriver = 5,
+		/obj/item/wirecutters = 5,
+		/obj/item/wrench = 5,
+		/obj/item/crowbar = 5,
+		/obj/item/crowbar = 5,
+		/obj/item/screwdriver/power = 1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/milisurplus
@@ -383,6 +389,18 @@ obj/effect/spawner/lootdrop/parts
 		/obj/item/stock_parts/capacitor = 1,
 		"" = 5
 		)
+/obj/effect/spawner/lootdrop/arsonist
+	name = "computa"
+	lootdoubles = FALSE
+	lootcount = 3
+	loot = list(
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stock_parts/matter_bin = 1,
+		/obj/item/stock_parts/micro_laser = 1,
+		/obj/item/stock_parts/scanning_module = 1,
+		/obj/item/stock_parts/capacitor = 1,
+		"" = 5
+		)
 /obj/effect/spawner/lootdrop/factory
 	name = "factory"
 	lootdoubles = FALSE
@@ -392,6 +410,10 @@ obj/effect/spawner/lootdrop/parts
 		/obj/item/electronics/airlock = 1,
 		/obj/item/electronics/tracker = 1,
 		/obj/item/electronics/airalarm = 1,
+		/obj/item/stack/minipart/screw =1,
+		/obj/item/stack/minipart/nail = 1,
+		/obj/item/stack/minipart/bolt = 1,
+		/obj/item/stack/minipart/spring =1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/tunnel
@@ -401,6 +423,7 @@ obj/effect/spawner/lootdrop/parts
 	loot = list(
 		/obj/item/clothing/mask/cigarette = 1,
 		/obj/item/reagent_containers/syringe = 1,
+		/obj/item/stack/minipart/nail = 1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/bathroom
@@ -454,9 +477,9 @@ obj/effect/spawner/lootdrop/parts
 	lootcount = 1
 	loot = list(
 		/obj/item/reagent_containers/antifreeze = 1,
-		/obj/item/soap = 1,
-		/obj/item/bikehorn/rubberducky/plasticducky = 1,
-		/obj/item/reagent_containers/glass/rag = 1,
+		/obj/item/stack/minipart/screw =1,
+		/obj/item/stack/minipart/bolt = 1,
+		/obj/item/stack/minipart/spring =1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/chemofcull

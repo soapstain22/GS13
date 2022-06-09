@@ -13,6 +13,14 @@
 			new /datum/design/bat(src)
 		if(3)
 			new /datum/design/vase(src)
+		if(4)
+			new /datum/design/bolt(src)
+		if(5)
+			new /datum/design/nail(src)
+		if(6)
+			new /datum/design/spring(src)
+		if(7)
+			new /datum/design/screw(src)
 		else
 			return
 	blueprints[1] = new loot

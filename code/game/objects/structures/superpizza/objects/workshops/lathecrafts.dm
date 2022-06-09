@@ -12,6 +12,13 @@
 	materials = list(MAT_CATEGORY_STONE = 2000)
 	build_path = /obj/item/reagent_containers/food/drinks/trophy/greyscale
 	category = list("initial","Crafts")
+/datum/design/bb
+	name = "bb"
+	id = "bb"
+	build_type = SMITHING
+	materials = list(/datum/material/aluminum=200)
+	build_path = /obj/item/reagent_containers/food/drinks/trophy/greyscale
+	category = list("initial","Weapons")
 /datum/design/vase
 	name = "vase"
 	id = "vase"
@@ -139,6 +146,34 @@
 	materials = list(MAT_CATEGORY_RIGID = 1000)
 	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
 	category = list("Armor")
+/datum/design/spring
+	name = "spring"
+	id = "spring"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 100)
+	build_path = /obj/item/stack/minipart/spring
+	category = list("Tools")
+/datum/design/nail
+	name = "nail"
+	id = "nail"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 100)
+	build_path = /obj/item/stack/minipart/nail
+	category = list("Tools")
+/datum/design/screw
+	name = "screw"
+	id = "screw"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 100)
+	build_path = /obj/item/stack/minipart/screw
+	category = list("Tools")
+/datum/design/bolt
+	name = "bolt"
+	id = "bolt"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 100)
+	build_path = /obj/item/stack/minipart/bolt
+	category = list("Tools")
 //wood
 
 /datum/design/crate
@@ -180,4 +215,4 @@
 	build_type = CARPENTRY
 	materials = list(MAT_CATEGORY_WOOD = 4000)
 	build_path = 	/obj/item/melee/baseball_bat
-	category = list("crafts")
+	category = list("Crafts	")

@@ -1,4 +1,5 @@
 //component things
+#define ORESTACK_OVERLAYS_MAX 10
 /obj/item/stack/component
 	name = "components"
 	desc = "just a bunch of shit."
@@ -22,6 +23,41 @@
 	desc = "unfortunately it is no longer brown"
 	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
 	icon_state = "brick"
+/obj/item/stack/minipart
+	var/list/stack_overlays
+	icon = 'code/game/objects/structures/superpizza/smithingicon.dmi'
+
+
+/obj/item/stack/minipart/update_overlays()
+	. = ..()
+	var/difference = min(ORESTACK_OVERLAYS_MAX, amount) - (LAZYLEN(stack_overlays)+1)
+	if(difference == 0)
+		return
+	else if(difference < 0 && LAZYLEN(stack_overlays))			//amount < stack_overlays, remove excess.
+		if (LAZYLEN(stack_overlays)-difference <= 0)
+			stack_overlays = null
+		else
+			stack_overlays.len += difference
+	else if(difference > 0)			//amount > stack_overlays, add some.
+		for(var/i in 1 to difference)
+			var/mutable_appearance/newore = mutable_appearance(icon, icon_state)
+			newore.pixel_x = rand(-8,8)
+			newore.pixel_y = rand(-8,8)
+			LAZYADD(stack_overlays, newore)
+	if (stack_overlays)
+		. += stack_overlays
+/obj/item/stack/minipart/screw
+	name = "screw"
+	icon_state = "screw"
+/obj/item/stack/minipart/nail
+	name = "nail"
+	icon_state = "nail"
+/obj/item/stack/minipart/bolt
+	name = "bolt"
+	icon_state = "bolt"
+/obj/item/stack/minipart/spring
+	name = "spring"
+	icon_state = "spring"
 /datum/material/stone
 	name = "stone"
 	desc = "rocks"
