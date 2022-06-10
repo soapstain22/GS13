@@ -61,7 +61,7 @@
 /mob/living/attackby(obj/item/I, mob/living/user, params)
 	if(..())
 		return TRUE
-	user.changeNext_move(CLICK_CD_MELEE * I.attackspeed)
+	user.changeNext_move(CLICK_CD_MELEE * (0.90+I.slowdown))
 	return I.attack(src, user)
 
 /**

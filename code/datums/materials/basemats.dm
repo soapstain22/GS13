@@ -6,7 +6,7 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/metal
 	value_per_unit = 0.0025
-	weight = 0.1
+
 	texture_layer_icon_state = "iron"
 	IMPACT_YIELD=542500
 	IMPACT_FRACTURE=1085000
@@ -115,11 +115,11 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.025
 	beauty_modifier = 0.075
 	integrity_modifier = 0.9
-	toolspeed_modifier = 1.2
+
 	strength_modifier = 1.2
-	weight = 0.13
+
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "stab" = 1.1, "slash" = 1.1, "crush" = 1.1)
-	toolspeed_modifier = 0.625
+
 /datum/material/silver/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
@@ -135,10 +135,10 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.0625
 	beauty_modifier = 0.4
 	integrity_modifier = 0.5
-	toolspeed_modifier = 0.6
+
 	strength_modifier = 2.45
 	armor_modifiers = list("melee" = 1.1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "stab" = 1.1, "slash" = 1.1, "crush" = 0.8)
-	weight = 0.24
+
 /datum/material/gold/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5)
 	return TRUE
@@ -154,10 +154,10 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.25
 	beauty_modifier = 0.3
 	integrity_modifier = 2.5
-	toolspeed_modifier = 2
+
 	strength_modifier = 0.3
 	armor_modifiers = list("melee" = 1.5, "bullet" = 1.5, "laser" = 0.6, "energy" = 1, "bomb" = 1.2, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "stab" = 1, "slash" = 1, "crush" = 1, "stab" = 1.3, "slash" = 1.3, "crush" = 0.8)
-	brittleness = 0.214
+
 
 /datum/material/diamond/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)
 	M.apply_damage(15, BRUTE, BODY_ZONE_HEAD, wound_bonus = 7)
@@ -173,7 +173,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.05
 	beauty_modifier = 0.3 //It shines so beautiful
 	armor_modifiers = list("melee" = 1.5, "bullet" = 1.4, "laser" = 0.5, "energy" = 0.5, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 1, "acid" = 1, "stab" = 1, "slash" = 1, "crush" = 1)
-	toolspeed_modifier = 1.3
+
 	strength_modifier = 1.2
 
 /datum/material/uranium/on_applied(atom/source, amount, material_flags)
@@ -199,7 +199,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.1
 	beauty_modifier = 0.15
 	armor_modifiers = list("melee" = 1.4, "bullet" = 0.7, "laser" = 0, "energy" = 1.2, "bomb" = 0, "bio" = 1.2, "rad" = 1, "fire" = 0, "acid" = 0.5, "stab" = 1, "slash" = 1, "crush" = 1)
-	toolspeed_modifier = 3
+
 	integrity_modifier = 0.4
 /datum/material/plasma/on_applied(atom/source, amount, material_flags)
 	. = ..()
@@ -270,7 +270,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.0625
 	beauty_modifier = 0.05
 	armor_modifiers = list("melee" = 1.35, "bullet" = 1.3, "laser" = 1.3, "energy" = 1.25, "bomb" = 1.25, "bio" = 1, "rad" = 1, "fire" = 0.7, "acid" = 1, "stab" = 1, "slash" = 1, "crush" = 1)
-	toolspeed_modifier = 1.5
+
 	integrity_modifier = 3
 
 /datum/material/titanium/on_accidental_mat_consumption(mob/living/carbon/M, obj/item/S)

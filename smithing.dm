@@ -68,7 +68,10 @@
 						if("Flatten head")
 							stage = "longflathead"
 			stagecheck()
+
 		if(istype(W,/obj/item/melee/stick))
+			if("longflatheadextrudedbent")
+				stage = "pickaxe"
 /obj/item/work/proc/stagecheck()
 	switch (stage)
 		if("fresh")
@@ -91,6 +94,10 @@
 			icon_state = "worklongflatheadextruded"
 		if("longflatheadextrudedbent")
 			icon_state = "worklongflatheadextrudedbent"
+		if("pickaxe")
+			force = 9
+			icon_state = "pickaxe"
+			tool_behavior = TOOL_MINING
 /obj/item/work/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	heated += (exposed_temperature-heat*heat_capacity_modif)
 	if(exposed_temperature >= T0C+meltingpoint/2)

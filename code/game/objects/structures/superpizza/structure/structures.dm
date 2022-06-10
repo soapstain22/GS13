@@ -126,11 +126,12 @@
 
 
 /obj/structure/table/granite
+	name = "granite table"
 	buildstack = /obj/item/stack/ore/granite
 	custom_materials = list(/datum/material/granite = 2000)
 	icon = 'icons/obj/smooth_structures/marbletable.dmi'
 	icon_state = "marble_table"
-
+	canSmoothWith = /obj/structure/table/granite
 
 /obj/machinery/power/lampo
 	name = "lamp"

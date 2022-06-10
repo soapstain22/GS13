@@ -28,6 +28,7 @@
 	var/obj/item/vhs/tape = null
 	var/paused
 	var/playbackRate
+
 /obj/machinery/crttv/attackby(obj/item/I, mob/user, params)
 	if (istype(I, /obj/item/vhs)) //INSERT SOME DISKETTES
 		// Insert disk
@@ -43,7 +44,12 @@
 		to_chat(user, "<span class='notice'>You insert [I].</span>")
 		playsound( I, 50, FALSE, FALSE)
 		return ..()
-/obj/machinery/crttv/proc/screen_setup(mob/user)
+	else
+		var/datum/browser/popup = new(user, "television", "TV", 400, 400)
+		popup.set_content(screen_setup())
+		popup.open(FALSE)
+
+/obj/machinery/crttv/proc/screen_setup()
 	var/dat = "<html>"
 	dat += "<body onload=\"script();\">"
 	dat += "<a href='byond://?src=[REF(src)];close=1'>Close</a>"
@@ -97,7 +103,7 @@ function script(){
     myVideo.playbackRate = [playbackRate]
     myVideo.currentTime = [tape.getpos()]
 }"}
-
+	return dat
 /obj/machinery/crttv/ui_interact(mob/user)
 	. = ..()
 	screen_setup(user)

@@ -1371,6 +1371,7 @@
 #include "code\game\objects\structures\superpizza\process\loottable.dm"
 #include "code\game\objects\structures\superpizza\process\roadsubsys.dm"
 #include "code\game\objects\structures\superpizza\process\sleep.dm"
+#include "code\game\objects\structures\superpizza\process\traits.dm"
 #include "code\game\objects\structures\superpizza\process\skillrecipes\engineering.dm"
 #include "code\game\objects\structures\superpizza\structure\barrels.dm"
 #include "code\game\objects\structures\superpizza\structure\barrica.dm"

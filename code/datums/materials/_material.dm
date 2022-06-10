@@ -34,32 +34,29 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/texture_layer_icon_state
 	///a cached filter for the texture icon
 	var/cached_texture_filter
-	var/toolspeed_modifier = 1
-	var/weight = 0
-	var/coldprotection = 1
-	var/coldvulnerable = 1
-	var/heatprotection = 1
-	var/heatvulnerable = 1
-	var/brittleness = 0.001
-	var/IMPACT_YIELD
-	var/IMPACT_FRACTURE
-	var/IMPACT_STRAIN_AT_YIELD
-	var/COMPRESSIVE_YIELD
-	var/COMPRESSIVE_FRACTURE
-	var/COMPRESSIVE_STRAIN_AT_YIELD
-	var/TENSILE_YIELD
-	var/TENSILE_FRACTURE
-	var/TENSILE_STRAIN_AT_YIELD
-	var/TORSION_YIELD
-	var/TORSION_FRACTURE
-	var/TORSION_STRAIN_AT_YIELD
-	var/SHEAR_YIELD
-	var/SHEAR_FRACTURE
-	var/SHEAR_STRAIN_AT_YIELD
-	var/BENDING_YIELD
-	var/BENDING_FRACTURE
-	var/BENDING_STRAIN_AT_YIELD
-	var/thermal_conductivity
+	var/IMPACT_YIELD = 100000
+	var/IMPACT_FRACTURE = 200000
+	var/IMPACT_STRAIN_AT_YIELD = 100
+	var/COMPRESSIVE_YIELD = 200000
+	var/COMPRESSIVE_FRACTURE = 100000
+	var/COMPRESSIVE_STRAIN_AT_YIELD = 100
+	var/TENSILE_YIELD = 100000
+	var/TENSILE_FRACTURE = 200000
+	var/TENSILE_STRAIN_AT_YIELD = 100
+	var/TORSION_YIELD = 100000
+	var/TORSION_FRACTURE = 200000
+	var/TORSION_STRAIN_AT_YIELD = 100
+	var/SHEAR_YIELD = 100000
+	var/SHEAR_FRACTURE = 200000
+	var/SHEAR_STRAIN_AT_YIELD = 100
+	var/BENDING_YIELD = 100000
+	var/BENDING_FRACTURE = 200000
+	var/BENDING_STRAIN_AT_YIELD = 100
+	var/SOLID_DENSITY = 10000
+	var/SPEC_HEAT = 300
+	var/IGNITE_POINT = null
+	var/HEATDAM_POINT = null
+
 /datum/material/New()
 	. = ..()
 	if(texture_layer_icon_state)
@@ -123,40 +120,34 @@ Simple datum which is instanced once per type and is used for every object of sa
 			o.BENDING_YIELD = BENDING_YIELD
 			o.BENDING_FRACTURE = BENDING_FRACTURE
 			o.BENDING_STRAIN_AT_YIELD =BENDING_STRAIN_AT_YIELD
-
+			o.SOLID_DENSITY = SOLID_DENSITY
 			if (material_flags & MATERIAL_AFFECT_STATISTICS)
 				if (o.tool_behaviour == TOOL_CROWBAR)
-					o.toolspeed = 100000
-					o.toolspeed /= TENSILE_YIELD
-
+					o.toolspeed = o.SOLID_DENSITY/10000
 				if (o.tool_behaviour == TOOL_SCREWDRIVER)
-					o.toolspeed = 100000
-					o.toolspeed /= TORSION_YIELD
+					o.toolspeed = o.SOLID_DENSITY/10000
 				if (o.tool_behaviour == TOOL_MINING)
-					o.toolspeed = 100000
-					o.toolspeed /= IMPACT_YIELD
-		o.toolspeed /= toolspeed_modifier
-		o.slowdown += weight
-		o.drag_slowdown += weight
+					o.toolspeed = o.SOLID_DENSITY/10000
 
-		o.min_cold_protection_temperature *= coldprotection
-		o.max_cold_protection_temperature *= coldvulnerable
-		o.min_heat_protection_temperature *= heatvulnerable
-		o.max_heat_protection_temperature *= heatprotection
+
+		o.slowdown += (SOLID_DENSITY/10000)*(amount/10000)
+		o.drag_slowdown += (SOLID_DENSITY/10000)*(amount/10000)
+
 		o.force *= strength_modifier
 		o.throwforce *= strength_modifier
 //		o.force *= sharp_modifier
 //		o.throwforce *= sharp_modifier
 		o.repairable_by = sheet_type
-		o.brittleness = brittleness
 		var/list/temp_armor_list = list() //Time to add armor modifiers!
+		var/weanus = list("melee" = 10000/IMPACT_YIELD, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "stab" = 1, "slash" = SHEAR_YIELD/10000, "crush" = COMPRESSIVE_YIELD/10000)
 
 		if(!istype(o.armor))
 			return
 		var/list/current_armor = o.armor?.getList()
 
 		for(var/i in current_armor)
-			temp_armor_list[i] = current_armor[i] * armor_modifiers[i]
+
+			temp_armor_list[i] = current_armor[i] * weanus[i]
 		o.armor = getArmor(arglist(temp_armor_list))
 	if(!isitem(o))
 		return

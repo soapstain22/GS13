@@ -132,18 +132,46 @@
 	build_path = /obj/item/wrench/greyscale
 	category = list("initial","Tools")
 //unlockable
+/datum/design/mace
+	name = "mace"
+	id = "mace"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 5000)
+	build_path = /obj/item/melee/mace
+	category = list("Weapons")
+/datum/design/longsword
+	name = "longsword"
+	id = "longsword"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 6000)
+	build_path = /obj/item/melee/longsword
+	category = list("Weapons")
+/datum/design/waraxe
+	name = "waraxe"
+	id = "waraxe"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 7000)
+	build_path = /obj/item/melee/waraxe
+	category = list("Weapons")
+/datum/design/shortsword
+	name = "shortsword"
+	id = "shortsword"
+	build_type = SMITHING
+	materials = list(MAT_CATEGORY_RIGID = 4000)
+	build_path = /obj/item/melee/shortsword
+	category = list("Weapons")
 /datum/design/armor
 	name = "armor"
-	id = "armyor"
+	id = "armor"
 	build_type = SMITHING
-	materials = list(MAT_CATEGORY_RIGID = 1000)
+	materials = list(MAT_CATEGORY_RIGID = 12000)
 	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
 	category = list("Armor")
 /datum/design/helmet
 	name = "Helmet"
 	id = "Helmet"
 	build_type = SMITHING
-	materials = list(MAT_CATEGORY_RIGID = 1000)
+	materials = list(MAT_CATEGORY_RIGID = 12000)
 	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
 	category = list("Armor")
 /datum/design/spring
@@ -189,7 +217,7 @@
 	name = "barrel"
 	id = "barrel"
 	build_type = CARPENTRY
-	materials = list(MAT_CATEGORY_WOOD = 1000)
+	materials = list(MAT_CATEGORY_WOOD = 5000)
 	build_path = 	/obj/structure/fermenting_barrel
 	category = list("initial","Furniture")
 

@@ -65,7 +65,7 @@
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
 	value_per_unit = 0.0025
 	armor_modifiers = list("melee" = 3, "bullet" = 3, "laser" = 3, "energy" = 3, "bomb" = 2, "bio" = 0, "rad" =1, "fire" = 5, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 3, "stab" = 3, "crush" = 1)
-	weight = 0.05
+
 	texture_layer_icon_state = "stone"
 /obj/item/stack/stone
 	name = "stone"
@@ -160,13 +160,26 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/copper
 	value_per_unit = 0.0025
-	armor_modifiers = list("melee" = 0.64, "bullet" = 0.7, "laser" = 0.7, "energy" = 0.1, "bomb" = 1, "bio" = 0, "rad" =1, "fire" = 0.7, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 1, "stab" = 1, "crush" = 1)
-	integrity_modifier = 0.75
-	toolspeed_modifier = 0.75
-	strength_modifier = 7
-	brittleness = 0.001
-	weight = 0.13
-	thermal_conductivity = 370
+	SOLID_DENSITY = 8930
+	SPEC_HEAT = 385
+	IMPACT_YIELD = 245000
+	IMPACT_FRACTURE=770000
+	IMPACT_STRAIN_AT_YIELD=175
+	COMPRESSIVE_YIELD=245000
+	COMPRESSIVE_FRACTURE=770000
+	COMPRESSIVE_STRAIN_AT_YIELD=175
+	TENSILE_YIELD=70000
+	TENSILE_FRACTURE=220000
+	TENSILE_STRAIN_AT_YIELD=58
+	TORSION_YIELD=70000
+	TORSION_FRACTURE=220000
+	TORSION_STRAIN_AT_YIELD=145
+	SHEAR_YIELD=70000
+	SHEAR_FRACTURE=220000
+	SHEAR_STRAIN_AT_YIELD=145
+	BENDING_YIELD = 70000
+	BENDING_FRACTURE = 220000
+	BENDING_STRAIN_AT_YIELD = 58
 /obj/item/stack/ore/malachite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "malachite"
@@ -215,15 +228,26 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/lead
 	value_per_unit = 0.0025
-	integrity_modifier = 0.375
-	armor_modifiers = list("melee" = 1, "bullet" = 1.1, "laser" = 1.15, "energy" = 1.15, "bomb" = 1, "bio" = 0, "rad" = 4, "fire" = 2, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 1.2, "stab" = 1, "crush" = 0.5)
-	strength_modifier = 1.5
-	weight = 0.14
-	brittleness = 12
-	coldprotection = 1
-	coldvulnerable = 1
-	heatprotection = 1.5
-	heatvulnerable = 0.5
+	SOLID_DENSITY=11340
+	SPEC_HEAT=130
+	IMPACT_YIELD=35000
+	IMPACT_FRACTURE=42000
+	IMPACT_STRAIN_AT_YIELD=760
+	COMPRESSIVE_YIELD=35000
+	COMPRESSIVE_FRACTURE=42000
+	COMPRESSIVE_STRAIN_AT_YIELD=760
+	TENSILE_YIELD=10000
+	TENSILE_FRACTURE=12000
+	TENSILE_STRAIN_AT_YIELD=63
+	TORSION_YIELD=10000
+	TORSION_FRACTURE=12000
+	TORSION_STRAIN_AT_YIELD=179
+	SHEAR_YIELD=10000
+	SHEAR_FRACTURE=12000
+	SHEAR_STRAIN_AT_YIELD=179
+	BENDING_YIELD=10000
+	BENDING_FRACTURE=12000
+	BENDING_STRAIN_AT_YIELD=63
 /obj/item/stack/ore/galena
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "galena"
@@ -255,17 +279,26 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/tin
 	value_per_unit = 0.0025
-	weight = 0.07
-	strength_modifier = 0.70
-	integrity_modifier = 0.375
-	armor_modifiers = list("melee" = 0.8, "bullet" = 0.6, "laser" = 0.9, "energy" = 0.5, "bomb" = 0.3, "bio" = 0, "rad" = 1, "fire" = 0.7, "acid" = 1.1, "stab" = 1, "slash" = 1, "crush" = 1, "slash" = 1, "stab" = 1, "crush" = 0.7)
-	coldprotection = 0.9
-	coldvulnerable = 1.1
-	heatprotection = 0.9
-	heatvulnerable = 1.1
-	integrity_modifier = 0.25
-	toolspeed_modifier = 0.375
-	strength_modifier = 0.75
+	SOLID_DENSITY=7280
+	SPEC_HEAT=210
+	IMPACT_YIELD=42000
+	IMPACT_FRACTURE=350000
+	IMPACT_STRAIN_AT_YIELD=724
+	COMPRESSIVE_YIELD=42000
+	COMPRESSIVE_FRACTURE=350000
+	COMPRESSIVE_STRAIN_AT_YIELD=724
+	TENSILE_YIELD=12000
+	TENSILE_FRACTURE=100000
+	TENSILE_STRAIN_AT_YIELD=24
+	TORSION_YIELD=12000
+	TORSION_FRACTURE=100000
+	TORSION_STRAIN_AT_YIELD=66
+	SHEAR_YIELD=12000
+	SHEAR_FRACTURE=100000
+	SHEAR_STRAIN_AT_YIELD=66
+	BENDING_YIELD=12000
+	BENDING_FRACTURE=100000
+	BENDING_STRAIN_AT_YIELD=24
 /obj/item/stack/ore/cassiterite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "cassiterite"
@@ -299,15 +332,15 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/zinc
 	value_per_unit = 0.0025
-	weight = 0.09
-	coldprotection = 1
-	coldvulnerable = 1
-	heatprotection = 1
-	heatvulnerable = 1
+
+
+
+
+
 	integrity_modifier = 0.625
-	toolspeed_modifier = 1.2
+
 	strength_modifier = 1
-	brittleness = 1.8
+
 /obj/item/stack/ore/sphalerite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "sphalerite"
@@ -339,15 +372,7 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/aluminum
 	value_per_unit = 0.0025
-	weight = 0.03
-	coldprotection = 0.2
-	coldvulnerable = 1.3
-	heatprotection = 0.2
-	heatvulnerable = 1.3
-	integrity_modifier = 0.9
-	toolspeed_modifier = 1.2
-	strength_modifier = 1
-	brittleness = 1
+
 /obj/item/stack/ore/aluminum
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
 	name = "native aluminum"
@@ -381,14 +406,6 @@
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/nickel
 	value_per_unit = 0.0025
-	weight = 0.13
-	coldprotection = 1
-	coldvulnerable = 1
-	heatprotection = 1
-	heatvulnerable = 1
-	integrity_modifier = 0.9
-	toolspeed_modifier = 1.2
-	strength_modifier = 1
 	IMPACT_YIELD=70000
 	IMPACT_FRACTURE=560000
 	IMPACT_STRAIN_AT_YIELD=39
@@ -500,7 +517,6 @@
 	color = "#969696"
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
 	value_per_unit = 0.0025
-	weight = 0.05
 	texture_layer_icon_state = "stone"
 /obj/item/stack/ore/andestite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
@@ -511,9 +527,6 @@
 	mine_experience = 1
 	scan_state = ""
 	spreadChance = 1
-	meltingpoint = 1538
-	boilingpoint = 2870
-	dens = 141
 	resistance_flags = FIRE_PROOF
 /datum/material/granite
 	name = "granite"
@@ -521,7 +534,7 @@
 	color = "#e0bcad"
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
 	value_per_unit = 0.0025
-	weight = 0.05
+
 	texture_layer_icon_state = "stone"
 /obj/item/stack/ore/granite
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
@@ -532,9 +545,6 @@
 	points = 3
 	mine_experience = 1
 	spreadChance = 4
-	meltingpoint = 327.46
-	boilingpoint = 1749
-	dens = 54.7
 	material_type = /datum/material/granite
 /datum/material/marble
 	name = "marble"
@@ -542,7 +552,7 @@
 	color = "#FFFFFF"
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_MASON_RECIPES = TRUE)
 	value_per_unit = 0.0025
-	weight = 0.05
+
 	texture_layer_icon_state = "stone"
 /obj/item/stack/ore/marble
 	icon = 'code/game/objects/structures/superpizza/rocks.dmi'
@@ -611,11 +621,7 @@
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC = TRUE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/fabric/linen
 	value_per_unit = 0.0025
-	weight = 0.0
-	coldprotection = 1.1
-	coldvulnerable = 1
-	heatprotection = 1
-	heatvulnerable = 1.1
+
 /obj/item/stack/fabric/linen
 	name = "linen"
 	desc = "its like cloth but its cloth"
@@ -636,11 +642,6 @@
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC = TRUE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/fabric/linen
 	value_per_unit = 0.0025
-	weight = 0.0
-	coldprotection = 1.1
-	coldvulnerable = 1
-	heatprotection = 1
-	heatvulnerable = 1.1
 /obj/item/stack/fabric/silk
 	name = "silk"
 	desc = "made out of materials(?)"
@@ -652,6 +653,28 @@
 	merge_type = /obj/item/stack/fabric/silk
 	material_type = /datum/material/silk
 	custom_materials = list(/datum/material/silk=MINERAL_MATERIAL_AMOUNT)
+	SOLID_DENSITY=500
+	SPEC_HEAT=420
+	IGNITE_POINT=10508
+	HEATDAM_POINT=10250
+	IMPACT_YIELD=10000
+	IMPACT_FRACTURE=10000
+	IMPACT_STRAIN_AT_YIELD=100000
+	COMPRESSIVE_YIELD=10000
+	COMPRESSIVE_FRACTURE=10000
+	COMPRESSIVE_STRAIN_AT_YIELD=100000
+	TENSILE_YIELD=10000
+	TENSILE_FRACTURE=10000
+	TENSILE_STRAIN_AT_YIELD=100000
+	TORSION_YIELD=10000
+	TORSION_FRACTURE=10000
+	TORSION_STRAIN_AT_YIELD=100000
+	SHEAR_YIELD=1150000
+	SHEAR_FRACTURE=1200000
+	SHEAR_STRAIN_AT_YIELD=100000
+	BENDING_YIELD=10000
+	BENDING_FRACTURE=10000
+	BENDING_STRAIN_AT_YIELD=100000
 /datum/material/leather
 	name = "linen"
 	desc = "linen"
@@ -659,8 +682,23 @@
 	categories = list(MAT_CATEGORY_ORE = FALSE, MAT_CATEGORY_RIGID = FALSE, MAT_CATEGORY_FABRIC = TRUE, MAT_CATEGORY_FABRIC_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/leather
 	value_per_unit = 0.003
-	weight = 0.0
-	coldprotection = 1.1
-	coldvulnerable = 1
-	heatprotection = 1.2
-	heatvulnerable = 0.9
+	SPEC_HEAT=420
+	SOLID_DENSITY=500
+	IMPACT_YIELD=10000
+	IMPACT_FRACTURE=10000
+	IMPACT_STRAIN_AT_YIELD=50000
+	COMPRESSIVE_YIELD=10000
+	COMPRESSIVE_FRACTURE=10000
+	COMPRESSIVE_STRAIN_AT_YIELD=50000
+	TENSILE_YIELD=10000
+	TENSILE_FRACTURE=10000
+	TENSILE_STRAIN_AT_YIELD=50000
+	TORSION_YIELD=10000
+	TORSION_FRACTURE=10000
+	TORSION_STRAIN_AT_YIELD=50000
+	SHEAR_YIELD=25000
+	SHEAR_FRACTURE=25000
+	SHEAR_STRAIN_AT_YIELD=50000
+	BENDING_YIELD=10000
+	BENDING_FRACTURE=10000
+	BENDING_STRAIN_AT_YIELD=50000

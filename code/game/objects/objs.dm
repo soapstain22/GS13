@@ -37,10 +37,6 @@
 	var/custom_fire_overlay
 	var/slowdown
 	var/renamedByPlayer = FALSE //set when a player uses a pen on a renamable object
-	var/min_cold_protection_temperature
-	var/max_cold_protection_temperature
-	var/min_heat_protection_temperature
-	var/max_heat_protection_temperature
 	var/drag_slowdown // Amont of multiplicative slowdown applied if pulled. >1 makes you slower, <1 makes you faster.
 	var/IMPACT_YIELD = 100000
 	var/IMPACT_FRACTURE = 200000
@@ -60,15 +56,22 @@
 	var/BENDING_YIELD = 100000
 	var/BENDING_FRACTURE = 200000
 	var/BENDING_STRAIN_AT_YIELD = 100
+	var/SOLID_DENSITY = 10000
+	var/SPEC_HEAT = 300
+	var/IGNITE_POINT = null
+	var/HEATDAM_POINT = null
 	var/impact_stress = 0
 	var/compressive_stress = 0
 	var/tensile_stress = 0
 	var/torsion_stress = 0
 	var/shear_stress = 0
 	var/bending_stress = 0
-	var/heat_capacity_modif
 	var/meltingpoint = 100000
 	var/tool_behaviour
+	var/max_heat_protection_temperature
+	var/min_cold_protection_temperature
+	var/max_cold_protection_temperature
+	var/min_heat_protection_temperature
 	vis_flags = VIS_INHERIT_PLANE //when this be added to vis_contents of something it inherit something.plane, important for visualisation of obj in openspace.
 
 /obj/vv_edit_var(vname, vval)

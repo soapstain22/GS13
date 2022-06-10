@@ -53,4 +53,32 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
 /obj/item/claymore/weak
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS//Can change color and add prefix
+/obj/item/melee/waraxe
+	name = "waraxe"
+	desc = "KILL"
+	icon = 'code/game/objects/structures/superpizza/bbguns.dmi'
+	icon_state = "waraxe"
+	attacktype = "slash"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+/obj/item/melee/longsword
+	name = "longsword"
+	desc = "KILL"
+	icon = 'code/game/objects/structures/superpizza/bbguns.dmi'
+	icon_state = "longsword"
+	attacktype = "slash"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+/obj/item/melee/shortsword
+	name = "shortsword"
+	desc = "KILL"
+	icon = 'code/game/objects/structures/superpizza/bbguns.dmi'
+	icon_state = "shortsword"
+	attacktype = "slash"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+/obj/item/melee/mace
+	name = "mace"
+	desc = "KILL"
+	icon = 'code/game/objects/structures/superpizza/bbguns.dmi'
+	icon_state = "mace"
+	attacktype = "crush"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	//fuk u
