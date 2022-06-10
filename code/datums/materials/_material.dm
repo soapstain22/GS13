@@ -1,4 +1,4 @@
-/*! Material datum
+ /*! Material datum
 
 Simple datum which is instanced once per type and is used for every object of said material. It has a variety of variables that define behavior. Subtyping from this makes it easier to create your own materials.
 
@@ -130,8 +130,8 @@ Simple datum which is instanced once per type and is used for every object of sa
 					o.toolspeed = o.SOLID_DENSITY/10000
 
 
-		o.slowdown += (SOLID_DENSITY/10000)*(amount/10000)
-		o.drag_slowdown += (SOLID_DENSITY/10000)*(amount/10000)
+		o.slowdown += (SOLID_DENSITY*amount)/10000
+		o.drag_slowdown += (SOLID_DENSITY*amount)/10000
 
 		o.force *= strength_modifier
 		o.throwforce *= strength_modifier
