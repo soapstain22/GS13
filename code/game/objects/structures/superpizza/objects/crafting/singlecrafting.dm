@@ -41,7 +41,7 @@ GLOBAL_LIST_INIT(linen_recipes, list ( \
 
 
 GLOBAL_LIST_INIT(rigid_stack_recipes, list(
-	new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 3, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
+	new /datum/stack_recipe("Wall",			/turf/closed/wall/material, 4, 1, 20,  one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 	new /datum/stack_recipe("Floor tile",	/obj/item/stack/tile/material, 1, 1, 20, applies_mats = TRUE),
 	new /datum/stack_recipe("stairs",		/obj/structure/stairs, 3, 1, 20, one_per_turf = TRUE, on_floor = FALSE, applies_mats = FALSE),
 //	new /datum/stack_recipe("Start work",	/obj/item/work, 1, 1, 20, one_per_turf = false, on_floor = FALSE, applies_mats = TRUE),
