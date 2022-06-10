@@ -54,8 +54,6 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/BENDING_STRAIN_AT_YIELD = 100
 	var/SOLID_DENSITY = 10000
 	var/SPEC_HEAT = 300
-	var/IGNITE_POINT = null
-	var/HEATDAM_POINT = null
 
 /datum/material/New()
 	. = ..()
@@ -139,15 +137,13 @@ Simple datum which is instanced once per type and is used for every object of sa
 //		o.throwforce *= sharp_modifier
 		o.repairable_by = sheet_type
 		var/list/temp_armor_list = list() //Time to add armor modifiers!
-		var/weanus = list("melee" = 10000/IMPACT_YIELD, "bullet" = 1, "laser" = 1, "energy" = 1, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 1, "acid" = 1, "stab" = 1, "slash" = SHEAR_YIELD/10000, "crush" = COMPRESSIVE_YIELD/10000)
-
 		if(!istype(o.armor))
 			return
 		var/list/current_armor = o.armor?.getList()
 
 		for(var/i in current_armor)
 
-			temp_armor_list[i] = current_armor[i] * weanus[i]
+			temp_armor_list[i] = current_armor[i] * temp_armor_list[i]
 		o.armor = getArmor(arglist(temp_armor_list))
 	if(!isitem(o))
 		return
