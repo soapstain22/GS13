@@ -72,6 +72,7 @@
 	loot = list(
 		/obj/item/stack/niter = 2,
 		/obj/item/stack/salt = 5,
+		"" = 2,
 		)
 /obj/effect/spawner/lootdrop/stone
 	name = "barrelspawn"
@@ -365,6 +366,16 @@ obj/effect/spawner/lootdrop/parts
 		/obj/item/crowbar = 5,
 		/obj/item/crowbar = 5,
 		/obj/item/screwdriver/power = 1,
+		"" = 5
+		)
+/obj/effect/spawner/lootdrop/dirtandshit
+	name = "milisurplus"
+	lootdoubles = FALSE
+	lootcount = 5
+	loot = list(
+		/obj/item/clothing/suit/jacket/miljacket = 1,
+		/obj/item/clothing/head/thenam = 1,
+		/obj/item/clothing/under/pants/camo = 1,
 		"" = 5
 		)
 /obj/effect/spawner/lootdrop/milisurplus

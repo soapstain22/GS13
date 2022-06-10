@@ -8,7 +8,7 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	var/buildstacktype = /obj/item/stack/sheet/metal
 /obj/structure/barricade/stonewall/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/stack/sheet))
+	if(istype(I, /obj/item/stack/stone))
 		var/obj/item/stack/sheet/W = I
 		if(W.get_amount() < 2)
 			return

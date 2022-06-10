@@ -276,9 +276,9 @@
 	/obj/item/stack/ore/sulphur 	= 54,
 	/obj/item/stack/ore/fake/salt 	= 44,
 	/obj/item/stack/ore/fake/trash 	= 3,
-	/obj/item/stack/ore/fake/sandstone = 500,
+	/obj/item/stack/ore/glass = 500,
 	/turf/open/floor/plating/asteroid/airless/cave = 10)
-	mineralChance = 60
+	mineralChance = 80
 
 /turf/closed/mineral/random/IgneousExtrusive
 	maxDamage = 10
